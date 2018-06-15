@@ -1,0 +1,34 @@
+---
+title: "Spam confidence levels"
+ms.author: krowley
+author: kccross
+manager: scotv
+ms.date: 10/2/2017
+ms.audience: ITPro
+ms.topic: article
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
+
+description: "When an email message goes through spam filtering it is assigned a spam score. That score is mapped to an individual Spam Confidence Level (SCL) rating and stamped in an X-header. The service takes actions upon the messages depending upon the spam confidence interpretation of the SCL rating. The following table shows how the different SCL ratings are interpreted by the filters and the default action that is taken on inbound messages for each rating."
+---
+
+# Spam confidence levels
+
+When an email message goes through spam filtering it is assigned a spam score. That score is mapped to an individual Spam Confidence Level (SCL) rating and stamped in an X-header. The service takes actions upon the messages depending upon the spam confidence interpretation of the SCL rating. The following table shows how the different SCL ratings are interpreted by the filters and the default action that is taken on inbound messages for each rating.
+  
+|**SCL Rating**|**Spam Confidence Interpretation**|**Default Action**|
+|:-----|:-----|:-----|
+|-1  <br/> |Non-spam coming from a safe sender, safe recipient, or safe listed IP address (trusted partner)  <br/> |Deliver the message to the recipients' inbox.  <br/> |
+|0, 1  <br/> |Non-spam because the message was scanned and determined to be clean  <br/> |Deliver the message to the recipients' inbox.  <br/> |
+|5, 6  <br/> | Spam  <br/> |Deliver the message to the recipients' Junk Email folder.  <br/> |
+|7, 8, 9  <br/> |High confidence spam  <br/> |Deliver the message to the recipients' Junk Email folder.  <br/> |
+   
+> [!TIP]
+> SCL ratings of 2, 3, 4, 7, and 8 are not set by the service. An SCL rating of 5 or 6 is considered suspected spam, which is less certain to be spam than an SCL rating of 9, which is considered certain spam. Different actions for spam and high confidence spam can be configured via your content filter policies in the Exchange admin center. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). You can also set the SCL rating for messages that match specific conditions by using Transport rules, as described in [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). If you use a transport rule to set SCL of 7, 8, or 9 the message will be treated as high confidence spam. 
+  
+||
+|:-----|
+|![The short icon for LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
+   
+
