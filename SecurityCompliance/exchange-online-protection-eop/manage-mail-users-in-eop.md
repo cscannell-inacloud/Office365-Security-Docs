@@ -6,24 +6,14 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
-description: "In this articleBefore you beginUse directory synchronization to manage mail usersUse the EAC to manage mail usersUse remote Windows PowerShell to manage mail users"
+description: "Defining mail users is an important part of managing the Exchange Online Protection (EOP) service."
 ---
 
 # Manage mail users in EOP
 
- **In this article**
-  
-[Before you begin](#sectionSection0.md)
-  
-[Use directory synchronization to manage mail users](#USERS_dirsync.md)
-  
-[Use the EAC to manage mail users](#USERS_eac.md)
-  
-[Use remote Windows PowerShell to manage mail users](#UseremoteWindowsPowerShelltomanagemailusers.md)
-  
 Defining mail users is an important part of managing the Exchange Online Protection (EOP) service. There are several ways that you can manage users in EOP:
   
 - [Use directory synchronization to manage mail users](manage-mail-users-in-eop.md#USERS_dirsync): If your company has existing user accounts in an on-premises Active Directory environment, you can synchronize those accounts to Azure Active Directory (AD), where a copy of the accounts is stored in the cloud. When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC). Using directory synchronization is recommended. 

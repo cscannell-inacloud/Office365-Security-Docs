@@ -6,27 +6,15 @@ manager: laurawi
 ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 
-description: "In this articleSubmit junk or phishing messages that passed through the spam filtersSubmit messages that were tagged as junk but should have been allowed through Spam evaluation and rules deploymentNew to Office 365?For more information"
+description: "You and your users can submit false negative and false positive spam messages to Microsoft for analysis. "
 ---
 
 # Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
 
- **In this article**
-  
-[Submit junk or phishing messages that passed through the spam filters](#sectionSection0.md)
-  
-[Submit messages that were tagged as junk but should have been allowed through ](#sectionSection1.md)
-  
-[Spam evaluation and rules deployment](#sectionSection2.md)
-  
-[New to Office 365?](#sectionSection3.md)
-  
-[For more information](#sectionSection4.md)
-  
 It can be frustrating when users in your organization receive junk messages (spam) or phishing scam messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate. You and your users can help this process by submitting false negative and false positive spam messages to Microsoft for analysis. A "false negative" is a spam message that should have been but was not identified as spam. A "false positive" is a legitimate email message that was incorrectly identified as spam. 
   
 > [!NOTE]

@@ -6,22 +6,14 @@ manager: laurawi
 ms.date: 8/23/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
-description: "In this articleWhat do you need to know before you begin?Use the EAC to create a mail flow rule to view users' manual junk, phishing, and not junk reportsFor more information"
+description: "You can create an Exchange Transport rule to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes"
 ---
 
 # Use mail flow rules to see what your users are reporting to Microsoft
 
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Use the EAC to create a mail flow rule to view users' manual junk, phishing, and not junk reports](#sectionSection1.md)
-  
-[For more information](#sectionSection2.md)
-  
 There are multiple ways you can send false positive and false negative messages to Microsoft for analysis. As an administrator, you can use mail flow rules to see what your users are reporting to Microsoft as spam, non-spam, and phishing scams. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Conversely, you can create an Exchange Transport rule to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes.
   
 ## What do you need to know before you begin?

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 description: "The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers several ways for you to report junk email messages:"

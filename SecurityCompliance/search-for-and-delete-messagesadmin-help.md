@@ -6,23 +6,13 @@ manager: laurawi
 ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
-description: "In this articleWhat do I need to know before I begin?Search messages and log the search resultsSearch and delete messagesUsing the -LogLevel Full parameter"
+description: "Administrators can use the Search-Mailbox cmdlet to search user mailboxes and then delete messages from a mailbox."
 ---
 
 # Search for and delete messages - Admin help
-
- **In this article**
-  
-[What do I need to know before I begin?](#sectionSection0.md)
-  
-[Search messages and log the search results](#sectionSection1.md)
-  
-[Search and delete messages](#sectionSection2.md)
-  
-[Using the -LogLevel Full parameter](#sectionSection3.md)
   
 Administrators can use the **Search-Mailbox** cmdlet to search user mailboxes and then delete messages from a mailbox. 
   

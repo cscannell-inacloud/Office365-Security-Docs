@@ -6,27 +6,15 @@ manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 
-description: "In this articleWhat do you need to know before you begin?Use the EAC to edit the default connection filter policyAdditional considerations when configuring IP Allow listsNew to Office 365?For more information"
+description: "To make sure that email sent from people you trust isn't blocked, you can use the connection filter policy to create an Allow list, also known as a safe sender list, of IP addresses that you trust. You can also create a blocked senders list."
 ---
 
 # Configure the connection filter policy
-
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Use the EAC to edit the default connection filter policy](#sectionSection1.md)
-  
-[Additional considerations when configuring IP Allow lists](#bkmk_addtionalconsiderationswhenconfiguringipallowlists.md)
-  
-[New to Office 365?](#sectionSection3.md)
-  
-[For more information](#sectionSection4.md)
-  
+ 
 Most of us have friends and business partners we trust. It can be frustrating to find email from them in your junk email folder, or even blocked entirely by a spam filter. If you want to make sure that email sent from people you trust isn't blocked, you can use the connection filter policy to create an Allow list, also known as a safe sender list, of IP addresses that you trust. You can also create a blocked senders list, which is a list of IP addresses, typically from known spammers, that you don't ever want to receive email messages from.
   
  For more spam settings that apply to the whole organization, take a look at [How to help ensure that a message isn't marked as spam](https://go.microsoft.com/fwlink/p/?LinkId=534224) or [Block email spam with the Office 365 spam filter to prevent false negative issues](https://go.microsoft.com/fwlink/p/?LinkId=534225). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.

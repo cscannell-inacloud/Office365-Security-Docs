@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: "People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization."

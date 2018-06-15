@@ -6,22 +6,14 @@ manager: laurawi
 ms.date: 10/9/2015
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
-description: "In this articleWhat do you need to know before you begin?Turn off junk, phishing, and not junk reporting to Microsoft How do you know this worked?"
+description: "As an Office 365 admin, you can turn off the ability for people to report email as junk."
 ---
 
 # Turn off junk email reporting in Outlook on the web
 
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Turn off junk, phishing, and not junk reporting to Microsoft ](#sectionSection1.md)
-  
-[How do you know this worked?](#sectionSection2.md)
-  
 You can send junk, phishing, and not junk messages to Microsoft for analysis using the Outlook on the web junk email reporting options, as described in [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). If you don't want to use these options,admins can turn them off via the [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet. 
   
 ## What do you need to know before you begin?

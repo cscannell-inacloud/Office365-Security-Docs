@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 3/9/2015
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: "Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions."

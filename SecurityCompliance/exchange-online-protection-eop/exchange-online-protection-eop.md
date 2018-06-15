@@ -6,24 +6,14 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: "In this articleEOP Help for administratorsEOP Help for end usersFor more informationTell us what you think"
+description: "Here are a few things you should be aware of before you start working with EOP."
 ---
 
 # Exchange Online Protection 
 
- **In this article**
-  
-[EOP Help for administrators](#sectionSection0.md)
-  
-[EOP Help for end users](#sectionSection1.md)
-  
-[For more information](#sectionSection2.md)
-  
-[Tell us what you think](#sectionSection3.md)
-  
 Welcome to the Microsoft Exchange Online Protection (EOP) hosted email filtering service. Here are a few things you should be aware of before you start working with EOP and using this content:
   
 - To learn more about EOP, check out the [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619). Other useful resources are [Exchange Online Protection overview](exchange-online-protection-overview.md), [EOP general FAQ](eop-general-faq.md), and [EOP features](eop-features.md), as well as the [Exchange Online Protection home page](https://go.microsoft.com/fwlink/?LinkId=279912).

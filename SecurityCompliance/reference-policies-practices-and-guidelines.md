@@ -6,35 +6,17 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: "In this articleGeneral Microsoft policiesGovernmental regulationsTechnical guidelinesReputation managementOffice 365 limitsEmail delivery resources and organizationsAbuse and spam reportingLaw enforcement"
+description: "Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email."
 ---
 
 # Reference: Policies, practices, and guidelines
-
- **In this article**
-  
-[General Microsoft policies](#GenMsftPolicies.md)
-  
-[Governmental regulations](#GovtRegulations.md)
-  
-[Technical guidelines](#TechGuidelines.md)
-  
-[Reputation management](#RepManagement.md)
-  
-[Office 365 limits](#sectionSection4.md)
-  
-[Email delivery resources and organizations](#sectionSection5.md)
-  
-[Abuse and spam reporting](#AbuseSpamReports.md)
-  
-[Law enforcement](#sectionSection7.md)
   
 Microsoft is dedicated to helping provide the most trusted user experience on the web. Therefore, Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email. Senders attempting to send email to Office 365 users should ensure they fully understand and are following the guidance in this article to help in this effort and to help avoid potential delivery issues.
   
- If you are not in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you are adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, please follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+If you are not in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you are adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, please follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
   
 ## General Microsoft policies
 <a name="GenMsftPolicies"> </a>

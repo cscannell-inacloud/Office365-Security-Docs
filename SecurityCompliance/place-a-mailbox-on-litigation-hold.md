@@ -6,32 +6,14 @@ manager: laurawi
 ms.date: 10/18/2016
 ms.audience: End User
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
-description: "In this articleWhat do you need to know before you begin?Use the EAC to place a mailbox on Litigation HoldUse the Shell to place a mailbox on Litigation Hold indefinitelyUse the Shell to place a mailbox on Litigation Hold and preserve items for a specified durationUse the Shell to place all mailboxes on Litigation Hold for a specified durationUse the Shell to remove a mailbox from Litigation HoldHow do you know this worked?More information"
+description: "Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. "
 ---
 
 # Place a mailbox on Litigation Hold
-
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Use the EAC to place a mailbox on Litigation Hold](#sectionSection1.md)
-  
-[Use the Shell to place a mailbox on Litigation Hold indefinitely](#sectionSection2.md)
-  
-[Use the Shell to place a mailbox on Litigation Hold and preserve items for a specified duration](#sectionSection3.md)
-  
-[Use the Shell to place all mailboxes on Litigation Hold for a specified duration](#sectionSection4.md)
-  
-[Use the Shell to remove a mailbox from Litigation Hold](#sectionSection5.md)
-  
-[How do you know this worked?](#sectionSection6.md)
-  
-[More information](#moreinfo.md)
-  
+ 
 Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. When you place a user' mailbox on Litigation Hold, content in the user's archive mailbox (if it's enabled) is also placed on hold. Deleted and modified items are preserved for a specified period, or until you remove the mailbox from Litigation Hold. All such mailbox items are returned in an [In-Place eDiscovery](http://technet.microsoft.com/library/6377cb7a-3416-4e15-8571-c45d2160fc6f.aspx) search. 
   
 > [!IMPORTANT]

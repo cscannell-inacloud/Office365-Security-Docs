@@ -6,25 +6,15 @@ manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
-description: "In this articleAccessibility features of Exchange Accessibility features of Exchange HelpAccessibility products and services from MicrosoftFor more information"
+description: "Microsoft is committed to making its products and services easier for everyone to use."
 ---
 
 # Accessibility for people with disabilities
 
- **In this article**
-  
-[Accessibility features of Exchange ](#BKMK_Access15.md)
-  
-[Accessibility features of Exchange Help](#BKMK_AccessHelp.md)
-  
-[Accessibility products and services from Microsoft](#BKMK_AccessMS.md)
-  
-[For more information](#sectionSection3.md)
-  
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:
   
 - [Accessibility features of Exchange ](accessibility-for-people-with-disabilities.md#BKMK_Access15)

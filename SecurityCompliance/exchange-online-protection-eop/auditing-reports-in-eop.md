@@ -4,9 +4,9 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: "Auditing reports in Microsoft Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization. You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration. These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems."

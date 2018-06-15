@@ -4,9 +4,9 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 3/13/2015
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 description: "The following series of videos will help you set up and use the Exchange Online Protection (EOP) hosted email filtering service."

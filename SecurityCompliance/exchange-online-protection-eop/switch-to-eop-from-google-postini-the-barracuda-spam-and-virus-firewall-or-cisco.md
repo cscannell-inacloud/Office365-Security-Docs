@@ -6,25 +6,15 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-description: "In this articleSwitch to EOP standaloneSwitch to Exchange OnlineSwitch to a hybrid solutionMigration planning"
+description: "The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started."
 ---
 
 # Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
 
- **In this article**
-  
-[Switch to EOP standalone](#BKMK_SwitchStandalone.md)
-  
-[Switch to Exchange Online](#BKMK_SwitchEXO.md)
-  
-[Switch to a hybrid solution](#BKMK_SwitchHybrid.md)
-  
-[Migration planning](#sectionSection3.md)
-  
-The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started. There are many spam-filtering solutions, but the process for switching to EOP is similar in most cases.
+ The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started. There are many spam-filtering solutions, but the process for switching to EOP is similar in most cases.
   
 If you are new to EOP and you want to read an overview of its features before you decide to switch, start with the [Exchange Online Protection overview](exchange-online-protection-overview.md) on TechNet. 
   

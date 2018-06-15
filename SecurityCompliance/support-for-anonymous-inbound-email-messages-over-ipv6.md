@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/4/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 description: "Exchange Online Protection (EOP) and Exchange Online support receiving anonymous inbound email messages over IPv6 communications from senders who don't send messages over Transport Layer Security (TLS). You can opt-in to receive messages over IPv6 by requesting this functionality from UNRESOLVED_TOKEN_VAL(exMCSS) by opening the Office 365 admin center at https://portal.office.com/adminportal/home, clicking Support, and then clicking New service request). If you don't opt-in to IPv6 you'll continue to receive messages over IPv4."

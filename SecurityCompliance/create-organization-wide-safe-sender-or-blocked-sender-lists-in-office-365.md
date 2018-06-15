@@ -6,23 +6,13 @@ manager: laurawi
 ms.date: 8/8/2015
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: "In this articleUse the EAC to customize a block or allow list to prevent or receive email from a domain or userWhat do you need to know before you begin creating a transport rule?Use the EAC to create a transport rule to bypass spam filtering for a domain or userUse the EAC to create a transport rule that blocks messages sent from a domain or user"
+description: "If you want to be sure that you receive mail from a particular sender, because you trust them and their messages, you can adjust your allow list in a spam filter policy in the Exchange admin center."
 ---
 
 # Create organization-wide safe sender or blocked sender lists in Office 365
-
- **In this article**
-  
-[Use the EAC to customize a block or allow list to prevent or receive email from a domain or user](#sectionSection0.md)
-  
-[What do you need to know before you begin creating a transport rule?](#sectionSection1.md)
-  
-[Use the EAC to create a transport rule to bypass spam filtering for a domain or user](#sectionSection2.md)
-  
-[Use the EAC to create a transport rule that blocks messages sent from a domain or user](#sectionSection3.md)
   
 If you want to be sure that you receive mail from a particular sender, because you trust them and their messages, you can adjust your allow list in a spam filter policy in the Exchange admin center (EAC) at **Protection** \> **Spam filter**. Learn more about this at [Configure your spam filter policies](configure-your-spam-filter-policies.md). Another option would be create an Exchange transport rule that works like the domain or user-based allow list in the spam filter. You can block messages sent from a particular domain or user in a similar manner too.
   

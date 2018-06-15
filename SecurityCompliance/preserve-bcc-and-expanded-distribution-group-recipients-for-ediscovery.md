@@ -6,21 +6,13 @@ manager: laurawi
 ms.date: 6/19/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: "In this articleHow Bcc recipients and expanded distribution group recipients are preservedSearching for messages sent to Bcc and expanded distribution group recipientsFrequently asked questions"
+description: "In-Place Hold, Litigation Hold, and Office 365 retention policies allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements."
 ---
 
 # Preserve Bcc and expanded distribution group recipients for eDiscovery
-
- **In this article**
-  
-[How Bcc recipients and expanded distribution group recipients are preserved](#sectionSection0.md)
-  
-[Searching for messages sent to Bcc and expanded distribution group recipients](#sectionSection1.md)
-  
-[Frequently asked questions](#sectionSection2.md)
   
 In-Place Hold, Litigation Hold, and [Office 365 retention policies](http://go.microsoft.com/fwlink/?LinkID=827811) (created in the Office 365 Security &amp; Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
   

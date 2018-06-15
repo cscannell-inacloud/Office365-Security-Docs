@@ -4,27 +4,17 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 
-description: "In this articleAccessing the EACCommon user interface elements in the EACSupported BrowsersSupported languages in EOP"
+description: "The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP)."
 ---
 
 # Exchange admin center in Exchange Online Protection 
 
- **In this article**
-  
-[Accessing the EAC](#BKMK_AccessingTheEac.md)
-  
-[Common user interface elements in the EAC](#BKMK_CommonUserInterfaceElements.md)
-  
-[Supported Browsers](#BKMK_SupportedBrowsers.md)
-  
-[Supported languages in EOP](#BKMK_SupportedLanguages.md)
-  
 The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP). 
   
 Looking for the Exchange 2013 version of this topic? See [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).

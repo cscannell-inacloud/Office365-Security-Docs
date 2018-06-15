@@ -6,35 +6,15 @@ manager: laurawi
 ms.date: 10/9/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
-description: "In this articleHow do SPF and DMARC work together to protect email in Office 365?What is a DMARC TXT record?Implement DMARC for inbound mailImplement DMARC for outbound mail from Office 365Best practices for implementing DMARC in Office 365How Office 365 handles outbound email that fails DMARCHow Office 365 handles inbound email that fails DMARCTroubleshooting your DMARC implementationFor more information"
+description: "Domain-based Message Authentication, Reporting, and Conformance (DMARC) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders and ensure that destination email systems trust messages sent from your domain. "
 ---
 
 # Use DMARC to validate email in Office 365
 
- **In this article**
-  
-[How do SPF and DMARC work together to protect email in Office 365?](#SPFandDMARC.md)
-  
-[What is a DMARC TXT record?](#WhatisDMARC.md)
-  
-[Implement DMARC for inbound mail](#implementDMARCinbound.md)
-  
-[Implement DMARC for outbound mail from Office 365](#implementDMARCoutbound.md)
-  
-[Best practices for implementing DMARC in Office 365](#DMARCbestpractices.md)
-  
-[How Office 365 handles outbound email that fails DMARC](#outbounddmarcfail.md)
-  
-[How Office 365 handles inbound email that fails DMARC](#inbounddmarcfail.md)
-  
-[Troubleshooting your DMARC implementation](#dmarctroubleshoot.md)
-  
-[For more information](#sectionSection8.md)
-  
-[Domain-based Message Authentication, Reporting, and Conformance (DMARC)](https://dmarc.org) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders and ensure that destination email systems trust messages sent from your domain. Implementing DMARC with SPF and DKIM provides additional protection against spoofing and phishing email. DMARC helps receiving mail systems determine what to do with messages sent from your domain that fail SPF or DKIM checks. 
+Domain-based Message Authentication, Reporting, and Conformance [DMARC)](https://dmarc.org) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders and ensure that destination email systems trust messages sent from your domain. Implementing DMARC with SPF and DKIM provides additional protection against spoofing and phishing email. DMARC helps receiving mail systems determine what to do with messages sent from your domain that fail SPF or DKIM checks. 
   
 ## How do SPF and DMARC work together to protect email in Office 365?
 <a name="SPFandDMARC"> </a>

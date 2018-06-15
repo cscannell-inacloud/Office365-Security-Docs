@@ -6,25 +6,15 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: "In this articleWhat do you need to know before you begin?Use the EAC to run an administrator role group reportHow do you know this worked?Monitor changes to role group membership"
+description: "When an administrator adds members to or removes members from administrator role groups, Microsoft Exchange Online Protection (EOP) logs each occurrence."
 ---
 
 # Run an administrator role group report in EOP 
 
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Use the EAC to run an administrator role group report](#sectionSection1.md)
-  
-[How do you know this worked?](#sectionSection2.md)
-  
-[Monitor changes to role group membership](#sectionSection3.md)
-  
-When an administrator adds members to or removes members from administrator role groups, Microsoft Exchange Online Protection (EOP) logs each occurrence. When you run an administrator role group report in the Exchange admin center, entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.
+ When an administrator adds members to or removes members from administrator role groups, Microsoft Exchange Online Protection (EOP) logs each occurrence. When you run an administrator role group report in the Exchange admin center, entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.
   
 ## What do you need to know before you begin?
 <a name="sectionSection0"> </a>

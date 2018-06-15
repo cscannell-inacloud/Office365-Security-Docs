@@ -6,23 +6,15 @@ manager: laurawi
 ms.date: 2/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 
-description: "In this articleX-Forefront-Antispam-Report message header fieldsX-Microsoft-Antispam message header fields Authentication-results message header"
+description: "When Exchange Online Protection scans an inbound email message it inserts the **X-Forefront-Antispam-Report** header into each message."
 ---
 
 # Anti-spam message headers
 
- **In this article**
-  
-[X-Forefront-Antispam-Report message header fields](#sectionSection0.md)
-  
-[X-Microsoft-Antispam message header fields ](#sectionSection1.md)
-  
-[Authentication-results message header](#sectionSection2.md)
-  
 When Exchange Online Protection scans an inbound email message it inserts the **X-Forefront-Antispam-Report** header into each message. The fields in this header can help provide administrators with information about the message and about how it was processed. The fields in the **X-Microsoft-Antispam** header provide additional information about bulk mail and phishing. In addition to these two headers, Exchange Online Protection also inserts email authentication results for each message it processes in the **Authentication-results** header. 
   
 > [!TIP]

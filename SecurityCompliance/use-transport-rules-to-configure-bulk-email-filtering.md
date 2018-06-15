@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: "You can set company-wide content filters for spam and bulk email using the default spam content-filter policies. Check out Configure your spam filter policies and Set-HostedContentFilterPolicy on how to set the content filter policies."

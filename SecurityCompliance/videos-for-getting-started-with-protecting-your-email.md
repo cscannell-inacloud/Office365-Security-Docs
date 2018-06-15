@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: "The following series of introductory videos will help you use Exchange Online Protection (EOP) to protect your mailboxes. These videos are applicable for EOP standalone customers who are protecting on-premises mailboxes such as Exchange Server 2013, and for Exchange Online customers whose cloud-hosted mailboxes by default are protected by EOP."

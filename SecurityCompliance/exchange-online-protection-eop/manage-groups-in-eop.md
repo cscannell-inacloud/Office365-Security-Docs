@@ -4,29 +4,17 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: "In this articleTypes of mail-enabled groupsBefore you beginCreate a group in the EACEdit or remove a group in the EACCreate, edit, or remove a group using remote Windows PowerShell"
+description: "You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups."
 ---
 
 # Manage groups in EOP
 
- **In this article**
-  
-[Types of mail-enabled groups](#GROUPS_types.md)
-  
-[Before you begin](#sectionSection1.md)
-  
-[Create a group in the EAC](#GROUPS_distribution.md)
-  
-[Edit or remove a group in the EAC](#GROUPS_security.md)
-  
-[Create, edit, or remove a group using remote Windows PowerShell](#sectionSection4.md)
-  
-You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups. You can create distribution groups and security groups, depending on your needs. These groups can be created by using the Exchange admin center (EAC) or via remote Windows PowerShell. 
+ You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups. You can create distribution groups and security groups, depending on your needs. These groups can be created by using the Exchange admin center (EAC) or via remote Windows PowerShell. 
   
 ## Types of mail-enabled groups
 <a name="GROUPS_types"> </a>

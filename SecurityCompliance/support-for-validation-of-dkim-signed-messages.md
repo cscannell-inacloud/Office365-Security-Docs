@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 description: "Exchange Online Protection (EOP) and Exchange Online support inbound validation of Domain Keys Identified Mail (DKIM) messages. DKIM is a method for validating that a message was sent from the domain it says it originated from and that it was not spoofed by someone else. It ties an email message to the organization responsible for sending it. DKIM verification is automatically used for all messages sent over IPv6 communications. (For more information about IPv6 support, see Support for anonymous inbound email messages over IPv6.)"

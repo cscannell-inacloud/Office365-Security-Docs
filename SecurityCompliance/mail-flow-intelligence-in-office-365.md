@@ -4,31 +4,15 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/27/2017
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: "In this articleError code: 450 4.4.312 DNS query failedError code: 450 4.4.315 Connection timed outError code: 450 4.4.316 Connection refusedError code: 450 4.4.317 Cannot connect to remote serverError code: 450 4.4.318 Connection was closed abruptlyError code: 450 4.7.320 Certificate validation failedOther error codes"
+description: "Typically, you use a connector to route messages from your Office 365 organization to your on-premises messaging environment. You might also use a connector to route messages from Office 365 to a partner organization. When Office 365 can't deliver these messages via the connector, they're queued in Office 365. "
 ---
 
 # Mail flow intelligence in Office 365
-
- **In this article**
-  
-[Error code: 450 4.4.312 DNS query failed](#ErrorCode44312.md)
-  
-[Error code: 450 4.4.315 Connection timed out](#ErrorCode44315.md)
-  
-[Error code: 450 4.4.316 Connection refused](#ErrorCode44316.md)
-  
-[Error code: 450 4.4.317 Cannot connect to remote server](#ErrorCode44317.md)
-  
-[Error code: 450 4.4.318 Connection was closed abruptly](#ErrorCode44318.md)
-  
-[Error code: 450 4.7.320 Certificate validation failed](#ErrorCode47320.md)
-  
-[Other error codes](#sectionSection6.md)
   
 Typically, you use a connector to route messages from your Office 365 organization to your on-premises messaging environment. You might also use a connector to route messages from Office 365 to a partner organization. When Office 365 can't deliver these messages via the connector, they're queued in Office 365. Office 365 will continue to retry delivery for each message for 48 hours. After 48 hours, the queued message will expire, and the message will be returned to the original sender in a non-delivery report (also known as an NDR or bounce message).
   

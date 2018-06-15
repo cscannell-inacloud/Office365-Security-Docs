@@ -4,26 +4,16 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: "In this articleMail flow rule componentsHow mail flow rules are applied to messagesWhat else should I know?For more information"
+description: "You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your Office 365 organization."
 ---
 
 # Mail flow rules (transport rules) in Exchange Online Protection
 
- **In this article**
-  
-[Mail flow rule components](#Components.md)
-  
-[How mail flow rules are applied to messages](#HowRulesAreApplied.md)
-  
-[What else should I know?](#sectionSection2.md)
-  
-[For more information](#sectionSection3.md)
-  
 You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your Office 365 organization. Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook on the web. The main difference is mail flow rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
   
 This article explains the [components](#components.md) of mail flow rules, and [how they work](#HowApplied.md).

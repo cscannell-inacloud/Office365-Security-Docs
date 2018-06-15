@@ -6,24 +6,14 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
-description: "In this articleHow EOP worksEOP plans and featuresSetting up EOPFor more information"
+description: "Microsoft Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware, and includes features to safeguard your organization from messaging-policy violations."
 ---
 
 # Exchange Online Protection overview
 
- **In this article**
-  
-[How EOP works](#sectionSection0.md)
-  
-[EOP plans and features](#sectionSection1.md)
-  
-[Setting up EOP](#sectionSection2.md)
-  
-[For more information](#sectionSection3.md)
-  
 Microsoft Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware, and includes features to safeguard your organization from messaging-policy violations. EOP can simplify the management of your messaging environment and alleviate many of the burdens that come with maintaining on-premises hardware and software.
   
 The following are the primary ways you can use EOP for messaging protection:

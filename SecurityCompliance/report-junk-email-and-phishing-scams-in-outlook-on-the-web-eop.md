@@ -6,24 +6,14 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
-description: "In this articleSubmit junk messages in Outlook on the webSubmit phishing scam messages in Outlook on the webSubmitnot junkmessages in Outlook on the webFor more information"
+description: "Microsoft Outlook on the web users can report junk (spam) and phishing scams by using built-in email reporting options. You can also let Microsoft know if an email was incorrectly identified as junk (spam)."
 ---
 
 # Report junk email and phishing scams in Outlook on the web 
 
- **In this article**
-  
-[Submit junk messages in Outlook on the web](#BKMK_Submittingfalsenegativemessagesinowa.md)
-  
-[Submit phishing scam messages in Outlook on the web](#sectionSection1.md)
-  
-[Submit "not junk" messages in Outlook on the web](#BKMK_Submittingfalsepositivemessagesinowa.md)
-  
-[For more information](#sectionSection3.md)
-  
 It can be frustrating when users in your organization receive junk email or miss an important email because it was misidentified as spam. We're constantly fine-tuning the Exchange Online Protection (EOP) spam filters to be more accurate, and you and your end users can help with this process; Microsoft Outlook on the web users can report junk (spam) and phishing scams by using built-in email reporting options. You can also let Microsoft know if an email was incorrectly identified as junk (spam).
   
 ## Submit junk messages in Outlook on the web

@@ -6,25 +6,15 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 
-description: "In this articleSelf-support optionsAssisted support from MicrosoftSupport telephone numbersFor more information about EOP documentation"
+description: "Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support."
 ---
 
 # Help and support for EOP
 
- **In this article**
-  
-[Self-support options](#sectionSection0.md)
-  
-[Assisted support from Microsoft](#sectionSection1.md)
-  
-[Support telephone numbers](#sectionSection2.md)
-  
-[For more information about EOP documentation](#sectionSection3.md)
-  
 The technical support resources listed here will help you find answers if you are having difficulty with Microsoft Exchange Online Protection (EOP). Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support. 
   
 ## Self-support options

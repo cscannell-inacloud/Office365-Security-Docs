@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 description: "In this articleTroubleshooting for UsersTroubleshooting for AdministratorsSupport InformationFor more information"
@@ -14,16 +14,6 @@ description: "In this articleTroubleshooting for UsersTroubleshooting for Admini
 
 # Troubleshooting and support information
 
- **In this article**
-  
-[Troubleshooting for Users](#sectionSection0.md)
-  
-[Troubleshooting for Administrators](#sectionSection1.md)
-  
-[Support Information](#sectionSection2.md)
-  
-[For more information](#sectionSection3.md)
-  
 This topic describes troubleshooting steps for end users and administrators, and provides information about how to contact technical support for assistance.
   
 ## Troubleshooting for Users

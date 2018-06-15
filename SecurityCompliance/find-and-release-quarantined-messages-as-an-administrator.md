@@ -6,25 +6,13 @@ manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
-description: "In this articleWhat do you need to know before you begin?Use advanced search to filter and locate quarantined messagesView details about a specific quarantined messageRelease messages from quarantineFor more information"
+description: "This topic describes how Exchange Online and Exchange Online Protection (EOP) admins can find, release, and report on quarantined messages in the Exchange admin center (EAC)."
 ---
 
 # Find and release quarantined messages as an administrator
-
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Use advanced search to filter and locate quarantined messages](#BKMK_UseAdvancedSearchtoFilterMessages.md)
-  
-[View details about a specific quarantined message](#BKMK_ViewDetailsAboutaSpecificQuarantinedMessage.md)
-  
-[Release messages from quarantine](#sectionSection3.md)
-  
-[For more information](#sectionSection4.md)
   
 [![Text in image about content moving from TechNet to support.office.com](media/ab7c897a-4798-4f31-8c84-f17a8409b133.png)](https://go.microsoft.com/fwlink/p/?LinkID=624152)
   

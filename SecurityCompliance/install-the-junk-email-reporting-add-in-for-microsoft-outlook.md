@@ -6,23 +6,13 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 description: "In this articleSupported LanguagesInstall the Junk Email Reporting Add-inUninstall the Junk Email Reporting Add-inFor more information"
 ---
 
 # Install the Junk Email Reporting Add-in for Microsoft Outlook
-
- **In this article**
-  
-[Supported Languages](#sectionSection0.md)
-  
-[Install the Junk Email Reporting Add-in](#sectionSection1.md)
-  
-[Uninstall the Junk Email Reporting Add-in](#sectionSection2.md)
-  
-[For more information](#sectionSection3.md)
   
 This topic describes how to install (and uninstall) the Microsoft Junk Email Reporting Add-in for Outlook on client computers in your organization. The current version of the add-in (January 2016) includes support for Outlook 2016, Outlook 2013, Outlook 2010, and Outlook 2007. 
   

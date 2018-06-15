@@ -4,34 +4,16 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-description: "In this articleStep 1: Collect data from the source organizationStep 2: Add domains to the target organizationStep 3: Force senders to queue mail Step 4: Remove users, groups, and domains from the source organizationStep 5: Verify domains for the target organizationStep 6: Add mail users and groups to the target organizationStep 7: Add protection settings to the target organizationStep 8: Revert your DNS settings to stop mail queuing"
+description: "Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization."
 ---
 
 # Move domains and settings from one EOP organization to another EOP organization
 
- **In this article**
-  
-[Step 1: Collect data from the source organization](#BKMK_Collectdatafromthesourceorganization.md)
-  
-[Step 2: Add domains to the target organization](#BKMK_Adddomainstothetargetorg.md)
-  
-[Step 3: Force senders to queue mail ](#BKMK_Forcesenderstoqueuemail.md)
-  
-[Step 4: Remove users, groups, and domains from the source organization](#BKMK_removeusersgroupsanddomains.md)
-  
-[Step 5: Verify domains for the target organization](#BKMK_Verifydomains.md)
-  
-[Step 6: Add mail users and groups to the target organization](#BKMK_Addmailusers.md)
-  
-[Step 7: Add protection settings to the target organization](#BKMK_Addprotectoinsettings.md)
-  
-[Step 8: Revert your DNS settings to stop mail queuing](#BKMK_Revertyourdnssettings.md)
-  
 Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization. Moving from one EOP organization to a second EOP organization can be challenging, but with a few basic remote Windows PowerShell scripts and a small amount of preparation, this can be achieved with a relatively small maintenance window. 
   
 > [!NOTE]

@@ -6,31 +6,13 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: "In this articleUse a test domainSynchronize recipientsSPF record customization to help prevent spoofingSet anti-spam optionsSet anti-malware optionsCreate mail flow rulesReporting and troubleshooting For more information"
+description: "Follow these best-practice recommendations for Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors."
 ---
 
 # Best practices for configuring EOP
-
- **In this article**
-  
-[Use a test domain](#sectionSection0.md)
-  
-[Synchronize recipients](#sectionSection1.md)
-  
-[SPF record customization to help prevent spoofing](#sectionSection2.md)
-  
-[Set anti-spam options](#sectionSection3.md)
-  
-[Set anti-malware options](#sectionSection4.md)
-  
-[Create mail flow rules](#sectionSection5.md)
-  
-[Reporting and troubleshooting ](#sectionSection6.md)
-  
-[For more information](#sectionSection7.md)
   
 Follow these best-practice recommendations for Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors. We recommend using the default configuration settings as a general rule. This topic assumes that you've already completed the setup process. If you haven't completed EOP setup, see [Set up your EOP service](set-up-your-eop-service.md).
   

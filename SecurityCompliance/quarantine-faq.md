@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: ""

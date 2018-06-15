@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/22/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: "As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam. One way to do this is to create safe sender and blocked sender lists for the people in your organization."

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 2/19/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 description: "Summary: This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) with your custom domain in Office 365. Using SPF helps to validate outbound email sent from your custom domain."
@@ -15,14 +15,6 @@ description: "Summary: This article describes how to update a Domain Name Servic
 # Set up SPF in Office 365 to help prevent spoofing
 
  **Summary:** This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) with your custom domain in Office 365. Using SPF helps to validate outbound email sent from your custom domain. 
-  
- **In this article**
-  
-[Updating your SPF TXT record for Office 365](#sectionSection0.md)
-  
-[More information about SPF](#sectionSection1.md)
-  
-[Next steps: After you set up SPF for Office 365](#sectionSection2.md)
   
 In order to use a custom domain, Office 365 requires that you add a Sender Policy Framework (SPF) TXT record to your DNS record to help prevent spoofing. SPF identifies which mail servers are allowed to send mail on your behalf. Basically, SPF, along with DKIM, DMARC, and other technologies supported by Office 365 help prevent spoofing and phishing. SPF is added as a TXT record that is used by DNS to identify which mail servers can send mail on behalf of your custom domain. Recipient mail systems refer to the SPF TXT record to determine whether a message from your custom domain comes from an authorized messaging server.
   

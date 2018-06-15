@@ -6,30 +6,14 @@ manager: laurawi
 ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 
-description: "In this articleWhat you must know before you beginUse the Exchange Admin Center (EAC) to configure spam filter policiesUse remote PowerShell to configure spam filter policiesHow do you know this worked? Fine tuning your spam filter policy to prevent false positives and false negativesNew to Office 365?For more information"
+description: "Basic spam filter settings include selecting the action to take on messages that are identified as spam, and choosing whether to filter messages that are written in specific languages or sent from specific countries or regions."
 ---
 
 # Configure your spam filter policies
-
- **In this article**
-  
-[What you must know before you begin](#sectionSection0.md)
-  
-[Use the Exchange Admin Center (EAC) to configure spam filter policies](#sectionSection1.md)
-  
-[Use remote PowerShell to configure spam filter policies](#sectionSection2.md)
-  
-[How do you know this worked? ](#sectionSection3.md)
-  
-[Fine tuning your spam filter policy to prevent false positives and false negatives](#sectionSection4.md)
-  
-[New to Office 365?](#sectionSection5.md)
-  
-[For more information](#sectionSection6.md)
   
 Basic spam filter settings include selecting the action to take on messages that are identified as spam, and choosing whether to filter messages that are written in specific languages or sent from specific countries or regions. Spam filter policy settings are applied to inbound messages only. You can edit the default spam filter policy to configure your company-wide spam filter settings and create custom spam filter policies, and then apply them to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy. You can change the order in which your custom policies run by changing the priority of each custom policy.
   

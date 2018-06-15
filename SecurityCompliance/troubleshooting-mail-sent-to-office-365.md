@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: troubleshooting
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: "This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to Office 365 customers."

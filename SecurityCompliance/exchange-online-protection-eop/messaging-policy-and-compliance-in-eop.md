@@ -4,9 +4,9 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 3/9/2015
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: "Microsoft Exchange Online Protection provides messaging policy and compliance features for that can help you manage your email data."

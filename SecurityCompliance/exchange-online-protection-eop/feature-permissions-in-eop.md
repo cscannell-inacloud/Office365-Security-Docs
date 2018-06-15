@@ -4,9 +4,9 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/30/2018
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: "The permissions required to perform tasks to manage Microsoft Exchange Online Protection (EOP) vary depending on the feature you are managing."

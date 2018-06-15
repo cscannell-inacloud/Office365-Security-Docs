@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 1/7/2015
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: "Customers sometimes askwhat's the difference between junk email and bulk email messages?The purpose of this topic is to explain the difference and to provide information about the different options that are available for both in Exchange Online and Exchange Online Protection (EOP)."

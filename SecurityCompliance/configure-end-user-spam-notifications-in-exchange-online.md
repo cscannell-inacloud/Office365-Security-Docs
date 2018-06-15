@@ -6,22 +6,14 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
-description: "In this articleWhat do you need to know before you begin?Use the EAC to configure end-user spam notificationsFor more information"
+description: "You can configure end-user spam notifications for the default company-wide content filter policy or for custom content filter policies that are applied to domains."
 ---
 
 # Configure end-user spam notifications in Exchange Online
 
- **In this article**
-  
-[What do you need to know before you begin?](#sectionSection0.md)
-  
-[Use the EAC to configure end-user spam notifications](#sectionSection1.md)
-  
-[For more information](#sectionSection2.md)
-  
 > [!IMPORTANT]
 > This topic is for Exchange Online customers who are protecting cloud-hosted mailboxes. Exchange Online Protection (EOP) standalone customers who are protecting on-premises mailboxes should read the following topic instead: [Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md). 
   
