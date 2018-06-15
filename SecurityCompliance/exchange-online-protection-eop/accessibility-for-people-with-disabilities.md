@@ -2,7 +2,7 @@
 title: "Accessibility for people with disabilities"
 ms.author: scotv
 author: scotvidican
-manager: scotv
+manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article

@@ -44,7 +44,7 @@ Upon logging in, the Office 365 portal provides information about the status of 
   
 [Microsoft TechNet TechCenter](https://go.microsoft.com/fwlink/?LinkId=299668)
   
-TechNet Library overview for [Exchange Online Protection [EOP]](exchange-online-protection-eop.md)
+TechNet Library overview for [Exchange Online Protection ](exchange-online-protection-eop.md)
   
 ## Assisted support from Microsoft
 <a name="sectionSection1"> </a>

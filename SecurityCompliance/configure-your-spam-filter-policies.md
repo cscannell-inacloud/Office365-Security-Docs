@@ -2,7 +2,7 @@
 title: "Configure your spam filter policies"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article

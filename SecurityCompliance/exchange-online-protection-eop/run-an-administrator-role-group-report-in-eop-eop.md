@@ -1,8 +1,8 @@
 ---
-title: "Run an administrator role group report in EOP [EOP]"
+title: "Run an administrator role group report in EOP "
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
@@ -12,7 +12,7 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: "In this articleWhat do you need to know before you begin?Use the EAC to run an administrator role group reportHow do you know this worked?Monitor changes to role group membership"
 ---
 
-# Run an administrator role group report in EOP [EOP]
+# Run an administrator role group report in EOP 
 
  **In this article**
   

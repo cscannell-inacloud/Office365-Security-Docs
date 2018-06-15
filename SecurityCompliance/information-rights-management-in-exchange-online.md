@@ -2,7 +2,7 @@
 title: "Information Rights Management in Exchange Online"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article

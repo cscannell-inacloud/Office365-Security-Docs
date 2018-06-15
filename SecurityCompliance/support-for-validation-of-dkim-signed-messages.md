@@ -2,7 +2,7 @@
 title: "Support for validation of DKIM signed messages"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article

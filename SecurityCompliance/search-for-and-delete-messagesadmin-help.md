@@ -2,7 +2,7 @@
 title: "Search for and delete messages - Admin help"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article

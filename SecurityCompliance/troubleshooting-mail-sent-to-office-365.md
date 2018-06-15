@@ -2,7 +2,7 @@
 title: "Troubleshooting mail sent to Office 365"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: troubleshooting

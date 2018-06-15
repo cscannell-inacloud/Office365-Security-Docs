@@ -2,7 +2,7 @@
 title: "Advanced spam filtering (ASF) options"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 6/26/2015
 ms.audience: ITPro
 ms.topic: article

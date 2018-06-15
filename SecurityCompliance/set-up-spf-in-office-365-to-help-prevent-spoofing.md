@@ -2,7 +2,7 @@
 title: "Set up SPF in Office 365 to help prevent spoofing"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 2/19/2018
 ms.audience: ITPro
 ms.topic: article

@@ -1,5 +1,5 @@
 ---
-title: "Exchange admin center in Exchange Online Protection [EOP]"
+title: "Exchange admin center in Exchange Online Protection "
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,7 +13,7 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 description: "In this articleAccessing the EACCommon user interface elements in the EACSupported BrowsersSupported languages in EOP"
 ---
 
-# Exchange admin center in Exchange Online Protection [EOP]
+# Exchange admin center in Exchange Online Protection 
 
  **In this article**
   

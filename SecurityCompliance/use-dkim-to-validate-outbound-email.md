@@ -2,7 +2,7 @@
 title: "Use DKIM to validate outbound email sent from your custom domain in Office 365"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 6/19/2017
 ms.audience: ITPro
 ms.topic: article

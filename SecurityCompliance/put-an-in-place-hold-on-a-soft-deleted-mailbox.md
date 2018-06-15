@@ -2,7 +2,7 @@
 title: "Put an In-Place Hold on a soft-deleted mailbox in Exchange Online"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 1/18/2017
 ms.audience: ITPro
 ms.topic: article

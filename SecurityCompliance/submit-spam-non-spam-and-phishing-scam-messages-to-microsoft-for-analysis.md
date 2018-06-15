@@ -2,7 +2,7 @@
 title: "Submit spam, non-spam, and phishing scam messages to Microsoft for analysis"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article
@@ -43,7 +43,7 @@ You can submit junk email messages in the following ways:
   
 - For Outlook users, the primary way to submit junk messages is by using a plug-in known as the Microsoft Junk Email Reporting Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Junk email reporting add-in for Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md). 
     
-- For Outlook on the web users, the primary way to submit junk email messages is by using its built-in junk email reporting option. For more information, see [Report junk email and phishing scams in Outlook on the web [EOP]](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). 
+- For Outlook on the web users, the primary way to submit junk email messages is by using its built-in junk email reporting option. For more information, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). 
     
 - You can also use email to submit messages to Microsoft that should be classified as junk or phishing scams, as described in the following procedure.
     
@@ -80,7 +80,7 @@ You can submit non-spam messages in the following ways:
     
   - Outlook users can release false positive messages by using the **Not Junk** right-click menu option. However, they must submit the message to Microsoft through email, as shown in the procedure in this article. 
     
-  - OWA users can release false positive messages and submit them to Microsoft for analysis using the **Mark as not junk** action. For more information about how to do this, see [Report junk email and phishing scams in Outlook on the web [EOP]](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+  - OWA users can release false positive messages and submit them to Microsoft for analysis using the **Mark as not junk** action. For more information about how to do this, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
     
 - If you use the **Quarantine message** action instead of the **Move message to Junk Email folder** action when you configure your content filters: 
     

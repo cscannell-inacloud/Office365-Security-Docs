@@ -2,7 +2,7 @@
 title: "Videos for getting started with EOP"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 3/13/2015
 ms.audience: Developer
 ms.topic: article

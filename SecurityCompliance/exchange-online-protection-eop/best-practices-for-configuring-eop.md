@@ -66,7 +66,7 @@ You can submit false negatives (spam) and false positives (non-spam) to Microsof
 ## Set anti-malware options
 <a name="sectionSection4"> </a>
 
-Review and fine tune your malware filter settings in the Exchange admin center(EAC). Learn more at [Configure anti-malware policies](../configure-anti-malware-policies.md). We also recommend reading about other frequently asked questions and answers pertaining to anti-malware protection in our [Anti-malware protection FAQ [EOP]](../anti-malware-protection-faq-eop.md).
+Review and fine tune your malware filter settings in the Exchange admin center(EAC). Learn more at [Configure anti-malware policies](../configure-anti-malware-policies.md). We also recommend reading about other frequently asked questions and answers pertaining to anti-malware protection in our [Anti-malware protection FAQ ](../anti-malware-protection-faq-eop.md).
   
 If you're concerned about executable files containing malware, you can create an Exchange mail flow rule that blocks any email attachment that has executable content. Follow the steps in [How to reduce malware threats through file attachment blocking in Exchange Online Protection](https://support.microsoft.com/kb/2959596) in order to block the file types listed under "Supported executable file types for transport rule inspection" in [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx).
   

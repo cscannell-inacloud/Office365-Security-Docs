@@ -2,7 +2,7 @@
 title: "Manage admin role group permissions in EOP"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 12/9/2016
 ms.audience: Developer
 ms.topic: article

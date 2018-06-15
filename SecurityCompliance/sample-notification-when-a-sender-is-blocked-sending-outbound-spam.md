@@ -2,7 +2,7 @@
 title: "Sample notification when a sender is blocked sending outbound spam"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 11/2/2017
 ms.audience: ITPro
 ms.topic: article

@@ -2,7 +2,7 @@
 title: "Services for non-customers sending mail to Office 365"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: overview
@@ -63,6 +63,6 @@ This is a self-service portal you can use to remove yourself from the Office 365
 ## Abuse and spam reporting for junk email originating from Exchange Online
 <a name="ReportOurJunk"> </a>
 
-Sometimes Office 365 is used by third parties to send junk email, in violation of our terms of use and policy. If you receive any junk email from Office 365, you can report these messages to [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Please attach the offending messages, including the full message header, in RFC 5322 or ARF format. Outlook on the web users can use built-in tools to report junk email. For information, see [Report junk email and phishing scams in Outlook on the web [EOP]](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+Sometimes Office 365 is used by third parties to send junk email, in violation of our terms of use and policy. If you receive any junk email from Office 365, you can report these messages to [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Please attach the offending messages, including the full message header, in RFC 5322 or ARF format. Outlook on the web users can use built-in tools to report junk email. For information, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
   
 

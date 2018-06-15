@@ -2,7 +2,7 @@
 title: "Create organization-wide safe sender or blocked sender lists in Office 365"
 ms.author: stephow
 author: stephow
-manager: scotv
+manager: laurawi
 ms.date: 8/8/2015
 ms.audience: ITPro
 ms.topic: article

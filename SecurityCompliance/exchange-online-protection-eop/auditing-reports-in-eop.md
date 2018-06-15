@@ -2,7 +2,7 @@
 title: "Auditing reports in EOP"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 11/17/2014
 ms.audience: Developer
 ms.topic: article
@@ -22,7 +22,7 @@ Looking for the Exchange Online or Exchange Server 2013 version of this topic? S
 
 There are two auditing reports available in EOP:
   
-1. **Administrator role group report** The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group. You can use this report to monitor changes to the administrative permissions assigned to users in your organization. For more information, see [Run an administrator role group report in EOP [EOP]](run-an-administrator-role-group-report-in-eop-eop.md).
+1. **Administrator role group report** The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group. You can use this report to monitor changes to the administrative permissions assigned to users in your organization. For more information, see [Run an administrator role group report in EOP ](run-an-administrator-role-group-report-in-eop-eop.md).
     
 2. **Administrator audit log** The administrator audit log records any action, based on an Exchange Management Shell cmdlet, performed by administrators or users who have been assigned administrative privileges. For more information, see [View the Administrator Audit Log](http://technet.microsoft.com/library/5c62072a-556d-4fea-9973-d668c6b9fd57.aspx).
     

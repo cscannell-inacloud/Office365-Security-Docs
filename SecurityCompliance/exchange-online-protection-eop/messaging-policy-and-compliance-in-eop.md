@@ -2,7 +2,7 @@
 title: "Messaging policy and compliance in EOP"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 3/9/2015
 ms.audience: Developer
 ms.topic: article

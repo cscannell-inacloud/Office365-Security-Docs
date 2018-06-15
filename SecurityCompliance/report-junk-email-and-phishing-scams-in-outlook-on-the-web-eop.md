@@ -1,8 +1,8 @@
 ---
-title: "Report junk email and phishing scams in Outlook on the web [EOP]"
+title: "Report junk email and phishing scams in Outlook on the web "
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
@@ -12,7 +12,7 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: "In this articleSubmit junk messages in Outlook on the webSubmit phishing scam messages in Outlook on the webSubmitnot junkmessages in Outlook on the webFor more information"
 ---
 
-# Report junk email and phishing scams in Outlook on the web [EOP]
+# Report junk email and phishing scams in Outlook on the web 
 
  **In this article**
   

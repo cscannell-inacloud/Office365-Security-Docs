@@ -2,7 +2,7 @@
 title: "Filter mail protection reports to a specific domain"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 1/1/1900
 ms.audience: Developer
 ms.topic: article

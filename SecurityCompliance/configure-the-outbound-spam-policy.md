@@ -2,7 +2,7 @@
 title: "Configure the outbound spam policy"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 11/10/2016
 ms.audience: ITPro
 ms.topic: article

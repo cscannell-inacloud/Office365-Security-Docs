@@ -2,7 +2,7 @@
 title: "Configure the anti-spam policies"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 6/9/2015
 ms.audience: ITPro
 ms.topic: article

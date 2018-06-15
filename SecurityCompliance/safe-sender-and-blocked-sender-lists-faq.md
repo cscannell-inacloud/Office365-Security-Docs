@@ -2,7 +2,7 @@
 title: "Safe sender and blocked sender lists in Exchange Online"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 5/22/2018
 ms.audience: ITPro
 ms.topic: reference

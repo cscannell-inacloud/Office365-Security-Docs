@@ -2,7 +2,7 @@
 title: "Fighting junk email sent to Office 365"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference

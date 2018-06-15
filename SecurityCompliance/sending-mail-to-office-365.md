@@ -2,7 +2,7 @@
 title: "Sending mail to Office 365"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 4/9/2016
 ms.audience: ITPro
 ms.topic: hub-page

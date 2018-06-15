@@ -2,7 +2,7 @@
 title: "High-risk delivery pool for outbound messages"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 8/24/2016
 ms.audience: ITPro
 ms.topic: article

@@ -2,7 +2,7 @@
 title: "Spam confidence levels"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
 ms.topic: article

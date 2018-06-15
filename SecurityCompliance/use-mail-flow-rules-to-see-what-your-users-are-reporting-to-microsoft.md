@@ -2,7 +2,7 @@
 title: "Use mail flow rules to see what your users are reporting to Microsoft"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 8/23/2017
 ms.audience: ITPro
 ms.topic: article

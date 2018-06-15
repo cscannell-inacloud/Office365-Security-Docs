@@ -2,7 +2,7 @@
 title: "Support for anonymous inbound email messages over IPv6"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 10/4/2017
 ms.audience: ITPro
 ms.topic: article

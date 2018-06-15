@@ -2,7 +2,7 @@
 title: "Place a mailbox on Litigation Hold"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 10/18/2016
 ms.audience: End User
 ms.topic: article

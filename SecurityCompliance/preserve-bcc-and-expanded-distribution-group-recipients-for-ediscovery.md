@@ -2,7 +2,7 @@
 title: "Preserve Bcc and expanded distribution group recipients for eDiscovery"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 6/19/2017
 ms.audience: ITPro
 ms.topic: article

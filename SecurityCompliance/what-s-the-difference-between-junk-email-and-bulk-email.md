@@ -2,7 +2,7 @@
 title: "What's the difference between junk email and bulk email?"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 1/7/2015
 ms.audience: ITPro
 ms.topic: article

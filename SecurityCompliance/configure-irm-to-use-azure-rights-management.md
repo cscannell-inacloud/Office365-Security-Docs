@@ -2,7 +2,7 @@
 title: "Configure IRM to use Azure Rights Management"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/13/2017
 ms.audience: ITPro
 ms.topic: article

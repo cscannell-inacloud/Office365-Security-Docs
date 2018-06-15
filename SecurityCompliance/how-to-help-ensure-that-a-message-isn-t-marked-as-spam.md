@@ -2,7 +2,7 @@
 title: "How to help ensure that a message isn't marked as spam"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article

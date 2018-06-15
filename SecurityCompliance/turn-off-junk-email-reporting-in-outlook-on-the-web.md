@@ -2,7 +2,7 @@
 title: "Turn off junk email reporting in Outlook on the web"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 10/9/2015
 ms.audience: ITPro
 ms.topic: article
@@ -22,7 +22,7 @@ description: "In this articleWhat do you need to know before you begin?Turn off 
   
 [How do you know this worked?](#sectionSection2.md)
   
-You can send junk, phishing, and not junk messages to Microsoft for analysis using the Outlook on the web junk email reporting options, as described in [Report junk email and phishing scams in Outlook on the web [EOP]](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). If you don't want to use these options,admins can turn them off via the [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet. 
+You can send junk, phishing, and not junk messages to Microsoft for analysis using the Outlook on the web junk email reporting options, as described in [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). If you don't want to use these options,admins can turn them off via the [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet. 
   
 ## What do you need to know before you begin?
 <a name="sectionSection0"> </a>

@@ -2,7 +2,7 @@
 title: "Manage safe sender lists for bulk mailers"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article

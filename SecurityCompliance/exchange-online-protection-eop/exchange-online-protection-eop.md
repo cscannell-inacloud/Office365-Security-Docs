@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online Protection [EOP]"
+title: "Exchange Online Protection "
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,7 +12,7 @@ ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: "In this articleEOP Help for administratorsEOP Help for end usersFor more informationTell us what you think"
 ---
 
-# Exchange Online Protection [EOP]
+# Exchange Online Protection 
 
  **In this article**
   
@@ -61,7 +61,7 @@ The Help content for EOP administrators consists of the following top-level cate
     
 - [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Describes the reports and troubleshooting tools that are available. 
     
-- [Exchange admin center in Exchange Online Protection [EOP]](../exchange-admin-center-in-exchange-online-protection-eop.md) Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service. 
+- [Exchange admin center in Exchange Online Protection ](../exchange-admin-center-in-exchange-online-protection-eop.md) Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service. 
     
 - [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Provides information about remote PowerShell, which lets you manage your EOP service from the command line. 
     

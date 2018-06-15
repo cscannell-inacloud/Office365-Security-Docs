@@ -2,7 +2,7 @@
 title: "Quarantine"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article

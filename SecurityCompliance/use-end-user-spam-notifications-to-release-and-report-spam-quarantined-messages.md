@@ -2,7 +2,7 @@
 title: "Use end-user spam notifications to release and report spam-quarantined messages"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article

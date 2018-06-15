@@ -2,7 +2,7 @@
 title: "Use transport rules to configure bulk email filtering"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
