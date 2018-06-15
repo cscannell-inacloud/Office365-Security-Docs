@@ -23,6 +23,6 @@ Backscatter messages are the automated bounce messages that are sent by mail ser
 
 [The Backscatterer.org IP list](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
   
-See the "NDR backscatter" entry in [Advanced spam filtering (ASF) options](advanced-spam-filtering-asf-options.md)
+See the "NDR backscatter" entry in [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md)
   
 

@@ -1,11 +1,11 @@
 
   
 
-# [Advanced spam filtering (ASF) options](advanced-spam-filtering-asf-options.md)
+# [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md)
 # [Anti-malware protection](anti-malware-protection.md)
 # [Anti-malware protection FAQ ](anti-malware-protection-faq-eop.md)
 # [Anti-spam message headers](anti-spam-message-headers.md)
-# [Advanced spam filtering (ASF) options](advanced-spam-filtering-asf-options.md)
+# [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md)
 # [Anti-spam protection FAQ](anti-spam-protection-faq.md)
 # [Backscatter messages and EOP](backscatter-messages-and-eop.md)
 # [Bulk Complaint Level values](bulk-complaint-level-values.md)

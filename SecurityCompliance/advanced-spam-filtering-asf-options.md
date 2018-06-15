@@ -1,5 +1,5 @@
 ---
-title: "Advanced spam filtering (ASF) options"
+title: "Advanced spam filtering  options"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -10,12 +10,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 
-description: "Advanced spam filtering (ASF) options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages."
+description: "Advanced spam filtering  options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages."
 ---
 
-# Advanced spam filtering (ASF) options
+# Advanced spam filtering  options
 
-Advanced spam filtering (ASF) options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages.
+Advanced spam filtering  options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages.
   
 Enabling ASF options is an aggressive approach to spam filtering, and any messages that are filtered by these options cannot be reported as false positives. These messages can be identified through periodic end-user spam notifications and salvaged from the spam quarantine. They can also be identified via the X-header text that's specific to each ASF option and which appear in the Internet header of messages where an ASF option has been matched. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
   

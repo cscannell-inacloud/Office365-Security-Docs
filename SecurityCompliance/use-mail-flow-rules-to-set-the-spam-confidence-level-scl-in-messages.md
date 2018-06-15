@@ -28,17 +28,17 @@ You can create a transport rule that sets the spam confidence level (SCL) of an 
 
 1. In the Exchange admin center (EAC), choose **Mail flow** \> **Rules**.
     
-2. Choose **New**![Add Icon](media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
+2. Choose **New**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     
 4. Choose **More options**, and then under **Apply this rule if**, specify a condition that will trigger the action you'll be setting for this rule (which is to set the SCL value).
     
     For example, you can set **The sender** \> **is internal/external**, and then in the **select sender location** dialog box, select **Inside the organization**, and choose **ok**.
-    ![Select sender location](media/EOP_ETR_SetSCL_1.jpg)
+    ![Select sender location](media/EOP-ETR-SetSCL-1.jpg)
   
 5. Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.
-    ![Set the spam confidence level (SCL)](media/EOP_ETR_SetSCL_2.jpg)
+    ![Set the spam confidence level (SCL)](media/EOP-ETR-SetSCL_2.jpg)
   
 6. In the **specify SCL** dialog box, select one of the following values, and choose **ok**:
     
