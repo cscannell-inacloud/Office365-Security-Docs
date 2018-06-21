@@ -1,0 +1,45 @@
+---
+title: "Office 365 BitLocker and Distributed Key Manager for Encryption"
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.date: 5/31/2018
+audience: ITPro
+ms.topic: article
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
+description: "Summary: Information about BitLocker and Distributed Key Manager (DKM) for encryption in the cloud."
+---
+
+# BitLocker and Distributed Key Manager (DKM) for Encryption
+## BitLocker
+Office 365 servers use BitLocker to encrypt the disk drives containing customer data at rest at the volume-level. BitLocker encryption is a data protection feature that is built into Windows. BitLocker is one of the technologies used to safeguard against threats in case there are lapses in other processes or controls (e.g., access control or recycling of hardware) that could lead to someone gaining physical access to disks containing customer data. In this case, BitLocker eliminates the potential for data theft or exposure because of lost, stolen, or inappropriately decommissioned computers and disks.
+
+BitLocker is deployed with Advanced Encryption Standard (AES) 256-bit encryption on disks containing customer data in Exchange Online, SharePoint Online, and Skype for Business. Disk sectors are encrypted with a Full Volume Encryption Key (FVEK), which is encrypted with the Volume Master Key (VMK), which in turn is bound to the Trusted Platform Module (TPM) in the server. The VMK directly protects the FVEK and therefore, protecting the VMK becomes critical. The following figure illustrates an example of the BitLocker key protection chain for a given server (in this case, using an Exchange Online server).
+ 
+*Figure 1 - BitLocker Protection Chain for Exchange Online servers*
+
+The following table describes the BitLocker key protection chain for a given server (in this case, an Exchange Online server).
+
+| KEY PROTECTOR | GRANULARITY | HOW GENERATED? | WHERE IS IT STORED? | PROTECTION |
+|--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
+| AES 256-bit External Key | Per Server | BitLocker APIs | TPM or Secret Safe | Lockbox / Access Control |
+|  |  |  | Mailbox Server Registry | TPM encrypted |
+| 48-digit Numerical Password | Per Disk | BitLocker APIs | Active Directory | Lockbox / Access Control |
+| X509 Certificate as Data Recovery Agent (DRA) also called Public Key Protector | Environment (e.g., Exchange Online multitenant) | Microsoft CA | Build System | No one user has the full password to the private key. The password is under physical protection. |
+
+*Table 1 – BitLocker Protection Chain for Exchange Online Servers*
+
+BitLocker key management involves the management of recovery keys that are used to unlock/recover encrypted disks in an Office 365 datacenter. Office 365 stores the master keys in a secured share, only accessible by individuals who have been screened and approved. The credentials for the keys are stored in a secured repository for access control data (what we call a "secret store"), which requires a high level of elevation and management approvals to access using a just-in-time access elevation tool.
+
+BitLocker supports keys which fall into two management categories:
+- BitLocker-managed keys, which are generally short-lived and tied to the lifetime of an operating system instance installed on a server or to a given disk. These keys are deleted and reset during server reinstallation or disk formatting.
+- BitLocker recovery keys, which are managed outside of BitLocker but used for disk decryption. BitLocker uses recovery keys for the scenario in which an operating system is reinstalled, and encrypted data disks already exist. Recovery keys are also used by Managed Availability monitoring probes in Exchange Online where a responder may need to unlock a disk.
+
+BitLocker-protected volumes are encrypted with a full volume encryption key, which in turn is encrypted with a volume master key. BitLocker uses FIPS-compliant algorithms to ensure that encryption keys are never stored or sent over the wire in the clear. The Office 365 implementation of customer data-at-rest-protection does not deviate from the default BitLocker implementation.
+
+## Distributed Key Manager
+Distributed Key Manager (DKM) is a client-side functionality that uses a set of secret keys to encrypt and decrypt information. Only members of a specific security group in Active Directory Domain Services can access those keys to decrypt the data that is encrypted by DKM. In Exchange Online, only certain service accounts under which the Exchange processes run are part of that security group. As part of standard operating procedure in the datacenter, no human is given credentials that are part of this security group and therefore no human has access to the keys that can decrypt these secrets.
+
+Within Office 365, Microsoft uses DKM for the Rights Management service (RMS) root keys. These are customer keys that are either imported from Azure RMS or from a customer’s on-premises Active Directory RMS deployment that is used for encrypting and decrypting emails with RMS or Office 365 Message Encryption (OME).
