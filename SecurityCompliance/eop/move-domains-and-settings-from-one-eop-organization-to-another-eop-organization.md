@@ -25,25 +25,7 @@ In the following example, Contoso, Ltd. has merged with Contoso Suites. The foll
 ![Move EOP domains and settings](../media/EOP-Move-domains-and-settings.jpg)
   
 The challenge in moving domains from one organization to another is that a verified domain can't exist in two organizations at the same time. The following steps help you work through this.
-  
-Do the following to move domains, mail users and groups, and settings from the source EOP organization to the target EOP organization:
-  
-1. [Step 1: Collect data from the source organization](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Collectdatafromthesourceorganization)
-    
-2. [Step 2: Add domains to the target organization](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Adddomainstothetargetorg)
-    
-3. [Step 3: Force senders to queue mail ](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Forcesenderstoqueuemail)
-    
-4. [Step 4: Remove users, groups, and domains from the source organization](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_removeusersgroupsanddomains)
-    
-5. [Step 5: Verify domains for the target organization](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Verifydomains)
-    
-6. [Step 6: Add mail users and groups to the target organization](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Addmailusers)
-    
-7. [Step 7: Add protection settings to the target organization](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Addprotectoinsettings)
-    
-8. [Step 8: Revert your DNS settings to stop mail queuing](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md#BKMK_Revertyourdnssettings)
-    
+      
 ## Step 1: Collect data from the source organization
 <a name="BKMK_Collectdatafromthesourceorganization"> </a>
 

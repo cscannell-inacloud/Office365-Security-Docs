@@ -109,13 +109,6 @@ After they review this information, the spam team might make changes to the serv
 [Microsoft Exchange Spam team video](https://youtu.be/-TpX_-GMC7o?hd=1)
   
 Spam evaluation is an ongoing process that applies regardless of the originating language or character set. Because a spam message can be vague or even lack text in the subject or message body, the spam team relies on other message characteristics to perform filtering. This means that after the spam team flags a given message as spam and makes the necessary changes to its rule base, that message will be blocked in the future until its characteristics have been modified enough to avoid our filters. New spam rules are deployed continuously. Time frames for rules on individual submissions vary depending on the quantity and quality of submissions. Because new spam rules are set globally for all customers, not all individual spam submissions will result in a new spam rule.
-  
-## New to Office 365?
-<a name="sectionSection3"> </a>
-
-||
-|:-----|
-|![The short icon for LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
    
 ## For more information
 <a name="sectionSection4"> </a>

@@ -1,6 +1,6 @@
 
-# [Exchange Online Protection ](eop/exchange-online-protection-overview.md)
-## [Exchange Online Protection overview](eop/exchange-online-protection-overview.md)
+# [Exchange Online Protection](eop/exchange-online-protection-overview.md)
+## [Overview](eop/exchange-online-protection-overview.md)
 ### [EOP features](eop/eop-features.md)
 ### [Feature permissions in EOP](eop/feature-permissions-in-eop.md)
 ### [Exchange admin center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md)
@@ -33,8 +33,8 @@
 ### [Support for validation of DKIM signed messages](support-for-validation-of-dkim-signed-messages.md)
 ## [Information Rights Management](information-rights-management-in-exchange-online.md)
 ### [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md)
-### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [Configure IRM to use Azure Rights Management](configure-irm-to-use-azure-rights-management.md)
+### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ## [Messaging policy and compliance in EOP](eop/messaging-policy-and-compliance-in-eop.md)
 ### [Auditing reports in EOP](eop/auditing-reports-in-eop.md)
 ### [Run an administrator role group report in EOP](eop/run-an-administrator-role-group-report-in-eop-eop.md)
