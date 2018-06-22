@@ -25,7 +25,6 @@ Microsoft is committed to making its products and services easier for everyone t
 - [Accessibility products and services from Microsoft](accessibility-for-people-with-disabilities.md#BKMK_AccessMS)
     
 ## Accessibility features of Exchange
-<a name="BKMK_Access15"> </a>
 
 The following features help make Microsoft Exchange more accessible for people with disabilities:
   
@@ -36,12 +35,10 @@ The following features help make Microsoft Exchange more accessible for people w
 In addition, some accessibility features and utilities of Windows may benefit Exchange users with disabilities. Also, Windows PowerShell size and color changes provide accessibility options when using the Exchange Management Shell. For more information about Windows PowerShell accessibility options, see [Accessibility in Windows PowerShell 2.0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## Accessibility features of Exchange Help
-<a name="BKMK_AccessHelp"> </a>
 
 Every figure in Help for Microsoft Exchange, including screenshots, diagrams, flow charts, and other figures, has associated alternate text. Users who have difficulty viewing figures can pause the cursor on the figure to read the alternate text. The alternate text describes what is illustrated in the figure.
   
 ## Accessibility products and services from Microsoft
-<a name="BKMK_AccessMS"> </a>
 
 The following sections provide information about the features, products, and services that make Microsoft Windows more accessible for people with disabilities.
   
@@ -81,7 +78,6 @@ If you're deaf or hard-of-hearing, complete access to Microsoft product and cust
 Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used. For more information, see [Microsoft Support](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
 ## For more information
-<a name="sectionSection3"> </a>
 
 For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

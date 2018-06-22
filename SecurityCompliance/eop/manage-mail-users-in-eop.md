@@ -27,7 +27,6 @@ Defining mail users is an important part of managing the Exchange Online Protect
 > You can add users in the Office 365 admin center, however these users can't be used as mail recipients. 
   
 ## Before you begin
-<a name="sectionSection0"> </a>
 
 - Procedures in this topic require specific permissions. See each procedure for its permissions information.
     
@@ -37,7 +36,6 @@ Defining mail users is an important part of managing the Exchange Online Protect
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## Use directory synchronization to manage mail users
-<a name="USERS_dirsync"> </a>
 
 This section provides information about managing email users by using directory synchronization.
   
@@ -69,7 +67,6 @@ Get the necessary permissions and prepare for directory synchronization, as desc
 6. Verify that EOP is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment. 
     
 ## Use the EAC to manage mail users
-<a name="USERS_eac"> </a>
 
 This section provides information about adding and managing email users directly in the EAC.
   
@@ -102,7 +99,6 @@ You need to be assigned permissions before you can perform this procedure or pro
 - In the EAC, go to **Recipients** \> **Contacts**. In the list of users, click the user that you want to view or change, and then select **Edit**![Edit icon](../media/ITPro-EAC-EditIcon.png) to update the user settings as needed. You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. You can also select a user and then choose **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.png) to delete it. 
     
 ## Use remote Windows PowerShell to manage mail users
-<a name="UseremoteWindowsPowerShelltomanagemailusers"> </a>
 
 This section provides information about adding and managing mail users by using remote Windows PowerShell.
   
