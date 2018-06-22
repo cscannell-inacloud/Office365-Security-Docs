@@ -32,10 +32,6 @@ Upon logging in, the Office 365 portal provides information about the status of 
   
 [Office 365 Mail Flow Guided Walkthrough](https://go.microsoft.com/fwlink/?LinkId=323470)
   
-[Microsoft TechNet TechCenter](https://go.microsoft.com/fwlink/?LinkId=299668)
-  
-TechNet Library overview for [Exchange Online Protection ](eop.md)
-  
 ## Assisted support from Microsoft
 <a name="sectionSection1"> </a>
 

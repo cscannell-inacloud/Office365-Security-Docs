@@ -146,9 +146,4 @@ Exchange Online Protection routes mail in the most efficient manner while mainta
 ```
 
 |
-   
-||
-|:-----|
-|![The short icon for LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
-   
-
+ 
