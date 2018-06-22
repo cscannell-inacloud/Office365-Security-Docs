@@ -7,6 +7,7 @@ ms.date: 10/9/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 description: "As an Office 365 admin, you can turn off the ability for people to report email as junk."

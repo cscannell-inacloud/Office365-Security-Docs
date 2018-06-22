@@ -7,6 +7,7 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 description: "Microsoft's email safety roadmap involves an unmatched cross-product approach. Exchange Online Protection (EOP) anti-spam and anti-phishing filtering technology is being applied across Microsoft's email platforms to provide users with the latest anti-spam and anti-phishing tools and innovations throughout the network. The goal for EOP is to offer a comprehensive and usable email service that helps detect and protect users from junk email, fraudulent email threats (phishing), and malware."

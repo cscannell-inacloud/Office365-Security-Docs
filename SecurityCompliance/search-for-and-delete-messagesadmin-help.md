@@ -7,6 +7,7 @@ ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: "Administrators can use the Search-Mailbox cmdlet to search user mailboxes and then delete messages from a mailbox."

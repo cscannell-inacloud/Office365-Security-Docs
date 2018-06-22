@@ -7,6 +7,7 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: "The following series of introductory videos will help you use Exchange Online Protection (EOP) to protect your mailboxes. These videos are applicable for EOP standalone customers who are protecting on-premises mailboxes such as Exchange Server 2013, and for Exchange Online customers whose cloud-hosted mailboxes by default are protected by EOP."
@@ -52,6 +53,6 @@ To filter and route messages based on specific conditions you set, based on comp
 - Configure Exchange Transport Rules in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    For more details, see the [Mail flow rules (transport rules) in Exchange Online Protection](exchange-online-protection-eop/mail-flow-rules-transport-rules-0.md) topic if you use EOP standalone, or see the [Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic if you use Exchange Online. 
+    For more details, see the [Mail flow rules (transport rules) in Exchange Online Protection](eop/mail-flow-rules-transport-rules-0.md) topic if you use EOP standalone, or see the [Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic if you use Exchange Online. 
     
 

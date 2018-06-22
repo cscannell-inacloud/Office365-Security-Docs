@@ -7,6 +7,7 @@ ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 description: "To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users."

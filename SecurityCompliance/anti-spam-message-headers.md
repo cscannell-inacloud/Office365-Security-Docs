@@ -7,6 +7,7 @@ ms.date: 2/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 
@@ -136,9 +137,4 @@ This table describes the fields and possible values for each email authenticatio
 |header.from  <br/> |The domain of the From address in the email message header. This is sometimes called the 5322.From address.  <br/> |
 |compauth  <br/> |Composite authentication result. Used by Office 365 to combine multiple types of authentication such as SPF, DKIM, DMARC, or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation.  <br/> |
 |reason  <br/> | The reason the composite authentication passed or failed. The value for the reason is made up of three digits:  <br/>  000 - The message explicitly failed authentication. For example, the message received a DMARC fail with an action of quarantine or reject.  <br/>  001 - The message implicitly failed authentication, and the sending domain did not publish authentication policies. For example, a DMARC policy of p=none.  <br/>  1xx - The message passed authentication. The second two digits are internal codes used by Office 365.  <br/>  2xx - The message soft-passed authentication. The second two digits are internal codes used by Office 365.  <br/>  3xx - The message was not checked for composite authentication.  <br/>  4xx - The message bypassed composite authentication. The second two digits are internal codes used by Office 365.  <br/> |
-   
-||
-|:-----|
-|![The short icon for LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
-   
-
+  

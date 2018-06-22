@@ -7,6 +7,7 @@ ms.date: 10/27/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: "Typically, you use a connector to route messages from your Office 365 organization to your on-premises messaging environment. You might also use a connector to route messages from Office 365 to a partner organization. When Office 365 can't deliver these messages via the connector, they're queued in Office 365. "

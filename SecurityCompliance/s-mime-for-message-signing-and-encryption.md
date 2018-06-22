@@ -7,6 +7,7 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: "S/MIME allows you to encrypt emails and digitally sign them. When you use S/MIME with an email message, it helps the people who receive that message to be certain that what they see in their inbox is the exact message that started with the sender."

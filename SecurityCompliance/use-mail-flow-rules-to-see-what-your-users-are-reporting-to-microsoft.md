@@ -7,6 +7,7 @@ ms.date: 8/23/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: "You can create an Exchange Transport rule to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes"

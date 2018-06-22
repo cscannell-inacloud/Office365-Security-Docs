@@ -7,6 +7,7 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 description: "In this articleTroubleshooting for UsersTroubleshooting for AdministratorsSupport InformationFor more information"
@@ -80,7 +81,7 @@ As an administrator, you might experience issues with users using the Junk Email
 ## Support Information
 <a name="sectionSection2"> </a>
 
-If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Office 365 admin center. For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](exchange-online-protection-eop/help-and-support-for-eop.md).
+If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Office 365 admin center. For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](eop/help-and-support-for-eop.md).
   
 ## For more information
 <a name="sectionSection3"> </a>

@@ -7,6 +7,7 @@ ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: "This topic shows you how to configure IRM to use an AD RMS server."

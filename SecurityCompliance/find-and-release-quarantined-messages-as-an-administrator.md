@@ -7,6 +7,7 @@ ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: "This topic describes how Exchange Online and Exchange Online Protection (EOP) admins can find, release, and report on quarantined messages in the Exchange admin center (EAC)."

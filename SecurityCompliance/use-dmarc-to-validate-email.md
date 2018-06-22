@@ -8,6 +8,7 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: "Domain-based Message Authentication, Reporting, and Conformance (DMARC) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders and ensure that destination email systems trust messages sent from your domain. "
 ---

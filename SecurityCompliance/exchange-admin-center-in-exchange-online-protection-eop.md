@@ -7,6 +7,7 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 
@@ -23,13 +24,13 @@ Looking for the Exchange Online version of this topic? See [Exchange admin cente
   
  **Contents**
   
-[Accessing the EAC](exchange-admin-center-in-exchange-online-protection-eop.md#BKMK_AccessingTheEac)
+[Accessing the EAC](exchange-admin-center-in-eop.md#BKMK_AccessingTheEac)
   
-[Common user interface elements in the EAC](exchange-admin-center-in-exchange-online-protection-eop.md#BKMK_CommonUserInterfaceElements)
+[Common user interface elements in the EAC](exchange-admin-center-in-eop.md#BKMK_CommonUserInterfaceElements)
   
-[Supported Browsers](exchange-admin-center-in-exchange-online-protection-eop.md#BKMK_SupportedBrowsers)
+[Supported Browsers](exchange-admin-center-in-eop.md#BKMK_SupportedBrowsers)
   
-[Supported languages in EOP](exchange-admin-center-in-exchange-online-protection-eop.md#BKMK_SupportedLanguages)
+[Supported languages in EOP](exchange-admin-center-in-eop.md#BKMK_SupportedLanguages)
   
 ## Accessing the EAC
 <a name="BKMK_AccessingTheEac"> </a>

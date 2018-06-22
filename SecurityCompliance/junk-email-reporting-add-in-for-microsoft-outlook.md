@@ -7,6 +7,7 @@ ms.date: 1/14/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 description: "The Junk Email Reporting Add-in for Microsoft Outlook lets Exchange Online and Exchange Online Protection users easily report junk (spam) email to Microsoft for analysis to help reduce the number and impact of future junk email messages filtered by the service. Compatible with Microsoft Outlook 2013, Outlook 2010, or Outlook 2007 with Windows 7, Windows 8, or Windows 10, the reporting add-in offers the following benefits:"

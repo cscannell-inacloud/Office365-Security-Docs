@@ -7,6 +7,7 @@ ms.date: 11/2/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 description: "When a sender is blocked from the service due to sending outbound spam, the domain admin specified when you Configure the outbound spam policy will receive a notification email similar to the following:"
@@ -53,6 +54,6 @@ Exchange Online Protection.
 \*\*NOTE - Please do not respond to this email as it is sent from an unmonitored address\*\*
   
 > [!TIP]
-> You can also contact support via the options documented at [Help and support for EOP](exchange-online-protection-eop/help-and-support-for-eop.md). 
+> You can also contact support via the options documented at [Help and support for EOP](eop/help-and-support-for-eop.md). 
   
 

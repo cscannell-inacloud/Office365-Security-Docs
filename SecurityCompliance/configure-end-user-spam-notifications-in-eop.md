@@ -7,6 +7,7 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: "You can configure end-user spam notifications for the default company-wide content filter policy or for custom content filter policies that are applied to domains."
@@ -28,7 +29,7 @@ After receiving a notification message, end users can click to move the spam ema
 
 Estimated time to complete: 5 minutes
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam" entry in the [Feature permissions in EOP](exchange-online-protection-eop/feature-permissions-in-eop.md) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam" entry in the [Feature permissions in EOP](eop/feature-permissions-in-eop.md) topic. 
   
 For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
   

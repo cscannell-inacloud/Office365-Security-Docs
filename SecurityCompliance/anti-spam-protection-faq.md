@@ -7,6 +7,7 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 description: "This topic provides frequently asked questions and answers about anti-spam protection. Answers are applicable for Microsoft Exchange Online and Exchange Online Protection (EOP) customers."
@@ -66,7 +67,7 @@ A. Yes, for example you can get a spam detection report in the Office 365 admin 
   
 Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Exchange Online Protection customers: [Reporting and message trace in Exchange Online Protection](exchange-online-protection-eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Exchange Online Protection customers: [Reporting and message trace in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **Q. Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?**
   

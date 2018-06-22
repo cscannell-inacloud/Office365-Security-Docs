@@ -7,6 +7,7 @@ ms.date: 2/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 description: "Summary: This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) with your custom domain in Office 365. Using SPF helps to validate outbound email sent from your custom domain."

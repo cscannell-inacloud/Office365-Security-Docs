@@ -7,6 +7,7 @@ ms.date: 6/19/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: "In-Place Hold, Litigation Hold, and Office 365 retention policies allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements."

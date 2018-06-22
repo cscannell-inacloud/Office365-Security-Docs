@@ -7,6 +7,7 @@ ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: troubleshooting
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: "This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to Office 365 customers."
@@ -107,7 +108,7 @@ You received the NDR because suspicious activity has been detected from the IP a
 ### I can't receive email from senders in Office 365
 <a name="AllowEOPIPs"> </a>
 
- In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](exchange-online-protection-eop/exchange-online-protection-ip-addresses.md). For a record of all IP addresses that have been added, changed, or deprecated in the past year, see [Change notification for EOP IP addresses](exchange-online-protection-eop/change-notification-for-eop-ip-addresses.md).
+ In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](eop/exchange-online-protection-ip-addresses.md). For a record of all IP addresses that have been added, changed, or deprecated in the past year, see [Change notification for EOP IP addresses](eop/change-notification-for-eop-ip-addresses.md).
   
 ## Best practices for bulk emailing to Office 365 users
 <a name="BulkMailer"> </a>

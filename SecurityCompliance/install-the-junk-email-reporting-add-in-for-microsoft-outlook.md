@@ -7,6 +7,7 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 description: "In this articleSupported LanguagesInstall the Junk Email Reporting Add-inUninstall the Junk Email Reporting Add-inFor more information"

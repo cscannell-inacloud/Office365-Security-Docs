@@ -7,6 +7,7 @@ ms.date: 10/2/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 

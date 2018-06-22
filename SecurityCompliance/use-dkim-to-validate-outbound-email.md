@@ -8,6 +8,7 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: TN2DMC
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: "Summary: This article describes how you use DomainKeys Identified Mail (DKIM) with Office 365 to ensure that destination email systems trust messages sent from your custom domain."
 ---
