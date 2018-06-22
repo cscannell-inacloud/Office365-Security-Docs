@@ -10,7 +10,7 @@ ms.service: o365-administration
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
-description: "In this articleTroubleshooting for UsersTroubleshooting for AdministratorsSupport InformationFor more information"
+description: "This topic describes troubleshooting steps for end users and administrators, and provides information about how to contact technical support for assistance."
 ---
 
 # Troubleshooting and support information
@@ -18,7 +18,6 @@ description: "In this articleTroubleshooting for UsersTroubleshooting for Admini
 This topic describes troubleshooting steps for end users and administrators, and provides information about how to contact technical support for assistance.
   
 ## Troubleshooting for Users
-<a name="sectionSection0"> </a>
 
 Occasionally, you may experience trouble with Microsoft Office Outlook after adding the Junk Email Reporting Add-In. Following are problems that you may encounter, along with tips for resolving these issues. 
   
@@ -40,7 +39,6 @@ If the problem persists, contact your IT administrator.
 > You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive messages by using the [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) email address. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
 ## Troubleshooting for Administrators
-<a name="sectionSection1"> </a>
 
 As an administrator, you might experience issues with users using the Junk Email Reporting Add-in for Microsoft Office Outlook. Following are some tips for resolving problems that you might encounter. 
   
@@ -79,14 +77,12 @@ As an administrator, you might experience issues with users using the Junk Email
 2. Restart Microsoft Office Outlook.
     
 ## Support Information
-<a name="sectionSection2"> </a>
 
 If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Office 365 admin center. For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](eop/help-and-support-for-eop.md).
   
 ## For more information
-<a name="sectionSection3"> </a>
 
-[Install the Junk Email Reporting Add-in for Microsoft Outlook](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md)
+[Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [Report junk email messages to Microsoft](report-junk-email-messages-to-microsoft.md)
   
