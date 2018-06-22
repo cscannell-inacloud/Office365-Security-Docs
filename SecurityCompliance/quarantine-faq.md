@@ -15,8 +15,6 @@ description: "This topic provides frequently asked questions and answers about t
 
 # Quarantine FAQ
 
-[![Text in image about content moving from TechNet to support.office.com](media/ab7c897a-4798-4f31-8c84-f17a8409b133.png)](https://go.microsoft.com/fwlink/p/?LinkID=624152)
-  
 This topic provides frequently asked questions and answers about the hosted quarantine. Answers are applicable for Microsoft Exchange Online and Exchange Online Protection customers.
   
  **Q. How do I manage malware-quarantined messages in quarantine?**
