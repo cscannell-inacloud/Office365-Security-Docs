@@ -34,7 +34,6 @@ You need to be assigned permissions before you can perform this procedure or pro
 For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
   
 ## Use the EAC to configure end-user spam notifications
-<a name="sectionSection1"> </a>
 
 1. In the Exchange admin center (EAC), navigate to **Protection** \> **Content filter**.
     

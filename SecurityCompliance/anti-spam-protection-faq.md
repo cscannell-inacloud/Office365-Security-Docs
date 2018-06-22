@@ -181,7 +181,7 @@ A. The guidelines presented below are best practices for sending outbound email 
     
 ## For more information
 
-[Office 365 Email Anti-Spam Protection](https://support.office.com/en-US/article/Office-365-Email-Anti-Spam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Office 365 Email Anti-Spam Protection](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
   
 [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
   

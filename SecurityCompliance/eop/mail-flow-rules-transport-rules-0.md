@@ -17,7 +17,7 @@ description: "You can use mail flow rules (also known as transport rules) to ide
 
 You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your Office 365 organization. Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook on the web. The main difference is mail flow rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
   
-This article explains the [components](#components.md) of mail flow rules, and [how they work](#HowApplied.md).
+This article explains the components of mail flow rules, and how they work.
   
 For steps to create, copy, and manage mail flow rules, see **Manage mail flow rules**. For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see **Test a mail flow rule** and **Policy Tips**.
   
@@ -44,7 +44,6 @@ The following video provides a demonstration of setting up mail flow rules in Ex
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
 ## Mail flow rule components
-<a name="Components"> </a>
 
 A mail flow rule is made of conditions, exceptions, actions, and properties:
   
@@ -63,7 +62,6 @@ A mail flow rule is made of conditions, exceptions, actions, and properties:
      For more information, see the [Mail flow rule properties](mail-flow-rules-transport-rules-0.md#Properties) section in this topic. 
     
 ### Multiple conditions, exceptions, and actions
-<a name="Multiple"> </a>
 
 The following table shows how multiple conditions, condition values, exceptions, and actions are handled in a rule.
   
@@ -81,7 +79,7 @@ The following table describes the rule properties that are available in mail flo
   
 |**Property name in the EAC**|**Parameter name in PowerShell**|**Description**|
 |:-----|:-----|:-----|
-|**Priority** <br/> | _Priority_ <br/> |Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules).  <br/> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority).  <br/> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules.  <br/> For more information, see [](e7a81372-b6d7-4d1f-bc9e-a845a7facac2.md#priority).  <br/> |
+|**Priority** <br/> | _Priority_ <br/> |Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules).  <br/> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority).  <br/> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules.  |
 |**Mode** <br/> | _Mode_ <br/> |You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips).  <br/> Policy Tips present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see **Policy Tips**.  <br/> For more information about the modes, see **Test a mail flow rule**.  <br/> |
 |**Activate this rule on the following date** <br/> **Deactivate this rule on the following date** <br/> | _ActivationDate_ <br/>  _ExpiryDate_ <br/> |Specifies the date range when the rule is active.  <br/> |
 |**On** check box selected or not selected  <br/> |New rules:  _Enabled_ parameter on the **New-TransportRule** cmdlet.  <br/> Existing rules: Use the **Enable-TransportRule** or **Disable-TransportRule** cmdlets.  <br/> The value is displayed in the **State** property of the rule.  <br/> |You can create a disabled rule, and enable it when you're ready to test it. Or, you can disable a rule without deleting it to preserve the settings.  <br/> |
@@ -91,7 +89,6 @@ The following table describes the rule properties that are available in mail flo
 |**Comments** <br/> | _Comments_ <br/> |You can enter descriptive comments about the rule.  <br/> |
    
 ## How mail flow rules are applied to messages
-<a name="HowRulesAreApplied"> </a>
 
 All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. Rules are processed in the order listed on the **Mail flow** \> **Rules** page in EAC, or based on the corresponding  _Priority_ parameter value in the PowerShell. 
   
@@ -115,14 +112,12 @@ There are several types of messages that pass through an organization. The follo
 |**Read reports** Reports that are generated in response to read receipt requests by senders. Read reports have a message class of  `IPM.Note*.MdnRead` or  `IPM.Note*.MdnNotRead`.  <br/> |Yes  <br/> |
    
 ## What else should I know?
-<a name="sectionSection2"> </a>
 
 - The **Version** or **RuleVersion** property value for a rule isn't important in Exchange Online Protection. 
     
 - After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to messages.
     
 ## For more information
-<a name="sectionSection3"> </a>
 
 [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)
   
@@ -132,7 +127,7 @@ There are several types of messages that pass through an organization. The follo
   
 [Using transport rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
-[Enable message encryption and decryption in Office 365](../enable-message-encryption-and-decryption-in-office-365.md)
+[Email encryption in Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
 [Transport rule procedures](http://technet.microsoft.com/library/bc682071-eb68-4cd9-a306-e5de0e1e79cc.aspx)
   
