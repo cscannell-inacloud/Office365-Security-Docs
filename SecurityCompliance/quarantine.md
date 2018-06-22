@@ -15,8 +15,6 @@ description: "Learn about hosted quarantine for Exchange Online and Exchange Onl
 
 # Quarantine
 
-[![Text in image about content moving from TechNet to support.office.com](media/ab7c897a-4798-4f31-8c84-f17a8409b133.png)](https://go.microsoft.com/fwlink/p/?LinkID=624152)
-  
 The following topics provide information about the hosted quarantine for both Exchange Online and Exchange Online Protection (EOP) admins and end users:
   
 - [Quarantine FAQ](quarantine-faq.md) - Provides general questions and answers about the quarantine for both admins and end users 

@@ -24,21 +24,9 @@ An SPF TXT record is a DNS record that helps prevent spoofing and phishing by ve
   
 Domain administrators publish SPF information in TXT records in DNS. The SPF information identifies authorized outbound email servers. Destination email systems verify that messages originate from authorized outbound email servers. If you are already familiar with SPF, or you have a simple deployment, and just need to know what to include in your SPF TXT record in DNS for Office 365, you can go to [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). If you do not have a deployment that is fully-hosted in Office 365, or you want more information about how SPF works or how to troubleshoot SPF for Office 365, keep reading.
   
-> [!SECURITY NOTE]
+> [!NOTE]
 > Previously, you had to add a different SPF TXT record to your custom domain if you also used SharePoint Online. This is no longer required. This change should reduce the risk of SharePoint Online notification messages ending up in the Junk Email folder. You do not need to make any changes immediately, but if you receive the "too many lookups" error, modify your SPF TXT record as described in [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
-  
-In this article:
-  
-- [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)
-    
-- [Requirements for your SPF TXT record and Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFReqsinO365)
-    
-- [Form your SPF TXT record for Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#FormYourSPF)
-    
-- [Next steps: Set up SPF for Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFNextSteps)
-    
-- [Troubleshooting: Best practices for SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)
-    
+     
 ## How SPF works to prevent spoofing and phishing in Office 365
 <a name="HowSPFWorks"> </a>
 
