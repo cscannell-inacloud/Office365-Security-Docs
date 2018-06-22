@@ -220,7 +220,7 @@
 ### Export results in Office 365 Advanced eDiscovery
 # Data Governance		
 ## Manage data governance in Office 365	
-## Archiving & Retention	PROMOTE ONE OF SUBTOPICS?
+## Archiving & Retention
 ### Overview of unlimited archiving in Office 365
 ### Archiving third-party data in Office 365
 ### Enable unlimited archiving in Office 365 - Admin Help
