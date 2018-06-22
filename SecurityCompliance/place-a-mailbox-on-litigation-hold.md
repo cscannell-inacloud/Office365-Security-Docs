@@ -61,8 +61,6 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
   - **URL** Use this box to direct the user to a website for more information about Litigation Hold. This URL appears in the user's mailbox if they are using Outlook 2010 or later. 
     
 6. Click **Save** on the **Litigation Hold** page, and then click **Save** on the mailbox properties page. 
-    
-[Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. When you place a user' mailbox on Litigation Hold, content in the user's archive mailbox (if it's enabled) is also placed on hold. Deleted and modified items are preserved for a specified period, or until you remove the mailbox from Litigation Hold. All such mailbox items are returned in an In-Place eDiscoveryhttp://technet.microsoft.com/library/6377cb7a-3416-4e15-8571-c45d2160fc6f.aspx search.Litigation Hold preserves items in the Recoverable Items folder in the user's mailbox. Depending on number and size of items deleted or modified, the size of the Recoverable Items folder of the mailbox may increase quickly. The Recoverable Items folder is configured with a high quota by default. In Exchange Online, this quota is automatically increased when you place a mailbox on Litigation Hold. In Exchange Server 2013, we recommend that you monitor mailboxes that are placed on Litigation Hold on a weekly basis to ensure they don't reach the limits of the Recoverable Items quotas.](#introduction.md)
   
 ## Use the Shell to place a mailbox on Litigation Hold indefinitely
 <a name="sectionSection2"> </a>
@@ -111,8 +109,7 @@ This example removes the mailbox bsuneja@contoso.com from Litigation Hold.
 Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
 ```
 
-[Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. When you place a user' mailbox on Litigation Hold, content in the user's archive mailbox (if it's enabled) is also placed on hold. Deleted and modified items are preserved for a specified period, or until you remove the mailbox from Litigation Hold. All such mailbox items are returned in an In-Place eDiscoveryhttp://technet.microsoft.com/library/6377cb7a-3416-4e15-8571-c45d2160fc6f.aspx search.Litigation Hold preserves items in the Recoverable Items folder in the user's mailbox. Depending on number and size of items deleted or modified, the size of the Recoverable Items folder of the mailbox may increase quickly. The Recoverable Items folder is configured with a high quota by default. In Exchange Online, this quota is automatically increased when you place a mailbox on Litigation Hold. In Exchange Server 2013, we recommend that you monitor mailboxes that are placed on Litigation Hold on a weekly basis to ensure they don't reach the limits of the Recoverable Items quotas.](#introduction.md)
-  
+P
 ## How do you know this worked?
 <a name="sectionSection6"> </a>
 
@@ -183,6 +180,4 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
     You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
     
-[Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. When you place a user' mailbox on Litigation Hold, content in the user's archive mailbox (if it's enabled) is also placed on hold. Deleted and modified items are preserved for a specified period, or until you remove the mailbox from Litigation Hold. All such mailbox items are returned in an In-Place eDiscoveryhttp://technet.microsoft.com/library/6377cb7a-3416-4e15-8571-c45d2160fc6f.aspx search.Litigation Hold preserves items in the Recoverable Items folder in the user's mailbox. Depending on number and size of items deleted or modified, the size of the Recoverable Items folder of the mailbox may increase quickly. The Recoverable Items folder is configured with a high quota by default. In Exchange Online, this quota is automatically increased when you place a mailbox on Litigation Hold. In Exchange Server 2013, we recommend that you monitor mailboxes that are placed on Litigation Hold on a weekly basis to ensure they don't reach the limits of the Recoverable Items quotas.](#introduction.md)
-  
 
