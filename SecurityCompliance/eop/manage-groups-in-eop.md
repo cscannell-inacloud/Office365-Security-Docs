@@ -21,9 +21,9 @@ description: "You can use Exchange Online Protection (EOP) to create mail-enable
 
 You can create two types of groups for your Exchange organization:
   
-- [Create a group in the EAC](manage-groups-in-eop.md#GROUPS_distribution) (also known as distribution groups) are collections of email users, such as a team or other ad hoc group, who need to receive or send email regarding a common area of interest. Distribution groups are exclusively for distributing email messages. In EOP, a distribution group refers to any mail-enabled group, whether or not it has a security context.
+- [Create a group in the EAC](manage-groups-in-eop.md) (also known as distribution groups) are collections of email users, such as a team or other ad hoc group, who need to receive or send email regarding a common area of interest. Distribution groups are exclusively for distributing email messages. In EOP, a distribution group refers to any mail-enabled group, whether or not it has a security context.
     
-- [Edit or remove a group in the EAC](manage-groups-in-eop.md#GROUPS_security) (also known as security groups) are collections of email users who need access permissions for Admin roles. For example, you might want to give specific group of users admin role permissions so they can configure anti-spam and anti-malware settings.
+- [Edit or remove a group in the EAC](manage-groups-in-eop.md) (also known as security groups) are collections of email users who need access permissions for Admin roles. For example, you might want to give specific group of users admin role permissions so they can configure anti-spam and anti-malware settings.
     
     > [!NOTE]
     > By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups. 
@@ -47,7 +47,7 @@ You can create two types of groups for your Exchange organization:
 
 1. In the Exchange admin center (EAC), go to **Recipients** \> **Groups**.
     
-2. Click **New**![Add Icon](../media/ITPro-EAC-AddIcon.png), and then click **Distribution group** or **Security group**, depending on your needs. See [Types of mail-enabled groups](manage-groups-in-eop.md#GROUPS_types) for the distinction. 
+2. Click **New**![Add Icon](../media/ITPro-EAC-AddIcon.png), and then click **Distribution group** or **Security group**, depending on your needs. See [Types of mail-enabled groups](manage-groups-in-eop.md) for the distinction. 
     
 3. On the **New distribution group** or **New security group** page, complete the following fields: 
     
