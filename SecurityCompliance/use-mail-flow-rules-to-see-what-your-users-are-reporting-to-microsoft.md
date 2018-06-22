@@ -31,7 +31,7 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 
 1. In the EAC, navigate to **Mail flow** \> **Rules**.
     
-2. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+2. Click ![Add Icon](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
     
 3. Give the rule a name and then click **More options**.
     
@@ -39,11 +39,11 @@ For information about keyboard shortcuts that may apply to the procedures in thi
     
 5. In the **specify words or phrases** box, do the following: 
     
-1. Type **abuse@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then type **junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif). These email addresses are used to submit false negative messages to Microsoft.
+1. Type **abuse@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false negative messages to Microsoft.
     
-2. Type **phish@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif). This email address is used to submit missed phishing messages to Microsoft.
+2. Type **phish@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). This email address is used to submit missed phishing messages to Microsoft.
     
-3. Type **false_positive@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then type **not_junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif). These email addresses are used to submit false positive messages to Microsoft.
+3. Type **false_positive@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **not_junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false positive messages to Microsoft.
     
 4. Click **ok**.
     

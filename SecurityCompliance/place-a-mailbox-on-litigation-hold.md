@@ -46,7 +46,7 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 
 1. Go to **Recipients** \> **Mailboxes**.
     
-2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit**![Edit icon](media/ITPro-EAC-EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit**![Edit icon](media/ITPro-EAC-EditIcon.png).
     
 3. On the mailbox properties page, click **Mailbox features.**
     
@@ -119,7 +119,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
     
 1. Go to **Recipients** \> **Mailboxes**.
     
-2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit**![Edit icon](media/ITPro-EAC-EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit**![Edit icon](media/ITPro-EAC-EditIcon.png).
     
 3. On the mailbox properties page, click **Mailbox features.**
     

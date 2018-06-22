@@ -99,7 +99,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
 ### To edit or remove a mail user in the EAC
 
-- In the EAC, go to **Recipients** \> **Contacts**. In the list of users, click the user that you want to view or change, and then select **Edit**![Edit icon](../media/ITPro-EAC-EditIcon.gif) to update the user settings as needed. You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. You can also select a user and then choose **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.gif) to delete it. 
+- In the EAC, go to **Recipients** \> **Contacts**. In the list of users, click the user that you want to view or change, and then select **Edit**![Edit icon](../media/ITPro-EAC-EditIcon.png) to update the user settings as needed. You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. You can also select a user and then choose **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.png) to delete it. 
     
 ## Use remote Windows PowerShell to manage mail users
 <a name="UseremoteWindowsPowerShelltomanagemailusers"> </a>
