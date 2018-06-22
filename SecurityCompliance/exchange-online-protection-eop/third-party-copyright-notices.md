@@ -1,7 +1,7 @@
 ---
 title: "Third-party copyright notices"
-ms.author: scotv
-author: scotvidican
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
