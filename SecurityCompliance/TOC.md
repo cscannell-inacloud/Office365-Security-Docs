@@ -47,7 +47,7 @@
 ### Internal Logging for Office 365 Engineering
 ### Office 365 Mailbox Migrations
 ### Office 365 Management Activity API
-# Security and Compliance Center	
+# Security & Compliance Center	
 ## Introducing the Office 365 Secure Score
 ## Monitor security and compliance in Office 365
 ## Threat management in the Office 365 Security & Compliance Center
