@@ -26,7 +26,6 @@ Welcome to the Microsoft Exchange Online Protection (EOP) hosted email filtering
 - You can use the Export option on the upper right hand side of any TechNet page to add topics and then export them into a PDF file. 
     
 ## EOP Help for administrators
-<a name="sectionSection0"> </a>
 
 The Help content for EOP administrators consists of the following top-level categories:
   
@@ -71,30 +70,7 @@ The Help content for assisting EOP end users to manage spam consists of the foll
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware. 
     
-- End users can add specific users or domains to a safe sender list or a blocked sender list by configuring their junk email settings in Microsoft OWA or Outlook. Note that messages that are sent from blocked senders are marked as spam, not rejected, meaning that they can be retrieved from the Junk Email folder or quarantine (depending on where your admin has configured the service to send spam.) For more information, see the following links:
-    
-  - OWA: [Block or allow (junk email settings)](https://go.microsoft.com/fwlink/p/?LinkId=294862)
-    
-  - Outlook: [Overview of the Junk Email Filter](https://go.microsoft.com/fwlink/p/?LinkId=270065)
+- End users can add specific users or domains to a safe sender list or a blocked sender list by configuring their junk email settings in Microsoft OWA or Outlook. Note that messages that are sent from blocked senders are marked as spam, not rejected, meaning that they can be retrieved from the Junk Email folder or quarantine (depending on where your admin has configured the service to send spam.) For more information, see [Use the Report Message add-in](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Help and support for EOP](help-and-support-for-eop.md) Provides information about obtaining help and technical support. 
     
-## For more information
-<a name="sectionSection2"> </a>
-
-Check out our other Exchange and Office 365 content:
-  
-- [Exchange Online Preview](http://technet.microsoft.com/library/d0f509be-ee4b-46a2-9dc6-3bc3512a0a2d.aspx)
-    
-- [Exchange Server 2013 Preview](http://technet.microsoft.com/library/cb24ddb7-0659-4d9d-9057-52843f861ba8.aspx)
-    
-- [Exchange Server 2013 Preview Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx)
-    
-- [Office 365 Message Encryption](https://go.microsoft.com/fwlink/?LinkId=400579)
-    
-## Tell us what you think
-<a name="sectionSection3"> </a>
-
-If you have comments or questions about our topics or about the overall Help experience, we'd love to hear from you. Just send your feedback to [Exchange Help Feedback](mailto:Ex2013HelpFeedback@microsoft.com). Your comments will help us provide the most accurate and concise content.
-  
-

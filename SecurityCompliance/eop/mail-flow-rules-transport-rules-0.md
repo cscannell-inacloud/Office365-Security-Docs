@@ -27,7 +27,7 @@ To implement specific messaging policies by using mail flow rules, see these top
   
 - [Use mail flow rules to inspect message attachments in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Enable message encryption and decryption in Office 365](../enable-message-encryption-and-decryption-in-office-365.md)
+- [Set up encryption in Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     

@@ -22,7 +22,7 @@ You can configure end-user spam notifications for the default company-wide conte
   
 End-user spam notifications contain a list of all spam-quarantined messages that the end user has received during a time period that you configure (you can specify a value between 1 and 15 days). You can also configure the language in which the notification message is written.
   
-After receiving a notification message, end users can click to move the spam email to their inbox, or report the spam email as Not Junk, in which case it will be sent to the Microsoft Spam Analysis Team. For more information about how to manage spam-quarantined items after receiving a notification message, see [Use end-user spam notifications to release and report spam-quarantined messages](use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md).
+After receiving a notification message, end users can click to move the spam email to their inbox, or report the spam email as Not Junk, in which case it will be sent to the Microsoft Spam Analysis Team. 
   
 ## What do you need to know before you begin?
 <a name="sectionSection0"> </a>
@@ -60,10 +60,6 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 ![Transport rule to test end-user spam notifications](media/EOP-ESN-testspecificusers.jpg)
   
 ## For more information
-<a name="sectionSection2"> </a>
 
 [Configure your spam filter policies](configure-your-spam-filter-policies.md)
   
-[Use end-user spam notifications to release and report spam-quarantined messages](use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md)
-  
-

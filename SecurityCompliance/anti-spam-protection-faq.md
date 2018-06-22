@@ -145,7 +145,7 @@ A. The guidelines presented below are best practices for sending outbound email 
     
     The unsubscribe option should resemble the following:
     
-    This message was sent to example@contoso.com by sender@fabrikam.com. Update Profile/Email Address | Instant removal with [SafeUnsubscribe](SafeUnsubscribe.md)™ | Privacy Policy
+    This message was sent to example@contoso.com by sender@fabrikam.com. Update Profile/Email Address | Instant removal with **SafeUnsubscribe**™ | Privacy Policy
     
 9. **If sending bulk email, list acquisition should be performed using double opt-in. If you are a bulk mailer, double opt-in is an industry best practice.**
     
