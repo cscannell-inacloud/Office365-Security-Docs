@@ -16,14 +16,6 @@ description: "Microsoft is committed to making its products and services easier 
 
 # Accessibility for people with disabilities
 
-Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:
-  
-- [Accessibility features of Exchange ](accessibility-for-people-with-disabilities.md#BKMK_Access15)
-    
-- [Accessibility features of Exchange Help](accessibility-for-people-with-disabilities.md#BKMK_AccessHelp)
-    
-- [Accessibility products and services from Microsoft](accessibility-for-people-with-disabilities.md#BKMK_AccessMS)
-    
 ## Accessibility features of Exchange
 
 The following features help make Microsoft Exchange more accessible for people with disabilities:

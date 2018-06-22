@@ -17,11 +17,11 @@ description: "Defining mail users is an important part of managing the Exchange 
 
 Defining mail users is an important part of managing the Exchange Online Protection (EOP) service. There are several ways that you can manage users in EOP:
   
-- [Use directory synchronization to manage mail users](manage-mail-users-in-eop.md#USERS_dirsync): If your company has existing user accounts in an on-premises Active Directory environment, you can synchronize those accounts to Azure Active Directory (AD), where a copy of the accounts is stored in the cloud. When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC). Using directory synchronization is recommended. 
+- Use directory synchronization to manage mail users: If your company has existing user accounts in an on-premises Active Directory environment, you can synchronize those accounts to Azure Active Directory (AD), where a copy of the accounts is stored in the cloud. When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC). Using directory synchronization is recommended. 
     
-- [Use the EAC to manage mail users](#USERS_eac.md): Add and manage mail users directly in the EAC. This is the easiest way to add mail users and is useful for adding one user at a time.
+- Use the EAC to manage mail users: Add and manage mail users directly in the EAC. This is the easiest way to add mail users and is useful for adding one user at a time.
     
-- [Use remote Windows PowerShell to manage mail users](#UseremoteWindowsPowerShelltomanagemailusers.md): Add and manage mail users by running remote Windows PowerShell. This method is useful for adding multiple records and creating scripts.
+- Use remote Windows PowerShell to manage mail users: Add and manage mail users by running remote Windows PowerShell. This method is useful for adding multiple records and creating scripts.
     
 > [!NOTE]
 > You can add users in the Office 365 admin center, however these users can't be used as mail recipients. 
