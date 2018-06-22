@@ -51,7 +51,7 @@ The Help content for EOP administrators consists of the following top-level cate
     
 - [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Describes the reports and troubleshooting tools that are available. 
     
-- [Exchange admin center in Exchange Online Protection ](../exchange-admin-center-in-eop.md) Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service. 
+- [Exchange admin center in Exchange Online Protection ](../exchange-admin-center-in-exchange-online-protection-eop.md) Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service. 
     
 - [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Provides information about remote PowerShell, which lets you manage your EOP service from the command line. 
     
@@ -63,9 +63,7 @@ The Help content for EOP administrators consists of the following top-level cate
 The Help content for assisting EOP end users to manage spam consists of the following topics:
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and optionally report them as not junk to Microsoft. 
-    
-- [Use end-user spam notifications to release and report spam-quarantined messages](../use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md) Similarly, this topic describes how end users can release their own spam-quarantined messages and optionally report them as not junk via end-user spam notification messages (which must be configured by your administrator). 
-    
+        
 - [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and OWA. 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware. 
