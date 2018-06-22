@@ -3,7 +3,7 @@
 ## [Exchange Online Protection overview](eop/exchange-online-protection-overview.md)
 ### [EOP features](eop/eop-features.md)
 ### [Feature permissions in EOP](eop/feature-permissions-in-eop.md)
-### [Exchange admin center in Exchange Online Protection ](exchange-admin-center-in-eop.md)
+### [Exchange admin center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md)
 ## [Set up your EOP service](eop/set-up-your-eop-service.md)
 ### [Videos for getting started with EOP](eop/videos-for-getting-started-with-eop.md)
 ### [Best practices for configuring EOP](eop/best-practices-for-configuring-eop.md)
