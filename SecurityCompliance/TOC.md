@@ -1,5 +1,5 @@
 
-# [Exchange Online Protection ](exchange-online-protection-overview.md)
+# [Exchange Online Protection ](eop/exchange-online-protection-overview.md)
 ## [Exchange Online Protection overview](eop/exchange-online-protection-overview.md)
 ### [EOP features](eop/eop-features.md)
 ### [Feature permissions in EOP](eop/feature-permissions-in-eop.md)
