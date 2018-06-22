@@ -12,53 +12,29 @@
 ### [Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort](eop/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)
 ## [Anti-spam and anti-malware protection](videos-for-getting-started-with-protecting-your-email.md)
 ### [Videos for getting started with protecting your email](videos-for-getting-started-with-protecting-your-email.md)
-#### [Fighting junk email](fighting-junk-email.md)
-#### [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 #### [How to help ensure that a message isn't marked as spam](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 #### [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
-
 #### [Report junk email messages to Microsoft](report-junk-email-messages-to-microsoft.md)
-
-#### [Bulk Complaint Level values](bulk-complaint-level-values.md)
+#### [Manage safe sender lists for bulk mailers](manage-safe-sender-lists-for-bulk-mailers.md)
 ### [Configure anti-malware policies](configure-anti-malware-policies.md)
-
 ### [Configure the anti-spam policies](configure-the-anti-spam-policies.md)
-
 ### [Create organization-wide safe sender or blocked sender lists in Office 365](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
 ### [Configure your spam filter policies](configure-your-spam-filter-policies.md)
-#### [Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md)
-#### [Configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md)
-#### [Anti-spam message headers](anti-spam-message-headers.md)
-### [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
 ### [Configure the connection filter policy](configure-the-connection-filter-policy.md)
-
-
+### [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
+### [Spam confidence levels](spam-confidence-levels.md)
+#### [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 ### [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 ### [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
-
-### [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
-
-## [Enable message encryption and decryption in Office 365](enable-message-encryption-and-decryption-in-office-365.md)
-
-
-
+### [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+## [DMARC and DKIM](use-dmarc-to-validate-email.md)
+### [Use DMARC to validate email](use-dmarc-to-validate-email.md)
+### [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md)
+### [Support for validation of DKIM signed messages](support-for-validation-of-dkim-signed-messages.md)
 ## [Information Rights Management](information-rights-management-in-exchange-online.md)
 ### [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md)
 ### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [Configure IRM to use Azure Rights Management](configure-irm-to-use-azure-rights-management.md)
-
-## [Quarantine](quarantine.md)
-### [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md)
-### [Quarantine FAQ](quarantine-faq.md)
-
-## [S/MIME](s-mime-for-message-signing-and-encryption.md)
-### [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
-### [Configure S/MIME settings for Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
-### [Send and receive S/MIME signed and encrypted email](send-and-receive-s-mime-signed-and-encrypted-email.md)
-### [Sync user certificates to Office 365 for S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
-### [Set up virtual certificate collection to validate S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-
-
 ## [Messaging policy and compliance in EOP](eop/messaging-policy-and-compliance-in-eop.md)
 ### [Auditing reports in EOP](eop/auditing-reports-in-eop.md)
 ### [Run an administrator role group report in EOP](eop/run-an-administrator-role-group-report-in-eop-eop.md)
@@ -68,55 +44,48 @@
 ### [Manage groups in EOP](eop/manage-groups-in-eop.md)
 ### [Manage admin role group permissions in EOP](eop/manage-admin-role-group-permissions-in-eop.md)
 ## [Mail flow in EOP](eop/mail-flow-in-eop.md)
+### [Mail flow intelligence in Office 365](mail-flow-intelligence-in-office-365.md)
 ### [Mail flow rules (transport rules)](eop/mail-flow-rules-transport-rules-0.md)
 ### [Use transport rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md)
-
-### [Reducing malware threats through file attachment blocking in Exchange Online Protection](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
-### [Reporting and message trace in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+### [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+### [Reducing malware threats through file attachment blocking](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
+### [Reporting and message trace](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+### [Search for and delete messages](search-for-and-delete-messagesadmin-help.md)
+### [Support for anonymous inbound email messages over IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)
 ### [Backscatter messages and EOP](backscatter-messages-and-eop.md)
-## [EOP general FAQ](eop/eop-general-faq.md)
-### [EOP queued, deferred, and bounced messages FAQ](eop/eop-queued-deferred-and-bounced-messages-faq.md)
-### [Delegated administration FAQ](eop/delegated-administration-faq.md)
-### [Mail flow intelligence in Office 365](mail-flow-intelligence-in-office-365.md)
-
-
+## [Mailbox holds](place-a-mailbox-on-litigation-hold.md)
+### [Place a mailbox on Litigation Hold](place-a-mailbox-on-litigation-hold.md)
+### [Preserve Bcc and expanded distribution group recipients for eDiscovery](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
+### [Put an In-Place Hold on a soft-deleted mailbox](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
+## [Quarantine](quarantine.md)
+### [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md)
+### [Quarantine FAQ](quarantine-faq.md)
+## [S/MIME](s-mime-for-message-signing-and-encryption.md)
+### [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
+### [Configure S/MIME settings for Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+### [Send and receive S/MIME signed and encrypted email](send-and-receive-s-mime-signed-and-encrypted-email.md)
+### [Sync user certificates to Office 365 for S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
+### [Set up virtual certificate collection to validate S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
+## [Spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
+### [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 ## [Troubleshooting and support information](troubleshooting-and-support-information.md)
 ### [Troubleshooting mail sent to Office 365](troubleshooting-mail-sent-to-office-365.md)
 ### [Help and support for EOP](eop/help-and-support-for-eop.md)
+### [EOP general FAQ](eop/eop-general-faq.md)
+### [EOP queued, deferred, and bounced messages FAQ](eop/eop-queued-deferred-and-bounced-messages-faq.md)
+### [Delegated administration FAQ](eop/delegated-administration-faq.md)
 ### [Change notification for EOP IP addresses](eop/change-notification-for-eop-ip-addresses.md)
 ### [Exchange Online Protection IP addresses](eop/exchange-online-protection-ip-addresses.md)
+## [Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)
 ### [Accessibility for people with disabilities](eop/accessibility-for-people-with-disabilities.md)
+### [Sending mail to Office 365](sending-mail-to-office-365.md)
+### [Services for non-customers](services-for-non-customers.md)
 ### [Third-party copyright notices](eop/third-party-copyright-notices.md)
 
 
 
 
-## [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
-## [How Office 365 uses SPF to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
-
-
-## [Manage safe sender lists for bulk mailers](manage-safe-sender-lists-for-bulk-mailers.md)
-## [Place a mailbox on Litigation Hold](place-a-mailbox-on-litigation-hold.md)
-## [Preserve Bcc and expanded distribution group recipients for eDiscovery](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
-## [Put an In-Place Hold on a soft-deleted mailbox](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
-## [Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)
-## [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
-## [Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
-## [Search for and delete messages - Admin help](search-for-and-delete-messagesadmin-help.md)
-## [Sending mail to Office 365](sending-mail-to-office-365.md)
-## [Services for non-customers](services-for-non-customers.md)
-## [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-## [Spam confidence levels](spam-confidence-levels.md)
-## [Support for anonymous inbound email messages over IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)
-## [Support for validation of DKIM signed messages](support-for-validation-of-dkim-signed-messages.md)
-
-
-## [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md)
-## [Use DMARC to validate email](use-dmarc-to-validate-email.md)
-## [Use end-user spam notifications to release and report spam-quarantined messages](use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md)
-## [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
-## [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
 
 
