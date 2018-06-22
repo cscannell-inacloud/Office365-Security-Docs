@@ -76,11 +76,8 @@
 ### [Delegated administration FAQ](eop/delegated-administration-faq.md)
 ## [Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)
 ### [Accessibility for people with disabilities](eop/accessibility-for-people-with-disabilities.md)
-### [Change notification for EOP IP addresses](eop/change-notification-for-eop-ip-addresses.md)
-### [Exchange Online Protection IP addresses](eop/exchange-online-protection-ip-addresses.md)
 ### [Sending mail to Office 365](sending-mail-to-office-365.md)
 ### [Services for non-customers](services-for-non-customers.md)
-### [Third-party copyright notices](eop/third-party-copyright-notices.md)
 
 
 
