@@ -38,14 +38,10 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 4. Under **Apply this rule if**, select **The recipient** and then choose **address includes any of these words**.
     
 5. In the **specify words or phrases** box, do the following: 
-    
-1. Type **abuse@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false negative messages to Microsoft.
-    
-2. Type **phish@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). This email address is used to submit missed phishing messages to Microsoft.
-    
-3. Type **false_positive@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **not_junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false positive messages to Microsoft.
-    
-4. Click **ok**.
+    - Type **abuse@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false negative messages to Microsoft.
+    - Type **phish@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). This email address is used to submit missed phishing messages to Microsoft.
+    - Type **false_positive@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **not_junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false positive messages to Microsoft.
+    - Click **ok**.
     
 6. Under **Do the following**, select **Bcc the message to...** and then and then select the mailboxes where you'd like to receive the messages. 
     
@@ -54,10 +50,5 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 8. Click the **save** button to save the rule. It appears in your list of rules. 
     
 After you create and enforce the rule, any messages that are sent from your organization to specified email addresses will be copied to the specified mailbox.
-  
-## For more information
-<a name="sectionSection2"> </a>
-
-[Turn off junk email reporting in Outlook on the web](turn-off-junk-email-reporting-in-outlook-on-the-web.md) - Provides more information about how to turn off reporting in OWA. 
   
 

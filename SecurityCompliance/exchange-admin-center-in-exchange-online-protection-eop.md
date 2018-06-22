@@ -22,18 +22,7 @@ Looking for the Exchange 2013 version of this topic? See [Exchange admin center 
   
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
   
- **Contents**
-  
-[Accessing the EAC](exchange-admin-center-in-eop.md#BKMK_AccessingTheEac)
-  
-[Common user interface elements in the EAC](exchange-admin-center-in-eop.md#BKMK_CommonUserInterfaceElements)
-  
-[Supported Browsers](exchange-admin-center-in-eop.md#BKMK_SupportedBrowsers)
-  
-[Supported languages in EOP](exchange-admin-center-in-eop.md#BKMK_SupportedLanguages)
-  
 ## Accessing the EAC
-<a name="BKMK_AccessingTheEac"> </a>
 
 In most cases, EOP customers will access the EAC through the Office 365 admin center. You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile. Click the **Admin** tile and select **Exchange Online Protection** from the drop down menu to be taken to the EAC. 
   
