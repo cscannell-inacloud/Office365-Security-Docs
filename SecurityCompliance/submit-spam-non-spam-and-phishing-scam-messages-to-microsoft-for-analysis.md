@@ -30,10 +30,8 @@ For more spam settings that apply to the whole organization, see [Block email sp
   
 You can submit junk email messages in the following ways:
   
-- For Outlook users, the primary way to submit junk messages is by using a plug-in known as the Microsoft Junk Email Reporting Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Junk email reporting add-in for Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md). 
-    
-- For Outlook on the web users, the primary way to submit junk email messages is by using its built-in junk email reporting option. For more information, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). 
-    
+- For Outlook and Outlook on the web users, use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). 
+        
 - You can also use email to submit messages to Microsoft that should be classified as junk or phishing scams, as described in the following procedure.
     
 ### Use email to submit junk (spam) or phishing scam messages to Microsoft
@@ -79,7 +77,7 @@ You can submit non-spam messages in the following ways:
     
   - The Exchange admin center (EAC) user interface. For more information, see [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
     
-  - End-user spam notification messages (if they're enabled by your administrator). For more information about how to use this feature, see [Use end-user spam notifications to release and report spam-quarantined messages](use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md).
+  - End-user spam notification messages (if they're enabled by your administrator). 
     
 - You can also use email to submit messages to Microsoft that should not be classified as spam. When you do this, make sure that you use the steps in the following procedure.
     
