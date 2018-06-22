@@ -1,4 +1,7 @@
 # Get Started
+## Overview of security and compliance in Office 365
+## Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond
+## Configure your Office 365 tenant for increased security
 # Architecture
 ## Tenant isolation in Office 365
 ### Isolation and Access Control in Azure Active Directory
