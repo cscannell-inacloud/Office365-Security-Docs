@@ -18,7 +18,6 @@ description: "When an administrator adds members to or removes members from admi
  When an administrator adds members to or removes members from administrator role groups, Microsoft Exchange Online Protection (EOP) logs each occurrence. When you run an administrator role group report in the Exchange admin center, entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.
   
 ## What do you need to know before you begin?
-<a name="sectionSection0"> </a>
 
 - Estimated time to complete: 2 minutes
     
@@ -30,7 +29,6 @@ description: "When an administrator adds members to or removes members from admi
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## Use the EAC to run an administrator role group report
-<a name="sectionSection1"> </a>
 
 Run the administrator role group report to find the changes to management role groups in your organization within a particular timeframe.
   
@@ -45,12 +43,10 @@ Run the administrator role group report to find the changes to management role g
 If any changes are found using the criteria you specified, they will appear in the results pane. Click a role group in the search results to see the changes in the details pane.
   
 ## How do you know this worked?
-<a name="sectionSection2"> </a>
 
 If you've successfully run an administrator role group report, role groups that have been changed within the date range are displayed in the search results pane. If there are no results, then no changes to role groups have taken place within the specified date range. If you think there should be results, change the date range and then run the report again.
   
 ## Monitor changes to role group membership
-<a name="sectionSection3"> </a>
 
 When members are added to or removed from a role group, the search results displayed in the details pane indicate that the role group membership was updated and lists the current members. The results don't explicitly state which user was added or removed.
   

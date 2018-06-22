@@ -18,7 +18,6 @@ description: "In Microsoft Exchange Online Protection (EOP), you can use the Exc
 In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin center (EAC) to make a user a member of a role group or groups in order to assign them permissions to perform specific administrative tasks. You can also remove a user from a role group or groups by using the EAC.
   
 ## What do you need to know before you begin?
-<a name="sectionSection0"> </a>
 
 - Estimated time to complete: 5-10 minutes
     
@@ -32,7 +31,6 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
-<a name="sectionSection1"> </a>
 
 ### Use the EAC to assign members to admin role groups
 
@@ -61,7 +59,6 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
     > Users may have to sign out and sign in again to see the change in their administrative rights after you add or remove members from the role group. 
   
 ## For more information
-<a name="sectionSection2"> </a>
 
 [Feature permissions in EOP](feature-permissions-in-eop.md)
   

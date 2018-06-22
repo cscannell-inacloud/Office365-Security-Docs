@@ -18,7 +18,6 @@ description: "Microsoft provides help for EOP in a variety of places and methods
 The technical support resources listed here will help you find answers if you are having difficulty with Microsoft Exchange Online Protection (EOP). Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support. 
   
 ## Self-support options
-<a name="sectionSection0"> </a>
 
 Upon logging in, the Office 365 portal provides information about the status of your organization's services. Also, the service health section of Office 365 shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Office 365 portal also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area of Office 365, see [Service Health](https://go.microsoft.com/fwlink/?LinkId=394289). You might be able to find more help on your own by using the tools, forums and community sites listed here.
   
@@ -33,7 +32,6 @@ Upon logging in, the Office 365 portal provides information about the status of 
 [Office 365 Mail Flow Guided Walkthrough](https://go.microsoft.com/fwlink/?LinkId=323470)
   
 ## Assisted support from Microsoft
-<a name="sectionSection1"> </a>
 
 You can get help from Microsoft by starting a new service request within the Office 365 admin center or by calling on the phone. Premier support subscribers have extra support options.
   
@@ -62,7 +60,6 @@ For more information about how Premier Support can help your organization maximi
 3. Use the Virtual Agent for Microsoft Office 365 to search for the most current appropriate telephone number.
     
 ## Support telephone numbers
-<a name="sectionSection2"> </a>
 
 Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent for Microsoft Office 365 as described above to find your local support telephone number.
   
@@ -78,7 +75,6 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 |United States  <br/> |Toll-free: 1-877-913-2707  <br/> |Toll-free: 1-800-865-9408  <br/> |
    
 ## For more information about EOP documentation
-<a name="sectionSection3"> </a>
 
 [Third-party copyright notices](third-party-copyright-notices.md)
   

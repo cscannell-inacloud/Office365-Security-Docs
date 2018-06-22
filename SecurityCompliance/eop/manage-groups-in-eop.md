@@ -18,7 +18,6 @@ description: "You can use Exchange Online Protection (EOP) to create mail-enable
  You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups. You can create distribution groups and security groups, depending on your needs. These groups can be created by using the Exchange admin center (EAC) or via remote Windows PowerShell. 
   
 ## Types of mail-enabled groups
-<a name="GROUPS_types"> </a>
 
 You can create two types of groups for your Exchange organization:
   
@@ -30,7 +29,6 @@ You can create two types of groups for your Exchange organization:
     > By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups. 
   
 ## Before you begin
-<a name="sectionSection1"> </a>
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups and Security Groups" entry in the [Feature permissions in EOP](feature-permissions-in-eop.md) topic. 
     
@@ -46,7 +44,6 @@ You can create two types of groups for your Exchange organization:
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## Create a group in the EAC
-<a name="GROUPS_distribution"> </a>
 
 1. In the Exchange admin center (EAC), go to **Recipients** \> **Groups**.
     
@@ -72,7 +69,6 @@ You can create two types of groups for your Exchange organization:
 5. When you've finished, click **Save** to create the group. The new group should appear in the list of groups. 
     
 ## Edit or remove a group in the EAC
-<a name="GROUPS_security"> </a>
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
@@ -85,7 +81,6 @@ You can create two types of groups for your Exchange organization:
 3. When you're finished making your changes, click **Save**.
     
 ## Create, edit, or remove a group using remote Windows PowerShell
-<a name="sectionSection4"> </a>
 
 This section provides information about creating groups and changing their properties by using remote Windows PowerShell. It also shows how to remove an existing group. 
   
