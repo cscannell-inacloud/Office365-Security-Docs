@@ -1,4 +1,4 @@
-# Get Started
+# Get started
 ## Overview of security and compliance in Office 365
 ## Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond
 ## Configure your Office 365 tenant for increased security
@@ -31,7 +31,7 @@
 ## How to turn off Mobile Device Management in Office 365
 ## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
 
-# Prevent Data Loss	
+# Prevent data loss	
 ## Prevent data loss in Office 365
 ## Create a DLP policy from a template
 ## What the DLP policy templates include
@@ -55,7 +55,7 @@
 ## Restore an inactive mailbox in Office 365
 ## Delete an inactive mailbox in Office 365
 
-# Manage data Governance		
+# Manage data governance		
 ## Manage data governance in Office 365	
 ## Archiving & Retention
 ### Overview of unlimited archiving in Office 365
@@ -148,7 +148,7 @@
 ## View keyword statistics for Content Search results
 ## View email security reports in the Security & Compliance Center
 
-# Manage legal Investigations		
+# Manage legal investigations		
 ## eDiscovery in Office 365	
 ### Manage eDiscovery cases in the Office 365 Security & Compliance Center
 ### Assign eDiscovery permissions in the Office 365 Security & Compliance Center
@@ -214,7 +214,7 @@
 ## Detect and Remediate Illicit Consent Grants in Office 365
 ## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
 
-# Service Assurance
+# Service assurance
 ## Tenant isolation in Office 365
 ### Isolation and Access Control in Azure Active Directory
 ### Monitoring and Testing Tenant Boundaries
