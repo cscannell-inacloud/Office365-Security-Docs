@@ -2,7 +2,7 @@
 ## Overview of security and compliance in Office 365
 ## Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond
 ## Configure your Office 365 tenant for increased security
-# Architecture
+# Service Assurance
 ## Tenant isolation in Office 365
 ### Isolation and Access Control in Azure Active Directory
 ### Monitoring and Testing Tenant Boundaries
@@ -167,8 +167,7 @@
 ### Find and release quarantined messages as a user in Office 365
 ### Quarantine FAQ for Office 365
 ### Use user spam notifications to release and report quarantined messages in Office 365
-# Security Solutions & Incident Management		
-## Security solutions	
+# Security Solutions		
 ## Office 365 Information Protection for GDPR	
 ### Overview: Office 365 Protection for GDPR
 ### Search for and find personal data
@@ -188,9 +187,6 @@
 ## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
 ### Configure groups and users for a political campaign dev/test environment
 ### Create team sites in a political campaign dev/test environment
-## Office 365 Security Incident Response	
-### Detect and Remediate Illicit Consent Grants in Office 365
-### Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
 ## Secure SharePoint Online sites and files	
 ### Deploy SharePoint Online sites for three tiers of protection
 ### Protect SharePoint Online files with Office 365 labels and DLP
@@ -201,6 +197,10 @@
 ### Deploy an isolated SharePoint Online team site
 ### Manage an isolated SharePoint Online team site
 ### Isolated SharePoint Online team site dev/test environment
+# Security Incident Management
+## Office 365 Security Incident Response	
+### Detect and Remediate Illicit Consent Grants in Office 365
+### Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
 #Legal Investigations		
 ## eDiscovery in Office 365	
 ### Manage eDiscovery cases in the Office 365 Security & Compliance Center
