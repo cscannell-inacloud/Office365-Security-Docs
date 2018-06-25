@@ -2,32 +2,21 @@
 ## Overview of security and compliance in Office 365
 ## Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond
 ## Configure your Office 365 tenant for increased security
-# Security & Compliance Center	
+## Go to the Office 365 Security & Compliance Center
 ## Introducing the Office 365 Secure Score
+
+# Security & Compliance Center	
 ## Monitor security and compliance in Office 365
 ## Threat management in the Office 365 Security & Compliance Center
 ## Reports in the Office 365 Security & Compliance Center
 ## Alert policies in the Office 365 Security & Compliance Center
 ## Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center
-## Go to the Office 365 Security & Compliance Center
 ## Permissions in the Office 365 Security & Compliance Center
 ## Give users access to the Office 365 Security & Compliance Center
 ## Alerts in the Office 365 Security & Compliance Center
 ## Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services
-## Search for content in Office 365	
-### Content Search in Office 365
-### Limits for Content Search in the Office 365 Security & Compliance Center
-### Run a Content Search in the Office 365 Security & Compliance Center
-### Keyword queries and search conditions for Content Search
-### Check your Content Search query for errors
-### Export a Content Search report
-### Partially indexed items in Content Search in Office 365
-### Use Content Search in Office 365 for targeted collections
-### Configure permissions filtering for Content Search
-### Prepare a CSV file for an ID list Content Search in Office 365
-### View keyword statistics for Content Search results
-### View email security reports in the Security & Compliance Center
-# Data Access		
+
+# Protect access to data and services		
 ## Overview of Mobile Device Management (MDM) for Office 365	
 ## Set up Mobile Device Management (MDM) in Office 365
 ## Choose between MDM for Office 365 and Microsoft Intune
@@ -41,6 +30,7 @@
 ## Troubleshoot device enrollment with MDM for Office 365
 ## How to turn off Mobile Device Management in Office 365
 ## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
+
 # Prevent Data Loss	
 ## Prevent data loss in Office 365
 ## Create a DLP policy from a template
@@ -64,7 +54,28 @@
 ## Overview of inactive mailboxes in Office 365
 ## Restore an inactive mailbox in Office 365
 ## Delete an inactive mailbox in Office 365
-#Threat Protection		
+
+# Manage data Governance		
+## Manage data governance in Office 365	
+## Archiving & Retention
+### Overview of unlimited archiving in Office 365
+### Archiving third-party data in Office 365
+### Enable unlimited archiving in Office 365 - Admin Help
+### Enable archive mailboxes in the Office 365 Security & Compliance Center
+### Overview of retention policies
+### Overview of event-driven retention
+### Increase the Recoverable Items quota for mailboxes on hold
+### Change the hold duration for an inactive mailbox in Office 365
+### Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
+### Search for and delete email messages in your Office 365 organization - Admin Help
+## Overview of importing your organization's PST files to Office 365	
+### Use network upload to import your organization's PST files to Office 365
+### Manage inactive mailboxes in Office 365
+### Use the PST Collection tool to find, copy, and delete PST files in your organization
+### Use drive shipping to import your organization's PST files to Office 365
+### Filter data when importing PST files to Office 365
+
+# Protect against threats	
 ## Anti-spam and anti-malware protection in Office 365
 ### Anti-phishing protection in Office 365
 ### Learn more about spoof intelligence
@@ -122,41 +133,22 @@
 ### Find and release quarantined messages as a user in Office 365
 ### Quarantine FAQ for Office 365
 ### Use user spam notifications to release and report quarantined messages in Office 365
-# Security Solutions		
-## Office 365 Information Protection for GDPR	
-### Overview: Office 365 Protection for GDPR
-### Search for and find personal data
-### Customize or create new sensitive information types for GDPR
-### Architect a classification schema for personal plan
-### Apply labels to personal data in Office 365
-### Apply protection to personal data in Office 365
-### Monitor for leaks of personal data
-### Office 365 GDPR dev/test environment
-## GDPR for on-premises Office servers	
-### GDPR for SharePoint Server
-### GDPR for Exchange Server
-### GDPR for Skype for Business Server and Lync Server
-### GDPR for Project Server
-### GDPR for Office Web Apps Server and Office Online Server
-### GDPR for on-premises Windows Server file shares
-## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
-### Configure groups and users for a political campaign dev/test environment
-### Create team sites in a political campaign dev/test environment
-## Secure SharePoint Online sites and files	
-### Deploy SharePoint Online sites for three tiers of protection
-### Protect SharePoint Online files with Office 365 labels and DLP
-### Protect SharePoint Online files with Azure Information Protection
-### Secure SharePoint Online sites in a dev/test environment
-## Isolated SharePoint Online team sites	
-### Design an isolated SharePoint Online team site
-### Deploy an isolated SharePoint Online team site
-### Manage an isolated SharePoint Online team site
-### Isolated SharePoint Online team site dev/test environment
-# Security Incident Management
-## Office 365 Security Incident Response	
-### Detect and Remediate Illicit Consent Grants in Office 365
-### Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
-#Legal Investigations		
+
+# Search for content
+## Content Search in Office 365
+## Limits for Content Search in the Office 365 Security & Compliance Center
+## Run a Content Search in the Office 365 Security & Compliance Center
+## Keyword queries and search conditions for Content Search
+## Check your Content Search query for errors
+## Export a Content Search report
+## Partially indexed items in Content Search in Office 365
+## Use Content Search in Office 365 for targeted collections
+## Configure permissions filtering for Content Search
+## Prepare a CSV file for an ID list Content Search in Office 365
+## View keyword statistics for Content Search results
+## View email security reports in the Security & Compliance Center
+
+# Manage legal Investigations		
 ## eDiscovery in Office 365	
 ### Manage eDiscovery cases in the Office 365 Security & Compliance Center
 ### Assign eDiscovery permissions in the Office 365 Security & Compliance Center
@@ -176,31 +168,52 @@
 ### Import non-Office 365 content for Advanced eDiscovery analysis
 ### Set up users and cases in Office 365 Advanced eDiscovery
 ### Export results in Office 365 Advanced eDiscovery
-# Data Governance		
-## Manage data governance in Office 365	
-## Archiving & Retention
-### Overview of unlimited archiving in Office 365
-### Archiving third-party data in Office 365
-### Enable unlimited archiving in Office 365 - Admin Help
-### Enable archive mailboxes in the Office 365 Security & Compliance Center
-### Overview of retention policies
-### Overview of event-driven retention
-### Increase the Recoverable Items quota for mailboxes on hold
-### Change the hold duration for an inactive mailbox in Office 365
-### Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
-### Search for and delete email messages in your Office 365 organization - Admin Help
-## Overview of importing your organization's PST files to Office 365	
-### Use network upload to import your organization's PST files to Office 365
-### Manage inactive mailboxes in Office 365
-### Use the PST Collection tool to find, copy, and delete PST files in your organization
-### Use drive shipping to import your organization's PST files to Office 365
-### Filter data when importing PST files to Office 365
-# Monitor security and compliance	
-## Auditing	
-### Enable mailbox auditing in Office 365
-### Turn Office 365 audit log search on or off
-### Search the audit log for user and admin activity in Office 365
-## Alerts
+
+# Search the audit log
+## Enable mailbox auditing in Office 365
+##Turn Office 365 audit log search on or off
+## Search the audit log for user and admin activity in Office 365
+
+# Monitor security and compliance
+
+# Security solutions		
+## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
+### Configure groups and users for a political campaign dev/test environment
+### Create team sites in a political campaign dev/test environment
+## Secure SharePoint Online sites and files	
+### Deploy SharePoint Online sites for three tiers of protection
+### Protect SharePoint Online files with Office 365 labels and DLP
+### Protect SharePoint Online files with Azure Information Protection
+### Secure SharePoint Online sites in a dev/test environment
+## Isolated SharePoint Online team sites	
+### Design an isolated SharePoint Online team site
+### Deploy an isolated SharePoint Online team site
+### Manage an isolated SharePoint Online team site
+### Isolated SharePoint Online team site dev/test environment
+
+# Compliance solutions
+## Office 365 Information Protection for GDPR	
+### Overview: Office 365 Protection for GDPR
+### Search for and find personal data
+### Customize or create new sensitive information types for GDPR
+### Architect a classification schema for personal plan
+### Apply labels to personal data in Office 365
+### Apply protection to personal data in Office 365
+### Monitor for leaks of personal data
+### Office 365 GDPR dev/test environment
+## GDPR for on-premises Office servers	
+### GDPR for SharePoint Server
+### GDPR for Exchange Server
+### GDPR for Skype for Business Server and Lync Server
+### GDPR for Project Server
+### GDPR for Office Web Apps Server and Office Online Server
+### GDPR for on-premises Windows Server file shares
+
+# Security incident management
+## Office 365 Security Incident Response	
+## Detect and Remediate Illicit Consent Grants in Office 365
+## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+
 # Service Assurance
 ## Tenant isolation in Office 365
 ### Isolation and Access Control in Azure Active Directory
@@ -246,6 +259,7 @@
 ### Internal Logging for Office 365 Engineering
 ### Office 365 Mailbox Migrations
 ### Office 365 Management Activity API
+
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [Overview](eop/exchange-online-protection-overview.md)
 ### [EOP features](eop/eop-features.md)
