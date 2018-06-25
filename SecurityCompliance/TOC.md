@@ -4,19 +4,18 @@
 ## Configure your Office 365 tenant for increased security
 ## Go to the Office 365 Security & Compliance Center
 ## Introducing the Office 365 Secure Score
-
-# Security & Compliance Center	
-## Monitor security and compliance in Office 365
-## Threat management in the Office 365 Security & Compliance Center
-## Reports in the Office 365 Security & Compliance Center
-## Alert policies in the Office 365 Security & Compliance Center
-## Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center
 ## Permissions in the Office 365 Security & Compliance Center
 ## Give users access to the Office 365 Security & Compliance Center
-## Alerts in the Office 365 Security & Compliance Center
-## Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services
+## Security Dashboard overview
+## Supervision reports
+## Install the Supervision add-in for Outlook desktop
+## Configure supervision policies for your organization
+## Use your free Azure Active Directory subscription in Office 365
+## Plan for security and compliance in Office 365
+## Use Explorer in the Security and Compliance Center
 
-# Protect access to data and services		
+# Protect access to data and services
+## Protect access to data and services in Office 365
 ## Overview of Mobile Device Management (MDM) for Office 365	
 ## Set up Mobile Device Management (MDM) in Office 365
 ## Choose between MDM for Office 365 and Microsoft Intune
@@ -30,12 +29,19 @@
 ## Troubleshoot device enrollment with MDM for Office 365
 ## How to turn off Mobile Device Management in Office 365
 ## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
+## Privacy and security for built-in mobile device management for Office 365
+## Manage device access settings
+## Investigate a user account that might be compromised in Office 365
 
-# Prevent data loss	
+# Prevent data loss
+## Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services	
 ## Prevent data loss in Office 365
 ## Create a DLP policy from a template
 ## What the DLP policy templates include
 ## Create a DLP policy to protect documents with FCI or other properties
+## What the DLP functions look for
+## Get started with the default DLP policy
+## Recover items deleted by the retention process
 ## Get started with DLP policy recommendations
 ## Overview of document deletion policies
 ## Overview of preservation policies
@@ -49,6 +55,7 @@
 ## Create a custom sensitive information type
 ## What the sensitive information types look for
 ## Overview of labels
+## View label activity for documents
 ## Send email notifications and show policy tips for DLP policies
 ## Recover an inactive mailbox in Office 365
 ## Overview of inactive mailboxes in Office 365
@@ -58,6 +65,7 @@
 # Manage data governance		
 ## Manage data governance in Office 365	
 ## Archiving & Retention
+### Set up an archive and deletion policy for mailboxes in your Office 365 organization
 ### Overview of unlimited archiving in Office 365
 ### Archiving third-party data in Office 365
 ### Enable unlimited archiving in Office 365 - Admin Help
@@ -68,14 +76,19 @@
 ### Change the hold duration for an inactive mailbox in Office 365
 ### Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
 ### Search for and delete email messages in your Office 365 organization - Admin Help
+### Archive
 ## Overview of importing your organization's PST files to Office 365	
 ### Use network upload to import your organization's PST files to Office 365
 ### Manage inactive mailboxes in Office 365
 ### Use the PST Collection tool to find, copy, and delete PST files in your organization
 ### Use drive shipping to import your organization's PST files to Office 365
 ### Filter data when importing PST files to Office 365
+### Use network upload to import RMS-encrypted PST files to Office 365
+### FAQ about importing PST files to Office 365
+## View the data governance reports
 
-# Protect against threats	
+# Protect against threats
+## Threat management in the Office 365 Security & Compliance Center
 ## Anti-spam and anti-malware protection in Office 365
 ### Anti-phishing protection in Office 365
 ### Learn more about spoof intelligence
@@ -88,9 +101,14 @@
 ### How to prevent real email from being marked as spam in Office 365
 ### How to reduce spam email in Office 365
 ### Create a keyword dictionary
+### Office 365 email anti-spam protection
+### Zero-hour auto purge - protection against spam and malware
+
 ## Encryption in Office 365	
+### Manage Office 365 Message Encryption
 ### Set up new Office 365 Message Encryption capabilities
 ### Email encryption in Office 365
+### How Exchange Online secures your email secrets
 ### Office 365 Message Encryption (OME)
 ### Service encryption with Customer Key for Office 365 FAQ
 ### Set up encryption in Office 365 Enterprise
@@ -99,8 +117,13 @@
 ### Technical reference details about encryption in Office 365
 ### How Exchange Online uses TLS to secure email connections in Office 365
 ### Office 365 Message Encryption FAQ
+### Legacy information for Office 365 Message Encryption
+### Office 365 Protected Message Viewer Portal privacy statement
+### Create conditions for a supervisory review policy
+
 ## Office 365 Advanced Threat Protection	
 ### Protect against threats in Office 365
+### Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
 ### Set up Office 365 ATP Safe Attachments policies
 ### Office 365 ATP Safe Links
 ### Dynamic delivery and previewing with Office 365 ATP Safe Attachments
@@ -116,8 +139,16 @@
 ### Find and investigate malicious email that was delivered (Office 365 Threat Intelligence)
 ### Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection
 ### Attack Simulator (Office 365)
+### Learn about threats against your organization (Office 365 Threat Intelligence)
+### SIEM integration with Office 365 Threat Intelligence
+### Keep your Office 365 users safe with Office 365 Threat Intelligence
+### Track an attack with Office 365 Threat Intelligence
+### Threat Trackers - New and Noteworthy
+### View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams
+
 ## Overview of Office 365 Cloud App Security	
 ### Get ready for Office 365 Cloud App Security
+### What's new in Office 365 Cloud App Security
 ### Integrate your SIEM server with Office 365 Cloud App Security
 ### Manage app permissions using Office 365 Cloud App Security
 ### Turn on Office 365 Cloud App Security
@@ -128,6 +159,12 @@
 ### Web traffic logs and data sources for Office 365 Cloud App Security
 ### Utilization activities after rolling out Office 365 Cloud App Security
 ### Suspend or restore a user account in Office 365 Cloud App Security
+### Investigate an activity in Office 365 Cloud App Security
+### Review app discovery findings in Office 365 Cloud App Security
+### Group your IP addresses to simplify management in Office 365 Cloud App Security
+### Create app discovery reports using Office 365 Cloud App Security
+### Security policy reference information for Office 365 Cloud App Security
+
 ## Quarantine email messages in Office 365	
 ### Manage quarantined messages and files as an administrator in Office 365
 ### Find and release quarantined messages as a user in Office 365
@@ -138,6 +175,7 @@
 ## Content Search in Office 365
 ## Limits for Content Search in the Office 365 Security & Compliance Center
 ## Run a Content Search in the Office 365 Security & Compliance Center
+## Export Content Search results from the Office 365 Security and Compliance Center
 ## Keyword queries and search conditions for Content Search
 ## Check your Content Search query for errors
 ## Export a Content Search report
@@ -147,6 +185,13 @@
 ## Prepare a CSV file for an ID list Content Search in Office 365
 ## View keyword statistics for Content Search results
 ## View email security reports in the Security & Compliance Center
+## Use Content Search to search the mailbox and OneDrive for Business site for a list of users
+## Create, report on, and delete multiple Content Searches
+## Bulk edit Content Searches in the Office 365 Security & Compliance Center
+## Use Content Search to search third-party data that was imported to Office 365
+## Clone a Content Search in the Office 365 Security & Compliance Center
+## Disable reports when you export Content Search results in the Office 365 Security & Compliance Center
+## Tagging and Search
 
 # Manage legal investigations		
 ## eDiscovery in Office 365	
@@ -156,6 +201,7 @@
 ### eDiscovery cases in the Office 365 Security & Compliance Center
 ### Assign eDiscovery permissions to OneDrive for Business sites
 ### Manage legal investigations in Office 365
+### Create a Litigation Hold in Office 365
 ### Search all mailboxes and sites using the eDiscovery Center
 ### Search for eDiscovery activities in the Office 365 audit log
 ### Set up compliance boundaries for eDiscovery investigations in Office 365
@@ -163,18 +209,69 @@
 ### Use a script to add users to a hold in an eDiscovery case in the Office 365 Security & Compliance Center
 ### Change the size of PST files when exporting eDiscovery search results
 ### De-duplication in eDiscovery search results
+### Differences between estimated and actual eDiscovery search results in Office 365
+### Create a report on holds in eDiscovery cases in Office 365
+### eDiscovery solution series - Data spillage scenario - Search and purge
+
 ## Office 365 Advanced eDiscovery	
 ### Quick setup for Office 365 Advanced eDiscovery
+### Prepare search results for Office 365 Advanced eDiscovery
+### Investigating partially indexed items in Office 365 eDiscovery
 ### Import non-Office 365 content for Advanced eDiscovery analysis
 ### Set up users and cases in Office 365 Advanced eDiscovery
 ### Export results in Office 365 Advanced eDiscovery
+### Run the Process module in Office 365 Advanced eDiscovery
+### Analyze case data with Office 365 Advanced eDiscovery
+### Export case data in Office 365 Advanced eDiscovery
+### Use Office 365 Advanced eDiscovery utilities
+### User roles and access in Office 365 Advanced eDiscovery
+### Manage Relevance setup in Office 365 Advanced eDiscovery
+### Use the Relevance module in Office 365 Advanced eDiscovery
+### Tagging and Relevance training in Office 365 Advanced eDiscovery
+### Run the Process module and load data in Office 365 Advanced eDiscovery
+### Define case and tenant settings in Office 365 Advanced eDiscovery
+### Run reports in Office 365 Advanced eDiscovery
+### View Analyze results in Office 365 Advanced eDiscovery
+### Use Express Analysis in Office 365 Advanced eDiscovery
+### Prepare data for Office 365 Advanced eDiscovery
+### Export report fields in Office 365 Advanced eDiscovery
+### Tagging and Assessment in Office 365 Advanced eDiscovery
+### Understand document similarity in Office 365 Advanced eDiscovery
+### Define highlighted keywords and advanced options in Office 365 Advanced eDiscovery
+### Set Ignore Text option for Analyze in Office 365 Advanced eDiscovery
+### View batch history and export past results in Office 365 Advanced eDiscovery
+### Set Analyze options in Office 365 Advanced eDiscovery
+### View Process module results in Office 365 Advanced eDiscovery
+### Track Relevance analysis in Office 365 Advanced eDiscovery
+### Decision based on the results in Office 365 Advanced eDiscovery
+### Test Relevance analysis in Office 365 Advanced eDiscovery
+### Set up loads to add imported files in Office 365 Advanced eDiscovery
+### Define issues and assign users in Office 365 Advanced eDiscovery
+### Set Analyze advanced settings in Office 365 Advanced eDiscovery
+### Understand Assessment in Relevance in Office 365 Advanced eDiscovery
 
 # Search the audit log
 ## Enable mailbox auditing in Office 365
-##Turn Office 365 audit log search on or off
+## Turn Office 365 audit log search on or off
 ## Search the audit log for user and admin activity in Office 365
+## Search the audit log in the Office 365 Security and Compliance Center
+## Detailed properties in the Office 365 audit log
+## Use sharing auditing in the Office 365 audit log
 
 # Monitor security and compliance
+## Monitor security and compliance in Office 365
+## Alert policies in the Office 365 Security & Compliance Center
+## Reports in the Office 365 Security & Compliance Center
+## Alerts in the Office 365 Security & Compliance Center
+## Create activity alerts in the Office 365 Security and Compliance Center
+## Create a schedule for a report in the Security and Compliance Center
+## Manage schedules for multiple reports in the Security and Compliance Center
+## Set up and download a custom report in the Security and Compliance Center
+## Download existing reports in the Security and Compliance Center
+## Walkthrough - From an insight to a detailed report
+## Walkthrough - From a dashboard to an insight
+## Enable or disable safety tips in Office 365
+## Reports and insights in the Office 365 Security and Compliance Center
 
 # Security solutions		
 ## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
@@ -192,6 +289,7 @@
 ### Isolated SharePoint Online team site dev/test environment
 
 # Compliance solutions
+## Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center
 ## Office 365 Information Protection for GDPR	
 ### Overview: Office 365 Protection for GDPR
 ### Search for and find personal data
@@ -215,6 +313,7 @@
 ## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
 
 # Service assurance
+## Service assurance in the Office 365 Security & Compliance Center
 ## Tenant isolation in Office 365
 ### Isolation and Access Control in Azure Active Directory
 ### Monitoring and Testing Tenant Boundaries
