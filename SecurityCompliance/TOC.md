@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Get Started
 ## Overview of security and compliance in Office 365
 ## Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond
@@ -329,8 +328,6 @@
 ### Sending mail to Office 365
 ### Services for non-customers
 ### Third-party copyright notices
-=======
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [Overview](eop/exchange-online-protection-overview.md)
 ### [EOP features](eop/eop-features.md)
@@ -416,4 +413,3 @@
 
 
 
->>>>>>> master
