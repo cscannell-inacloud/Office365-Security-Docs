@@ -33,7 +33,6 @@
 ### [Support for validation of DKIM signed messages](support-for-validation-of-dkim-signed-messages.md)
 ## [Information Rights Management](information-rights-management-in-exchange-online.md)
 ### [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md)
-### [Configure IRM to use Azure Rights Management](configure-irm-to-use-azure-rights-management.md)
 ### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ## [Messaging policy and compliance in EOP](eop/messaging-policy-and-compliance-in-eop.md)
 ### [Auditing reports in EOP](eop/auditing-reports-in-eop.md)
@@ -59,7 +58,6 @@
 ### [Put an In-Place Hold on a soft-deleted mailbox](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [Quarantine](quarantine.md)
 ### [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md)
-### [Quarantine FAQ](quarantine-faq.md)
 ## [S/MIME](s-mime-for-message-signing-and-encryption.md)
 ### [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
 ### [Configure S/MIME settings for Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
@@ -76,11 +74,8 @@
 ### [Delegated administration FAQ](eop/delegated-administration-faq.md)
 ## [Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)
 ### [Accessibility for people with disabilities](eop/accessibility-for-people-with-disabilities.md)
-### [Change notification for EOP IP addresses](eop/change-notification-for-eop-ip-addresses.md)
-### [Exchange Online Protection IP addresses](eop/exchange-online-protection-ip-addresses.md)
 ### [Sending mail to Office 365](sending-mail-to-office-365.md)
 ### [Services for non-customers](services-for-non-customers.md)
-### [Third-party copyright notices](eop/third-party-copyright-notices.md)
 
 
 

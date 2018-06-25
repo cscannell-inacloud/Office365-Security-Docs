@@ -27,7 +27,6 @@ In the following example, Contoso, Ltd. has merged with Contoso Suites. The foll
 The challenge in moving domains from one organization to another is that a verified domain can't exist in two organizations at the same time. The following steps help you work through this.
       
 ## Step 1: Collect data from the source organization
-<a name="BKMK_Collectdatafromthesourceorganization"> </a>
 
 In order to re-create the source organization in the target organization, make sure that you collect and store the following information about the source organization:
   
@@ -144,7 +143,6 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 ```
 
 ## Step 2: Add domains to the target organization
-<a name="BKMK_Adddomainstothetargetorg"> </a>
 
 Add domains to the target organization by using the following script. Copy and paste the text into a text editor like Notepad, save the script as C:\EOP\Export\Add_Domains.ps1, and run the following command:
   
@@ -185,7 +183,6 @@ Now, you can review and collect the information from the Office 365 admin center
 6. Add the verification TXT records to your DNS records. This will let you more quickly verify the domains in the source organization after they're removed from the target organization. For more information about configuring DNS, see [Create DNS records for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
     
 ## Step 3: Force senders to queue mail
-<a name="BKMK_Forcesenderstoqueuemail"> </a>
 
 While moving your domains from one tenant to another, you'll need to delete the domains from the source organization and then verify them in your target organization. During this time, you won't be able to route mail through EOP.
   
@@ -199,7 +196,6 @@ For more information about configuring DNS, see [Create DNS records for Office 3
 > Different providers queue mail for different periods of time. You'll need to set up your new tenant quickly and revert your DNS settings to avoid non-delivery reports (NDRs) from being sent to the sender if the queuing time expires. 
   
 ## Step 4: Remove users, groups, and domains from the source organization
-<a name="BKMK_removeusersgroupsanddomains"> </a>
 
 The following script removes users, groups, and domains from the source tenant by using Azure Active Directory remote Windows PowerShell. Copy and paste the following text into a text editor like Notepad, save the file as C:\EOP\Export\Remove_Users_and_Groups.ps1, and run the following command:
   
@@ -242,7 +238,6 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 ```
 
 ## Step 5: Verify domains for the target organization
-<a name="BKMK_Verifydomains"> </a>
 
 1. Sign in to the Office 365 admin center at [https://portal.office.com](https://portal.office.com).
     
@@ -251,7 +246,6 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 3. Click each **Start setup** link for the target domain and proceed through the setup wizard. 
     
 ## Step 6: Add mail users and groups to the target organization
-<a name="BKMK_Addmailusers"> </a>
 
 A best practice for EOP is to use Azure Active Directory to sync your on-premises Active Directory to your target tenant. For more information about how to do this, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md). You can also use the following script to recreate your users and groups from your source tenant. Note: User passwords cannot be moved. New user passwords are created and saved in the file named UsersAndGroups.ps1. (For more information about resetting your password, see [Reset a user's password](https://office.microsoft.com/en-us/office365-suite-help/reset-a-user-s-password-HA102816058.aspx).)
   
@@ -605,7 +599,6 @@ if($MailContactsCount -gt 0){
 ```
 
 ## Step 7: Add protection settings to the target organization
-<a name="BKMK_Addprotectoinsettings"> </a>
 
 You can run the following script from the Export directory while logged in to your target organization to recreate the settings exported to .xml files earlier from the source organization.
   
@@ -928,7 +921,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 ```
 
 ## Step 8: Revert your DNS settings to stop mail queuing
-<a name="BKMK_Revertyourdnssettings"> </a>
 
 If you chose to set your MX records to an invalid address to cause the senders to queue mail during your transition, you'll need to set them back to the correct value as specified in the [Office 365 admin center](https://portal.office.com). For more information about configuring DNS, see [Create DNS records for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   

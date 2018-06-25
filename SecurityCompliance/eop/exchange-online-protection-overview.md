@@ -19,14 +19,13 @@ Microsoft Exchange Online Protection (EOP) is a cloud-based email filtering serv
   
 The following are the primary ways you can use EOP for messaging protection:
   
-- **In a standalone scenario ** EOP provides cloud-based email protection for your on-premises Microsoft Exchange Server 2013 environment, legacy Exchange Server versions, or for any other on-premises SMTP email solution. 
+- **In a standalone scenario** EOP provides cloud-based email protection for your on-premises Microsoft Exchange Server 2013 environment, legacy Exchange Server versions, or for any other on-premises SMTP email solution. 
     
 - **As a part of Microsoft Exchange Online** By default, EOP protects Microsoft Exchange Online cloud-hosted mailboxes. 
     
 - **In a hybrid deployment** EOP can be configured to protect your messaging environment and control mail routing when you have a mix of on-premises and cloud mailboxes. 
     
 ## How EOP works
-<a name="sectionSection0"> </a>
 
 To understand how EOP works, it helps to see how it processes incoming email:
   
@@ -49,7 +48,6 @@ EOP performs load balancing between datacenters but only within a region. If you
 - For the Government Community Cloud (GCC), all Exchange Online mailboxes are located in U.S. datacenters and all messages are routed through U.S. datacenters for EOP filtering.
     
 ## EOP plans and features
-<a name="sectionSection1"> </a>
 
 The following are the available EOP subscription plans:
   
@@ -62,14 +60,12 @@ The following are the available EOP subscription plans:
 For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619).
   
 ## Setting up EOP
-<a name="sectionSection2"> </a>
 
 Setting up EOP can be simple, especially in the case of a small organization with a handful of compliance rules. However, if you have a large organization with multiple domains, custom compliance rules, or hybrid mail flow, set up can take more planning and time.
   
 If you've already purchased EOP, see [Set up your EOP service](set-up-your-eop-service.md) to ensure that you complete all the steps necessary to configure EOP to protect your messaging environment. 
   
 ## For more information
-<a name="sectionSection3"> </a>
 
 [EOP features](eop-features.md)
   
