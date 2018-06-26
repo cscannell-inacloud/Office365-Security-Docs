@@ -314,7 +314,7 @@
 
 # Service assurance
 ## Service assurance in the Office 365 Security & Compliance Center
-## [T]enant isolation in Office 365](office-365-tenant-isolation-overview.md)
+## [Tenant isolation in Office 365](office-365-tenant-isolation-overview.md)
 ### [Isolation and Access Control in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 ### [Monitoring and Testing Tenant Boundaries](office-365-monitoring-and-testing.md)
 ### [Resource Limits](office-365-resource-limits.md)
