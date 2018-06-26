@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/13/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
