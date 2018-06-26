@@ -314,50 +314,50 @@
 
 # Service assurance
 ## Service assurance in the Office 365 Security & Compliance Center
-## Tenant isolation in Office 365
-### Isolation and Access Control in Azure Active Directory
-### Monitoring and Testing Tenant Boundaries
-### Resource Limits
-### Isolation and Access Control in Office 365
-### Tenant Isolation in Office 365 Search
-### Tenant Isolation in Office 365 Video
-### Tenant Isolation in the Office Graph and Delve
-## Encryption in Office 365	
-### Office 365 Service Encryption
-### Encryption in Azure
-### BitLocker and Distributed Key Manager (DKM) for Encryption
-### Encryption for Skype for Business, SharePoint Online, and Exchange Online
-### Encryption for Data in Transit
-### Customer-Managed Encryption Features
-### Encryption Risks and Protections
-### Encryption in Microsoft Dynamics 365
-## Understanding Office 365 Data Resiliency	
-### Dealing with Data Corruption
-### Exchange Online Data Resilience
-### Malware and Ransomware Protection
-### Monitoring and Self-Healing
-### SharePoint Online Data Resilience
-## Data Retention, Deletion, and Destruction in Office 365	
-### Data Destruction
-### Immutability in Office 365
-### Exchange Online Data Deletion
-### SharePoint Online Data Deletion
-### Skype for Business Data Deletion
-## Office 365 Administrative Access Controls	
-### Monitoring and Auditing Access Controls
-### Office 365 Isolation Controls
-### Office 365 Personnel Controls
-### Office 365 Technology Controls
-### Yammer Enterprise Access Controls
-## Defending against denial-of-service attacks	
-### Microsoft's Denial-of-Services Defense Strategy
-### Core Principles of Defense Against Denial-of-Service Attacks
-## Office 365 Auditing and Reporting	
-### Office 365 Reporting Features
-### eDiscovery and Search Features
-### Internal Logging for Office 365 Engineering
-### Office 365 Mailbox Migrations
-### Office 365 Management Activity API
+## [T]enant isolation in Office 365](office-365-tenant-isolation-overview.md)
+### [Isolation and Access Control in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
+### [Monitoring and Testing Tenant Boundaries](office-365-monitoring-and-testing.md)
+### [Resource Limits](office-365-resource-limits.md)
+### [Isolation and Access Control in Office 365](office-365-isolation-in-office-365.md)
+### [Tenant Isolation in Office 365 Search](office-365-isolation-in-office-365-search.md)
+### [Tenant Isolation in Office 365 Video](office-365-isolation-in-office-365-video.md)
+### [Tenant Isolation in the Office Graph and Delve](office-365-isolation-in-graph-and-delve.md)
+## [Encryption in Office 365](office-365-encryption-in-the-microsoft-cloud-overview.md)	
+### [Office 365 Service Encryption](office-365-service-encryption.md)
+### [Encryption in Azure](office-365-azure-encryption.md)
+### [BitLocker and Distributed Key Manager (DKM) for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
+### [Encryption for Skype for Business, SharePoint Online, and Exchange Online](office-365-encryption-for-skype-sharepoint-and-exchange.md)
+### [Encryption for Data in Transit](office-365-encryption-for-data-in-transit.md)
+### [Customer-Managed Encryption Features](office-365-customer-managed-encryption-features.md)
+### [Encryption Risks and Protections](office-365-encryption-risks-and-protections.md)
+### [Encryption in Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
+## [Understanding Office 365 Data Resiliency](office-365-data-resiliency-overview.md)	
+### [Dealing with Data Corruption](office-365-dealing-with-data-corruption.md)
+### [Exchange Online Data Resilience](office-365-exchange-data-resiliency.md)
+### [Malware and Ransomware Protection](office-365-malware-and-ransomware-protection.md)
+### [Monitoring and Self-Healing](office-365-monitoring-and-self-healing.md)
+### [SharePoint Online Data Resilience](office-365-sharepoint-data-resiliency.md)
+## [Data Retention, Deletion, and Destruction in Office 365](office-365-data-retention-deletion-and-destruction-overview.md)	
+### [Data Destruction](office-365-data-destruction.md)
+### [Immutability in Office 365](office-365-data-immutability.md)
+### [Exchange Online Data Deletion](office-365-exchange-online-data-deletion.md)
+### [SharePoint Online Data Deletion](office-365-sharepoint-online-data-deletion.md)
+### [Skype for Business Data Deletion](office-365-skype-data-deletion.md)
+## [Office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md)	
+### [Monitoring and Auditing Access Controls](office-365-monitoring-and-auditing-access-controls.md)
+### [Office 365 Isolation Controls](office-365-isolation-controls.md)
+### [Office 365 Personnel Controls](office-365-personnel-controls.md)
+### [Office 365 Technology Controls](office-365-technology-controls.md)
+### [Yammer Enterprise Access Controls](office-365-yammer-enterprise-access-controls.md)
+## [Defending against denial-of-service attacks](office-365-defending-against-denial-of-service-attacks-overview.md)	
+### [Microsoft's Denial-of-Services Defense Strategy](office-365-microsoft-dos-defense-strategy.md)
+### [Core Principles of Defense Against Denial-of-Service Attacks](office-365-core-principles-of-defense-against-dos-attacks.md)
+## [Office 365 Auditing and Reporting](office-365-auditing-and-reporting-overview.md)	
+### [Office 365 Reporting Features](office-365-reporting-features.md)
+### [eDiscovery and Search Features](office-365-ediscovery-and-search-features.md)
+### [Internal Logging for Office 365 Engineering](office-365-internal-logging.md)
+### [Office 365 Mailbox Migrations](office-365-mailbox-migrations.md)
+### [Office 365 Management Activity API](office-365-management-activity-api.md)
 
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [Overview](eop/exchange-online-protection-overview.md)
