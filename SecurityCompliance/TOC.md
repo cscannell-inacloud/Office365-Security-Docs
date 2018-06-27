@@ -21,6 +21,7 @@
 ### [Configure your spam filter policies](configure-your-spam-filter-policies.md)
 ### [Configure the connection filter policy](configure-the-connection-filter-policy.md)
 ### [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
+### [Remove a user, domain, or IP address from a block list](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
 ### [Spam confidence levels](spam-confidence-levels.md)
 #### [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 ### [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
