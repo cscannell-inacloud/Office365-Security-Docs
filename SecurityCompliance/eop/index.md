@@ -1,4 +1,4 @@
 ---
-redirect_url: exchange-online-protection-overview
+redirect_url: eop-features
 redirect_document_id: TRUE 
 ---
