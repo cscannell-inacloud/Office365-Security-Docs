@@ -1,1 +1,4 @@
-# Welcome to OfficeDocs-O365SecurityCompliance!
+---
+redirect_url: exchange-online-protection-overview
+redirect_document_id: TRUE 
+---
