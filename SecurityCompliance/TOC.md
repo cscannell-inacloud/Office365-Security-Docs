@@ -327,7 +327,7 @@
 ### [Encryption for Data in Transit](office-365-encryption-for-data-in-transit.md)
 ### [Customer-Managed Encryption Features](office-365-customer-managed-encryption-features.md)
 ### [Encryption Risks and Protections](office-365-encryption-risks-and-protections.md)
-### [Encryption for Skype for Business, SharePoint Online, and Exchange Online](office-365-encryption-for-skype-sharepoint-and-exchange.md)
+### [Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)
 ### [BitLocker and Distributed Key Manager (DKM) for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 ### [Encryption in Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 ### [Encryption in Azure](office-365-azure-encryption.md)
