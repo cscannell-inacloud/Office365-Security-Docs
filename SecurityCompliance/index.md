@@ -67,7 +67,7 @@ If your organization needs to protect your data or comply with legal or regulato
                         <li><a href="https://securescore.office.com">Review Secure Score</a></li>
                         <li><a href="https://securescore.office.com">Implement Secure Privileged Access</a></li> 
                         <li><a href="https://securescore.office.com">Review Cloud App Security</a></l1>
-                        <li><a href="https://securescore.office.com">Refine information protection policies</a></li></p>
+                        <li><a href="https://securescore.office.com">Refine information protection policies</a></li>
                     </div>
                 </div>
             </div>
