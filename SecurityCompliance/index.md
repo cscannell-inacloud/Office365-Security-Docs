@@ -29,7 +29,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure Office 365 tenant security</a> <br> - <a href="https://securescore.office.com">Connect Office 365 to Cloud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint Online sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure Office 365 tenant security</a> <br> - <a href="https://securescore.office.com">Connect loud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint sites and files</a> </p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Next Steps - Enhanced protection</h3>
-                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://securescore.office.com">Conduct attack simulations</a> <br> - <a href="https://securescore.office.com">Review Compliance Manager</a> <br> - <a href="https://securescore.office.com">Implement protection on admin accounts</a> <br> - <a href="https://securescore.office.com">Enable multi-factor authentication</a> <br> - <a href="https://securescore.office.com">Review and update protection policies</a> </p>
+                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://securescore.office.com">Conduct attack simulations</a> <br> - <a href="https://securescore.office.com">Review Compliance Manager</a> <br> - <a href="https://securescore.office.com">Protect admin accounts</a> <br> - <a href="https://securescore.office.com">Enable multi-factor authentication</a> <br> - <a href="https://securescore.office.com">Review & update protection policies</a> </p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ If your organization needs to protect your data or comply with legal or regulato
                         <li><a href="https://securescore.office.com">Review Secure Score</a></li>
                         <li><a href="https://securescore.office.com">Implement Secure Privileged Access</a></li> 
                         <li><a href="https://securescore.office.com">Review Cloud App Security</a></l1>
-                        <li><a href="https://securescore.office.com">Refine information protection policies</a></li>
+                        <li><a href="https://securescore.office.com">Refine protection policies</a></li>
                     </div>
                 </div>
             </div>
