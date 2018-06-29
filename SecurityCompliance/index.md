@@ -29,7 +29,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure O365 tenant for increase security</a>> <br> - <a href="https://securescore.office.com">Connect Office 365 to Cloud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint Online sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure O365 tenant for increase security</a> <br> - <a href="https://securescore.office.com">Connect Office 365 to Cloud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint Online sites and files</a> </p>
                     </div>
                 </div>
             </div>
@@ -74,100 +74,10 @@ If your organization needs to protect your data or comply with legal or regulato
     </li>
 </ul>
 
-<ul class="panelContent cardsF">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tools-maintenance.svg" alt="Tools" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Maintain - 90 days and beyond</h3>
-                        <p><a href=" ">Link name</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security.svg" alt="Security" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Heading</h3>
-                        <p><a href=" ">Link name</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tasks.svg" alt="Tasks" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Heading</h3>
-                        <p><a href=" ">Link name</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-
 ---
 
 <h2>Featured Articles</h2>
 <ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
-                     </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Category</h3>
-                        <p>Add link to article</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
