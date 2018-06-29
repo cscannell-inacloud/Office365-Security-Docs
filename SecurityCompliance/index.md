@@ -29,7 +29,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure Office 365 tenant security</a> <br> - <a href="https://securescore.office.com">Connect loud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure tenant security</a> <br> - <a href="https://securescore.office.com">Connect loud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint sites and files</a> </p>
                     </div>
                 </div>
             </div>
@@ -63,11 +63,11 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Maintain - 90 days and beyond<</h3>
-                        <p>These are important security measures that build on previous work:</p>
-                        <li><a href="https://securescore.office.com">Review Secure Score</a></li>
-                        <li><a href="https://securescore.office.com">Implement Secure Privileged Access</a></li> 
-                        <li><a href="https://securescore.office.com">Review Cloud App Security</a></l1>
-                        <li><a href="https://securescore.office.com">Refine protection policies</a></li>
+                        <p>These are important security measures that build on previous work:<br>
+                        - <a href="https://securescore.office.com">Review Secure Score</a><br>
+                        - <a href="https://securescore.office.com">Implement Secure Privileged Access</a><br> 
+                        - <a href="https://securescore.office.com">Review Cloud App Security</a><br>
+                        - <a href="https://securescore.office.com">Refine protection policies</a><br></p>
                     </div>
                 </div>
             </div>
