@@ -227,7 +227,7 @@ ms.author: robmazz
         </a>
     </li>
 </ul>
----
+
 <h2>Security and Compliance Featured Areas</h2>
 <ul class="panelContent cardsW">
     <li>
@@ -241,8 +241,8 @@ ms.author: robmazz
                 </div>
             </div>
         </div>
-    </li>
-    <li>
+     </li>
+     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -253,8 +253,8 @@ ms.author: robmazz
                 </div>
             </div>
         </div>
-    </li>
-    <li>
+     </li>
+     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
