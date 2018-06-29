@@ -24,7 +24,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-architecture2.svg" alt="A cloud and a ruler" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started.svg" alt="A cloud and a ruler" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -43,7 +43,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow.svg" alt="A flow chart" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A flow chart" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -62,7 +62,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-devtest.svg" alt="A cloud with test tubes" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/database.svg" alt="A cloud with test tubes" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -81,7 +81,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy.svg" alt="A building, a cloud, and two arrows" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow.svg" alt="A building, a cloud, and two arrows" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -100,7 +100,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tasks.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -119,7 +119,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lightbulb-idea-capture.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -138,7 +138,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/flag.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -157,7 +157,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/toolbox.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -176,7 +176,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/health.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -195,7 +195,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -214,7 +214,7 @@ ms.author: robmazz
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/walkthrough-map.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
