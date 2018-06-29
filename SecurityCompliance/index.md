@@ -71,8 +71,7 @@ If your organization needs to protect your data or comply with legal or regulato
     </li>
 </ul>
 
----
-
+<hr>
 <h2>Featured Articles</h2>
 
 <ul class="panelContent cardsW">
