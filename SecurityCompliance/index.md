@@ -19,7 +19,6 @@ If your organization needs to protect your data or comply with legal or regulato
 
 <ul class="cardsF panelContent">
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -30,12 +29,11 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                <p>These tasks can be accomplished quickly and have low impact to users. <br> <a href="https://securescore.office.com">Check Secure Score</a><br></p>
+                <p>These tasks can be accomplished quickly and have low impact to users. <br> - <a href="https://securescore.office.com">Check Secure Score</a><br></p>
                     </div>
                 </div>
             </div>
         </div>
-        </a>
     </li>
     <li>
         <a href="  ">
@@ -189,7 +187,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     <div class="cardText">
                         <h3>Category</h3>
                         <p>Add link to article</p>
-               </div>
+                   </div>
                 </div>
             </div>
         </div> 
