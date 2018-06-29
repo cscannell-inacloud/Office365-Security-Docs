@@ -42,7 +42,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="Security lock" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -61,7 +61,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="User account" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tasks.svg" alt="Tasks" />
                         </div>
                     </div>
                     <div class="cardText">
