@@ -36,7 +36,6 @@ If your organization needs to protect your data or comply with legal or regulato
         </div>
     </li>
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -52,10 +51,8 @@ If your organization needs to protect your data or comply with legal or regulato
                 </div>
             </div>
         </div>
-        </a>
     </li>
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -71,7 +68,6 @@ If your organization needs to protect your data or comply with legal or regulato
                 </div>
             </div>
         </div>
-        </a>
     </li>
 </ul>
 
