@@ -29,7 +29,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure O365 tenant for increase security</a> <br> - <a href="https://securescore.office.com">Connect Office 365 to Cloud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint Online sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://securescore.office.com">Configure Office 365 tenant security</a> <br> - <a href="https://securescore.office.com">Connect Office 365 to Cloud App Security</a> <br> - <a href="https://securescore.office.com">Enable Azure AD Identity Protection</a> <br> - <a href="https://securescore.office.com">Secure SharePoint Online sites and files</a> </p>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,8 @@ If your organization needs to protect your data or comply with legal or regulato
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Next Steps - 60-90 days & Enhanced Protection</h3>
-                        <p>These tasks can be accomplished quickly and have low impact to users.</p>
+                        <h3>Next Steps - 60-90 days & enhanced protection</h3>
+                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://securescore.office.com">Conduct attack simmulations</a> <br> - <a href="https://securescore.office.com">Review Compliance Manager</a> <br> - <a href="https://securescore.office.com">Implement protection on admin accounts</a> <br> - <a href="https://securescore.office.com">Enable multi-factor authentication</a> <br> - <a href="https://securescore.office.com">Review and update protection policies</a> </p>
                     </div>
                 </div>
             </div>
@@ -66,6 +66,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Maintain - 90 days and beyond<</h3>
+                        <p>These are important security measures that build on previous work: <br> - <a href="https://securescore.office.com">Review Secure Score</a> <br> - <a href="https://securescore.office.com">Implement Secure Privileged Access</a> <br> - <a href="https://securescore.office.com">Review Cloud App Security</a> <br> - <a href="https://securescore.office.com">Refine information protection policies</a> </p>
                     </div>
                 </div>
             </div>
