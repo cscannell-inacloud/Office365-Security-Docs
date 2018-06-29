@@ -30,7 +30,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                        <p>These tasks can be accomplished quickly and have low impact to users. <br> <a href="https://securescore.office.com">Check Secure Score</a><br></p>
+                <p>These tasks can be accomplished quickly and have low impact to users. <br> <a href="https://securescore.office.com">Check Secure Score</a><br></p>
                     </div>
                 </div>
             </div>
