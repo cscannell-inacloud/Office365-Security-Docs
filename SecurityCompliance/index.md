@@ -63,7 +63,11 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Maintain - 90 days and beyond<</h3>
-                        <p>These are important security measures that build on previous work: <br> - <a href="https://securescore.office.com">Review Secure Score</a> <br> - <a href="https://securescore.office.com">Implement Secure Privileged Access</a> <br> - <a href="https://securescore.office.com">Review Cloud App Security</a> <br> - <a href="https://securescore.office.com">Refine information protection policies</a> </p>
+                        <p>These are important security measures that build on previous work:<br>
+                        <li><a href="https://securescore.office.com">Review Secure Score</a></li>
+                        <li><a href="https://securescore.office.com">Implement Secure Privileged Access</a></li> 
+                        <li><a href="https://securescore.office.com">Review Cloud App Security</a></l1>
+                        <li><a href="https://securescore.office.com">Refine information protection policies</a></li></p>
                     </div>
                 </div>
             </div>
