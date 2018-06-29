@@ -29,7 +29,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Get started</h3>
-                <p>yada yada yada.</p>
+                <p>Managing security and compliance is a partnership. You are responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Office 365 services. You can use Office 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Protect access to data and services</h3>
-                <p>yada yada yada.</p>
+                <p>Protecting access to your Office 365 data and services is crucial to defending against cyber-attacks and guarding against data loss. The same protections can be applied to other SaaS applications in your environment and even to on-premises applications published with Azure Active Directory Application Proxy.</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Prevent data loss</h3>
-                <p>yada yada yada.</p>
+                <p>With a data loss prevention (DLP) policy, you can identify, monitor, and automatically protect sensitive information across Office 365. For example, you can help prevent sensitive information such as credit card numbers, social security numbers, or health records from inadvertently leaking outside your organization.</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Manage data governance</h3>
-                <p>yada yada yada.</p>
+                <p>Data governance is all about keeping your data around when you need it and getting rid of it when you don't. With data governance in Office 365, you can manage the full content lifecycle, from importing and storing data at the beginning, to creating policies that retain and then permanently delete content at the end.</p>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Protect against threats</h3>
-                <p>yada yada yada.</p>
+                <p>With Office 365 Enterprise, you can help protect your organization against a variety of threats, including spoofing, malware, spam, phishing attempts, and unauthorized access to data. Use the resources on this page to learn about threat protection and actions you can take.</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Search for content</h3>
-                <p>yada yada yada.</p>
+                <p>Use the Content Search tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in Office 365 collaboration tools such as Microsoft Teams and Office 365 Groups.</p>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Manage legal investigations</h3>
-                <p>yada yada yada.</p>
+                <p>Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. You can perform these and many other similar activities by using the eDiscovery case tools in the Office 365 Security & Compliance Center.</p>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Search the audit log</h3>
-                <p>yada yada yada.</p>
+                <p>The Office 365 audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services.</p>
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Monitor security and compliance</h3>
-                <p>yada yada yada.</p>
+                <p>Data is the lifeblood of your organization. Learn how to lock down access prevent it from getting into the wrong hands, manage its lifecycle, and keep it safe from external threats.</p>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Security solutions</h3>
-                <p>yada yada yada.</p>
+                <p>Solutions for secure access, collaboration, and data with Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365, and the Microsoft Enterprise Mobility + Security (EMS) suite</p>
                     </div>
                 </div>
             </div>
@@ -219,51 +219,11 @@ ms.author: robmazz
                     </div>
                     <div class="cardText">
                         <h3>Compliance solutions</h3>
-                <p>yada yada yada.</p>
+                <p>Prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data.</p>
                     </div>
                 </div>
             </div>
         </div>
         </a>
-    </li>
-</ul>
-
-<h2>Security and Compliance Featured Areas</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Service Assurance</h3>
-                        <p><a href="https://docs.microsoft.com/Exchange/exchange-online">Learn more about how Office 365 protects your organization, data, and user identities.</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </li>
-     <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Security Incident Management</h3>
-                        <p><a href="https://support.office.com/article/sharepoint-online-–-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a?ui=en-US&rs=en-US&ad=US">yada yada yada.</a></p>
-                     </div>
-                </div>
-            </div>
-        </div>
-     </li>
-     <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Exchange Online Protection</h3>
-                        <p><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">yada yada yada.</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </li>
 </ul>
