@@ -46,7 +46,6 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Next Steps - Enhanced protection</h3>
-                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://securescore.office.com">Conduct attack simmulations</a> <br> - <a href="https://securescore.office.com">Review Compliance Manager</a> <br> - <a href="https://securescore.office.com">Implement protection on admin accounts</a> <br> - <a href="https://securescore.office.com">Enable multi-factor authentication</a> <br> - <a href="https://securescore.office.com">Review and update protection policies</a> </p>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,7 @@ If your organization needs to protect your data or comply with legal or regulato
 </ul>
 
 <hr>
-<h2>Reference</h2>
+<h2>Featured Articles</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -80,9 +79,10 @@ If your organization needs to protect your data or comply with legal or regulato
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Command-Line</h3>
-                        <p><a href="/en-us/powershell/resourcemanager" data-linktype="absolute-path">PowerShell</a></p>
-                        <p><a href="/en-us/cli/azure/network/application-gateway" data-linktype="absolute-path">Azure CLI 2 .0 preview</a></p>
+                        <h3>Threat protection in Office 365</h3>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Learn more about spoof intelligence</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Set up new Office 365 Message Encryption capabilities</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Email encryption in Office 365</a></p>
                     </div>
                 </div>
             </div>
@@ -93,12 +93,9 @@ If your organization needs to protect your data or comply with legal or regulato
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Languages</h3>
-                        <p><a href="/en-us/dotnet/api" data-linktype="absolute-path">.NET</a></p>
-                        <p><a href="/en-us/java/api/com.microsoft.azure.management.network" data-linktype="absolute-path">Java</a></p>
-                        <p><a href="http://azure.github.io/azure-sdk-for-node/azure-arm-network/latest/ApplicationGateways" data-linktype="external">Node .js</a></p>
-                        <p><a href="http://www.rubydoc.info/gems/azure_mgmt_network/0.8.0/Azure/ARM/Network/ApplicationGateways" data-linktype="external">Ruby</a></p>
-                        <p><a href="http://azure-sdk-for-python.readthedocs.io/en/latest/ref/azure.mgmt.network.operations.html#azure.mgmt.network.operations.ApplicationGatewaysOperations#azure.mgmt.network.operations.ApplicationGatewaysOperations" data-linktype="external">Python</a></p>
+                        <h3>Migrating to Office 365</h3>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Use network upload to import your organization PST files to Office 365</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of importing your organization PST files to Office 365</a></p>
                     </div>
                 </div>
             </div>
@@ -109,9 +106,10 @@ If your organization needs to protect your data or comply with legal or regulato
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>REST</h3>
-                        <p><a href="https://msdn.microsoft.com/library/mt684941" data-linktype="external">REST API Reference</a></p>
-                        <p><a href="https://msdn.microsoft.com/library/azure/mt299393" data-linktype="external">Classic REST API Reference</a></p>
+                        <h3>Prevent data loss in Office 365</h3>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of retention policies</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of data loss prevention policies</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Search for and delete email messages in your Office 365 organization</a></p>
                     </div>
                 </div>
             </div>
