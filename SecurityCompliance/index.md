@@ -65,7 +65,7 @@ If your organization needs to protect your data or comply with legal or regulato
                         <h3>Maintain - 90 days and beyond<</h3>
                         <p>These are important security measures that build on previous work:<br>
                         - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Secure Score</a><br>
-                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Implement Secure Privileged Access</a><br> ice.com
+                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Implement Secure Privileged Access</a><br>
                         - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Cloud App Security</a><br>
                         - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Refine protection policies</a><br></p>
                     </div>
