@@ -46,6 +46,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Next Steps - Enhanced protection</h3>
+                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://securescore.office.com">Conduct attack simulations</a> <br> - <a href="https://securescore.office.com">Review Compliance Manager</a> <br> - <a href="https://securescore.office.com">Implement protection on admin accounts</a> <br> - <a href="https://securescore.office.com">Enable multi-factor authentication</a> <br> - <a href="https://securescore.office.com">Review and update protection policies</a> </p>
                     </div>
                 </div>
             </div>
