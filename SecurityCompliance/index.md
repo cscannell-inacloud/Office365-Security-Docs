@@ -31,7 +31,6 @@ If your organization needs to protect your data or comply with legal or regulato
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
                         <p>These tasks can be accomplished quickly and have low impact to users.</p>
-                        <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
             </div>
@@ -51,7 +50,6 @@ If your organization needs to protect your data or comply with legal or regulato
                     <div class="cardText">
                         <h3>Next Steps - 60-90 days & Enhanced Protection</h3>
                         <p>These tasks can be accomplished quickly and have low impact to users.</p>
-                        <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
             </div>
@@ -70,7 +68,6 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Maintain - 90 days and beyond<</h3>
-                        <p><a href=" ">Link name</a></p>
                     </div>
                 </div>
             </div>
