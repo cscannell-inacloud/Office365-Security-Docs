@@ -1,10 +1,10 @@
 # Get started
-## Overview of security and compliance in Office 365
-## Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond
-## Configure your Office 365 tenant for increased security
-## Go to the Office 365 Security & Compliance Center
-## Introducing the Office 365 Secure Score
-## Permissions in the Office 365 Security & Compliance Center
+## [Overview of security and compliance in Office 365](security-and-compliance.md)
+## [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
+## [Configure your Office 365 tenant for increased security](tenant-wide-setup-for-increased-security.md)
+## [Go to the Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md)
+## [Introducing the Office 365 Secure Score](office-365-secure-score.md)
+## [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ## Give users access to the Office 365 Security & Compliance Center
 ## Security Dashboard overview
 ## Supervision reports
