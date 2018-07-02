@@ -22,7 +22,6 @@ If you're new to [reports and insights in the Office 365 Security &amp; Complian
 This is one of several walkthroughs for the Security &amp; Compliance Center. To see additional walkthroughs, see the [Related topics](from-an-insight-to-a-detailed-report.md#related) section. 
   
 ## Walkthrough: From an insight to a detailed report
-<a name="dlp"> </a>
 
 Let's walk through the flow from the dashboard to an insight to a detailed report for data exploration. This is a [data loss prevention](data-loss-prevention-policies.md) example. 
   
@@ -53,7 +52,6 @@ Let's walk through the flow from the dashboard to an insight to a detailed repor
 In this way, we can move easily from an insight into its underlying details, and make more informed decisions about data loss prevention for an organization.
   
 ## Related topics
-<a name="related"> </a>
 
 [Walkthrough: From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
   
