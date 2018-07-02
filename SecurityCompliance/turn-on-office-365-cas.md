@@ -24,10 +24,9 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
 |[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |You are here!  <br/> [Next step](activity-policies-and-alertsc.md) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
    
 > [!TIP]
-> Office 365 Cloud App Security is available in Office 365 Enterprise E5 or as an add-on for another Office 365 Enterprise subscription. To view or add to your subscription, as a global admin, sign in to Office 365, and then choose **Admin** \> **Billing**. For more information about plan options, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/EN-US/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365 Cloud App Security is available in Office 365 Enterprise E5 or as an add-on for another Office 365 Enterprise subscription. To view or add to your subscription, as a global admin, sign in to Office 365, and then choose **Admin** \> **Billing**. For more information about plan options, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 ## Turn on Office 365 Cloud App Security
-<a name="turnoncas"> </a>
 
 > [!IMPORTANT]
 > You must be a global administrator or security administrator to perform the following task. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In order for Office 365 Cloud App Security to work correct, **audit logging must be turned on** for your Office 365 environment. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md). 
@@ -48,7 +47,6 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
 > When you turn on Office 365 Cloud App Security, auditing information about your Office 365 user accounts and user activities is transferred to [Microsoft Cloud App Security](https://aka.ms/whatiscas). This allows Office 365 to provide advanced alerts, filtering, and other features so you can get information and take action about suspicious activities. 
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Activity policies](activity-policies-and-alertsc.md)
     

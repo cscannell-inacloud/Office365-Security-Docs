@@ -22,17 +22,7 @@ description: "Learn how to turn on ATP for SharePoint, OneDrive, and Teams, incl
 > [!TIP]
 > In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-## In this article
-<a name="toc"> </a>
-
-- [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md#turniton)
-    
-- [Set up alerts for detected files](turn-on-atp-for-spo-odb-and-teams.md#setalerts)
-    
-- [Next steps](turn-on-atp-for-spo-odb-and-teams.md#next)
-    
 ## Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
-<a name="turniton"> </a>
 
  **Before you begin this procedure, make sure that audit logging is already turned on for your Office 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
   
@@ -50,22 +40,16 @@ description: "Learn how to turn on ATP for SharePoint, OneDrive, and Teams, incl
     
 5. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).
     
-6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet with the **DisallowInfectedFileDownload** parameter set to  *true*  . The following table describes how this parameter affects what people see when they click a file that has been detected as malicious: 
-    
-|**If the Set-SPOTenant cmdlet has the DisallowInfectedFileDownload parameter set to:**|
-|:-----|
-|**true** (recommended), this happens:  <br/> |**false**, this happens:  <br/> |
-| All actions, except Delete, are blocked for detected files.  <br/>  People cannot open, move, copy, or share detected files.  <br/>  People see a visual cue that indicates that a file has been identified as malicious. No one can download the file.  <br/> | All actions, except Delete and Download, are blocked for detected files.  <br/>  People cannot open, move, copy, or share detected files.  <br/>  People see a visual cue that indicates a file has been identified as malicious, but they can choose to accept the risk and download the file anyway.  <br/> |
+6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet with the **DisallowInfectedFileDownload** parameter set to  *true*  . </br></br>Setting the parameter to *true* blocks all actions (except Delete) for detected files. People cannot open, move, copy, or share detected files. </br></br>Setting the parameter to *false* blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file. </br></br>We recommend setting the parameter to *true*. 
    
 7. Allow up to 30 minutes for your changes to spread to all Office 365 datacenters.
     
 8. (Recommended) Proceed to set up alerts for detected files.
     
 > [!TIP]
-> To learn more about using PowerShell with Office 365, see [Manage Office 365 with PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). > To learn more about the user experience when a file has been detected as malicious, see [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
+> To learn more about using PowerShell with Office 365, see [Manage Office 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). > To learn more about the user experience when a file has been detected as malicious, see [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
   
 ## Set up alerts for detected files
-<a name="setalerts"> </a>
 
 To receive notification when a file in SharePoint Online, OneDrive for Business, or Microsoft Teams has been identified as malicious, you can set up an alert.
   
@@ -91,14 +75,12 @@ To receive notification when a file in SharePoint Online, OneDrive for Business,
 > To learn more about alerts, see [Create activity alerts in the Office 365 Security &amp; Compliance Center](create-activity-alerts.md). 
   
 ## Next steps
-<a name="next"> </a>
 
 - [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
     
 - [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md)
     
 ## Related topics
-<a name="related"> </a>
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
