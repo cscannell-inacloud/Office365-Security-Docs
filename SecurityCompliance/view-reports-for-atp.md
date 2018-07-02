@@ -29,7 +29,6 @@ ATP reports include [(New!) Real-time reports](view-reports-for-atp.md#newrealat
 In addition to the ATP reports described in this article, email security reports are available. Email security reports include a top senders and receivers report, a spoof mail report, a spam detections report, and more. See [View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md).
   
 ## (New!) Real-time reports
-<a name="newrealatime"> </a>
 
 Real-time reports are available in the Security &amp; Compliance Center. The real-time reports include a [Malware report for email](view-reports-for-atp.md#malwareemail), a [User-reported messages report](view-reports-for-atp.md#userreported), a [Phish report for email](view-reports-for-atp.md#phishreport), and a [Malware report for files](view-reports-for-atp.md#malwaarefiles).
   
@@ -37,7 +36,6 @@ Real-time reports are available in the Security &amp; Compliance Center. The rea
 > The new ATP real-time reports are pivoted by recipient counts with message times displayed in local time zones. This differs from the Threat protection status report, which aggregates the number of email messages displayed in UTC. 
   
 ### Malware report for email
-<a name="malwareemail"> </a>
 
 The malware report for email shows you incoming and outgoing email that has been classified as malware.
   
@@ -64,7 +62,6 @@ The malware report for email shows you incoming and outgoing email that has been
     ![You can view more information, such as summary, details, and advanced analysis for each message](media/42c8aee0-0e28-4f47-a285-dbfb4741435e.png)
   
 ### User-reported messages report
-<a name="userreported"> </a>
 
 The user-reported messages report is one of the [email security reports in the Security &amp; Compliance Center](view-email-security-reports.md). This report shows information about email messages that people reported as junk or malware, and junk mail that people reported as good mail (not junk).
   
@@ -73,7 +70,6 @@ The user-reported messages report is one of the [email security reports in the S
 To learn more, see [User-reported messages report (new!)](view-email-security-reports.md#userreported).
   
 ### Phish report for email
-<a name="phishreport"> </a>
 
 The phish report for email shows information about email messages that were identified as phishing attempts sent to people in your organization.
   
@@ -96,7 +92,6 @@ The phish report for email shows information about email messages that were iden
 5. Below the chart, in the **Email** list, choose an item to view more information. 
     
 ### Malware report for files
-<a name="malwaarefiles"> </a>
 
 The malware report for files shows you files that were identified as malware in SharePoint Online, OneDrive for Business, or Microsoft Teams.
   
@@ -121,7 +116,6 @@ The malware report for files shows you files that were identified as malware in 
 5. Below the chart, in the **Document** list, choose an item to view more information. For example, you can see the date, file name, library (SharePoint Online, OneDrive for Business, or Microsoft Teams) where the malicious file was found, how the file was detected, and its file size. 
     
 ## Threat protection status report
-<a name="advancedthreats"> </a>
 
 The Threat protection status report is a single view that brings together information about malicious content found and blocked by Exchange Online and Advanced Threat Protection.
   
@@ -140,7 +134,6 @@ For malware caught ATP Safe Attachments, on the **Details** page, choose **Advan
 ![On the Details page, choose Advanced Analysis to view more information about a selected item.](media/0c3a349f-ef5d-4e3a-a1e2-ac0c960a46bf.png)
   
 ## ATP File Types report
-<a name="atpfiletypes"> </a>
 
 The ATP File Types report shows you the type of files detected as malicious by [ATP Safe Attachments](atp-safe-attachments.md).
   
@@ -155,7 +148,6 @@ When you hover over a particular day, you can see the breakdown of types of mali
 Below the chart, you'll see details about the malicious email messages that were detected, including the recipient's email address, the sender's email address, and the file name. Select an item in the list to view additional details about that item, including what actions were taken for the malicious URL or file.
   
 ## ATP Message Disposition report
-<a name="atpmessagedisp"> </a>
 
 The ATP Message Disposition report shows you the actions that were taken for email messages that were found to have malicious files.
   
@@ -170,7 +162,6 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 Below the chart, you'll see a list of detected email messages and what actions were taken, according to the policies that are defined for your organization.
   
 ## What if the reports aren't showing data?
-<a name="whatifnodata"> </a>
 
 If you are not seeing data in your reports, double-check that your policies are set up correctly. Your organization must have [ATP Safe Links policies](set-up-atp-safe-links-policies.md) and [ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for ATP protection to be in place. Also see [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).
   
