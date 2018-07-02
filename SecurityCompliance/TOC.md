@@ -120,6 +120,7 @@
 ### Legacy information for Office 365 Message Encryption
 ### Office 365 Protected Message Viewer Portal privacy statement
 ### Create conditions for a supervisory review policy
+### Set up Azure Rights Management for Office 365 Message Encryption
 
 ## Office 365 Advanced Threat Protection	
 ### Protect against threats in Office 365
@@ -138,8 +139,9 @@
 ### Set up a custom blocked URLs list using Office 365 ATP Safe Links
 ### Find and investigate malicious email that was delivered (Office 365 Threat Intelligence)
 ### Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection
-### Attack Simulator (Office 365)
-### Learn about threats against your organization (Office 365 Threat Intelligence)
+### Attack Simulator in Office 365
+### Learn about threats against your organization with Office 365 Threat Intelligence
+### SIEM integration with Office 365 ATP
 ### SIEM integration with Office 365 Threat Intelligence
 ### Keep your Office 365 users safe with Office 365 Threat Intelligence
 ### Track an attack with Office 365 Threat Intelligence
@@ -212,6 +214,7 @@
 ### Differences between estimated and actual eDiscovery search results in Office 365
 ### Create a report on holds in eDiscovery cases in Office 365
 ### eDiscovery solution series - Data spillage scenario - Search and purge
+### Search and investigation
 
 ## Office 365 Advanced eDiscovery	
 ### Quick setup for Office 365 Advanced eDiscovery
@@ -268,9 +271,12 @@
 ## Manage schedules for multiple reports in the Security and Compliance Center
 ## Set up and download a custom report in the Security and Compliance Center
 ## Download existing reports in the Security and Compliance Center
+## Walkthrough - From a detailed report to an insight
 ## Walkthrough - From an insight to a detailed report
 ## Walkthrough - From a dashboard to an insight
 ## Enable or disable safety tips in Office 365
+## Enable the Report Message add-in
+## Enable the Security View add-in
 ## Reports and insights in the Office 365 Security and Compliance Center
 
 # Security solutions		
