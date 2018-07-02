@@ -23,16 +23,8 @@ If your organization has [Office 365 Threat Intelligence](office-365-ti.md), and
 ![Go to Threat management \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 To use Explorer, in the Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.
-  
-## In this article
-<a name="top"> </a>
-
-- [Explorer overview](use-explorer-in-security-and-compliance.md#overview)
-    
-- [(New!) Click-to-filter capabilities](use-explorer-in-security-and-compliance.md#clickfilter)
-    
+      
 ## Explorer overview
-<a name="overview"> </a>
 
 Explorer displays information about suspected malware in email and files in Office 365, as well as other security threats and risks to your organization. When you first open Explorer, the default view shows malware detections from antivirus. Explorer can also show security protection features in Office 365, including [Safe Links](atp-safe-links.md) and [Safe Attachments](atp-safe-attachments.md).
   
@@ -51,11 +43,8 @@ Explorer has several filtering and querying capabilities that enable you to dril
 |**Email** \> **User-reported** <br/> |Email that users have reported as junk, not junk, or phishing email.  <br/> View information by report type (the user's determination that the email was junk, not junk, or phish), and by delivery reason (reasons why email went to a specific location, such as a spam filter policy, a mail flow rule, a blocked-senders list, a safe-senders list, etc.).  <br/> ![View data about email users reported as junk, not junk, or phishing](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)           <br/> Below the chart, view more details about specific email messages, such as subject line, the sender's IP address, the user that reported the message as junk, not junk, or phish, and more.  <br/> |
 |**Email** \> **All mail** <br/> |An all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).  <br/> > [!NOTE]> If you get an error that reads **Too much data to display**, add a filter and, if necessary, narrow the date range you're viewing. To apply a filter, choose **Sender**, select an item in the list, and then click the Refresh button. In our example, we used **Detection technology** as a filter (there are several options available).           View information by sender, sender's domain, recipients, subject, attachment filename, malware family, protection status (actions taken by your threat protection features and policies in Office 365), detection technology (how the malware was detected), and more.  <br/> ![View data about detected email by detection technology](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)           <br/> Below the chart, view more details about specific email messages, such as subject line, recipient, sender, status, and so on.  <br/> |
 |**Content** \> **Malware** <br/> |Files that were identified as malicious in SharePoint Online, OneDrive for Business, and Microsoft Teams.  <br/> View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).  <br/> ![View data about detected malware](media/d11dc568-b091-4159-b261-df13d76b520b.png)           <br/> Below the chart, view more details about specific files, such as attachment filename, workload, file size, who last modified the file, and more.  <br/> |
-   
-[In this article](use-explorer-in-security-and-compliance.md#top)
   
 ## (New!) Click-to-filter capabilities
-<a name="clickfilter"> </a>
 
 New to Explorer is the ability to click to filter. Beginning in late May 2018, when you click an item in the legend, that item becomes a filter for the report. For example, suppose we are looking at the Malware view in Explorer:
   
@@ -75,15 +64,11 @@ Selecting one or more items activates the **Actions** menu, which offers several
   
 The ability to filter in a click and navigate to specific details can save you a lot of time in investigating threats.
   
-[In this article](use-explorer-in-security-and-compliance.md#top)
-  
 ## How do I get Explorer?
-<a name="clickfilter"> </a>
 
 Explorer is included in [Office 365 Threat Intelligence](office-365-ti.md). You must have appropriate [permissions assigned in the Office 365 Security and Compliance Center](permissions-in-the-security-and-compliance-center.md), such as security administrator or security reader, in order to view and use Explorer.
   
 ## Related topics
-<a name="clickfilter"> </a>
 
 [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
