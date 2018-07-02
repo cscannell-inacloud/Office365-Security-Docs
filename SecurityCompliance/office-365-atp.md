@@ -59,11 +59,8 @@ Once you have ATP, the next step is for your security team to define policies fo
 - **[Set up ATP anti-phishing policies in Office 365](set-up-atp-anti-phishing-policies.md)** including impersonation-based attacks to protect against attackers who send email messages that appear to be from trusted people or domains 
   
 ## See how ATP is working by viewing reports
-<a name="reports"> </a>
 
 After your ATP policies are in place, reports are available to show how the service is working.
-  
-****
 
 [![The Security &amp; Compliance Center dashboard can help you see where Advanced Threat Protection is working](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
   

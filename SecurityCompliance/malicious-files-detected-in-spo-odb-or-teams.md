@@ -22,14 +22,7 @@ description: "Learn where to go to view information about malicious files detect
 > [!TIP]
 > In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-## In this article:
-
-- [View reports with information about detected files](malicious-files-detected-in-spo-odb-or-teams.md#reporting)
-    
-- [View and take action on files in quarantine](malicious-files-detected-in-spo-odb-or-teams.md#qfiles)
-    
 ## View reports with information about detected files
-<a name="reporting"> </a>
 
 To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat protection status report.
   
@@ -47,7 +40,6 @@ To view status and detailed information about files that were detected by Office
 > To learn more about available reports, see [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md). 
   
 ## View and take action on files in quarantine
-<a name="qfiles"> </a>
 
 1. In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.
     
@@ -71,7 +63,6 @@ To view status and detailed information about files that were detected by Office
 > To learn more about managing quarantined files, see [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md). 
   
 ## Related topics
-<a name="related"> </a>
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

@@ -20,7 +20,6 @@ description: "Get an overview of reports and insights avialable in the Security 
 If you are part of your organization's Office 365 security team and have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
       
 ## Smart reports and insights overview
-<a name="smartinsights"> </a>
 
 Monitoring capabilities available in the Office 365 Security &amp; Compliance Center include smart reports and insights that enable your security and compliance administrators to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
   
@@ -36,10 +35,7 @@ The following walkthroughs illustrate how you can navigate between insights, det
     
 - [Walkthrough: From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
     
-[In this article](reports-and-insights-in-security-and-compliance.md#toc)
-  
 ## Types of reports in the Security &amp; Compliance Center
-<a name="reportsingen"> </a>
 
 A wide variety of reports are available in the Security &amp; Compliance Center. (Go to **Reports** \> **Dashboard** to get an all-up view.) The following table lists available reports with links to learn more: 
   
@@ -56,11 +52,8 @@ A wide variety of reports are available in the Security &amp; Compliance Center.
 |**GDPR compliance** <br/> Information about GDPR compliance, including links to data subjects, label trends, and active &amp; closed cases  <br/> |In the Security &amp; Compliance Center, go to **Data privacy** \> **GDPR dashboard** <br/> |[Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**Audit log** <br/> Information about Office 365 activities, users, files or folders, and more  <br/> |In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search** <br/> |[Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Compliance reports** <br/> FedRAMP reports, governance, risk and compliance reports, ISO information security management reports, and Service Organization Controls audit and assessment reports  <br/> |In the Security &amp; Compliance Center, go to **Service assurance** \> **Compliance reports** <br/> |[Overview of security and compliance in Office 365](security-and-compliance.md) <br/> |
-   
-[In this article](reports-and-insights-in-security-and-compliance.md#toc)
   
 ## Next steps
-<a name="next"> </a>
 
 Now that you have an overview of reports and insights, your next step is to learn how to customize, manage, and download reports. See the following articles:
   
@@ -73,7 +66,6 @@ Now that you have an overview of reports and insights, your next step is to lear
 - [Download existing reports in the Security &amp; Compliance Center](download-existing-reports.md)
     
 ## Related topics
-<a name="related"> </a>
 
 [Monitor security and compliance in Office 365](monitor-security-and-compliance.md)
   

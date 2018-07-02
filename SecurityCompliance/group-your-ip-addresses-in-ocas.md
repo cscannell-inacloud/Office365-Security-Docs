@@ -21,7 +21,7 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
-|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |You are here!  <br/> [Next steps](group-your-ip-addresses-in-ocas.md#nextsteps) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
+|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |You are here!  <br/> [Next steps](#next-steps) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
    
 To easily identify sets of IP addresses that you'll use in Office 365 Cloud App Security, such as your physical office IP addresses, you can set up groups of IP address ranges. Defining these ranges lets you tag and categorize them, and then you can use tags and categories to customize how your activity logs and alerts are displayed and investigated.
   
@@ -61,7 +61,6 @@ Each group of IP ranges can be tagged with tag names that you choose, and then t
 After you set up your IP address ranges, keep in mind that only future events are affected by these changes.
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Activity policies and alerts](activity-policies-and-alertsc.md)
     
