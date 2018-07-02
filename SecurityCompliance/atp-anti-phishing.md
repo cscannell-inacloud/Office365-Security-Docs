@@ -3,7 +3,7 @@ title: "ATP anti-phishing capabilities in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 7/2/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -20,14 +20,6 @@ To learn more, see [Set up ATP anti-phishing policies in Office 365](set-up-atp-
   
 > [!NOTE]
 > ATP anti-phishing is only available in Advanced Threat Protection, available with Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Advanced Threat Protection can be purchased as an add-on. (As a global admin, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information about plan options, see [Compare All Office 365 for Business Plans](https://go.microsoft.com/fwlink/?linkid=844053). 
-  
- **In this article:**
-  
-- [How ATP anti-phishing works](atp-anti-phishing.md#Howantiphishworks)
-    
-- [How to get ATP anti-phishing](atp-anti-phishing.md#Howtogetantiphish)
-    
-- [How to know if ATP anti-phishing is in place](atp-anti-phishing.md#IsantiphishOn)
     
 ## How ATP anti-phishing works
 <a name="Howantiphishworks"> </a>
@@ -52,9 +44,9 @@ ATP anti-phishing policies must be defined in order for protection to be active.
   
 |**Example scenario**|**Does ATP anti-phishing apply in this case?**|
 |:-----|:-----|
-|Pat's organization has Office 365 Enterprise E5, but no one has defined any policies for ATP safe attachments, ATP safe links or ATP advanced phishing yet.  <br/> |No. Although the feature is available, at least one ATP policy must be defined in order for the ATP machine learning models to work. For impersonation an ATP anti-phishing policy must also be in place.  <br/> |
-|Lee is an employee in the sales department at Contoso. Lee's organization has an ATP anti-phishing policy in place that applies to finance employees only.  <br/> |No. In this case, ATP anti-phishing (machine models and impersonation protection) would apply to finance employees, but other employees, including the sales department, would not.  <br/> |
-|Yesterday, an Office 365 administrator at Jean's organization set up an ATP anti-phishing policy that applies to all employees. Earlier today, Jean received an email message that includes an impersonation covered by the policy.  <br/> |Yes. In this example, Jean has a license for Advanced Threat Protection, and an ATP anti-phishing policy that includes Jean has been defined. It typically takes about 30 minutes for a new policy to take effect across datacenters; since a day has passed in this case, the policy should be in effect.  <br/> |
+|Pat's organization has Office 365 Enterprise E5, but no one has defined any policies for ATP safe attachments, ATP safe links or ATP advanced phishing yet.|No. Although the feature is available, at least one ATP policy must be defined in order for the ATP machine learning models to work. For impersonation an ATP anti-phishing policy must also be in place.|
+|Lee is an employee in the sales department at Contoso. Lee's organization has an ATP anti-phishing policy in place that applies to finance employees only.|No. In this case, ATP anti-phishing (machine models and impersonation protection) would apply to finance employees, but other employees, including the sales department, would not.|
+|Yesterday, an Office 365 administrator at Jean's organization set up an ATP anti-phishing policy that applies to all employees. Earlier today, Jean received an email message that includes an impersonation covered by the policy.|Yes. In this example, Jean has a license for Advanced Threat Protection, and an ATP anti-phishing policy that includes Jean has been defined. It typically takes about 30 minutes for a new policy to take effect across datacenters; since a day has passed in this case, the policy should be in effect.|
    
 ## Related topics
 <a name="IsantiphishOn"> </a>
