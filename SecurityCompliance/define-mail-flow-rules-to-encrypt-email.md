@@ -3,7 +3,7 @@ title: "Define mail flow rules to encrypt email messages in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: 7/2/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -41,13 +41,13 @@ You can define mail flow rules for triggering message encryption with the new OM
     
 6. In **Apply this rule if** select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com: 
     
-1. In **Apply this rule if**, select **the recipient is**.
+    1. In **Apply this rule if**, select **the recipient is**.
     
-2. Select an existing name from the contact list or type a new email address in the **check names** box. 
+    2. Select an existing name from the contact list or type a new email address in the **check names** box. 
     
-    To select an existing name, select it from the list and then click **OK**.
+        To select an existing name, select it from the list and then click **OK**.
     
-    To enter a new name, type an email address in the **check names** box and then select **check names** \> **OK**.
+        To enter a new name, type an email address in the **check names** box and then select **check names** \> **OK**.
     
 7. To add more conditions, choose **More options** and then choose **add condition** and select from the list. 
     
@@ -125,9 +125,9 @@ If you haven't yet moved your Office 365 organization to the new OME capabilitie
     
     For example, to require that all email messages that are addressed to DrToniRamos@hotmail.com must be encrypted, type:
     
-  ```
-  New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
-  ```
+     ```
+     New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
+     ```
 
     In this example:
     
@@ -171,9 +171,9 @@ When your email users send encrypted messages, recipients of those messages can 
     
     For example, to remove the encryption from all mail sent to recipients in your Office 365 organization, type:
     
-  ```
-  New-TransportRule - Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
-  ```
+     ```
+     New-TransportRule - Name "Remove encryption from incoming mail"     -SentToScope "InOrganization" -RemoveOME $true
+     ```
 
     In this example:
     
