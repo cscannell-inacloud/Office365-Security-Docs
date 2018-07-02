@@ -37,7 +37,7 @@ This article describes how to specify a list of URLs that are excluded from ATP 
    
 - If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like `http://contoso.com/a` and you want to include subpaths like `http://contoso.com/a/b` in your policy, add a wildcard to your entry so it looks like `http://contoso.com/a\*`.
     
-- Do not include a forward slash (/) in the URLs that you specify in your "do not rewrite" list. For example, rather than enter contoso.com/ in your "do not rewrite" list, enter contoso.com.
+- Do not include a forward slash (/) in the URLs that you specify in your "do not rewrite" list. For example, rather than enter `contoso.com/` in your "do not rewrite" list, enter `contoso.com`.
     
 ## Set up a "do not rewrite" list for specific groups
 
