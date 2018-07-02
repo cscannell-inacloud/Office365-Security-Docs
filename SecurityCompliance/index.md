@@ -98,9 +98,9 @@ If your organization needs to protect your data or comply with legal or regulato
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Migrating to Office 365</h3>
+                        <h3>Data governance in Office 365</h3>
                         <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Use network upload to import your organization PST files to Office 365</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of importing your organization PST files to Office 365</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of retention policies</a></p>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,6 @@ If your organization needs to protect your data or comply with legal or regulato
                         <h3>Prevent data loss in Office 365</h3>
                         <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of retention policies</a></p>
                         <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of data loss prevention policies</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Search for and delete email messages in your Office 365 organization</a></p>
                     </div>
                 </div>
             </div>
