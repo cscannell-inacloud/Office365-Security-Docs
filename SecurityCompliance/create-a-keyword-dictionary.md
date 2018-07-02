@@ -1,13 +1,13 @@
 ---
 title: "Create a keyword dictionary"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
