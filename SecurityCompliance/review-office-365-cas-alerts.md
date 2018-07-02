@@ -58,7 +58,6 @@ For each alert, look into what caused it so you can decide what action to take. 
 - **Suspend** If you suspect unauthorized sign ins on an account, for example, someone signing in from another country when you know that person is physically at a local office, you can [suspend the account](suspend-or-restore-an-account-in-ocas.md) while you investigate what's going on. 
     
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Investigate an activity](investigate-an-activity-in-office-365-cas.md)
     

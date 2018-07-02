@@ -39,7 +39,6 @@ To view the Security Dashboard, in the [Office 365 Security &amp; Compliance Cen
 > You must be an Office 365 global administrator, security administrator, or security reader to view the Security Dashboard. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## Threat protection status
-<a name="tps"> </a>
 
 In the upper left corner of the Security Dashboard is a threat protection status widget that shows threat protection effectiveness. This widget tells you at a glance how many threats were blocked by [Office 365 Exchange Online Protection](anti-spam-protection.md) and [Office 365 Advanced Threat Protection](office-365-atp.md) (if configured) over the last seven days. This widget also shows the number of email messages detected as misclassified and reported by using the [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Review your anti-spam, anti-malware, and anti-phishing policies to improve your configuration.
   
@@ -48,12 +47,10 @@ In the upper left corner of the Security Dashboard is a threat protection status
 In addition, Malware reports can be used to track recent trends in malicious content targeted at your organization. Click a tile to view more information in the report.
   
 ## Insights
-<a name="insights"> </a>
 
 Insights not only surface key issues you should review, they also include recommendations and actions to consider. For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
 ## Threat intelligence
-<a name="ti"> </a>
 
 If your organization has [Office 365 Threat Intelligence](office-365-ti.md), your Security Dashboard has a **Threat Intelligence** section that includes advanced tools. Your organization's security team can use the information in this section to understand emerging campaigns, investigate threats and manage incidents. 
   
@@ -63,7 +60,6 @@ If your organization has [Office 365 Threat Intelligence](office-365-ti.md), you
 > Office 365 Threat Intelligence is included with Office 365 Enterprise E5; however, if your organization is using another Office 365 Enterprise subscription, Office 365 Threat Intelligence can be purchased as an add-on. For more information, see [Office 365 Threat Intelligence](office-365-ti.md). 
   
 ## Trends
-<a name="trends"> </a>
 
 Near the bottom of the Security Dashboard is a **Trends** section, which summarizes email flow trends for your organization. Reports provide information about email categorized as spam, malware, phishing attempts, and good email. Click a tile to view more detailed information in the report. 
   
@@ -72,7 +68,6 @@ Near the bottom of the Security Dashboard is a **Trends** section, which summari
 And, if your organization's Office 365 subscription includes [Office 365 Threat Intelligence](office-365-ti.md), you will also have a **Recent threat management alerts** report in this section that enables your security team to view and take action on high-priority security alerts. 
   
 ## Related topics
-<a name="seealso"> </a>
 
 [View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md)
   

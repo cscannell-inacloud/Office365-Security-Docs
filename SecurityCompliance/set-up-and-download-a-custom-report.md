@@ -42,7 +42,6 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 6. Specify email recipients for the report, and then choose **Save**.
     
 ## Related topics
-<a name="customrep"> </a>
 
 [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
