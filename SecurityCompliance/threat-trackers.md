@@ -85,7 +85,7 @@ The new Noteworthy threat filter highlights items that were recently detected th
 ## Next steps
 <a name="next"> </a>
 
-- If your organization doesn't already have Office 365 Threat Intelligence, [How do we get Office 365 Threat Intelligence?](get-started-with-ti.md#howtoget).
+- If your organization doesn't already have Office 365 Threat Intelligence, see [How do we get Office 365 Threat Intelligence?](get-started-with-ti.md).
     
 - Make sure that your security team has the correct roles and permissions assigned. You must be an Office 365 global administrator, or have the Security Administrator or Search and Purge role assigned in the Security &amp; Compliance Center. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
