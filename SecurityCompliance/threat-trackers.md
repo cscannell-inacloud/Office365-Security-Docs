@@ -83,7 +83,6 @@ In today's threat-riddled world, running only traditional anti-malware scans mea
 The new Noteworthy threat filter highlights items that were recently detected through ATP Safe Attachments. These detections represent items that are new malicious files, not previously found by Office 365 in either your email flow or other customers' email. Pay attention to the items in the Noteworthy Threat Tracker, see who was targeted by them, and review the detonation details shown on the Advanced Analysis tab (found by clicking on the subject of the email in Explorer). Note you'll only find this tab on emails detected by the ATP Safe Attachments capability - this Noteworthy tracker includes that filter, but you can also use that filter for other searches in Explorer.
   
 ## Next steps
-<a name="next"> </a>
 
 - If your organization doesn't already have Office 365 Threat Intelligence, see [How do we get Office 365 Threat Intelligence?](get-started-with-ti.md).
     
