@@ -23,7 +23,6 @@ description: "Get an overview of warning pages that you might see when Office 36
 Read this article to see [Examples of warning pages](atp-safe-links-warning-pages.md#examples) that might appear, along with [Recent updates to warning pages](atp-safe-links-warning-pages.md#updates).
   
 ## Examples of warning pages
-<a name="examples"> </a>
 
 |**Warning page**|**What it means**|
 |:-----|:-----|
@@ -35,7 +34,6 @@ Read this article to see [Examples of warning pages](atp-safe-links-warning-page
 |![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)           <br/> |Some kind of error has occurred, and the URL cannot be opened.  <br/> |
    
 ## Recent updates to warning pages
-<a name="updates"> </a>
 
 Several warning pages were recently updated for Office 365 ATP. If you're not already seeing the updated pages, you will soon. The updates include a new color scheme, more details, and the ability to proceed to a site despite the given warning and recommendations.
   
@@ -47,7 +45,6 @@ Several warning pages were recently updated for Office 365 ATP. If you're not al
 |![Original "error occurred" warning page](media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)           <br/> |![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)           <br/> |
    
 ## Related topics
-<a name="updates"> </a>
 
 [How Office helps protect you from phishing schemes](https://support.office.com/article/be0de46a-29cd-4c59-aaaf-136cf177d593)
   

@@ -22,17 +22,7 @@ People regularly share files and collaborate using SharePoint, OneDrive, and Mic
 > [!TIP]
 > In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-## In this article:
-<a name="TOC"> </a>
-
-- [How it works](atp-for-spo-odb-and-teams.md#howitworks)
-    
-- [(New!) Quarantine in ATP for SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md#quarantine)
-    
-- [Next steps](atp-for-spo-odb-and-teams.md#next)
-    
 ## How it works
-<a name="howitworks"> </a>
 
 When a file in SharePoint Online, OneDrive for Business, and Microsoft Teams has been identified as malicious, ATP directly integrates with the file stores to lock that file. The following image shows an example of a malicious file detected in a library.
   
@@ -59,7 +49,6 @@ To learn more, see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microso
 - A SharePoint Online administrator can determine whether to enable people to download files that are detected as malicious. This is done by running the Set-SPOTenant PowerShell cmdlet using a DisallowInfectedFileDownload parameter (see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)).
     
 ## (New!) Quarantine in ATP for SharePoint Online, OneDrive for Business, and Microsoft Teams
-<a name="quarantine"> </a>
 
  **Beginning in late May 2018, [quarantine](quarantine-email-messages.md) capabilities in the Security &amp; Compliance Center are being extended to ATP for SharePoint Online, OneDrive for Business, and Microsoft Teams. **
   

@@ -35,7 +35,6 @@ Protection through Office 365 ATP is determined by policies that your organizati
 > Office 365 ATP is included in subscriptions, such as Office 365 Enterprise E5 and Office 365 Education A5, and, as of April 30, 2018, also [Microsoft 365 Business security features](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc). If your organization has an Office 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see [Office 365 Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx). 
       
 ## Get Office 365 ATP
-<a name="getatp"> </a>
 
 1. As a global or security administrator, go to [https://portal.office.com](https://portal.office.com) and sign in with your work or school account for Office 365. 
     
@@ -52,17 +51,12 @@ Once you have ATP, the next step is for your security team to define policies fo
 [What do you want to do?](office-365-atp.md#TOC)
   
 ## Define policies for ATP
-<a name="policies"> </a>
 
 - **[Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md)** including your organization's [custom blocked URLs list](set-up-a-custom-blocked-urls-list-wtih-atp.md) and [custom "Do not rewrite" URLs list](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
     
 - **[Set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md)** that can include [dynamic delivery and previewing](dynamic-delivery-and-previewing.md)
     
 - **[Set up ATP anti-phishing policies in Office 365](set-up-atp-anti-phishing-policies.md)** including impersonation-based attacks to protect against attackers who send email messages that appear to be from trusted people or domains 
-    
-- 
-    
-[What do you want to do?](office-365-atp.md#TOC)
   
 ## See how ATP is working by viewing reports
 <a name="reports"> </a>
@@ -75,7 +69,7 @@ After your ATP policies are in place, reports are available to show how the serv
   
 1. Make sure that you are an Office 365 global administrator, security administrator, or security reader. (See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).)
     
-2. [View reports for Advanced Threat Protection and Exchange Online Protection](view-reports-for-atp.md) , including the [](view-reports-for-atp.md#advancedthreats_1_1_1_1_1).
+2. [View reports for Advanced Threat Protection and Exchange Online Protection](view-reports-for-atp.md).
     
 3. If needed, make adjustments to your security policies. See the following resources:
     
@@ -85,17 +79,13 @@ After your ATP policies are in place, reports are available to show how the serv
     
   - [ATP anti-phishing policies in Office 365](set-up-atp-anti-phishing-policies.md)
     
-[What do you want to do?](office-365-atp.md#TOC)
+[What do you want to do?](office-365-atp.md)
   
 ## Submit a suspicious file to Microsoft for analysis
-<a name="submitfile"> </a>
 
 If you get a file that you suspect could be malware, you can submit that file to Microsoft for analysis. Visit the [Windows Defender Security Intelligence submission portal](https://go.microsoft.com/fwlink/?linkid=857185).
   
-[What do you want to do?](office-365-atp.md#TOC)
-  
 ## Related topics
-<a name="submitfile"> </a>
 
 [Overview of the Office 365 Security &amp; Compliance Center](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)
   
