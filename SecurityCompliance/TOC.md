@@ -5,9 +5,9 @@
 ## [Go to the Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Introducing the Office 365 Secure Score](office-365-secure-score.md)
 ## [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-## Give users access to the Office 365 Security & Compliance Center
-## Security Dashboard overview
-## Supervision reports
+## [Give users access to the Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
+## [Security Dashboard overview](security-dashboard.md)
+## [Supervision reports](supervision-reports.md)
 ## Install the Supervision add-in for Outlook desktop
 ## Configure supervision policies for your organization
 ## Use your free Azure Active Directory subscription in Office 365
