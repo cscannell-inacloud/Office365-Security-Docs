@@ -43,17 +43,17 @@ Read this article to learn how to set up your organization's custom blocked URLs
   
 4. Select the **Enter a valid URL** box, and then type a URL, and then choose the plus sign (+). Here are a few things to keep in mind: 
     
-  - You can specify a domain-only URL (like contoso.com or tailspintoys.com). This will block clicks on any URL that contains the domain.
+  - You can specify a domain-only URL (like `contoso.com` or `tailspintoys.com`). This will block clicks on any URL that contains the domain.
     
-  - Do not include a forward slash ( **/**) at the end of the URL. For example, instead of entering http://www.contoso.com/, enter http://www.contoso.com.
+  - Do not include a forward slash ( **/**) at the end of the URL. For example, instead of entering `http://www.contoso.com/`, enter `http://www.contoso.com`.
     
   - You can include up to three wildcard asterisks (\*) per URL. The following table lists some examples of what you can enter and what effect those entries have.
     
 |**Example Entry**|**What It Does**|
 |:-----|:-----|
-|contoso.com or \*contoso.com\*  <br/> |Blocks the domain, subdomains, and paths, such as https://www.contoso.com, http://sub.contoso.com, and http://contoso.com/abc  <br/> |
-|http://contoso.com/a  <br/> |Blocks a site http://contoso.com/a but not additional subpaths like http://contoso.com/a/b  <br/> |
-|http://contoso.com/a\*  <br/> |Blocks a site http://contoso.com/a and additional subpaths like http://contoso.com/a/b  <br/> |
+|`contoso.com` or `\*contoso.com\*`  <br/> |Blocks the domain, subdomains, and paths, such as `https://www.contoso.com`, `http://sub.contoso.com`, and `http://contoso.com/abc`  <br/> |
+|`http://contoso.com/a`  <br/> |Blocks a site `http://contoso.com/a` but not additional subpaths like `http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a\*`  <br/> |Blocks a site `http://contoso.com/a` and additional subpaths like `http://contoso.com/a/b`  <br/> |
    
 5. When you are finished adding URLs, in the lower right corner of the screen, choose **Save**.
     

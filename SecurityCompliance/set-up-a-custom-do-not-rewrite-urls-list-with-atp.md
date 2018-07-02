@@ -25,17 +25,17 @@ This article describes how to specify a list of URLs that are excluded from ATP 
 
 - Any URLs that you specify in the "do not rewrite" list are excluded from ATP Safe Links scanning for the recipients that you specify.
     
-- When you specify a "do not rewrite" list for an ATP Safe Links policy, you can include up to three wildcard asterisks (\*). Wildcards (\*) are assumed for entries such as contoso.com, which do not explicitly include prefixes or subdomains, like http:// or https://. This means an entry, such as contoso.com is similar to \*contoso.com\* for your "do not rewrite" list.
+- When you specify a "do not rewrite" list for an ATP Safe Links policy, you can include up to three wildcard asterisks (\*). Wildcards (\*) are assumed for entries such as contoso.com, which do not explicitly include prefixes or subdomains, like `http://` or `https://`. This means an entry, such as contoso.com is similar to `\*contoso.com\*` for your "do not rewrite" list.
     
     The following table lists examples of what you can enter and what effect those entries have.
     
 |**Example Entry**|**What It Does**|
 |:-----|:-----|
-|\*contoso.com\*  <br/> |Allows specific recipients to visit a domain, subdomains, and paths, such as http://www.contoso.com, https://www.contoso.com, https://maps.contoso.com, or http://www.contoso.com/a  <br/> |
-|http://contoso.com/a  <br/> |Allows specific recipients to visit a site like http://contoso.com/a, but not subpaths like http://contoso.com/a/b  <br/> |
-|http://contoso.com/a\*  <br/> |Allows specific recipients to visit a site like http://contoso.com/a and subpaths like http://contoso.com/a/b  <br/> |
+|`\*contoso.com\*`  <br/> |Allows specific recipients to visit a domain, subdomains, and paths, such as `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `http://www.contoso.com/a`  <br/> |
+|`http://contoso.com/a`  <br/> |Allows specific recipients to visit a site like `http://contoso.com/a`, but not subpaths like `http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a\*`  <br/> |Allows specific recipients to visit a site like `http://contoso.com/a` and subpaths like `http://contoso.com/a/b`  <br/> |
    
-- If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like http://contoso.com/a and you want to include subpaths like http://contoso.com/a/b in your policy, add a wildcard to your entry so it looks like http://contoso.com/a\*.
+- If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like `http://contoso.com/a` and you want to include subpaths like `http://contoso.com/a/b` in your policy, add a wildcard to your entry so it looks like `http://contoso.com/a\*`.
     
 - Do not include a forward slash (/) in the URLs that you specify in your "do not rewrite" list. For example, rather than enter contoso.com/ in your "do not rewrite" list, enter contoso.com.
     
