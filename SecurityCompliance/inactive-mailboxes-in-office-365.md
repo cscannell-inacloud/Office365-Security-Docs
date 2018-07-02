@@ -1,7 +1,7 @@
 ---
 title: "Overview of inactive mailboxes in Office 365"
 ms.author: markjjo
-author: markjjo-msft
+author: markjjo
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: Admin
