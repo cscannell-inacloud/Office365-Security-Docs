@@ -59,7 +59,7 @@ There are certain scenarios in which dynamic delivery is not supported. These in
     
 - A user's mailbox search folder that is in an error state
     
-- Environments in which an Exchange Online admin has enabled Exclaimer. (See [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/en-us/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
+- Environments in which an Exchange Online admin has enabled Exclaimer. (See [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
     
 ## Related topics
 
