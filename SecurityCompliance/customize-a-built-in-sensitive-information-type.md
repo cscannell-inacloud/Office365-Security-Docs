@@ -1,13 +1,13 @@
 ---
 title: "Customize a built-in sensitive information type"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
@@ -18,26 +18,9 @@ description: "When looking for sensitive information in content, you need to des
 
 When looking for sensitive information in content, you need to describe that information in what's called a  *rule*  . Data loss prevention (DLP) includes rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information. 
   
-You can take this example and apply it to other built-in sensitive information types. For a list of default sensitive information types and XML definitions, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
-  
-This topic guides you through the following sections for XML rule customizations:
-  
-- [Export the XML file of the current rules](customize-a-built-in-sensitive-information-type.md#BKMK_ExportXMLofCurrentRules)
-    
-- [Find the rule that you want to modify in the XML](customize-a-built-in-sensitive-information-type.md#BKMK_FindTheRuleThatYouWant)
-    
-- [Modify the XML and create a new sensitive information type](customize-a-built-in-sensitive-information-type.md#BKMK_ModifyTheXML)
-    
-- [Remove the corroborative evidence requirement from a sensitive information type](customize-a-built-in-sensitive-information-type.md#BKMK_RequireLessAdditionalEvidence)
-    
-- [Look for keywords that are specific to your organization](customize-a-built-in-sensitive-information-type.md#BKMK_LookForKeywordsThatAreSpecific)
-    
-- [Upload your rule](customize-a-built-in-sensitive-information-type.md#BKMK_UploadYourRule)
-    
-To learn what the different parts of rules are and what they do, check out the [Term glossary](https://support.office.com/article/3f8bf141-2e7c-4ea7-b102-dfd6c41539da.aspx#BKMK_XMLtermDefinitions) at the end of this topic. 
+You can take this example and apply it to other built-in sensitive information types. For a list of default sensitive information types and XML definitions, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md). 
   
 ## Export the XML file of the current rules
-<a name="BKMK_ExportXMLofCurrentRules"> </a>
 
 To export the XML, you need to [connect to the Security and Compliance Center via Remote PowerShell.](https://go.microsoft.com/fwlink/?linkid=799771).
   
@@ -57,7 +40,6 @@ To export the XML, you need to [connect to the Security and Compliance Center vi
     > Make sure that you use the file location where your rule pack is actually stored.  `C:\custompath\` is a placeholder. 
   
 ## Find the rule that you want to modify in the XML
-<a name="BKMK_FindTheRuleThatYouWant"> </a>
 
 The cmdlets above exported the entire  *rule collection*  , which includes the default rules we provide. Next you'll need to look specifically for the Credit Card Number rule that you want to modify. 
   
@@ -81,10 +63,9 @@ The cmdlets above exported the entire  *rule collection*  , which includes the d
       </Entity>
   ```
 
-Now that you have located the Credit Card Number rule definition in the XML, you can customize the rule's XML to meet your needs. (For a refresher on the XML definitions, see the [Term glossary](https://support.office.com/article/3f8bf141-2e7c-4ea7-b102-dfd6c41539da.aspx#BKMK_XMLtermDefinitions) at the end of this topic.) 
+Now that you have located the Credit Card Number rule definition in the XML, you can customize the rule's XML to meet your needs. (For a refresher on the XML definitions, see the [Term glossary](#term-glossary) at the end of this topic.) 
   
 ## Modify the XML and create a new sensitive information type
-<a name="BKMK_ModifyTheXML"> </a>
 
 First, you need to create a new sensitive information type because you can't directly modify the default rules. You can do a wide variety of things with custom sensitive information types, which are outlined in [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md). For this example, we'll keep it simple and only remove corroborative evidence and add keywords to the Credit Card Number rule.
   
@@ -158,7 +139,6 @@ Now, you have something that looks similar to the following XML. Because rule pa
 ```
 
 ## Remove the corroborative evidence requirement from a sensitive information type
-<a name="BKMK_RequireLessAdditionalEvidence"> </a>
 
 Now that you have a new sensitive information type that you're able to upload to the Security &amp; Compliance Center, the next step is to make the rule more specific. Modify the rule so that it only looks for a 16-digit number that passes the checksum but doesn't require additional (corroborative) evidence (for example keywords). To do this, you need to remove the part of the XML that looks for corroborative evidence. Corroborative evidence is very helpful in reducing false positives because usually there are certain keywords or an expiration date near the credit card number. If you remove that evidence, you should also adjust how confident you are that you found a credit card number by lowering the  `confidenceLevel`, which is 85 in the example.
   
@@ -171,7 +151,6 @@ Now that you have a new sensitive information type that you're able to upload to
 ```
 
 ## Look for keywords that are specific to your organization
-<a name="BKMK_LookForKeywordsThatAreSpecific"> </a>
 
 You might want to require corroborative evidence but want different or additional keywords, and perhaps you want to change where to look for that evidence. You can adjust the  `patternsProximity` to expand or shrink the window for corroborative evidence around the 16-digit number. To add your own keywords, you need to define a keyword list and reference it within your rule. The following XML adds the keywords "company card" and "Contoso card" so that any message that contains those phrases within 150 characters of a credit card number will be identified as a credit card number. 
   
@@ -200,7 +179,6 @@ You might want to require corroborative evidence but want different or additiona
 ```
 
 ## Upload your rule
-<a name="BKMK_UploadYourRule"> </a>
 
 To upload your rule, you need to do the following.
   
@@ -222,7 +200,6 @@ To upload your rule, you need to do the following.
 To start using the new rule to detect sensitive information, you need to add the rule to a DLP policy. To learn how to add the rule to a policy, see [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md).
   
 ## Term glossary
-<a name="BKMK_XMLtermDefinitions"> </a>
 
 These are the definitions for the terms you encountered during this procedure.
   
@@ -238,7 +215,6 @@ These are the definitions for the terms you encountered during this procedure.
 |recommendedConfidence  <br/> |This is the confidence level we recommend for this rule. The recommended confidence applies to entities and affinities. For entities, this number is never evaluated against the  `confidenceLevel` for the pattern. It's merely a suggestion to help you choose a confidence level if you want to apply one. For affinities, the  `confidenceLevel` of the pattern must be higher than the  `recommendedConfidence` number for an ETR action to be invoked. The  `recommendedConfidence` is the default confidence level used in ETRs that invokes an action. If you want, you can manually change the ETR to be invoked based off the pattern's confidence level, instead.  <br/> |
    
 ## For more information
-<a name="BKMK_XMLtermDefinitions"> </a>
 
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
     
