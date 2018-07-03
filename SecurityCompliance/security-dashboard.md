@@ -25,13 +25,13 @@ Watch the video to get an overview, and then read this article to learn more.
   
 Depending on what your organization's Office 365 subscription includes, the Security Dashboard includes the following sections:
   
-- [Threat protection status](security-dashboard.md#tps)
+- [[Threat protection status](security-dashboard.md#tps)](#threat-protection-status)
     
-- [Insights](security-dashboard.md#insights)
+- [[Insights](security-dashboard.md#insights)](#insights)
     
-- [Threat intelligence](security-dashboard.md#ti)
+- [[Threat intelligence](security-dashboard.md#ti)](#threat-intelligence)
     
-- [Trends](security-dashboard.md#trends)
+- [[Trends](security-dashboard.md#trends)](#trends)
     
 To view the Security Dashboard, in the [Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md), go to **Threat management** \> **Dashboard**.
   

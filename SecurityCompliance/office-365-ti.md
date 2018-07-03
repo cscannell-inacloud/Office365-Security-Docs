@@ -19,7 +19,7 @@ description: "Find out how Office 365 Threat Intelligence can help ﻿you resear
 
 Office 365 Threat Intelligence helps security analysts and administrators protect their organization's Office 365 users by:
   
-1. Making it easy to ﻿identify, monitor and understand attacks
+1. Making it easy to identify, monitor and understand attacks
     
 2. Helping to quickly address threats in Exchange Online and SharePoint Online
     
