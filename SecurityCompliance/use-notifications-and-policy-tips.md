@@ -1,7 +1,7 @@
 ---
 title: "Send email notifications and show policy tips for DLP policies"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin

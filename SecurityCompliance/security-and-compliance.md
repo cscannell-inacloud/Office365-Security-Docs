@@ -1,7 +1,7 @@
 ---
 title: "Overview of security &amp; compliance in Office 365"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin

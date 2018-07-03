@@ -1,7 +1,7 @@
 ---
 title: "Overview of data loss prevention policies"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin

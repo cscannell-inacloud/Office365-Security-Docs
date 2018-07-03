@@ -1,7 +1,7 @@
 ---
 title: "Overview of event-driven retention"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 5/22/2018
 ms.audience: Admin

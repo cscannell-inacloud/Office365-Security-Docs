@@ -1,7 +1,7 @@
 ---
 title: "What the DLP policy templates include"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin

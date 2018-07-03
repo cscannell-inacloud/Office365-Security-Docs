@@ -1,7 +1,7 @@
 ---
 title: "Give users access to the Office 365 Security &amp; Compliance Center"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/18/2017
 ms.audience: Admin

@@ -1,7 +1,7 @@
 ---
 title: "Recover items deleted by the retention process"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/9/2017
 ms.audience: ITPro

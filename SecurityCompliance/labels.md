@@ -1,7 +1,7 @@
 ---
 title: "Overview of labels"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/22/2018
 ms.audience: Admin
