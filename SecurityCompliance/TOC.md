@@ -254,7 +254,7 @@
 ### Understand Assessment in Relevance in Office 365 Advanced eDiscovery
 
 # Search the audit log
-## Enable mailbox auditing in Office 365
+## [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)
 ## Turn Office 365 audit log search on or off
 ## Search the audit log for user and admin activity in Office 365
 ## Search the audit log in the Office 365 Security and Compliance Center
