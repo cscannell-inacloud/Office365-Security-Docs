@@ -115,7 +115,7 @@ Each user that the policy applies to will have the policy pushed to their device
   
 ## Step 4: Block email access for unsupported devices
 
-To help secure your organization's information, you should block app access to Office 365 email for mobile devices that are not supported by MDM for Office 365. See [Supported devices](capabilities-of-mobile-device-management.md#BKMK_SupportedDevices) for a list of devices that are supported. To do this: 
+To help secure your organization's information, you should block app access to Office 365 email for mobile devices that are not supported by MDM for Office 365. See [Capabilities of built-in Mobile Device Management for Office 365](capabilities-of-mobile-device-management.md) for a list of devices that are supported. To do this: 
   
 1. Go to Security &amp; Compliance Center\> **Data loss prevention**\> **Device security policies**.
     
@@ -124,8 +124,6 @@ To help secure your organization's information, you should block app access to O
     ![Go to Compliance Center \> Devices and click the Manage device access settings link.](media/b9f4da3c-dfa5-4913-8482-42a077cb4f56.png)
   
 3. To block unsupported devices, choose **Block** under **If a device isn't supported by MDM for Office 365, do you want to allow or block it from using an Exchange account to access your organization's email** \> **Save**.
-    
-    ![Go to Compliance center \> Device Security policies\> Manage organization-wide device access settings \> Block.](media/744f0919-b703-4914-81a1-dace57a53cce.png)
   
 ## Step 5: Choose security groups to be excluded from conditional access checks
 
@@ -144,8 +142,6 @@ If you want to exclude some people from conditional access checks on their mobil
 5. Select the name, and then **Add** \> **Save**.
     
 6. On the **Organization-wide device access settings** panel, choose **Save**.
-    
-    ![On the Organization-wide device access settings choose groups that are excluded from access control.](media/e69b9bc3-3a70-4513-b0b0-2b1ff3e3fcd3.png)
   
 ## What is the impact of security policies on different device types?
 
