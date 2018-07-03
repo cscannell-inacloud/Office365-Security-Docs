@@ -57,23 +57,23 @@
 ## [Overview of labels](labels.md)
 ## [View label activity for documents](view-label-activity-for-documents.md)
 ## Send email notifications and show policy tips for DLP policies
-## Recover an inactive mailbox in Office 365
-## Overview of inactive mailboxes in Office 365
-## Restore an inactive mailbox in Office 365
-## Delete an inactive mailbox in Office 365
+## [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md)
+## [Overview of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md)
+## [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)
+## [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md)
 
 # Manage data governance		
-## Manage data governance in Office 365	
+## [Manage data governance in Office 365](manage-data-governance.md)	
 ## Archiving & Retention
-### Set up an archive and deletion policy for mailboxes in your Office 365 organization
-### Overview of unlimited archiving in Office 365
-### Archiving third-party data in Office 365
-### Enable unlimited archiving in Office 365 - Admin Help
-### Enable archive mailboxes in the Office 365 Security & Compliance Center
-### Overview of retention policies
-### Overview of event-driven retention
-### Increase the Recoverable Items quota for mailboxes on hold
-### Change the hold duration for an inactive mailbox in Office 365
+### [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+### [Overview of unlimited archiving in Office 365](unlimited-archiving.md)
+### [Archiving third-party data in Office 365](archiving-third-party-data.md)
+### [Enable unlimited archiving in Office 365 - Admin Help](enable-unlimited-archiving.md)
+### [Enable archive mailboxes in the Office 365 Security & Compliance Center](enable-archive-mailboxes.md)
+### [Overview of retention policies](retention-policies.md)
+### [Overview of event-driven retention](event-driven-retention.md)
+### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+### [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
 ### Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
 ### Search for and delete email messages in your Office 365 organization - Admin Help
 ### Archive
