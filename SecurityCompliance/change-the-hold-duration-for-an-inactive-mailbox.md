@@ -191,7 +191,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
    
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Select the In-Place Hold you want to change, and then click **Edit**![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+3. Select the In-Place Hold you want to change, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**. 
     

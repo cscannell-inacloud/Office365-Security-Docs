@@ -74,7 +74,7 @@ You can create two types of groups for your Exchange organization:
     
 2. Do one of the following:
     
-  - To edit a group: In the list of groups, click the distribution or security group that you want to view or change, and then click **Edit**![Edit icon](../media/ITPro-EAC-EditIcon.png). You can update general settings, add or remove group owners, and add or remove group members, as needed.
+  - To edit a group: In the list of groups, click the distribution or security group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png). You can update general settings, add or remove group owners, and add or remove group members, as needed.
     
   - To remove a group: Select the group and click **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.png).
     
