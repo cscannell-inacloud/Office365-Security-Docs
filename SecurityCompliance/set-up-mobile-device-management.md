@@ -57,14 +57,12 @@ To set up Mobile Device Management for Office 365 you'll need to:
 It can take some time to activate Mobile Device Management for Office 365, but when it finishes, you'll receive an email that explains the next steps to take.
   
 ## Set up Mobile Device Management
-<a name="setupmdm"> </a>
 
 When the service is ready, complete the following four steps to finish setup. You may need to click [Manage settings](https://portal.office.com/EAdmin/Device/IntuneInventory.aspx) on the **Device management** page in the Security &amp; Compliance Center to see the following settings. 
   
 ![Set up mobile device management required and recommended steps](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
   
 ### Step 1: (Required) Configure domains for MDM
-<a name="configdomains"> </a>
 
 If you don't have a custom domain associated with Office 365 or if you're not managing Windows devices, you can skip this section. Otherwise, you'll need to add DNS records for the domain at your DNS host. If you've added the records already, as part of setting up your domain with Office 365, you're all set. After you add the records, Office 365 users in your organization who sign in on their Windows device with an email address that uses your custom domain are redirected to enroll in MDM for Office 365.
   

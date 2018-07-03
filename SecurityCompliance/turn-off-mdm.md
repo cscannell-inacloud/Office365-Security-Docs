@@ -33,7 +33,7 @@ These options will remove MDM enforcement for devices in your organization. Unfo
 
 1. Go to **Security &amp; Compliance Center**\> **Data loss prevention** \> **Device security polices**.
     
-2. Select a device policy, and click ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif) **Edit policy**.
+2. Select a device policy, and click ![Edit icon](media/O365-MDM-CreatePolicy-EditIcon.gif) **Edit policy**.
     
 3. Under **Deployment**, click **- Remove**.
     

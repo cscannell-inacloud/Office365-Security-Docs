@@ -20,13 +20,10 @@ description: "You can use built-in mobile device management for Office 365 to do
 ---
 
 # Wipe a mobile device in Office 365
-
- *Last updated 20 October, 2017* 
   
 You can use built-in mobile device management for Office 365 to do a selective wipe to remove only organizational information, or a full wipe to delete all information from a mobile device and restore it to its factory settings.
   
 ## What to know before you begin
-<a name="BKMK_Before"> </a>
 
 - Mobile devices can store sensitive organizational information and provide access to your organization's Office 365 resources. To help protect your organization's information, you can do a full wipe or a selective wipe:
     
@@ -41,26 +38,8 @@ You can use built-in mobile device management for Office 365 to do a selective w
 - If you want to know what a user will experience when you wipe their device, see [What's the user and device impact?](wipe-a-mobile-device.md#BKMK_Impact).
     
 ## Wipe a mobile device
-<a name="BKMK_Wipe"> </a>
 
-1. 
-::: moniker range="o365-worldwide"
-
-Go to the [![Click here to go to the Office 365 admin center.](media/e00ba917-c3fb-4173-b344-43eb5c7eeb15.png)](https://portal.office.com/adminportal/home).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Go to the [Office 365 admin center](https://portal.office.de/adminportal/home).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Go to the [Office 365 admin center](https://login.partner.microsoftonline.cn).
-
-::: moniker-end
+1. Go to the [![Click here to go to the Office 365 admin center.](media/e00ba917-c3fb-4173-b344-43eb5c7eeb15.png)](https://portal.office.com/adminportal/home).
 
 2. Go to [Go to the Office 365 Security &amp; Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)\> **Data loss prevention** \> **Device management**.
     
@@ -83,7 +62,6 @@ Until the wipe finishes, the **Device status** will show as **RetirePending** or
 You'll no longer see the mobile device in the list of managed devices.
   
 ## Why would you want to wipe a device?
-<a name="BKMK_Why"> </a>
 
 There are several reasons for wiping devices:
   
@@ -94,7 +72,6 @@ There are several reasons for wiping devices:
 - If your organization provides mobile devices to users, you might need to reassign devices from time to time. Doing a full wipe on a device before assigning it to a new user helps ensures that any sensitive information from the previous owner is deleted.
     
 ## What's the user and device impact?
-<a name="BKMK_Impact"> </a>
 
 The wipe is sent immediately to the mobile device. The device is also marked as not compliant in AAD.
   
@@ -111,7 +88,6 @@ The following table describes what content is removed for each device type when 
 > \* Company Portal app is available at the App Store for iOS and the Play Store for Android devices. 
   
 ## Related content
-<a name="BKMK_Impact"> </a>
 
 [Manage mobile devices in Office 365](set-up-mobile-device-management.md)
   
