@@ -63,7 +63,6 @@ Here's the high-level process for using the DSR case tool to manage DSR investig
 > Our tools can help admins perform DSR access or export requests by enabling them to utilize the built-in search and export functionality found in the DSR case tool. The tool helps to facilitate a best-effort method to export data that's relevant to a DSR request submitted by a data subject. However, it's important to note that search results can vary based on the data subject or the admin actions taken that may impact whether or not an item would be deemed as "personal data" for export purposes. For example, if the data subject was the last person to modify a file they didn't create, the file might not be returned in the search results. Similarly, an admin could export data without including partially indexed items or all versions of SharePoint documents. Therefore, the tools provided can help facilitate accessing and exporting data requests; however, the results are subject to specific admin and data subject usage scenarios. 
   
 ## Step 1: Assign eDiscovery permissions to potential case members
-<a name="step1"> </a>
 
 By default, an Office 365 global administrator can access the DSR case tool in the Security &amp; Compliance Center. By design, other users such as a data privacy officer, a human resources manager, or other people involved in DSR investigations don't have access to the DSR case tool and will have to be assigned the appropriate permissions to access the tool. The easiest way to do this is to go to the **Permissions** page in the Security &amp; Compliance Center and add users to the eDiscovery Manager role group. Note that you also have to assign these permissions so you can add them as members of the DSR case that you create in Step 2. 
   
@@ -75,7 +74,6 @@ For step-by-step instructions, see [Assign eDiscovery permissions in the Officeâ
 [Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
   
 ## Step 2: Create a DSR case and add members
-<a name="step2"> </a>
 
 The next step is to create a DSR case. When you create a case, you can choose to start the built-in search or you can create the case without starting the search. The following procedure will instruct you to create the case without starting the search and then show you how to add members to the case.
   
@@ -114,10 +112,7 @@ The next step is to create a DSR case. When you create a case, you can choose to
     
     Note that you can also add role groups as members of DSR case by clicking **Add** under **Manage role groups**. 
     
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
-  
 ## Step 3: Run the search query
-<a name="step3"> </a>
 
 After you create a DSR case and add members, the next step is to run the built-in search that's associated with the case. This default search query does the following:
   
@@ -131,25 +126,16 @@ After you create a DSR case and add members, the next step is to run the built-i
     
 Here's what the keyword query looks like for the built-in search that gets automatically created when you create a DSR case.
   
-||
-|:-----|
-|
 ```
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>
 ```
 
-|
-   
 For example, if the name of the data subject is Ina Leonte, the keyword query would look like this:
   
-||
-|:-----|
-|
 ```
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
-|
    
  **To run the built-in search for a DSR case:**
   
@@ -166,12 +152,9 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     > [!TIP]
     > You can also view the search query statistics to see the number of mailbox and site items that are returned by the search, and the top content locations that contain items that match the search query. For more information see, [View information and statistics about a search](content-search.md#profilestatistics). 
   
-You can edit the built-in search query, change the content locations that are searched, and then re-run the search. See [(Optional) Step 5: Revise the built-in search query](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step5) for more information. 
-  
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
+You can edit the built-in search query, change the content locations that are searched, and then re-run the search. See [(Optional) Step 5: Revise the built-in search query](#optional-step-5-revise-the-built-in-search-query) for more information. 
   
 ## Step 4: Export the data
-<a name="step4"> </a>
 
 After you run the built-in search, you can export the search results. Alternatively, before you export the data, you may want to revise the query to reduce the number of search results. See Step 5 for more information about narrowing the search results.
   
@@ -244,8 +227,6 @@ The computer you use to export data has to meet the following system requirement
     
 After the data is exported, the search results and export reports are located in a folder that has the same name as the DSR case. The PST files that contain mailbox items are located in a subfolder named **Exchange**. Documents and other items from sites are located in a subfolder named **SharePoint**. 
   
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
-  
 ## (Optional) Step 5: Revise the built-in search query
 <a name="step5"> </a>
 
@@ -259,10 +240,9 @@ Here are some examples of the conditions that you can add to the built-in search
     
 - **Compliance tag (compliancetag)** - Specifies a label assigned to an email message or a document. This condition will return items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Overview of labels in Office 365](labels.md).
     
-For a list and description of all the conditions available in the DSR case tool, See [Search conditions](keyword-queries-and-search-conditions.md#conditions) in the "Keyword queries and search conditions for Content Search" article. 
+For a list and description of all the conditions available in the DSR case tool, See the "Search conditions" section in [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md). 
   
 ### Changing the content locations that are searched
-<a name="changecontentlocations"> </a>
 
 In addition to revising the built-in search for a DSR case, you can also change the content locations that are searched. As previously explained, the built-in search searches every mailbox and site in the organization, and any Exchange Online public folders. For example, you could narrow the search to only search the data subject's mailbox and OneDrive account and selected SharePoint sites. If you choose to search specific sites, you'll have to add each site that you want to search.
   
@@ -285,11 +265,8 @@ To modify the content locations to search:
 3. The toggle in the Exchange public folders section is selected, which means all Exchange public folders are searched. Note that you can only search all Exchange public folders or none of them. You can't choose specific ones to search. 
     
 3. If you modify the content locations in the built-in search, click **Save &amp; run** to re-start the search. 
-    
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
   
 ## More information about using the DSR case tool
-<a name="moreinfo"> </a>
 
 The following sections contain more information about using the DSR case tool to respond to DSR export requests.
   
@@ -302,7 +279,6 @@ The following sections contain more information about using the DSR case tool to
 [Searching Exchange public folders](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#publicfolders)
   
 ### Exporting data from MyAnalytics and the Office Roaming Service
-<a name="o365datamoreinfo"> </a>
 
 You can use the DSR case tool to search for and export usage data that's generated by MyAnalytics and the Office Roaming Service. Here's a description of what these services do:
   
@@ -387,11 +363,8 @@ When you export data from MyAnalytics and the Office Roaming Service, the data i
     The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can open the Exchange PST file in Outlook and then go to the **ApplicationDataRoot** folder to access the subfolders to MyAnalytics and Roaming service. 
     
     As previously explained, the JSON files that contains usage data are attached to messages. To view a JSON file, click a message and then open the attached JSON file. 
-    
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
   
 ### Exporting partially indexed items
-<a name="exportunindexeditems"> </a>
 
 We recommend that you don't export partially indexed items (also called unindexed items) from the built-in search that's created when you create a new DSR case. That's because the search results will more than likely include partially indexed items for other users in your organization, and not just partially indexed items for the data subject). Instead, we recommend that you create a separate Content Search that's associated with the DSR case that's designed to export only the partially indexed items related to the data subject. 
   
@@ -417,10 +390,9 @@ For more information about partially indexed items, see:
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
     
-- [](export-search-results.md#unidexeditems)
+- [Export Content Search results from the Office 365 Security &amp; Compliance Center](export-search-results.md)
     
 ### Searching and exporting data from Microsoft Teams and Office 365 Groups
-<a name="teamsmoreinfo"> </a>
 
 Conversations that are part of the Chat list in Microsoft Teams (called Team chats or one-to-one chats) are stored in the Exchange Online mailbox of the users who participate in the chats. Also, the files a person shares in a one-to-one chat are stored in the OneDrive account of the person who shares the file. Because the built-in search searches all mailboxes and OneDrive accounts in the organization, team chats and documents shared in a chat session (that the data subject created or uploaded) will be returned by built-in search in a DSR case.
   
@@ -430,10 +402,7 @@ Similarly, mailboxes and SharePoint sites that correspond to an Office 365 Group
   
 For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of a members, see the [Searching Microsoft Teams and Office 365 Groups](content-search.md#teamsandgroups) section in "Content Search in Office 365". 
   
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
-  
 ### Searching Exchange public folders
-<a name="publicfolders"> </a>
 
 The built-in search in a DSR case will only return email messages that the data subject sent to a mail-enabled public folder or messages that someone else sent to a public folder and also copied the data subject . It will not return message that the data subject might have posted to a public folder. To search for items that the data subject posted to a public folder, you can create a separate create a separate Content Search that searches for any item posted to a public folder by the data subject.
   
@@ -443,21 +412,12 @@ Here's a high-level process to search for items that the data subject might have
     
 2. Use the following criteria for configuring the search query and the content locations to search:
     
-  - In the **Keywords** box, use the following search query: 
-    
-||
-|:-----|
-|
+  - In the **Keywords** box, use the following search query: </br>    
 ```
   itemclass:ipm.post AND "<email address of the data subject>"
 ```
-
-|
-   
   - Search all Exchange public folders
     
-  - After you run the search and it completes, you can export and download the search results (as described in [Step 4: Export the data](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Use the following settings to export partially indexed items. 
-    
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
-  
+  - After you run the search and it completes, you can export and download the search results (as described in [Step 4: Export the data](#step-4-export-the-data). Use the following settings to export partially indexed items. 
+ 
 

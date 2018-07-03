@@ -54,7 +54,7 @@ You can create an activity alert that will send you an email notification when u
     
 3. **Send this alert when**Click **Send this alert when** and then configure these two fields: 
     
-  - **Activities**Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the Office 365 audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [](search-the-audit-log-in-security-and-compliance.md#auditlogevents).
+  - **Activities**Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the Office 365 audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
     
     When a user performs any of the activities that you've added to the alert, an email notification is sent. 
     
@@ -69,8 +69,6 @@ You can create an activity alert that will send you an email notification when u
     ![A list of alerts is displayed on the Activity alerts page in the Security &amp; Compliance Center](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
   
     The status of the alert is set to **On**. Note that the recipients who will received an email notification when an alert is sent are also listed. 
-    
-[Return to top](create-activity-alerts.md#top)
   
 ## Turn off an activity alert
 
@@ -90,16 +88,13 @@ You can turn off an activity alert so that an email notification isn't sent. Aft
     
 To turn an activity alert back on, just repeat these steps and click the **Off** toggle switch to change the status to **On**.
   
-[Return to top](create-activity-alerts.md#top)
-  
 ## More information
-<a name="moreinfo"> </a>
 
 - Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page ) in the Security &amp; Compliance Center. 
     
     ![Example of an email notifcation sent for an activity alert](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
-- Here's are some common document and email activities that you can create an activity alerts for. The tables describes the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **s** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [](search-the-audit-log-in-security-and-compliance.md#auditlogevents).
+- Here's are some common document and email activities that you can create an activity alerts for. The tables describes the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **s** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
     
     > [!TIP]
     > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that track multiple activities performed by one or mores users. 
@@ -127,6 +122,5 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     
   - A good reason to use the cmdlets to create or edit an activity alert is to send email notifications to someone outside of your organization. This external user will be listed in the list of recipients for the alert. But if you remove this external user from the alert, that user can't be re-added to the alert by using **Edit alert** page in the Security &amp; Compliance Center. You'll have to re-add the external user using the **Set-ActivityAlert** cmdlet, or use the **New-ActivityAlert** cmdlet to add the same (or different) external user to a new alert. 
     
-[Return to top](create-activity-alerts.md#top)
   
 
