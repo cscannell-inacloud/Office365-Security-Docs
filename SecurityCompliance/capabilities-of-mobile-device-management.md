@@ -62,15 +62,14 @@ The supported apps for the different types of mobile devices in the following ta
   
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with MDM for Office 365. The user is blocked from accessing Office 365 resources in the app until they enroll their device.
   
-![Shows enrollment process for new device.](media/O365_MDM_Capabilities_EnrollmentExample.png)
+![Shows enrollment process for new device.](media/O365-MDM-Capabilities-EnrollmentExample.png)
   
 > [!NOTE]
 > Policies and access rules created in MDM for Office 365 will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM for Office 365, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380). 
   
 ## Policy settings for mobile devices
-<a name="BKMK_PolicySettings"> </a>
 
-If you create a policy to block access with certain settings turned on, users will be blocked from accessing Office 365 resources when using a supported app that is listed in [Access control for Office 365 email and documents](capabilities-of-mobile-device-management.md#BKMK_AccessControl). The settings that can block users from accessing Office 365 resources are in these sections:
+If you create a policy to block access with certain settings turned on, users will be blocked from accessing Office 365 resources when using a supported app that is listed in [Access control for Office 365 email and documents](#access-control-for-office-365-email-and-documents). The settings that can block users from accessing Office 365 resources are in these sections:
   
 - Security
     
@@ -82,7 +81,7 @@ If you create a policy to block access with certain settings turned on, users wi
     
 For example, the following diagram shows what happens when a user with an enrolled device isn't compliant with a security setting in a mobile device management policy that applies to their device. The user signs in to an app that supports access control with MDM for Office 365. They are blocked from accessing Office 365 resources in the app until their device complies with the security setting.
   
-![Shows user is blocked when device isn't compliant.](media/O365_MDM_Capabilities_ComplianceExample.png)
+![Shows user is blocked when device isn't compliant.](media/O365-MDM-Capabilities-ComplianceExample.png)
   
 The following sections list the policy settings you can use to help secure and manage mobile devices that connect to your organization's Office 365 resources. 
   
@@ -220,7 +219,7 @@ You can set the following additional policy settings by using PowerShell cmdlets
     
 ## Remotely wipe a mobile device
 
- If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your organization's Office 365 resources by doing a wipe from **Security &amp; Complieance center\>Data loss prevention\>Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
+ If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your organization's Office 365 resources by doing a wipe from **Security &amp; Compliance center\>Data loss prevention\>Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
   
 For more information, see [Wipe a mobile device in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518157).
   

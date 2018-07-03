@@ -22,30 +22,29 @@ This article contains frequently asked questions about Mobile Device Management 
   
 ## FAQs
 
-- [How can I get MDM for Office 365? I don't see it in the Office 365 admin center](frequently-asked-questions-about-mdm.md#BKMK_NeedMDM)
+- [How can I get MDM for Office 365? I don't see it in the Office 365 admin center](#how-can-i-get-mdm-for-office-365-i-dont-see-it-in-the-office-365-admin-center)
     
-- [How can I get started with device management in MDM](frequently-asked-questions-about-mdm.md#BKMK_GetStarted)
+- [How can I get started with device management in MDM](#how-can-i-get-started-with-device-management-in-mdm)
     
-- [I'm trying to set up MDM but it seems stuck. The Office 365 Service Health has been showing "provisioning" for a while. What can I do?](frequently-asked-questions-about-mdm.md#BKMK_ProvisionHang)
+- [I'm trying to set up MDM but it seems stuck. The Office 365 Service Health has been showing "provisioning" for a while. What can I do?](#im-trying-to-set-up-mdm-but-it-seems-stuck-the-office-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do)
     
-- [What can I do if device enrollment fails?](frequently-asked-questions-about-mdm.md#BKMK_EnrollFails)
+- [What can I do if device enrollment fails?](#what-can-i-do-if-device-enrollment-fails)
     
-- [What's the difference between Intune and MDM for Office 365?](frequently-asked-questions-about-mdm.md#BKMK_Intune)
+- [What's the difference between Intune and MDM for Office 365?](#whats-the-difference-between-intune-and-mdm-for-office-365)
     
-- [How do policies work for MDM? How do I set them up? Disable them?](frequently-asked-questions-about-mdm.md#BKMK_PoliciesHowTo)
+- [How do policies work for MDM? How do I set them up? Disable them?](#how-do-policies-work-for-mdm-how-do-i-set-them-up-disable-them)
     
-- [Can I switch from Exchange ActiveSync device management to MDM for Office 365?](frequently-asked-questions-about-mdm.md#BKMK_SwitchFromEXO)
+- [Can I switch from Exchange ActiveSync device management to MDM for Office 365?](#can-i-switch-from-exchange-activesync-device-management-to-mdm-for-office-365)
     
-- [I set up MDM but now I want to remove it. What are the steps? ](frequently-asked-questions-about-mdm.md#BKMK_Remove)
+- [I set up MDM but now I want to remove it. What are the steps?](#i-set-up-mdm-but-now-i-want-to-remove-it-what-are-the-steps)
     
-- [Still need help?](frequently-asked-questions-about-mdm.md#BKMK_NeedHelp)
+- [Still need help](#still-need-help)
     
 ## How can I get MDM for Office 365? I don't see it in the Office 365 admin center
 
-We've completed rolling out this feature to Office 365 customers. Look for the **Device Management** tab in the [Go to the Office 365 Security &amp; Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8). If you don't see it, please let us know by [Still need help?](frequently-asked-questions-about-mdm.md#BKMK_NeedHelp), and we'll help you get started. 
+We've completed rolling out this feature to Office 365 customers. Look for the **Device Management** tab in the [Go to the Office 365 Security &amp; Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8). If you don't see it, please let us know. See [Still need help?](#still-need-help), and we'll help you get started. 
   
 ## How can I get started with device management in MDM
-<a name="BKMK_GetStarted"> </a>
 
 There are four steps to getting started with MDM for Office 365 (learn details in [Set up Mobile Device Management (MDM) in Office 365](set-up-mobile-device-management.md)):
   
@@ -59,7 +58,7 @@ There are four steps to getting started with MDM for Office 365 (learn details i
     
 ## I'm trying to set up MDM but it seems stuck. The Office 365 Service Health has been showing "provisioning" for a while. What can I do?
 
-It may take some time to get the service ready for you. When provisioning is complete, you'll see the Mobile Device Management for Office 365 page. If you've waited 24 hours and the status is still **Provisioning**, please [Still need help?](frequently-asked-questions-about-mdm.md#BKMK_NeedHelp) and we'll help figure out what the issue is. 
+It may take some time to get the service ready for you. When provisioning is complete, you'll see the Mobile Device Management for Office 365 page. If you've waited 24 hours and the status is still **Provisioning**, please see [Still need help?](#still-need-help) and we'll help figure out what the issue is. 
   
 ## What can I do if device enrollment fails?
 
