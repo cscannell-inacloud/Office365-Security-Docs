@@ -1,7 +1,7 @@
 ---
 title: "Get started with the default DLP policy"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/10/2017
 ms.audience: Admin
