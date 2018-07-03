@@ -8,14 +8,14 @@
 ## [Give users access to the Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
 ## [Security Dashboard overview](security-dashboard.md)
 ## [Supervision reports](supervision-reports.md)
-## Install the Supervision add-in for Outlook desktop
-## Configure supervision policies for your organization
-## Use your free Azure Active Directory subscription in Office 365
-## Plan for security and compliance in Office 365
-## Use Explorer in the Security and Compliance Center
+## [Install the Supervision add-in for Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
+## [Configure supervision policies for your organization](configure-supervision-policies.md)
+## [Use your free Azure Active Directory subscription in Office 365](use-your-free-azure-ad-subscription-in-office-365.md)
+## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
+## [Use Explorer in the Security and Compliance Center](use-explorer-in-security-and-compliance.md)
 
 # Protect access to data and services
-## Protect access to data and services in Office 365
+## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
 ## Overview of Mobile Device Management (MDM) for Office 365	
 ## Set up Mobile Device Management (MDM) in Office 365
 ## Choose between MDM for Office 365 and Microsoft Intune
@@ -31,31 +31,31 @@
 ## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
 ## Privacy and security for built-in mobile device management for Office 365
 ## Manage device access settings
-## Investigate a user account that might be compromised in Office 365
+## [Investigate a user account that might be compromised in Office 365](investigate-an-account-that-might-be-compromised.md)
 
 # Prevent data loss
-## Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services	
-## Prevent data loss in Office 365
-## Create a DLP policy from a template
-## What the DLP policy templates include
-## Create a DLP policy to protect documents with FCI or other properties
-## What the DLP functions look for
-## Get started with the default DLP policy
-## Recover items deleted by the retention process
-## Get started with DLP policy recommendations
+## [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)	
+## [Prevent data loss in Office 365](prevent-data-loss.md)
+## [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+## [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
+## [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
+## [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+## [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
+## [Recover items deleted by the retention process](recover-deleted-items-from-retention.md)
+## [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md)
 ## Overview of document deletion policies
-## Overview of preservation policies
-## Overview of data loss prevention policies
-## How DLP works between the Security & Compliance Center and Exchange Admin Center
+## [Overview of preservation policies](preservation-policies.md)
+## [Overview of data loss prevention policies](data-loss-prevention-policies.md)
+## [How DLP works between the Security & Compliance Center and Exchange Admin Center](how-dlp-works-between-admin-centers.md)
 ## Create a document deletion policy
-## Customize a built-in sensitive information type
-## Overview of disposition reviews
-## Form a query to find sensitive data stored on sites
-## View the reports for data loss prevention
-## Create a custom sensitive information type
-## What the sensitive information types look for
-## Overview of labels
-## View label activity for documents
+## [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)
+## [Overview of disposition reviews](disposition-reviews.md)
+## [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md)
+## [View the reports for data loss prevention](view-the-dlp-reports.md)
+## [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
+## [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+## [Overview of labels](labels.md)
+## [View label activity for documents](view-label-activity-for-documents.md)
 ## Send email notifications and show policy tips for DLP policies
 ## Recover an inactive mailbox in Office 365
 ## Overview of inactive mailboxes in Office 365
