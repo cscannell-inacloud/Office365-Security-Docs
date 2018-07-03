@@ -24,14 +24,13 @@
 ## Wipe a mobile device in Office 365
 ## Create an APNs Certificate for iOS devices
 ## Manage devices enrolled in Mobile Device Management in Office 365
-## Create and deploy device security policies
-## Frequently asked questions about Mobile Device Management for Office 365
-## Troubleshoot device enrollment with MDM for Office 365
-## How to turn off Mobile Device Management in Office 365
-## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
-## Privacy and security for built-in mobile device management for Office 365
-## Manage device access settings
-## [Investigate a user account that might be compromised in Office 365](investigate-an-account-that-might-be-compromised.md)
+## [Create and deploy device security policies](create-device-security-policies.md)
+## [Frequently asked questions about Mobile Device Management for Office 365](frequently-asked-questions-about-mdm.md)
+## [Troubleshoot device enrollment with MDM for Office 365](troubleshoot-mdm.md)
+## [How to turn off Mobile Device Management in Office 365](turn-off-mdm.md)
+## [Get details about devices managed by MDM](get-details-about-mdm-managed-devices.md)
+## [Privacy and security for built-in mobile device management for Office 365](privacy-and-security-for-mdm.md)
+## [Manage device access settings](manage-device-access-settings.md)
 
 # Prevent data loss
 ## [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)	
