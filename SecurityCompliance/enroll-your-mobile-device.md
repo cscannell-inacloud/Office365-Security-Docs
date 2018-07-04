@@ -34,7 +34,7 @@ MDM and InTune works with most, but not all, mobile devices. The following are s
     
 - Android 4 or later
     
-- Windows 8.1
+- Windows 8.1 (Phone and PC) and later to include Windows 10
     
 - Windows 10
     
