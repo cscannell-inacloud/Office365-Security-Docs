@@ -27,6 +27,8 @@ This document provides a list of instructions on how to permanently remove a mes
 ## Workflow for managing data spillage incidents
 
 Here's a how to manage a data spillage incident:
+
+![The 8-step workflow for managing data spillage incidents](media/O365_eDiscoverySolutions_DataSpillage_workflow.png)
   
 [(Optional) Step 1: Manage who can access the case and set compliance boundaries](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Step 2: Create an eDiscovery case](#step-2-create-an-ediscovery-case)<br/>
@@ -83,21 +85,31 @@ Afer you verified the search results, you may want to share your findings with o
   
  **To generate a statistical report:**
   
-1. Go to Search page on eDiscovery, and click the search that you would like to generate report for. On the flyout, click "More" and "Export report." The Export report page is displayed.
+1. Go to the **Search** page in the eDiscovery case, and click the search that you want to generate a report for. 
     
-2. Select "All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons" and click "Generate report."
+2. On the flyout page, click **More > Export report**.
+ 
+      The Export report page is displayed.
+
+    ![Select the search and then click More > Export report on the flyout page](media/O365_eDiscoverySolutions_DataSpillage_ExportReport1.png)
     
-3. In the eDiscovery case, click "Export" to display the list of export jobs. You might have to click Refresh to update the list with the export job that you just created.
-    
-4. Click the export job that you just created and "[Download report.](.md) " 
-    
-5. "Export Summary.csv" will contain the number of locations found with result and the size of the search result. You can use this to compare with report generated after deletion and provide as a proof of deletion. "Results.csv" contains more detailed summary of search result including subject, sender, recipients, if the email was read, dates and size.  *If any of this detail contains spilled data, make sure to discard "Results.csv".* 
+3. Select **All items, including ones that have unrecognized format, are encrypted, or weren’t indexed for other reasons** and then click **Generate report**.
+
+4. In the eDiscovery case, click **Export** to display the list of export jobs. You may have to click **Refresh** to update the list to display the export job you just created.
+
+5. Click the export job, and then click **Download** report on the flyout page.
+ 
+    ![On the Export page, click the export and then click "Download report"](media/O365_eDiscoverySolutions_DataSpillage_ExportReport2.png)
+
+The **Export Summary** report contains the number of locations found with results and the size of the search results. You can use this to compare with the report generated after deletion and provide as a proof of deletion. The **Results** report contains a more detailed summary of the search results, including the subject, sender, recipients, if the email was read, dates, and size of each message. If any of the details in this report contains that actual spilled data, be sure to permanently delete the Results.csv file when the investigation is complete.
+
+For more information about exporting reports, see [Export a Content Search report](export-a-content-search-report.md).
     
 ## Step 5: Use message trace log to check how spilled data was shared
 
-To further investigate if email with spilled data was shared, you can optionally query message trace logs with the sender information and/or date range that you gathered in Step 4. The retention period for message traces is 30 days for real time data and 90 days for historical data.
+To further investigate if email with spilled data was shared, you can optionally query the message trace logs with the sender information and the date range information that you gathered in Step 4. Note that the retention period for message trace is 30 days for real time data and 90 days for historical data.
   
-You can use message tracing in the Security &amp; Compliance Center or use the corresponding cmdlets in Exchange Online PowerShell. It's important to note that message trace doesn't offer full guarantees on the completeness of data returned. For more information about using message trace, see: 
+You can use Message trace in the Security & Compliance Center or use the corresponding cmdlets in Exchange Online PowerShell. It's important to note that message tracing doesn't offer full guarantees on the completeness of data returned. For more information about using Message trace, see: 
   
 - [Message trace in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
@@ -105,7 +117,7 @@ You can use message tracing in the Security &amp; Compliance Center or use the c
     
 ## Step 6: Prepare the mailboxes
 
-After you review and validate that the search results contains only the messages that must be deleted, you need to collect a list of the email addresses of the impacted mailboxes to use in Step 7 when you run the **Search-Mailbox -DeleteContent** command. You may also have to prepare the mailboxes before you can permanently delete email messages depending on whether single item recovery is enabled on the mailboxes that contain the spilled data or if any of those mailboxes are on hold. 
+After you review and validate that the search results contains only the messages that must be deleted, you need to collect a list of the email addresses of the impacted mailboxes to use in Step 7 when you run the **Search-Mailbox -DeleteContent** command. You may also have to prepare the mailboxes before you can permanently delete email messages depending on whether single item recovery is enabled on the mailboxes that contain the spilled data or if any of those mailboxes are on hold.
   
 ### Get a list of addresses of mailboxes with spilled data
 
@@ -121,63 +133,84 @@ There are two ways to collect a list of email addresses of mailboxes with spille
     
 4. In the **Type** drop down list, click **Top locations**.
     
+    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics](media/O365_eDiscoverySolutions_DataSpillage_TopLocations.png)
+
     A list of mailboxes that contain search results is displayed. The number of items in each mailbox that match the search query is also displayed.
     
-5. Copy the information in the and save it to a file or click **Download** to download the information to a CSV file. 
+5. Copy the information in the list and save it to a file or click **Download** to download the information to a CSV file. 
     
 **Option 2: Get mailbox locations from the export report**
 
-Open the Export Summary report that you downloaded in [Step 4: Review and validate case findings](data-spillage-scenariosearch-and-purge.md#step4). In the first column in the report, the email address of each mailbox is listed under **Locations**.
+Open the Export Summary report that you downloaded in [Step 4](#step-4-review-and-validate-case-findings). In the first column in the report, the email address of each mailbox is listed under **Locations**.
   
 ### Prepare the mailboxes so you can delete the spilled data
 
 If single item recovery is enabled or if a mailbox is placed on hold, a permanently deleted (purged) message will be retained in Recoverable Items folder. So before you can purge spilled data, you need to check the existing mailbox configurations and disable single item recovery and remove any hold or Office 365 retention policy. Keep in mind that you can prepare one mailbox at a time, and then run the same command on different mailboxes or create a PowerShell script to prepare multiple mailboxes at the same time.
 
-- See "Step 1: Collect information about the mailbox" in [Step 1: Collect information about the mailbox](a85e1c87-a48e-4715-bfa9-d5275cde67b0.md#step1) for instructions about how to check if single item recovery is enabled or if the mailbox is placed on hold or it's assigned to a retention policy. 
+- See "Step 1: Collect information about the mailbox" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) for instructions about how to check if single item recovery is enabled or if the mailbox is placed on hold or it's assigned to a retention policy. 
     
-- See "Step 2: Prepare the mailbox" in [Step 2: Prepare the mailbox ](a85e1c87-a48e-4715-bfa9-d5275cde67b0.md#step2) for instructions about disabling single item recovery. 
+- See "Step 2: Prepare the mailbox" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) for instructions about disabling single item recovery. 
     
-- See "Step 3: Remove all holds from the mailbox" in [Step 3: Remove all holds from the mailbox](a85e1c87-a48e-4715-bfa9-d5275cde67b0.md#step3) for instructions about how to remove a hold or retention policy from a mailbox. 
+- See "Step 3: Remove all holds from the mailbox" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) for instructions about how to remove a hold or retention policy from a mailbox. 
     
  **Important:** Check with your records management or legal departments before removing a hold or retention policy. Your organization may have a policy that defines whether a mailbox on hold or a data spillage incident takes priority. 
   
-Be sure to revert the mailbox to previous configurations after you verify that the spilled data has been permanently deleted. See the details in [Step 7: Permanently delete the spilled data](data-spillage-scenariosearch-and-purge.md#step7).
+Be sure to revert the mailbox to previous configurations after you verify that the spilled data has been permanently deleted. See the details in [Step 7](#step-7-permanently-delete-the-spilled-data).
 
 ## Step 7: Permanently delete the spilled data
 
-Using the mailbox locations that you collected and prepared in Step 6 and the search query that was created and refined in Step 3 to find email messages that contain the spilled data, you can now permanently delete the spilled data. As previously explained, you have to be assigned the Mailbox Import Export role in ExchangeOnline to delete messages using the following procedure.
+Using the mailbox locations that you collected and prepared in Step 6 and the search query that was created and refined in Step 3 to find email messages that contain the spilled data, you can now permanently delete the spilled data. As previously explained, you have to be assigned the Mailbox Import Export role in Exchange Online to delete messages using the following procedure.
   
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
-2. Run below command:
+2. Run the following command:
     
-Search-Mailbox -Identity ** * \<mailbox identity\> * ** -SearchDumpster -DeleteContent $true -SearchQuery ** *\<search query\>* **
+    ```
+    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
+    ```
   
-More examples on Search-Mailbox deletion command can be found on [Delete items in the Recoverable Items folder](https://support.office.com/en-us/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0#step4).
-  
+3. Re-run the previous command for each mailbox that contains the spilled data, by replacing the value for the Identity parameter; for example:
 
+    ```
+    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
+    ```
+
+    ```
+    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
+    ```
+
+   ```
+   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
+   ```
+  
 As previously stated, you can also create a [powershell script](https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6) and run it against a list of mailboxes so that the script deletes the spilled data in each mailbox.
   
 ## Step 8: Verify, provide a proof of deletion, and audit
 
-To verify that the spilled data was permanently removed, go to the case and re-run the same search query to confirm that there are no results returned. You can export a report and provide it along with the original report as a proof of deletion. You can [close the case](https://support.office.com/en-us/article/manage-ediscovery-cases-in-the-office-365-security-compliance-center-9a00b9ea-33fd-4772-8ea6-9d3c65e829e6?ui=en-US&amp;rs=en-US&amp;ad=US#closecase_1) and if necessary refer to it any time in the future. 
+The final step in the workflow to manage a data spillage incident is to verify that the spilled data was permanently removed from the mailbox by going to the eDiscovery case and re-running the same search query that was used to delete that data to confirm that no results are returned. After you confirm the spilled data has been permanently removed, you can export a report and include it (along with the original report) as a proof of deletion. Then you can [close the case](ediscovery-cases.md#optional-step-9-close-a-case), which will allow you to re-open it if you have refer to it in the future. Additionally, you can also revert mailboxes to their previous state, delete the search query used to find the spilled data, and search for auditing records of tasks performed when managing the data spillage incident. 
   
-### Reconfigure the mailbox to its previous state
+### Reverting the mailboxes to their previous state
 
-If you changed any mailbox configurations in [Step 6: Permanently delete the spilled data so that it's not accessible or recoverable](https://microsoft-my.sharepoint.com/personal/sepa_microsoft_com/Documents/Data%20Spillage%20Solution%20Documentation.docx#_Configuring_mailboxes_1), you need to revert the mailbox to its previous state. See [Revert the mailbox to its previous state](https://support.office.com/en-us/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0#step5)
+If you changed any mailbox configuration in Step 6 to prepare the mailboxes before the spilled data was deleted, you will need to revert them to their previous state. See "Step 5: Revert the mailbox to its previous state" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state).
   
-### Delete the search query
+### Deleting the search query
 
-If the search keywords used in step 3 contain data that need to be purged, you must delete the search query to prevent further spillage.
+If the keywords in the search query that you created and used in Step 3 contains some of all of the actual spilled data, you should delete the search query to prevent further data spillage.
   
-Using eDiscovery in SCC:
-  
-1. Select the search that contains keywords to be deleted.
+1. In the Security & Compliance Center, open the eDiscovery case, go to the **Search** page, and select the appropriate content search.
     
-2. Click on Delete.
-    
-### Audit the data spillage investigation process
+2. On the flyout page, click **Delete**.
 
-You can audit eDiscovery activities and permanent deletion in Security &amp; Compliance Center. You can see all audited eDiscovery activities and Exchange mail activities on [Audited activities](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#exchangemailboxactivities&amp;PickTab=Activities). To search for the audited activities, see [Search for eDiscovery activities in the Office 365 audit log](https://support.office.com/en-us/article/search-for-ediscovery-activities-in-the-office-365-audit-log-67cc7f42-a53d-4751-b929-6005c80798f7)
+    ![Select the search and then click Delete on the flyout page](media/O365_eDiscoverySolutions_DataSpillage_DeleteSearch.png)
+    
+### Auditing the data spillage investigation process
+
+You can search the Office 365 audit log for the eDiscovery activities that were performed during the investigation. You can also search the audit log to return the audit records that were created when you ran the Search-Mailbox -DeleteContent command to delete the spilled data. For more information, see:
+
+- [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md)
+
+- [Search for eDiscovery activities in the Office 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md)
+
+- See the "Audited activities - Exchange admin audit log " section in [Search the audit log in the Office 365 Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities) for guidance about how to search for audit records related to running cmdlets in Exchange Online.
   
 
