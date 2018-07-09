@@ -46,16 +46,8 @@ Need to find if a user viewed a specific document or purged an item from their m
     
 - User and admin activity in Microsoft Stream
     
- **Contents**
-  
-[Before you begin](search-the-audit-log-in-security-and-compliance.md#begin)
-  
-[Search the audit log](search-the-audit-log-in-security-and-compliance.md#searchauditlog)
-  
-[Audited activities](search-the-audit-log-in-security-and-compliance.md#auditedactivities)
-  
+   
 ## Before you begin
-<a name="begin"> </a>
 
 Be sure to read the following items before you start searching the Office 365 audit log.
   
@@ -109,23 +101,20 @@ Be sure to read the following items before you start searching the Office 365 au
     
 - Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the Office 365 audit log, you have to enable auditing in the Power BI admin portal. For instructions, see [Auditing Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
     
-    [Return to top](search-the-audit-log-in-security-and-compliance.md#top)
     
 ## Search the audit log
-<a name="searchauditlog"> </a>
 
 Here's the process for searching the audit log in Office 365.
   
-[Step 1: Run an audit log search](search-the-audit-log-in-security-and-compliance.md#run)
+[Step 1: Run an audit log search](#step-1-run-an-audit-log-search)
   
-[Step 2: View the search results](search-the-audit-log-in-security-and-compliance.md#view)
-  
-[Step 3: Filter the search results](search-the-audit-log-in-security-and-compliance.md#filter)
-  
-[Step 4: Export the search results to a file](search-the-audit-log-in-security-and-compliance.md#export)
+[Step 2: View the search results](#step-2-view-the-search-results)
+
+[Step 3: Filter the search results](#step-3-filter-the-search-results)
+
+[Step 4: Export the search results to a file](#step-4-export-the-search-results-to-a-file)
   
 ### Step 1: Run an audit log search
-<a name="run"> </a>
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
@@ -166,7 +155,6 @@ Here's the process for searching the audit log in Office 365.
     
     ![The number of results are displayed after the search is finished](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
   
-[Return to top](search-the-audit-log-in-security-and-compliance.md#top_searchauditlog)
   
 #### Tips for searching the audit log
 
@@ -176,32 +164,30 @@ Here's the process for searching the audit log in Office 365.
   
 - You have to select **Show results for all activities** in the **Activities** list to display events from the Exchange admin audit log. Events from this audit log display a cmdlet name (for example, **Set-Mailbox** ) in the **Activity** column in the results. For more information, click the **Audited activities** tab in this topic and then click **Exchange admin activities**.
     
-    Similarly, there are some auditing activities that don't have a corresponding item in the **Activities** list. If you know the name of the operation for these activities, you can search for all activities, then filter the results by typing the name of the operation in the box for the **Activity** column. See [Step 3: Filter the search results](search-the-audit-log-in-security-and-compliance.md#filter) for more information about filtering the results. 
+    Similarly, there are some auditing activities that don't have a corresponding item in the **Activities** list. If you know the name of the operation for these activities, you can search for all activities, then filter the results by typing the name of the operation in the box for the **Activity** column. See [Step 3: Filter the search results](#step-3-filter-the-search-results) for more information about filtering the results. 
     
 - Click **Clear** to clear the current search criteria. The date range returns to the default of the last seven days. You can also click **Clear all to show results for all activities** to cancel all selected activities. 
     
 - If 5,000 results are found, you can probably assume there are more than 5,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export all of the search results by selecting **Export results** \> **Download all results**.
-    
-[Return to top](search-the-audit-log-in-security-and-compliance.md#top_searchauditlog)
+
   
 ### Step 2: View the search results
-<a name="view"> </a>
 
 The results of an audit log search are displayed under **Results** on the **Audit log search** page. As previously stated a maximum of 5,000 (newest) events are displayed in increments of 150 events. To display more events you can use the scroll bar in the **Results** pane or you can press **Shift + End** to display the next 150 events. 
   
 The results contain the following information about each event returned by the search.
   
-- **Date** The date and time (in UTC format) when the event occurred. 
+- **Date:** The date and time (in UTC format) when the event occurred. 
     
-- **IP address** The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. 
+- **IP address:** The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. 
     
-- **User** The user (or service account) who performed the action that triggered the event. 
+- **User:** The user (or service account) who performed the action that triggered the event. 
     
-- **Activity** The activity performed by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet. 
+- **Activity:** The activity performed by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet. 
     
-- **Item** The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column. 
+- **Item:** The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column. 
     
-- **Detail** Additional detail about an activity. Again, not all activities will have a value. 
+- **Detail:** Additional detail about an activity. Again, not all activities will have a value. 
     
 > [!TIP]
 > Click a column header under **Results** to sort the results. You can sort the results from A to Z or Z to A. Click the **Date** header to sort the results from oldest to newest or newest to oldest. 
@@ -211,11 +197,9 @@ The results contain the following information about each event returned by the s
 You can view more details about an event by clicking the event record in the list of search results. A **Details** page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the Office 365 service in which the event occurs. To display these details, click **More information**. For descriptions, see [Detailed properties in the Office 365 audit log](detailed-properties-in-the-office-365-audit-log.md).
   
 ![Click More information to view the detailed properties of the audit log event record](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
-  
-[Return to top](search-the-audit-log-in-security-and-compliance.md#top_searchauditlog)
+
   
 ### Step 3: Filter the search results
-<a name="filter"> </a>
 
 In addition to sorting, you can also filter the results of an audit log search. This is a great feature that can help you quickly filter the results for a specific user or activity. You can initially create a wide search and then quickly filter the results to see specific events. Then you can narrow the search criteria and re-run the search to return a smaller, more concise set of results.
   
@@ -235,11 +219,8 @@ To filter the results:
     
 > [!TIP]
 > To display events from the Exchange admin audit log, type a **-** (dash) in the **Activity** filter box. This will display cmdlet names, which are displayed in the **Activity** column for Exchange admin events. Then you can sort the cmdlet names in alphabetical order. 
-  
-[Return to top](search-the-audit-log-in-security-and-compliance.md#top_searchauditlog)
-  
+
 ### Step 4: Export the search results to a file
-<a name="export"> </a>
 
 You can export the results of an audit log search to a comma separated value (CSV) file on your local computer. You can open this file in Microsoft Excel and use features such as search, sorting, filtering, and splitting a single column (that contains multi-value cells) into multiple columns.
   
@@ -255,8 +236,7 @@ You can export the results of an audit log search to a comma separated value (CS
     > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a date range to reduce the number of audit log entries. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries. 
   
 3. After you select an export option, a message is displayed at the bottom of the window that prompts you to open the CSV file, save it to the Downloads folder, or save it to a specific folder.
-    
-[Return to top](search-the-audit-log-in-security-and-compliance.md#top_searchauditlog)
+
   
 #### More information about exporting audit log search results
 
@@ -271,11 +251,9 @@ You can export the results of an audit log search to a comma separated value (CS
 - When you download all results from a search query that contains events from different Office 365 services, the **AuditData** column in the CSV file contains different properties depending on which service the action was performed in. For example, entries from Exchange and Azure AD audit logs include a property named **ResultStatus** that indicates if the action was successful or not. This property isn't included for events in SharePoint. Similarly, SharePoint events have a property that identifies the site URL for file and folder related activities. To mitigate this behavior, consider using different searches to export the results for activities from a single service. 
     
     For a description of the properties that are listed in the **AuditData** column in the CSV file when you download all results, and the service each one applies to, see [Detailed properties in the Office 365 audit log](detailed-properties-in-the-office-365-audit-log.md).
-    
-[Return to top of article](search-the-audit-log-in-security-and-compliance.md#top)
+
   
 ## Audited activities
-<a name="auditedactivities"> </a>
 
 The tables in this section describe the activities that are audited in Office 365. You can search for these events by searching the audit log in the Security &amp; Compliance Center. Click the **Search the audit log** tab for step-by-step instructions. 
   
@@ -285,16 +263,15 @@ Click one of the following links to go to a specific table.
   
 ||||
 |:-----|:-----|:-----|
-|[File and page activities](search-the-audit-log-in-security-and-compliance.md#fileandfolder) <br/> |[Folder activities](search-the-audit-log-in-security-and-compliance.md#folderactivities) <br/> |[Sharing and access request activities](search-the-audit-log-in-security-and-compliance.md#sharing) <br/> |
-|[Synchronization activities](search-the-audit-log-in-security-and-compliance.md#syncactivities) <br/> |[Site administration activities](search-the-audit-log-in-security-and-compliance.md#siteadminactivities) <br/> |[Exchange mailbox activities](search-the-audit-log-in-security-and-compliance.md#exchangemailboxactivities) <br/> |
-|[Sway activities](search-the-audit-log-in-security-and-compliance.md#sway) <br/> |[User administration activities](search-the-audit-log-in-security-and-compliance.md#useradminactivities) <br/> |[Azure AD group administration activities](search-the-audit-log-in-security-and-compliance.md#groupadminactivities) <br/> |
-|[Application administration activities](search-the-audit-log-in-security-and-compliance.md#appadminactivities) <br/> |[Role administration activities](search-the-audit-log-in-security-and-compliance.md#roleadminactivities) <br/> |[Directory administration activities](search-the-audit-log-in-security-and-compliance.md#directoryadminactivities) <br/> |
-|[eDiscovery activities](search-the-audit-log-in-security-and-compliance.md#eDiscovery) <br/> |[Power BI activities](search-the-audit-log-in-security-and-compliance.md#PowerBI) <br/> |[Microsoft Teams activities](search-the-audit-log-in-security-and-compliance.md#microsoftteams) <br/> |
-|[Yammer activities](search-the-audit-log-in-security-and-compliance.md#yammer) <br/> |[Microsoft Stream](search-the-audit-log-in-security-and-compliance.md#stream) <br/> |[Exchange admin activities](search-the-audit-log-in-security-and-compliance.md#exadminauditing) <br/> |
+|[File and page activities](#file-and-page-activities)<br/> |[Folder activities](#folder-activities)<br/> |[Sharing and access request activities](#sharing-and-access-request-activities)<br/> |
+|[Synchronization activities](#synchronization-activities)<br/> |[Site administration activities](#site-administration-activities)<br/> |[Exchange mailbox activities](#exchange-mailbox-activities)<br/> |
+|[Sway activities](#sway-activities) <br/> |[User administration activities](#user-administration-activities) <br/> |[Azure AD group administration activities](#azure-ad-group-administration-activities) <br/> |
+|[Application administration activities](#application-administration-activities) <br/> |[Role administration activities](#role-administration-activities) <br/> |[Directory administration activities](#directory-administration-activities) <br/> |
+|[eDiscovery activities](#ediscovery-activities) <br/> |[Power BI activities](#power-bi-activities) <br/> |[Microsoft Teams activities](#microsoft-teams-activities) <br/> |
+|[Yammer activities](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Exchange admin audit log](#exchange-admin-audit-log) <br/> |
    
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **File and page activities**
+### File and page activities
   
 The following table describes the file and page activities in SharePoint Online and OneDrive for Business.
   
@@ -322,10 +299,8 @@ The following table describes the file and page activities in SharePoint Online 
 |Uploaded file  <br/> |FileUploaded  <br/> |User uploads a document to a folder on a site.  <br/> |
 |Viewed page  <br/> |PageViewed  <br/> |User views a page on a site. This doesn't include using a Web browser to view files located in a document library.  <br/> |
 |(none)  <br/> |PageViewedExtended  <br/> |This is related to the "Viewed page" (PageViewed) activity. A PageViewedExtended event is logged when the same person continually views a web page for an extended period of time (up to 3 hours). The purpose of logging PageViewedExtended events is to reduce the number of PageViewed events that are logged when a page is continually viewed. This helps reduce the noise of multiple PageViewed records for what is essentially the same user activity, and lets you focus on the initial (and more important) PageViewed event.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Folder activities**
+### Folder activities
   
 The following table describes the folder activities in SharePoint Online and OneDrive for Business.
   
@@ -340,10 +315,8 @@ The following table describes the folder activities in SharePoint Online and One
 |Moved folder  <br/> |FolderMoved  <br/> |User moves a folder to a different location on a site.  <br/> |
 |Renamed folder  <br/> |FolderRenamed  <br/> |User renames a folder on a site.  <br/> |
 |Restored folder  <br/> |FolderRestored  <br/> |User restores a deleted folder from the recycle bin on a site.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Sharing and access request activities**
+### Sharing and access request activities
   
 The following table describes the user sharing and access request activities in SharePoint Online and OneDrive for Business. For sharing events, the **Detail** column under **Results** identifies the name of the user or group the item was shared with and whether that user or group is a member or guest in your organization. For more information, see [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md).
   
@@ -382,10 +355,8 @@ The following table describes the user sharing and access request activities in 
 |User added to secure link  <br/> |AddedToSecureLink  <br/> |A user was added to the list of entities who can use a secure sharing link.  <br/> |
 |User removed from secure link  <br/> |RemovedFromSecureLink  <br/> |A user was removed from the list of entities who can use a secure sharing link.  <br/> |
 |Withdrew sharing invitation  <br/> |SharingInvitationRevoked  <br/> |User withdrew a sharing invitation to a resource.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Synchronization activities**
+### Synchronization activities
   
 The following table lists file synchronization activities in SharePoint Online and OneDrive for Business.
   
@@ -397,10 +368,8 @@ The following table lists file synchronization activities in SharePoint Online a
 |Downloaded file changes to computer  <br/> |FileSyncDownloadedPartial  <br/> |User successfully downloads any changes to files from a document library. This activity indicates that any changes that were made to files in the document library were downloaded to the user's computer. Only changes were downloaded because the document library was previously downloaded by the user (as indicated by the **Downloaded files to computer** activity).  <br/> |
 |Uploaded files to document library  <br/> |FileSyncUploadedFull  <br/> |User establishes a sync relationship and successfully uploads files for the first time from their computer to a document library.  <br/> |
 |Uploaded file changes to document library  <br/> |FileSyncUploadedPartial  <br/> |User successfully uploads changes to files on a document library. This event indicates that any changes made to the local version of a file from a document library are successfully uploaded to the document library. Only changes are unloaded because those files were previously uploaded by the user (as indicated by the ** Uploaded files to document library ** activity).  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Site administration activities**
+### Site administration activities
   
 The following table lists the events that result from site administration tasks in SharePoint Online.
   
@@ -435,10 +404,8 @@ The following table lists the events that result from site administration tasks 
 |Scheduled site geo move  <br/> |SiteGeoMoveScheduled  <br/> |A SharePoint or global administrator successfully schedules a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an Office 365 organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Set host site  <br/> |HostSiteSet  <br/> |A SharePoint or global administrator changes the designated site to host personal or OneDrive for Business sites.  <br/> |
 |Updated group  <br/> |GroupUpdated  <br/> |Site administrator or owner changes the settings of a group for a site. This can include changing the group's name, who can view or edit the group membership, and how membership requests are handled.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Exchange mailbox activities**
+### Exchange mailbox activities
   
 The following table lists the activities that can be logged by mailbox audit logging. Mailbox activities performed by the mailbox owner, a delegated user, or an administrator are logged. By default, mailbox auditing in Office 365 isn't turned on. Mailbox audit logging must be turned on for each mailbox before mailbox activity will be logged. For more information, see [Enable mailbox auditing in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
   
@@ -459,10 +426,8 @@ The following table lists the activities that can be logged by mailbox audit log
 |Updated message  <br/> |Update  <br/> |A message or its properties was changed.  <br/> |
 |User signed in to mailbox  <br/> |MailboxLogin  <br/> |The user signed in to their mailbox.  <br/> |
 |(none)  <br/> |UpdateInboxRules  <br/> |An inbox rule has been added, removed, or changed. Inbox rules are used to process messages in the user's Inbox based on the specified conditions and take actions when the conditions of a rule are met, such as moving a message to a specified folder or deleting a message.  <br/> To return entries for inbox rule activities, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Sway activities**
+### Sway activities
   
 The following table lists user and admin activities in Sway. Sway is an Office 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
   
@@ -482,10 +447,9 @@ The following table lists user and admin activities in Sway. Sway is an Office 3
 |Turned off Sway service  <br/> |SwayServiceOff  <br/> |Administrator disables Sway for the entire organization by using the Office 365 admin center.  <br/> |
 |Turned on Sway service  <br/> |SwayServiceOn  <br/> |Administrator enables Sway for the entire organization by using the Office 365 admin center (Sway service is enabled by default).  <br/> |
 |Viewed Sway  <br/> |SwayView  <br/> |User views a Sway.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
+
   
- **User administration activities**
+### User administration activities
   
 The following table lists user administration activities that are logged when an admin adds or changes a user account by using the Office 365 admin center or the Azure management portal.
   
@@ -499,10 +463,8 @@ The following table lists user administration activities that are logged when an
 |Set property that forces user to change password  <br/> |Set force change user password  <br/> |Administrator set the property that forces a user to change their password the next time the user sign in to Office 365.  <br/> |
 |Set license properties  <br/> |Set license properties  <br/> |Administrator modifies the properties of a licensed assigned to a user.  <br/> |
 |Updated user  <br/> |Update user  <br/> |Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Azure AD group administration activities**
+### Azure AD group administration activities
   
 The following table lists group administration activities that are logged when an admin or a user creates or changes an Office 365 group or when an admin creates a security group by using the Office 365 admin center or the Azure management portal. For more information about groups in Office 365, see [View, create, and delete Groups in the Office 365 admin center](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
@@ -514,9 +476,7 @@ The following table lists group administration activities that are logged when a
 |Removed member from group  <br/> |Remove member from group  <br/> |A member was removed from a group.  <br/> |
 |Updated group  <br/> |Update group  <br/> |A property of a group was changed.  <br/> |
    
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **Application administration activities**
+### Application administration activities
   
 The following table lists application admin activities that are logged when an admin adds or changes an application that's registered in Azure AD. Any application that relies on Azure AD for authentication must be registered in the directory.
   
@@ -529,10 +489,8 @@ The following table lists application admin activities that are logged when an a
 |Removed a service principal from the directory  <br/> |Remove service principal  <br/> |An application was deleted/unregistered from Azure AD. An application is represented by a service principal in the directory.  <br/> |
 |Removed credentials from a service principal  <br/> |Remove service principal credentials  <br/> |Credentials were removed from a service principal in Azure AD. A service principle represents an application in the directory.  <br/> |
 |Set delegation entry  <br/> |Set delegation entry  <br/> |An authentication permission was updated for an application in Azure AD.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **Role administration activities**
+
+### Role administration activities
   
 The following table lists Azure AD role administration activities that are logged when an admin manages admin roles in the Office 365 admin center or in the Azure management portal.
   
@@ -542,9 +500,7 @@ The following table lists Azure AD role administration activities that are logge
 |Removed a user from a directory role  <br/> |Remove role member from role  <br/> |Removed a user to from an admin role in Office 365.  <br/> |
 |Set company contact information  <br/> |Set company contact information  <br/> |Updated the company-level contact preferences for your Office 365 organization. This includes email addresses for subscription-related email sent by Office 365, as well as technical notifications about Office 365 services.  <br/> |
    
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **Directory administration activities**
+### Directory administration activities
   
 The following table lists Azure AD directory and domain related activities that are logged when an administrator manages their Office 365 organization in the Office 365 admin center or in the Azure management portal.
   
@@ -563,9 +519,7 @@ The following table lists Azure AD directory and domain related activities that 
 |Verified domain  <br/> |Verify domain  <br/> |Verified that your organization is the owner of a domain.  <br/> |
 |Verified email verified domain  <br/> |Verify email verified domain  <br/> |Used email verification to verify that your organization is the owner of a domain.  <br/> |
    
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **eDiscovery activities**
+### eDiscovery activities
   
 Content Search and eDiscovery-related activities that are performed in Office 365 Security &amp; Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the Office 365 audit log. This includes the following activities:
   
@@ -584,9 +538,7 @@ For a list and detailed description of the eDiscovery activities that are logged
 > [!NOTE]
 > It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results. 
   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **Power BI activities**
+### Power BI activities
   
 The following table lists user and admin activities in Power BI that are logged in the Office 365 audit log.
   
@@ -614,10 +566,8 @@ The following table lists user and admin activities in Power BI that are logged 
 |Updated organization's Power BI settings  <br/> |UpdatedAdminFeatureSwitch  <br/> |An admin changed an organizational setting in the Power BI admin portal.  <br/> |
 |Viewed Power BI dashboard  <br/> |ViewDashboard  <br/> |A dashboard is viewed.  <br/> |
 |Viewed Power BI report  <br/> |ViewReport  <br/> |A report is viewed.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
- **Microsoft Teams activities**
+### Microsoft Teams activities
   
 The following table lists the user and admin activities in Microsoft Teams that are logged in the Office 365 audit log. Microsoft Teams is a chat-centered workspace in Office 365. It brings a team's conversations, meetings, files and notes together into a single place. For more information and links to help topics, see:
   
@@ -632,10 +582,10 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Added connector  <br/> |ConnectorAdded  <br/> |A user adds a connector to a channel.  <br/> |
 |Added members to team  <br/> |MemberAdded  <br/> |A team owner adds member(s) to a team.  <br/> |
 |Added tab  <br/> |TabAdded  <br/> |A user adds a tab to a channel.  <br/> |
-|Changed channel setting  <br/> |ChannelSettingChanged  <br/> | The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parenthesis below) is displayed in the **Item** column in the audit log search results.  <br/>  Changes the name of a team channel ( **Channel name**).  <br/>  Changes the description of a team channel ( **Channel description**).  <br/> |
-|Changed organization setting  <br/> |OrganizationSettingChanged  <br/> | The OrganizationSettingChanged operation is logged when the following activities are performed by a global admin (using the Office 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  For each of these activities, a description of the setting that was changed (shown in parenthesis below) is displayed in the **Item** column in the audit log search results.  <br/>  Enables or disables Microsoft Teams for the organization ( **Microsoft Teams**).  <br/>  Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization ( **Skype for Business interoperability**).  <br/>  Enables or disables the organizational chart view in Microsoft Teams clients ( **Org chart view**).  <br/>  Enables or disables the ability for team members to schedule private meetings ( **Private meeting scheduling**).  <br/>  Enables or disables the ability for team members to schedule channel meetings ( **Channel meeting scheduling**).  <br/>  Enables or disables video calling in Teams meetings ( **Video for Skype meetings**).  <br/>  Enables or disables screen sharing in Microsoft Teams meetups for the organization ( **Screen sharing for Skype meetings**).  <br/>  Enables or disables that ability to add animated images (called Giphys) to Teams conversations ( **Animated images**).  <br/>  Changes the content rating setting for the organization ( **Content rating**).  <br/>  The content rating restricts the type of animated image that can be displayed in conversations.  <br/>  Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations ( **Customizable images from the Internet**).  <br/>  Enables or disables the ability for team members to add editable images (called stickers) to team conversations ( **Editable images**).  <br/>  Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels ( **Org-wide bots**).  <br/>  Enables specific bots for Microsoft Teams; this doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization ( **Individual bots**).  <br/>  Enables or disables the ability for team members to add extensions or tabs ( **Extensions or tabs**).  <br/>  Enables or disables the side-loading of proprietary Bots for Microsoft Teams ( **Side loading of Bots**).  <br/>  Enables or disables the ability for users to send email messages to a Microsoft Teams channel ( **Channel email**).  <br/> |
-|Changed role of members in team  <br/> |MemberRoleChanged  <br/> |A team owner changes the role of member(s) in a team. The following values indicate the Role type assigned to the user.  <br/> 1   Indicates the Owner role. 2   Indicates the Member role. 3   Indicates the Guest role. The Members property also includes the name of your organization, and the member's email address.  <br/> |
-|Changed team setting  <br/> |TeamSettingChanged  <br/> | The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parenthesis below) is displayed in the **Item** column in the audit log search results.  <br/>  Changes the access type for a team. Teams can be set as Private or Public ( **Team access type**).  <br/>  When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone.  <br/>  Changes the information classification of a team ( **Team classification**).  <br/>  For example, team data can be classified as high business impact, medium business impact, or low business impact.  <br/>  Changes the name of a team ( **Team name**).  <br/>  Changes the team description ( **Team description**).  <br/>  Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.  <br/> |
+|Changed channel setting  <br/> |ChannelSettingChanged  <br/> | The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parenthesis below) is displayed in the **Item** column in the audit log search results.  <br/> <br/>- Changes the name of a team channel ( **Channel name**).  <br/>  <br/>- Changes the description of a team channel ( **Channel description**).  <br/> |
+|Changed organization setting  <br/> |OrganizationSettingChanged  <br/> | The OrganizationSettingChanged operation is logged when the following activities are performed by a global admin (using the Office 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  For each of these activities, a description of the setting that was changed (shown in parenthesis below) is displayed in the **Item** column in the audit log search results.  <br/><br/>- Enables or disables Microsoft Teams for the organization ( **Microsoft Teams**).  <br/><br/>- Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization ( **Skype for Business interoperability**).<br/><br/>- Enables or disables the organizational chart view in Microsoft Teams clients ( **Org chart view**).  <br/><br/>-  Enables or disables the ability for team members to schedule private meetings ( **Private meeting scheduling**).  <br/><br/>- Enables or disables the ability for team members to schedule channel meetings ( **Channel meeting scheduling**).  <br/><br/>- Enables or disables video calling in Teams meetings ( **Video for Skype meetings**).  <br/><br/>- Enables or disables screen sharing in Microsoft Teams meetups for the organization ( **Screen sharing for Skype meetings**).  <br/><br/>- Enables or disables that ability to add animated images (called Giphys) to Teams conversations ( **Animated images**).  <br/><br/>- Changes the content rating setting for the organization ( **Content rating**). The content rating restricts the type of animated image that can be displayed in conversations.  <br/><br/>-   Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations ( **Customizable images from the Internet**).  <br/><br/>- Enables or disables the ability for team members to add editable images (called stickers) to team conversations ( **Editable images**).<br/><br/>- Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels ( **Org-wide bots**).<br/><br/>- Enables specific bots for Microsoft Teams; this doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization ( **Individual bots**).  <br/><br/>- Enables or disables the ability for team members to add extensions or tabs ( **Extensions or tabs**).  <br/><br/>- Enables or disables the side-loading of proprietary Bots for Microsoft Teams ( **Side loading of Bots**).  <br/><br/>- Enables or disables the ability for users to send email messages to a Microsoft Teams channel ( **Channel email**).  <br/> |
+|Changed role of members in team  <br/> |MemberRoleChanged  <br/> |A team owner changes the role of member(s) in a team. The following values indicate the Role type assigned to the user.  <br/><br/><br/> **1** - Indicates the Owner role.<br/>**2** -   Indicates the Member role. <br/>**3** - Indicates the Guest role. <br/>The Members property also includes the name of your organization, and the member's email address.  <br/> |
+|Changed team setting  <br/> |TeamSettingChanged  <br/> | The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parenthesis below) is displayed in the **Item** column in the audit log search results.  <br/><br/>- Changes the access type for a team. Teams can be set as Private or Public ( **Team access type**). When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone.  <br/><br/>- Changes the information classification of a team ( **Team classification**).  <br/>  For example, team data can be classified as high business impact, medium business impact, or low business impact.<br/><br/>- Changes the name of a team ( **Team name**).  <br/><br/>- Changes the team description ( **Team description**). <br/><br/>- Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.  <br/> |
 |Created team  <br/> |TeamCreated  <br/> |A user creates a new team.  <br/> |
 |Deleted channel  <br/> |ChannelDeleted  <br/> |A user deletes a channel from a team.  <br/> |
 |Deleted team  <br/> |TeamDeleted  <br/> |A team owner deletes a team.  <br/> |
@@ -646,10 +596,8 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Updated connector  <br/> |ConnectorUpdated  <br/> |A user modified a connector in a channel.  <br/> |
 |Updated tab  <br/> |TabUpdated  <br/> |A user modified a tab in a channel.  <br/> |
 |User signed in to Teams  <br/> |TeamsSessionStarted  <br/> |A user signs in to a Microsoft Teams client.  <br/> |
-   
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **Yammer activities**
+
+### Yammer activities
   
 The following table lists the user and admin activities in Yammer that are logged in the Office 365 audit log. To return Yammer-related activities from the Office 365 audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results. 
   
@@ -673,13 +621,11 @@ The following table lists the user and admin activities in Yammer that are logge
 |Updated file name  <br/> |FileUpdateName  <br/> |User changes the name of a file.  <br/> |
 |Viewed file  <br/> |FileVisited  <br/> |User views a file.  <br/> |
    
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
-  
- **Microsoft Stream**
+### Microsoft Stream
   
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Activities logged in Microsoft Stream" section in [Audit Logs in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
   
- **Exchange admin audit log**
+### Exchange admin audit log
   
 Exchange administrator audit logging—which is enabled by default in Office 365—logs an event in the Office 365 audit log when an administrator (or a user who has been assigned administrative permissions) makes a change in your Exchange Online organization. Changes made by using the Exchange admin center or by running a cmdlet in Windows PowerShell are logged in the Exchange admin audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](https://go.microsoft.com/fwlink/p/?LinkID=619225).
   
@@ -694,9 +640,4 @@ Here are some tips for searching for activity in the Exchange admin audit log:
 - To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you will have to export the search results and select the **Download all results** option. 
     
 - You can also view events in the Exchange admin audit log by using the Exchange admin center. For instructions, see [View the administrator audit log](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
-    
-[Return to activities list](search-the-audit-log-in-security-and-compliance.md#top_activities)
   
-[Return to top of article](search-the-audit-log-in-security-and-compliance.md#top)
-  
-
