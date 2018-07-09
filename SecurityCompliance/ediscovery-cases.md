@@ -83,9 +83,7 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
 4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
-    
 
-  
 ## Step 2: Create a new case
 
 The next step is to create a new eDiscovery case. You must be a member of the eDiscovery Managers role group to create eDiscovery cases. As previously explained, after you create a new case in the Security &amp; Compliance Center, you (and other case members) will be able to access that same case in Advanced eDiscovery if you're organization has an Office 365 E5 subscription.
@@ -104,8 +102,6 @@ The next step is to create a new eDiscovery case. You must be a member of the eD
     
     > [!TIP]
     > After you create a new case, you can rename it anytime. Just click the name of the case on the **eDiscovery** page. On the **Manage this case** flyout page, change the name displayed in the box under **Name**, and then save the change. 
-  
-
   
 ## Step 3: Add members to a case
 
@@ -133,8 +129,6 @@ After you create a new case, the next step is to add members to the case. As pre
     In **Manage this case**, click **Save** to save the new list of case members. 
     
 6. Click **Save** to save the new list of case members. 
-    
-
   
 ## Step 4: Place content locations on hold
 
@@ -223,8 +217,6 @@ Keep the following things in mind about hold statistics:
 > [!NOTE]
 > If a SharePoint site or OneDrive account is moved to a different region in a multi-geo environment, the statistics for that site won't be included in the hold statistics. However, the content in the site will still be on hold. Also, if a site is moved to a different region the URL that's displayed in the hold will not be updated. You'll have to edit the hold and update the URL. 
   
-
-  
 ## Step 5: Create and run a Content Search associated with a case
 
 After an eDiscovery case is created and any custodians related to the case are placed on hold, you can create and run one or more Content Searches that are associated with the case. Content Searches associated with a case aren't listed on the **Search** page in the Security &amp; Compliance Center. This means that Content Searches associated with a case can only be accessed by case members who are also members of the eDiscovery Manager role group. 
@@ -293,8 +285,6 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information in the details pane. 
     
-
-  
 ## Step 6: Export the results of a Content Search associated with a case
 
 After a search is successfully run, you can export the search results. When you export search results, mailbox items are downloaded in PST files or as individual messages. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents and other documents are exported. A manifest file (in XML format) that contains information about every search result is also exported.
