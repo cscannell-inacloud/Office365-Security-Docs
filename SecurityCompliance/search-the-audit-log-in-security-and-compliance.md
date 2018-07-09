@@ -26,7 +26,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 - User activity in Exchange Online (Exchange mailbox audit logging)
     
     > [!IMPORTANT]
-    > Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online will be logged. For more information, see [Enable mailbox auditing in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109). 
+    > Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online will be logged. For more information, see [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md).
   
 - Admin activity in SharePoint Online
     
