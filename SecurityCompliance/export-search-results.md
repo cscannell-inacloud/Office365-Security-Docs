@@ -197,7 +197,7 @@ Here's more information about exporting search results.
   
 [Miscellaneous](export-search-results.md#misc)
   
- **Export limits**
+ ### Export limits
   
 - Exporting search results from the Security &amp; Compliance Center has the following limits:
     
@@ -219,7 +219,7 @@ Here's more information about exporting search results.
     
 [More information](export-search-results.md#moreinfo)
   
- **Export reports**
+ ### Export reports
   
 - When you export search results, the following reports are included in addition to the search results.
     
@@ -262,7 +262,7 @@ Here's more information about exporting search results.
   
 [More information](export-search-results.md#moreinfo)
   
- **Exporting unindexed items**
+ ### Exporting unindexed items
   
 - If you're exporting mailbox items from a content search that returns all mailbox items in the search results (because no keywords where included in the search query), unindexed items won't be copied to the PST file that contains the unindexed items. This is because all items, including any unindexed items, are automatically included in the regular search results. This means that unindexed items will be included in a PST file (or as individual messages) that contains the other, indexed items.
     
@@ -288,7 +288,7 @@ Here's more information about exporting search results.
     
 - If you choose to export unindexed items, unindexed mailbox items are exported in a separate PST file regardless of the option that you choose under **Export Exchange content as**.
     
- **Exporting individual messages or PST files**
+ ### Exporting individual messages or PST files
   
 - If the file path name of a message exceeds the maximum character limit for Windows, the file path name is truncated. But the original file path name will be listed in the Manifest and ResultsLog.
     
@@ -298,7 +298,7 @@ Here's more information about exporting search results.
     
 [More information](export-search-results.md#moreinfo)
   
- **Decrypting RMS-encrypted messages**
+ ### Decrypting RMS-encrypted messages
   
 - As previously explained, to decrypt RMS-encrypted messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-encrypted messages will remain encrypted.
     
@@ -316,7 +316,7 @@ Here's more information about exporting search results.
     
 [More information](export-search-results.md#moreinfo)
   
- **Filenames of exported items**
+ ### Filenames of exported items
   
 - There is a 260-character limit (imposed by the operating system) for the full path name for email messages and site documents exported to your local computer. The full path name for exported items includes the item's original location and the folder location on the local computer where the search results are downloaded to. For example, if you specify to download the search results to  `C:\Users\Admin\Desktop\SearchResults` in the eDiscovery Export tool, then the full pathname for a downloaded email item would be  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg`.
     
@@ -338,7 +338,7 @@ Here's more information about exporting search results.
     
 [More information](export-search-results.md#moreinfo)
   
- **Miscellaneous**
+ ### Miscellaneous
   
 - All search results and the export reports are included in a folder that has the same name as the Content Search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**. 
     
