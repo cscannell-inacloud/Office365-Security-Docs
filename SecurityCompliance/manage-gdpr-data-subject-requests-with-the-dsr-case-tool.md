@@ -388,8 +388,7 @@ Here's a high-level process to export partially indexed items. After they're exp
 For more information about partially indexed items, see: 
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
-    
-- [Exporting unindexed items](export-search-results.md#exporting-unindexed items)
+- [Exporting unindexed items](export-search-results.md#exporting-unindexed-items)
     
 ### Searching and exporting data from Microsoft Teams and Office 365 Groups
 
@@ -399,7 +398,7 @@ Alternatively, conversations that are part of a Teams channel (also called chann
   
 Similarly, mailboxes and SharePoint sites that correspond to an Office 365 Group are also included in the built-in search. This means that email messages that where sent or received by the data subject and files created or uploaded by the data subject will be returned. 
   
-For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of a members, see the [Searching Microsoft Teams and Office 365 Groups](content-search.md#teamsandgroups) section in "Content Search in Office 365". 
+For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of a members, see the "Searching Microsoft Teams and Office 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
   
 ### Searching Exchange public folders
 

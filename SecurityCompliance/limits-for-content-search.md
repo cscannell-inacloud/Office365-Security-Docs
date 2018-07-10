@@ -83,7 +83,7 @@ The following table describes the indexing limits that might result in an email 
 
 There are additional limits related to different aspects of Content Search, such as exporting search results and content indexing. For a description of these limits, see the following topics:
   
-- [More information](export-search-results.md#moreinfo)
+- 
     
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
     
