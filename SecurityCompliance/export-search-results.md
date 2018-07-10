@@ -263,6 +263,8 @@ Here's more information about exporting search results.
 [More information](export-search-results.md#moreinfo)
   
  ### Exporting unindexed items
+
+[More information](#more-information)
   
 - If you're exporting mailbox items from a content search that returns all mailbox items in the search results (because no keywords where included in the search query), unindexed items won't be copied to the PST file that contains the unindexed items. This is because all items, including any unindexed items, are automatically included in the regular search results. This means that unindexed items will be included in a PST file (or as individual messages) that contains the other, indexed items.
     
