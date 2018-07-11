@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use the "search and purge" feature in the Office 365 Security &amp; Compliance Center to search for and delete an email message from all mailboxes in your organization. "
+description: "Use the search and purge feature in the Office 365 Security &amp; Compliance Center to search for and delete an email message from all mailboxes in your organization."
 ---
 
 # Search for and delete email messages in your Office 365 organization - Admin Help
@@ -134,8 +134,5 @@ For more information, see [New-ComplianceSearchAction](https://docs.microsoft.co
 - **Why is the search and remove workflow divided among different Security &amp; Compliance Center role groups?**
 
     As previously explained, a person has to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role to search mailboxes. To delete messages, a person has to be a member of the Organization Management role group or be assigned the Search And Purge management role. This makes it possible to control who can search mailboxes in the organization and who can delete messages. 
-  
-||
-|:-----|
-|![The short icon for LinkedIn Learning.](media/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.md), brought to you by LinkedIn Learning. |
+
  
