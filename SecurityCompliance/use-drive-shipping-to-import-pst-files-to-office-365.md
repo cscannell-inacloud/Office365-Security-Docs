@@ -26,26 +26,24 @@ Use the Office 365 Import service and drive shipping to bulk-import PST files to
   
 Here are the steps required to use drive shipping to import PST files to Office 365 mailboxes:
   
-[Step 1: Download the secure storage key and PST Import tool](use-drive-shipping-to-import-pst-files-to-office-365.md#step1)
-  
-[Step 2: Copy the PST files to the hard drive](use-drive-shipping-to-import-pst-files-to-office-365.md#step2)
-  
-[Step 3: Create the PST Import mapping file](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)
-  
-[Step 4: Create a PST Import job in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)
-  
-[Step 5: Ship the hard drive to Microsoft](use-drive-shipping-to-import-pst-files-to-office-365.md#step5)
-  
-[Step 6: Filter data and start the PST Import job](use-drive-shipping-to-import-pst-files-to-office-365.md#step6)
-  
-[View a list of the PST files uploaded to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#azureexplorer)
-  
-[Troubleshooting tips](use-drive-shipping-to-import-pst-files-to-office-365.md#troubleshootingtips)
+[Step 1: Download the secure storage key and PST Import tool](#step-1-download-the-secure-storage-key-and-pst-import-tool)
+
+[Step 2: Copy the PST files to the hard drive](#step-2-copy-the-pst-files-to-the-hard-drive)
+
+[Step 3: Create the PST Import mapping file](#step-3-create-the-pst-import-mapping-file)
+
+[Step 4: Create a PST Import job in Office 365](#step-4-create-a-pst-import-job-in-office-365)
+
+[Step 5: Ship the hard drive to Microsoft](#step-5-ship-the-hard-drive-to-microsoft)
+
+[Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
   
 > [!IMPORTANT]
 > You have to perform Step 1 once to down load the secure storage key and the import tool. After you perform these steps, follow Step 2 through Step 6 each time you want to ship a hard drive to Microsoft. 
   
-For frequently asked questions about using drive shipping to import PST files to Office 365, see [](faqimporting-pst-files-to-office-365.md#driveshipping_1). For more information about the drive shipping process, see the "How it works" section in [Overview of importing PST files to Office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84).
+For frequently asked questions about using drive shipping to import PST files to Office 365, see [FAQs for using drive shipping to import PST files](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files). 
+
+For more information about the drive shipping process, see ...
   
 ## Before you begin
 
