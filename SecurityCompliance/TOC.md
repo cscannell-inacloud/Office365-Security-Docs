@@ -22,7 +22,7 @@
 ## [Capabilities of built-in Mobile Device Management for Office 365](capabilities-of-mobile-device-management.md)
 ## [Enroll your mobile device in Office 365](enroll-your-mobile-device.md)
 ## [Wipe a mobile device in Office 365](wipe-a-mobile-device.md)
-## Create an APNs Certificate for iOS devices
+## [Create an APNs Certificate for iOS devices](https://support.office.com/article/522b43f4-a2ff-46f6-962a-dd4f47e546a7)
 ## [Manage devices enrolled in Mobile Device Management in Office 365](manage-devices-in-mdm.md)
 ## [Create and deploy device security policies](create-device-security-policies.md)
 ## [Frequently asked questions about Mobile Device Management for Office 365](frequently-asked-questions-about-mdm.md)
@@ -42,11 +42,11 @@
 ## [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 ## [Recover items deleted by the retention process](recover-deleted-items-from-retention.md)
 ## [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md)
-## Overview of document deletion policies
+## Overview of document deletion policies (TOPIC BEING ADDED TO REPO)
 ## [Overview of preservation policies](preservation-policies.md)
 ## [Overview of data loss prevention policies](data-loss-prevention-policies.md)
 ## [How DLP works between the Security & Compliance Center and Exchange Admin Center](how-dlp-works-between-admin-centers.md)
-## Create a document deletion policy
+## Create a document deletion policy (TOPIC BEING ADDED TO REPO)
 ## [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)
 ## [Overview of disposition reviews](disposition-reviews.md)
 ## [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md)
@@ -55,7 +55,7 @@
 ## [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
 ## [Overview of labels](labels.md)
 ## [View label activity for documents](view-label-activity-for-documents.md)
-## Send email notifications and show policy tips for DLP policies
+## [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
 ## [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md)
 ## [Overview of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md)
 ## [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)
@@ -67,24 +67,23 @@
 ### [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ### [Overview of unlimited archiving in Office 365](unlimited-archiving.md)
 ### [Archiving third-party data in Office 365](archiving-third-party-data.md)
-### [Enable unlimited archiving in Office 365 - Admin Help](enable-unlimited-archiving.md)
+### [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md)
 ### [Enable archive mailboxes in the Office 365 Security & Compliance Center](enable-archive-mailboxes.md)
 ### [Overview of retention policies](retention-policies.md)
 ### [Overview of event-driven retention](event-driven-retention.md)
 ### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
-### [Search for and delete email messages in your Office 365 organization - Admin Help](search-for-and-delete-messagesadmin-help.md)
-### Archive
-## Overview of importing your organization's PST files to Office 365	
+### [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+### [Search for and delete email messages in your Office 365 organization](search-for-and-delete-messagesadmin-help.md)
+## [Overview of importing your organization's PST files to Office 365](https://support.office.com/en-us/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)	
 ### [Use network upload to import your organization's PST files to Office 365](use-network-upload-to-import-pst-files.md)
-### Manage inactive mailboxes in Office 365
-### Use the PST Collection tool to find, copy, and delete PST files in your organization
-### Use drive shipping to import your organization's PST files to Office 365
-### Filter data when importing PST files to Office 365
-### Use network upload to import RMS-encrypted PST files to Office 365
-### FAQ about importing PST files to Office 365
-## View the data governance reports
+### [Manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md)
+### [Use the PST Collection tool to find, copy, and delete PST files in your organization](find-copy-and-delete-pst-files-in-your-organization.md)
+### [Use drive shipping to import your organization's PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [Filter data when importing PST files to Office 365](filter-data-when-importing-pst-files.md)
+### [Use network upload to import RMS-encrypted PST files to Office 365](use-network-upload-to-import-pst-files.md)
+### [FAQ about importing PST files to Office 365](faqimporting-pst-files-to-office-365.md)
+## [View the data governance reports](view-the-data-governance-reports.md)
 
 # Protect against threats
 ## [Threat management in the Office 365 Security & Compliance Center](threat-management.md)
@@ -103,7 +102,7 @@
 ### [Office 365 email anti-spam protection](anti-spam-protection.md)
 ### [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md)
 
-## Encryption in Office 365	
+## [Encryption in Office 365](encryption.md)	
 ### [Manage Office 365 Message Encryption](manage-office-365-message-encryption.md)
 ### [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)
 ### [Email encryption in Office 365](email-encryption.md)
@@ -162,36 +161,36 @@
 ### [Group your IP addresses to simplify management in Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
 ### [Create app discovery reports using Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
 
-## Quarantine email messages in Office 365	
-### Manage quarantined messages and files as an administrator in Office 365
-### Find and release quarantined messages as a user in Office 365
-### Quarantine FAQ for Office 365
-### Use user spam notifications to release and report quarantined messages in Office 365
+## [Quarantine email messages in Office 365](quarantine-email-messages.md)	
+### [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md)
+### [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+### [Quarantine FAQ for Office 365](quarantine-faq.md)
+### [Use user spam notifications to release and report quarantined messages in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
 # Search for content
-## Content Search in Office 365
-## Limits for Content Search in the Office 365 Security & Compliance Center
-## Run a Content Search in the Office 365 Security & Compliance Center
-## Export Content Search results from the Office 365 Security and Compliance Center
-## Keyword queries and search conditions for Content Search
-## Check your Content Search query for errors
-## Export a Content Search report
-## Partially indexed items in Content Search in Office 365
-## Use Content Search in Office 365 for targeted collections
-## Configure permissions filtering for Content Search
-## Prepare a CSV file for an ID list Content Search in Office 365
-## View keyword statistics for Content Search results
-## View email security reports in the Security & Compliance Center
-## Use Content Search to search the mailbox and OneDrive for Business site for a list of users
-## Create, report on, and delete multiple Content Searches
-## Bulk edit Content Searches in the Office 365 Security & Compliance Center
-## Use Content Search to search third-party data that was imported to Office 365
-## Clone a Content Search in the Office 365 Security & Compliance Center
-## Disable reports when you export Content Search results in the Office 365 Security & Compliance Center
-## Tagging and Search
+## [Content Search in Office 365](content-search.md)
+## [Limits for Content Search in the Office 365 Security & Compliance Center](limits-for-content-search.md)
+## [Run a Content Search in the Office 365 Security & Compliance Center](content-search.md#create-a-new-search)
+## [Export Content Search results from the Office 365 Security and Compliance Center](content-search.md#export-search-results)
+## [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+## [Check your Content Search query for errors](check-your-content-search-query-for-errors.md)
+## [Export a Content Search report](export-a-content-search-report.md)
+## [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
+## [Use Content Search in Office 365 for targeted collections](use-content-search-for-targeted-collections.md)
+## [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md)
+## [Prepare a CSV file for an ID list Content Search in Office 365](csv-file-for-an-id-list-content-search.md)
+## [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md)
+## [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
+## [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+## [Create, report on, and delete multiple Content Searches](create-report-on-and-delete-multiple-content-searches.md)
+## [Bulk edit Content Searches in the Office 365 Security & Compliance Center](bulk-edit-content-searches.md)
+## [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
+## [Clone a Content Search in the Office 365 Security & Compliance Center](clone-a-content-search.md)
+## [Disable reports when you export Content Search results in the Office 365 Security & Compliance Center](disable-reports-when-you-export-content-search-results.md)
+## [Tagging and Search](search-and-tagging.md)
 
 # Manage legal investigations		
-## eDiscovery in Office 365	
+## [eDiscovery in Office 365](ediscovery.md)	
 ### Manage eDiscovery cases in the Office 365 Security & Compliance Center
 ### Assign eDiscovery permissions in the Office 365 Security & Compliance Center
 ### Increase the download speed when exporting eDiscovery search results from Office 365
@@ -240,13 +239,13 @@
 ### [View batch history and export past results in Office 365 Advanced eDiscovery](view-batch-history-and-export-past-results.md)
 ### [Set Analyze options in Office 365 Advanced eDiscovery](set-analyze-options-in-advanced-ediscovery.md)
 ### [View Process module results in Office 365 Advanced eDiscovery](view-process-module-results-in-advanced-ediscovery.md)
-### Track Relevance analysis in Office 365 Advanced eDiscovery
-### Decision based on the results in Office 365 Advanced eDiscovery
-### Test Relevance analysis in Office 365 Advanced eDiscovery
-### Set up loads to add imported files in Office 365 Advanced eDiscovery
-### Define issues and assign users in Office 365 Advanced eDiscovery
-### Set Analyze advanced settings in Office 365 Advanced eDiscovery
-### Understand Assessment in Relevance in Office 365 Advanced eDiscovery
+### [Track Relevance analysis in Office 365 Advanced eDiscovery](track-relevance-analysis-in-advanced-ediscovery.md)
+### [Decision based on the results in Office 365 Advanced eDiscovery](decision-based-on-the-results-in-advanced-ediscovery.md)
+### [Test Relevance analysis in Office 365 Advanced eDiscovery](test-relevance-analysis-in-advanced-ediscovery.md)
+### [Set up loads to add imported files in Office 365 Advanced eDiscovery](set-up-loads-to-add-imported-files.md)
+### [Define issues and assign users in Office 365 Advanced eDiscovery](define-issues-and-assign-users.md)
+### [Set Analyze advanced settings in Office 365 Advanced eDiscovery](set-analyze-options-in-advanced-ediscovery.md)
+### [Understand Assessment in Relevance in Office 365 Advanced eDiscovery](assessment-in-relevance-in-advanced-ediscovery.md)
 
 # Search the audit log
 ## [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)
@@ -257,22 +256,21 @@
 ## [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md)
 
 # Monitor security and compliance
-## Monitor security and compliance in Office 365
-## Alert policies in the Office 365 Security & Compliance Center
-## Reports in the Office 365 Security & Compliance Center
-## Alerts in the Office 365 Security & Compliance Center
-## Create activity alerts in the Office 365 Security and Compliance Center
-## Create a schedule for a report in the Security and Compliance Center
-## Manage schedules for multiple reports in the Security and Compliance Center
-## Set up and download a custom report in the Security and Compliance Center
-## Download existing reports in the Security and Compliance Center
-## Walkthrough - From a detailed report to an insight
-## Walkthrough - From an insight to a detailed report
-## Walkthrough - From a dashboard to an insight
-## Enable or disable safety tips in Office 365
-## Enable the Report Message add-in
-## Enable the Security View add-in
-## Reports and insights in the Office 365 Security and Compliance Center
+## [Monitor security and compliance in Office 365](monitor-security-and-compliance.md)
+## [Alert policies in the Office 365 Security & Compliance Center](alert-policies.md)
+## [Reports in the Office 365 Security & Compliance Center](reports-in-security-and-compliance.md)
+## [Alerts in the Office 365 Security & Compliance Center](alerts.md)
+## [Create activity alerts in the Office 365 Security and Compliance Center](create-activity-alerts.md)
+## [Create a schedule for a report in the Security and Compliance Center](create-a-schedule-for-a-report.md)
+## [Manage schedules for multiple reports in the Security and Compliance Center](manage-schedules-for-multiple-reports.md)
+## [Set up and download a custom report in the Security and Compliance Center](set-up-and-download-a-custom-report.md)
+## [Download existing reports in the Security and Compliance Center](download-existing-reports.md)
+## [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
+## [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
+## [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+## [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
+## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
+## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
 
 # Security solutions		
 ## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
@@ -314,7 +312,7 @@
 ## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
 
 # Service assurance
-## Service assurance in the Office 365 Security & Compliance Center
+## [Service assurance in the Office 365 Security & Compliance Center](service-assurance.md)
 ## [Tenant isolation in Office 365](office-365-tenant-isolation-overview.md)
 ### [Isolation and Access Control in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 ### [Monitoring and Testing Tenant Boundaries](office-365-monitoring-and-testing.md)
