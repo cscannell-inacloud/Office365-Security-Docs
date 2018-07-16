@@ -24,12 +24,12 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started.svg" alt="Get started" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right.svg" alt="GET APPROVED ALT TEXT" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Get Started - First 30 Days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Configure tenant security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Connect loud App Security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Enable Azure AD Identity Protection</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Secure SharePoint sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Configure tenant security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Connect Cloud App Security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Enable Azure AD Identity Protection</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Secure SharePoint sites and files</a> </p>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="Security lock" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="GET APPROVED ALT TEXT" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -58,7 +58,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tasks.svg" alt="Tasks" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/renew.svg" alt="GET APPROVED ALT TEXT" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -76,18 +76,22 @@ If your organization needs to protect your data or comply with legal or regulato
 </ul>
 
 <hr>
-<h2>Featured Articles</h2>
+<h2>What's New</h2>
 
-<ul class="panelContent cardsW">
+<ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/paragraph-writing-blue.svg" alt="New Office 365 Content" data-linktype="external">
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <h3>Threat protection in Office 365</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Learn more about spoof intelligence</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Set up new Office 365 Message Encryption capabilities</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Email encryption in Office 365</a></p>
+                        <h3>New Office 365 content</h3>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Set up Azure AD Connect in your organization</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">IPv6 support in Office 365 services</a></p>
                     </div>
                 </div>
             </div>
@@ -97,10 +101,15 @@ If your organization needs to protect your data or comply with legal or regulato
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new" data-linktype="external">
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <h3>Data governance in Office 365</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Use network upload to import your organization PST files to Office 365</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of retention policies</a></p>
+                        <h3>New Office 365 features</h3>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Privileged access management in Office 365</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Improved eDiscovery cases in Office 365</a></p>
                     </div>
                 </div>
             </div>
@@ -110,10 +119,14 @@ If your organization needs to protect your data or comply with legal or regulato
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat image" data-linktype="external">
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <h3>Prevent data loss in Office 365</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of retention policies</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Overview of data loss prevention policies</a></p>
+                        <h3>Get support</h3>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Contact Support for help with Office 365</a></p>
                     </div>
                 </div>
             </div>
