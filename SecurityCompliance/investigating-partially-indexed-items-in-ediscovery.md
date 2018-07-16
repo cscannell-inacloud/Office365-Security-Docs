@@ -17,9 +17,9 @@ description: "Partially indexed items (also call unindexed items) are Exchange m
 
 A Content Search that you run from the Office 365 Security &amp; Compliance Center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexinglimits). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run a Content Search:
   
-- Email messages have an attached file of a file type that can't be indexed; in most cases, the file type is [File types not indexed for search](partially-indexed-items-in-content-search.md#filetypes)
+- Email messages have an attached file of a file type that can't be indexed; in most cases, the file type is [unrecognized or unsupported for indexing](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     
-- Messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items
+- Email messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items
     
 - Too many files attached to an email message
     
@@ -30,7 +30,6 @@ A Content Search that you run from the Office 365 Security &amp; Compliance Cent
 Although it varies, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
   
 ## Why does the partially indexed item count change for a search?
-<a name="indexeditemcount"> </a>
 
 After you run a Content Search in the Office 365 Security &amp; Compliance Center, the total number and size of partially indexed items in the locations that were searched are listed in the search result statistics that are displayed in the detailed statistics for the search. Note these are called  *unindexed items*  in the search statistics. Here are a few things that will affect the number of partially indexed items that are returned in the search results: 
   
@@ -41,7 +40,6 @@ After you run a Content Search in the Office 365 Security &amp; Compliance Cente
  **Note:** Partially indexed items located in SharePoint and OneDrive sites  *are not*  included in the estimate of partially indexed items that's displayed in the detailed statistics for the search. However, partially indexed items can be exported when you export the results of a Content Search. For example, if you only search sites in a Content Search, the estimated number partially indexed items will be zero. 
   
 ## Calculating the ratio of partially indexed items in your organization
-<a name="indexeditemcount"> </a>
 
 To understand your organization's exposure to partially indexed items, you can run a search for all content in all mailboxes (by using a blank keyword query). In the following example below, there are 56,208 (4,830 MB) fully indexed items and 470 (316 MB) partially indexed items.
   
@@ -50,51 +48,23 @@ To understand your organization's exposure to partially indexed items, you can r
 You can determine the percentage of partially indexed items by using the following calculations.
   
  **To calculate the ratio of partially indexed items in your organization:**
-  
-||
-|:-----|
-|
-```
-(Total number of partially indexed items/Total number of items) x 100
-```
 
-|
-   
-||
-|:-----|
-|
-```
-(470/56,208) x 100 = 0.84%
-```
+`(Total number of partially indexed items/Total number of items) x 100`
 
-|
-   
+
+`(470/56,208) x 100 = 0.84%`
+ 
 By using the search results from the previous example, .84% of all mailboxes items are partially indexed.
   
  **To calculate the percentage of the size of partially indexed items in your organization:**
-  
-||
-|:-----|
-|
-```
-(Size of all partially indexed items/Size of all items) x 100
-```
 
-|
-   
-||
-|:-----|
-|
-```
-(316 MB/4830 MB) x 100 = 6.54%
-```
+`(Size of all partially indexed items/Size of all items) x 100`
 
-|
-   
+`(316 MB/4830 MB) x 100 = 6.54%`
+
 So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
-  
+
 ## Working with partially indexed items
-<a name="indexeditemcount"> </a>
 
 In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items. 
   
@@ -105,18 +75,13 @@ When you export content search results or a content search report using one of t
  **Note:** The Unindexed Items.csv file also contains fields named **Error Type** and **Error Message**. These are legacy fields that contain information that is similar to the information in the **Error Tags** and **Error Properties** fields, but with less detailed information. You can safely ignore these legacy fields. 
   
 ## Errors related to partially indexed items
-<a name="indexeditemcount"> </a>
 
 Error tags are made up of two pieces of information, the error and the file type. For example, in this error/filetype pair:
-  
-||
-|:-----|
-|
+
 ```
  parseroutputsize_xls
 ```
 
-|
    
  `parseroutputsize` is the error and  `xls` is the file type of the file the error occurred on. In cases were the file type wasn't recognized or the file type was doesn't apply to the error, you will see the value  `noformat` in place of the file type. 
   
@@ -144,15 +109,11 @@ The following is a list of indexing errors and a description of the possible cau
 Error fields describe which fields are affected by the processing error listed in the Error Tags field. If you're searching a property such as  `subject` or  `participants`, errors in the body of the message won't impact the results of your search. This can be useful when determining exactly which partially indexed items you might need to further investigate.
   
 ## Using a PowerShell script to determine your organization's exposure to partially indexed email items
-<a name="indexeditemcount"> </a>
 
 The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, PartiallyIndexedItems.ps1.
-    
-||
-|:-----|
-|
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
+
 ```
   write-host "**************************************************"
   write-host "     Office 365 Security &amp; Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
@@ -196,21 +157,14 @@ The following steps show you how to run a PowerShell script that searches for al
   }
   
 ```
-
-|
    
 2. [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. In Security &amp; Compliance Center PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
-    
-||
-|:-----|
-|
-```
-  .\PartiallyIndexedItems.ps1
-```
 
-|
+    ```
+    .\PartiallyIndexedItems.ps1
+    ```
    
 Here's an example fo the output returned by the script.
   
@@ -221,12 +175,7 @@ Note the following:
 1. The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size)
     
 2. A list error tags and the corresponding file types for which the error occurred.
-    
-[Return to top](investigating-partially-indexed-items-in-ediscovery.md#top)
   
-## Related Topics
-<a name="indexeditemcount"> </a>
+## See also
 
 [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
-  
-
