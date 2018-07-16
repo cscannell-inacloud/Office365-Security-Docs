@@ -30,7 +30,7 @@ You can create an activity alert that will send you an email notification when u
     
 - You can use the **Alerts** page in the Security &amp; Compliance Center to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activity performed by external users. 
     
-- See the [More information](create-activity-alerts.md#moreinfo) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for. 
+- See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for. 
     
 - You can create alerts for the same activities that you can search for in the Office 365 audit log. 
     
@@ -48,19 +48,17 @@ You can create an activity alert that will send you an email notification when u
   
 5. Complete the following fields to create an alert:
     
-1. **Name**Type a name for the alert. Alert names must be unique within your organization.
+    a. **Name** - Type a name for the alert. Alert names must be unique within your organization.
     
-2. **Description**(Optional) Describe the alert, such as the activities and users being tracked, and the users that email notifications are sent to. Descriptions provide a quick and easy way to describe the purpose of the alert to other admins.
+    b. **Description** (Optional) - Describe the alert, such as the activities and users being tracked, and the users that email notifications are sent to. Descriptions provide a quick and easy way to describe the purpose of the alert to other admins.
     
-3. **Send this alert when**Click **Send this alert when** and then configure these two fields: 
+    c. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
     
-  - **Activities**Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the Office 365 audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+    - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the Office 365 audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log in the Office 365 Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent. 
     
-    When a user performs any of the activities that you've added to the alert, an email notification is sent. 
+     - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert. 
     
-  - **Users**Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert. 
-    
-4. **Send this alert to**Click **Send this alert**, and then click in the **Recipients** box and type a name to add a users who will receive an email notification when a user (specified in the **Users** box) performs an activity (specified in the **Activities** box). Note that you are added to the list of recipients by default. You can remove your name from this list. 
+    d. **Send this alert to** - Click **Send this alert**, and then click in the **Recipients** box and type a name to add a users who will receive an email notification when a user (specified in the **Users** box) performs an activity (specified in the **Activities** box). Note that you are added to the list of recipients by default. You can remove your name from this list.
     
 6. Click **Save** to create the alert. 
     
@@ -94,29 +92,29 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     
     ![Example of an email notifcation sent for an activity alert](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
-- Here's are some common document and email activities that you can create an activity alerts for. The tables describes the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **s** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+- Here's are some common document and email activities that you can create an activity alerts for. The tables describes the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log in the Office 365 Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities).
     
     > [!TIP]
     > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that track multiple activities performed by one or mores users. 
   
     The following table lists some common document-related activities in SharePoint or OneDrive for Business.
     
-|**When a user does this...**|**Create an alert for this activity**|**Activity group**|
-|:-----|:-----|:-----|
-|Views a document on a site.  <br/> |Accessed file  <br/> |File and folder activities  <br/> |
-|Edits or changes a document.  <br/> |Modified file  <br/> |File and folder activities  <br/> |
-|Shares a document with a user outside of your organization.  <br/> |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md).  <br/> |Sharing and access request activities  <br/> |
-|Uploads or downloads a document.  <br/> |Uploaded file  <br/> And/or  <br/> Downloaded file  <br/> |File and folder activities  <br/> |
-|Changes the access permissions to a site.  <br/> |Modified site permissions  <br/> |Site administration activities  <br/> |
-   
+    |**When a user does this...**|**Create an alert for this activity**|**Activity group**|
+    |:-----|:-----|:-----|
+    |Views a document on a site.  <br/> |Accessed file  <br/> |File and folder activities  <br/> |
+    |Edits or changes a document.  <br/> |Modified file  <br/> |File and folder activities  <br/> |
+    |Shares a document with a user outside of your organization.  <br/> |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md).  <br/> |Sharing and access request activities  <br/> |
+    |Uploads or downloads a document.  <br/> |Uploaded file  <br/> And/or  <br/> Downloaded file  <br/> |File and folder activities  <br/> |
+    |Changes the access permissions to a site.  <br/> |Modified site permissions  <br/> |Site administration activities  <br/> |
+
     The following table lists some common email-related activities in Exchange Online.
-    
-|**When a user does this...**|**Create an alert for this activity**|**Activity group**|
-|:-----|:-----|:-----|
-|Permanently deletes (purges) an email message from their mailbox.  <br/> |Purged messages from mailbox  <br/> | Exchange mailbox activities  <br/> |
-|Sends an email message from a shared mailbox.  <br/> |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  <br/> | Exchange mailbox activities  <br/> |
+
+    |**When a user does this...**|**Create an alert for this activity**|**Activity group**|
+    |:-----|:-----|:-----|
+    |Permanently deletes (purges) an email message from their mailbox.  <br/> |Purged messages from mailbox  <br/> | Exchange mailbox activities  <br/> |
+    |Sends an email message from a shared mailbox.  <br/> |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  <br/> | Exchange mailbox activities  <br/> |
    
-- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in the Security &amp; Compliance Center to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts: 
+- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security &amp; Compliance Center PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts: 
     
   - If you use a cmdlet to add an activity to the alert that isn't listed in the **Activities** drop-down list, a message is displayed in on the property page for the alert that says, "This alert has custom operations not listed in the picker." 
     

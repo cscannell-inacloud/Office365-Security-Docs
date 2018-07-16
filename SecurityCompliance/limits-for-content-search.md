@@ -39,6 +39,7 @@ The following table lists the search limits in the Security &amp; Compliance Cen
 |:-----|:-----|
 |The maximum number of mailboxes or sites that can be searched in a single Content Search  <br/> |No limit  <br/> |
 |The maximum number of Content Searches that can run at the same time in your organization.  <br/> |No limit  <br/> |
+|The maximum number of Content Searches that a single user can start at the same time. Note that this limit is most likely hit when the user tries to start multiple searches by using the **Get-ComplianceSearch \| Start-ComplianceSearch** command in Security & Compliance Center PowerShell.  <br/> |10  <br/> |
 |The maximum number of items per user mailbox that are displayed on the preview page when previewing Content Search results.  <br/> |100  <br/> |
 |The maximum number of items found in all user mailboxes that are displayed on the preview page when previewing Content Search results. The newest items are displayed.  <br/> |1,000  <br/> |
 |The maximum number of user mailboxes that can be previewed for search results. If there are more than 1000 mailboxes that contain content that matches the search query, only the top 1000 mailboxes with the most search results will be available for preview.  <br/> |1,000  <br/> |
@@ -82,7 +83,7 @@ The following table describes the indexing limits that might result in an email 
 
 There are additional limits related to different aspects of Content Search, such as exporting search results and content indexing. For a description of these limits, see the following topics:
   
-- [More information](export-search-results.md#moreinfo)
+- 
     
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
     

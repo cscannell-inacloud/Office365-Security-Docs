@@ -27,11 +27,11 @@ Perform the following procedure on the computer that you'll use to download sear
     
 2. Save the following text to a Window registry file by using a filename suffix of .reg; for example, ConcurrentOperations.reg. 
     
-  ```
-  Windows Registry Editor Version 5.00
-  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
-  "DownloadConcurrency"="24"
-  ```
+    ```
+    Windows Registry Editor Version 5.00
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
+    "DownloadConcurrency"="24"
+    ```
 
     As previous explained, we recommend that you start with 24 concurrent operations, and then change this setting as appropriate.
     
@@ -48,10 +48,7 @@ Perform the following procedure on the computer that you'll use to download sear
     > [!IMPORTANT]
     > After you create or change the  `DownloadConcurrency` registry setting, be sure to create a new export job or restart an existing export job for the search results or data that you want to download. See the [More information](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) section for more details. 
   
-[Return to top](increase-download-speeds-when-exporting-ediscovery-results.md#top)
-  
 ## More information
-<a name="moreinfo"> </a>
 
 - A new registry key is created the first time you run the .reg file that you created in this procedure. Then the  `DownloadConcurrency` registry setting is edited each time you change and re-run the .reg edit file. 
     
@@ -65,6 +62,3 @@ Perform the following procedure on the computer that you'll use to download sear
     
   - [Export results in Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
     
-[Return to top](increase-download-speeds-when-exporting-ediscovery-results.md#top)
-  
-
