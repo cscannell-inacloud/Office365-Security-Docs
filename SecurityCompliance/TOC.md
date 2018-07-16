@@ -192,22 +192,22 @@
 # Manage legal investigations		
 ## [eDiscovery in Office 365](ediscovery.md)	
 ### [Manage eDiscovery cases in the Office 365 Security & Compliance Center](manage-ediscovery-cases.md)
-### Assign eDiscovery permissions in the Office 365 Security & Compliance Center
-### Increase the download speed when exporting eDiscovery search results from Office 365
-### eDiscovery cases in the Office 365 Security & Compliance Center
-### Assign eDiscovery permissions to OneDrive for Business sites
-### Manage legal investigations in Office 365
-### Create a Litigation Hold in Office 365
-### Search all mailboxes and sites using the eDiscovery Center
-### Search for eDiscovery activities in the Office 365 audit log
-### Set up compliance boundaries for eDiscovery investigations in Office 365
-### Use Content Search in your eDiscovery workflow
-### Use a script to add users to a hold in an eDiscovery case in the Office 365 Security & Compliance Center
-### Change the size of PST files when exporting eDiscovery search results
-### De-duplication in eDiscovery search results
-### Differences between estimated and actual eDiscovery search results in Office 365
-### Create a report on holds in eDiscovery cases in Office 365
-### eDiscovery solution series - Data spillage scenario - Search and purge
+### [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md)
+### [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
+### [eDiscovery cases in the Office 365 Security & Compliance Center](ediscovery-cases.md)
+### [Assign eDiscovery permissions to OneDrive for Business sites](assign-permissions-to-onedrive-for-business-sites.md)
+### [Manage legal investigations in Office 365](manage-legal-investigations.md)
+### [Create a Litigation Hold in Office 365](create-a-litigation-hold.md)
+### [Search all mailboxes and sites using the eDiscovery Center](search-all-mailboxes-and-sites-with-ediscovery.md)
+### [Search for eDiscovery activities in the Office 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md)
+### [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
+### [Use Content Search in your eDiscovery workflow](use-content-search-in-ediscovery.md)
+### [Use a script to add users to a hold in an eDiscovery case in the Office 365 Security & Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+### [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md)
+### [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md)
+### [Differences between estimated and actual eDiscovery search results in Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md)
+### [Create a report on holds in eDiscovery cases in Office 365](create-a-report-on-holds-in-ediscovery-cases.md)
+### [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
 ### Search and investigation
 
 ## Office 365 Advanced eDiscovery	
