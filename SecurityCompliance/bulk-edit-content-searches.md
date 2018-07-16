@@ -23,7 +23,7 @@ For more information about using the Search Statistics tool, see [View keyword s
 
 1. In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Content search**.
     
-2. In the list of searches, select one or more searches, and then click **Bulk Search Editor**![Bulk Search Editor button](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png).
+2. In the list of searches, select one or more searches, and then click **Bulk Search Editor** ![Bulk Search Editor button](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png).
     
     ![Select one or more searches and then click Bulk search editor](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
@@ -31,17 +31,17 @@ For more information about using the Search Statistics tool, see [View keyword s
     
     ![The Bulk search editor page displays the queries for the selected searches](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
-1. The **Search** column displays the name of the Content Search. As previously stated, you can edit the query for multiple searches. 
+    a. The **Search** column displays the name of the Content Search. As previously stated, you can edit the query for multiple searches. 
     
-2. The **Query** column displays the query for the Content Search listed in the **Search** column. If the query was created using the keyword list feature, the keywords are separated by the text ** `(c:s)`**. This indicates that the keywords are connected by the **OR** operator. Additionally, if the query includes conditions, the keywords and the conditions are separated by the text ** `(c:c)`**. This indicates that the keywords (or keyword phases) are connected to the conditions by the **AND** operator. For example, in the previous screenshot the for search ContosoSearch1, the KQL query that is equivalent to  `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` would be  `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
+    b. The **Query** column displays the query for the Content Search listed in the **Search** column. If the query was created using the keyword list feature, the keywords are separated by the text ** `(c:s)`**. This indicates that the keywords are connected by the **OR** operator. Additionally, if the query includes conditions, the keywords and the conditions are separated by the text ** `(c:c)`**. This indicates that the keywords (or keyword phases) are connected to the conditions by the **AND** operator. For example, in the previous screenshot the for search ContosoSearch1, the KQL query that is equivalent to  `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` would be  `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
     
 3. To edit a query, click in the cell of the query that you want to change and doing one of the following things. Note that the cell is bordered by a blue box when you click it.
     
-  - Type the new query in the cell. Note that you can't edit a portion of the query. You have to type the entire query.
+   - Type the new query in the cell. Note that you can't edit a portion of the query. You have to type the entire query.
     
-    Or
+      Or
     
-  - Paste a new query in the cell. This assumes that you've copied the query text from a file, such as a text file or an Excel file.
+    - Paste a new query in the cell. This assumes that you've copied the query text from a file, such as a text file or an Excel file.
     
 4. After you've edited one or more queries on the **Queries** page, click **Save**.
     
@@ -57,7 +57,6 @@ Here are some tips for editing queries using the Bulk Search Editor:
     
 - You can also copy queries from other applications (such as Microsoft Word or Microsoft Excel). However, be aware that you might inadvertently add unsupported characters to a query using the Bulk Search Editor. The best way to prevent unsupported characters is to just type the query in a cell on the **Queries** page. Alternatively, you can copy a query from Word or Excel and then paste it to file in a plain text editor, such as Microsoft Notepad. Then save the text file and select **ANSI** in the **Encoding** drop-down list. This will remove any formatting and unsupported characters. Then you can copy and paste the query from the text file to the **Queries** page. 
     
-[Return to top](bulk-edit-content-searches.md#top)
   
 ## Use the Bulk Search Editor to change content locations
 
@@ -67,11 +66,11 @@ Here are some tips for editing queries using the Bulk Search Editor:
     
     ![Click Enable bulk location editor and then click Locations to add or remove content locations](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
-1. **Mailboxes to search**This section displays a column for each selected Content Search, and row for each mailbox that's included in the search. A checkmark indicates that the mailbox is included in the search. You can add additional mailboxes to a search by typing the email address of the mailbox in a blank row and then clicking the checkbox for the Content Search that you want to add it to. Or you can remove a mailbox from a search by clearing the checkbox.
+    a. **Mailboxes to search**This section displays a column for each selected Content Search, and row for each mailbox that's included in the search. A checkmark indicates that the mailbox is included in the search. You can add additional mailboxes to a search by typing the email address of the mailbox in a blank row and then clicking the checkbox for the Content Search that you want to add it to. Or you can remove a mailbox from a search by clearing the checkbox.
     
-2. **SharePoint sites to search**This section displays a row for each SharePoint and OneDrive site that included in each selected Content Search. A checkmark indicates that the site is included in the search. You can add additional sites to a search by typing the URL for the site in a blank row and then and clicking the checkbox for the Content Search that you want to add it to. Or you can remove a site from a search by clearing the checkbox.
+    b. **SharePoint sites to search**This section displays a row for each SharePoint and OneDrive site that included in each selected Content Search. A checkmark indicates that the site is included in the search. You can add additional sites to a search by typing the URL for the site in a blank row and then and clicking the checkbox for the Content Search that you want to add it to. Or you can remove a site from a search by clearing the checkbox.
     
-3. **Other search options**This section indicates whether unindexed items and public folders are included in the search. To include these, make sure the checkbox is selected. To remove them, clear the checkbox.
+    c. **Other search options**This section indicates whether unindexed items and public folders are included in the search. To include these, make sure the checkbox is selected. To remove them, clear the checkbox.
     
 2. After you've edited one or more of the sections on the **Locations** page, click **Save**.
     
@@ -88,10 +87,8 @@ Here are some tips for editing content locations using the Bulk Search Editor:
 - You can add multiple content locations to one or more searches by copying multiple rows from a text file or an Excel file and then pasting them to a section on the **Locations** page. After you add new locations, be sure to select the checkbox for each search that you want add the location to. 
     
     > [!TIP]
-    > To quickly generate a list of email addresses for all the users in your organization, run the PowerShell command in Step 2 in [Step 2: Generate a list of users](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). Or use the script in Step 2 in [Step 2: Connect SharePoint Online Management Shell to your organization](assign-permissions-to-onedrive-for-business-sites.md#step2) to generate a list of all OneDrive for Business sites in your organization. Note that you'll have to append the URL for your's organization's MySite domain (for example, https://contoso-my.sharepoint.com) to the OneDrive for Business sites that's created by the script. After you have list of email addresses or OneDrive for Business sites, you can copy and paste them to the **Locations** page in the Bulk Search Editor. 
+    > To generate a list of email addresses for all the users in your organization, run the PowerShell command in Step 2 in [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). Or use the script in [Create a list of all OneDrive locations in your organization](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) to generate a list of all OneDrive for Business sites in your organization. Note that you'll have to append the URL for your's organization's MySite domain (for example, https://contoso-my.sharepoint.com) to the OneDrive for Business sites that's created by the script. After you have list of email addresses or OneDrive for Business sites, you can copy and paste them to the **Locations** page in the Bulk Search Editor. 
   
 - After you click **Save** to save changes in Bulk Search Editor, the email address for mailboxes that you added to a search will be validated. If the email address doesn't exist, an error message is displayed saying the mailbox can't be located. Note that URLs for sites aren't validated. 
-    
-[Return to top](bulk-edit-content-searches.md#top)
   
 
