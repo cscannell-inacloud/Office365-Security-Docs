@@ -1,16 +1,16 @@
 ---
 title: Office 365 Security and Compliance
 description: Add a short description
-services: skype-for-business-online-admin
+services: office-365-security-compliance
 author: robmazz
-manager: samanro
+manager: laurawi
 layout: LandingPage
 ms.assetid: 
-ms.service: skype-for-business-online-admin
+ms.service: office-365
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
-ms.date: 6/29/2018
+ms.date: 8/21/2018
 ms.author: robmazz
 ---
 # Office 365 Security and Compliance
