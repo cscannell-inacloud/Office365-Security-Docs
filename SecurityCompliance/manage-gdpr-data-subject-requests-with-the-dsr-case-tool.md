@@ -110,7 +110,6 @@ The next step is to create a DSR case. When you create a case, you can choose to
     
     Note that you can also add role groups as members of DSR case by clicking **Add** under **Manage role groups**. 
     
-
 ## Step 3: Run the search query
 
 After you create a DSR case and add members, the next step is to run the built-in search that's associated with the case. This default search query does the following:
@@ -124,13 +123,13 @@ After you create a DSR case and add members, the next step is to run the built-i
   - The  *CreatedBy*  property returns items that were created or uploaded by the data subject. 
     
 Here's what the keyword query looks like for the built-in search that gets automatically created when you create a DSR case.
+  
+```
+participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
+```
 
-```
-participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>
-```
-   
 For example, if the name of the data subject is Ina Leonte, the keyword query would look like this:
-
+  
 ```
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
@@ -225,9 +224,7 @@ The computer you use to export data has to meet the following system requirement
     
 After the data is exported, the search results and export reports are located in a folder that has the same name as the DSR case. The PST files that contain mailbox items are located in a subfolder named **Exchange**. Documents and other items from sites are located in a subfolder named **SharePoint**. 
   
-
 ## (Optional) Step 5: Revise the built-in search query
-
 
 After you run the built-in search, you can revise it to narrow the scope to return fewer search results. You can do this by adding conditions to the query. A condition is logically connected to the keyword query by the **AND** operator. That means to be returned in the search results, items must satisfy both the keyword query and any conditions you add. This is how conditions help to narrow the results. If you add two or more unique conditions to a search query (conditions that specify different properties), those conditions are logically connected by the **AND** operator. That means only items that satisfy all the conditions (in addition to the keyword query) are returned. If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition. 
   
@@ -264,7 +261,7 @@ To modify the content locations to search:
     c. The toggle in the Exchange public folders section is selected, which means all Exchange public folders are searched. Note that you can only search all Exchange public folders or none of them. You can't choose specific ones to search.
     
 3. If you modify the content locations in the built-in search, click **Save &amp; run** to re-start the search. 
-    
+  
 ## More information about using the DSR case tool
 
 The following sections contain more information about using the DSR case tool to respond to DSR export requests.
@@ -362,7 +359,7 @@ When you export data from MyAnalytics and the Office Roaming Service, the data i
     The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can open the Exchange PST file in Outlook and then go to the **ApplicationDataRoot** folder to access the subfolders to MyAnalytics and Roaming service. 
     
     As previously explained, the JSON files that contains usage data are attached to messages. To view a JSON file, click a message and then open the attached JSON file. 
-     
+  
 ### Exporting partially indexed items
 
 We recommend that you don't export partially indexed items (also called unindexed items) from the built-in search that's created when you create a new DSR case. That's because the search results will more than likely include partially indexed items for other users in your organization, and not just partially indexed items for the data subject). Instead, we recommend that you create a separate Content Search that's associated with the DSR case that's designed to export only the partially indexed items related to the data subject. 
@@ -388,6 +385,7 @@ Here's a high-level process to export partially indexed items. After they're exp
 For more information about partially indexed items, see: 
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
+
 - [Exporting unindexed items](export-search-results.md#exporting-unindexed-items)
     
 ### Searching and exporting data from Microsoft Teams and Office 365 Groups

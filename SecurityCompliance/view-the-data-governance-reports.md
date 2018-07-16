@@ -1,7 +1,7 @@
 ---
 title: "View the data governance reports"
 ms.author: stephow
-author: stephow-MSFTs
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/8/2018
 ms.audience: Admin

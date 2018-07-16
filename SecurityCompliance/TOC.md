@@ -16,22 +16,21 @@
 
 # Protect access to data and services
 ## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
-## Overview of Mobile Device Management (MDM) for Office 365	
-## Set up Mobile Device Management (MDM) in Office 365
-## Choose between MDM for Office 365 and Microsoft Intune
-## Capabilities of built-in Mobile Device Management for Office 365
-## Enroll your mobile device in Office 365
-## Wipe a mobile device in Office 365
+## [Overview of Mobile Device Management (MDM) for Office 365](overview-of-mdm.md)	
+## [Set up Mobile Device Management (MDM) in Office 365](set-up-mobile-device-management.md)
+## [Choose between MDM for Office 365 and Microsoft Intune](choose-between-mdm-and-intune.md)
+## [Capabilities of built-in Mobile Device Management for Office 365](capabilities-of-mobile-device-management.md)
+## [Enroll your mobile device in Office 365](enroll-your-mobile-device.md)
+## [Wipe a mobile device in Office 365](wipe-a-mobile-device.md)
 ## Create an APNs Certificate for iOS devices
-## Manage devices enrolled in Mobile Device Management in Office 365
-## Create and deploy device security policies
-## Frequently asked questions about Mobile Device Management for Office 365
-## Troubleshoot device enrollment with MDM for Office 365
-## How to turn off Mobile Device Management in Office 365
-## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
-## Privacy and security for built-in mobile device management for Office 365
-## Manage device access settings
-## [Investigate a user account that might be compromised in Office 365](investigate-an-account-that-might-be-compromised.md)
+## [Manage devices enrolled in Mobile Device Management in Office 365](manage-devices-in-mdm.md)
+## [Create and deploy device security policies](create-device-security-policies.md)
+## [Frequently asked questions about Mobile Device Management for Office 365](frequently-asked-questions-about-mdm.md)
+## [Troubleshoot device enrollment with MDM for Office 365](troubleshoot-mdm.md)
+## [How to turn off Mobile Device Management in Office 365](turn-off-mdm.md)
+## [Get details about devices managed by MDM](get-details-about-mdm-managed-devices.md)
+## [Privacy and security for built-in mobile device management for Office 365](privacy-and-security-for-mdm.md)
+## [Manage device access settings](manage-device-access-settings.md)
 
 # Prevent data loss
 ## [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)	
@@ -74,11 +73,11 @@
 ### [Overview of event-driven retention](event-driven-retention.md)
 ### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
-### Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
-### Search for and delete email messages in your Office 365 organization - Admin Help
+### [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+### [Search for and delete email messages in your Office 365 organization - Admin Help](search-for-and-delete-messagesadmin-help.md)
 ### Archive
 ## Overview of importing your organization's PST files to Office 365	
-### Use network upload to import your organization's PST files to Office 365
+### [Use network upload to import your organization's PST files to Office 365](use-network-upload-to-import-pst-files.md)
 ### Manage inactive mailboxes in Office 365
 ### Use the PST Collection tool to find, copy, and delete PST files in your organization
 ### Use drive shipping to import your organization's PST files to Office 365
@@ -88,84 +87,80 @@
 ## View the data governance reports
 
 # Protect against threats
-## Threat management in the Office 365 Security & Compliance Center
-## Anti-spam and anti-malware protection in Office 365
-### Anti-phishing protection in Office 365
-### Learn more about spoof intelligence
-### Anti-spoofing protection in Office 365
-### Prevent email from being marked as spam in EOP and Office 365
-### Block email spam with the Office 365 spam filter to prevent false negative issues
-### How Office 365 validates the From: address to prevent phishing
-### ATP anti-phishing capabilities in Office 365
-### Set up Office 365 ATP anti-phishing policies
-### How to prevent real email from being marked as spam in Office 365
-### How to reduce spam email in Office 365
-### Create a keyword dictionary
-### Office 365 email anti-spam protection
-### Zero-hour auto purge - protection against spam and malware
+## [Threat management in the Office 365 Security & Compliance Center](threat-management.md)
+## [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md)
+### [Anti-phishing protection in Office 365](anti-phishing-protection.md)
+### [Learn more about spoof intelligence](learn-about-spoof-intelligence.md)
+### [Anti-spoofing protection in Office 365](anti-spoofing-protection.md)
+### [Prevent email from being marked as spam in EOP and Office 365](prevent-email-from-being-marked-as-spam-0.md)
+### [Block email spam with the Office 365 spam filter to prevent false negative issues](block-email-spam-to-prevent-false-negatives.md)
+### [How Office 365 validates the From: address to prevent phishing](how-office-365-validates-the-from-address.md)
+### [ATP anti-phishing capabilities in Office 365](atp-anti-phishing.md)
+### [Set up Office 365 ATP anti-phishing policies](set-up-atp-anti-phishing-policies.md)
+### [How to prevent real email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md)
+### [How to reduce spam email in Office 365](reduce-spam-email.md)
+### [Create a keyword dictionary](create-a-keyword-dictionary.md)
+### [Office 365 email anti-spam protection](anti-spam-protection.md)
+### [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md)
 
 ## Encryption in Office 365	
-### Manage Office 365 Message Encryption
-### Set up new Office 365 Message Encryption capabilities
-### Email encryption in Office 365
-### How Exchange Online secures your email secrets
-### Office 365 Message Encryption (OME)
-### Service encryption with Customer Key for Office 365 FAQ
-### Set up encryption in Office 365 Enterprise
-### Add your organization's brand to your encrypted messages
-### Controlling your data in Office 365 using Customer Key
-### Technical reference details about encryption in Office 365
-### How Exchange Online uses TLS to secure email connections in Office 365
-### Office 365 Message Encryption FAQ
-### Legacy information for Office 365 Message Encryption
-### Office 365 Protected Message Viewer Portal privacy statement
-### Create conditions for a supervisory review policy
-### Set up Azure Rights Management for Office 365 Message Encryption
+### [Manage Office 365 Message Encryption](manage-office-365-message-encryption.md)
+### [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)
+### [Email encryption in Office 365](email-encryption.md)
+### [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md)
+### [Office 365 Message Encryption (OME)](ome.md)
+### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+### [Set up encryption in Office 365 Enterprise](set-up-encryption.md)
+### [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
+### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
+### [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md)
+### [How Exchange Online uses TLS to secure email connections in Office 365](exchange-online-uses-tls-to-secure-email-connections.md)
+### [Office 365 Message Encryption FAQ](ome-faq.md)
+### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
+### [Office 365 Protected Message Viewer Portal privacy statement](protected-message-viewer-portal-privacy-statement.md)
+### [Create conditions for a supervisory review policy](create-conditions-for-a-supervisory-review-policy.md)
+### [Set up Azure Rights Management for Office 365 Message Encryption](set-up-azure-rm-for-message-encryption.md)
 
-## Office 365 Advanced Threat Protection	
-### Protect against threats in Office 365
-### Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
-### Set up Office 365 ATP Safe Attachments policies
-### Office 365 ATP Safe Links
-### Dynamic delivery and previewing with Office 365 ATP Safe Attachments
-### Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
-### Set up Office 365 ATP Safe Links policies
-### View reports for Office 365 Advanced Threat Protection
-### Get started with Office 365 Threat Intelligence
-### Office 365 ATP Safe Attachments
-### Office 365 Threat Intelligence
-### Office 365 ATP Safe Links warning pages
-### Set up a custom "do not rewrite" URLs list using Office 365 ATP Safe Links
-### Set up a custom blocked URLs list using Office 365 ATP Safe Links
-### Find and investigate malicious email that was delivered (Office 365 Threat Intelligence)
-### Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection
-### Attack Simulator in Office 365
-### Learn about threats against your organization with Office 365 Threat Intelligence
-### SIEM integration with Office 365 ATP
-### SIEM integration with Office 365 Threat Intelligence
-### Keep your Office 365 users safe with Office 365 Threat Intelligence
-### Track an attack with Office 365 Threat Intelligence
-### Threat Trackers - New and Noteworthy
-### View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams
+## [Office 365 Advanced Threat Protection](office-365-atp.md)	
+### [Protect against threats in Office 365](protect-against-threats.md)
+### [Office 365 ATP Safe Links](atp-safe-links.md)
+#### [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)
+#### [Office 365 ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
+#### [Set up a custom "do not rewrite" URLs list (Office 365 ATP Safe Links)](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+#### [Set up a custom blocked URLs list (Office 365 ATP Safe Links)](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+### [Office 365 ATP Safe Attachments](atp-safe-attachments.md)
+#### [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)
+#### [Dynamic delivery and previewing (Office 365 ATP Safe Attachments)](dynamic-delivery-and-previewing.md)
+### [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)
+#### [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+#### [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+### [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
-## Overview of Office 365 Cloud App Security	
-### Get ready for Office 365 Cloud App Security
-### What's new in Office 365 Cloud App Security
-### Integrate your SIEM server with Office 365 Cloud App Security
-### Manage app permissions using Office 365 Cloud App Security
-### Turn on Office 365 Cloud App Security
-### Activity policies and alerts in Office 365 Cloud App Security
-### Office 365 Cloud App Security help and how-to
-### Review and take action on alerts in Office 365 Cloud App Security
-### Anomaly detection policies in Office 365 Cloud App Security
-### Web traffic logs and data sources for Office 365 Cloud App Security
-### Utilization activities after rolling out Office 365 Cloud App Security
-### Suspend or restore a user account in Office 365 Cloud App Security
-### Investigate an activity in Office 365 Cloud App Security
-### Review app discovery findings in Office 365 Cloud App Security
-### Group your IP addresses to simplify management in Office 365 Cloud App Security
-### Create app discovery reports using Office 365 Cloud App Security
-### Security policy reference information for Office 365 Cloud App Security
+## [Office 365 Threat Intelligence](office-365-ti.md)
+### [Get started with Office 365 Threat Intelligence](get-started-with-ti.md)
+### [Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
+### [Attack Simulator in Office 365](attack-simulator.md)
+### [SIEM integration with Office 365 Threat Intelligence](siem-integration-with-office-365-ti.md)
+### [Keep your Office 365 users safe with Office 365 Threat Intelligence](keep-users-safe-with-office-365-ti.md)
+### [Threat Trackers - New and Noteworthy](threat-trackers.md)
+
+## [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
+### [Office 365 Cloud App Security help and how-to](office-365-cas-help.md)	
+### [Get ready for Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
+### [What's new in Office 365 Cloud App Security](new-in-office-365-cas.md)
+### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
+### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
+### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+### [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
+### [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
+### [Web traffic logs and data sources for Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
+### [Utilization activities after rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md)
+### [Suspend or restore a user account in Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md)
+### [Investigate an activity in Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md)
+### [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+### [Group your IP addresses to simplify management in Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
+### [Create app discovery reports using Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
 
 ## Quarantine email messages in Office 365	
 ### Manage quarantined messages and files as an administrator in Office 365

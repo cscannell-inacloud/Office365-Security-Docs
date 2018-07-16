@@ -67,7 +67,7 @@ The user-reported messages report is one of the [email security reports in the S
   
 ![The User-Reported Messages report shows messages users labeled as junk, not junk, or phishing attempts.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-To learn more, see [User-reported messages report (new!)](view-email-security-reports.md#userreported).
+To learn more, see [View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md).
   
 ### Phish report for email
 

@@ -59,7 +59,18 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
   
 ## Threat protection status report (new!)
 
-The Threat protection status report is a smart report that shows malicious content that was detected and blocked by Office 365 anti-malware and anti-spam protection features.
+The Threat protection status report is a smart report that shows malicious content that was detected and blocked by Office 365 anti-malware and anti-spam protection features. This report is useful for viewing the effectiveness and impact of your organization's threat protection policies (such as anti-spam and anti-malware policies) and for longer-term trending.
+To view this report, in the Security &amp; Compliance Center, go to **Reports** > **Dashboard** > **Threat protection status**.
+
+![Threat Protection Status report](media/TPSReport.png)
+
+When you first open the Threat protection status report, you get data for the past seven days; however, you can click **Filters** and change the date range for up to 90 days of detail. 
+
+![Threat Protection Status report filters](media/TPSFilters.png)
+
+You can also choose whether to view data for email and files detected as malicious, email identified as phishing attempts, email identified as containing malware, or files detected as malicious.
+
+![Threat Protection Status report view options](media/TPSViewDataBy.png)
   
 ## User-reported messages report (new!)
 
