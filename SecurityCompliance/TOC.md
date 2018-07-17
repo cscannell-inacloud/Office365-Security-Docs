@@ -42,11 +42,11 @@
 ## [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 ## [Recover items deleted by the retention process](recover-deleted-items-from-retention.md)
 ## [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md)
-## Overview of document deletion policies (TOPIC BEING ADDED TO REPO)
+## [Overview of document deletion policies](document-deletion-policies.md)
 ## [Overview of preservation policies](preservation-policies.md)
 ## [Overview of data loss prevention policies](data-loss-prevention-policies.md)
 ## [How DLP works between the Security & Compliance Center and Exchange Admin Center](how-dlp-works-between-admin-centers.md)
-## Create a document deletion policy (TOPIC BEING ADDED TO REPO)
+## [Create a document deletion policy](create-a-document-deletion-policy.md)
 ## [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)
 ## [Overview of disposition reviews](disposition-reviews.md)
 ## [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md)
@@ -123,16 +123,16 @@
 ## [Office 365 Advanced Threat Protection](office-365-atp.md)	
 ### [Protect against threats in Office 365](protect-against-threats.md)
 ### [Office 365 ATP Safe Links](atp-safe-links.md)
-#### [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)
-#### [Office 365 ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
-#### [Set up a custom "do not rewrite" URLs list (Office 365 ATP Safe Links)](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-#### [Set up a custom blocked URLs list (Office 365 ATP Safe Links)](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+### [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)
+### [Office 365 ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
+### [Set up a custom "do not rewrite" URLs list (Office 365 ATP Safe Links)](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+### [Set up a custom blocked URLs list (Office 365 ATP Safe Links)](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### [Office 365 ATP Safe Attachments](atp-safe-attachments.md)
-#### [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)
-#### [Dynamic delivery and previewing (Office 365 ATP Safe Attachments)](dynamic-delivery-and-previewing.md)
+### [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)
+### [Dynamic delivery and previewing (Office 365 ATP Safe Attachments)](dynamic-delivery-and-previewing.md)
 ### [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)
-#### [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
-#### [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+### [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+### [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
 ## [Office 365 Threat Intelligence](office-365-ti.md)
@@ -144,22 +144,22 @@
 ### [Threat Trackers - New and Noteworthy](threat-trackers.md)
 
 ## [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
+### [What's new in Office 365 Cloud App Security](new-in-office-365-cas.md)
 ### [Office 365 Cloud App Security help and how-to](office-365-cas-help.md)	
 ### [Get ready for Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
-### [What's new in Office 365 Cloud App Security](new-in-office-365-cas.md)
-### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
-### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
 ### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
 ### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
-### [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
 ### [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
-### [Web traffic logs and data sources for Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
-### [Utilization activities after rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md)
-### [Suspend or restore a user account in Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md)
-### [Investigate an activity in Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md)
-### [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
 ### [Group your IP addresses to simplify management in Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
+### [Utilization activities after rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md)
+### [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
+### [Investigate an activity in Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md)
+### [Suspend or restore a user account in Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md)
+### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+### [Web traffic logs and data sources for Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
 ### [Create app discovery reports using Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
+### [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
 
 ## [Quarantine email messages in Office 365](quarantine-email-messages.md)	
 ### [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md)
@@ -191,24 +191,23 @@
 
 # Manage legal investigations		
 ## [eDiscovery in Office 365](ediscovery.md)	
-### Manage eDiscovery cases in the Office 365 Security & Compliance Center
-### Assign eDiscovery permissions in the Office 365 Security & Compliance Center
-### Increase the download speed when exporting eDiscovery search results from Office 365
-### eDiscovery cases in the Office 365 Security & Compliance Center
-### Assign eDiscovery permissions to OneDrive for Business sites
-### Manage legal investigations in Office 365
-### Create a Litigation Hold in Office 365
-### Search all mailboxes and sites using the eDiscovery Center
-### Search for eDiscovery activities in the Office 365 audit log
-### Set up compliance boundaries for eDiscovery investigations in Office 365
-### Use Content Search in your eDiscovery workflow
-### Use a script to add users to a hold in an eDiscovery case in the Office 365 Security & Compliance Center
-### Change the size of PST files when exporting eDiscovery search results
-### De-duplication in eDiscovery search results
-### Differences between estimated and actual eDiscovery search results in Office 365
-### Create a report on holds in eDiscovery cases in Office 365
-### eDiscovery solution series - Data spillage scenario - Search and purge
-### Search and investigation
+### [Manage eDiscovery cases in the Office 365 Security & Compliance Center](manage-ediscovery-cases.md)
+### [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md)
+### [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
+### [eDiscovery cases in the Office 365 Security & Compliance Center](ediscovery-cases.md)
+### [Assign eDiscovery permissions to OneDrive for Business sites](assign-permissions-to-onedrive-for-business-sites.md)
+### [Manage legal investigations in Office 365](manage-legal-investigations.md)
+### [Create a Litigation Hold in Office 365](create-a-litigation-hold.md)
+### [Search all mailboxes and sites using the eDiscovery Center](search-all-mailboxes-and-sites-with-ediscovery.md)
+### [Search for eDiscovery activities in the Office 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md)
+### [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
+### [Use Content Search in your eDiscovery workflow](use-content-search-in-ediscovery.md)
+### [Use a script to add users to a hold in an eDiscovery case in the Office 365 Security & Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+### [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md)
+### [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md)
+### [Differences between estimated and actual eDiscovery search results in Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md)
+### [Create a report on holds in eDiscovery cases in Office 365](create-a-report-on-holds-in-ediscovery-cases.md)
+### [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
 
 ## Office 365 Advanced eDiscovery	
 ### [Quick setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
@@ -258,19 +257,18 @@
 # Monitor security and compliance
 ## [Monitor security and compliance in Office 365](monitor-security-and-compliance.md)
 ## [Alert policies in the Office 365 Security & Compliance Center](alert-policies.md)
-## [Reports in the Office 365 Security & Compliance Center](reports-in-security-and-compliance.md)
 ## [Alerts in the Office 365 Security & Compliance Center](alerts.md)
 ## [Create activity alerts in the Office 365 Security and Compliance Center](create-activity-alerts.md)
-## [Create a schedule for a report in the Security and Compliance Center](create-a-schedule-for-a-report.md)
-## [Manage schedules for multiple reports in the Security and Compliance Center](manage-schedules-for-multiple-reports.md)
-## [Set up and download a custom report in the Security and Compliance Center](set-up-and-download-a-custom-report.md)
-## [Download existing reports in the Security and Compliance Center](download-existing-reports.md)
-## [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-## [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
-## [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
+### [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
+### [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
+### [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+### [Create a schedule for a report in the Security and Compliance Center](create-a-schedule-for-a-report.md)
+### [Manage schedules for multiple reports in the Security and Compliance Center](manage-schedules-for-multiple-reports.md)
+### [Set up and download a custom report in the Security and Compliance Center](set-up-and-download-a-custom-report.md)
+### [Download existing reports in the Security and Compliance Center](download-existing-reports.md)
 ## [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
 ## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
-## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
 
 # Security solutions		
 ## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
