@@ -271,38 +271,38 @@
 ## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
 
 # Security solutions		
-## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
-### Configure groups and users for a political campaign dev/test environment
-### Create team sites in a political campaign dev/test environment
-## Secure SharePoint Online sites and files	
-### Deploy SharePoint Online sites for three tiers of protection
-### Protect SharePoint Online files with Office 365 labels and DLP
-### Protect SharePoint Online files with Azure Information Protection
-### Secure SharePoint Online sites in a dev/test environment
-## Isolated SharePoint Online team sites	
-### Design an isolated SharePoint Online team site
-### Deploy an isolated SharePoint Online team site
-### Manage an isolated SharePoint Online team site
-### Isolated SharePoint Online team site dev/test environment
+## [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o?toc=/Office365/SecurityCompliance/toc.json)	
+### [Configure groups and users for a political campaign dev/test environment](/enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
+### [Create team sites in a political campaign dev/test environment](/enterprise/create-team-sites-in-a-political-campaign-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
+## [Secure SharePoint Online sites and files](/enterprise/secure-sharepoint-online-sites-and-files?toc=/Office365/SecurityCompliance/toc.json)	
+### [Deploy SharePoint Online sites for three tiers of protection](/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection?toc=/Office365/SecurityCompliance/toc.json)
+### [Protect SharePoint Online files with Office 365 labels and DLP](/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp?toc=/Office365/SecurityCompliance/toc.json)
+### [Protect SharePoint Online files with Azure Information Protection](/protect-sharepoint-online-files-with-azure-information-protection?toc=/Office365/SecurityCompliance/toc.json)
+### [Secure SharePoint Online sites in a dev/test environment](/enterprise/secure-sharepoint-online-sites-in-a-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
+## [Isolated SharePoint Online team sites](/enterprise/isolated-sharepoint-online-team-sites?toc=/Office365/SecurityCompliance/toc.json)	
+### [Design an isolated SharePoint Online team site](/enterprise/design-an-isolated-sharepoint-online-team-site?toc=/Office365/SecurityCompliance/toc.json)
+### [Deploy an isolated SharePoint Online team site](/enterprise/deploy-an-isolated-sharepoint-online-team-site?toc=/Office365/SecurityCompliance/toc.json)
+### [Manage an isolated SharePoint Online team site](/enterprise/manage-an-isolated-sharepoint-online-team-site?toc=/Office365/SecurityCompliance/toc.json)
+### [Isolated SharePoint Online team site dev/test environment](/enterprise/isolated-sharepoint-online-team-site-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
 
 # Compliance solutions
-## Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center
-## [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)	
-### [Overview: Office 365 Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-info-protection-for-gdpr-overview)
-### [Search for and find personal data](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)
-### [Customize or create new sensitive information types for GDPR](https://docs.microsoft.com/office365/enterprise/customize-or-create-a-new-sensitive-information-type)
-### [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data)
-### [Apply labels to personal data in Office 365](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365)
-### [Apply protection to personal data in Office 365](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)
-### [Monitor for leaks of personal data](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data)
-### [Office 365 GDPR dev/test environment](https://docs.microsoft.com/office365/enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
-## GDPR for on-premises Office servers	
-### GDPR for SharePoint Server
-### GDPR for Exchange Server
-### GDPR for Skype for Business Server and Lync Server
-### GDPR for Project Server
-### GDPR for Office Web Apps Server and Office Online Server
-### GDPR for on-premises Windows Server file shares
+## [Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center](/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/securitycompliance/toc.json)
+## [Office 365 Information Protection for GDPR](/enterprise/office-365-information-protection-for-gdpr?toc=/Office365/SecurityCompliance/toc.json)	
+### [Overview: Office 365 Protection for GDPR](/enterprise/office-365-info-protection-for-gdpr-overview?toc=/Office365/SecurityCompliance/toc.json)
+### [Search for and find personal data](/enterprise/search-for-and-find-personal-data?toc=/Office365/SecurityCompliance/toc.json)
+### [Customize or create new sensitive information types for GDPR](/enterprise/customize-or-create-a-new-sensitive-information-type?toc=/Office365/SecurityCompliance/toc.json)
+### [Architect a classification schema for personal data](/enterprise/architect-a-classification-schema-for-personal-data?toc=/Office365/SecurityCompliance/toc.json)
+### [Apply labels to personal data in Office 365](/enterprise/apply-labels-to-personal-data-in-office-365?toc=/Office365/SecurityCompliance/toc.json)
+### [Apply protection to personal data in Office 365](/enterprise/apply-protection-to-personal-data-in-office-365?toc=/Office365/SecurityCompliance/toc.json)
+### [Monitor for leaks of personal data](/enterprise/monitor-for-leaks-of-personal-data?toc=/Office365/SecurityCompliance/toc.json)
+### [Office 365 GDPR dev/test environment](/enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
+## [GDPR for on-premises Office servers](/enterprise/gdpr-for-office-servers?toc=/Office365/SecurityCompliance/toc.json)	
+### [GDPR for SharePoint Server](/enterprise/gdpr-for-sharepoint-server?toc=/Office365/SecurityCompliance/toc.json)
+### [GDPR for Exchange Server](/enterprise/gdpr-for-exchange-server?toc=/Office365/SecurityCompliance/toc.json)
+### [GDPR for Skype for Business Server and Lync Server](/enterprise/gdpr-for-skype-for-business-server?toc=/Office365/SecurityCompliance/toc.json)
+### [GDPR for Project Server](/enterprise/gdpr-for-project-server?toc=/Office365/SecurityCompliance/toc.json)
+### [GDPR for Office Web Apps Server and Office Online Server](/enterprise/gdpr-for-office-online-server?toc=/Office365/SecurityCompliance/toc.json)
+### [GDPR for on-premises Windows Server file shares](/enterprise/gdpr-for-on-premises-file-shares?toc=/Office365/SecurityCompliance/toc.json)
 
 # Security incident management
 ## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)	
