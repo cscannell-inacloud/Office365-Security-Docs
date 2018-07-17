@@ -1,7 +1,7 @@
 ---
 title: "Overview of document deletion policies"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/12/2017
 ms.audience: Admin
