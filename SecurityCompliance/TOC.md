@@ -208,7 +208,6 @@
 ### [Differences between estimated and actual eDiscovery search results in Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md)
 ### [Create a report on holds in eDiscovery cases in Office 365](create-a-report-on-holds-in-ediscovery-cases.md)
 ### [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
-### Search and investigation
 
 ## Office 365 Advanced eDiscovery	
 ### [Quick setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
@@ -258,19 +257,18 @@
 # Monitor security and compliance
 ## [Monitor security and compliance in Office 365](monitor-security-and-compliance.md)
 ## [Alert policies in the Office 365 Security & Compliance Center](alert-policies.md)
-## [Reports in the Office 365 Security & Compliance Center](reports-in-security-and-compliance.md)
 ## [Alerts in the Office 365 Security & Compliance Center](alerts.md)
 ## [Create activity alerts in the Office 365 Security and Compliance Center](create-activity-alerts.md)
-## [Create a schedule for a report in the Security and Compliance Center](create-a-schedule-for-a-report.md)
-## [Manage schedules for multiple reports in the Security and Compliance Center](manage-schedules-for-multiple-reports.md)
-## [Set up and download a custom report in the Security and Compliance Center](set-up-and-download-a-custom-report.md)
-## [Download existing reports in the Security and Compliance Center](download-existing-reports.md)
-## [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-## [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
-## [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
+### [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
+### [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
+### [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+### [Create a schedule for a report in the Security and Compliance Center](create-a-schedule-for-a-report.md)
+### [Manage schedules for multiple reports in the Security and Compliance Center](manage-schedules-for-multiple-reports.md)
+### [Set up and download a custom report in the Security and Compliance Center](set-up-and-download-a-custom-report.md)
+### [Download existing reports in the Security and Compliance Center](download-existing-reports.md)
 ## [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
 ## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
-## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
 
 # Security solutions		
 ## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations	
