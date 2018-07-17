@@ -287,15 +287,15 @@
 
 # Compliance solutions
 ## Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center
-## Office 365 Information Protection for GDPR	
-### Overview: Office 365 Protection for GDPR
-### Search for and find personal data
-### Customize or create new sensitive information types for GDPR
-### Architect a classification schema for personal plan
-### Apply labels to personal data in Office 365
-### Apply protection to personal data in Office 365
-### Monitor for leaks of personal data
-### Office 365 GDPR dev/test environment
+## [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)	
+### [Overview: Office 365 Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-info-protection-for-gdpr-overview)
+### [Search for and find personal data](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)
+### [Customize or create new sensitive information types for GDPR](https://docs.microsoft.com/office365/enterprise/customize-or-create-a-new-sensitive-information-type)
+### [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data)
+### [Apply labels to personal data in Office 365](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365)
+### [Apply protection to personal data in Office 365](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)
+### [Monitor for leaks of personal data](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data)
+### [Office 365 GDPR dev/test environment](https://docs.microsoft.com/office365/enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
 ## GDPR for on-premises Office servers	
 ### GDPR for SharePoint Server
 ### GDPR for Exchange Server
@@ -305,9 +305,10 @@
 ### GDPR for on-premises Windows Server file shares
 
 # Security incident management
-## Office 365 Security Incident Response	
-## Detect and Remediate Illicit Consent Grants in Office 365
-## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)	
+## [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## [Responding to a Compromised Email Account in Office 365](responding-to-a-compromised-email-account.md)
 
 # Service assurance
 ## [Service assurance in the Office 365 Security & Compliance Center](service-assurance.md)
