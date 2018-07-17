@@ -305,9 +305,10 @@
 ### GDPR for on-premises Windows Server file shares
 
 # Security incident management
-## Office 365 Security Incident Response	
-## Detect and Remediate Illicit Consent Grants in Office 365
-## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)	
+## [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## [Responding to a Compromised Email Account in Office 365](responding-to-a-compromised-email-account.md)
 
 # Service assurance
 ## [Service assurance in the Office 365 Security & Compliance Center](service-assurance.md)
