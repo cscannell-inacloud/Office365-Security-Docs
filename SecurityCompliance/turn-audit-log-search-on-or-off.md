@@ -55,18 +55,11 @@ You can use the Security &amp; Compliance Center or PowerShell to turn on audit 
     
 2. Run the following PowerShell command to turn on audit log search in Office 365.
     
-||
-|:-----|
-|
-```
-  Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
-```
+    ```
+    Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
+    ```
 
-|
-   
     A message is displayed saying that it might take up to 60 minutes for the change to take effect.
-    
-[Return to top](turn-audit-log-search-on-or-off.md#top)
   
 ## Turn off audit log search
 
@@ -76,36 +69,22 @@ You have to use remote PowerShell connected to your Exchange Online organization
     
 2. Run the following PowerShell command to turn off audit log search in Office 365.
     
-||
-|:-----|
-|
-```
-  Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
-```
+    ```
+    Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
+    ```
 
-|
-   
 3. After a while, verify that audit log search is turned off (disabled). There are two ways to do this:
     
-  - In PowerShell, run the following command:
-    
-||
-|:-----|
-|
-```
-  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-```
+    - In PowerShell, run the following command:
 
-|
-   
-    The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
-    
-  - In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search**, and then click **Search**.
-    
-    A message is displayed saying that audit log search isn't turned on. 
-    
-    ![A message is dispayed if auditing is turned off](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)
-  
-[Return to top](turn-audit-log-search-on-or-off.md#top)
-  
+        ```
+        Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+        ```
 
+        The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
+    
+    - In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search**, and then click **Search**.
+    
+      A message is displayed saying that audit log search isn't turned on. 
+    
+      ![A message is dispayed if auditing is turned off](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)

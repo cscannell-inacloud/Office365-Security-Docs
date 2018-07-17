@@ -22,20 +22,18 @@ Sharing is a key activity in SharePoint Online and OneDrive for Business, and it
   
 ## The SharePoint Sharing schema
 
-Sharing events (excluding sharing policy and sharing link events) are different from file- and folder-related events in one primary way: one user is taking an action that has some effect on another user. For example, User A gives User B access to a file. In this example, User A is the  *acting user*  and User B is the  *target user*  . In the SharePoint File schema, the acting user's action only affects the file itself. When User A opens a file, the only information needed in the ** FileAccessed ** event is the acting user. To address this difference, there is a separate schema, called the  * SharePoint Sharing schema *  , that captures more information about sharing events. This ensures that administrators have more insight into who shared a resource and the user the resource was shared with. 
+Sharing events (excluding sharing policy and sharing link events) are different from file- and folder-related events in one primary way: one user is taking an action that has some effect on another user. For example, User A gives User B access to a file. In this example, User A is the  *acting user*  and User B is the  *target user*. In the SharePoint File schema, the acting user's action only affects the file itself. When User A opens a file, the only information needed in the **FileAccessed** event is the acting user. To address this difference, there is a separate schema, called the  *SharePoint Sharing schema*, that captures more information about sharing events. This ensures that administrators have more insight into who shared a resource and the user the resource was shared with. 
   
 The Sharing schema provides two additional fields in the audit log related to sharing events: 
   
-- **TargetUserOrGroupName** Stores the UPN or name of the target user or group that a resource was shared with (User B in the previous example). 
+- **TargetUserOrGroupName** - Stores the UPN or name of the target user or group that a resource was shared with (User B in the previous example). 
     
-- **TargetUserOrGroupType** Identifies whether the target user or group is a Member, Guest, Group, or Partner. 
+- **TargetUserOrGroupType** - Identifies whether the target user or group is a Member, Guest, Group, or Partner. 
     
-These two fields, in addition to other properties from the Office 365 audit log schema such as User, Operation, and Date can tell the full story about  *which*  user shared  *what*  resource with  *whom*  and  *when*  . 
+These two fields, in addition to other properties from the Office 365 audit log schema such as User, Operation, and Date can tell the full story about  *which*  user shared  *what*  resource with  *whom*  and  *when*. 
   
 There's another schema property that's important to the sharing story. The **EventData** property stores additional information about sharing events. For example, when a user shares a site with another user, this is accomplished by adding the target user to a SharePoint group. The **EventData** property captures this additional information to provide context for administrators. 
-  
-[Return to top](use-sharing-auditing.md#top)
-  
+
 ## The SharePoint Sharing model and sharing events
 
 Sharing is actually defined by three separate events: **SharingSet**, **SharingInvitationCreated**, and **SharingInvitaitonAccepted**. Here's the work flow for how sharing events are logged in the Office 365 audit log. 
@@ -61,14 +59,13 @@ When a user (the acting user) wants to share a resource with another user (the t
   
 When the target user accepts the sharing invitation that's sent to them (by clicking the link in the invitation), SharePoint logs a **SharingInvitationAccepted** event and assigns the target user permissions to access the resource. Additional information about the target user is also logged, such as the identity of the user that the invitation was sent to and the user who actually accepted the invitation. In some case, these users (or email addresses) might be different. 
   
-[Return to top](use-sharing-auditing.md#top)
+
   
 ## How to identify resources shared with external users
 
 A common requirement for administrators is creating a list of all resources that have been shared with users outside of the organization. By using sharing auditing in Office 365, administrators can now generate this list. Here's how.
   
 ### Step 1: Search for sharing events and export the results to a CSV file
-<a name="step1"> </a>
 
 The first step is to search the Office 365 audit log for sharing events. For more details (including the required permissions) about searching the audit log, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
@@ -94,10 +91,9 @@ The first step is to search the Office 365 audit log for sharing events. For mor
     
 8. Click **Save** \> **Save as** and save the CSV file to a folder on your local computer. 
     
-[Return to top](use-sharing-auditing.md#top)
+
   
 ### Step 2: Filter the CSV file for resources shared with external users
-<a name="step3"> </a>
 
 The next step is to filter the CSV for the **SharingSet** and **SharingInvitationCreated** events, and to display those events where the **TargetUserOrGroupType** property is **Guest**. You'll use the Power Query feature in Excel to do this. The following procedure is performed in Excel 2016. 
   
@@ -119,9 +115,9 @@ The next step is to filter the CSV for the **SharingSet** and **SharingInvitatio
   
 6. In the **Split Column by Delimiter** window, do the following: 
     
-  - Under **Select or enter delimiter**, select **Comma**.
+      - Under **Select or enter delimiter**, select **Comma**.
     
-  - Under **Split**, select **At each occurrence of the delimiter**.
+      - Under **Split**, select **At each occurrence of the delimiter**.
     
 7. Click **OK**.
     
@@ -153,7 +149,3 @@ Although it's not included in the previous table, the **Detail.10** column (or w
   
 > [!TIP]
 > If you want to identify when a guest user was actually assigned permissions to access a resource (as opposed to just the resources that where shared with them), repeat Steps 10, 11, and 12, and filter on the **SharingInvitationAccepted** and **SharingSet** events in Step 10. 
-  
-[Return to top](use-sharing-auditing.md#top)
-  
-
