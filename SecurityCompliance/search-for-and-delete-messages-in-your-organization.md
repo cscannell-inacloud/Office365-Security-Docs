@@ -134,5 +134,3 @@ For more information, see [New-ComplianceSearchAction](https://docs.microsoft.co
 - **Why is the search and remove workflow divided among different Security &amp; Compliance Center role groups?**
 
     As previously explained, a person has to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role to search mailboxes. To delete messages, a person has to be a member of the Organization Management role group or be assigned the Search And Purge management role. This makes it possible to control who can search mailboxes in the organization and who can delete messages. 
-
- 
