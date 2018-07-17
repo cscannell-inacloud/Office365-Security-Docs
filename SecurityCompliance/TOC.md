@@ -287,15 +287,15 @@
 
 # Compliance solutions
 ## Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center
-## Office 365 Information Protection for GDPR	
-### Overview: Office 365 Protection for GDPR
-### Search for and find personal data
-### Customize or create new sensitive information types for GDPR
-### Architect a classification schema for personal plan
-### Apply labels to personal data in Office 365
-### Apply protection to personal data in Office 365
-### Monitor for leaks of personal data
-### Office 365 GDPR dev/test environment
+## [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)	
+### [Overview: Office 365 Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-info-protection-for-gdpr-overview)
+### [Search for and find personal data](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)
+### [Customize or create new sensitive information types for GDPR](https://docs.microsoft.com/office365/enterprise/customize-or-create-a-new-sensitive-information-type)
+### [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data)
+### [Apply labels to personal data in Office 365](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365)
+### [Apply protection to personal data in Office 365](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)
+### [Monitor for leaks of personal data](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data)
+### [Office 365 GDPR dev/test environment](https://docs.microsoft.com/office365/enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
 ## GDPR for on-premises Office servers	
 ### GDPR for SharePoint Server
 ### GDPR for Exchange Server
