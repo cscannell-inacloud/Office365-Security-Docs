@@ -140,5 +140,8 @@ Note that a deletion policy cannot override a hold. If a site is on hold and a d
   
 ## See also
 
+[Apply or remove a document deletion policy for a site](apply-or-remove-a-document-deletion-policy-for-a-site.md)
+
 [Create a document deletion policy](create-a-document-deletion-policy.md)
+
 
