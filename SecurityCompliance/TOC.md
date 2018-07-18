@@ -31,7 +31,6 @@
 ## Get details about devices managed by Mobile Device Management (MDM)  for Office 365
 ## Privacy and security for built-in mobile device management for Office 365
 ## Manage device access settings
-## Investigate a user account that might be compromised in Office 365
 
 # Prevent data loss
 ## Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services	
