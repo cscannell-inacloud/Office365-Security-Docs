@@ -22,7 +22,7 @@
 ## [Capabilities of built-in Mobile Device Management for Office 365](capabilities-of-mobile-device-management.md)
 ## [Enroll your mobile device in Office 365](enroll-your-mobile-device.md)
 ## [Wipe a mobile device in Office 365](wipe-a-mobile-device.md)
-## [Create an APNs Certificate for iOS devices](https://support.office.com/article/522b43f4-a2ff-46f6-962a-dd4f47e546a7)
+## [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios.md)
 ## [Manage devices enrolled in Mobile Device Management in Office 365](manage-devices-in-mdm.md)
 ## [Create and deploy device security policies](create-device-security-policies.md)
 ## [Frequently asked questions about Mobile Device Management for Office 365](frequently-asked-questions-about-mdm.md)
