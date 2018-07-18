@@ -22,11 +22,11 @@ People regularly send, receive, and share attachments, such as documents, presen
   
 ## What to do 
   
-1. [Review the prerequisites](set-up-atp-safe-attachments-policies.md#prereqs)
+1. [[Review the prerequisites](set-up-atp-safe-attachments-policies.md#prereqs)](#review-the-prerequisites)
     
-2. [Set up an ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md#setpolicy)
+2. [[Set up an ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md#setpolicy)](#set-up-an-atp-safe-attachments-policy)
     
-3. [Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions)
+3. [[Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions)](#learn-about-atp-safe-attachments-policy-options)
     
 ## Review the prerequisites
 

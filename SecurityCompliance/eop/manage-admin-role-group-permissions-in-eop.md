@@ -34,7 +34,7 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
 ### Use the EAC to assign members to admin role groups
 
-1. In the EAC, navigate to **Permissions** \> **Admin Roles**, click the role group that you want to add the user or users to, and then click **Edit**![Edit icon](../media/ITPro-EAC-EditIcon.png).
+1. In the EAC, navigate to **Permissions** \> **Admin Roles**, click the role group that you want to add the user or users to, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png).
     
 2. Under Members, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.png). The Select Members window will appear.
     
@@ -49,7 +49,7 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
   
 ### Use the EAC to remove members from admin role groups
 
-1. In the EAC, navigate to **Permissions** \> **Admin Roles**, click the role group that you want to remove a user or users from, and then click **Edit**![Edit icon](../media/ITPro-EAC-EditIcon.png).
+1. In the EAC, navigate to **Permissions** \> **Admin Roles**, click the role group that you want to remove a user or users from, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png).
     
 2. Under Members, select the user or users that you want to remove and click **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.png).
     

@@ -136,7 +136,7 @@ The last step is to apply the new retention policy that you created in Step 2 to
   
 1. Go to **Recipients** \> **Mailboxes**.
     
-2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit**![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 3. On the **User Mailbox** page, click **Mailbox features**.
     

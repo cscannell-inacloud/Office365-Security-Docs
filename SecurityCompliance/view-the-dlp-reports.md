@@ -1,7 +1,7 @@
 ---
 title: "View the reports for data loss prevention"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin

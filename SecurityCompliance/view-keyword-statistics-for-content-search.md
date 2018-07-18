@@ -105,7 +105,7 @@ To create a keyword list and view keyword statistics for a Content Search:
   
 1. In the Office 365 Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Content search**.
     
-2. In the list of Content Searches, click and a search, and then click **Edit**![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list of Content Searches, click and a search, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 3. Click **Query** and then do the following things: 
     

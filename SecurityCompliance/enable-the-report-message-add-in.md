@@ -22,19 +22,8 @@ The Report Message add-in for Outlook enables people to easily report misclassif
 If you're an individual user, you can enable the Report Message add-in for yourself. 
   
 If you're an Exchange Online administrator, you can enable the Report Message add-in for your organization.
-  
- **In this article**: 
-  
-- [Get the Report Message add-in for yourself](enable-the-report-message-add-in.md#singleuser)
-    
-- [Get and enable the Report Message add-in for your organization](enable-the-report-message-add-in.md#entireorg)
-    
-- [Set up a rule to get a copy of email messages reported by your users](enable-the-report-message-add-in.md#setuprule)
-    
-- [Related topics](enable-the-report-message-add-in.md#relaated)
     
 ## Get the Report Message add-in for yourself
-<a name="singleuser"> </a>
 
 1. Go to [https://store.office.com](https://store.office.com), and search for the Report Message add-in.
     
@@ -50,9 +39,9 @@ If you're an Exchange Online administrator, you can enable the Report Message ad
 Next, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
 ## Get and enable the Report Message add-in for your organization
-<a name="entireorg"> </a>
 
- **You must be an Exchange Online Administrator to perform this task.**
+> [!IMPORTANT]
+> You must be an Exchange Online Administrator to perform this task.
   
 1. Go to [https://portal.office.com](https://portal.office.com) and sign in using your work or school account. 
     
@@ -96,9 +85,9 @@ Next, learn how to [Use the Report Message add-in](https://support.office.com/ar
 Next, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), and set up a rule to see reported email messages.
   
 ### Set up a rule to get a copy of email messages reported by your users
-<a name="setuprule"> </a>
 
- **You must be an Exchange Online Administrator to perform this task.**
+> [!IMPORTANT]
+> You must be an Exchange Online Administrator to perform this task.
   
 You can set up a rule to get a copy of email messages reported by users in your organization. You do this after you have downloaded and enabled the Report Message add-in for your organization.
   
@@ -131,7 +120,6 @@ You can set up a rule to get a copy of email messages reported by users in your 
 With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message. This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies. 
   
 ## Related topics
-<a name="relaated"> </a>
 
 [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   

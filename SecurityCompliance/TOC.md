@@ -57,23 +57,23 @@
 ## [Overview of labels](labels.md)
 ## [View label activity for documents](view-label-activity-for-documents.md)
 ## Send email notifications and show policy tips for DLP policies
-## Recover an inactive mailbox in Office 365
-## Overview of inactive mailboxes in Office 365
-## Restore an inactive mailbox in Office 365
-## Delete an inactive mailbox in Office 365
+## [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md)
+## [Overview of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md)
+## [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)
+## [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md)
 
 # Manage data governance		
-## Manage data governance in Office 365	
+## [Manage data governance in Office 365](manage-data-governance.md)	
 ## Archiving & Retention
-### Set up an archive and deletion policy for mailboxes in your Office 365 organization
-### Overview of unlimited archiving in Office 365
-### Archiving third-party data in Office 365
-### Enable unlimited archiving in Office 365 - Admin Help
-### Enable archive mailboxes in the Office 365 Security & Compliance Center
-### Overview of retention policies
-### Overview of event-driven retention
-### Increase the Recoverable Items quota for mailboxes on hold
-### Change the hold duration for an inactive mailbox in Office 365
+### [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+### [Overview of unlimited archiving in Office 365](unlimited-archiving.md)
+### [Archiving third-party data in Office 365](archiving-third-party-data.md)
+### [Enable unlimited archiving in Office 365 - Admin Help](enable-unlimited-archiving.md)
+### [Enable archive mailboxes in the Office 365 Security & Compliance Center](enable-archive-mailboxes.md)
+### [Overview of retention policies](retention-policies.md)
+### [Overview of event-driven retention](event-driven-retention.md)
+### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+### [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
 ### Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
 ### Search for and delete email messages in your Office 365 organization - Admin Help
 ### Archive
@@ -217,34 +217,34 @@
 ### Search and investigation
 
 ## Office 365 Advanced eDiscovery	
-### Quick setup for Office 365 Advanced eDiscovery
-### Prepare search results for Office 365 Advanced eDiscovery
-### Investigating partially indexed items in Office 365 eDiscovery
-### Import non-Office 365 content for Advanced eDiscovery analysis
-### Set up users and cases in Office 365 Advanced eDiscovery
-### Export results in Office 365 Advanced eDiscovery
-### Run the Process module in Office 365 Advanced eDiscovery
-### Analyze case data with Office 365 Advanced eDiscovery
-### Export case data in Office 365 Advanced eDiscovery
-### Use Office 365 Advanced eDiscovery utilities
-### User roles and access in Office 365 Advanced eDiscovery
-### Manage Relevance setup in Office 365 Advanced eDiscovery
-### Use the Relevance module in Office 365 Advanced eDiscovery
-### Tagging and Relevance training in Office 365 Advanced eDiscovery
-### Run the Process module and load data in Office 365 Advanced eDiscovery
-### Define case and tenant settings in Office 365 Advanced eDiscovery
-### Run reports in Office 365 Advanced eDiscovery
-### View Analyze results in Office 365 Advanced eDiscovery
-### Use Express Analysis in Office 365 Advanced eDiscovery
-### Prepare data for Office 365 Advanced eDiscovery
-### Export report fields in Office 365 Advanced eDiscovery
-### Tagging and Assessment in Office 365 Advanced eDiscovery
-### Understand document similarity in Office 365 Advanced eDiscovery
-### Define highlighted keywords and advanced options in Office 365 Advanced eDiscovery
-### Set Ignore Text option for Analyze in Office 365 Advanced eDiscovery
-### View batch history and export past results in Office 365 Advanced eDiscovery
-### Set Analyze options in Office 365 Advanced eDiscovery
-### View Process module results in Office 365 Advanced eDiscovery
+### [Quick setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+### [Prepare search results for Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md)
+### [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
+### [Import non-Office 365 content for Advanced eDiscovery analysis](import-non-office-365-data-into-advanced-ediscovery.md)
+### [Set up users and cases in Office 365 Advanced eDiscovery](set-up-users-and-cases-in-advanced-ediscovery.md)
+### [Export results in Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
+### [Run the Process module in Office 365 Advanced eDiscovery](run-the-process-module-in-advanced-ediscovery.md)
+### [Analyze case data with Office 365 Advanced eDiscovery](analyze-case-data-with-advanced-ediscovery.md)
+### [Export case data in Office 365 Advanced eDiscovery](export-case-data-in-advanced-ediscovery.md)
+### [Use Office 365 Advanced eDiscovery utilities](use-advanced-ediscovery-utilities.md)
+### [User roles and access in Office 365 Advanced eDiscovery](user-roles-and-access-in-advanced-ediscovery.md)
+### [Manage Relevance setup in Office 365 Advanced eDiscovery](manage-relevance-setup-in-advanced-ediscovery.md)
+### [Use the Relevance module in Office 365 Advanced eDiscovery](use-relevance-in-advanced-ediscovery.md)
+### [Tagging and Relevance training in Office 365 Advanced eDiscovery](tagging-and-relevance-training-in-advanced-ediscovery.md)
+### [Run the Process module and load data in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+### [Define case and tenant settings in Office 365 Advanced eDiscovery](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+### [Run reports in Office 365 Advanced eDiscovery](run-reports-in-advanced-ediscovery.md)
+### [View Analyze results in Office 365 Advanced eDiscovery](view-analyze-results-in-advanced-ediscovery.md)
+### [Use Express Analysis in Office 365 Advanced eDiscovery](use-express-analysis-in-advanced-ediscovery.md)
+### [Prepare data for Office 365 Advanced eDiscovery](prepare-data-for-advanced-ediscovery.md)
+### [Export report fields in Office 365 Advanced eDiscovery](export-report-fields-in-advanced-ediscovery.md)
+### [Tagging and Assessment in Office 365 Advanced eDiscovery](tagging-and-assessment-in-advanced-ediscovery.md)
+### [Understand document similarity in Office 365 Advanced eDiscovery](understand-document-similarity-in-advanced-ediscovery.md)
+### [Define highlighted keywords and advanced options in Office 365 Advanced eDiscovery](define-highlighted-keywords-and-advanced-options.md)
+### [Set Ignore Text option for Analyze in Office 365 Advanced eDiscovery](set-ignore-text-in-advanced-ediscovery.md)
+### [View batch history and export past results in Office 365 Advanced eDiscovery](view-batch-history-and-export-past-results.md)
+### [Set Analyze options in Office 365 Advanced eDiscovery](set-analyze-options-in-advanced-ediscovery.md)
+### [View Process module results in Office 365 Advanced eDiscovery](view-process-module-results-in-advanced-ediscovery.md)
 ### Track Relevance analysis in Office 365 Advanced eDiscovery
 ### Decision based on the results in Office 365 Advanced eDiscovery
 ### Test Relevance analysis in Office 365 Advanced eDiscovery
@@ -254,12 +254,12 @@
 ### Understand Assessment in Relevance in Office 365 Advanced eDiscovery
 
 # Search the audit log
-## Enable mailbox auditing in Office 365
-## Turn Office 365 audit log search on or off
-## Search the audit log for user and admin activity in Office 365
-## Search the audit log in the Office 365 Security and Compliance Center
-## Detailed properties in the Office 365 audit log
-## Use sharing auditing in the Office 365 audit log
+## [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)
+## [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md)
+## [Search the audit log for user and admin activity in Office 365](search-the-audit-log.md)
+## [Search the audit log in the Office 365 Security and Compliance Center](search-the-audit-log-in-security-and-compliance.md)
+## [Detailed properties in the Office 365 audit log](detailed-properties-in-the-office-365-audit-log.md)
+## [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md)
 
 # Monitor security and compliance
 ## Monitor security and compliance in Office 365

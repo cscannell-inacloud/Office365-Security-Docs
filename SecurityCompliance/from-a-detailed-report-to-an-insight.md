@@ -19,10 +19,9 @@ description: "Learn how you can move from a detailed report to an insight with r
 
 If you're new to [reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a detailed report to an insight and recommended actions. 
   
-This is one of several walkthroughs for the Security &amp; Compliance Center. To see additional walkthroughs, see the [Related topics](from-an-insight-to-a-detailed-report.md#related) section. 
+This is one of several walkthroughs for the Security &amp; Compliance Center. To see additional walkthroughs, see the [Related topics](#related-topics) section. 
   
 ## Walkthrough: From a detailed report to an insight
-<a name="quarantine"> </a>
 
 Let's walk through the flow from a detailed report to an insight and actions. This is an [anti-spam and anti-malware](anti-spam-and-anti-malware-protection.md) example. 
   
@@ -45,7 +44,6 @@ Let's walk through the flow from a detailed report to an insight and actions. Th
 In this way, we can move from a detailed report to an insight and recommended actions. 
   
 ## Related topics
-<a name="related"> </a>
 
 [Walkthrough: From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
   

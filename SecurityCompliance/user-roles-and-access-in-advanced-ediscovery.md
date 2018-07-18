@@ -44,7 +44,7 @@ The user roles and access are defined in **Settings and utilities \> Tenant sett
 ||Utilities: Transparency analysis; Modify relevance  <br/> |X  <br/> |X  <br/> |X  <br/> |
 ||Utilities: Other  <br/> |X  <br/> |X  <br/> ||
    
-- To edit a user, select a user in the list, and then click **Edit**![edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png).
+- To edit a user, select a user in the list, and then click **Edit** ![Edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png).
     
     In the ** Edit user ** panel you can change the display name, or the Role. 
     
