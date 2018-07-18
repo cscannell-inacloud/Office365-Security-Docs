@@ -249,5 +249,7 @@ You can't delete a policy that's in use. Before you can delete a policy, you fir
 ## See also
 
 [Overview of document deletion policies](document-deletion-policies.md)
+
+[Apply or remove a document deletion policy for a site](apply-or-remove-a-document-deletion-policy-for-a-site.md)
  
 
