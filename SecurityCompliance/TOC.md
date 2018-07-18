@@ -286,7 +286,7 @@
 ### [Isolated SharePoint Online team site dev/test environment](/enterprise/isolated-sharepoint-online-team-site-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
 
 # Compliance solutions
-## [Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center](/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/securitycompliance/toc.json)
+## [Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](/enterprise/office-365-information-protection-for-gdpr?toc=/Office365/SecurityCompliance/toc.json)	
 ### [Overview: Office 365 Protection for GDPR](/enterprise/office-365-info-protection-for-gdpr-overview?toc=/Office365/SecurityCompliance/toc.json)
 ### [Search for and find personal data](/enterprise/search-for-and-find-personal-data?toc=/Office365/SecurityCompliance/toc.json)
