@@ -61,7 +61,7 @@ Here's a how to manage a data spillage incident:
 ## (Optional) Step 1: Manage who can access the case and set compliance boundaries
 <a name="step1"> </a>
 
-Depending on your organizational practice, you need to control who can access the eDiscovery case used to investigate a data spillage incident and set compliance boundaries. The easiest way to do this is to add investigators as members of an existing role group in the Office 365 Security &amp; Compliance Center and then add them a member of the eDiscovery case. For information about the existing eDiscovery role groups and how to add members to an eDiscovery case, see [Assign eDiscovery permissions in the Office 365 Security and Compliance Center](5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7.md).
+Depending on your organizational practice, you need to control who can access the eDiscovery case used to investigate a data spillage incident and set compliance boundaries. The easiest way to do this is to add investigators as members of an existing role group in the Office 365 Security &amp; Compliance Center and then add them a member of the eDiscovery case. For information about the existing eDiscovery role groups and how to add members to an eDiscovery case, see [Assign eDiscovery permissions in the Office 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md).
   
 You can also create a new role group that aligns with your organizational needs. For example, you might want a group of data spillage investigators in the organization to access and share all data spillage cases. You can do this by creating a "Data Spillage Investigator" role group, assigning appropriate roles (Export, RMS Decrypt, Review, Preview, Compliance Search, and Case Management), adding the data spillage investigators to the role group, and then adding the role group as a member of the data spillage eDiscovery case. See [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md) for detailed instructions on how to do this. 
   
@@ -94,15 +94,17 @@ Afer you verified the search results, you may want to share your findings with o
   
  **To generate a statistical report:**
   
-1. Go to Search page on eDiscovery, and click the search that you would like to generate report for. On the flyout, click "More" and "Export report." The Export report page is displayed.
+1. Go to Search page on eDiscovery, and click the search that you would like to generate report for. 
+
+2. On the flyout, click "More" and "Export report." The Export report page is displayed.
     
-2. Select "All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons" and click "Generate report."
+3. Select "All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons" and click "Generate report."
     
-3. In the eDiscovery case, click "Export" to display the list of export jobs. You might have to click Refresh to update the list with the export job that you just created.
+4. In the eDiscovery case, click "Export" to display the list of export jobs. You might have to click Refresh to update the list with the export job that you just created.
     
-4. Click the export job that you just created and "[Download report.](.md) " 
+5. Click the export job that you just created and then click Download report on the flyout page.</br>![Flyout page](media/1c8c0a68-c01b-4290-b696-bb4550b52d8e.png)  
     
-5. "Export Summary.csv" will contain the number of locations found with result and the size of the search result. You can use this to compare with report generated after deletion and provide as a proof of deletion. "Results.csv" contains more detailed summary of search result including subject, sender, recipients, if the email was read, dates and size.  *If any of this detail contains spilled data, make sure to discard "Results.csv".* 
+6. "Export Summary.csv" will contain the number of locations found with result and the size of the search result. You can use this to compare with report generated after deletion and provide as a proof of deletion. "Results.csv" contains more detailed summary of search result including subject, sender, recipients, if the email was read, dates and size.  *If any of this detail contains spilled data, make sure to discard "Results.csv".* 
     
 ## Step 5: Use message trace log to check how spilled data was shared
 <a name="step5"> </a>
