@@ -71,5 +71,7 @@ ATP Safe Links protection uses several lists, including your organization's bloc
 [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md)
   
 [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+
+[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
 
