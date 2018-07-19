@@ -9,7 +9,9 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 
 description: "Learn about the limits in effect for the Content Search feature in the Office 365 Security &amp; Compliance Center, such as the maximum number of simultaneous searches. "

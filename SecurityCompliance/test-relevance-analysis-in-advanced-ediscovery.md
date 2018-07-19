@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: "Learn how to use the Test tab after Batch calculation in Office 365 Advanced eDiscovery to test, compare, and validate the overall quality of processing. 
 "

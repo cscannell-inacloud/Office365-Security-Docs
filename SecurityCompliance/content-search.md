@@ -12,6 +12,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: "Use Content Search in the Office 365 Security &amp; Compliance Center to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Office 365 groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content that may be related to a GDPR data subject request."
 ---

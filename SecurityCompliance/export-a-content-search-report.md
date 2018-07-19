@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: "Instead of exporting the actual results of a Content Search in the Office 365 Security &amp; Compliance Center, you can just export a search results report. The report contains a summary of the search results and a document with detailed information about each item that would be exported."
 ---

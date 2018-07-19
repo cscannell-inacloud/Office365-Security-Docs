@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: "Learn how to configure user roles, create cases, and assign users to cases in Office 365 Advanced eDiscovery. 
 "

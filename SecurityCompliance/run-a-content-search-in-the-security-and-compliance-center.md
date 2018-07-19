@@ -10,7 +10,9 @@ f1_keywords:
 - 'ms.o365.cc.ComplianceSearch'
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 
 description: "Use Content Search in the Office 365 Security &amp; Compliance Center to search mailboxes, SharePoint Online sites, and OneDrive for Business locations. "

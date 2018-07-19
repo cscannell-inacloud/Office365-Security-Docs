@@ -2,7 +2,7 @@
 title: "Virus detection in SharePoint Online"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 4/17/2018
 ms.audience: Admin
 ms.topic: reference
@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 description: "Office 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online. Files are scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file."
 ---

@@ -11,7 +11,9 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: "Users need to be assigned permissions in the Office 365 Security &amp; Compliance Center before they can manage any of its security or compliance features."
 ---

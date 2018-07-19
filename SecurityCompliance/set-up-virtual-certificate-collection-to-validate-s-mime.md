@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: "s a tenant administrator you will need to configure a virtual certificate collection that will be used to validate S/MIME certificates."
 ---

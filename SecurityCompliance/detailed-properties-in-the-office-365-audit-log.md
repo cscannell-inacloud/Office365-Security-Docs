@@ -12,6 +12,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: "Descriptions of additional properties that are included in an Office 365 audit log record."
 ---

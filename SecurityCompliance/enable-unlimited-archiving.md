@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "For administrators: Learn how to enable auto-expanding archiving in Office 365, which provides your users with unlimited storage for their Exchange Online mailboxes. You can enable auto-expanding archiving for your entire organization or just for specific users."
 ---

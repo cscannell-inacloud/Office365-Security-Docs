@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a2a4b352-442a-49f2-be77-a1244d68de8f
 description: "Review the user roles of Administrator, Manager, and Reviewer and their access to modules and tasks in Office 365 Advanced eDiscovery.
 "

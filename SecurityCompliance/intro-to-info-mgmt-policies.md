@@ -12,6 +12,7 @@ search.appverid:
 - WSU150
 - SPO160
 - OSU150
+- MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 description: "An information management policy is a set of rules for a type of content. Information management policies enable organizations to control and track things like how long content is retained or what actions users can take with that content. Information management policies can help organizations comply with legal or governmental regulations, or they can simply enforce internal business processes."
 ---

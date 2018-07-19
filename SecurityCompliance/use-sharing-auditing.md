@@ -12,6 +12,7 @@ search.appverid:
 - SPO160
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "Sharing is a key activity in SharePoint Online and OneDrive for Business. Administrators can now use sharing auditing in the Office 365 audit log to determine how sharing is being used in their organization. "
 ---

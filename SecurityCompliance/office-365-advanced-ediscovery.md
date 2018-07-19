@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: "Learn how Office 365 Advanced eDiscovery can help you analyze data within Office 365, streamline document reviews, and make decisions for efficient eDiscovery. 
 "

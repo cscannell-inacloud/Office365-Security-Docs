@@ -8,7 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MET150
+search.appverid: 
+- MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: "New Office 365 Message Encryption capabilities built on top of Azure Information Protection, your organization can use protected email communication with people inside and outside your organization. The new OME capabilities work with other Office 365 organizations, Outlook.com, Gmail, and other email services."
 ---

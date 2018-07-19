@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: "Tips to set up the Office 365 spam filter to help block email spam and prevent false negative messages, An Admin uses Office 365 anti-spam filtering to help prevent spam from being sent to user inboxes."
 ---

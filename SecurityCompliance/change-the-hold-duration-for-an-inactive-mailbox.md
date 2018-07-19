@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 
 description: "After an Office 365 mailbox is made inactive, you can change the duration of the hold or Office 365 retention policy assigned to the inactive mailbox. The hold duration defines how long items in the Recoverable Items folder are held."

@@ -11,7 +11,9 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: "Use the Office 365 Security &amp; Compliance Center to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---

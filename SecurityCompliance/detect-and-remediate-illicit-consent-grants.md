@@ -13,7 +13,8 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.custom: 
 ms.assetid:
-
+search.appverid:
+- MET150
 description: "Learn how to recognize and remediate the illicit consent grants attack in Office 365."
 ---
 # Detect and Remediate Illicit Consent Grants in Office 365

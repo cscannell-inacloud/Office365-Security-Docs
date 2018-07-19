@@ -9,7 +9,9 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid:
+- MET150
+- MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: "Create alert policies in the Office 365 Security &amp; Compliance Center to monitor potential threats, data loss, and permissions issue . Then you can view and manage the alerts that are generated when users perform activities that match the conditions of an alert policy."
 ---

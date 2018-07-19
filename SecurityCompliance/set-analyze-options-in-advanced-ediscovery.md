@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: "Review the steps to set up options for the Analyze process in Office 365 Advanced eDiscovery, including near-duplicates, email threads, and themes. 
 "

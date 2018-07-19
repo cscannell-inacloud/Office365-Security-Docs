@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 
 description: "Use the Office 365 Security &amp; Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searchs associated with the case, and the export the search results. You can also prepare case data for further analysis in Advanced eDiscovery."

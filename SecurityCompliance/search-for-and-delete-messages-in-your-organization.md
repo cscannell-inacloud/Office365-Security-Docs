@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: "Use the search and purge feature in the Office 365 Security &amp; Compliance Center to search for and delete an email message from all mailboxes in your organization."
 ---

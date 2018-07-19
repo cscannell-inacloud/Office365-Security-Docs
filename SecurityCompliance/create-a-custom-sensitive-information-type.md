@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: "If you need to identify and protect a different type of sensitive information - for example, an employee ID that uses a format specific to your organization - you can create a custom sensitive information type. A sensitive information type is defined in an XML file called a rule package. This topic shows you how to create an XML file that defines your own custom sensitive information type. You need to know how to create a regular expression."
 ---

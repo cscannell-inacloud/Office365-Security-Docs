@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: "You can use the eDiscovery Center in SharePoint Online to search all OneDrive for Business sites in your organization for certain keywords, sensitive information, and other search criteria. Each user in your organization is the owner of their OneDrive for Business site, which is located in the site collection named https://domain-my.sharepoint.com. By default, an Office 365 global administrator or compliance manager can't use the eDiscovery Center in SharePoint Online to search any OneDrive for Business sites. To search a OneDrive for Business site, administrators or compliance managers must be a site collection administrator for that OneDrive for Business site."
 ---

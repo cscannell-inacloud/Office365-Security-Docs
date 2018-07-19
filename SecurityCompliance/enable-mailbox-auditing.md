@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: "In Office 365, you can turn on mailbox audit logging to log mailbox access by mailbox owners, delegates, and administrators. By default, mailbox auditing in Office 365 isn't turned on. After you enable mailbox audit logging for a mailbox, you can search the Office 365 audit log for activities performed on the mailbox."
 ---

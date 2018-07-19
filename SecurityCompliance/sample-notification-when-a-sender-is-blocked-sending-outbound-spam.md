@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 description: "When a sender is blocked from the service due to sending outbound spam, the domain admin specified when you Configure the outbound spam policy will receive a notification email similar to the following:"
 ---

@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 74aaade0-efc0-46ac-b949-f2d1d59256fa
 description: "Tips for Office 365 Admins to prevent good email marked as spam from being sent to quarantine as a false positive. Customize a safelist and other options to prevent good email marked as spam."
 ---

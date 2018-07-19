@@ -12,6 +12,8 @@ f1_keywords:
 - 'ms.o365.cc.DevicePolicy'
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: faa7d8e5-645d-4d59-839c-c8d4c1869e4a
 description: "You can manage and secure mobile devices when they're connected to your Office 365 organization by using Mobile Device Management for Office 365. Mobile devices like smartphones and tablets that are used to access work email, calendar, contacts, and documents play a big part in making sure that employees get their work done anytime, from anywhere. So it's critical that you help protect your organization's information when people use devices. You can use MDM for Office 365 to set device security policies and access rules, and to wipe mobile devices if they're lost or stolen."
 ---

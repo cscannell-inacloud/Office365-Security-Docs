@@ -9,7 +9,9 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: "Learn about auto-expanding archiving in Office 365, which provides unlimited archive storage for Exchange Online mailboxes."
 ---

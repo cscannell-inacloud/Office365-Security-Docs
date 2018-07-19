@@ -12,6 +12,7 @@ search.appverid:
 - MOE150
 - MED150
 - BCS160
+- MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: "Add and manage activity alerts in the Security &amp; Compliance Center so that Office 365 will send you email notifications when users perform specific activities in Office 365."
 ---

@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MST160
+- MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: "Use the Content Search tool in the Office 365 Security &amp; Compliance Center to search for and export MicrosoftTeams chat data (called 1xN chats) for on-premises users in an Exchange hybrid deployment."
 ---

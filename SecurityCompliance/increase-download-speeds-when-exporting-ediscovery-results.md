@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: "Learn how to configure the Windows Registry to increase the data throughput when downloading search results and search data from the Office 365 Security &amp; Compliance Center and Office 365 Advanced eDiscovery."
 ---

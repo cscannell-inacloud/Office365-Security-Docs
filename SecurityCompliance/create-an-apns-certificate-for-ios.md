@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
 description: "To manage iOS devices like iPad and iPhones in Mobile Device Management for Office 365, follow these steps to first create an APNs certificate."
 ---

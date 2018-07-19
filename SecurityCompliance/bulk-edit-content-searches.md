@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: "Use the Bulk Search Editor in the Office 365 Security &amp; Compliance Center to quickly change the query and content locations for one or more Content Searches."
 ---

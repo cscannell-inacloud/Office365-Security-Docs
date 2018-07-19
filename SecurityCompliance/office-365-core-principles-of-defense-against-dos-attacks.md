@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: "Summary: How Microsoft utilizes the core principles of absorption, detection, and mitigation in its defense against denial-of-service (DoS) attacks."
 ---

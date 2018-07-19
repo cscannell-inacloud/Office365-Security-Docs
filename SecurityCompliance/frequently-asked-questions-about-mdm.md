@@ -12,6 +12,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 3871f99c-c9db-4a23-86f9-902c1b02f58d
 description: "This article contains frequently asked questions about Mobile Device Management (MDM) for Office 365, a feature that helps you manage and secure mobile devices in Office 365."
 ---

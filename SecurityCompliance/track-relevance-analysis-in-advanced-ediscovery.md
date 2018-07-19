@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: "Learn how to view and interpret the Relevance training status and results for case issues in Office 365 Advanced eDiscovery. 
 "

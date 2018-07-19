@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: "Learn how to run the Express analysis mode of Office 365 Advanced eDiscovery"
 ---

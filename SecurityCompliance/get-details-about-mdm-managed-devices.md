@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MBS150
+search.appverid: 
+- MBS150
+- MET150
 ms.assetid: 5602963c-a1f2-4c21-afb9-f66cd7dca1f0
 description: "This article shows you how to use Windows PowerShell to get details about the devices in your organization that you set up for Mobile Device Management for Office 365."
 ---

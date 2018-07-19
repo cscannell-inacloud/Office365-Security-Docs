@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: "Learn how to access Azure Active Directory, which is include in your organization's paid subscription to Office 365."
 ---

@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: "If a new employee or another user needs access to the contents of an inactive mailbox in Office 365, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox."
 ---

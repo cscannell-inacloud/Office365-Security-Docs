@@ -10,7 +10,9 @@ f1_keywords:
 - 'ms.o365.cc.DeviceTenantPolicy'
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 170d44dd-0c61-472f-b9bb-3242eb8bd5c3
 description: "If you're using Mobile Device Management (MDM) in Office 365, there may be devices that you can't manage by using MDM. If so, you should block Exchange ActiveSync app access to Office 365 email for mobile devices that are not supported by MDM for Office 365. This will help secure your organization's information across more devices."
 ---

@@ -12,6 +12,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 28dd276b-beeb-4c5b-8b22-7551186127fe
 description: "Follow these steps to set up Mobile Device Management (MDM) in Office 365."
 ---

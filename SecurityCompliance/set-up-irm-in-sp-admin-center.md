@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: SPO160
+search.appverid: 
+- SPO160
+- MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: "Learn how to use SharePoint Online IRM through Microsoft Azure Active Directory Rights Management Services (RMS) to protect SharePoint lists and document libraries."
 ---

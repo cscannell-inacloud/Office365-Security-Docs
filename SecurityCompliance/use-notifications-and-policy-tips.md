@@ -11,7 +11,9 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: "A policy tip is a notification or warning that appears when someone is working with content that conflicts with a DLP policy. You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 "

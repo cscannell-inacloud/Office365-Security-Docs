@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: "ATP anti-phishing protection , part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you're an Office 365 Enterprise global or security administrator, you can set up ATP anti-phishing policies. Phishing attacks come in a variety of forms from commodity-based attacks to targeted spear phishing or whaling. With the growing complexity, it's difficult for even a trained eye to identify some of these sophisticated attacks. Fortunately, Office 365 Advanced Threat Protection can help. You can set up an ATP anti-phishing policy to help ensure that your organization is protected against such attacks."
 ---

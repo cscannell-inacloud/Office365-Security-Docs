@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Enable the archive mailbox and turn on auto-expanding archiving to increase the size of the Recoverable Items folder for a mailbox in Office 365. "
 ---

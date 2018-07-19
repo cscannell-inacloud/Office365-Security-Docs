@@ -10,7 +10,9 @@ f1_keywords:
 - 'ms.o365.cc.DLPNewPolicyFromTemplate'
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: c2e588d3-8f4f-4937-a286-8c399f28953a
 description: "Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes ready-to-use policy templates that address common compliance requirements, such as helping you to protect sensitive information subject to the U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA), or U.S. Patriot Act. This topic lists all of the policy templates, what types of sensitive information they look for, and what the default conditions and actions are."
 ---

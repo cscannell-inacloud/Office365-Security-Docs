@@ -12,6 +12,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Office 365."
 ---

@@ -14,6 +14,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: a1da44e5-7475-4992-be91-9ccec25905b0
 description: "Mobile Device Management for Office 365 can help you secure and manage mobile devices like iPhones, iPads, Androids, and Windows Phones used in your organization. Create mobile device management policies with settings that can help control access to your organization's Office 365 email and documents for supported mobile devices and apps, and let you wipe a device remotely if it's stolen."
 ---

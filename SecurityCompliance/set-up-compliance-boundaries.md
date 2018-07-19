@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: "Use compliance boundaries to create logical boundaries within an Office 365 organization that control the user content locations that an eDiscovery manager can search. Compliance boundaries use search permissions filtering (also called compliance security filters) to control what mailboxes, SharePoint sites, and OneDrive accounts can be searched by specific users."
 ---

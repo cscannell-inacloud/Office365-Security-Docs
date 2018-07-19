@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: "Summary: A summary of the various monitoring and auditing access controls available within Office 365."
 ---

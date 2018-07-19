@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: "Summary: A brief summary about the Office 365 Management Activity API."
 ---

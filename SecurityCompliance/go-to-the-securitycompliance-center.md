@@ -10,6 +10,8 @@ f1_keywords:
 - 'PCOverview'
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: "The Office 365 Security &amp; Compliance Center is your one-stop portal for protecting your data in Office 365. Use the Office 365 Security &amp; Compliance Center to manage compliance for all of your organization's data across Office 365."
 ---

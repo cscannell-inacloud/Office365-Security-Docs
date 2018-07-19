@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Office 365 Advanced eDiscovery.
 "

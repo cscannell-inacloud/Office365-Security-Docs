@@ -12,6 +12,7 @@ search.appverid:
 - MOE150
 - MED150
 - GPA150
+- MET150
 ms.assetid: 2709cafb-0a8b-44bc-8494-7e2fccfa2b19
 description: "Follow these steps to stop MDM policies from being enforced for mobile devices in your Office 365 organization."
 ---

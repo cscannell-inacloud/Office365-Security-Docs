@@ -9,7 +9,9 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
 description: "When you create a label that retains content in Office 365, you can choose to trigger a disposition review at the end of the retention period."
 ---

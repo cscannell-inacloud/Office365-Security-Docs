@@ -12,6 +12,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: "You can turn on the Audit log search feature in the Office 365 Security &amp; Compliance Center. If you change you mind, you can turn if off at any time. When Audit log search is off, admins can't search the Office 365 audit log for user and admin activity in your organization."
 ---

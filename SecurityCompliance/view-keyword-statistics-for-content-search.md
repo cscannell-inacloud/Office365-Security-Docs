@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: "Use the Search Statistics feature to display and compare statistics for multiple Content Searches in Office 365 Security &amp; Compliance Center. You can also configure the keyword list when you create or edit a search query to get enhanced statistics that show how many items matched each keyword or keyword phrase."
 ---

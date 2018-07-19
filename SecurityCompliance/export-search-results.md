@@ -14,6 +14,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: "Export the search results from a Content Search in the Office 365 Security &amp; Compliance Center to a local computer. Emaill email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents. "
 ---
