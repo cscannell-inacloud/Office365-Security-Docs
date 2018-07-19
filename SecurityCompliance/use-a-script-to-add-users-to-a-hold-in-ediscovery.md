@@ -43,18 +43,13 @@ Here are the steps to make this happen:
 - The script includes minimal error handling. Its primary purpose is to quickly and easily place the mailbox and OneDrive for Business site of each user on hold.
     
 - The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
-    
-[Return to top](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#top)
-  
+
 ## Step 1: Install the SharePoint Online Management Shell
-<a name="step1"> </a>
 
 The first step is to install the SharePoint Online Management Shell if it's not already installed on your local computer. You don't have to use the shell in this procedure, but you have to install it because it contains pre-requisites required by the script that you run in Step 3. These prerequisites allow the script to communicate with SharePoint Online to get the URLs for the OneDrive for Business sites.
   
 Go to [Set up the SharePoint Online Management Shell Windows PowerShell environment](https://go.microsoft.com/fwlink/p/?LinkID=286318) and perform Step 1 and Step 2 to install the SharePoint Online Management Shell on your local computer. 
-  
-[Return to top](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#top)
-  
+
 ## Step 2: Generate a list of users
 <a name="step2"> </a>
 
@@ -68,24 +63,24 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 After you run this command, open the text file and remove the header that contains the property name,  `PrimarySmtpAddress`. Then remove all email addresses except the ones for the users that you want to add to the hold that you'll create in Step 3. Make sure there are no blank rows before or after the list of email addresses.
   
-[Return to top](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#top)
+
   
 ## Step 3: Run the script to create a hold and add users
 <a name="step3"> </a>
 
 When you run the script in this step, it will prompt you for the following information. Be sure to have this information ready before you run the script.
   
-- **Your user credentials**The script will use your credentials to connect to the Security &amp; Compliance Center with remote PowerShell. It will also use these credentials to access SharePoint Online to get the OneDrive for Business URLs for the list of users.
+- **Your user credentials** - The script will use your credentials to connect to the Security &amp; Compliance Center with remote PowerShell. It will also use these credentials to access SharePoint Online to get the OneDrive for Business URLs for the list of users.
     
-- **Name of your MySite domain**The MySite domain is the domain that contains all the OneDrive for Business sites in your organization. For example, if the URL for your MySite domain is **https://contoso-my.sharepoint.com**, then you would enter  `contoso` when the script prompts you for the name of your MySite domain. 
+- **Name of your MySite domain** - The MySite domain is the domain that contains all the OneDrive for Business sites in your organization. For example, if the URL for your MySite domain is **https://contoso-my.sharepoint.com**, then you would enter  `contoso` when the script prompts you for the name of your MySite domain. 
     
-- **Name of the case**The name of an existing case. The script will create a new hold that is associated with this case.
+- **Name of the case** - The name of an existing case. The script will create a new hold that is associated with this case.
     
-- **Name of the hold**The name of the hold the script will create and associate with the specified case.
+- **Name of the hold** - The name of the hold the script will create and associate with the specified case.
     
-- **Search query for a query-based hold**You can create a query-based hold so that only the content that meets the specified search criteria is placed on hold. To place all content on hold, just press **Enter** when you're prompted for a search query. 
+- **Search query for a query-based hold** - You can create a query-based hold so that only the content that meets the specified search criteria is placed on hold. To place all content on hold, just press **Enter** when you're prompted for a search query. 
     
-- **Whether or not to turn the hold on**You can have the script turn the hold on after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Security &amp; Compliance Center or by running the following PowerShell commands: 
+- **Whether or not to turn the hold on** - You can have the script turn the hold on after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Security &amp; Compliance Center or by running the following PowerShell commands: 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -95,11 +90,11 @@ When you run the script in this step, it will prompt you for the following infor
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **Name of the text file with the list of users**The name of the text file from Step 2 that contains the list of users to add to the hold. If this file is located in the same folder as the script, just type the name of the file (for example, HoldUsers.txt). If the text file is in another folder, type the full pathname of the file.
+- **Name of the text file with the list of users** - The name of the text file from Step 2 that contains the list of users to add to the hold. If this file is located in the same folder as the script, just type the name of the file (for example, HoldUsers.txt). If the text file is in another folder, type the full pathname of the file.
     
 After you've collected the information that the script will prompt you for, the final step is to run the script to create the new hold and add users to it.
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, AddUsersToHold.ps1.
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `AddUsersToHold.ps1`.
     
   ```
   #script begin
@@ -278,24 +273,20 @@ After you've collected the information that the script will prompt you for, the 
     
 3. Run the script; for example:
     
-  ```
-  .\AddUsersToHold.ps1
-  ```
+      ```
+    .\AddUsersToHold.ps1
+      ```
 
 4. Enter the information that the script prompts you for.
     
-    The script connects to Security &amp; Compliance Center using remote PowerShell, and then creates the new hold in the eDiscovery case and adds the mailboxes and OneDrive for Business for the users in the list. You can go to the case on the **eDiscovery** page in the Security &amp; Compliance Center to view the new hold. 
+    The script connects to Security & Compliance Center PowerShell, and then creates the new hold in the eDiscovery case and adds the mailboxes and OneDrive for Business for the users in the list. You can go to the case on the **eDiscovery** page in the Security &amp; Compliance Center to view the new hold. 
     
 After the script is finished running, it creates the following log files, and saves them to the folder where the script is located.
   
-- **LocationsOnHold.txt**Contains a list of mailboxes and OneDrive for Business sites that the script successfully placed on hold.
+- **LocationsOnHold.txt** - Contains a list of mailboxes and OneDrive for Business sites that the script successfully placed on hold.
     
-- **LocationsNotOnHold.txt**Contains a list of mailboxes and OneDrive for Business sites that the script did not place on hold. If a user has a mailbox, but not a OneDrive for Business site, the user would be included in the list of OneDrive for Business sites that weren't placed on hold.
+- **LocationsNotOnHold.txt** - Contains a list of mailboxes and OneDrive for Business sites that the script did not place on hold. If a user has a mailbox, but not a OneDrive for Business site, the user would be included in the list of OneDrive for Business sites that weren't placed on hold.
     
-- **GetCaseHoldPolicy.txt**Contains the output of the **Get-CaseHoldPolicy** cmdlet for the new hold, which the script ran after creating the new hold. The information returned by this cmdlet includes a list of users whose mailboxes and OneDrive for Business sites were placed on hold and whether the hold is enabled or disabled. 
+- **GetCaseHoldPolicy.txt** - Contains the output of the **Get-CaseHoldPolicy** cmdlet for the new hold, which the script ran after creating the new hold. The information returned by this cmdlet includes a list of users whose mailboxes and OneDrive for Business sites were placed on hold and whether the hold is enabled or disabled. 
     
-- **GetCaseHoldRule.txt**Contains the output of the **Get-CaseHoldRule** cmdlet for the new hold, which the script ran after creating the new hold. The information returned by this cmdlet includes the search query if you used the script to create a query-based hold. 
-    
-[Return to top](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#top)
-  
-
+- **GetCaseHoldRule.txt** - Contains the output of the **Get-CaseHoldRule** cmdlet for the new hold, which the script ran after creating the new hold. The information returned by this cmdlet includes the search query if you used the script to create a query-based hold. 

@@ -30,28 +30,21 @@ In this example, Contoso LTD is anOffice 365 organization that consists of two s
     
 - Role groups also control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
     
-Here's the process for setting up compliance boundaries. This topic will also describe limitations, and using compliance boundaries in a SharePoint Multi-Geo environment.
+Here's the process for setting up compliance boundaries:
   
-[Step 1: Identify a user attribute to define your agencies](set-up-compliance-boundaries.md#step1)
-  
-[Step 2: File a request with Microsoft Support to synchronize the user attribute to OneDrive accounts](set-up-compliance-boundaries.md#step2)
-  
-[Step 3: Create a role group for each agency](set-up-compliance-boundaries.md#step3)
-  
-[Step 4: Create a search permissions filter to enforce the compliance boundary](set-up-compliance-boundaries.md#step4)
-  
-[Step 5: Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step5)
-  
-[Compliance boundary limitations](set-up-compliance-boundaries.md#limitations)
-  
-[Searching and exporting SharePoint content in Multi-Geo environments](set-up-compliance-boundaries.md#multigeo)
-  
-[Frequently asked questions](set-up-compliance-boundaries.md#faq)
+[Step 1: Identify a user attribute to define your agencies](#step-1-identify-a-user-attribute-to-define-your-agencies)
+
+[Step 2: File a request with Microsoft Support to synchronize the user attribute to OneDrive accounts](#step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts)
+
+[Step 3: Create a role group for each agency](#step-3-create-a-role-group-for-each-agency)
+
+[Step 4: Create a search permissions filter to enforce the compliance boundary](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+
+[Step 5: Create an eDiscovery case for an intra-agency investigations](#step-5-create-an-ediscovery-case-for-an-intra-agency-investigations)
   
 ## Step 1: Identify a user attribute to define your agencies
-<a name="step1"> </a>
 
-The first step is to choose an Azure Active Directory attribute to use that will define your agencies. This attribute will be used to create the search permissions filter that limits an eDiscovery manager to search only the content locations of users who are assigned a specific value for this attribute. For example, let's say Contoso decides to use the **Department** attribute. The value for this attribute for users in the Fourth Coffee subsidiary would be  *FourthCoffee*  and the value for users in Coho Winery subsidiary would be  * CohoWinery *  . In Step 4, you'll use this  *attribute:value*  pair (for example,  *Department:FourthCoffee*  ) to limit the user content locations that eDiscovery managers can search. 
+The first step is to choose an Azure Active Directory attribute to use that will define your agencies. This attribute will be used to create the search permissions filter that limits an eDiscovery manager to search only the content locations of users who are assigned a specific value for this attribute. For example, let's say Contoso decides to use the **Department** attribute. The value for this attribute for users in the Fourth Coffee subsidiary would be  `FourthCoffee`  and the value for users in Coho Winery subsidiary would be `CohoWinery`. In Step 4, you'll use this  `attribute:value`  pair (for example,  *Department:FourthCoffee*  ) to limit the user content locations that eDiscovery managers can search. 
   
 Here's a list of Azure Active Directory user attributes that you can use for compliance boundaries:
   
@@ -67,10 +60,7 @@ Here's a list of Azure Active Directory user attributes that you can use for com
     
 Although more user attributes are available, particularly for Exchange mailboxes, the attributes listed above are the only ones currently supported by OneDrive.
   
-[Return to top](set-up-compliance-boundaries.md#top)
-  
 ## Step 2: File a request with Microsoft Support to synchronize the user attribute to OneDrive accounts
-<a name="step2"> </a>
 
 The next step is to file a request with Microsoft Support to synchronize the Azure Active Directory attribute that you chose in Step 1 to all OneDrive accounts in your organization. After this synchronization occurs, the attribute (and its value) that you chose in Step 1 will be mapped to a hidden managed property in SharePoint named  `ComplianceAttribute`. You'll use this attribute to create the search permissions filter for OneDrive in Step 4.
   
@@ -86,10 +76,7 @@ After the engineering change is made and the attribute is synchronized to OneDri
   
  **Important:** You can complete Step 3 through Step 5 before the change is deployed. But running content searches won't return documents from OneDrive sites specified in the search permissions filter until after the change is deployed. 
   
-[Return to top](set-up-compliance-boundaries.md#top)
-  
 ## Step 3: Create a role group for each agency
-<a name="step3"> </a>
 
 The next step is to create the role groups in the Office 365 Security &amp; Compliance Center that will align with your agencies. We recommend that you create a new role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions in the Office‍ 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md).
   
@@ -105,7 +92,7 @@ Using the Contoso compliance boundaries scenario, four role groups need to be cr
     
 - Coho Winery Investigators
     
-[Return to top](set-up-compliance-boundaries.md#top)
+
   
 ## Step 4: Create a search permissions filter to enforce the compliance boundary
 <a name="step4"> </a>
@@ -113,69 +100,53 @@ Using the Contoso compliance boundaries scenario, four role groups need to be cr
 After you've created role groups for each agency, the next step is to create the search permissions filters that associate each role group to its specific agency and defines the compliance boundary itself. You need to create one search permissions filter for each agency. For more information about creating security permissions filters, see [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md).
   
 Here's the syntax that's used to create a search permissions filter used for compliance boundaries.
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq <AttributeValue>' -or Site_Path -like <SharePointURL> *'" -Action <Action >
-
 ```
-
-|
-   
+  
 Here's a description of each parameter in the command:
   
--  `FilterName` Specifies the name of the filter. Use a name that describes or identifies the agency that filter will be used in. 
+-  `FilterName` - Specifies the name of the filter. Use a name that describes or identifies the agency that filter will be used in. 
     
--  `Users` Specifies the users or groups who get this filter applied to the Content Search actions they perform. For compliance boundaries, this parameter specifies the role groups (that you created in Step 3) in the agency that you're creating the filter for. Note this is a multi-value parameter so you can include one or more role groups, separated by commas. 
+-  `Users` - Specifies the users or groups who get this filter applied to the Content Search actions they perform. For compliance boundaries, this parameter specifies the role groups (that you created in Step 3) in the agency that you're creating the filter for. Note this is a multi-value parameter so you can include one or more role groups, separated by commas. 
     
--  `Filters` Specifies the search criteria for the filter. For the compliance boundaries, you will define the following filters. Each one applies to a user content location. 
+-  `Filters` - Specifies the search criteria for the filter. For the compliance boundaries, you will define the following filters. Each one applies to a user content location. 
     
-  -  `Mailbox` Specifies the mailboxes that the role groups defined in the  `Users` parameter can search. For compliance boundaries,  *ComplianceAttribute*  is the same attribute that you identified in Step 1 and  *AttributeValue*  specifies the agency. This filter allow members of the role group to only search the mailboxes in a specific agency; for example,  `"Mailbox_Department -eq 'FourthCoffee'"` . 
+  -  `Mailbox` - Specifies the mailboxes that the role groups defined in the  `Users` parameter can search. For compliance boundaries,  *ComplianceAttribute*  is the same attribute that you identified in Step 1 and  *AttributeValue*  specifies the agency. This filter allow members of the role group to only search the mailboxes in a specific agency; for example,  `"Mailbox_Department -eq 'FourthCoffee'"` . 
     
-  -  `Site` Specifies the OneDrive accounts that the role groups defined in the  `Users` parameter can search. For the OneDrive filter, use the actual string  `ComplianceAttribute`; this will map to the same attribute that you identified in Step 1 and that's synchronized to OneDrive accounts as a result of the support request that you submitted in Step 2;  *AttributeValue*  specifies the agency. This filter allow members of the role group to only search the OneDrive accounts in a specific agency; for example,  `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+  -  `Site` - Specifies the OneDrive accounts that the role groups defined in the  `Users` parameter can search. For the OneDrive filter, use the actual string  `ComplianceAttribute`; this will map to the same attribute that you identified in Step 1 and that's synchronized to OneDrive accounts as a result of the support request that you submitted in Step 2;  *AttributeValue*  specifies the agency. This filter allow members of the role group to only search the OneDrive accounts in a specific agency; for example,  `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path` Specifies the SharePoint sites that the role groups defined in the  `Users` parameter can search. The  *SharePointURL*  specifies the sites in the agency that members of the role group can search; for example,  `Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path` - Specifies the SharePoint sites that the role groups defined in the  `Users` parameter can search. The  *SharePointURL*  specifies the sites in the agency that members of the role group can search; for example,  `Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
--  `Action` Specifies the type of Compliance Search action that the filter is applied to. For example,  `-Action Search` would only apply the filter when members of the role groups defined in the  `Users` parameter runs a content search. In this case, the filter wouldn't be applied when exporting search results. For compliance boundaries, use  `-Action All` so the filter applies to all search actions. 
+-  `Action` - Specifies the type of Compliance Search action that the filter is applied to. For example,  `-Action Search` would only apply the filter when members of the role groups defined in the  `Users` parameter runs a content search. In this case, the filter wouldn't be applied when exporting search results. For compliance boundaries, use  `-Action All` so the filter applies to all search actions. 
     
-    For a list of the Content Search actions, see the "New-ComplianceSecurityFilter" section in [New-ComplianceSecurityFilter](permissions-filtering-for-content-search.md#New).
+    For a list of the Content Search actions, see the "New-ComplianceSecurityFilter" section in [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
     
 Here are examples of the two search permissions filters that would be created to support the Contoso compliance boundaries scenario.
   
  **Fourth Coffee**
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
-
-|
    
  **Coho Winery**
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
-|
-   
-[Return to top](set-up-compliance-boundaries.md#top)
-  
 ## Step 5: Create an eDiscovery case for an intra-agency investigations
-<a name="step5"> </a>
 
 The final step is to create a new eDiscovery case in the Security &amp; Compliance Center and then add the role group—that you created in Step 3—as a member of the case. This results in two important characteristics of using compliance boundaries:
   
 - Only members of the role group added to the case will be able to see and access the case in the Security &amp; Compliance Center. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
     
 - When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 4.)
+
+
+To create a new case and assign members:
     
 1. Go to the **eDiscovery** page in the Security &amp; Compliance Center and create a new case. 
     
@@ -188,11 +159,8 @@ The final step is to create a new eDiscovery case in the Security &amp; Complian
 4. In the list of role groups, select one of the role groups that you created in Step 3, and click **Add**.
     
 5. Click **Save** on the **Manage this case** flyout to save the change. 
-    
-[Return to top](set-up-compliance-boundaries.md#top)
-  
+
 ## Compliance boundary limitations
-<a name="limitations"> </a>
 
 Keep the following limitations in mind when managing eDiscovery cases and investigations that use of compliance boundaries.
   
@@ -203,11 +171,8 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
     Additionally, hold statistics will only apply to content locations in the agency.
     
 - Search permissions filters aren't applied to Exchange public folders.
-    
-[Return to top](set-up-compliance-boundaries.md#top)
-  
+
 ## Searching and exporting SharePoint content in Multi-Geo environments
-<a name="multigeo"> </a>
 
 Search permissions filters also let you control where content is routed for export and which datacenters can be searched SharePoint sites and OneDrive accounts in a [SharePoint Multi-Geo environment](https://go.microsoft.com/fwlink/?linkid=860840):
   
@@ -215,13 +180,13 @@ Search permissions filters also let you control where content is routed for expo
     
 - Route searches of SharePoint sites and OneDrive accounts to a satellite data center. This means you can specify the data center location where searches will be run.
     
-Use the **Region** parameter for **New-ComplianceSecurityFilter** or **Set-ComplianceSecurityFilter** cmdlets to create or change which datacenter the export will be routed through: 
+Use the **Region** parameter for **New-ComplianceSecurityFilter** or **Set-ComplianceSecurityFilter** cmdlets to create or change which datacenter the export will be routed through.
   
 |**Parameter value**|**Data center location**|
 |:-----|:-----|
-|NAM﻿  <br/> |North American﻿ (actual data centers are in the US)  <br/> |
-|EUR﻿  <br/> |Europe﻿  <br/> |
-|APC﻿  <br/> |Asia Pacific﻿  <br/> |
+|NAM  <br/> |North American (actual data centers are in the US)  <br/> |
+|EUR  <br/> |Europe  <br/> |
+|APC  <br/> |Asia Pacific  <br/> |
    
 Similarly, you can use the following values for the **Region** parameter values to control which data center that Content Searches will run in when searching SharePoint and OneDrive locations. Note that the following table also shows which data center exports will be routed through. 
   
@@ -242,23 +207,13 @@ Similarly, you can use the following values for the **Region** parameter values 
   
 Here are examples of using the **-Region** parameter when creating search permission filters for compliance boundaries. This assumes that the Fourth Coffee subsidiary is located in North America and that Coho Winery is in Europe. 
   
-||
-|:-----|
-|
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
-|
-   
-||
-|:-----|
-|
 ```
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
-
-|
    
 Keep the following things in mind when searching and exporting SharePoint and OneDrive content in multi-geo environments.
   
@@ -270,21 +225,13 @@ Keep the following things in mind when searching and exporting SharePoint and On
     
 - When exporting search results, content from all content locations (including Exchange, Skype for Business, SharePoint, OneDrive and other Office 365 services that you can search by using the Content Search tool) will be uploaded to the Azure storage location in the data center that's specified by the **Region** parameter. This helps organizations stay within compliance by not allowing content to be exported across controlled borders. If no region is specified in the search permissions filter, content is uploaded to the organization's default region. 
     
-- You can edit an existing search permissions filter to add or change the region by running the following command.
-    
-||
-|:-----|
-|
-```
-  Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
-```
+- You can edit an existing search permissions filter to add or change the region by running the following command:
 
-|
-   
-[Return to top](set-up-compliance-boundaries.md#top)
-  
+    ```
+    Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
+    ```
+ 
 ## Frequently asked questions
-<a name="faq"> </a>
 
  **Who can create and manage search permissions filters (using New-ComplianceSecurityFilter and Set-ComplianceSecurityFilter cmdlets )?**
   
@@ -292,7 +239,7 @@ To create, view and modify search permissions filters, you have to be a member o
   
  **If an eDiscovery manager is assigned to more than one role group that spans multiple agencies, how do they search for content in one agency or the other?**
   
-The eDiscovery manager can add parameters to their search query that will restrict the search to a specific agency. For example, if an organization has specified the **CustomAttribute10** property to differentiate agencies, they can append the following to their search to search mailboxes and OneDrive accounts in a specific agency:  `CustomAttribute10:<value> AND Site_`ComplianceAttribute `:<value>`.
+The eDiscovery manager can add parameters to their search query that will restrict the search to a specific agency. For example, if an organization has specified the **CustomAttribute10** property to differentiate agencies, they can append the following to their search query to search mailboxes and OneDrive accounts in a specific agency:  `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`.
   
  **What happens if the value of the attribute that's used as the compliance attribute in a search permissions filter is changed?**
   
@@ -313,7 +260,3 @@ If the region specified in the search permissions filter doesn't exist in your o
  **What is the maximum number of search permissions filters that can be created in an organization?**
   
 There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
-  
-[Return to top](set-up-compliance-boundaries.md#top)
-  
-

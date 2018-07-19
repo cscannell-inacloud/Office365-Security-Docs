@@ -42,18 +42,12 @@ The first step is to create a CSV file that contains information about each exte
     > [!TIP]
     > If your language contains special characters (such as **å**, **ä**, and **ö** in Swedish) save the CSV file with UTF-8 or other Unicode encoding when you save the file in NotePad. 
   
-||
-|:-----|
-|
-```
-  ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
-  danp@fabrikam.com,Dan Park,Dan,Park,1234 23rd Ave,Golden,CO,80215,206-111-1234,303-900-1234,555-1212,123-456-7890,Fabrikam,Shipping clerk,555-5555,Shipping,US,123-4567,R.,Good worker,31/1663,Dan Park
-  pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
-  
-```
+    ```
+    ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
+    danp@fabrikam.com,Dan Park,Dan,Park,1234 23rd Ave,Golden,CO,80215,206-111-1234,303-900-1234,555-1212,123-456-7890,Fabrikam,Shipping clerk,555-5555,Shipping,US,123-4567,R.,Good worker,31/1663,Dan Park
+    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park 
+    ```
 
-|
-   
     The first row, or header row, of the CSV file lists the properties of contacts that can be used when you import them to Exchange Online. Each property name is separated by a comma. Each row under the header row represents the property values for importing a single external contact. 
     
     > [!NOTE]
@@ -65,7 +59,6 @@ The first step is to create a CSV file that contains information about each exte
     
     > [!IMPORTANT]
     >  The following properties (which are the first four items in the header row) are required to create an external contact and must be populated in the CSV file: **ExternalEmailAddress**, **Name**, **FirstName**, **LastName**. The PowerShell command that you run in Step 2 will use the values for these properties to create the contacts. 
-  
 
 ## Step 2: Create the external contacts with PowerShell
 
@@ -73,20 +66,14 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
   
 1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Be sure to use the user name and password for your Office 365 global administrator account when you connect to Exchange Online PowerShell. 
     
-2. After you connect PowerShell to Exchange Online, go to the desktop folder where you saved the CSV file in Step 1; for example C:\Users\Administrator\desktop.
+2. After you connect PowerShell to Exchange Online, go to the desktop folder where you saved the CSV file in Step 1; for example `C:\Users\Administrator\desktop`.
     
 3. Run the following command to create the external contacts:
-    
-||
-|:-----|
-|
-```
-  Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
-  
-```
 
-|
-   
+    ```
+    Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
+    ```
+
     It might take a while to create the new contacts, depending on how many you're importing. When the command is finished running, PowerShell displays a list of the new contacts that were created. 
     
 4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> **Contacts**. 
@@ -94,7 +81,7 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
     > [!TIP]
     > For instructions for connecting to the EAC, see [Exchange admin center in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=328197). 
   
-5. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list and see the external contacts that were imported. 
+5. If necessary, click **Refresh** ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list and see the external contacts that were imported. 
     
     The imported contacts will appear in the shared address book in Outlook and Outlook on the web.
     
@@ -107,30 +94,19 @@ After you run the command in Step 2, the external contacts are created, but they
   
 1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Go to the desktop folder where you saved the CSV file in Step 1; for example C:\Users\Administrator\desktop.
+2. Go to the desktop folder where you saved the CSV file in Step 1; for example `C:\Users\Administrator\desktop`.
     
 3. Run the following two commands to add the other properties from the CSV file to the external contacts that you created in Step 2.
     
-||
-|:-----|
-|
-```
-  $Contacts = Import-CSV .\ExternalContacts.csv
+    ```
+    $Contacts = Import-CSV .\ExternalContacts.csv
   
-```
+    ```
 
-|
-   
-||
-|:-----|
-|
-```
-  $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes $_.Notes -Office $_.Office -Manager $_.Manager}
-  
-```
+    ```
+    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+    ```
 
-|
-   
     > [!NOTE]
     > The  _Manager_ parameter might be problematic. If the cell is blank in the CSV file, you will get an error and none of the property information will be added to the contact. If you don't need to specify a manager, then just delete  ` -Manager $_.Manager ` from the previous PowerShell command. 
   
@@ -142,9 +118,7 @@ After you run the command in Step 2, the external contacts are created, but they
     
 2. Click a contact and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
     
-That's it. Users can see the contacts and the additional information in the address book Outlook and Outlook on the web.
-  
-
+That's it! Users can see the contacts and the additional information in the address book Outlook and Outlook on the web.
   
 ## Add more external contacts
 
@@ -155,44 +129,26 @@ You can repeat Steps 1 through Step 3 to add new external contacts in Exchange O
   
 ## Hide external contacts from the shared address book>
 
-Some companies may use external contacts only so they can be added as members of distribution groups. In this scenario, they may want to hide external contacts from the shared address book. Here's how.
+Some companies may use external contacts only so they can be added as members of distribution groups. In this scenario, they may want to hide external contacts from the shared address book. Here's how:
   
 1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
 2. To hide a single external contact, run the following command.
     
-||
-|:-----|
-|
-```
-  Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true
-  
-```
-
-|
-   
+    ```
+    Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
+    ```
+ 
     For example, to hide Pilar Pinilla from the shared address book, run this command:
-    
-||
-|:-----|
-|
-```
-  Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
-  
-```
 
-|
+    ```
+    Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
+    ```
    
 3. To hide all external contacts from the shared address book, run this command:
-    
-||
-|:-----|
-|
-```
-  Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true
-  
-```
 
-|
-   
+    ```
+    Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
+    ```
+
 After you hide them, external contacts aren't displayed in the shared address book, but you can still add them as members of a distribution group.
