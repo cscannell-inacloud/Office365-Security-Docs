@@ -257,7 +257,6 @@
 # Monitor security and compliance
 ## [Monitor security and compliance in Office 365](monitor-security-and-compliance.md)
 ## [Alert policies in the Office 365 Security & Compliance Center](alert-policies.md)
-## [Alerts in the Office 365 Security & Compliance Center](alerts.md)
 ## [Create activity alerts in the Office 365 Security and Compliance Center](create-activity-alerts.md)
 ## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
 ### [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
