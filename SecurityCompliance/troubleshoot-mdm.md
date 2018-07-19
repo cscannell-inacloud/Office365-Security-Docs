@@ -34,7 +34,7 @@ To start, check the following:
     
 ## iOS phone or tablet
 
-- Make sure that you've [set up an APNs certificate](create-an-apns-certificate-for-ios.md).
+- Make sure that you've [set up an APNs certificate](https://support.office.com/article/522b43f4-a2ff-46f6-962a-dd4f47e546a7).
     
 - In **Settings** \> **General** \> **Profile** (or **Device Management**), make sure that a **Management Profile** is not already installed. If it is, remove it. 
     

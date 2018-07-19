@@ -28,22 +28,22 @@ Perform the following procedure on the computer that you'll use to export the re
     
 2. Save the following text to a Window registry file by using a filename suffix of .reg; for example, PstExportSize.reg. 
     
-  ```
-  Windows Registry Editor Version 5.00
-  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
-  "PstSizeLimitInBytes"="1073741824"
-  ```
+    ```
+    Windows Registry Editor Version 5.00
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
+    "PstSizeLimitInBytes"="1073741824"
+    ```
 
     In the example above, the  `PstSizeLimitInBytes` value is set to 1,073,741,824 bytes or approximately 1 GB. Here are some other sample values for the  `PstSizeLimitInBytes` setting. 
     
-|**Size in GB (approx.)**|**Size in bytes**|
-|:-----|:-----|
-|.7 GB (700 MB)  <br/> |751619277  <br/> |
-|2 GB  <br/> |2147483648  <br/> |
-|4 GB  <br/> |4294967296  <br/> |
-|8 GB  <br/> |8589934592  <br/> |
+    |**Size in GB (approx.)**|**Size in bytes**|
+    |:-----|:-----|
+    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |2 GB  <br/> |2147483648  <br/> |
+    |4 GB  <br/> |4294967296  <br/> |
+    |8 GB  <br/> |8589934592  <br/> |
    
-3. Change the  `PstSizeLimitInBytes` value to the desired maximum size of a PST file when you export search results, and then save the file. 
+3. Change the `PstSizeLimitInBytes` value to the desired maximum size of a PST file when you export search results, and then save the file. 
     
 4. In Windows Explorer, click or double-click the .reg file that you created in the previous steps.
     
@@ -54,8 +54,6 @@ Perform the following procedure on the computer that you'll use to export the re
     The Registry Editor displays a message saying that the setting was successfully added to the registry.
     
 7. You can repeat steps 3 - 6 to change the value for the  `PstSizeLimitInBytes` registry setting. 
-    
-[Return to top](change-the-size-of-pst-files-when-exporting-results.md#top)
   
 ## Frequently asked questions about changing the default size of PST files when you export eDiscovery search results
 
@@ -78,7 +76,3 @@ No, you don't have to reboot the computer. But, if the Office 365 eDiscovery Exp
  **Does an existing registry key get edited or does a new key get created?**
   
 A new registry key is created the first time you run the .reg file that you created in this procedure. Then the setting is edited each time you change and re-run the .reg edit file.
-  
-[Return to top](change-the-size-of-pst-files-when-exporting-results.md#top)
-  
-

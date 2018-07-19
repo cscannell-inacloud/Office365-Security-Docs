@@ -35,7 +35,7 @@ To set up Mobile Device Management for Office 365 you'll need to:
   
 ## Activate the Mobile Device Management service
 
-1. [Sign in to Office 365](where-to-sign-in.md) with your work or school account. 
+1. Sign in to Office 365 with your work or school account. 
     
 2. Go to [Security &amp; Compliance Center](https://protection.office.com).
     

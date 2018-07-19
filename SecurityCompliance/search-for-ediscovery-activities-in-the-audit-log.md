@@ -33,7 +33,6 @@ Content Search and eDiscovery-related activities that are performed in Office 36
 For more information about searching the Office 365 audit log, the permissions that are required, and exporting search results, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 ## How to search for and view eDiscovery activities
-<a name="__top"> </a>
 
 Currently, you have to do a few specific things to view eDiscovery activities in the Office 365 audit log. Here's how.
   
@@ -58,12 +57,10 @@ Currently, you have to do a few specific things to view eDiscovery activities in
     
 9. To view details about an activity, click the activity record in the list of search results. 
     
-    A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, click **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](search-for-ediscovery-activities-in-the-audit-log.md#eDiscoveryProperties) section. 
-    
-[Content Search and eDiscovery-related activities that are performed in Office 365 Security &amp; Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Office 365 Security &amp; Compliance Center:Creating and managing eDiscovery casesCreating, starting, and editing Content SearchesPerforming Content Search actions, such as previewing, exporting, and deleting search resultsConfiguring permissions filtering for Content SearchManaging the eDiscovery Administrator roleThe activities described in this article are only the result of eDiscovery tasks performed by using the Security &amp; Compliance Center. eDiscovery tasks that were performed by using the In-Place eDiscovery tool in Exchange Online or the eDiscovery Center in SharePoint Online aren't included.For more information about searching the Office 365 audit log, the permissions that are required, and exporting search results, see Search the audit log in the Office 365 Security &amp; Compliance Center.](search-for-ediscovery-activities-in-the-audit-log.md#__top)
+    A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, click **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](#detailed-properties-for-ediscovery-activities) section. 
+
   
 ## eDiscovery activities
-<a name="eDiscoveryNRT"> </a>
 
 The following table describes the Content Search and eDiscovery-related activities that are logged when an administrator or user performs an eDiscovery-related activity by using the Security &amp; Compliance Center or by running the corresponding cmdlet in remote PowerShell that's connected to your organization's Security &amp; Compliance Center. 
   
@@ -106,11 +103,8 @@ The following table describes the Content Search and eDiscovery-related activiti
 |Started export of content search  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |A user exported the results of a content search.  <br/> |
 |Started export report  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |A user exported a content search report.  <br/> |
 |Stopped content search  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |A user stopped a content search.  <br/> |
-   
-[Content Search and eDiscovery-related activities that are performed in Office 365 Security &amp; Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Office 365 Security &amp; Compliance Center:Creating and managing eDiscovery casesCreating, starting, and editing Content SearchesPerforming Content Search actions, such as previewing, exporting, and deleting search resultsConfiguring permissions filtering for Content SearchManaging the eDiscovery Administrator roleThe activities described in this article are only the result of eDiscovery tasks performed by using the Security &amp; Compliance Center. eDiscovery tasks that were performed by using the In-Place eDiscovery tool in Exchange Online or the eDiscovery Center in SharePoint Online aren't included.For more information about searching the Office 365 audit log, the permissions that are required, and exporting search results, see Search the audit log in the Office 365 Security &amp; Compliance Center.](search-for-ediscovery-activities-in-the-audit-log.md#__top)
   
 ## eDiscovery cmdlet activities
-<a name="eDiscoverycmdlets"> </a>
 
 The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the Security &amp; Compliance Center or by running the corresponding cmdlet in remote PowerShell that's connected to your organization's Security &amp; Compliance Center. Note that the detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section. 
   
@@ -147,15 +141,12 @@ As previously stated, it takes up to 24 hours for eDiscovery cmdlet activities t
 |Deleted eDiscovery administrator  <br/> |[Remove-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823945) <br/> |An eDiscovery Administrator was deleted from your organization.  <br/> |
 |Changed eDiscovery administrator membership  <br/> |[Update-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823946) <br/> |The list of eDiscovery Administrators in your organization was changed. This activity is logged when the list of eDiscovery Administrators is replaced with a group of new users. If a single user is added or removed, the **Add-eDiscoveryCaseAdmin** or **Remove-eDiscoveryCaseAdmin** operation is logged.  <br/> |
    
-[Content Search and eDiscovery-related activities that are performed in Office 365 Security &amp; Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Office 365 Security &amp; Compliance Center:Creating and managing eDiscovery casesCreating, starting, and editing Content SearchesPerforming Content Search actions, such as previewing, exporting, and deleting search resultsConfiguring permissions filtering for Content SearchManaging the eDiscovery Administrator roleThe activities described in this article are only the result of eDiscovery tasks performed by using the Security &amp; Compliance Center. eDiscovery tasks that were performed by using the In-Place eDiscovery tool in Exchange Online or the eDiscovery Center in SharePoint Online aren't included.For more information about searching the Office 365 audit log, the permissions that are required, and exporting search results, see Search the audit log in the Office 365 Security &amp; Compliance Center.](search-for-ediscovery-activities-in-the-audit-log.md#__top)
-  
 ## Detailed properties for eDiscovery activities
-<a name="eDiscoveryProperties"> </a>
 
 The following table describes the properties that are included when you click **More information** on the **Details** page for an eDiscovery activity listed in the search results. These properties are also included in the CSV file when you export the audit log search results. Note that an audit log record for an eDiscovery activity won't include every detailed property listed below. 
   
 > [!TIP]
-> When you export the search results, the CSV file contains a column named **Detail**, which contains the detailed properties described in the following table in a multi-value property. You can use the Power Query feature in Excel to split this column into multiple columns so that each property will have its own column. This will let you sort and filter on one or more of these properties. For more information, see the "Export the search results to a file" section in [Step 4: Export the search results to a file](search-the-audit-log-in-security-and-compliance.md#export). 
+> When you export the search results, the CSV file contains a column named **Detail**, which contains the detailed properties described in the following table in a multi-value property. You can use the Power Query feature in Excel to split this column into multiple columns so that each property will have its own column. This will let you sort and filter on one or more of these properties. For more information, see the "Export the search results to a file" section in [Search the audit log in the Office 365 Security & Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file). 
   
 |**Property**|**Description**|
 |:-----|:-----|
@@ -178,7 +169,7 @@ The following table describes the properties that are included when you click **
 |Parameters  <br/> |The name and value for the parameters that were used with the corresponding cmdlet.  <br/> |
 |PublicFolderLocations  <br/> |The public folder locations in Exchange Online that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
 |Query  <br/> |The search query associated with the activity, such as a content search or a query-based hold.  <br/> |
-|RecordType  <br/> |The type of operation indicated by the record. The value of **18** indicates an event related to an activity listed in the [eDiscovery cmdlet activities](search-for-ediscovery-activities-in-the-audit-log.md#eDiscoverycmdlets) section. A value of **24** indicates an event related to an activity listed in the [eDiscovery activities](search-for-ediscovery-activities-in-the-audit-log.md#eDiscoveryNRT) section.  <br/> |
+|RecordType  <br/> |The type of operation indicated by the record. The value of **18** indicates an event related to an activity listed in the [eDiscovery cmdlet activities](#ediscovery-cmdlet-activities) section. A value of **24** indicates an event related to an activity listed in the [How to search for and view eDiscovery activities](#how-to-search-for-and-view-ediscovery-activities) section.  <br/> |
 |ResultStatus  <br/> |Indicates whether the action (specified in the Operation property) was successful or not.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Indicates that the activity was a Security &amp; Compliance Center event. All eDiscovery activities will have a value of **0** for this property.  <br/> |
 |SharepointLocations  <br/> |The SharePoint Online sites that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
@@ -189,7 +180,3 @@ The following table describes the properties that are included when you click **
 |UserType  <br/> |The type of user that performed the operation. The following values indicate the user type.  <br/> 0   A regular user. 2   An administrator in your Office 365  organization. 3   A Microsoft datacenter administrator or datacenter system account. 4   A system account. 5   An application. 6   A service principal. |
 |Version  <br/> |Indicates the version number of the activity (identified by the Operation property) that's logged.  <br/> |
 |Workload  <br/> |The Office 365 service where the activity occurred. For eDiscovery activities, the value is **SecurityComplianceCenter**.  <br/> |
-   
-[Content Search and eDiscovery-related activities that are performed in Office 365 Security &amp; Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Office 365 Security &amp; Compliance Center:Creating and managing eDiscovery casesCreating, starting, and editing Content SearchesPerforming Content Search actions, such as previewing, exporting, and deleting search resultsConfiguring permissions filtering for Content SearchManaging the eDiscovery Administrator roleThe activities described in this article are only the result of eDiscovery tasks performed by using the Security &amp; Compliance Center. eDiscovery tasks that were performed by using the In-Place eDiscovery tool in Exchange Online or the eDiscovery Center in SharePoint Online aren't included.For more information about searching the Office 365 audit log, the permissions that are required, and exporting search results, see Search the audit log in the Office 365 Security &amp; Compliance Center.](search-for-ediscovery-activities-in-the-audit-log.md#__top)
-  
-

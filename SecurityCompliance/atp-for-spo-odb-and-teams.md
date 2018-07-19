@@ -20,7 +20,7 @@ description: "Extend Office 365 Advanced Threat Protection to files in SharePoin
 People regularly share files and collaborate using SharePoint, OneDrive, and Microsoft Teams. With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your organization can collaborate in a safer manner. ATP helps detect and block files that are identified as malicious in team sites and document libraries. Read this article to get an overview of ATP for SharePoint Online, OneDrive for Business, and Microsoft Teams, and then take your next steps. 
   
 > [!TIP]
-> In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> In order to perform the tasks described in this article, you must be an Office 365 global administrator or a security administrator. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## How it works
 
@@ -63,14 +63,12 @@ If you're part of your organization's Office 365 security team and have the nece
 - **Downloading a file** enables you to download and analyze the file for any false positives. 
     
 ## Next steps
-<a name="next"> </a>
 
 - [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
     
 - [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
     
 ## Related topics
-<a name="related"> </a>
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

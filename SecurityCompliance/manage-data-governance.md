@@ -1,7 +1,7 @@
 ---
 title: "Manage data governance in Office 365"
 ms.author: stephow
-author: stephow
+author: stephow-msft
 manager: laurawi
 ms.date: 5/9/2018
 ms.audience: Admin

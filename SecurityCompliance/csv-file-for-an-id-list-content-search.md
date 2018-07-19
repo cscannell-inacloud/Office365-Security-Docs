@@ -23,23 +23,20 @@ Here's a quick overview of the process for creating an ID list search.
     
 2. Export the content search results or export the content search report. For more information, see:
     
-  - [Export Content Search results from the Office 365 Security &amp; Compliance Center](export-search-results.md)
+    - [Export Content Search results from the Office 365 Security &amp; Compliance Center](export-search-results.md)
     
-  - [Export a Content Search report](export-a-content-search-report.md)
+    - [Export a Content Search report](export-a-content-search-report.md)
     
-3. Edit the **Results.csv** file or the **Unindexed Items.csv** and identify the specific mailbox items that you want to include in the ID list search. See the [Prepare the CSV file for an ID list search](csv-file-for-an-id-list-content-search.md#prepare) for preparing a CSV file for an ID list search. 
+3. Edit the **Results.csv** file or the **Unindexed Items.csv** and identify the specific mailbox items that you want to include in the ID list search. See the [instructions](#prepare-the-csv-file-for-an-id-list-search) for preparing a CSV file for an ID list search. 
     
-4. Create a new ID list search (see the [Create an ID list search](csv-file-for-an-id-list-content-search.md#create)) and submit the CSV file that you prepared. The search query that's created will only search for the items selected in the CSV file.
+4. Create a new ID list search (see the [instructions](#create-an-id-list-search)) and submit the CSV file that you prepared. The search query that's created will only search for the items selected in the CSV file.
     
 > [!NOTE]
 > ID list searches are only supported for mailbox items. You can't search for SharePoint and OneDrive documents in an ID list search. 
   
  **Why create an ID list search?** If you're unable to determine if an item is responsive to an eDiscovery request based on the metadata in the **Results.csv** or **Unindexed Items.csv** files, you can use an ID list search to find, preview, and then export that item to determine if it's responsive to the case you're investigating. ID list searches are typically used to search for and return a specific set of unindexed items. 
   
-[Return to top](csv-file-for-an-id-list-content-search.md#top)
-  
 ## Prepare the CSV file for an ID list search
-<a name="prepare"> </a>
 
 After you export the search results or report for a content search, you can perform the following steps to prepare the CSV file for an ID list search. This CSV file will identify every item in the ID list search.
   
@@ -54,7 +51,7 @@ Note that you can use a CSV file from a search that included SharePoint sites an
     > [!IMPORTANT]
     > When you open the CSV file in Excel, the data format for the **Document ID** column is changed to **General**. This results in displaying the document ID for an item in scientific notation. For example, the document ID of "481037338205" is displayed as "4.81037E+11" You have to perform the next steps to change the data format of the **Document ID** column to **Number** to restore the correct format for the document ID. If you don't do this, the ID list search that uses the CSV file will fail. 
   
-4. Right-click the entire ** Document ID ** column and select **Format Cells**.
+4. Right-click the entire **Document ID** column and select **Format Cells**.
     
 5. In the **Category** box, click **Number**.
     
@@ -65,11 +62,8 @@ Note that you can use a CSV file from a search that included SharePoint sites an
     ![Example of a CSV file for a targeted content search](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
   
 7. Save the CSV file or use **Save As** to the save the file with different file name. In both cases, be sure to save the file with the CSV format. 
-    
-[Return to top](csv-file-for-an-id-list-content-search.md#top)
   
 ## Create an ID list search
-<a name="create"> </a>
 
 The next step is to create a new ID list Content Search and submit the CSV file that you prepared in the previous step.
   
@@ -98,7 +92,3 @@ The next step is to create a new ID list Content Search and submit the CSV file 
     
 > [!NOTE]
 > If you move a mailbox after creating an ID list search, the query for the search won't return the specified items. That's because the **DocumentId** property for mailbox items are changed when a mailbox is moved. In the rare instance when a mailbox is moved after you create an ID list search, you should create a new content search (or update the search results for the existing content search) and then export the search results or report to generate updated CSV files that can be used to create a new ID list search. 
-  
-[Return to top](csv-file-for-an-id-list-content-search.md#top)
-  
-

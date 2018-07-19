@@ -46,7 +46,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
   
 [Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
 ## Before you begin
 
@@ -56,7 +56,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
 - There are limits applied to Content Search to maintain the health and quality of services provided to Office 365 organizations. In most cases, you can't modify these limits, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting searches. For more information, see [Limits for Search in the Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
     
-- See the [More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo) section for estimated search times based on the number of mailboxes that are searched in a single Content Search. 
+- See the  section for estimated search times based on the number of mailboxes that are searched in a single Content Search. 
     
 - As previously stated, you can use Content Search to search for content in Office 365 Groups and Microsoft Teams. This means you can search the group mailbox, shared calendar, and SharePoint sites associated with an Office 365 Group and a Microsoft Team. Additionally, you can search the channel conversations in a Microsoft Team. For information about Office 365 Groups and Microsoft Teams, see:
     
@@ -64,7 +64,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
   - [Microsoft Teams help](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
-    See the [More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo) section for tips on searching for content in Office 365 Groups and Microsoft Teams. 
+    See the  section for tips on searching for content in Office 365 Groups and Microsoft Teams. 
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -109,7 +109,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
   - Click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to add sites to the search. Type the URL for each site that you want to search. The Content Search tool will validate the URL, and then add it to the list of sites to search. 
     
-  - You can add the SharePoint that's associated with an Office 365 Group or a Microsoft Team. See the [More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo) section for guidance about how to find the URL for group or team. 
+  - You can add the SharePoint that's associated with an Office 365 Group or a Microsoft Team. See the  section for guidance about how to find the URL for group or team. 
     
   - If you don't want to include any sites in a search, select **Choose specific sites to search**, but don't add a site to the list.
     
@@ -131,7 +131,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
   
     Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row. For more information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
     
-    See the [More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo) section for guidance on using the keyword list. 
+    See the  section for guidance on using the keyword list. 
     
 3. Click **Check query for typos** to check your query for unsupported characters and for Boolean operators that might not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
     
@@ -287,13 +287,13 @@ Here's more information about Content Searches.
 |50,000  <br/> |20 minutes  <br/> |
 |100,000  <br/> |25 minutes  <br/> |
    
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
  **Unindexed items**
   
 - As previously explained, unindexed items in content locations that are searched are included in the estimated search results. If an unindexed item matches the search query (because other message or document properties meet the search criteria), it won't be included in the estimated number of unindexed items. If an unindexed item is excluded by the search criteria, it also won't be included in the estimated number of unindexed items. For more information, see [Unindexed items in Content Search](https://go.microsoft.com/fwlink/p/?LinkId=780739).
     
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
  **Microsoft Teams and Office 365 Groups**
   
@@ -340,13 +340,13 @@ Here's more information about Content Searches.
     > [!NOTE]
     > The capability to search the Wiki for a Microsoft Team or Channel (when you search the team's SharePoint site) was released on June 22, 2017. Wiki pages that were saved or updated on that date or after are available to be searched. Wiki pages last saved or updated before that date aren't available for search. 
   
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
  **OneDrive for Business **
   
 - To collect a list of the URLs for the OneDrive for Business sites in your organization, see [Create a list of all OneDrive locations in your organization](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). The script in this article creates a text file that contains a list of all OneDrive for Business sites. To run this script, you'll have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive for Business site that you want to search. This is the domain that contains all your OneDrive for Business; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive for Business site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
  **Search queries**
   
@@ -380,7 +380,7 @@ Here's more information about Content Searches.
 
     For example, to change the language setting to Chinese, you would use  `zh-CN` for the culture code value. After you change the language setting, you'll have to re-run the search. For a list of possible culture code values, see [CultureInfo Class](https://go.microsoft.com/fwlink/p/?LinkID=184859). For content searches, we recommend that you use two-part culture codes for the value of the language setting; for example,  `ja-JP` and not  `ja`.
     
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
  **Searching inactive mailboxes**
   
@@ -398,7 +398,7 @@ As previously stated, you can search inactive mailboxes in a content search. Her
     
   - [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md)
     
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
+
   
  **Miscellaneous**
   
@@ -407,11 +407,5 @@ As previously stated, you can search inactive mailboxes in a content search. Her
     For the same reason, searches created on the **Content search** page aren't displayed on the **Searches** page of an eDiscovery case in the Security &amp; Compliance Center. 
     
 - What is the difference between restarting and retrying a search? When you restart a search, all content locations that are specified in the search are searched again in a new preview search. However, when you retry a search, only the content locations that failed when the search was last run are searched again.
-    
-[More information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)
-  
-||
-|:-----|
-|![The short icon for LinkedIn Learning.](media/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.md), brought to you by LinkedIn Learning. |
    
 

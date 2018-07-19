@@ -17,53 +17,33 @@ description: "For administrators: Learn how to enable auto-expanding archiving i
 # Enable unlimited archiving in Office 365 - Admin Help
 
 You can use the Exchange Online auto-expanding archiving feature in Office 365 to enable unlimited storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox when it approaches the storage limit. The result is unlimited mailbox storage capacity. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Overview of unlimited archiving in Office 365](unlimited-archiving.md).
-  
- **Contents**
-  
-[Enable auto-expanding archiving for your entire organization](enable-unlimited-archiving.md#allusers)
-  
-[Enable auto-expanding archiving for specific users](enable-unlimited-archiving.md#specificusers)
-  
-[Verify that auto-expanding archiving is enabled](enable-unlimited-archiving.md#verify)
-  
-[More information](enable-unlimited-archiving.md#moreinfo)
-  
+
 ## Before you begin
 
 - You have to be a global administrator in your Office 365 organization or a member of the Organization Management role group in your Exchange Online organization to enable auto-expanding archiving for your entire organization or for specific users. Alternately, you have to be a member of a role group that's assigned the Mail Recipients role to enable auto-expanding archiving for specific users.
     
 - A user's archive mailbox has to be enabled before you can enable auto-expanding archiving. A user must be assigned an Exchange Online Plan 2 license to enable the archive mailbox. If a user is assigned an Exchange Online Plan 1 license, you would have to assign them a separate Exchange Online Archiving license to enable their archive mailbox. See [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md).
     
-- You can also use PowerShell to enable archive mailboxes. See the [More information](enable-unlimited-archiving.md#moreinfo) section for an example of the PowerShell command that you can use to enable archive mailboxes for all users in your organization. 
+- You can also use PowerShell to enable archive mailboxes. See the [More information](#more-information) section for an example of the PowerShell command that you can use to enable archive mailboxes for all users in your organization. 
     
 - Auto-expanding archiving also supports shared mailboxes. To enable the archive for a shared mailbox, an Exchange Online Plan 2 license or an Exchange Online Plan 1 license with an Exchange Online Archiving license is required.
     
 - You can't use the Exchange admin center or the Security &amp; Compliance Center to enable auto-expanding archiving. You have to use Exchange Online PowerShell. To connect to your Exchange Online organization using remote PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
-[Return to top](enable-unlimited-archiving.md#top)
   
 ## Enable auto-expanding archiving for your entire organization
-<a name="allusers"> </a>
 
 You can enable auto-expanding archiving for your entire organization. After you turn it on, auto-expanding archiving will be enabled for existing user mailboxes and for new user mailboxes that are created. When you create new user mailboxes, be sure to enable the user's main archive mailbox so the auto-expanding archiving feature will work for the new user mailbox.
   
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Run the following command in Exchange Online PowerShell to enable auto-expanding archiving for your entire organization.
-    
-||
-|:-----|
-|
-```
-  Set-OrganizationConfig -AutoExpandingArchive
-```
 
-|
-   
-[Return to top](enable-unlimited-archiving.md#top)
+    ```
+    Set-OrganizationConfig -AutoExpandingArchive
+    ```
   
 ## Enable auto-expanding archiving for specific users
-<a name="specificusers"> </a>
 
 Instead of enabling auto-expanding archiving for every user in your organization, you can just enable it for specific users. You might do this because only some users might have a need for a very large archive storage.
   
@@ -79,47 +59,29 @@ This additional space is added to prevent any storage issues that may occur befo
     
 2. Run the following command in Exchange Online PowerShell to enable auto-expanding archiving for a specific user. As previously explained, the user's archive mailbox (main archive) must be enabled before you can turn on auto-expanding archiving for that user.
     
-||
-|:-----|
-|
-```
-  Enable-Mailbox <user mailbox> -AutoExpandingArchive
-```
+    ```
+    Enable-Mailbox <user mailbox> -AutoExpandingArchive
+    ```
 
-|
-   
+
 > [!IMPORTANT]
 > In an Exchange hybrid deployment, you can't use the **Enable-Mailbox -AutoExpandingArchive** command to enable auto-expanding archiving for specific a user whose primary mailbox is on premises and their archive mailbox is cloud-based. To enable auto-expanding archiving for cloud-based archive mailboxes in an Exchange hybrid deployment, you have to run the **Set-OrganizationConfig -AutoExpandingArchive** command in Exchange Online PowerShell to enable auto-expanding archiving for the entire organization. If a user's primary and archive mailboxes are both cloud-based, then you can use the **Enable-Mailbox -AutoExpandingArchive** command to enable auto-expanding archiving for that specific user. 
   
-[Return to top](enable-unlimited-archiving.md#top)
-  
 ## Verify that auto-expanding archiving is enabled
-<a name="verify"> </a>
 
 To verify that auto-expanding archiving is enabled for your organization, run the following command in Exchange Online PowerShell.
-  
-||
-|:-----|
-|
+
 ```
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
-|
-   
 A value of  `True` indicates that auto-expanding archiving is enabled for the organization. 
   
 To verify that auto-expanding archiving is enable for a specific user, run the following command in Exchange Online PowerShell.
   
-||
-|:-----|
-|
 ```
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
-
-|
-   
 A value of  `True` indicates that auto-expanding archiving is enabled for the user. 
   
 Keep the following things in mind after you enable auto-expanding archiving:
@@ -129,33 +91,22 @@ Keep the following things in mind after you enable auto-expanding archiving:
 - Similarly, the values for the  *ArchiveQuota*  and  *ArchiveWarningQuota*  mailbox properties aren't changed when you enable auto-expanding archiving. In fact, when you enable auto-expanding archiving for a user mailbox and the  *AutoExpandingArchiveEnabled*  property is set to  `True`, the  *ArchiveQuota*  and  *ArchiveWarningQuota*  properties are just ignored. Here's an example of these mailbox properties after auto-expanding archiving is enabled for a user's mailbox. 
     
     ![ArchiveQuota and ArchiveWarningQuota properties are ignored after you enable auto-expanding archiving](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
-  
-[Return to top](enable-unlimited-archiving.md#top)
+
   
 ## More information
-<a name="moreinfo"> </a>
 
 - You can also use PowerShell to enable archive mailboxes. For example, you can run the following command in Exchange Online PowerShell to enable archive mailboxes for all users whose archive mailbox isn't already enabled.
-    
-||
-|:-----|
-|
-```
-  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
-```
 
-|
-   
+    ```
+    Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+    ```
+
 - After you turn on auto-expanding archiving for your organization or for a specific user, an archive mailbox is converted to an auto-expanding archive when the archive mailbox (including the Recoverable Items folder) reaches 90 GB. It can take up to 30 days for the additional storage space to be provisioned.
     
 - After you turn on auto-expanding archiving, it can't be turned off.
     
 - Auto-expanding archiving is supported for cloud-based archive mailboxes in an Exchange hybrid deployment for users who have an on-premises primary mailbox. However, after auto-expanding archiving is enabled for a cloud-based archive mailbox, you can't off-board that archive mailbox back to the on-premises Exchange organization.
     
-- For a list of Outlook clients that users can use to access items in the additional storage area in their archive mailbox, see [Outlook requirements for accessing items in an auto-expanded archive](unlimited-archiving.md#outlookrequirements).
+- For a list of Outlook clients that users can use to access items in the additional storage area in their archive mailbox, see the "Outlook requirements for accessing items in an auto-expanded archive" section in [Overview of unlimited archiving in Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
     
 - As previously explained, 10 GB is added to the storage quota of the user's primary archive mailbox (and to the Recoverable Items folder if the mailbox is on hold) when you run the **Enable-Mailbox -AutoExpandingArchive** command. This provides additional storage until the auto-expanded storage space is provisioned (which can take up to 30 days). This additional storage space isn't added when you run the **Set-OrganizationConfig -AutoExpandingArchive** to enable auto-expanding archiving for all mailboxes in your organization. If you enabled auto-expanding archiving for the entire organization, but need to add the additional 10 GB of storage space for a specific user, you can run the **Enable-Mailbox -AutoExpandingArchive** command on that mailbox. Note that you will receive an error saying that auto-expanding archiving has already been enabled, but the additional storage space will be added to the mailbox. 
-    
-[Return to top](enable-unlimited-archiving.md#top)
-  
-
