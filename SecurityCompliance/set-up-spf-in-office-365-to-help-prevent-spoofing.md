@@ -60,21 +60,21 @@ Gather this information:
 |6  <br/> |On-premises mail system. For example, Exchange Online Protection plus another mail system  <br/> |Not common  <br/> | Use one of these for each additional mail system:  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  Where the value for \<  _IP address_\> is the IP address of the other mail system and \< _domain name_\> is the domain name of the other mail system that sends mail on behalf of your domain.  <br/> |
 |7  <br/> |Any email system (required)  <br/> |Common. All SPF TXT records end with this value  <br/> |\< _enforcement rule_\>  <br/> This can be one of several values. We recommend that you use **-all**.  <br/> |
    
-    For example, if you are fully-hosted in Office 365, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 2, and 7 and would look like this:
+1.1  For example, if you are fully-hosted in Office 365, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 2, and 7 and would look like this:
     
   ```
    v=spf1 include:spf.protection.outlook.com -all
   ```
 
-    This is the most common Office 365 SPF TXT record. This record works for just about everyone, regardless of whether your Office 365 datacenter is located in the United States, or in Europe (including Germany), or in another location.
+1.2  This is the most common Office 365 SPF TXT record. This record works for just about everyone, regardless of whether your Office 365 datacenter is located in the United States, or in Europe (including Germany), or in another location.
     
-    However, if you have purchased Office 365 Germany, part of Microsoft Cloud Germany, you should use the include statement from line 4 instead of line 2. For example, if you are fully-hosted in Office 365 Germany, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 4, and 7 and would look like this:
+1.3  However, if you have purchased Office 365 Germany, part of Microsoft Cloud Germany, you should use the include statement from line 4 instead of line 2. For example, if you are fully-hosted in Office 365 Germany, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 4, and 7 and would look like this:
     
   ```
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-    If you are already deployed in Office 365 and have set up your SPF TXT records for your custom domain, and you are migrating to Office 365 Germany, you need to update your SPF TXT record. To do this, change **include:spf.protection.outlook.com** to **include.spf.protection.outlook.de**.
+1.4  If you are already deployed in Office 365 and have set up your SPF TXT records for your custom domain, and you are migrating to Office 365 Germany, you need to update your SPF TXT record. To do this, change **include:spf.protection.outlook.com** to **include.spf.protection.outlook.de**.
     
 2. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://support.office.microsoft.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23), and then click the link for your DNS host. (If your DNS host doesn't have a link on the page, you can [follow the general instructions](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) to add records or contact your DNS host for help.) 
     
