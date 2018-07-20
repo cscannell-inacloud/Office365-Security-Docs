@@ -17,9 +17,9 @@ description: "Use the Content Search eDiscovery tool to search for items that we
 
 # Use Content Search to search third-party data that was imported to Office 365
 
-You can use the [Content Search eDiscovery tool](run-a-content-search-in-the-security-and-compliance-center.md) in the Office 365 Security &amp; Compliance Center to search for items that were imported to mailboxes in Office 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to only search specific third-party data items. Additionally, you can also create a query-based Preservation Policy or a query-based eDiscovery hold to preserve third-party data in Office 365. 
+You can use the [Content Search eDiscovery tool](content-search.md) in the Office 365 Security &amp; Compliance Center to search for items that were imported to mailboxes in Office 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to only search specific third-party data items. Additionally, you can also create a query-based Preservation Policy or a query-based eDiscovery hold to preserve third-party data in Office 365. 
   
-For more information about importing third-party data and a list of the third-party data types that can be imported to Office 365, see [Archiving third-party data in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=716918). 
+For more information about importing third-party data and a list of the third-party data types that can be imported to Office 365, see [Archiving third-party data in Office 365](archiving-third-party-data.md). 
   
 ## Creating a query to search all third-party data
 
@@ -29,11 +29,9 @@ To search (or place on hold) any type of third-party data that you've imported t
 kind:externaldata AND subject:contoso
 ```
 
-The previous keyword query example includes the subject property. For a list of other properties for third-party data items that can included in a keyword query, see the "More information" section in [Archiving third-party data in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=716918#moreinfo).
+The previous keyword query example includes the subject property. For a list of other properties for third-party data items that can included in a keyword query, see the "More information" section in [Archiving third-party data in Office 365](archiving-third-party-data.md#more-information).
   
 When creating queries to search and hold third-party data, you can also use conditions to narrow the search results. For more information about creating Content Search queries, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-[Return to top](use-content-search-to-search-third-party-data-that-was-imported.md#top)
   
 ## Creating a query to search specific types of third-party data
 
@@ -133,7 +131,3 @@ The following table lists the third-party data types that you can search, and th
 |Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
 |YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
 |YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |
-   
-[Return to top](use-content-search-to-search-third-party-data-that-was-imported.md#top)
-  
-
