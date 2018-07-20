@@ -19,34 +19,29 @@ description: "Administrators can import third-party data from  social media plat
 
 Office 365 lets administrators import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Office 365 organization. Examples of third-party data sources that you can import to Office 365 include the following: 
   
-- **Social** Twitter, Facebook, Yammer, and LinkedIn 
+- **Social** - Twitter, Facebook, Yammer, and LinkedIn 
     
-- **Instant messaging** Yahoo Messenger, GoogleTalk, and Cisco Jabber 
+- **Instant messaging** - Yahoo Messenger, GoogleTalk, and Cisco Jabber 
     
-- **Document collaboration** Box and DropBox 
+- **Document collaboration** - Box and DropBox 
     
-- **Vertical industries** Customer Relationship Management (such as Salesforce Chatter) and Financials (such as Thomson Reuters and Bloomberg) 
+- **Vertical industries** - Customer Relationship Management (such as Salesforce Chatter) and Financials (such as Thomson Reuters and Bloomberg) 
     
-- **SMS/text messaging** BlackBerry 
+- **SMS/text messaging** - BlackBerry 
     
 After third-party data is imported, you can apply Office 365 compliance features—such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Office 365 retention policies—to this data. For example, when a mailbox is placed on Litigation Hold, third-party data will be preserved. You can search third-party data by using Content Search. Or you can apply archiving and retention polices to third-party data just like you can for Microsoft data. In short, archiving third-party data in Office 365 can help your organization stay compliant with government and regulatory policies.
   
 Here's an overview of the process and the steps necessary to import third-party data to Office 365.
-  
-[How the third-party data import process works](archiving-third-party-data.md#overview)
-  
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
-  
-[Step 2: Create and configure a third-party data mailbox in Office 365](archiving-third-party-data.md#step2)
-  
-[Step 3: Configure user mailboxes for third-party data](archiving-third-party-data.md#step3)
-  
-[Step 4: Provide your partner with information](archiving-third-party-data.md#step4)
-  
-See the [More information](archiving-third-party-data.md#moreinfo) see for additional information about importing third-party data to Office 365. 
-  
-## How the third-party data import process works
-<a name="overview"> </a>
+
+[Step 1: Find a third-party data partner](#step-1-find-a-third-party-data-partner)
+
+[Step 2: Create and configure a third-party data mailbox in Office 365](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
+
+[Step 3: Configure user mailboxes for third-party data](#step-3-configure-user-mailboxes-for-third-party-data)
+
+[Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
+
+## How the third-party data import process works>
 
 The following illustration and description explain how the third-party data import process works.
   
@@ -54,39 +49,35 @@ The following illustration and description explain how the third-party data impo
   
 1. Customer works with their partner of choice to configure a connector that will extract items from the third-party data source and then import those items to Office 365.
     
-2. The partner connector connects to third-party data sources via a third-party API (on a scheduled or as-configured basis) and extracts items from the data source. The partner connector converts the content of an item to an email message format. See the [More information](archiving-third-party-data.md#moreinfo) section for a description of the message format schema. 
+2. The partner connector connects to third-party data sources via a third-party API (on a scheduled or as-configured basis) and extracts items from the data source. The partner connector converts the content of an item to an email message format. See the [More information](#more-information) section for a description of the message format schema. 
     
 3. Partner connector connects to the Azure service in Office 365 by using Exchange Web Service (EWS) via a well-known end point.
     
 4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
     
-1. **Items that have a user ID that corresponds to an Office 365 user account** If the partner connector can map the user ID of the item in the third-party data source to a specific user ID in Office 365, the item is copied to the **Purges** folder in the user's Recoverable Items folder. Users can't access items in the Purges folder. However, you can use Office 365 eDiscovery tools to search for items in the Purges folder. 
+    a. **Items that have a user ID that corresponds to an Office 365 user account** - If the partner connector can map the user ID of the item in the third-party data source to a specific user ID in Office 365, the item is copied to the **Purges** folder in the user's Recoverable Items folder. Users can't access items in the Purges folder. However, you can use Office 365 eDiscovery tools to search for items in the Purges folder.
     
-2. **Items that don't have a user ID that corresponds to an Office 365 user account** If the partner connector can't map the user ID of an item to a specific user ID in Office 365, the item is copied to the **Inbox** folder of the third-party data mailbox. Importing items to the inbox allows you or someone in your organization to sign in to the third-party mailbox to view and manage these items, and see if any adjustments need to be made in the partner connector configuration. 
-    
-[Return to top](archiving-third-party-data.md#top)
-  
+    b. **Items that don't have a user ID that corresponds to an Office 365 user account** - If the partner connector can't map the user ID of an item to a specific user ID in Office 365, the item is copied to the **Inbox** folder of the third-party data mailbox. Importing items to the inbox allows you or someone in your organization to sign in to the third-party mailbox to view and manage these items, and see if any adjustments need to be made in the partner connector configuration.
+ 
 ## Step 1: Find a third-party data partner
-<a name="step1"> </a>
 
 A key component for archiving third-party data in Office 365 is finding and working with a Microsoft partner that specializes in capturing data from a third-party data source and importing it to Office 365. After the data is imported, it can be archived and preserved along with your organization's other Microsoft data, such as email from Exchange and documents from SharePoint and OneDrive for Business. A partner creates a connector that extracts data from your organization's third-party data sources (such as BlackBerry, Facebook, Google+, Thomson Reuters, Twitter, and YouTube) and passes that data to an Office 365 API that imports items to Exchange mailboxes as email messages. 
   
 The following sections list the Microsoft partners—and the third-party data sources they support—that are participating in the program for archiving third-party data in Office 365.
+
+[17a-4 LLC](#17a-4-llc)
   
-[17a-4 LLC](archiving-third-party-data.md#seventeenA4LCC)
+[Actiance](#actiance)
   
-[Actiance](archiving-third-party-data.md#actiance)
+[ArchiveSocial](#archivesocial)
   
-[ArchiveSocial](archiving-third-party-data.md#archivesocial)
+[Globanet](#globanet)
   
-[Globanet](archiving-third-party-data.md#globanet)
+[OpenText](#opentext)
   
-[OpenText](archiving-third-party-data.md#opentext)
-  
-[Verba](archiving-third-party-data.md#verba)
+[Verba](#verba)
   
 ### 17a-4 LLC
-<a name="seventeenA4LCC"> </a>
 
 17a-4 LLC supports the following third-party data sources:
   
@@ -127,11 +118,8 @@ The following sections list the Microsoft partners—and the third-party data so
 - Squawker
     
 - Thomson Reuters Eikon Messenger
-    
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
   
 ### Actiance
-<a name="actiance"> </a>
 
 [Actiance](https://www.actiance.com) supports the following third-party data sources: 
   
@@ -293,10 +281,8 @@ The following sections list the Microsoft partners—and the third-party data so
     
 - YouTube
     
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
   
 ### ArchiveSocial
-<a name="archivesocial"> </a>
 
 [ ArchiveSocial ](https://www.archivesocial.com) supports the following third-party data sources: 
   
@@ -315,11 +301,8 @@ The following sections list the Microsoft partners—and the third-party data so
 - YouTube
     
 - Vimeo
-    
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
   
 ### Globanet
-<a name="globanet"> </a>
 
 [Globanet](https://www.globanet.com) supports the following third-party data sources: 
   
@@ -388,11 +371,8 @@ The following sections list the Microsoft partners—and the third-party data so
 - UBS Chat
     
 - YouTube
-    
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
   
 ### OpenText
-<a name="opentext"> </a>
 
 [OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) supports the following third-party data sources: 
   
@@ -409,11 +389,8 @@ The following sections list the Microsoft partners—and the third-party data so
 - Bloomberg
     
 - Thomson Reuters
-    
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
   
 ### Verba
-<a name="verba"> </a>
 
 [Verba](https://www.verba.com) supports the following third-party data sources: 
   
@@ -480,11 +457,8 @@ The following sections list the Microsoft partners—and the third-party data so
 - TwistedPair Radio
     
 - Windows Desktop Computer Screen
-    
-[Step 1: Find a third-party data partner](archiving-third-party-data.md#step1)
   
 ## Step 2: Create and configure a third-party data mailbox in Office 365
-<a name="step2"> </a>
 
 Here are the steps for creating and configuring a third-party data mailbox for importing data to Office 365. As previous explained, items are imported to this mailbox if the partner connector can't map the user ID of the item to an Office 365 user account.
   
@@ -501,30 +475,27 @@ Here are the steps for creating and configuring a third-party data mailbox for i
   
 1. Hide the third-party data mailbox from the address book and other address lists in your organization; see [Manage user mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=616058). Alternatively, you can run the following PowerShell command:
     
-  ```
-  Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
-  ```
+    ```
+    Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
+    ```
 
 2. Assign the **FullAccess** permission to the third-party data mailbox so that administrators or compliance officers can open the third-party data mailbox in the Outlook desktop client; see [Manage permissions for recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).
     
 3. Enable the following compliance-related Office 365 features for the third-party data mailbox:
     
-1. Enable the archive mailbox; see [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md) and [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md). This will let you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox. This will provide you with unlimited storage for third-party data.
+    - Enable the archive mailbox; see [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md) and [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md). This will let you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox. This will provide you with unlimited storage for third-party data.
     
-2. Place the third-party data mailbox on Litigation Hold. You can also apply an Office 365 retention policy in the Office 365 Security &amp; Compliance Center. See one of the following: 
+    - Place the third-party data mailbox on Litigation Hold. You can also apply an Office 365 retention policy in the Office 365 Security &amp; Compliance Center. Placing this mailbox on hold will retain third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. See one of the following topics:
     
-  - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-  - [Overview of retention policies in Office 365](retention-policies.md)
+      - [Overview of retention policies in Office 365](retention-policies.md)
     
-    Placing this mailbox on hold will preserve third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. 
+       
     
-3. Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md). This will allow you to audit all activity performed by any user who has access to the third-party data mailbox. 
-    
-[Return to top](archiving-third-party-data.md#top)
-  
+    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md). This will allow you to audit all activity performed by any user who has access to the third-party data mailbox.
+
 ## Step 3: Configure user mailboxes for third-party data
-<a name="step3"> </a>
 
 The next step is to configure user mailboxes to support third-party data. Complete these tasks by using the Exchange admin center or by using the corresponding Windows PowerShell cmdlets.
   
@@ -532,96 +503,63 @@ The next step is to configure user mailboxes to support third-party data. Comple
     
 2. Place user mailboxes on Litigation Hold or apply an Office 365 retention policy; see one of the following topics: 
     
-  - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-  - [Overview of retention policies in Office 365](retention-policies.md)
+    - [Overview of retention policies in Office 365](retention-policies.md)
     
     As previously stated, when you place mailboxes on hold, you can set a duration for how long to hold items from the third-party data source or you can choose to hold items indefinitely.
-    
-[Return to top](archiving-third-party-data.md#top)
-  
+
 ## Step 4: Provide your partner with information
-<a name="step4"> </a>
 
 The final step is to provide your partner with the following information so they can configure the connector to connect to your Office 365 organization to import data to user mailboxes and to the third-party data mailbox. 
   
 - The endpoint used to connect to the Azure service in Office 365:
-    
-||
-|:-----|
-|
-```
-  https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
-```
 
-|
-   
+    ```
+    https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
+    ```
+
 - The sign in credentials (Office 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
     
-[Return to top](archiving-third-party-data.md#top)
+
   
 ## More information
-<a name="moreinfo"> </a>
 
 - As previous explained, items from third-party data sources are imported to Exchange mailboxes as email messages. The partner connector imports the item using a schema required by the Office 365 API. The following table describes the message properties of an item from a third-party data source after it's imported to an Exchange mailbox as an email message. The table also indicates if the message property is mandatory. Mandatory properties must be populated. If an item is missing a mandatory property, it won't be imported to Office 365. The import process will return an error message explaining why an item wasn't imported and which property is missing.
     
-|**Message property**|**Mandatory?**|**Description**|**Example value**|
-|:-----|:-----|:-----|:-----|
-|**FROM** <br/> |Yes  <br/> |The user who originally created or sent the item in the third-party data source. The partner connector will attempt to map the user ID from the source item (for example a Twitter handle) to an Office 365 user account for all participants (users in the FROM and TO fields). A copy of the message will be imported to the mailbox of every participant. If none of the participants from the item can be mapped to an Office 365 user account, the item will be imported to the third-party archiving mailbox in Office 365.  <br/> The participant who's identified as the sender of the item must have an active mailbox in the Office 365 organization that the item is being imported to. If the sender doesn't have an active mailbox, the following error is returned:  <br/> ||
-|:-----|
-|
-```
-  <ResponseMessages>
-        <CreateItemResponseMessage ResponseClass="Error">
-              <MessageText>One or more messages in the Request failed to be delivered to either From or Sender email address. 
-              You will need to resend your entire Request. Error: The request failed. 
-              The remote server returned an error: (401) Unauthorized. 
-              </MessageText>
-              …
-        </CreateItemResponseMessage>
-  </ResponseMessages>
-```
-
-|
-   
-| `bob@contoso.com` <br/> |
-|**TO** <br/> |Yes  <br/> |The user who received an item, if applicable for an item in the data source.  <br/> | `bob@contoso.com` <br/> |
-|**SUBJECT** <br/> |No  <br/> |The subject from the source item.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-|**DATE** <br/> |Yes  <br/> |The date the item was originally created or posted in the customer data source; for example, that date when a Twitter message was tweeted.  <br/> | `01 NOV 2015` <br/> |
-|**BODY** <br/> |No  <br/> |The contents of the message or post. For some data sources, the contents of this property could be the same as the content for the **SUBJECT** property. During the import process, the partner connector will attempt to maintain full fidelity from the content source as possible. If possible files, graphics, or other content from the body of the source item is included in this property. Otherwise, content from the source item is included in the **ATTACHMENT** property. The contents of this property will depend on the partner connector and on the capability of the source platform.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-|**ATTACHMENT** <br/> |No  <br/> |If an item in the data source (such as a tweet in Twitter or an instant messaging conversation) has an attached file or include images, the partner connect will first attempt to include attachments in the **BODY** property. If that isn't possible, then it's added to the ** ATTACHMENT ** property. Other examples of attachments include Likes in Facebook, metadata from the content source, and responses to a message or post.  <br/> | `image.gif` <br/> |
-|**MESSAGECLASS** <br/> |Yes  <br/> | This is a multi-value property, which is created and populated by partner connector. The format of this property is  `IPM.NOTE.Source.Event`. (This property must begin with  `IPM.NOTE`; this format is similar to the one for the  `IPM.NOTE.X` message class.) This property includes the following information:  <br/>  `Source` Indicates the third-party data source; for example, Twitter, Facebook, or BlackBerry.  <br/>  `Event` Indicates the type of activity that was performed in the third-party data source that produced the items; for example, a tweet in Twitter or a post in Facebook. Events are specific to the data source.  <br/>  One purpose of this property is to filter specific items based on the data source where an item originated or based on the type of event. For example, in an eDiscovery search you could create a search query to find all the tweets that were posted by a specific user.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**Message property**|**Mandatory?**|**Description**|**Example value**|
+    |:-----|:-----|:-----|:-----|
+    |**FROM** <br/> |Yes  <br/> |The user who originally created or sent the item in the third-party data source. The partner connector will attempt to map the user ID from the source item (for example a Twitter handle) to an Office 365 user account for all participants (users in the FROM and TO fields). A copy of the message will be imported to the mailbox of every participant. If none of the participants from the item can be mapped to an Office 365 user account, the item will be imported to the third-party archiving mailbox in Office 365.  <br/> <br/> The participant who's identified as the sender of the item must have an active mailbox in the Office 365 organization that the item is being imported to. If the sender doesn't have an active mailbox, the following error is returned:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**TO** <br/> |Yes  <br/> |The user who received an item, if applicable for an item in the data source.  <br/> | `bob@contoso.com` <br/> |
+    |**SUBJECT** <br/> |No  <br/> |The subject from the source item.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
+    |**DATE** <br/> |Yes  <br/> |The date the item was originally created or posted in the customer data source; for example, that date when a Twitter message was tweeted.  <br/> | `01 NOV 2015` <br/> |
+    |**BODY** <br/> |No  <br/> |The contents of the message or post. For some data sources, the contents of this property could be the same as the content for the **SUBJECT** property. During the import process, the partner connector will attempt to maintain full fidelity from the content source as possible. If possible files, graphics, or other content from the body of the source item is included in this property. Otherwise, content from the source item is included in the **ATTACHMENT** property. The contents of this property will depend on the partner connector and on the capability of the source platform.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |**ATTACHMENT** <br/> |No  <br/> |If an item in the data source (such as a tweet in Twitter or an instant messaging conversation) has an attached file or include images, the partner connect will first attempt to include attachments in the **BODY** property. If that isn't possible, then it's added to the ** ATTACHMENT ** property. Other examples of attachments include Likes in Facebook, metadata from the content source, and responses to a message or post.  <br/> | `image.gif` <br/> |
+    |**MESSAGECLASS** <br/> |Yes  <br/> | This is a multi-value property, which is created and populated by partner connector. The format of this property is  `IPM.NOTE.Source.Event`. (This property must begin with  `IPM.NOTE`; this format is similar to the one for the  `IPM.NOTE.X` message class.) This property includes the following information:  <br/><br/>`Source` - Indicates the third-party data source; for example, Twitter, Facebook, or BlackBerry.  <br/> <br/>  `Event` - Indicates the type of activity that was performed in the third-party data source that produced the items; for example, a tweet in Twitter or a post in Facebook. Events are specific to the data source.  <br/> <br/>  One purpose of this property is to filter specific items based on the data source where an item originated or based on the type of event. For example, in an eDiscovery search you could create a search query to find all the tweets that were posted by a specific user.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - When items are successfully imported to mailboxes in Office 365, a unique identifier is returned back to the caller as part of the HTTP response. This identifier—called  `x-IngestionCorrelationID`—can be used for subsequent troubleshooting purposes by partners for end-to-end tracking of items. It's recommended that partners capture this information and log it accordingly at their end. Here's an example of an HTTP response showing this identifier:
-    
-||
-|:-----|
-|
-```
-  HTTP/1.1 200 OK
-  Content-Type: text/xml; charset=utf-8
-  Server: Microsoft-IIS/8.5
-  x-IngestionCorrelationID: 1ec7667d-f097-47fe-a9a2-bc7ab0a7552b
-  X-AspNet-Version: 4.0.30319
-  X-Powered-By: ASP.NET
-  Date: Tue, 02 Feb 2016 22:55:33 GMT
-  
-```
 
-|
-   
+    ```
+    HTTP/1.1 200 OK
+    Content-Type: text/xml; charset=utf-8
+    Server: Microsoft-IIS/8.5
+    x-IngestionCorrelationID: 1ec7667d-f097-47fe-a9a2-bc7ab0a7552b
+    X-AspNet-Version: 4.0.30319
+    X-Powered-By: ASP.NET
+    Date: Tue, 02 Feb 2016 22:55:33 GMT 
+    ```
+ 
 - You can use the Content Search tool in the Office 365 Security &amp; Compliance Center to search for items that were imported to mailboxes in Office 365 from a third-party data source. To search specifically for these imported items, you can use the following message property-value pairs in the keyword box for a Content Search. . 
     
-  - ** `kind:externaldata`** Use this property-value pair to search all third-party data types. For example, to search for items that were imported from a third-party data source and contained the word "contoso" in the Subject property of the imported item, you would use the keyword query  `kind:externaldata AND subject:contoso`.
+  - **`kind:externaldata`** - Use this property-value pair to search all third-party data types. For example, to search for items that were imported from a third-party data source and contained the word "contoso" in the Subject property of the imported item, you would use the keyword query  `kind:externaldata AND subject:contoso`.
     
-  - ** `itemclass:ipm.externaldata.<third-party data type>*`** Use this property-value pair to only search a specify type of third-party data. For example, to only search Facebook data that contains the word "contoso" in the Subject property, you would use the keyword query  `itemclass:ipm.externaldata.Facebook* AND subject:contoso`. For a complete list of values to use for third-party data types for the  `itemclass` property, see [Use Content Search to search third-party data that was imported to Office 365](https://go.microsoft.com/fwlink/p/?linkid=832871).
-    
-    For more information about using Content Search and creating keyword search queries, see:
-    
-  - [Run a Content Search in the Office 365 Security &amp; Compliance Center](https://go.microsoft.com/fwlink/p/?LinkId=615211)
-    
-  - [Keyword queries and search conditions for Content Search](https://go.microsoft.com/fwlink/p/?linkid=828045)
-    
-[Return to top](archiving-third-party-data.md#top)
-  
+  - **`itemclass:ipm.externaldata.<third-party data type>`** - Use this property-value pair to only search a specify type of third-party data. For example, to only search Facebook data that contains the word "contoso" in the Subject property, you would use the keyword query  `itemclass:ipm.externaldata.Facebook* AND subject:contoso`. 
 
+  For a complete list of values to use for third-party data types for the  `itemclass` property, see [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
+    
+   For more information about using Content Search and creating keyword search queries, see:
+    
+  - [Content Search in Office 365](content-search.md)
+    
+  - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+ 
