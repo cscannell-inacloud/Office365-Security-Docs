@@ -3,7 +3,7 @@ title: "Office 365 Message Encryption FAQ"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/12/2018
+ms.date: 7/23/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-description: "Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here. Also, take a look at Frequently asked questions about data protection in Azure Information Protection for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection."
+description: "Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here."
 ---
 
 # Office 365 Message Encryption FAQ
@@ -87,9 +87,9 @@ You can still use the previous version of OME, it will not be deprecated at this
 
 No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first. 
   
-## My organization has not adopted Office 365 and Exchange Online, or has an Exchange Hybrid deployment. Can I use this feature?
+## My organization has an Exchange Hybrid deployment. Can I use this feature?
 
-Today, the sender needs to be in Exchange Online. We plan to support other topologies in the coming months.
+On-premises users can send encrypted mail using Exchange Online mail flow rules. In order to do this, you need to route email through Exchange Online.
   
 ## What email client do I need to use in order to create an OME encrypted message? What applications are supported for sending protected messages?
 
