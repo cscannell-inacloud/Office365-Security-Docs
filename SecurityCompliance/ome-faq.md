@@ -56,7 +56,7 @@ For more information about BYOK, see [Planning and implementing your Azure Infor
 
 No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused customers. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   
-## How is this feature related to legacy Office 365 Message Encryption (OME) and Information Rights Management (IRM) features?﻿
+## How is this feature related to legacy Office 365 Message Encryption (OME) and Information Rights Management (IRM) features?
 
 The new capabilities for Office 365 Message Encryption are an evolution of the existing IRM and legacy OME solutions. The following table provides more details.
   
@@ -64,17 +64,12 @@ The new capabilities for Office 365 Message Encryption are an evolution of the e
 
 |**Capability**|**Previous versions of OME**|**IRM**|**New OME capabilities**|
 |:-----|:-----|:-----|:-----|
-|**Sending an encrypted email**|
-|:-----|
-|**Rights management**|
-|:-----|
-|**Supported recipient type**|
-|:-----|
-|**Experience for recipient**|
-|:-----|
-|**Bring Your Own Key support**|
-|:-----|
-   
+|**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for PC, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for PC, Outlook for Mac, or Outlook on the web; or through mail flow rules|
+|**Rights management**|-|Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, default and custom templates|
+|**Supported recipient type**|External recipients only|Internal recipients only|Internal and external recipients|
+|**Experience for recipient**|External recipients received an HTML message that they downloaded and opened in a browser or downloaded mobile app.|Internal recipients only received encrypted email in Outlook for PC, Outlook for Mac, and Outlook on the web.|Internal and external recipients receive email in Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for Android, and Outlook for iOS, or through a web portal, regardless of whether or not they are in the same Office 365 organization or in any Office 365 organization. The OME portal requires no separate download.|
+|**Bring Your Own Key support**|Not available|Not available| BYOK supported|
+
 ## How do I enable the new OME capabilities for my organization?
 
 See [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).
