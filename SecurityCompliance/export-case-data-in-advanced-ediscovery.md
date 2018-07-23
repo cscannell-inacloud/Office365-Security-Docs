@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: "Understand the guidelines for exporting eDiscovery case data and results for review using the Export process in Office 365 Advanced eDiscovery. 
 "

@@ -12,6 +12,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: c863b2bf-45f3-483a-ba05-29fc7f4d6434
 description: "If you're running into issues when you try to enroll a device in Mobile Device Management (MDM) for Office 365, try the steps listed here to track down the problem. If the general steps don't fix the issue, see one of the later sections with specific steps for your device type."
 ---
@@ -34,7 +35,7 @@ To start, check the following:
     
 ## iOS phone or tablet
 
-- Make sure that you've [set up an APNs certificate](create-an-apns-certificate-for-ios.md).
+- Make sure that you've [set up an APNs certificate](https://support.office.com/article/522b43f4-a2ff-46f6-962a-dd4f47e546a7).
     
 - In **Settings** \> **General** \> **Profile** (or **Device Management**), make sure that a **Management Profile** is not already installed. If it is, remove it. 
     

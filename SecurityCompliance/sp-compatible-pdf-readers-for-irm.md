@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - OSU150
+- MET150
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: "Microsoft SharePoint 2013 supports Information Rights Management (IRM) protection of PDF documents. With that support, users can upload PDF documents to IRM-protected libraries, and upon download, the files will be protected using Microsoft Office IRM."
 ---

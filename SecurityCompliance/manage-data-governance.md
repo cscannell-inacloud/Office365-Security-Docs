@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 48064107-fed2-4db0-9e5c-aa5ddd5ccb09
 description: "Data governance is all about keeping your data around when you need it and getting rid of it when you don't. With data governance in Office 365, you can manage the full content lifecycle, from importing and storing data at the beginning, to creating policies that retain and then permanently delete content at the end."
 ---

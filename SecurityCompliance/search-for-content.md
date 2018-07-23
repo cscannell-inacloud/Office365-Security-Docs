@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: "Use the Content Search eDiscovery tool in the Office 365 Security &amp; Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 ---

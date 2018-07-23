@@ -12,6 +12,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365.
 "
@@ -19,7 +20,7 @@ description: "Understand why estimated and actual search results may vary in sea
 
 # Differences between estimated and actual eDiscovery search results in Office 365
 
-||
+|
 |:-----|
 | This topic applies to searches that you can run using one of the following Microsoft eDiscovery tools:  <br/>  Content Search in the Office 365 Security &amp; Compliance Center  <br/>  In-Place eDiscovery in the Exchange admin center (EAC)  <br/>  The eDiscovery Center in SharePoint Online  <br/> |
    

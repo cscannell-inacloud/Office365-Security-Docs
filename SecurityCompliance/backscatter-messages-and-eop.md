@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 description: "Backscatter messages are the automated bounce messages that are sent by mail servers, typically as a result of incoming spam. The Backscatterer DNSBL is a list of IP addresses that send backscatter messages. It isn't a spammer list, and we don't try to remove our servers from the Backscatterer DNSBL."
 ---

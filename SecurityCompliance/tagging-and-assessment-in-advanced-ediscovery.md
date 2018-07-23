@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: "Review the steps to perform Assessment training, including tagging files, and reviewing assessment results in Office 365 Advanced eDiscovery.
 "

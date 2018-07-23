@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 
 description: "Use Content Search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your Office 365 organization."
@@ -19,58 +21,49 @@ description: "Use Content Search permissions filtering to let an eDiscovery mana
 
 You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your Office 365 organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. For example, you might let an eDiscovery manager search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes can be searched. You can also create a filter that specifies what mailbox content can be searched. This is done by creating a filter that uses a searchable message property. Similarly, you might let an eDiscovery manager only search specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
   
-Search permissions filtering is supported by the Content Search feature in the Office 365 Security &amp; Compliance Center. These four cmdlets let you configure and manage security filtering:
+Search permissions filtering is supported by the Content Search feature in the Office 365 Security &amp; Compliance Center. These four cmdlets let you configure and manage search permisisons filters:
   
-[New-ComplianceSecurityFilter](permissions-filtering-for-content-search.md#New)
-  
-[Get-ComplianceSecurityFilter](permissions-filtering-for-content-search.md#Get)
-  
-[Set-ComplianceSecurityFilter](permissions-filtering-for-content-search.md#Set)
-  
-[Remove-ComplianceSecurityFilter](permissions-filtering-for-content-search.md#Remove)
-  
-For more information about these cmdlets, see the "Content search cmdlets" section in [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=627085).
+[New-ComplianceSecurityFilter](#new-compliancesecurityfilter)
+
+[Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
+
+[Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
+
+[Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
   
 ## Before you begin
-<a name="topofpage"> </a>
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security &amp; Compliance Center. For more information, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 - You have to connect Windows PowerShell to both the Security &amp; Compliance Center and to your Exchange Online organization to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online. See the steps in the next section. 
     
-- See the [More information](permissions-filtering-for-content-search.md#MoreInfo) section for additional information about search permissions filters. 
+- See the [More information](#more-information) section for additional information about search permissions filters. 
     
-- Search permissions filtering is applicable to inactive mailboxes, which means you can use mailbox and mailbox content filtering to limit who can search an inactive mailbox. See the [More information](permissions-filtering-for-content-search.md#MoreInfo) section for additional information about permissions filtering and inactive mailboxes. 
+- Search permissions filtering is applicable to inactive mailboxes, which means you can use mailbox and mailbox content filtering to limit who can search an inactive mailbox. See the [More information](#more-information) section for additional information about permissions filtering and inactive mailboxes. 
     
 -  Search permissions filtering can't be used to limit who can search public folders in Exchange. 
     
 - There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
     
 ## Connect to the Security &amp; Compliance Center and Exchange Online in a single remote PowerShell session
-<a name="topofpage"> </a>
 
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1. For example, you could save it to a file named ConnectEXO-CC.ps1.
     
-  ```
-  $UserCredential = Get-Credential
-  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-  Import-PSSession $Session -DisableNameChecking
-  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-  Import-PSSession $Session -AllowClobber -DisableNameChecking
-  $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
-  ```
+    ```
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -AllowClobber -DisableNameChecking
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
+    ```
 
 2. On your local computer, open Windows PowerShell, go to the folder where the script that you created in the previous step is located, and then run the script; for example:
     
-||
-|:-----|
-|
-```
-  .\ConnectEXO-CC.ps1
-```
-
-|
-   
+    ```
+    .\ConnectEXO-CC.ps1
+    ```
+ 
 How do you know if this worked? After you run the script, cmdlets from the Security &amp; Compliance Center and Exchange Online are imported into your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run a Security &amp; Compliance Center cmdlet—for example, **Install-UnifiedCompliancePrerequisite** —and an Exchange Online cmdlet, such as **Get-Mailbox**. 
   
 If you receive errors, check the following requirements:
@@ -82,19 +75,13 @@ If you receive errors, check the following requirements:
 - To help prevent denial-of-service (DoS) attacks, you're limited to three open remote PowerShell connections to the Security &amp; Compliance Center.
     
 - Windows PowerShell needs to be configured to run scripts. You need to configure this setting only once on your computer, not every time you connect. To enable Windows PowerShell to run signed scripts, run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you opened by selecting **Run as administrator**).
-    
-||
-|:-----|
-|
-```
-  Set-ExecutionPolicy RemoteSigned
-```
 
-|
-   
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
 - TCP port 80 traffic needs to be open between your local computer and Office 365. It's probably open, but it's something to consider if your organization has a restrictive Internet access policy.
     
-[Return to top](permissions-filtering-for-content-search.md#top)
+
   
 ## New-ComplianceSecurityFilter
 <a name="New"> </a>
@@ -103,240 +90,138 @@ The **New-ComplianceSecurityFilter** is used to create a new search permissions 
   
 |**Parameter**|**Description**|
 |:-----|:-----|
-| _Action_ <br/> | The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are:  <br/> **Export**The filter is applied when exporting search results.  <br/> **Preview**The filter is applied when previewing search results.  <br/> **Purge**The filter is applied when purging search results.  <br/> **Search**The filter is applied when running a search.  <br/> **All**The filter is applied to all search actions.  <br/> |
+| _Action_ <br/> | The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are:  <br/><br/> **Export** - The filter is applied when exporting search results.  <br/> **Preview** - The filter is applied when previewing search results.  <br/> **Purge** - The filter is applied when purging search results.  <br/> **Search** - The filter is applied when running a search.  <br/> **All** - The filter is applied to all search actions.  <br/> |
 | _FilterName_ <br/> |The  _FilterName_ parameter specifies the name of the permissions filter. This name is used to identity a filter when using the **Get-ComplianceSecurityFilter**, **Set-ComplianceSecurityFilter,** and **Remove-ComplianceSecurityFilter** cmdlets.  <br/> |
-| _Filters_ <br/> | The  _Filters_ parameter specifies the search criteria for the compliance security filter. You can create three different kind of filters:  <br/> **Mailbox filtering** This type of filter specifies the mailboxes the assigned users (specified by the  _Users_ parameter) can search. The syntax for this type of filter is **Mailbox_** _MailboxPropertyName_, where  _MailboxPropertyName_ specifies a mailbox property used to scope the mailboxes that can be searched. For example, the mailbox filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` would allow the user assigned this filter to only search mailboxes that have the value "OttawaUsers" in the CustomAttribute10 property.  <br/>  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property. For a list of supported properties, see [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903).  <br/> **Mailbox content filtering** This type of filter is applied on the content that can be searched. It specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName:value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a Content Search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain.  <br/>  For a list of searchable message properties, see [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).  <br/> **Site and site content filtering** There are two SharePoint and OneDrive for Business site-related filters that you can use to specify what site or site content the assigned users can search:  <br/> **Site_** _SearchableSiteProperty_ <br/> **SiteContent_** _SearchableSiteProperty_ <br/>  These two filters are interchangeable; for example  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` and  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` will return the same results. But to help you identify what a filter does, you can use  `Site_` to specify site-related properties (such as a site URL) and  `SiteContent_` to specify content-related properties (such as document types. For example, the filter  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` would allow the user assigned this filter to only search for content in the https://contoso.sharepoint.com/sites/doctors site collection. The filter  `"SiteContent_FileExtension -eq 'docx'"` would allow the user assigned this filter to only search for Word documents (Word 2007 and later).  <br/>  For a list of searchable site properties, see [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Properties marked with a **Yes** in the ** Queryable ** column can be used to create a site or site content filter.  <br/> > [!IMPORTANT]>  A single search filter can only have one type of filter; it can't contain a mailbox filter and a site filter; similarly, it can't contain a mailbox filter and a mailbox content filter. However, a filter can contain a more complex query of the same type. For example,  `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`          > [!IMPORTANT]>  You have to create a search permissions filter to explicitly prevent users from searching content locations in a specific Office 365 service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a create a filter that prevents them from searching sites.           |
+| _Filters_ <br/> | The  _Filters_ parameter specifies the search criteria for the compliance security filter. You can create three different kind of filters:  <br/><br/> **Mailbox filtering** - This type of filter specifies the mailboxes the assigned users (specified by the  _Users_ parameter) can search. The syntax for this type of filter is **Mailbox_** _MailboxPropertyName_, where  _MailboxPropertyName_ specifies a mailbox property used to scope the mailboxes that can be searched. For example, the mailbox filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` would allow the user assigned this filter to only search mailboxes that have the value "OttawaUsers" in the CustomAttribute10 property.  <br/>  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property. For a list of supported properties, see [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903).  <br/><br/> **Mailbox content filtering** - This type of filter is applied on the content that can be searched. It specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName:value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a Content Search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain.  <br/>  For a list of searchable message properties, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).  <br/><br/> **Site and site content filtering** - There are two SharePoint and OneDrive for Business site-related filters that you can use to specify what site or site content the assigned users can search:  <br/><br/> - **Site_** _SearchableSiteProperty_ <br/> - **SiteContent_** _SearchableSiteProperty_ <br/><br/>  These two filters are interchangeable; for example  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` and  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` will return the same results. But to help you identify what a filter does, you can use  `Site_` to specify site-related properties (such as a site URL) and  `SiteContent_` to specify content-related properties (such as document types. For example, the filter  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` would allow the user assigned this filter to only search for content in the https://contoso.sharepoint.com/sites/doctors site collection. The filter  `"SiteContent_FileExtension -eq 'docx'"` would allow the user assigned this filter to only search for Word documents (Word 2007 and later).  <br/><br/>  For a list of searchable site properties, see [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Properties marked with a **Yes** in the ** Queryable ** column can be used to create a site or site content filter.  <br/> <br/> **Important:**  A single search filter can only have one type of filter; it can't contain a mailbox filter and a site filter; similarly, it can't contain a mailbox filter and a mailbox content filter. However, a filter can contain a more complex query of the same type. For example,  `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"` <br/><br/> **Important:** You have to create a search permissions filter to explicitly prevent users from searching content locations in a specific Office 365 service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a create a filter that prevents them from searching sites.           |
 | _Users_ <br/> |The  _Users_ parameter specifies the users who get this filter applied to their Content Searches. Identify users by their alias or primary SMTP address. You can specify multiple values separated by commas, or you can assign the filter to all users by using the value **All**.  <br/> You can also use the  _Users_ parameter to specify a Security &amp; Compliance Center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched.  <br/> You can't specify distribution groups with this parameter.  <br/> |
    
-[Return to top](permissions-filtering-for-content-search.md#top)
-  
-### Examples
+
+## Examples of creating search permissions filters
 
 Here are examples of using the **New-ComplianceSecurityFilter** cmdlet to create a search permissions filter. 
   
 This example allows the user annb@contoso.com to perform all Content Search actions only for mailboxes in Canada. This filter contains the three-digit numeric country code for Canada from ISO 3166-1.
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
-|
-   
 This example allows the users donh and suzanf to search only the mailboxes that have the value 'Marketing' for the CustomAttribute1 mailbox property.
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
-
-|
    
 This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
   
-||
-|:-----|
-|
 ```
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
-|
-   
 This example assigns allows members of the eDiscovery Manager role group to only search the mailboxes of members of the Ottawa Users distribution group. 
   
-||
-|:-----|
-|
 ```
 $DG = Get-DistributionGroup "Ottawa Users"
 ```
 
-|
-   
-||
-|:-----|
-|
 ```
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
-
-|
-   
 This example prevents any user from deleting content from the mailboxes of members of the Executive Team distribution group.
-  
-||
-|:-----|
-|
+
 ```
 $DG = Get-DistributionGroup "Executive Team"
 ```
 
-|
-   
-||
-|:-----|
-|
 ```
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users all -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" -Action Purge
 ```
-
-|
    
 This example allows members of the OneDrive eDiscovery Managers custom role group to only search for content in OneDrive for Business locations in the organization.
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "Site_Path -like 'https://contoso-my.sharepoint.com/personal*'" -Action Search
 ```
-
-|
    
 > [!NOTE]
 > To restrict users to searching specific sites, use the filter  `Site_Path`, as shown in the previous example. Using  `Site_Site` will not work. 
   
 This example restricts the user to performing all Content Search actions only on email messages sent during the calendar year 2015.
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName EmailDateRestrictionFilter -Users donh@contoso.com -Filters "MailboxContent_Received -ge '01-01-2015' -and MailboxContent_Received -le '12-31-2015'" -Action All
 ```
-
-|
    
 Similar to the previous example, this example restricts the user to performing all Content Search actions on documents that were last changed sometime in the calendar year 2015.
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" -Action All
 ```
-
-|
    
 This example prevents members of the "OneDrive Discovery Managers" role group from performing content search actions on any mailbox in the organization. 
-  
-||
-|:-----|
-|
+
 ```
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"  -Action All
 ```
-
-|
-   
-[Return to top](permissions-filtering-for-content-search.md#top)
   
 ## Get-ComplianceSecurityFilter
-<a name="Get"> </a>
 
 The **Get-ComplianceSecurityFilter** is used to return a list of search permissions filters. Use the  _FilterName_ parameter to return information for a specific search filter. 
   
 ## Set-ComplianceSecurityFilter
-<a name="Set"> </a>
 
 The **Set-ComplianceSecurityFilter** is used to modify an existing search permissions filter. The only required parameter is  _FilterName_. 
   
 |**Parameter**|**Description**|
 |:-----|:-----|
-| _Action_| The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are: **Export**The filter is applied when exporting search results. **Preview**The filter is applied when previewing search results. **Purge**The filter is applied when purging search results. **Search**The filter is applied when running a search. **All**The filter is applied to all search actions. |
+| _Action_| The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are: <br/><br/> **Export** - The filter is applied when exporting search results.  <br/> **Preview** - The filter is applied when previewing search results.  <br/> **Purge** - The filter is applied when purging search results.  <br/> **Search** - The filter is applied when running a search.  <br/> **All** - The filter is applied to all search actions.  <br/> |
 | _FilterName_|The  _FilterName_ parameter specifies the name of the permissions filter. |
-| _Filters_| The  _Filters_ parameter specifies the search criteria for the compliance security filter. You can create two different kind of filters: **Mailbox filtering** This type of filter specifies the mailboxes the assigned users (specified by the  _Users_ parameter) can search. The syntax for this type of filter is **Mailbox_** _MailboxPropertyName_, where  _MailboxPropertyName_ specifies a mailbox property used to scope the mailboxes that can be searched. For example, the mailbox filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` would allow the user assigned this filter to only search mailboxes that have the value "OttawaUsers" in the CustomAttribute10 property.  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property. For a list of supported properties, see [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903). **Mailbox content filtering** This type of filter is applied on the content that can be searched. It specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName:value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a Content Search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain.  For a list of searchable message properties, see [Keyword queries for Content Search](keyword-queries-and-search-conditions.md). **Site and site content filtering** There are two SharePoint and OneDrive for Business site-related filters that you can use to specify what site or site content the assigned users can search: **Site_** _SearchableSiteProperty_ **SiteContent_** _SearchableSiteProperty_ These two filters are interchangeable; for example  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` and  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` will return the same results. But to help you identify what a filter does, you can use  `Site_` to specify site-related properties (such as a site URL) and  `SiteContent_` to specify content-related properties (such as document types. For example, the filter  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` would allow the user assigned this filter to only search for content in the https://contoso.spoppe.com/sites/doctors site collection. The filter  `"SiteContent_FileExtension -eq 'docx'"` would allow the user assigned this filter to only search for Word documents (Word 2007 and later).  For a list of searchable site properties, see [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Properties marked with a **Yes** in the ** Queryable ** column can be used to create a site or site content filter. > [!IMPORTANT]>  A single search filter can only have one type of filter; it can't contain a mailbox filter and a site filter; similarly, it can't contain a mailbox filter and a mailbox content filter. However, a filter can contain a more complex query of the same type. For example,  `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`          |
-| _Users_|The  _Users_ parameter specifies the users who get this filter applied to their Content Searches. Because this is a multi-value property, specifying a user or group of users with this parameter will overwrite the existing list of users. See the following examples for the syntax for adding and removing selected users. You can also use the  _Users_ parameter to specify a Security &amp; Compliance Center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched. You can't specify distribution groups with this parameter. |
-   
-[Return to top](permissions-filtering-for-content-search.md#top)
-  
-### Examples
+| _Filters_| The  _Filters_ parameter specifies the search criteria for the compliance security filter. You can create two different kind of filters: <br/><br/>**Mailbox filtering** - This type of filter specifies the mailboxes the assigned users (specified by the  _Users_ parameter) can search. The syntax for this type of filter is **Mailbox_** _MailboxPropertyName_, where  _MailboxPropertyName_ specifies a mailbox property used to scope the mailboxes that can be searched. For example, the mailbox filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` would allow the user assigned this filter to only search mailboxes that have the value "OttawaUsers" in the CustomAttribute10 property.  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property. For a list of supported properties, see [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Mailbox content filtering**- This type of filter is applied on the content that can be searched. It specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName:value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a Content Search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain.  For a list of searchable message properties, see [Keyword queries for Content Search](keyword-queries-and-search-conditions.md). <br/><br/>**Site and site content filtering** There are two SharePoint and OneDrive for Business site-related filters that you can use to specify what site or site content the assigned users can search: <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>These two filters are interchangeable; for example  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` and  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` will return the same results. But to help you identify what a filter does, you can use  `Site_` to specify site-related properties (such as a site URL) and  `SiteContent_` to specify content-related properties (such as document types. For example, the filter  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` would allow the user assigned this filter to only search for content in the https://contoso.spoppe.com/sites/doctors site collection. The filter  `"SiteContent_FileExtension -eq 'docx'"` would allow the user assigned this filter to only search for Word documents (Word 2007 and later).  <br/><br/>For a list of searchable site properties, see [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter. <br/><br/> **Important:** A single search filter can only have one type of filter; it can't contain a mailbox filter and a site filter; similarly, it can't contain a mailbox filter and a mailbox content filter. However, a filter can contain a more complex query of the same type. For example,  `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`          |
+| _Users_|The  _Users_ parameter specifies the users who get this filter applied to their Content Searches. Because this is a multi-value property, specifying a user or group of users with this parameter will overwrite the existing list of users. See the following examples for the syntax for adding and removing selected users. <br/><br/>You can also use the  _Users_ parameter to specify a Security &amp; Compliance Center role group. This lets you create a custom role group and then assign that role group a search permissions filter. For example, let's say you have a custom role group for eDiscovery managers for the U.S. subsidiary of a multi-national corporation. You can use the  _Users_ parameter to specify this role group (by using the Name property of the role group) and then use the  _Filter_ parameter to allow only mailboxes in the U.S. to be searched. <br/><br/>You can't specify distribution groups with this parameter. |
+
+## Examples of changing search permissions filters
 
 These examples show how to use the **Get-ComplianceSecurityFilter** and **Set-ComplianceSecurityFilter** cmdlets to add or remove a user to the existing list of users that the filter is assigned to. When you add or remove users from a filter, specify the user by using their SMTP address. 
   
 This example adds a user to the filter.
-  
-||
-|:-----|
-|
+
 ```
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
-
-|
-   
-||
-|:-----|
-|
 ```
 $filterusers.users.add("pilarp@contoso.com")
 ```
 
-|
-   
-||
-|:-----|
-|
 ```
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-
-|
    
 This example removes a user from the filter.
-  
-||
-|:-----|
-|
+
 ```
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
 
-|
-   
-||
-|:-----|
-|
 ```
 $filterusers.users.remove("annb@contoso.com")
 ```
 
-|
-   
-||
-|:-----|
-|
 ```
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-
-|
-   
-[Return to top](permissions-filtering-for-content-search.md#top)
   
 ## Remove-ComplianceSecurityFilter
-<a name="Remove"> </a>
 
 The **Remove-ComplianceSecurityFilter** is used to delete a search filter. Use the  _FilterName_ parameter to specify the filter you want to delete. 
   
 ## More information
-<a name="MoreInfo"> </a>
 
 - **How does search permissions filtering work?** The permissions filter is added to the search query when a Content Search is run. The permissions filter is essentially joined to the search query by the **AND** Boolean operator. For example, say you have a permissions filter that allows Bob to perform all search actions on the mailboxes of members of the Workers distribution group. Then Bob runs a Content Search on all mailboxes in the organization with the search query  `sender:jerry@adatum.com`. Because the permissions filter and the search query are logically combined by an **AND** operator, the search will return any message sent by jerry@adatum.com to any member of the Workers distribution group. 
     
 - **What happens if you have multiple search permissions filters?** In a Content Search query, multiple permissions filters are combined by **OR** Boolean operators. So results will be returned if any of the filters are true. In a Content Search, all filters (combined by **OR** operators) are then combined with the search query by the **AND** operator. Let's take the previous example, where a search filter allows Bob to only search the mailboxes of the members of the Workers distribution group. Then we create another filter that prevents Bob from searching Phil's mailbox ("Mailbox_Alias -ne 'Phil'"). And let's also assume that Phil is a member of the Workers group. When Bob runs a Content Search (from the previous example) on all mailboxes in the organization, search results will be returned for Phil's mailbox even though you applied filter to prevent Bob from searching Phil's mailbox. This is because the first filter, which allows Bob to search the Workers group, is true. And because Phil is a member of the Workers group, Bob can search Phil's mailbox. 
     
-- **Does search permissions filtering work for inactive mailboxes?** Yes, you can use mailbox and mailbox content filters to limit who can search inactive mailboxes in your organization. Like a regular mailbox, an inactive mailbox has to be configured with the recipient property that's used to create a permissions filter. If necessary, you can use the **Get-Mailbox -InactiveMailboxOnly** command to display the properties of inactive mailboxes. For more information, see [Manage inactive mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286939).
+- **Does search permissions filtering work for inactive mailboxes?** Yes, you can use mailbox and mailbox content filters to limit who can search inactive mailboxes in your organization. Like a regular mailbox, an inactive mailbox has to be configured with the recipient property that's used to create a permissions filter. If necessary, you can use the **Get-Mailbox -InactiveMailboxOnly** command to display the properties of inactive mailboxes. For more information, see [Create and manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md).
     
 - **Does search permissions filtering work for public folders?** No. As previously explained, search permissions filtering can't be used to limit who can search public folders in Exchange. For example, items in public folder locations can't be excluded from the search results by a permissions filter. 
     
-- **Does allowing a user to search all content locations in a specific service also prevent them from searching content locations in a different service?**No. As previously explained, you have to create a search permissions filter to explicitly prevent users from searching content locations in a specific Office 365 service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a create a filter that prevents them from searching sites.
-    
-[Return to top](permissions-filtering-for-content-search.md#top)
-  
-
+- **Does allowing a user to search all content locations in a specific service also prevent them from searching content locations in a different service?** No. As previously explained, you have to create a search permissions filter to explicitly prevent users from searching content locations in a specific Office 365 service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a create a filter that prevents them from searching sites.

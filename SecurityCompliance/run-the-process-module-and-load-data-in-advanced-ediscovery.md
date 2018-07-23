@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: "Learn how to use the Office 365 Security &amp; Compliance Center to access Office 365 Advanced eDiscovery and run the Process module for a case. 
 "

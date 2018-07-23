@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: "Read the recommendations for setting up Relevance training in Office 365 Advanced eDiscovery to score files by their relevance and generate analytical results. 
 "

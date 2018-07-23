@@ -11,7 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
-search.appverid: MET150
+search.appverid:
+- MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: "Top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Office 365 environment. "
 ---

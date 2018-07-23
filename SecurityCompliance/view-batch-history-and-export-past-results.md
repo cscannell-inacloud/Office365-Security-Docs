@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Office 365 Advanced eDiscovery. 
 "

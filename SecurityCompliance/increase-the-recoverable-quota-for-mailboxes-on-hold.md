@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Enable the archive mailbox and turn on auto-expanding archiving to increase the size of the Recoverable Items folder for a mailbox in Office 365. "
 ---
@@ -32,25 +34,24 @@ To help reduce the chance of exceeding this limit, the storage quota for the Rec
   
 When the storage quota for the Recoverable Items folder in the primary mailbox of a mailbox on hold is close to reaching its limit, you can do the following things:
   
-- **Enable the archive mailbox and turn on auto-expanding archiving** You can enable an unlimited storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 100 GB for the Recoverable Items folder in the primary mailbox and an unlimited amount of storage capacity for the Recoverable Items folder in the user's archive. See how: [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md) and [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md).
+- **Enable the archive mailbox and turn on auto-expanding archiving** - You can enable an unlimited storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 100 GB for the Recoverable Items folder in the primary mailbox and an unlimited amount of storage capacity for the Recoverable Items folder in the user's archive. See how: [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md) and [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
-    > After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved the Recoverable Items folder in the archive mailbox. See [(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](increase-the-recoverable-quota-for-mailboxes-on-hold.md#Step4) for instructions. > Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this might happen after you enable the archive mailbox. 
+    > After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved the Recoverable Items folder in the archive mailbox. See [Step 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) for instructions. Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this may happen after you enable the archive mailbox. 
   
-- **Create a custom retention policy for mailboxes on hold** In addition to enabling the archive mailbox and auto-expanding archiving for mailboxes on Litigation Hold or In-Place Hold, you might also want to create a custom retention policy for mailboxes on hold. This let's you apply a retention policy to mailboxes on hold that's different from the Default MRM Policy that's applied to mailboxes that aren't on hold. This lets you to apply retention tags that are specifically designed for mailboxes on hold. This includes creating a new retention tag for the Recoverable Items folder. 
+- **Create a custom retention policy for mailboxes on hold** - In addition to enabling the archive mailbox and auto-expanding archiving for mailboxes on Litigation Hold or In-Place Hold, you might also want to create a custom retention policy for mailboxes on hold. This let's you apply a retention policy to mailboxes on hold that's different from the Default MRM Policy that's applied to mailboxes that aren't on hold. This lets you to apply retention tags that are specifically designed for mailboxes on hold. This includes creating a new retention tag for the Recoverable Items folder. 
     
 The remainder of this topic describes the step-by-step procedures to create a custom retention policy for mailboxes on hold.
   
-[Step 1: Create a custom retention tag for the Recoverable Items folder](increase-the-recoverable-quota-for-mailboxes-on-hold.md#Step1)
-  
-[Step 2: Create a new retention policy for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md#Step2)
-  
-[Step 3: Apply the new retention policy to mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md#Step3)
-  
-[(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](increase-the-recoverable-quota-for-mailboxes-on-hold.md#Step4)
+[Step 1: Create a custom retention tag for the Recoverable Items folder](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
+
+[[Step 2: Create a new retention policy for mailboxes on hold](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
+
+[Step 3: Apply the new retention policy to mailboxes on hold](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
+
+[(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
   
 ## Step 1: Create a custom retention tag for the Recoverable Items folder
-<a name="Step1"> </a>
 
 The first step is to create a custom retention tag (called a retention policy tag or RPT) for the Recoverable Items folder. As previously explained, this RPT moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox. You have to use PowerShell to create an RPT for the Recoverable Items folder. You can't use the Exchange admin center (EAC). 
   
@@ -58,23 +59,20 @@ The first step is to create a custom retention tag (called a retention policy ta
     
 2. Run the following command to create a new RPT for the Recoverable Items folder: 
     
-  ```
-  New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
-  ```
+    ```
+    New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
+    ```
 
     For example, the following command creates a RPT for the Recoverable Items folder named "Recoverable Items 30 days for mailboxes on hold", with a retention period of 30 days. This means that after an item has been in the Recoverable Items folder for 30 days, it will be moved to the Recoverable Items folder in the user's archive mailbox.
     
-  ```
-  New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
-  ```
+    ```
+    New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
+    ```
 
     > [!TIP]
     > We recommend that the retention period (defined by the  _AgeLimitForRetention_ parameter) for the Recoverable Items RPT is the same as the deleted item retention period for the mailboxes that the RPT will be applied to. This allows a user the entire deleted item retention period to recover deleted items before they are moved to the archive mailbox. In the previous example, the retention period was set to 30 days based on the assumption that the deleted item retention period for mailboxes is also 30 days. An Exchange Online mailbox is configured to retain deleted items for 14 days, by default. But you can change this setting to a maximum of 30 days. For more information, see [Change the deleted item retention period for a mailbox in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940). 
   
-[Return to top](increase-the-recoverable-quota-for-mailboxes-on-hold.md#top)
-  
 ## Step 2: Create a new retention policy for mailboxes on hold
-<a name="Step2"> </a>
 
 The next step is to create a new retention policy and add retention tags to it, including the Recoverable Items RPT that you created in Step 1. This new policy will be applied to mailboxes on hold in the next step. 
   
@@ -84,17 +82,17 @@ Before you create the new retention policy, determine the additional retention t
     
 - [Default folders that support Retention Policy Tags](https://go.microsoft.com/fwlink/p/?LinkId=746957)
     
-- The "Create a retention tag" section in the topic [Create a Retention Policy](https://go.microsoft.com/fwlink/p/?LinkId=404422)
+- The "Create a retention tag" section in the [Create a Retention Policy](https://go.microsoft.com/fwlink/p/?LinkId=404422) topic.
     
 You can use the EAC or Exchange Online PowerShell to create a retention policy.
   
- **Use the EAC to create a retention policy**
+### Use the EAC to create a retention policy
   
-1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](media/ITPro_EAC_AddIcon.gif).
     
 2. On the **New retention policy** page, under **Name**, type a name that describes the purpose of the retention policy; for example, **MRM Policy for Mailboxes on Hold**. 
     
-3. Under **Retention tags**, click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif).
+3. Under **Retention tags**, click **Add** ![Add Icon](media/ITPro_EAC_AddIcon.gif).
     
 4. In the list of retention tags, select the Recoverable Items RPT that you created in Step 1, and then click **Add**.
     
@@ -110,7 +108,7 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
     
     ![Retention tags linked to the retention policy are displayed in the details pane](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
- **Use Exchange Online PowerShell to create a retention policy**
+### Use Exchange Online PowerShell to create a retention policy
   
 Run the following command to create new retention policy for mailboxes on hold. 
   
@@ -124,15 +122,12 @@ For example, the following command creates the retention policy and linked reten
 ```
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-
-[Return to top](increase-the-recoverable-quota-for-mailboxes-on-hold.md#top)
   
 ## Step 3: Apply the new retention policy to mailboxes on hold
-<a name="Step3"> </a>
 
 The last step is to apply the new retention policy that you created in Step 2 to mailboxes on hold in your organization. You can use the EAC or Exchange Online PowerShell to apply the retention policy to a single mailbox or to multiple mailboxes. 
   
- **Use the EAC to apply the new retention policy**
+### Use the EAC to apply the new retention policy
   
 1. Go to **Recipients** \> **Mailboxes**.
     
@@ -154,7 +149,7 @@ You can also use the EAC to apply the retention policy to multiple mailboxes.
     
 5. On the **Bulk assign retention policy** page, select the retention policy that you created in Step 2, and then click **Save**. 
     
- **Use Exchange Online PowerShell to apply the new retention policy**
+### Use Exchange Online PowerShell to apply the new retention policy
   
 You can use Exchange Online PowerShell to apply a new retention policy to a single mailbox. But the real power of PowerShell is that you can use it to quickly identify all the mailboxes in your organization that are on either Litigation Hold or In-Place Hold, and then apply the new retention policy to all mailboxes on hold in a single command. Here are some examples of using Exchange PowerShell to apply a retention policy to one or more mailboxes. All of the examples apply the retention policy that was created in Step 2.
   
@@ -199,11 +194,8 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq '
 ```
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-
-[Return to top](increase-the-recoverable-quota-for-mailboxes-on-hold.md#top)
   
 ## (Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings
-<a name="Step4"> </a>
 
 After you apply the new retention policy to mailboxes on hold, it can take up to 7 days in Exchange Online for the Managed Folder Assistant to process these mailboxes using the settings in the new retention policy. Instead of waiting for the Managed Folder Assistant to run, you can use the **Start-ManagedFolderAssistant** cmdlet to manually trigger the assistant to process the mailboxes that you applied the new retention policy to. 
   
@@ -224,12 +216,7 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
 ## More information
-<a name="Step4"> </a>
 
 - After you enable a user's archive mailbox, consider telling the user that other items in their mailbox (not just items in the Recoverable Items folder) might be moved to the archive mailbox. This is because the Default MRM Policy that's assigned to Exchange Online mailboxes contains a retention tag (named Default 2 years move to archive) that moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see [Default Retention Policy in Exchange Online ](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - After you enable a user's archive mailbox, you might also tell the user that they can recover deleted items in the Recoverable Items folder in their archive mailbox. They can do this in Outlook by selecting the **Deleted Items** folder in the archive mailbox, and then clicking **Recover Deleted Items from Server** on the **Home** tab. For more information about recovering deleted items, see [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829). 
-    
-[Return to top](increase-the-recoverable-quota-for-mailboxes-on-hold.md#top)
-  
-

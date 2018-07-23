@@ -10,6 +10,8 @@ f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords'
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: Strat_O365_IP
 ms.assetid: 1b9e3c6c-4308-4a20-b11e-c37b8013e177
 description: "Many organizations already have a process to identify and classify sensitive information by using the classification properties in Windows Server File Classification Infrastructure (FCI), the document properties in SharePoint, or the document properties applied by a third-party system. If this describes your organization, you can create a DLP policy in Office 365 that recognizes the properties that have been applied to documents by Windows Server FCI or other system, so that the DLP policy can be enforced on Office documents with specific FCI or other property values."

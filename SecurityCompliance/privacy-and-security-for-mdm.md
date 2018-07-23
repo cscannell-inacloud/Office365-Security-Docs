@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 89396927-4144-42c2-a1f3-6600649c8102
 description: "Privacy and security statement for Mobile Device Management for Office 365, a cloud-based service, powered by Microsoft Intune, that helps you manage and secure mobile devices used in your organization."
 ---

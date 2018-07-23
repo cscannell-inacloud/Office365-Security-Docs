@@ -14,6 +14,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: d310f556-8bfb-497b-9bd7-fe3c36ea2fd6
 
 description: "Steps to create and deploy security policies for Mobile Device Management in Office 365 that can help protect your organization's information on Office 365 from unauthorized access. "

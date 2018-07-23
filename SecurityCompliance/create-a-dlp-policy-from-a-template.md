@@ -8,13 +8,12 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
-- 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- Strat_O365_IP
-search.appverid: MET150
+search.appverid: 
+- MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: "The easiest, most common way to get started with DLP policies is to use one of the templates included in Office 365.
 "

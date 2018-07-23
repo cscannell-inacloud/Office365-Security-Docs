@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: "landing page for protecting access to O365 data and services"
 ---

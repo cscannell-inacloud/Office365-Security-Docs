@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 
 description: "Assign the permissions required to perform eDiscovery-related tasks using the Security &amp; Compliance Center."
@@ -21,9 +23,9 @@ If you want people to use any of the eDiscovery-related tools in the Office 365 
   
 The primary eDiscovery-related role group in Security &amp; Compliance Center is called **eDiscovery Manager**. There are two subgroups within this role group. 
   
-- **eDiscovery Managers** An eDiscovery Manager can use the Content Search tool in the Security &amp; Compliance Center to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage eDiscovery cases, add and remove members to a case, create case holds, and run Content Searches associated with a case. An eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases create by other eDiscovery Managers. 
+- **eDiscovery Managers** - An eDiscovery Manager can use the Content Search tool in the Security &amp; Compliance Center to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage eDiscovery cases, add and remove members to a case, create case holds, and run Content Searches associated with a case. An eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases create by other eDiscovery Managers. 
     
-- **eDiscovery Administrators** An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same Content Search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can: 
+- **eDiscovery Administrators** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same Content Search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can: 
     
   - Access all cases that are listed on the **eDiscovery cases** page in the Security &amp; Compliance Center. 
     
@@ -31,16 +33,16 @@ The primary eDiscovery-related role group in Security &amp; Compliance Center is
     
   - Perform administrative tasks in Advanced eDiscovery, such as setting up users, creating cases, and importing data. This is because a person who is an eDiscovery Administrator in the Security &amp; Compliance Center is automatically added as an administrator in Advanced eDiscovery.
     
-    > [!NOTE]
+  > [!NOTE]
     > To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery standalone license. Administrators and compliance officers who are assigned to cases and use Advanced eDiscovery to analyze data don't need an E5 license. 
   
-    See the [More information](assign-ediscovery-permissions.md#moreinfo) section for reasons why you might want eDiscovery Administrators in your organization. 
+    See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization. 
     
 ## Before you begin
 
 - You have to be a member of the Organization Management role group (or be assigned the Role Management role) to assign eDiscovery permissions in the Security &amp; Compliance Center.
     
-- You can use the [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) cmdlet in Security &amp; Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. See the [More information](assign-ediscovery-permissions.md#moreinfo) section for more details. 
+- You can use the [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) cmdlet in Security &amp; Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. See the [More information](#more-information) section for more details. 
     
 ## Assign eDiscovery permissions in the Security &amp; Compliance Center
 
@@ -59,19 +61,16 @@ The primary eDiscovery-related role group in Security &amp; Compliance Center is
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-On the **Permissions** page in the Security &amp; Compliance Center, you can also assign users eDiscovery-related permissions, by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a list of the eDiscovery-related roles assigned to each of these role groups, see the [More information](assign-ediscovery-permissions.md#moreinfo) section. 
-  
-[Return to top](assign-ediscovery-permissions.md#top)
+On the **Permissions** page in the Security &amp; Compliance Center, you can also assign users eDiscovery-related permissions, by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a list of the eDiscovery-related roles assigned to each of these role groups, see the [More information](#more-information) section. 
   
 ## More information
-<a name="moreinfo"> </a>
 
 - **What are the eDiscovery-related roles in the Security &amp; Compliance Center?** The following table describes the eDiscovery-related roles in the Security &amp; Compliance Center, and indicates the built-in role groups that each role is assigned to, by default. 
     
 |**Role**|**Compliance Administrator**|**eDiscovery Manager &amp; Administrator**|**Organization Management**|**Reviewer**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Case Management** <br/> Lets users create, edit, delete, and control access to eDiscovery cases in the Security &amp; Compliance Center. For more information, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](manage-ediscovery-cases.md).  <br/> As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator.  <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Compliance Search** <br/> Lets users run the Content Search tool in the Security &amp; Compliance Center to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Office 365 Groups, and Microsoft Teams. This role allows a user to get an estimate of the search results, but additional roles are needed to perform actions such as previewing, exporting, or deleting search results.  <br/> For more information, see [Content Search in Office 365](content-search.md).  <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|**Compliance Search** <br/> Lets users run the Content Search tool in the Security &amp; Compliance Center to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Office 365 Groups, and Microsoft Teams. This role allows a user to get an estimate of the search results and create export reports, but additional roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.<br/><br/>Note that users assigned the Compliance Search role but don't have the Preview role can preview the results of a search in which the preview action has been initiated by a user that's assigned the Preview role. The user without the Preview role can preview results for up to 2 weeks after the initial preview action was created.  <br/><br/> Similarly, users assigned the Compliance Search role but don't have the Export role can download the results of a search in which the export action has initiated by a user that's assigned the Export role. The user without the Export role can download the results of a search for up to 2 weeks after the initial export action was created. After that they won’t be able to download the results unless someone with the Export role restarts the export.<br/><br/>For more information, see [Content Search in Office 365](content-search.md).  <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
 |**Export** <br/> Lets users export the results of a Content Search to a local computer. It also lets them prepare search results for analysis in Advanced eDiscovery.  <br/> For more information about exporting search results, see [Export search results from the Office 365 Security &amp; Compliance Center](export-search-results.md).  <br/> | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | <br/> |
 |**Hold** <br/>  Lets users place content in mailboxes, public folders, sites, Skype for Business conversations, and Office 365 groups on hold. When content is on hold, content owners will still be able to modify or delete the original content, but the content will be preserved until the hold is removed or until the hold duration expires.  <br/>  For more information about holds, see:  <br/> [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](manage-ediscovery-cases.md) <br/> [Overview of retention policies](retention-policies.md) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
 |**Preview** <br/> Lets users view a list of items that were returned from a Content Search. They'll also be able to open and view each item from the list to view its contents.  <br/> | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | <br/> |
@@ -98,7 +97,3 @@ On the **Permissions** page in the Security &amp; Compliance Center, you can als
     Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security &amp; Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators. 
     
     Note that you also can't add a mail-enabled security group as a member of a case.
-    
-[Return to top](assign-ediscovery-permissions.md#top)
-  
-

@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: OWC150
+search.appverid: 
+- OWC150
+- MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: "To help prevent phishing, Office 365 and Outlook.com now require RFC compliance for From: addresses."
 ---

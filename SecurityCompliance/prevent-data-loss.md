@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 6a888faa-c114-4395-b20d-a5b8ebd1ac0c
 description: "With a data loss prevention (DLP) policy, you can identify, monitor, and automatically protect sensitive information across Office 365. For example, you can help prevent sensitive information such as credit card numbers, social security numbers, or health records from inadvertently leaking outside your organization."
 ---

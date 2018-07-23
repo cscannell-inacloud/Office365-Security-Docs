@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: "Learn how to access Azure Active Directory, which is include in your organization's paid subscription to Office 365."
 ---
@@ -36,5 +38,3 @@ Use a private browsing session (not a regular session) to access the Azure porta
 - You can also access the **Azure Active Directory** admin center from the Office 365 admin center. In the left navigation pane of the Office 365 admin center , click **Admin centers** \> **Azure Active Directory**.
     
 - For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](https://docs.microsoft.com/azure/active-directory/active-directory-administer).
-    
-

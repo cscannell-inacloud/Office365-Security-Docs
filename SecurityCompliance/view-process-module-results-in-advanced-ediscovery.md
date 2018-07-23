@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: "Learn about how to find the results of a Process Module run in Office 365 Advanced eDiscovery, including task status and process summary. 
 "

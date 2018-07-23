@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 description: "You can configure end-user spam notifications for the default company-wide content filter policy or for custom content filter policies that are applied to domains."
 ---

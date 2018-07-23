@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: "Use the Search Statistics feature to display and compare statistics for multiple Content Searches in Office 365 Security &amp; Compliance Center. You can also configure the keyword list when you create or edit a search query to get enhanced statistics that show how many items matched each keyword or keyword phrase."
 ---
@@ -21,12 +23,7 @@ Additionally, you can configure new and existing searches to return statistics f
   
 You can also download the search statistics and keyword statistics to a CSV file. This lets you use the filtering and sorting features in Excel to compare results, and prepare reports for your search results.
   
-[Get statistics for Content Searches](view-keyword-statistics-for-content-search.md#searchstatistics)
-  
-[Get keyword statistics for Content Searches](view-keyword-statistics-for-content-search.md#keywordstatistics)
-  
 ## Get statistics for Content Searches
-<a name="searchstatistics"> </a>
 
 To display statistics for Content Searches:
   
@@ -44,15 +41,15 @@ To display statistics for Content Searches:
     
     ![Summary of the statistics for the selected searches](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
-1. The name of the Content Search. As previously stated, you can display and compare statistics for multiple searches.
+    a.  The name of the Content Search. As previously stated, you can display and compare statistics for multiple searches.
     
-2. The type of content location that was searched. Each row displays statistics for mailboxes, sites, and public folders from the specified search.
+    b. The type of content location that was searched. Each row displays statistics for mailboxes, sites, and public folders from the specified search.
     
-3. The number of content locations containing items that match the search query. For mailboxes, this statistic also includes the number of archive mailboxes that contain items that match the search query.
+    c. The number of content locations containing items that match the search query. For mailboxes, this statistic also includes the number of archive mailboxes that contain items that match the search query.
     
-4. The total number of items of all specified content locations that match the search query. Examples of item types include email messages, calendar items, and documents. If an item contains multiple instances of a keyword that is being searched for, it's only counted once in the total number of items. For example, if you're searching for words "stock" or "fraud" and an email message contains three instances of the word "stock", it's only counted once in the **Items** column. 
+    d. The total number of items of all specified content locations that match the search query. Examples of item types include email messages, calendar items, and documents. If an item contains multiple instances of a keyword that is being searched for, it's only counted once in the total number of items. For example, if you're searching for words "stock" or "fraud" and an email message contains three instances of the word "stock", it's only counted once in the **Items** column. 
     
-5. The total size of all items that were found in the specified content location that match the search query. 
+    e. The total size of all items that were found in the specified content location that match the search query. 
     
     **Queries**
     
@@ -60,27 +57,28 @@ To display statistics for Content Searches:
     
     ![Search query statistics for the selected searches](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
-1. The name of the Content Search that the row contains query statistics for.
+    a. The name of the Content Search that the row contains query statistics for.
     
-2. The type of content location that the query statistics are applicable to.
+    b. The type of content location that the query statistics are applicable to.
     
-3. This column indicates which part of the search query the statistics are applicable to. **Primary** indicates the entire search query. If you use a keyword list when you create or edit a search query, statistics for each component of the query are included in this table. See the [Get keyword statistics for Content Searches](view-keyword-statistics-for-content-search.md#keywordstatistics) section in this article for more information. 
+    c. This column indicates which part of the search query the statistics are applicable to. **Primary** indicates the entire search query. If you use a keyword list when you create or edit a search query, statistics for each component of the query are included in this table. See the [Get keyword statistics for Content Searches](#get-keyword-statistics-for-content-searches) section in this article for more information. 
     
-4. This column contains the actual search query that run by the Content Search tool. Note that the tool automatically adds a few additional components to the query that you create. 
+    d. This column contains the actual search query that run by the Content Search tool. Note that the tool automatically adds a few additional components to the query that you create. 
+
+    - When you search for all content in mailboxes (by not specifying any keywords), the actual key word query is  `size>=0` so that all items are returned. 
     
-  - When you search for all content in mailboxes (by not specifying any keywords), the actual key word query is  `size>=0` so that all items are returned. 
+     - When you search SharePoint Online and OneDrive for Business sites, the two following components are added:
     
-  - When you search SharePoint Online and OneDrive for Business sites, the two following components are added:
+          **NOT IsExternalContent:1** - Excludes any content from an on-premises SharePoint organization. 
     
-    **NOT IsExternalContent:1**Excludes any content from an on-premises SharePoint organization. 
+          **NOT IsOneNotePage:1** - Excludes all OneNote files because these would be duplicates of any document that matches the search query. 
+
     
-    **NOT IsOneNotePage:1** Excludes all OneNote files because these would be duplicates of any document that matches the search query. 
+    e. The number of the content locations (specified by the ** Location type ** column) that contain items that match the search query listed in the **Query** column. 
     
-5. The number of the content locations (specified by the ** Location type ** column) that contain items that match the search query listed in the **Query** column. 
+    f. The number of items (from the specified content location) that match the search query listed in the **Query** column. As previously explained, if an item contains multiple instances of a keyword that is being searched for, it's only counted once in the this column. 
     
-6. The number of items (from the specified content location) that match the search query listed in the **Query** column. As previously explained, if an item contains multiple instances of a keyword that is being searched for, it's only counted once in the this column. 
-    
-7. The total size of all items that were found (in the specified content location) that match the search query in the **Query** column. 
+    g. The total size of all items that were found (in the specified content location) that match the search query in the **Query** column. 
     
     **Top locations**
     
@@ -88,16 +86,13 @@ To display statistics for Content Searches:
     
     ![Statistics about the number of items found in the content locations that were searched](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
-1. The name of the content location.
+    a. The name of the content location.
     
-2. The type of content location that the location statistics are applicable to.
+    b. The type of content location that the location statistics are applicable to.
     
-3. There are columns for each search that you're displaying statistics for. This column shows the number (and total size) of items that match the search query in each content location. Note that when you're displaying statistics for multiple searches, the "NA" in this column indicates that the content location wasn't included in that search. 
-    
-[Return to top](view-keyword-statistics-for-content-search.md#top)
-  
+    c. There are columns for each search that you're displaying statistics for. This column shows the number (and total size) of items that match the search query in each content location. Note that when you're displaying statistics for multiple searches, the "NA" in this column indicates that the content location wasn't included in that search. 
+
 ## Get keyword statistics for Content Searches
-<a name="keywordstatistics"> </a>
 
 As previous explained, the **Queries** page shows the search query and the number (and size) of items that match the query. If you use a keyword list when you create or edit a search query, you can get enhanced statistics that show how many items match each keyword or keyword phrase. This can help you quickly identify which parts of the query are the most (and least) effective. For example, if a keyword returns a large number of items, you might choose to refine the keyword query to narrow the search results. You can set up a keyword list when you create or edit a Content Search. 
   
@@ -111,13 +106,13 @@ To create a keyword list and view keyword statistics for a Content Search:
     
     ![Click the Show keyword list checkbox and type a keyword in each row](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
-1. Click the **Show keyword list** check box. 
+    a. Click the **Show keyword list** check box. 
     
-2. Type a keyword or keyword phase in a row in the keywords table. For example, type **budget** in the first row and then type **security** in the second row. 
+    b. Type a keyword or keyword phase in a row in the keywords table. For example, type **budget** in the first row and then type **security** in the second row. 
     
 4. After adding the keywords that you want to search and get statistics for, click **Search** to run the revised search. 
     
-5. When the search is completed, select it in the list of searches, and then click **Search statistics**![Search Statistics button](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png). You can also display and compare keyword statistics for multiple searches.
+5. When the search is completed, select it in the list of searches, and then click **Search statistics** ![Search Statistics button](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png). You can also display and compare keyword statistics for multiple searches.
     
 6. On the **Search statistics** page, click **Query** to display the keyword statistics for the selected searches. 
     
@@ -125,12 +120,8 @@ To create a keyword list and view keyword statistics for a Content Search:
   
     As shown in the previous screenshot, the statistics for each keyword are displayed; this includes: 
     
-  - The keyword statistics for each type of content location included in the search.
+    - The keyword statistics for each type of content location included in the search.
     
-  - The actual search query for each keyword, which includes any conditions from the search query. 
+    - The actual search query for each keyword, which includes any conditions from the search query. 
     
-  - The complete search query (identified as **Primary** in the **Part** column) and the statistics for the complete query. Note these are the same statistics displayed on the **Summary** page. 
-    
-[Return to top](view-keyword-statistics-for-content-search.md#top)
-  
-
+    - The complete search query (identified as **Primary** in the **Part** column) and the statistics for the complete query. Note these are the same statistics displayed on the **Summary** page. 

@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: "Describes all the fields that are included in the Export reports for Advanced eDiscovery."
 ---

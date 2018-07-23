@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: "Learn the guidelines for preparing case files of Office 365 data for analysis with Office 365 Advanced eDiscovery. 
 "

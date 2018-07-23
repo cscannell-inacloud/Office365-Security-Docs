@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: "landing page for Plan Security and Compliance"
 ---

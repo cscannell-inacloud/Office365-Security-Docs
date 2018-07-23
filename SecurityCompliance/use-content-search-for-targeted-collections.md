@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: "Use Content Search in the Office 365 Security &amp; Compliance Center to perform targeted collections. A targeted collection means that you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search."
 ---
@@ -16,14 +18,6 @@ description: "Use Content Search in the Office 365 Security &amp; Compliance Cen
 # Use Content Search in Office 365 for targeted collections
 
 The Content Search feature in the Office 365 Security &amp; Compliance Center doesn't provide a direct way in the UI to search specific folders in Exchange mailboxes or SharePoint and OneDrive for Business sites. However, it is possible to search specific folders (called a targeted collection) by specifying the folder ID or path in the actual search query syntax. Using Content Search to perform a targeted collection is useful when you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. You can use the script in this article to obtain the folder ID for mailbox folders or the path for folders on a SharePoint and OneDrive for Business site. Then you can use the folder ID or path in a search query to return items located in the folder.
-  
-Here are the steps to make this happen:
-  
-[Step 1: Run the script to get a list of folders for a mailbox or site](use-content-search-for-targeted-collections.md#step1)
-  
-[Step 2: Use a folder ID or path to perform a targeted collection](use-content-search-for-targeted-collections.md#step2)
-  
-[More information](use-content-search-for-targeted-collections.md#moreinfo)
   
 ## Before you begin
 
@@ -42,27 +36,24 @@ Here are the steps to make this happen:
 - The script includes minimal error handling. The primary purpose of the script is to quickly display a list of mailbox folder IDs or site paths that can be used in the search query syntax of a Content Search to perform a targeted collection.
     
 - The sample script provided in this topic isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
-    
-[Return to top](use-content-search-for-targeted-collections.md#top)
   
 ## Step 1: Run the script to get a list of folders for a mailbox or site
-<a name="step1"> </a>
 
 The script that you run in this first step will return a list of mailbox folders or SharePoint or OneDrive for Business folders, and the corresponding folder ID or path for each folder. When you run this script, it will prompt you for the following information.
   
 - **Email address or site URL** Type an email address of the custodian to return a list of Exchange mailbox folders and fold IDs. Or type the URL for a SharePoint site or a OneDrive for Business site to return a list of paths for the specified site. Here are some examples: 
     
-  - **Exchange ** stacig@contoso.onmicrosoft.com 
+  - **Exchange** - stacig@contoso.onmicrosoft.com 
     
-  - **SharePoint ** https://contoso.sharepoint.com/sites/marketing 
+  - **SharePoint** - https://contoso.sharepoint.com/sites/marketing 
     
-  - **OneDrive for Business ** https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
+  - **OneDrive for Business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **Your user credentials**The script will use your credentials to connect to Exchange Online and the Security &amp; Compliance Center with remote PowerShell. As previously explained, you have to assigned the appropriate permissions to successfully run this script.
+- **Your user credentials** - The script will use your credentials to connect to Exchange Online and the Security &amp; Compliance Center with remote PowerShell. As previously explained, you have to assigned the appropriate permissions to successfully run this script.
     
 To display a list of mailbox folders or site path names:
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, GetFolderSearchParameters.ps1.
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `GetFolderSearchParameters.ps1`.
     
   ```
   #########################################################################################################
@@ -178,18 +169,16 @@ To display a list of mailbox folders or site path names:
     
 3. Run the script; for example:
     
-  ```
-  .\GetFolderSearchParameters.ps1
-  ```
+      ```
+      .\GetFolderSearchParameters.ps1
+      ```
 
 4. Enter the information that the script prompts you for.
     
     The script displays a list of mailbox folders or site folder for the specified user. Let this window open so that you can copy a folder ID or path name and paste it in to a search query in Step 2.
     
     > [!TIP]
-    > Instead of displaying a list of folders on the computer screen, you can re-direct the output of the script to a text file. This file will be saved to the folder where the script is located. For example, to redirect the script output to a text file, run the following command in Step 3:  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` Then you can copy a folder ID or path from the file to use in a search query. 
-  
-[Return to top](use-content-search-for-targeted-collections.md#top)
+    > Instead of displaying a list of folders on the computer screen, you can re-direct the output of the script to a text file. This file will be saved to the folder where the script is located. For example, to redirect the script output to a text file, run the following command in Step 3:  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` Then you can copy a folder ID or path from the file to use in a search query.
   
 ### Script output for mailbox folders
 
@@ -209,10 +198,7 @@ Here's an example of the output returned by the script for site folders.
   
 ![Example of the list of path names for site folders returned by the script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-[Return to top](use-content-search-for-targeted-collections.md#top)
-  
 ## Step 2: Use a folder ID or path to perform a targeted collection
-<a name="step2"> </a>
 
 After you've run the script to collect a list of folder IDs or paths for a specific user, the next step to go to the Security &amp; Compliance Center and create a new Content Search to search a specific folder. You'll use the  `folderid:<folderid>` or  `path:<path>` property in the search query that you configure in the Content Search keyword box (or as the value for the  *ContentMatchQuery*  parameter if you use the **New-ComplianceSearch** cmdlet). You can combine the  `folderid` or  `path` property with other search parameters or search conditions. If you only include the  `folderid` or  `path` property in the query, the search will return all items located in the specified folder. 
   
@@ -223,35 +209,33 @@ After you've run the script to collect a list of folder IDs or paths for a speci
     
 2. Sign in to Office 365 using the account and credentials that you used to run the script in Step 1.
     
-3. In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** \> **Content search**, and then click **New**![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif).
+3. In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** \> **Content search**, and then click **New** ![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif).
     
 4. On the **New search** page, type a name for the Content Search. This name has to be unique in your organization. 
     
 5. Under **Where do you want us to look**, do one of the following, based on whether your searching a mailbox folder or a site folder:
     
-  - Click **Choose specific mailboxes to search** and then add the same mailbox that you specified when you ran the script in Step 1. 
+    - Click **Choose specific mailboxes to search** and then add the same mailbox that you specified when you ran the script in Step 1. 
     
-    Or
+      Or
     
-  - Click **Choose specific sites to search** to search and then add the same site URL that you specified when you ran the script in Step 1. 
+    - Click **Choose specific sites to search** to search and then add the same site URL that you specified when you ran the script in Step 1. 
     
 6. Click **Next**.
     
-7. In the keyword box on the ** What do you want us to look ** for page, the paste a  `folderid:<folderid>` or  `path:<path>` value that was returned by the script in Step 1. 
+7. In the keyword box on the **What do you want us to look for** page, paste the  `folderid:<folderid>` or  `path:<path>` value that was returned by the script in Step 1. 
     
-    For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder from the mailbox folders screenshot shown in Step 1.
+    For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
     
     ![Paste the folderid or path in to the keyword box of the search query](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Click **Search** to start the targeted collection search. 
-    
-[Return to top](use-content-search-for-targeted-collections.md#top)
   
 ### Examples of search queries for targeted collections
 
-Here are some example of using the  `folderid` and  `path` properties in a query to perform a targeted collection. Note that placeholders are used for  `folderid:<folderid>` and  `path:<path>` to save space. 
+Here are some examples of using the  `folderid` and  `path` properties in a search query to perform a targeted collection. Note that placeholders are used for  `folderid:<folderid>` and  `path:<path>` to save space. 
   
-- This example searches three different mailboxes folders. You could use a similar query syntax to search the hidden folders in a user's Recoverable Items folder.
+- This example searches three different mailbox folders. You could use similar query syntax to search the hidden folders in a user's Recoverable Items folder.
     
   ```
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
@@ -263,7 +247,7 @@ Here are some example of using the  `folderid` and  `path` properties in a query
   folderid:<folderid> AND "Contoso financial results"
   ```
 
-- This example searches a site folder (and any subfolder) for documents that contain the letters "NDA" in the title.
+- This example searches a site folder (and any subfolders) for documents that contain the letters "NDA" in the title.
     
   ```
   path:<path> AND filename:nda
@@ -274,11 +258,8 @@ Here are some example of using the  `folderid` and  `path` properties in a query
   ```
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-
-[Return to top](use-content-search-for-targeted-collections.md#top)
   
 ## More information
-<a name="moreinfo"> </a>
 
 Keep the following things in mind when using the script in this article and performing targeted collections.
   
@@ -290,8 +271,4 @@ Keep the following things in mind when using the script in this article and perf
     
 - When searching site folders, the folder (identified by its  `path` property) and all sub-folders will be searched. 
     
-- As previously stated, you can't use  `path` property to search for media files, such as .png, .tiff, or .wav files, located in OneDrive locations. Use a different [Searchable site properties](keyword-queries-and-search-conditions.md#siteproperties) to search for media files in OneDrive folders. 
-    
-[Return to top](use-content-search-for-targeted-collections.md#top)
-  
-
+- As previously stated, you can't use  `path` property to search for media files, such as .png, .tiff, or .wav files, located in OneDrive locations. Use a different [site property](keyword-queries-and-search-conditions.md#searchable-site-properties) to search for media files in OneDrive folders. 

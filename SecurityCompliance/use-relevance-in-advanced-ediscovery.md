@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: "Learn about the Relevance module in Office 365 Advanced eDiscovery, including a workflow and guidelines and steps for training and file review. 
 "

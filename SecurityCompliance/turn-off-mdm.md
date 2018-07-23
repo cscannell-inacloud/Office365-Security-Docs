@@ -12,6 +12,7 @@ search.appverid:
 - MOE150
 - MED150
 - GPA150
+- MET150
 ms.assetid: 2709cafb-0a8b-44bc-8494-7e2fccfa2b19
 description: "Follow these steps to stop MDM policies from being enforced for mobile devices in your Office 365 organization."
 ---
@@ -27,7 +28,7 @@ To effectively turn off MDM for Office 365, you remove groups of people (defined
 These options will remove MDM enforcement for devices in your organization. Unfortunately, you can't simply "unprovision" MDM for Office 365 after you've set it up.
   
 > [!IMPORTANT]
-> Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves. For example, email profiles and cached emails may be removed, depending on the device. See: [What happens when you delete a policy or remove a user from the policy?](create-device-security-policies.md#BKMK_ChangeImpact)
+> Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves. For example, email profiles and cached emails may be removed, depending on the device. See: [What is the impact of security policies on different device types?](create-device-security-policies.md#what-is-the-impact-of-security-policies-on-different-device-types)
   
 ## Remove user security groups from MDM device policies
 

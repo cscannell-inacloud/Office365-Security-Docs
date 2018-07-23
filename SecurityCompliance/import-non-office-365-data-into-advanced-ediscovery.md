@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: OEC150
+search.appverid: 
+- OEC150
+- MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: "How to steps to import content that is not stored in O365 into an Azure blob so that it can be analyzed with AeD"
 ---

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: "Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here. Also, take a look at Frequently asked questions about data protection in Azure Information Protection for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection."
 ---

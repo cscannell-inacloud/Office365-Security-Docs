@@ -8,7 +8,8 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MET150
+search.appverid:
+- MET150
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: "With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Email message encryption helps ensure that only intended recipients can view message content."
 ---

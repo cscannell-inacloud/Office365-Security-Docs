@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: "Learn how DLP in the Security &amp; Compliance Center works with DLP and transport rules in the Exchange Admin Center."
 ---

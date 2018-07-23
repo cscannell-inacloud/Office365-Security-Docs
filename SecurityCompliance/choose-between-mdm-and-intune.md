@@ -13,6 +13,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: c93d9ab9-efb2-4349-9b93-30c30562ee22
 description: "Microsoft Intune and built-in Mobile Device Management for Office 365 both give you the ability to manage mobile devices in your organization. But there are key differences, described in this topic."
 ---

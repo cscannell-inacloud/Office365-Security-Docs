@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: dd892318-bc44-4eb1-af00-9db5430be3cd
 description: "The built-in Mobile Device Management for Office 365 helps you secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. To get started, follow these steps to activate and set up Mobile Device Management for Office 365."
 ---

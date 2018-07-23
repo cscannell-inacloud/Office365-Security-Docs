@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.assetid: 0c03e6b3-e73f-4316-9e2b-bf4091ae96bb
 description: "Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that customers may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see Plan for third-party SSL certificates for Office 365. The following certificate information applies to all worldwide and national cloud instances of Office 365."

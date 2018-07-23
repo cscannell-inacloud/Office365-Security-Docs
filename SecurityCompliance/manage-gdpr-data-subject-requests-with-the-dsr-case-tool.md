@@ -8,6 +8,8 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: "The GDPR gives EU citizens (called data subjects) specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to take an action on their personal data is called a Data Subject Request or DSR. You can use DSR Cases in the Office 365 Security &amp; Compliance Center to manage your organization's DSR investigations."
@@ -47,17 +49,17 @@ Using the DSR case tool you can:
     
 Here's the high-level process for using the DSR case tool to manage DSR investigations:
   
-[Step 1: Assign eDiscovery permissions to potential case members](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step1)
-  
-[Step 2: Create a DSR case and add members](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step2)
-  
-[Step 3: Run the search query](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step3)
-  
-[Step 4: Export the data](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)
-  
-[(Optional) Step 5: Revise the built-in search query](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step5)
-  
-[More information about using the DSR case tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#moreinfo)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+
+[Step 2: Create a DSR case and add members](#step-2-create-a-dsr-case-and-add-members)
+
+[Step 3: Run the search query](#step-3-run-the-search-query)
+
+[Step 4: Export the data](#step-4-export-the-data)
+
+[(Optional) Step 5: Revise the built-in search query](#optional-step-5-revise-the-built-in-search-query)
+
+[More information about using the DSR case tool](#more-information-about-using-the-dsr-case-tool)
   
 > [!IMPORTANT]
 > Our tools can help admins perform DSR access or export requests by enabling them to utilize the built-in search and export functionality found in the DSR case tool. The tool helps to facilitate a best-effort method to export data that's relevant to a DSR request submitted by a data subject. However, it's important to note that search results can vary based on the data subject or the admin actions taken that may impact whether or not an item would be deemed as "personal data" for export purposes. For example, if the data subject was the last person to modify a file they didn't create, the file might not be returned in the search results. Similarly, an admin could export data without including partially indexed items or all versions of SharePoint documents. Therefore, the tools provided can help facilitate accessing and exporting data requests; however, the results are subject to specific admin and data subject usage scenarios. 
@@ -70,8 +72,6 @@ For step-by-step instructions, see [Assign eDiscovery permissions in the Officeâ
   
 > [!NOTE]
 > By default, an Office 365 global administrator (or other members of the Organization Management role group in the Security &amp; Compliance Center don't have the necessary permissions to export Content Search results (see Step 4 in this article). To address this, an admin can add themselves as a member of the eDiscovery Manager role group. 
-  
-[Return to top](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#top)
   
 ## Step 2: Create a DSR case and add members
 
@@ -96,9 +96,9 @@ The next step is to create a DSR case. When you create a case, you can choose to
   
     At this point, you can do one of two things:
     
-1. Clicking ** Show me search results ** starts the search. This is the default selection. The built-in search that is run when you select this option and the results that are returned are discussed in Step 3. 
+    a. Clicking **Show me search results** starts the search. This is the default selection. The built-in search that is run when you select this option and the results that are returned are discussed in Step 3.
     
-2. Clicking **Finish** closes the new DSR case without starting the built-in search. When you select this option, the new DSR case is displayed on the **Data subject requests** page. 
+    b. Clicking **Finish** closes the new DSR case without starting the built-in search. When you select this option, the new DSR case is displayed on the **Data subject requests** page.
     
 6. Click **Finish** so that you can go in to the new DSR case and add members to it. 
     
@@ -127,7 +127,7 @@ After you create a DSR case and add members, the next step is to run the built-i
 Here's what the keyword query looks like for the built-in search that gets automatically created when you create a DSR case.
   
 ```
-participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>
+participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 For example, if the name of the data subject is Ina Leonte, the keyword query would look like this:
@@ -136,7 +136,6 @@ For example, if the name of the data subject is Ina Leonte, the keyword query wo
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
-   
  **To run the built-in search for a DSR case:**
   
 1. In the Security &amp; Compliance Center, click **Data privacy** \> **Data subject requests**, and then click **Open** next to the DSR case that you created in Step 2. 
@@ -147,12 +146,12 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     When you open the query, the search is started and will complete in a few moments. 
     
-3. When the search is complete, click **Preview results** to preview the search results. For more information, see [Preview search results](content-search.md#preview).
+3. When the search is complete, click **Preview results** to preview the search results. For more information, see [Preview search results](content-search.md#preview-search-results).
     
     > [!TIP]
-    > You can also view the search query statistics to see the number of mailbox and site items that are returned by the search, and the top content locations that contain items that match the search query. For more information see, [View information and statistics about a search](content-search.md#profilestatistics). 
+    > You can also view the search query statistics to see the number of mailbox and site items that are returned by the search, and the top content locations that contain items that match the search query. For more information see, [View information and statistics about a search](content-search.md#view-information-and-statistics-about-a-search). 
   
-You can edit the built-in search query, change the content locations that are searched, and then re-run the search. See [(Optional) Step 5: Revise the built-in search query](#optional-step-5-revise-the-built-in-search-query) for more information. 
+You can edit the built-in search query, change the content locations that are searched, and then re-run the search. See [Step 5](#optional-step-5-revise-the-built-in-search-query) for more information. 
   
 ## Step 4: Export the data
 
@@ -192,13 +191,13 @@ The computer you use to export data has to meet the following system requirement
     
     ![Configure the export settings](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-1. Under **Output options**, select the first option ( **All items, excluding ones that have ones that have an unrecognized format, are encrypted, or weren't indexed for other reasons**) to export indexed items only. The reason you don't want to export partially indexed items from the built-in search is because partially indexed items from other users will be exported. To export only the partially indexed items for the data subject, we recommend that you create a separate search. For more information, see [Exporting partially indexed items](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) in the "More information about using the DSR case tool" section. 
+    a. Under **Output options**, select the first option ( **All items, excluding ones that have ones that have an unrecognized format, are encrypted, or weren't indexed for other reasons**) to export indexed items only. The reason you don't want to export partially indexed items from the built-in search is because partially indexed items from other users will be exported. To export only the partially indexed items for the data subject, we recommend that you create a separate search. For more information, see [Exporting partially indexed items](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) in the "More information about using the DSR case tool" section.
     
-2. Under **Export Exchange content as**, select the third option, **One PST file containing all messages in a single folder**. Because some of the results may be for items that originated in another user's mailbox, this option just lists the item in a single folder without indicating the actual mailbox and is the best option to use when you de-duplicate the results as recommended in the next item. This option also lets the data subject review items in chronological order (items are sorted by sent date) without having to navigate the original mailbox folder structure for each item. 
+    b. Under **Export Exchange content as**, select the third option, **One PST file containing all messages in a single folder**. Because some of the results may be for items that originated in another user's mailbox, this option just lists the item in a single folder without indicating the actual mailbox and is the best option to use when you de-duplicate the results as recommended in the next item. This option also lets the data subject review items in chronological order (items are sorted by sent date) without having to navigate the original mailbox folder structure for each item.
     
-3. Select **Enable de-duplication** option to excludes duplicate email messages. We recommend this option because the built-in search searches all mailboxes in your organization. So if multiple copies of the same message are found in the mailboxes that were searched, this option means only one copy of a message will be exported. This option, together will exporting messages in one PST file in a single folder results in the best user experience for DSR export requests. Note that the Results.csv export report will list all locations where duplicate messages were found. 
+    c. Select **Enable de-duplication** option to excludes duplicate email messages. We recommend this option because the built-in search searches all mailboxes in your organization. So if multiple copies of the same message are found in the mailboxes that were searched, this option means only one copy of a message will be exported. This option, together will exporting messages in one PST file in a single folder results in the best user experience for DSR export requests. Note that the Results.csv export report will list all locations where duplicate messages were found.
     
-4. Optionally, you can select **Include versions for SharePoint documents** option to export all versions of SharePoint and OneDrive documents. This requires that versioning is turned on for document libraries. This option helps to ensure that all relevant data is exported. 
+    Optionally, you can select **Include versions for SharePoint documents** option to export all versions of SharePoint and OneDrive documents. This requires that versioning is turned on for document libraries. This option helps to ensure that all relevant data is exported.
     
 5. After you choose the export settings, click **Export**.
     
@@ -223,12 +222,11 @@ The computer you use to export data has to meet the following system requirement
   
 13. Click **Start** to download the search results to your computer. 
     
-    The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can access the files in the location where they were downloaded. For more information about the reports that included when you download Content Search results, see the [](export-search-results.md#exportreports) section in "Export Content Search results from the Office 365 Security &amp; Compliance Center". 
+    The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can access the files in the location where they were downloaded. For more information about the reports that included when you download Content Search results, see the [More information](export-search-results.md#more-information) section in "Export Content Search results from the Office 365 Security &amp; Compliance Center". 
     
 After the data is exported, the search results and export reports are located in a folder that has the same name as the DSR case. The PST files that contain mailbox items are located in a subfolder named **Exchange**. Documents and other items from sites are located in a subfolder named **SharePoint**. 
   
 ## (Optional) Step 5: Revise the built-in search query
-<a name="step5"> </a>
 
 After you run the built-in search, you can revise it to narrow the scope to return fewer search results. You can do this by adding conditions to the query. A condition is logically connected to the keyword query by the **AND** operator. That means to be returned in the search results, items must satisfy both the keyword query and any conditions you add. This is how conditions help to narrow the results. If you add two or more unique conditions to a search query (conditions that specify different properties), those conditions are logically connected by the **AND** operator. That means only items that satisfy all the conditions (in addition to the keyword query) are returned. If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition. 
   
@@ -238,9 +236,9 @@ Here are some examples of the conditions that you can add to the built-in search
     
 - **Message type ( `kind`)** - Specifies the type of email item to search for. For example, you can use the syntax  `kind:email OR kind:im` to return only email messages and Skype for Business conversations or one-to-one chats in Microsoft Teams. 
     
-- **Compliance tag (compliancetag)** - Specifies a label assigned to an email message or a document. This condition will return items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Overview of labels in Office 365](labels.md).
+- **Compliance tag (`compliancetag`)** - Specifies a label assigned to an email message or a document. This condition will return items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Overview of labels in Office 365](labels.md).
     
-For a list and description of all the conditions available in the DSR case tool, See the "Search conditions" section in [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md). 
+For a list and description of all the conditions available in the DSR case tool, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions) in the "Keyword queries and search conditions for Content Search" article. 
   
 ### Changing the content locations that are searched
 
@@ -258,11 +256,11 @@ To modify the content locations to search:
     
     ![Modify locations flyout page](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-1. The toggle under **Select all** in mailbox section at the top of the flyout page is selected, which indicates that all mailboxes are searched. To narrow the scope of the search, click the toggle to unselect it, and then click **Choose users, groups, or teams** and choose specific mailboxes to search. 
+    a. The toggle under **Select all** in mailbox section at the top of the flyout page is selected, which indicates that all mailboxes are searched. To narrow the scope of the search, click the toggle to unselect it, and then click **Choose users, groups, or teams** and choose specific mailboxes to search.
     
-2. The toggle under **Select all** in the sites section in the middle of the flyout page is selected, which indicates that all sites are searched. To narrow the search to selected sites, you would unselect the toggle and then click **Choose sites**. You'll have to add each specific site that you want to search, including the data subject's OneDrive account.
+    b. The toggle under **Select all** in the sites section in the middle of the flyout page is selected, which indicates that all sites are searched. To narrow the search to selected sites, you would unselect the toggle and then click **Choose sites**. You'll have to add each specific site that you want to search, including the data subject's OneDrive account.
     
-3. The toggle in the Exchange public folders section is selected, which means all Exchange public folders are searched. Note that you can only search all Exchange public folders or none of them. You can't choose specific ones to search. 
+    c. The toggle in the Exchange public folders section is selected, which means all Exchange public folders are searched. Note that you can only search all Exchange public folders or none of them. You can't choose specific ones to search.
     
 3. If you modify the content locations in the built-in search, click **Save &amp; run** to re-start the search. 
   
@@ -270,21 +268,21 @@ To modify the content locations to search:
 
 The following sections contain more information about using the DSR case tool to respond to DSR export requests.
   
-[Exporting data from MyAnalytics and the Office Roaming Service](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#o365datamoreinfo)
-  
-[Exporting partially indexed items](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems)
-  
-[Searching and exporting data from Microsoft Teams and Office 365 Groups](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#teamsmoreinfo)
-  
-[Searching Exchange public folders](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#publicfolders)
+[Exporting data from MyAnalytics and the Office Roaming Service](#exporting-data-from-myanalytics-and-the-office-roaming-service)
+
+[Exporting partially indexed items](#exporting-partially-indexed-items)
+
+[Searching and exporting data from Microsoft Teams and Office 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+
+[Searching Exchange public folders](#searching-exchange-public-folders)
   
 ### Exporting data from MyAnalytics and the Office Roaming Service
 
 You can use the DSR case tool to search for and export usage data that's generated by MyAnalytics and the Office Roaming Service. Here's a description of what these services do:
   
-- **MyAnalytics** Provides users with insights about how they spend their time based on the mail and calendar data in their mailbox. All MyAnalytics insights are derived from email and meeting headers in the user's mailbox. Users that are assigned a MyAnalytics license can sign in to Office 365 and go to the MyAnalytics dashboard to view the insights about how they spend their time. (Users can screen shots of these insights in response to a DSR access request). The built-in search in a DSR case will export the data that's used to generate MyAnalytics insights. 
+- **MyAnalytics** - Provides users with insights about how they spend their time based on the mail and calendar data in their mailbox. All MyAnalytics insights are derived from email and meeting headers in the user's mailbox. Users that are assigned a MyAnalytics license can sign in to Office 365 and go to the MyAnalytics dashboard to view the insights about how they spend their time. (Users can screen shots of these insights in response to a DSR access request). The built-in search in a DSR case will export the data that's used to generate MyAnalytics insights. 
     
-- **Office Roaming Service** Roaming is a service that stores Office-related settings, such as Office theme, custom dictionary, language settings, developer mode, and auto correct. 
+- **Office Roaming Service** - Roaming is a service that stores Office-related settings, such as Office theme, custom dictionary, language settings, developer mode, and auto correct. 
     
 The data from MyAnalytics and the Office Roaming service is stored in a data subject's mailbox in hidden folders located in a non-interpersonal message (non-IPM) subtree of Exchange Online mailboxes. This means the data is hidden from the user's view when they use Outlook or other mail clients to access their mailbox. For more information about hidden folders, see [MAPI Hidden Folders](https://go.microsoft.com/fwlink/?linkid=872758).
   
@@ -331,11 +329,11 @@ When you export data from MyAnalytics and the Office Roaming Service, the data i
     
     ![Export options when exporting MyAnalytics and Office Roaming Service usage data](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
-1. Under **Output options**, select the first option ( **All items, excluding ones that have ones that have an unrecognized format, are encrypted, or weren't indexed for other reasons**) to export indexed items only.
+    a. Under **Output options**, select the first option ( **All items, excluding ones that have ones that have an unrecognized format, are encrypted, or weren't indexed for other reasons**) to export indexed items only.
     
-2. Under **Export Exchange content as**, select the second option, **One PST file containing all messages**. 
+    b. Under **Export Exchange content as**, select the second option, **One PST file containing all messages**.
     
-3. Leave the remaining export options unselected.
+    c. Leave the remaining export options unselected.
     
 4. After you choose the export settings, click **Export**.
     
@@ -374,23 +372,23 @@ Here's a high-level process to export partially indexed items. After they're exp
     
 2. Use the following criteria for configuring the search query and the content locations to search:
     
-  - Use an empty/blank keyword query. This will return all items in the content locations that are searched.
+    - Use an empty/blank keyword query. This will return all items in the content locations that are searched.
     
-  - Search only the data subject's Exchange Online mailbox and their OneDrive account.
+    - Search only the data subject's Exchange Online mailbox and their OneDrive account.
     
-3. After you run the search and it completes, you can export and download the search results (as described in [Step 4: Export the data](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Use the following settings to export partially indexed items. 
+3. After you run the search and it completes, you can export and download the search results (as described in [Step 4](#step-4-export-the-data)). Use the following settings to export partially indexed items. 
     
-  - Under **Output options**, select the third option ( **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons**) to export partially indexed items only.
+    - Under **Output options**, select the third option ( **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons**) to export partially indexed items only.
     
-  - Under **Export Exchange content as**, you can select any option based on your preferences. 
+    - Under **Export Exchange content as**, you can select any option based on your preferences. 
     
-  - Selecting the **Include versions for SharePoint documents** option will export versions of documents if a version is partially indexed. 
+    - Selecting the **Include versions for SharePoint documents** option will export versions of documents if a version is partially indexed. 
     
 For more information about partially indexed items, see: 
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
-    
-- [Export Content Search results from the Office 365 Security &amp; Compliance Center](export-search-results.md)
+
+- [Exporting unindexed items](export-search-results.md#exporting-unindexed-items)
     
 ### Searching and exporting data from Microsoft Teams and Office 365 Groups
 
@@ -400,7 +398,7 @@ Alternatively, conversations that are part of a Teams channel (also called chann
   
 Similarly, mailboxes and SharePoint sites that correspond to an Office 365 Group are also included in the built-in search. This means that email messages that where sent or received by the data subject and files created or uploaded by the data subject will be returned. 
   
-For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of a members, see the [Searching Microsoft Teams and Office 365 Groups](content-search.md#teamsandgroups) section in "Content Search in Office 365". 
+For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of a members, see the "Searching Microsoft Teams and Office 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
   
 ### Searching Exchange public folders
 
@@ -412,12 +410,12 @@ Here's a high-level process to search for items that the data subject might have
     
 2. Use the following criteria for configuring the search query and the content locations to search:
     
-  - In the **Keywords** box, use the following search query: </br>    
-```
-  itemclass:ipm.post AND "<email address of the data subject>"
-```
+  - In the **Keywords** box, use the following search query: 
+    
+    ```
+    itemclass:ipm.post AND "<email address of the data subject>"
+    ```
+
   - Search all Exchange public folders
     
-  - After you run the search and it completes, you can export and download the search results (as described in [Step 4: Export the data](#step-4-export-the-data). Use the following settings to export partially indexed items. 
- 
-
+  - After you run the search and it completes, you can export and download the search results (as described in [Step 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Use the following settings to export partially indexed items. 
