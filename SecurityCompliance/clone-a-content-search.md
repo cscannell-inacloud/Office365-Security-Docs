@@ -27,12 +27,6 @@ Why clone Content Searches?
 - To save you from having to re-enter a large number of content locations when you create a new search.
     
 - To decrease the size of the search results; for example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
-    
-Here's an overview of the process:
-  
-[Step 1: Run the script to clone a search](clone-a-content-search.md#step1)
-  
-[Step 2: Edit and run the cloned search in the Security &amp; Compliance Center](clone-a-content-search.md#step2)
   
 ## Before you begin
 
@@ -45,23 +39,20 @@ Here's an overview of the process:
 - This script takes into account whether the Content Search that you're cloning is associated with an eDiscovery case. If the search is associated with a case, the new search will also be associated with the same case. If the existing search isn't associated with a case, the new search will be listed on the **Content search** page in the Security &amp; Compliance Center. 
     
 - The sample script provided in this topic isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
-    
-[Return to top](clone-a-content-search.md#top)
   
 ## Step 1: Run the script to clone a search
-<a name="step1"> </a>
 
 The script in this step will create a new Content Search by cloning an existing one. When you run this script, you'll be prompted for the following information:
   
-- **Your user credentials** The script will use your credentials to connect to the Security &amp; Compliance Center for your Office 365 organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security &amp; Compliance Center to run the script. 
+- **Your user credentials** - The script will use your credentials to connect to the Security &amp; Compliance Center for your Office 365 organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security &amp; Compliance Center to run the script. 
     
-- **The name of the existing search** This is the Content Search that you want to clone. 
+- **The name of the existing search** - This is the Content Search that you want to clone. 
     
-- **The name of the new search that will be created** If you leave this value blank, the script will create a name for the new search that is based on the name of the search that you're cloning. 
+- **The name of the new search that will be created** - If you leave this value blank, the script will create a name for the new search that is based on the name of the search that you're cloning. 
     
 To clone a search:
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CloneSearch.ps1.
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `CloneSearch.ps1`.
     
   ```
   # This PowerShell script clones an existing Content Search in the Office 365 Security &amp; Compliance Center
@@ -125,33 +116,26 @@ To clone a search:
     
 3. Run the script; for example:
     
-  ```
-  .\CloneSearch.ps1
-  ```
+    ```
+    .\CloneSearch.ps1
+    ```
 
 4. When prompted for your credentials, enter your email address and password, and then click **OK**.
     
 5. Enter following information when prompted by the script. Type each piece of information and then press **Enter**.
     
-  - The name of the existing search.
+    - The name of the existing search.
     
-  - The name of the new search.
+    - The name of the new search.
     
     The script creates the new Content Search, but doesn't start it. This gives you a chance to edit and run the search in the next step. You can view the properties of the new search by running the **Get-ComplianceSearch** cmdlet or by going to the **Content search** or **eDiscovery** page in the Security &amp; Compliance Center, depending on whether or not the new search is associated with a case. 
-    
-[Return to top](clone-a-content-search.md#top)
   
 ## Step 2: Edit and run the cloned search in the Security &amp; Compliance Center
-<a name="step2"> </a>
 
 After the you've run the script to clone an existing Content Search, the next step is to go to the Security &amp; Compliance Center to edit and run the new search. As previously stated, you can edit a search by changing the keyword search query and adding or removing search conditions. For more information, see:
   
-- [Run a Content Search in the Office 365 Security &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
+- [Content Search in Office 365](content-search.md)
     
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
     
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](manage-ediscovery-cases.md)
-    
-[Return to top](clone-a-content-search.md#top)
-  
-
+- [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md)
