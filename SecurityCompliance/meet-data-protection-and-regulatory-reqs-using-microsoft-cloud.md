@@ -1,7 +1,7 @@
 ---
 title: "Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services"
-ms.author: v-grrich
-author: v-grrich
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
 ms.audience: Admin
@@ -90,7 +90,6 @@ Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Get 
 Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
   
 ## Using Search
-<a name="onesearch"> </a>
 
 ![Service Trust Portal - Search Input field](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
@@ -110,7 +109,6 @@ Click on the Compliance Manager link to display Search results for Compliance Ma
 [Return to top](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#top)
   
 ## Localization Support
-<a name="_bkmk_LocalizationSupport"> </a>
 
 Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
@@ -119,7 +117,6 @@ Service Trust Portal enables you to view the page content in different languages
 [Return to top](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#top)
   
 ## Assessments in Compliance Manager
-<a name="frameworks_1"> </a>
 
 The core component of Compliance Manager is called an  *Assessment*  . An Assessment is an assessment of a Microsoft cloud service (such as Office 365, Azure or Microsoft Dynamics) against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
@@ -127,37 +124,37 @@ The structure of an Assessment is based on the responsibility that is shared bet
   
 An Assessment is made of several components, which are:
   
-> **In-Scope Services** Each assessment applies to a specific set of Microsoft cloud services, which are listed in the In-Scope Cloud services section. 
+- **In-Scope Services** - Each assessment applies to a specific set of Microsoft cloud services, which are listed in the In-Scope Cloud services section. 
     
-> **Microsoft Managed Controls**For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
+- **Microsoft Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     Here's an example of three Microsoft managed controls in the **Security** control family from an Assessment of Office 365 and the GDPR. 
+
     ![Details of Microsoft managed controls in the Compliance Manager](media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-1. Specifies the following information from the certification or regulation that maps to the Microsoft managed control.
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft managed control.
+
+  - **Control ID** - The section or article number from the certification or regulation that the control maps to.
     
-  - **Control ID**The section or article number from the certification or regulation that the control maps to.
+  - **Title** - The title from the corresponding certification or regulation.
     
-  - **Title**The title from the corresponding certification or regulation.
+  - **Article ID** - This field is included only for GDPR assessments, as it specifies the corresponding GDPR article number.
     
-  - **Article ID**This field is included only for GDPR assessments, as it specifies the corresponding GDPR article number.
+  - **Description** - Text of the standard or regulation that maps to the selected Microsoft managed control.
+
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  - **Description**Text of the standard or regulation that maps to the selected Microsoft managed control.
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-2. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft managed control. See [Understanding the Compliance Score](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-3. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
+- **Customer Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer managed controls are also organized into control families for the corresponding certification or regulation. Use the customer managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer managed control to manage the implementation and assessment process for that control.
     
-4. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
-    
-> **Customer Managed Controls**This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer managed controls are also organized into control families for the corresponding certification or regulation. Use the customer managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer managed control to manage the implementation and assessment process for that control.
-    
-    Customer managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screen shots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1) section in the article. 
+    Customer managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screen shots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
     
     Here's an example of a customer managed control in the **Data Protection by Design and Default** control family from an Assessment of Office 365 and the GDPR. 
     
-> 
-1. Specifies the following information from the certification or regulation that maps to the customer managed control.
+  a. Specifies the following information from the certification or regulation that maps to the customer managed control.
     
   - **Control ID**The section or article number from the standard or regulation that the customer managed control maps to.
     
@@ -167,22 +164,20 @@ An Assessment is made of several components, which are:
     
   - **Description**Text of the standard or regulation that maps to the selected Microsoft managed control.
     
-2. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each customer managed control. See [Understanding the Compliance Score](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each customer managed control. See [Understanding the Compliance Score](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-3. A list of related customer controls and the corresponding section or article number from the certification or regulation. You can click each related control/article to display more information about the related control.
+  c. A list of related customer controls and the corresponding section or article number from the certification or regulation. You can click each related control/article to display more information about the related control.
     
-4. Controls can be assigned to a person to implement and/or test the control implementation. When you assign a control to a user, you can send an email notification that includes the recommended Customer Actions. A user can access a list of all customer managed control assign to them from the **Action Items** dashboard in Compliance Manager. You can also click **Manage Documents** to upload documents that are related to implementing and testing the control. For more information about assessment users and managing documents, see [Managing the assessment process](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1).
+  d. Controls can be assigned to a person to implement and/or test the control implementation. When you assign a control to a user, you can send an email notification that includes the recommended Customer Actions. A user can access a list of all customer managed control assign to them from the **Action Items** dashboard in Compliance Manager. You can also click **Manage Documents** to upload documents that are related to implementing and testing the control. For more information about assessment users and managing documents, see [Managing the assessment process](#managing-the-assessment-process).
     
-5. Implementation Status and Date can be used to track your organization's implementation progress. Possible status values include **Not Implemented**, **Implemented**, **Alternative Implementation**, **Planned** and **Not In Scope**. 
+  e. Implementation Status and Date can be used to track your organization's implementation progress. Possible status values include **Not Implemented**, **Implemented**, **Alternative Implementation**, **Planned** and **Not In Scope**. 
     
-6. Test date and Test result fields are used by assessors to specify the test result and the date when the control was tested.
+  f. Test date and Test result fields are used by assessors to specify the test result and the date when the control was tested.
     
-7. For each control, you can click **More** you'll be provided with recommended Customer Actions for implementing the control, along with editable fields that let you to provide implementation details, test plan details, and a response to the implementation and test plan. 
+  g. For each control, you can click **More** you'll be provided with recommended Customer Actions for implementing the control, along with editable fields that let you to provide implementation details, test plan details, and a response to the implementation and test plan. 
     
-[Return to top](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#top)
   
 ## Permissions and Role-based Access Control
-<a name="permissions_1"> </a>
 
 By default, everyone in your organization with an Office 365 or Azure AD account has access to Compliance Manager and can perform any action in Compliance Manager. To change from default permissions to the role-based access control model, at least one user must be added to each Compliance Manager role (see the following instructions). After a user is added to a role, the permissions to perform the actions assigned to that role are removed from the default set of permissions available to all users, and only users that have been provisioned that role will be able to access Compliance Manager and perform the actions allowed by that role.
   
@@ -717,7 +712,6 @@ Similarly, information from shared customer managed controls within the same Ass
 [Return to top](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#top)
   
 ### Managing the assessment process
-<a name="managecomplianceprocess_1"> </a>
 
 The creator of an Assessment is initially the only Assessment User. For each customer managed control, you can assign an Action Item to a person in your organization so that person becomes an Assessment User who can perform the recommended Customer Actions, and gather and upload evidence. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. The email notification includes a link to the **Action Items** dashboard, which lists all Action Items assigned to that person. 
   
