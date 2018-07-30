@@ -47,36 +47,7 @@ You create and manage DLP policies on the Data loss prevention page in the Offic
   
 ![Data loss prevention page in the Office 365 Security &amp; Compliance Center](media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
-## Contents
-
-- [What a DLP policy contains](data-loss-prevention-policies.md#contains)
-    
-- [Grouping and logical operators](data-loss-prevention-policies.md#grouping)
-    
-- [The priority by which rules are processed](data-loss-prevention-policies.md#priority)
-    
-- [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tune)
-    
-- [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#label)
-    
-- [Simple settings vs. advanced settings](data-loss-prevention-policies.md#simple)
-    
-- [DLP policy templates](data-loss-prevention-policies.md#templates)
-    
-- [Roll out DLP policies gradually with test mode](data-loss-prevention-policies.md#testmode)
-    
-- [DLP reports](data-loss-prevention-policies.md#reports)
-    
-- [How DLP policies work](data-loss-prevention-policies.md#howwork)
-    
-- [Permissions](data-loss-prevention-policies.md#perms)
-    
-- [Find the DLP cmdlets](data-loss-prevention-policies.md#cmdlets)
-    
-- [More information](data-loss-prevention-policies.md#moreinfo)
-    
 ## What a DLP policy contains
-<a name="contains"> </a>
 
 A DLP policy contains a few basic things:
   
@@ -95,7 +66,6 @@ For example, you might have a DLP policy that helps you detect the presence of i
 ![Diagram shows DLP policy contains locations and rules](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### Locations
-<a name="locations"> </a>
 
 A DLP policy can find and protect sensitive information across Office 365, whether that information is located in Exchange Online, SharePoint Online, or OneDrive for Business. You can easily choose to protect all SharePoint sites or OneDrive accounts, just specific sites or accounts, or all mailboxes. Note that it's not yet possible to select just the mailboxes of specific users.
   
@@ -104,7 +74,6 @@ A DLP policy can find and protect sensitive information across Office 365, wheth
 Note that if you choose to include or exclude specific SharePoint sites or OneDrive accounts, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, understand that you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
   
 ### Rules
-<a name="rules"> </a>
 
 Rules are what enforce your business requirements on your organization's content. A policy contains one or more rules, and each rule consists of conditions and actions. For each rule, when the conditions are met, the actions are taken automatically. Rules are executed sequentially, starting with the highest-priority rule in each policy.
   
@@ -115,7 +84,6 @@ Here are the components of a rule, each explained below.
 ![Sections of the DLP rule editor](media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
   
 #### Conditions
-<a name="conditions"> </a>
 
 Conditions are important because they determine what types of information you're looking for, and when to take an action. For example, you might choose to ignore content containing passport numbers unless the content contains more than ten such numbers and is shared with people outside your organization.
   
@@ -150,7 +118,6 @@ When a DLP policy looks for a sensitive information type such as a credit card n
 This helps DLP detection achieve a high degree of accuracy while reducing the number of false positives that can interrupt peoples' work.
   
 #### Actions
-<a name="actions"> </a>
 
 When content matches a condition in a rule, you can apply actions to automatically protect the content.
   
@@ -167,7 +134,6 @@ With the actions now available, you can:
     ![Warning that unauthorized recipients must be removed from the message](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### User notifications and user overrides
-<a name="notifications"> </a>
 
 You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.
   
@@ -190,14 +156,12 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 ![Policy tip for a document in a OneDrive account](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
   
 #### Incident reports
-<a name="incident"> </a>
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
   
 ![Page for configuring incident reports](media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
   
 ## Grouping and logical operators
-<a name="grouping"> </a>
 
 Often your DLP policy has a straightforward requirement, such as to identify all content that contains a U.S. Social Security Number. However, in other scenarios, your DLP policy might need to identify more loosely defined data.
   
@@ -242,7 +206,6 @@ For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** 
 ![Groups showing the operator between groups](media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
   
 ## The priority by which rules are processed
-<a name="priority"> </a>
 
 When you create rules in a policy, each rule is assigned a priority in the order in which it's created - meaning, the rule created first has first priority, the rule created second has second priority, and so on. After you create a rule, its priority can't be changed, except by deleting and re-creating it.
   
@@ -271,7 +234,6 @@ With respect to policy tips, note that:
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
     
 ## Tuning rules to make them easier or harder to match
-<a name="tune"> </a>
 
 After people create and turn on their DLP policies, they sometimes run into these issues:
   
@@ -282,7 +244,6 @@ After people create and turn on their DLP policies, they sometimes run into thes
 To address these issues, you can tune your rules by adjusting the instance count and match accuracy to make it harder or easier for content to match the rules. Each sensitive information type used in a rule has both an instance count and match accuracy.
   
 ### Instance count
-<a name="count"> </a>
 
 Instance count means simply how many occurrences of a specific type of sensitive information must be present for content to match the rule. For example, content will match the rule shown below if between 1 and 9 unique U.S. or U.K. passport numbers are identified.
   
@@ -299,7 +260,6 @@ Typically, you use less restrictive actions, such as sending user notifications,
 ![Instance counts in the rule editor](media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
   
 ### Match accuracy
-<a name="confidence"> </a>
 
 As described above, a sensitive information type is defined and detected by using a combination of different types of evidence. Commonly, a sensitive information type is defined by multiple such combinations, called patterns. A pattern that requires less evidence has a lower match accuracy (or confidence level), while a pattern that requires more evidence has a higher match accuracy (or confidence level). To learn more about the actual patterns and confidence levels used by every sensitive information type, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
   
@@ -340,7 +300,6 @@ For these reasons, the guidance for creating rules with different match accuraci
 - Any in-between confidence levels typically range from just above the lower confidence level to just below the higher confidence level.
     
 ## Using a label as a condition in a DLP policy
-<a name="label"> </a>
 
 You can create a label and then:
   
@@ -381,7 +340,6 @@ By using a label as a condition in a DLP policy, you can enforce both retention 
 ![Diagram of DLP policy using label as a condition](media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
   
 ## Simple settings vs. advanced settings
-<a name="simple"> </a>
 
 When you create a DLP policy, you'll choose between simple or advanced settings:
   
@@ -410,7 +368,6 @@ To jump to a section quickly, click an item in the top navigation of the rule ed
 ![Top navigation menu of DLP rule editor](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
 ## DLP policy templates
-<a name="templates"> </a>
 
 The first step in creating a DLP policy is choosing what information to protect. By starting with a DLP template, you save the work of building a new set of rules from scratch, and figuring out which types of information should be included by default. You can then add to or modify these requirements to fine tune the rule to meet your organization's specific requirements.
   
@@ -421,7 +378,6 @@ A preconfigured DLP policy template can help you detect specific types of sensit
 Your organization may also have its own specific requirements, in which case you can create a DLP policy from scratch by choosing the **Custom policy** option. A custom policy is empty and contains no premade rules. 
   
 ## Roll out DLP policies gradually with test mode
-<a name="testmode"> </a>
 
 When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
@@ -440,7 +396,6 @@ You can turn off a DLP policy at any time, which affects all rules in the policy
 ![Options for turning off a rule in a policy](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
   
 ## DLP reports
-<a name="reports"> </a>
 
 After you create and turn on your DLP policies, you'll want to verify that they're working as you intended and helping you stay compliant. With DLP reports, you can quickly view the number of DLP policy and rule matches over time, and the number of false positives and overrides. For each report, you can filter those matches by location, time frame, and even narrow it down to a specific policy, rule, or action.
   
@@ -457,12 +412,10 @@ In addition, you can use the DLP reports to fine tune your DLP policies as you r
 ![Reports Dashboard in Security and Compliance Center](media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
   
 ## How DLP policies work
-<a name="howwork"> </a>
 
 DLP detects sensitive information by using deep content analysis (not just a simple text scan). This deep content analysis uses keyword matches, dictionary matches, the evaluation of regular expressions, internal functions, and other methods to detect content that matches your DLP policies. Potentially only a small percentage of your data is considered sensitive. A DLP policy can identify, monitor, and automatically protect just that data, without impeding or affecting people who work with the rest of your content.
   
 ### Policies are synced
-<a name="synced"> </a>
 
 After you create a DLP policy in the Security &amp; Compliance Center, it's stored in a central policy store, and then synced to the various content sources, including:
   
@@ -477,7 +430,6 @@ After you create a DLP policy in the Security &amp; Compliance Center, it's stor
 After the policy's synced to the right locations, it starts to evaluate content and enforce actions.
   
 ### Policy evaluation in OneDrive for Business and SharePoint Online sites
-<a name="ODSPO"> </a>
 
 Across all of your SharePoint Online sites and OneDrive for Business sites, documents are constantly changing — they're continually being created, edited, shared, and so on. This means documents can conflict or become compliant with a DLP policy at any time. For example, a person can upload a document that contains no sensitive information to their team site, but later, a different person can edit the same document and add sensitive information to it.
   
@@ -492,21 +444,18 @@ Finally, documents can conflict with a DLP policy, but they can also become comp
 DLP evaluates any content that can be indexed. For more information on what file types are crawled by default, see [Default crawled file name extensions and parsed file types in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
   
 ### Policy evaluation in Exchange Online, Outlook 2013 and later, and Outlook on the web
-<a name="exchange"> </a>
 
 When you create a DLP policy that includes Exchange Online as a location, the policy's synced from the Office 365 Security &amp; Compliance Center to Exchange Online, and then from Exchange Online to Outlook on the web and Outlook 2013 and later.
   
 When a message is being composed in Outlook, the user can see policy tips as the content being created is evaluated against DLP policies. And after a message is sent, it's evaluated against DLP policies as a normal part of mail flow, along with Exchange transport rules and DLP policies created in the Exchange Admin Center (see the next section for more info). DLP policies scan both the message and any attachments.
   
 ### Policy evaluation in the Office 2016 desktop programs
-<a name="office"> </a>
 
 Excel 2016, PowerPoint 2016, and Word 2016 include the same capability to identify sensitive information and apply DLP policies as SharePoint Online and OneDrive for Business. These Office 2016 programs sync their DLP policies directly from the central policy store, and then continuously evaluate the content against the DLP policies when people work with documents opened from a site that's included in a DLP policy.
   
 DLP policy evaluation in Office 2016 is designed not to affect the performance of the programs or the productivity of people working on content. If they're working on a large document, or the user's computer is busy, it might take a few seconds for a policy tip to appear.
   
 ## Permissions
-<a name="perms"> </a>
 
 Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
   
@@ -521,7 +470,6 @@ For more information, see [Give users access to the Office 365 Compliance Center
 These permissions are required only to create and apply a DLP policy. Policy enforcement does not require access to the content.
   
 ## Find the DLP cmdlets
-<a name="cmdlets"> </a>
 
 To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
   
@@ -540,7 +488,6 @@ However, DLP reports need pull data from across Office 365, including Exchange O
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 ## More information
-<a name="moreinfo"> </a>
 
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
     
