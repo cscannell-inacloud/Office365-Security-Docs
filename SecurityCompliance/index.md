@@ -90,7 +90,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Stay secure</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Office 365 Security Roadmap</a></p>
+                        <p><a href="security-roadmap.md">Office 365 Security Roadmap</a></p>
                         <p><a href="https://securescore.microsoft.com" target="_blank">Microsoft Secure Score</a></p>
                         <p><a href="https://protection.office.com" target="_blank">Office 365 Security & Compliance Center</a></p>
                     </div>
