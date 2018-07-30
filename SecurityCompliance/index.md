@@ -1,6 +1,6 @@
 ---
 title: Office 365 Security and Compliance
-description: Add a short description
+description: If your organization needs to protect your data or comply with legal or regulatory standards, you're in the right place. Here you can learn about security and compliance in Office 365
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -29,7 +29,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Get started - first 30 days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com" target="_blank">Check Secure Score</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Turn on audit logging</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Configure tenant security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Connect Cloud App Security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Enable Azure AD Identity Protection</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Secure SharePoint sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com" target="_blank">Check Secure Score</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Turn on audit logging</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configure tenant security</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connect Cloud App Security</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Enable Azure AD Identity Protection</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Secure SharePoint sites and files</a> </p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Next steps within 90 days</h3>
-                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Conduct attack simulations</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Compliance Manager</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Protect admin accounts</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Enable multi-factor authentication</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review & update protection policies</a> </p>
+                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="attack-simulator.md">Conduct attack simulations</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Compliance Manager</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Protect admin accounts</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Enable multi-factor authentication</a> <br> - <a href="protect-against-threats.md">Review & update protection policies</a> </p>
                     </div>
                 </div>
             </div>
@@ -64,10 +64,10 @@ If your organization needs to protect your data or comply with legal or regulato
                     <div class="cardText">
                         <h3>Beyond 90 days</h3>
                         <p>These are important security measures that build on previous work:<br>
-                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review your Secure Score</a><br>
-                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Implement Secure Privileged Access</a><br>
-                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Cloud App Security</a><br>
-                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Refine protection policies</a><br></p>
+                        - <a href="https://securescore.office.com" target="_blank">Review your Secure Score</a><br>
+                        - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Implement Secure Privileged Access</a><br>
+                        - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configure Azure AD Privileged Identity Management</a><br>
+                        - <a href="protect-against-threats.md">Refine protection policies</a><br></p>
                     </div>
                 </div>
             </div>
