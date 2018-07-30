@@ -91,8 +91,8 @@ If your organization needs to protect your data or comply with legal or regulato
                     <div class="cardText">
                         <h3>Stay secure</h3>
                         <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Office 365 Security Roadmap</a></p>
-                        <p><a href="https://securescore.microsoft.com">Microsoft Secure Score</a></p>
-                        <p><a href="https://protection.office.com">Office 365 Security & Compliance Center</a></p>
+                        <p><a href="https://securescore.microsoft.com" target="_blank">Microsoft Secure Score</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Office 365 Security & Compliance Center</a></p>
                     </div>
                 </div>
             </div>
@@ -109,8 +109,8 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Stay compliant</h3>
-                        <p><a href="https://www.microsoft.com/trustcenter">Microsoft Trust Center</a></p>
-                        <p><a href="https://servicetrust.microsoft.com">Microsoft Service Trust Portal</a></p>
+                        <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Microsoft Trust Center</a></p>
+                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft Service Trust Portal</a></p>
                     </div>
                 </div>
             </div>
