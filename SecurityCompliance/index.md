@@ -127,8 +127,8 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Stay up-to-date</h3>
-                        <p><a href="https://blogs.technet.microsoft.com/office365security">Office 365 Security Team blog</a></p>
-                        <p><a href="https://www.microsoft.com/msrc">Microsoft Security Response Center</a></p>
+                        <p><a href="https://blogs.technet.microsoft.com/office365security" target="_blank">Office 365 Security Team blog</a></p>
+                        <p><a href="https://www.microsoft.com/msrc" target="_blank">Microsoft Security Response Center</a></p>
                     </div>
                 </div>
             </div>
