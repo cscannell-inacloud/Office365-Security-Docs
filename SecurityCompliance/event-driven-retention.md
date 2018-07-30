@@ -37,35 +37,8 @@ Event-driven retention is typically used as part of a records-management process
 - Labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Overview of disposition reviews](disposition-reviews.md).
     
 A label based on an event has the same capabilities as any label in Office 365. To learn more, see [Overview of labels](labels.md).
-  
-## Contents
-
-> [Understanding the relationship between event types, labels, events, and asset IDs](event-driven-retention.md#understanding)
-    
-> [How to set up event-driven retention](event-driven-retention.md#how)
-    
-> [Step 1: Create a label whose retention period is based on an event](event-driven-retention.md#step1)
-    
-> [Step 2: Choose an event type for that label](event-driven-retention.md#step2)
-    
-> [Step 3: Publish or auto-apply the label](event-driven-retention.md#step3)
-    
-> [Step 4: Enter an asset ID](event-driven-retention.md#step4)
-    
-> [Step 5: Create an event](event-driven-retention.md#step5)
-    
-> [Step 6: Choose the same event type used by the label in step 2](event-driven-retention.md#step6)
-    
-> [Step 7: Enter keywords or an asset ID](event-driven-retention.md#step7)
-    
-> [Use Content Search to find all content with a specific label or asset ID](event-driven-retention.md#usecontentsearch)
-    
-> [Permissions](event-driven-retention.md#permissions)
-    
-> [Automate events by using PowerShell](event-driven-retention.md#automate)
     
 ## Understanding the relationship between event types, labels, events, and asset IDs
-<a name="understanding"> </a>
 
 To successfully use event-driven retention, it's important to understand the relationship between event types, labels, events, and asset IDs as illustrated here. An explanation follows the diagram.
   
@@ -92,14 +65,12 @@ It's important to understand that if you don't specify an asset ID or keywords f
 Finally, remember that each label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger labels where each label has a different retention period.
   
 ## How to set up event-driven retention
-<a name="how"> </a>
 
 Here's the high-level workflow for event-driven retention. More detailed steps follow below.
   
 ![Diagram of workflow for setting up event-driven retention](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
 ### Step 1: Create a label whose retention period is based on an event
-<a name="step1"> </a>
 
 In the Security &amp; Compliance Center, in the left navigation, under **Classifications**, choose **Labels** \> **Create a label**.
   
@@ -116,7 +87,6 @@ Also note that event-driven retention requires retention settings that:
 ![Option to base a label on an event](media/a4902281-5196-4194-9737-f30231d95861.png)
   
 ### Step 2: Choose an event type for that label
-<a name="step2"> </a>
 
 In the label settings, after you choose the option to base the label on **an event**, you'll see the option to **Choose an event type**. An event type is simply a general description of an event that you want to associate a label with.
   
@@ -127,14 +97,12 @@ Note that once you choose an event type and create the label, the event type can
 ![Options to create or choose an event type](media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### Step 3: Publish or auto-apply the label
-<a name="step3"> </a>
 
 Just like any label, you need to publish or auto-apply an event-based label, so that it's manually or automatically applied to content. Do this on the **Labels** page. Note that labels that classify content as a record can only be published and manually applied to content; they can't be auto-applied to content. 
   
 ![Options to publish or auto-apply a label](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
 ### Step 4: Enter an asset ID
-<a name="step4"> </a>
 
 After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
   
@@ -149,21 +117,18 @@ Understand that Asset ID is simply another document property in SharePoint and O
 ![Text box to enter an Asset ID](media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### Step 5: Create an event
-<a name="step5"> </a>
 
 When a particular instance of that event type occurs - for example, a product reaches its end of life - go to the Events page in the Security &amp; Compliance Center and create an event. You need to manually trigger an event by creating it.
   
 ![Events page in Security and Compliance Center](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
   
 ### Step 6: Choose the same event type used by the label in step 2
-<a name="step6"> </a>
 
 When you create the event, choose the same event type used by the label in step 2 - for example, Product Lifetime. Only content with labels applied to it of that event type will have its retention period triggered.
   
 ![Option in Event settings to choose an event type](media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
 ### Step 7: Enter keywords or an asset ID
-<a name="step7"> </a>
 
 Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all of the content** with labels of that event type get the same retention date applied to them. 
   
@@ -178,7 +143,6 @@ Finally, choose the date when the event occurred; this date is used as the start
 ![Event settings page](media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## Use Content Search to find all content with a specific label or asset ID
-<a name="usecontentsearch"> </a>
 
 After labels are assigned to content, you can use content search in the Security &amp; Compliance Center to find all content that's classified with a specific label or that contains a specific asset ID.
   
@@ -191,14 +155,12 @@ When you create a content search:
 For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 ## Permissions
-<a name="permissions"> </a>
 
 To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
   
 For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md).
   
 ## Automate events by using PowerShell
-<a name="automate"> </a>
 
 In the Office 365 Security &amp; Compliance Center, you can only create events manually; it's not possible to automatically trigger an event when it occurs. However, you can use a PowerShell script to automate event-based retention from your business applications.
   
