@@ -8,25 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: "Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Office 365 Security &amp; Comliance Center. Disabling these reports can speed up the download time and save disk space."
 ---
 
 # Disable reports when you export Content Search results in the Office 365 Security &amp; Compliance Center
 
-When you use the Office 365 eDiscovery Export tool to export the results of a Content Search in the Security &amp; Compliance Center, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](disable-reports-when-you-export-content-search-results.md#faqs) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
-  
- **Content**
-  
-[Create registry settings to disable the export reports](disable-reports-when-you-export-content-search-results.md#disable)
-  
-[Edit registry settings to re-enable the export reports](disable-reports-when-you-export-content-search-results.md#reenable)
-  
-[Frequently asked questions about disabling export reports](disable-reports-when-you-export-content-search-results.md#faqs)
+When you use the Office 365 eDiscovery Export tool to export the results of a Content Search in the Security &amp; Compliance Center, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](#frequently-asked-questions-about-disabling-export-reports) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
   
 ## Create registry settings to disable the export reports
-<a name="disable"> </a>
 
 Perform the following procedure on the computer that you'll use to export the results a content search.
   
@@ -34,23 +27,23 @@ Perform the following procedure on the computer that you'll use to export the re
     
 2. Perform one or both of the following steps, depending on which export report you want to disable.
     
-  - **Results.csv**
+    - **Results.csv**
     
-    Save the following text to a Windows registry file by using a filename suffix of .reg; for example, DisableResultsCsv.reg.
+      Save the following text to a Windows registry file by using a filename suffix of .reg; for example, DisableResultsCsv.reg.
     
-  ```
-  Windows Registry Editor Version 5.00
-  reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
-  ```
+      ```
+      Windows Registry Editor Version 5.00
+      reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
+      ```
 
-  - **Manifest.xml**
+    - **Manifest.xml**
     
-    Save the following text to a Windows registry file by using a filename suffix of .reg; for example, DisableManifestXml.reg.
+      Save the following text to a Windows registry file by using a filename suffix of .reg; for example, DisableManifestXml.reg.
     
-  ```
-  Windows Registry Editor Version 5.00
-  reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
-  ```
+      ```
+      Windows Registry Editor Version 5.00
+      reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
+      ```
 
 3. In Windows Explorer, click or double-click the .reg file that you created in the previous steps.
     
@@ -59,11 +52,8 @@ Perform the following procedure on the computer that you'll use to export the re
 5. When prompted to continue, click **Yes**.
     
     The Registry Editor displays a message saying that the setting was successfully added to the registry.
-    
-[Return to top](disable-reports-when-you-export-content-search-results.md#top)
   
 ## Edit registry settings to re-enable the export reports
-<a name="reenable"> </a>
 
 If you disabled the Results.csv and Manifest.xml reports by creating the .reg files in the previous procedure, you can edit those files to re-enable a report so that it's exported with the search results. Again, perform the following procedure on the computer that you'll use to export the results a content search.
   
@@ -71,23 +61,23 @@ If you disabled the Results.csv and Manifest.xml reports by creating the .reg fi
     
 2. Edit one or both of the .reg edit files that you created in the previous procedure.
     
-  - **Results.csv**
+    - **Results.csv**
     
-    Open the DisableResultsCsv.reg file in Notepad, change the value  `False` to  `True`, and then save the file. For example, after you edit the file, it looks like this:
+        Open the DisableResultsCsv.reg file in Notepad, change the value  `False` to  `True`, and then save the file. For example, after you edit the file, it looks like this:
     
-  ```
-  Windows Registry Editor Version 5.00
-  reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
-  ```
+        ```
+        Windows Registry Editor Version 5.00
+      reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
+        ```
 
-  - **Manifest.xml**
+    - **Manifest.xml**
     
-    Open the DisableManifestXml.reg file in Notepad, change the value  `False` to  `True`, and then save the file. For example, after you edit the file, it looks like this:
+        Open the DisableManifestXml.reg file in Notepad, change the value  `False` to  `True`, and then save the file. For example, after you edit the file, it looks like this:
     
-  ```
-  Windows Registry Editor Version 5.00
-  reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
-  ```
+      ```
+      Windows Registry Editor Version 5.00
+      reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
+      ```
 
 3. In Windows Explorer, click or double-click a .reg file that you edited in the previous step.
     
@@ -96,8 +86,6 @@ If you disabled the Results.csv and Manifest.xml reports by creating the .reg fi
 5. When prompted to continue, click **Yes**.
     
     The Registry Editor displays a message saying that the setting was successfully added to the registry.
-    
-[Return to top](disable-reports-when-you-export-content-search-results.md#top)
   
 ## Frequently asked questions about disabling export reports
 <a name="faqs"> </a>
@@ -145,7 +133,3 @@ No, you don't have to restart the computer. But if the Office 365 eDiscovery Exp
  **Does an existing registry key get edited or does a new key get created?**
   
 A new registry key is created the first time you run the .reg file that you created in the procedure in this topic. Then the setting is edited each time you change and re-run the .reg edit file.
-  
-[Return to top](disable-reports-when-you-export-content-search-results.md#top)
-  
-

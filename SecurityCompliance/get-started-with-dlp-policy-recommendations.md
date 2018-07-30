@@ -1,14 +1,16 @@
 ---
 title: "Get started with DLP policy recommendations"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: "This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Office 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the Home page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a DLP policy."
 ---

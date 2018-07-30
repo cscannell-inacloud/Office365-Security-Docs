@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: "Learn about the utilities in Office 365 Advanced eDiscovery, including case log, clear data, process errors, modify Relevance, and transparency analysis. 
 "

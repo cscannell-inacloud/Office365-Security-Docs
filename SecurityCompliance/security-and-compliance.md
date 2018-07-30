@@ -1,14 +1,16 @@
 ---
 title: "Overview of security &amp; compliance in Office 365"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: dcb83b2c-ac66-4ced-925d-50eb9698a0b2
 
 ---

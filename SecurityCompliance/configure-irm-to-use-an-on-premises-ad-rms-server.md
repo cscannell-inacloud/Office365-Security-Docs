@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: "This topic shows you how to configure IRM to use an AD RMS server."
 ---

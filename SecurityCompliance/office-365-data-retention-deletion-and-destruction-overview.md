@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: "Summary: An overview of Microsoft's policies for Office 365 regarding data retention, deletion, and destruction."
 ---

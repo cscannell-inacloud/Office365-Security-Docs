@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 description: "As an organization administrator for both Exchange 2013 and Exchange Online, you can set up Outlook Web App to allow sending and receiving S/MIME-protected messages. Use the SMIMEConfig cmdlet to manage this feature through the Exchange Management Shell interface."
 ---

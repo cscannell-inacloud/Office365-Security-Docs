@@ -65,7 +65,6 @@ You can view information about many other kinds of activities, too. For example,
 Use the Activity log page to get acquainted with how people in your organization are using Office 365 and what issues they might be having along the way.
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     

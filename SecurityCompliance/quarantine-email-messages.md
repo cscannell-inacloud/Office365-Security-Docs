@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 description: "You can set up a quarantine for incoming email messages in Office 365 where incoming email messages that have been filtered as spam, bulk, phishing mail, and malware can be kept for later review."
 ---

@@ -36,19 +36,13 @@ To view and use your Threat Trackers when they are available for your organizati
 > [!NOTE]
 > To use Threat Trackers, you must be an Office 365 global administrator, security administrator, or security reader. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ### Noteworthy trackers
-<a name="notey"> </a>
 
 Noteworthy trackers are where you'll find big and smaller threats and risks that we think you should know about. Noteworthy trackers help you find whether these issues exist in your Office 365 environment, plus link to articles (like this one) that give you more details on what is happening, and how they'll impact your organization's use of Office 365. Whether it's a big new threat (e.g. Wannacry, Petya) or an existing threat that might create some new challenges (like our other inaugural Noteworthy item - Nemucod), this is where you'll find important new items you and your security team should review and examine periodically.
   
 Typically Noteworthy trackers will be posted for just a couple of weeks when we identify new threats and think you might need the extra visibility that this feature provides. Once the biggest risk for a threat has passed, we'll remove that Noteworthy item. This way, we can keep the list fresh and up to date with other relevant new items.
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ### Trending trackers
-<a name="trending"> </a>
 
 Trending trackers (formerly called Campaigns) highlight new threats that haven't been seen in your organization's email in the past week.
   
@@ -56,19 +50,13 @@ Trending trackers (formerly called Campaigns) highlight new threats that haven't
   
 Trending trackers give you an idea of new threats you should review to ensure your broader corporate environment is prepared against attacks.
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ### Tracked queries
-<a name="trackedq"> </a>
 
 Tracked queries leverage your saved queries to periodically assess Office 365 activity in your organization. This gives you event trending, with more to come in the coming months. Tracked queries run automatically, giving you up-to-date information without having to remember to re-run your queries.
   
 ![Example of tracked queries with one selected](media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ### Saved queries
-<a name="savedq"> </a>
 
 Saved queries are also found in the Trackers section. You can use Saved queries to store the common Explorer searches that you want to get back to quicker and repeatedly, without having to re-create the search every time.
   
@@ -76,10 +64,7 @@ Saved queries are also found in the Trackers section. You can use Saved queries 
   
 You can always save a Noteworthy tracker query or any of your own Explorer queries using the **Save query** button at the top of the Explorer page. Anything saved there will show up in the **Saved queries** list on the Tracker page. 
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ## Trackers and Explorer
-<a name="explorer"> </a>
 
 Whether you're reviewing email, content, or Office activities (coming soon), Explorer and Trackers work together to help you investigate and track security risks and threats. All together, Trackers provide you with information to protect your Office 365 users by highlighting new, notable, and frequently searched issues - ensuring your business is better protected as it moves to the cloud.
   
@@ -87,10 +72,7 @@ When Threat Trackers are available to you, please try them out - and remember th
   
 ![Office 365 Security &amp; Compliance Center](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ## Trackers and Office 365 Advanced Threat Protection
-<a name="tiatp"> </a>
 
 With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Office 365 ATP Safe Attachments](atp-safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), you should be - it's included in your subscription. ATP provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Office 365 ATP safe links](atp-safe-links.md) features work best when your main email security solution is through Office 365. 
   
@@ -100,19 +82,14 @@ In today's threat-riddled world, running only traditional anti-malware scans mea
   
 The new Noteworthy threat filter highlights items that were recently detected through ATP Safe Attachments. These detections represent items that are new malicious files, not previously found by Office 365 in either your email flow or other customers' email. Pay attention to the items in the Noteworthy Threat Tracker, see who was targeted by them, and review the detonation details shown on the Advanced Analysis tab (found by clicking on the subject of the email in Explorer). Note you'll only find this tab on emails detected by the ATP Safe Attachments capability - this Noteworthy tracker includes that filter, but you can also use that filter for other searches in Explorer.
   
- *[In this article](threat-trackers.md#toc)* 
-  
 ## Next steps
-<a name="next"> </a>
 
-- If your organization doesn't already have Office 365 Threat Intelligence, [How do we get Office 365 Threat Intelligence?](get-started-with-ti.md#howtoget).
+- If your organization doesn't already have Office 365 Threat Intelligence, see [How do we get Office 365 Threat Intelligence?](get-started-with-ti.md).
     
 - Make sure that your security team has the correct roles and permissions assigned. You must be an Office 365 global administrator, or have the Security Administrator or Search and Purge role assigned in the Security &amp; Compliance Center. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 - Watch for the new Trackers to show up in your Office 365 environment. When available, you'll find your Trackers [here](https://protection.office.com/). Go to **Threat management** \> **Threat trackers**.
     
 - If you haven't already done so, learn more about and configure [Office 365 Advanced Threat Protection](office-365-atp.md) for your organization, including [Office 365 ATP safe links](atp-safe-links.md) and [Office 365 ATP Safe Attachments](atp-safe-attachments.md).
-    
- *[In this article](threat-trackers.md#toc)* 
   
 

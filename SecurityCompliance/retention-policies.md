@@ -1,7 +1,7 @@
 ---
 title: "Overview of retention policies"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -9,7 +9,9 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: "With a retention policy, you can decide proactively whether to retain content, delete content, or both - retain and then delete the content; apply a single policy to the entire organization or just specific locations or users; and apply a policy to all content or just content meeting certain conditions"
 ---

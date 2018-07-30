@@ -9,6 +9,8 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: "This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to Office 365 customers."
 ---

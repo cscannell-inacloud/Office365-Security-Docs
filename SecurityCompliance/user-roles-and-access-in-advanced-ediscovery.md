@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a2a4b352-442a-49f2-be77-a1244d68de8f
 description: "Review the user roles of Administrator, Manager, and Reviewer and their access to modules and tasks in Office 365 Advanced eDiscovery.
 "
@@ -44,7 +46,7 @@ The user roles and access are defined in **Settings and utilities \> Tenant sett
 ||Utilities: Transparency analysis; Modify relevance  <br/> |X  <br/> |X  <br/> |X  <br/> |
 ||Utilities: Other  <br/> |X  <br/> |X  <br/> ||
    
-- To edit a user, select a user in the list, and then click **Edit**![edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png).
+- To edit a user, select a user in the list, and then click **Edit** ![Edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png).
     
     In the ** Edit user ** panel you can change the display name, or the Role. 
     

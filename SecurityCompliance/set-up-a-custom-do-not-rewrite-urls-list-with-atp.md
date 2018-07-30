@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
-description: "When you set up your ATP safe links poliicies, you can include a "do not rewrite" list of URLs to enable some people in your organization to visit sites that you include in your list."
+description: "When you set up your ATP safe links policies, you can include a do-not-rewrite' list of URLs to enable some people in your organization to visit sites that you include in your list."
 ---
 
 # Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links
@@ -20,31 +20,28 @@ description: "When you set up your ATP safe links poliicies, you can include a "
 With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your organization can have a [custom blocked URLs](set-up-a-custom-blocked-urls-list-wtih-atp.md), such that when people click on web addresses (URLs) in email messages or certain Office documents, they are prevented from going to those URLs. Your organization can also have custom "do not rewrite" lists for specific groups in your organization. A "do not rewrite" list enables some people to visit URLs that are otherwise blocked by [ATP Safe Links in Office 365](atp-safe-links.md). 
   
 This article describes how to specify a list of URLs that are excluded from ATP Safe Links scanning, and a few important points to keep in mind.
-  
-> [!NOTE]
-> The ATP Safe Links features are only available in Office 365 ATP, which is included in subscriptions, such as Office 365 Enterprise E5 and Office 365 Education A5, and, as of April 30, 2018, also [Microsoft 365 Business security features](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc). If your organization has an Office 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see [Office 365 Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx). 
-  
+    
 ## Important points to keep in mind
 
 - Any URLs that you specify in the "do not rewrite" list are excluded from ATP Safe Links scanning for the recipients that you specify.
     
-- When you specify a "do not rewrite" list for an ATP Safe Links policy, you can include up to three wildcard asterisks (\*). Wildcards (\*) are assumed for entries such as contoso.com, which do not explicitly include prefixes or subdomains, like http:// or https://. This means an entry, such as contoso.com is similar to \*contoso.com\* for your "do not rewrite" list.
+- When you specify a "do not rewrite" list for an ATP Safe Links policy, you can include up to three wildcard asterisks (\*). Wildcards (\*) are assumed for entries such as `contoso.com`, which do not explicitly include prefixes or subdomains, like `http://` or `https://`. This means an entry, such as `contoso.com` is similar to `\*contoso.com\*` for your "do not rewrite" list.
     
     The following table lists examples of what you can enter and what effect those entries have.
     
 |**Example Entry**|**What It Does**|
 |:-----|:-----|
-|\*contoso.com\*  <br/> |Allows specific recipients to visit a domain, subdomains, and paths, such as http://www.contoso.com, https://www.contoso.com, https://maps.contoso.com, or http://www.contoso.com/a  <br/> |
-|http://contoso.com/a  <br/> |Allows specific recipients to visit a site like http://contoso.com/a, but not subpaths like http://contoso.com/a/b  <br/> |
-|http://contoso.com/a\*  <br/> |Allows specific recipients to visit a site like http://contoso.com/a and subpaths like http://contoso.com/a/b  <br/> |
+|`\*contoso.com\*`  <br/> |Allows specific recipients to visit a domain, subdomains, and paths, such as `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `http://www.contoso.com/a`  <br/> |
+|`http://contoso.com/a`  <br/> |Allows specific recipients to visit a site like `http://contoso.com/a`, but not subpaths like `http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a\*`  <br/> |Allows specific recipients to visit a site like `http://contoso.com/a` and subpaths like `http://contoso.com/a/b`  <br/> |
    
-- If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like http://contoso.com/a and you want to include subpaths like http://contoso.com/a/b in your policy, add a wildcard to your entry so it looks like http://contoso.com/a\*.
+- If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like `http://contoso.com/a` and you want to include subpaths like `http://contoso.com/a/b` in your policy, add a wildcard to your entry so it looks like `http://contoso.com/a\*`.
     
-- Do not include a forward slash (/) in the URLs that you specify in your "do not rewrite" list. For example, rather than enter contoso.com/ in your "do not rewrite" list, enter contoso.com.
+- Do not include a forward slash (/) in the URLs that you specify in your "do not rewrite" list. For example, rather than enter `contoso.com/` in your "do not rewrite" list, enter `contoso.com`.
     
 ## Set up a "do not rewrite" list for specific groups
 
-ATP Safe Links protection uses several lists, including your organization's blocked URLs list and the "do not rewrite" lists for exceptions. You must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md) to set up your custom "do not rewrite" lists, and you do this when you add or edit Safe Links policies that apply to specific recipients in your organization. 
+ATP Safe Links protection uses several lists, including your organization's blocked URLs list and the "do not rewrite" lists for exceptions. You must have the necessary [permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up your custom "do not rewrite" lists. You do this when you add or edit Safe Links policies that apply to specific recipients in your organization. 
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account. 
     
@@ -74,5 +71,7 @@ ATP Safe Links protection uses several lists, including your organization's bloc
 [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md)
   
 [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+
+[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
 

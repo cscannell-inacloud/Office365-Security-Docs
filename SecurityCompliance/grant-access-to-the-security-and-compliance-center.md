@@ -1,7 +1,7 @@
 ---
 title: "Give users access to the Office 365 Security &amp; Compliance Center"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/18/2017
 ms.audience: Admin
@@ -11,7 +11,9 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: "Users need to be assigned permissions in the Office 365 Security &amp; Compliance Center before they can manage any of its security or compliance features."
 ---
@@ -38,7 +40,7 @@ For more information about the different permissions you can give to users in th
     
 3. In the Security &amp; Compliance Center, go to **Permissions**.
     
-4. From the list, choose the role group that you want to add the user to and click **Edit**![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).
+4. From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).
     
 5. In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) and select the name of the user (or users) you want to add. 
     

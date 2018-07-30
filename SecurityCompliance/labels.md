@@ -1,7 +1,7 @@
 ---
 title: "Overview of labels"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/22/2018
 ms.audience: Admin
@@ -9,7 +9,9 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: "Labels in Office 365 can help you take the right actions on the right content. With labels, you can classify data across your organization for governance, and enforce retention rules based on that classification. You can also use labels to implement records management across Office 365."
 ---

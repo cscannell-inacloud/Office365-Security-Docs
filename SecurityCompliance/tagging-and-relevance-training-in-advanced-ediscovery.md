@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of Office 365 Advanced eDiscovery. 
 "

@@ -1,14 +1,16 @@
 ---
 title: "View the data governance reports"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/8/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: cc091627-d5f0-4fb9-bc74-7a84cf6258da
 description: "With the data governance reports in the Office 365 Security &amp; Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
 ---

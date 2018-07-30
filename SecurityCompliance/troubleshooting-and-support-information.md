@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 description: "This topic describes troubleshooting steps for end users and administrators, and provides information about how to contact technical support for assistance."
 ---

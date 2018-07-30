@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: "Learn about the labels, cross module, and tenant settings that you can define at the case level in Office 365 Advanced eDiscovery. 
 "

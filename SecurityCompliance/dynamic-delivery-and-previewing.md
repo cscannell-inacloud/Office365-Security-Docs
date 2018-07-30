@@ -17,11 +17,11 @@ description: "When you set up your ATP safe attachments policies, you choose Dyn
 
 # Dynamic delivery and previewing with Office 365 ATP Safe Attachments
 
-Dynamic delivery is an option that can be selected for [Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions). Read this article to learn about dynamic delivery and attachment preview capabilities in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
+Dynamic delivery is an option that can be selected for . Read this article to learn about dynamic delivery and attachment preview capabilities in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
   
 ## How dynamic delivery works
 
-When you [set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md), you can choose from several options, such as **Block**, **Replace**, and **Dynamic Delivery**. (See [Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions).) Depending on how your policies are configured, email recipients can experience a minor delay in email delivery while their attachments are scanned. To avoid message delays, choose **Dynamic Delivery**.
+When you [set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md), you can choose from several options, such as **Block**, **Replace**, and **Dynamic Delivery**. Depending on how your policies are configured, email recipients can experience a minor delay in email delivery while their attachments are scanned. To avoid message delays, choose **Dynamic Delivery**.
   
 The dynamic delivery option eliminates email delays by sending the body of an email message through with a placeholder for each email attachment. The placeholder remains until the attachment is scanned by [ATP Safe Attachments in Office 365](atp-safe-attachments.md). Email recipients can read and respond to their email messages right away, knowing that their attachments are being analyzed.
   
@@ -31,7 +31,7 @@ As each attachment is cleared, it is automatically reattached to the original em
   
 ## What happens when someone forwards an email that contains an attachment?
 
-Suppose that an organization is using dynamic delivery for their [Set up an ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md#setpolicy), and someone receives an email that contains an attachment. Now suppose that person is about to forward the email message to someone else. What happens? It depends on whether the additional recipients are included in ATP Safe Attachments policies.
+Suppose that an organization is using dynamic delivery for their [ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md), and someone receives an email that contains an attachment. Now suppose that person is about to forward the email message to someone else. What happens? It depends on whether the additional recipients are included in ATP Safe Attachments policies.
   
 - If a recipient is covered by an ATP Safe Attachments policy using the dynamic delivery option, then the recipient sees the placeholder, with the ability to preview compatible files.
     
@@ -59,7 +59,7 @@ There are certain scenarios in which dynamic delivery is not supported. These in
     
 - A user's mailbox search folder that is in an error state
     
-- Environments in which an Exchange Online admin has enabled Exclaimer. (See [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/en-us/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
+- Environments in which an Exchange Online admin has enabled Exclaimer. (See [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
     
 ## Related topics
 

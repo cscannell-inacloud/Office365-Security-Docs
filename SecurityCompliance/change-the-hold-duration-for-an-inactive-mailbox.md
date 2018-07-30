@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 
 description: "After an Office 365 mailbox is made inactive, you can change the duration of the hold or Office 365 retention policy assigned to the inactive mailbox. The hold duration defines how long items in the Recoverable Items folder are held."
@@ -191,7 +193,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
    
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Select the In-Place Hold you want to change, and then click **Edit**![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+3. Select the In-Place Hold you want to change, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**. 
     

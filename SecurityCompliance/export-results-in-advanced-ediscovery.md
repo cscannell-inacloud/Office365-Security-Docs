@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Learn how to define options for exporting results from Office 365 Advanced eDiscovery, including the procedure for specifying parameters for an export batch. "
 ---
@@ -61,7 +63,7 @@ The eDiscovery Export Tool is used to export search results from Advanced eDisco
     
   - To export to a new batch, click **Add**![add icon](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)and enter a new name in **Batch name** (or accept the default) and a description in **Batch description**. Click **OK**.
     
-  - To edit a batch name or description, select the name in **Export batch**, click **Edit**![edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), and then modify the fields.
+  - To edit a batch name or description, select the name in **Export batch**, click **Edit** ![Edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), and then modify the fields.
     
     > [!NOTE]
     > After you've run sessions for an export batch, they cannot be deleted. In addition, only some parameters can be edited once the first session is run. 

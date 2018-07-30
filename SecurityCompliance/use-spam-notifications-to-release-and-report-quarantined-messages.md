@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 description: "If your admin enables the notifications for users, you'll receive a notification message that lists messages sent to your mailbox that were identified as spam, bulk, or phishing messages. You can release or report messages after being notified."
 ---

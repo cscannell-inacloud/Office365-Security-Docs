@@ -1,7 +1,7 @@
 ---
 title: "How to prevent real email from being marked as spam in Office 365"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin

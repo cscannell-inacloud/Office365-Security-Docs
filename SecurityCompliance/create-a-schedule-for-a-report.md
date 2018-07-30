@@ -20,10 +20,9 @@ description: "Learn how to set up a schedule for a report in the Security &amp; 
 In the Security &amp; Compliance Center, several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization. If you're a member of your organization's security team, you can create a schedule for a report. The schedule you create can include a custom date ranges to suit your organization. 
   
 ## Create a schedule for a report
-<a name="schedulereport"> </a>
 
 > [!IMPORTANT]
-> Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
+> Make sure that you have the necessary permissions to perform this task. In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 1. In the Security &amp; Compliance Center, go to **Reports** \> **Dashboard**.
     

@@ -1,14 +1,15 @@
 ---
 title: "Overview of preservation policies"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 4/3/2017
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MET150
+search.appverid: 
+- MET150
 ms.assetid: 9c3b1d52-40ce-4ba3-a520-9ae0be15538a
 description: "To comply with industry regulations or internal policies, organizations want to preserve content for a certain period of time. With a preservation policy in Office 365, you can preserve content in sites, mailboxes, and public folders indefinitely or for a specific duration. You can also filter the content that will be preserved by supplying keywords or a date range to narrow the results."
 ---

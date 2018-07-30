@@ -20,19 +20,15 @@ description: "Define Safe Attachments policies to protect your organization from
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. And the last thing you want is a malicious attachment to get through, wreaking havoc for your organization. Fortunately, [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) can help. You can set up [ATP Safe Attachments](atp-safe-attachments.md) policies to help ensure that your organization is protected against attacks by unsafe email attachments. 
   
-> [!NOTE]
-> The ATP Safe Attachments features are only available in Advanced Threat Protection. Office 365 ATP is included in subscriptions, such as Office 365 Enterprise E5 and Office 365 Education A5, and, as of April 30, 2018, also [Microsoft 365 Business security features](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc). If your organization has an Office 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+## What to do 
   
- **What to do**: 
-  
-1. [Review the prerequisites](set-up-atp-safe-attachments-policies.md#prereqs)
+1. [[Review the prerequisites](set-up-atp-safe-attachments-policies.md#prereqs)](#review-the-prerequisites)
     
-2. [Set up an ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md#setpolicy)
+2. [[Set up an ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md#setpolicy)](#set-up-an-atp-safe-attachments-policy)
     
-3. [Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions)
+3. [[Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions)](#learn-about-atp-safe-attachments-policy-options)
     
 ## Review the prerequisites
-<a name="prereqs"> </a>
 
 - Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).
     
@@ -43,7 +39,6 @@ People regularly send, receive, and share attachments, such as documents, presen
 - Allow up to 30 minutes for your new or updated policy to spread to all Office 365 datacenters.
     
 ## Set up an ATP Safe Attachments policy
-<a name="setpolicy"> </a>
 
 You can set up an ATP Safe Attachments policy using either the Office 365 Security &amp; Compliance Center or the Exchange admin center (EAC). **We recommend using the Office 365 Security &amp; Compliance Center**. 
   
@@ -74,7 +69,6 @@ You can set up an ATP Safe Attachments policy using either the Office 365 Securi
 Consider setting up multiple ATP Safe Attachments policies for your organization. These policies will be applied in the order they're listed on the **ATP Safe Attachments** page. After a policy has been defined or edited, allow at least 30 minutes for the polices to take effect throughout Microsoft datacenters. 
   
 ## Learn about ATP Safe Attachments policy options
-<a name="policyoptions"> </a>
 
 As you set up your ATP Safe Attachments policies, you choose from among many options, including Monitor, Block, Replace, Dynamic Delivery, and so on. In case you're wondering about what these options do, the following table summarizes each and its effect.
   
@@ -88,7 +82,6 @@ As you set up your ATP Safe Attachments policies, you choose from among many opt
 |**Enable redirect** <br/> |Applies when the Monitor, Block, or Replace option is chosen  <br/> Sends attachments to a specified email address where security administrators or analysts can investigate  <br/> |Enable security administrators and analysts to research suspicious attachments  <br/> |
    
 ## Related topics
-<a name="policyoptions"> </a>
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

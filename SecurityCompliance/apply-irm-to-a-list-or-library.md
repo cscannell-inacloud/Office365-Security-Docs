@@ -3,7 +3,7 @@ title: "Apply Information Rights Management (IRM) to a list or library"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/10/2018
+ms.date: 7/2/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,6 +12,7 @@ search.appverid:
 - SPO160
 - OSU150
 - OSU160
+- MET150
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 
 description: "You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries."
@@ -58,7 +59,7 @@ You can use Information Rights Management (IRM) to help control and protect file
 |**To do this:**|**Do this:**|
 |:-----|:-----|
 |Allow people to print documents from this list or library  <br/> |Select the **Allow viewers to print** check box.  <br/> |
-|Allow people with at least the View Items permission to run embedded code or macros on a document.  <br/> |Select the **Allow viewers to run script and screen reader to function on downloaded documents** check box.  <br/> > [!NOTE]> If you select this option, users could run code to extract the contents of a document.           |
+|Allow people with at least the View Items permission to run embedded code or macros on a document.  <br/> |Select the **Allow viewers to run script and screen reader to function on downloaded documents** check box.  <br/> If you select this option, users could run code to extract the contents of a document.           |
 |Require that people verify their credentials at specific intervals.  <br/> Select this option if you want to restrict access to content to a specified period of time. If you select this option, people's issuance licenses to access the content will expire after the specified number of days, and people will be required to return to the server to verify their credentials and download a new copy.  <br/> |Select the **Users must verify their credentials using this interval (days)** check box, and then specify the number of days for which you want the document to be viewable.  <br/> |
 | Prevent people from uploading documents that do not support IRM to this list or library.  <br/>  If you select this option, people will not be able to upload any of the following file types:  <br/>  File types that do not have corresponding IRM protectors installed on all of the front-end Web servers.  <br/>  File types that SharePoint Server 2010 cannot decrypt.  <br/>  File types that are IRM protected in another program  <br/> |Select the **Do not allow users to upload documents that do not support IRM** check box.  <br/> |
 |Remove restricted permissions from this list or library on a specific date.  <br/> |Select the **Stop restricting access to the library at** check box, and then select the date that you want.  <br/> |
@@ -66,8 +67,6 @@ You can use Information Rights Management (IRM) to help control and protect file
 |Allow group protection so that users can share with members of the same group.  <br/> |Select **Allow group protection**, and enter the group's name for sharing.  <br/> |
    
 8. After you finish selecting the options you want, click **OK**.
-    
-[Top of Page](apply-irm-to-a-list-or-library.md#__top)
   
 ## What is Information Rights Management?
 <a name="__toc256598175"> </a>
@@ -124,7 +123,7 @@ When people download files in an IRM-enabled list or library, the files are encr
   
 The types of restrictions that are applied to a file when it is downloaded from a list or library are based on the individual user's permissions on the site that contains the file. The following table explains how the permissions on sites correspond to IRM permissions.
   
-|****Permissions****|****IRM Permissions****|
+|**Permissions**|**IRM Permissions**|
 |:-----|:-----|
 |Manage Permissions, Manage Web Site  <br/> |**Full control** (as defined by the client program): This permission generally allows a user to read, edit, copy, save, and modify permissions of rights-managed content.  <br/> |
 |Edit Items, Manage Lists, Add and Customize Pages  <br/> |**Edit**, **Copy**, and **Save**: A user can print a file only if the **Allow users to print documents** check box is selected on the Information Rights Management Settings page for the list or library.  <br/> |
@@ -142,7 +141,5 @@ When you enable IRM for a list or library in SharePoint Server 2013, you can onl
 - The XML Paper Specification (XPS) format
     
 If your organization plans to use IRM to protect any other file types in addition to those listed above, your server administrator must install protectors for these additional file formats.
-  
-[Top of Page](apply-irm-to-a-list-or-library.md#__top)
   
 

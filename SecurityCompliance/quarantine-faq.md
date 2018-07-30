@@ -9,6 +9,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: "This topic provides frequently asked questions and answers about the hosted quarantine."
 ---

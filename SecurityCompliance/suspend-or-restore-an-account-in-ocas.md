@@ -54,7 +54,6 @@ When you suspend a user account, you prevent the user from signing in again. It'
 See [Restore a user in Office 365](https://support.office.com/article/2c261e42-5dd1-48b0-845f-2a016d29cfc1)
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     

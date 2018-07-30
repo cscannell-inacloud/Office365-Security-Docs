@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: "Learn how to configure user roles, create cases, and assign users to cases in Office 365 Advanced eDiscovery. 
 "
@@ -37,19 +39,19 @@ Before setting up cases and users in Advanced eDiscovery, the following is requi
 
 The first step is to assign users the requirement permissions in the Security &amp; Compliance Center so that they can me added as a member of an eDiscovery case. After a user is added as a member of a case in the Security &amp; Compliance Center, they'll be able to access the case in Advanced eDiscovery.
   
-To assign a user the necessary permissions so they can be added as a member of an eDiscovery case, see Step 1 in [](manage-ediscovery-cases.md#step1).
+To assign a user the necessary permissions so they can be added as a member of an eDiscovery case, see Step 1 in [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
   
 ## Step 2: Create an eDiscovery case and add members
 
 The next step is to create a new eDiscovery case in the Security &amp; Compliance Center and add members. Members of the case will then be able to access the case in Advanced eDiscovery.
   
-1. To create a new eDiscovery case, see Step in 2 in [](manage-ediscovery-cases.md#step2).
+1. To create a new eDiscovery case, see Step 2 in [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
     
-2. To add members to an eDiscovery case, see Step 3 in [](manage-ediscovery-cases.md#step2a).
+2. To add members to an eDiscovery case, see Step 3 in [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md#step-3-add-members-to-a-case)
     
 ## Step 3: Go a case in Advanced eDiscovery
 
-After you create an eDiscovery case and add members, you (or any member of the case) can access the corresponding case in Advanced eDiscovery. To access a case in Advanced eDiscovery, see Step 8 in [](manage-ediscovery-cases.md#gotoAeD).
+After you create an eDiscovery case and add members, you (or any member of the case) can access the corresponding case in Advanced eDiscovery. To access a case in Advanced eDiscovery, see Step 8 in [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
   
 ## See also
 

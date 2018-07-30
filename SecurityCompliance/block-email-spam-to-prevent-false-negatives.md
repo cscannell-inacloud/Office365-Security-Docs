@@ -3,12 +3,14 @@ title: "Block email spam with the Office 365 spam filter to prevent false negati
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 7/2/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: "Tips to set up the Office 365 spam filter to help block email spam and prevent false negative messages, An Admin uses Office 365 anti-spam filtering to help prevent spam from being sent to user inboxes."
 ---
@@ -74,7 +76,7 @@ The EOP service is designed to honor the user's safe and blocked senders, if the
     
 - If a message in EOP is assigned SCL -1 by an Exchange mail flow rule or because the IP address or domain is in your allow list, the SCL is propagated to the on-premise Exchange server using connectors. In this case, your user's blocked senders list will not be enforced. To change this, you can create a local mail flow rule that sets the SCL to 0. This will cause Outlook to enforce your user's local blocked senders list.
     
- **To set up a mail flow rule to stop messages from being delivered to your users' inbox by using the blocked senders list**
+**To set up a mail flow rule to stop messages from being delivered to your users' inbox by using the blocked senders list**
   
 1. Open the Exchange Management Shell on your on-premises server. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://technet.microsoft.com/library/dd638134%28v=exchg.160%29.aspx).
     
@@ -85,22 +87,9 @@ The EOP service is designed to honor the user's safe and blocked senders, if the
   ```
 
     Because the SCL is 0 in your on-premises Exchange server, non-spam will be delivered to your users' inboxes but still allow for users' local blocked senders list to send them to junk email. If you are using spam quarantine in EOP, it is still possible that senders who are on your user's safe list will be identified as spam and sent to quarantine. If you are using the Junk Mail Folder in your local mailbox, however, this will allow delivery to the Inbox for safe senders.
-    
-    > [!CAUTION]
-    > If you use a mail flow rule to change the SCL value to 0 (or any value other than -1), then all of the Outlook junk mail options will apply to the message. This means that blocked and safe lists will be honored, but also means that messages that do not have addresses from the blocked or safe lists will potentially be marked as junk by the client side junk mail filter processing. If you want to have Outlook process the blocked and safe lists, but not use the client side junk mail filter, you must set the option to "No Automatic Filtering" in Outlook Junk Mail Options. "No Automatic Filtering" is the default option in the latest versions of Outlook, but you should confirm that the this setting is in place to ensure the client side junk mail filter is not applied to the messages. As an administrator, you can enforce disabling the Outlook Junk Email filtering by following the instructions in [Outlook: Policy setting to disable the Junk E-mail UI and filtering mechanism](https://support.microsoft.com/en-us/kb/2180568). 
-  
-## Still need help?
 
-[![Get help from the Office 365 community forums](media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
-  
-[![Admins: Sign in and create a service request](media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
-  
-[![Admins: Call Support](media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
-  
-## Leave us a comment
-<a name="BKMK_please_comment"> </a>
-
-Were these tips helpful? If so, please let us know by checking **yes** or **no** at the bottom of this topic. If they weren't, and you're still having trouble with false negative spam messages in your user inboxes, tell us more about either the options you were trying to use or your scenario and we'll use your feedback to double-check our tips. 
+> [!WARNING]
+> If you use a mail flow rule to change the SCL value to 0 (or any value other than -1), then all of the Outlook junk mail options will apply to the message. This means that blocked and safe lists will be honored, but also means that messages that do not have addresses from the blocked or safe lists will potentially be marked as junk by the client side junk mail filter processing. If you want to have Outlook process the blocked and safe lists, but not use the client side junk mail filter, you must set the option to "No Automatic Filtering" in Outlook Junk Mail Options. "No Automatic Filtering" is the default option in the latest versions of Outlook, but you should confirm that the this setting is in place to ensure the client side junk mail filter is not applied to the messages. As an administrator, you can enforce disabling the Outlook Junk Email filtering by following the instructions in [Outlook: Policy setting to disable the Junk E-mail UI and filtering mechanism](https://support.microsoft.com/en-us/kb/2180568).
   
 ## See Also
 <a name="BKMK_please_comment"> </a>

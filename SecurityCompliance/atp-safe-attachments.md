@@ -24,17 +24,8 @@ Beginning in late March 2018 and over the next several weeks, ATP protection is 
   
 > [!NOTE]
 > ATP Safe Attachments features are only available in Advanced Threat Protection. Office 365 ATP is included in subscriptions, such as Office 365 Enterprise E5 and Office 365 Education A5, and, as of April 30, 2018, also [Microsoft 365 Business security features](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc). If your organization has an Office 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. (As a global admin, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx). 
-  
- **In this article**: 
-  
-- [How it works](atp-safe-attachments.md#howitworks)
-    
-- [How to get ATP Safe Attachments](atp-safe-attachments.md#howtobuy)
-    
-- [How to know if ATP Safe Attachments protection is in place](atp-safe-attachments.md#howtosee)
-    
+     
 ## How it works
-<a name="howitworks"> </a>
 
 The ATP Safe Attachments feature checks email attachments for people in your organization. When an ATP Safe Attachments policy is in place and someone covered by that policy views their email in Office 365, their email attachments are checked and appropriate actions are taken, based on your ATP Safe Attachments policies. Depending on how your policies are defined, people can continue working without ever knowing they were sent malicious files.
   
@@ -47,7 +38,6 @@ Here are two examples of ATP Safe Attachments at work.
 ATP Safe Attachments policies can be applied to specific people or groups in your organization, or to your entire domain. To learn more, see **[Set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md)**. 
   
 ## How to get ATP Safe Attachments
-<a name="howtobuy"> </a>
 
 The ATP Safe Attachments feature is part of Advanced Threat Protection, which is included in Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Advanced Threat Protection can be purchased as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
   
@@ -58,7 +48,6 @@ The ATP Safe Attachments feature applies when:
 - Users have signed into Office 365 using their work or school account. (See [Sign in to Office or Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
     
 ## How to know if ATP Safe Attachments protection is in place
-<a name="howtosee"> </a>
 
  **[ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md) must be defined in order for ATP Safe Attachments protection to be in place **. 
   
@@ -75,12 +64,10 @@ In addition, the following table describes some example scenarios. In all of the
 |Jamie's organization has ATP Safe Attachments policies in place, and [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) has been turned on. Jamie assumes that every file in SharePoint Online has been scanned and is safe to open or download.  <br/> |ATP Safe Attachments protection is in place according to the policies that are defined; however, this does not mean that every single file in SharePoint Online, OneDrive for Business, or Microsoft Teams is scanned. (To learn more, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).)  <br/> |
    
 ## Submitting files for malware analysis
-<a name="analysis"> </a>
 
 If you receive a file that you want to ask Microsoft to analyze, visit [Submit a file for malware analysis](https://aka.ms/wdsi/submit).
   
 ## Related topics
-<a name="analysis"> </a>
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

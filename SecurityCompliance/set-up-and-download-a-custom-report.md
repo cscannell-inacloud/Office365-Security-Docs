@@ -20,7 +20,6 @@ description: "Learn how to set up and download a report with a custom date range
 In the Security &amp; Compliance Center, several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization. If you're a member of your organization's security team, you can configure a report with custom date ranges and filters, and then download your custom report. 
   
 ## Download a custom report
-<a name="customrep"> </a>
 
 > [!IMPORTANT]
 > Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
@@ -42,7 +41,6 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 6. Specify email recipients for the report, and then choose **Save**.
     
 ## Related topics
-<a name="customrep"> </a>
 
 [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   

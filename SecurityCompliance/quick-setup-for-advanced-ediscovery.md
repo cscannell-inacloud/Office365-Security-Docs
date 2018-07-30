@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: "Learn how to access Office 365 Advanced eDiscovery from the Office 365 Security &amp; Compliance Center and review the typical workflow for using Advanced eDiscovery. 
 "

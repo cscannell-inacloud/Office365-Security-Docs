@@ -30,17 +30,8 @@ After you have set up and configured Office 365 Cloud App Security, you'll want 
   
 > [!NOTE]
 > You must be a global administrator or security administrator to perform the tasks described in this article. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
-  
- **In this article**
-  
-- [Activities after the initial configuration and rollout of Office 365 Cloud App Security](utilization-activities-for-ocas.md#afterinitialrollout)
-    
-- [Activities after time has passed since rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md#overtime)
-    
-- [Next steps](utilization-activities-for-ocas.md#nextsteps)
     
 ## Activities after the initial configuration and rollout of Office 365 Cloud App Security
-<a name="afterinitialrollout"> </a>
 
 After Office 365 Cloud App Security is configured and rolled out, as a global administrator or security administrators, you have several things to consider:
   
@@ -69,7 +60,6 @@ Depending on your organization's size and interest in monitoring and maintaining
 - Recommendations for Office 365 Cloud App Security policy changes and their impact on end users
     
 ## Activities after time has passed since rolling out Office 365 Cloud App Security
-<a name="overtime"> </a>
 
 If a protracted amount of time has passed since you initially configured or maintained your Office 365 Cloud App Security policies, take the following steps to get back to a configuration that reflects your organization's security goals and the current capabilities of Office 365 Cloud App Security:
   
@@ -92,7 +82,6 @@ If a protracted amount of time has passed since you initially configured or main
 9. Monitor end user feedback and Office 365 Cloud App Security alerts and adjust policies over time.
     
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Investigate an activity](investigate-an-activity-in-office-365-cas.md)
     

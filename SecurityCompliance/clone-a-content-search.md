@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: "Use the Windows PowerShell script in this article to quickly clone an existing Content Search in the Security &amp; Compliane Center search. When a you clone a search, a new search (with a new name) is created that contains the same properties as the original search. Then you can edit the new search (by changing the keyword query or the date range), and then run it."
 ---

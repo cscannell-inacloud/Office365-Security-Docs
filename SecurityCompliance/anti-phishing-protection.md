@@ -3,11 +3,13 @@ title: "Anti-phishing protection in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 7/2/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 description: "Office 365 offers a variety of protection against phishing attacks by default and also through additional offerings such as ATP anti-phishing. This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Office 365."
 ---

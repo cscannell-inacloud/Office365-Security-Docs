@@ -61,7 +61,6 @@ Integrating with your SIEM server is accomplished in three steps:
 - The server must be running Java 8; earlier versions are not supported.
     
 ### Step 1: Set it up in the Office 365 Cloud App Security portal
-<a name="step1"> </a>
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.) 
     
@@ -92,7 +91,6 @@ Integrating with your SIEM server is accomplished in three steps:
 10. Copy the token and save it for later. After you click Finish and leave the Wizard, back in the SIEM page, you can see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later. 
     
 ### Step 2: Download the JAR file and run it on your server
-<a name="step2"> </a>
 
 1. Download the [Microsoft Cloud App Security SIEM Agent](https://go.microsoft.com/fwlink/?linkid=838596) and unzip the folder. 
     
@@ -155,7 +153,6 @@ To delete your SIEM agent, in the table, locate the row for the SIEM agent. Clic
 ![To delete a SIEM agent, choose the ellipses, and then choose Delete.](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Utilization activities after rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     

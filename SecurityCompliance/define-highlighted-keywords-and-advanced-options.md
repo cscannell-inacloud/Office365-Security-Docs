@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: "Learn how to add user-defined keywords to Relevance to help identify relevant files while tagging in Office 365 Advanced eDiscovery and to specify cost parameters. 
 "

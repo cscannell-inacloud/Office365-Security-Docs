@@ -31,17 +31,7 @@ These anomaly detection policies provide immediate results by providing immediat
   
 As a [global administrator or security administrator](permissions-in-the-security-and-compliance-center.md), you can review, and if necessary, revise the default policies that are available with Office 365 Cloud App Security.
   
- **In this article**: 
-  
-- [View your anomaly detection policies](anomaly-detection-policies-in-ocas.md#seethedefaults)
-    
-- [Learn more about anomaly detection policies](anomaly-detection-policies-in-ocas.md#whatsin)
-    
-- [Triage anomaly detection alerts](anomaly-detection-policies-in-ocas.md#triage)
-    
-- [Next steps](anomaly-detection-policies-in-ocas.md#nextsteps)
-    
-> [!IMPORTANT]
+ > [!IMPORTANT]
 > There is an initial learning period of seven (7) days during which anomalous behavior alerts are not triggered. The anomaly detection algorithm is optimized to reduce the number of false positive alerts. 
   
 ## Before you begin
@@ -55,7 +45,6 @@ Make sure that:
 - You are a global administrator or security administrator for Office 365.
     
 ## View your anomaly detection policies
-<a name="seethedefaults"> </a>
 
 1. As a global administrator or security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account. 
     
@@ -76,7 +65,6 @@ Make sure that:
 6. Choose **Update** to save your changes. 
     
 ## Learn more about anomaly detection policies
-<a name="whatsin"> </a>
 
 Anomaly detection policies are automatically enabled; however, Office 365 Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also leverage machine learning algorithms designed to profile the users and log-in patterns to reduce false positives.
   

@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f1
 description: "Learn about hosted quarantine for Exchange Online and Exchange Online Protection."
 ---

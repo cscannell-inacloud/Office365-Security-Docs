@@ -9,6 +9,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 
 description: "The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP)."

@@ -8,6 +8,8 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: "Use a PowerShell script to create an In-Place eDiscovery search in Exchange Online based on a search created in the Office 365 Security &amp; Compliance Center.
 "
@@ -279,7 +281,7 @@ After you create and start the In-Place eDiscovery search that was created by th
 
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-2. In the list view, select the In-Place eDiscovery search that you created in Step 3, and then click **Edit**![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).
+2. In the list view, select the In-Place eDiscovery search that you created in Step 3, and then click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).
     
 3. On the **In-Place Hold** page, select the **Place content matching the search query in selected mailboxes on hold** check box and then select one of the following options: 
     

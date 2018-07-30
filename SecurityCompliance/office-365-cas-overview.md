@@ -29,24 +29,8 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 Office 365 Cloud App Security gives you insight into suspicious activity in Office 365 so you can investigate situations that are potentially problematic and, if needed, take action to address security issues. With Office 365 Cloud App Security, you can receive notifications of triggered alerts for atypical or suspicious activities, see how your organization's data in Office 365 is accessed and used, suspend user accounts exhibiting suspicious activity, and require users to log back in to Office 365 apps after an alert has been triggered. Read this article to get an overview of Office 365 Cloud App Security features and capabilities.
   
- **In this article**: 
-  
-- [How to find the Office 365 Cloud App Security portal](office-365-cas-overview.md#findit)
-    
-- [Policies](office-365-cas-overview.md#policies)
-    
-- [Alerts](office-365-cas-overview.md#alerts)
-    
-- [Activity logs](office-365-cas-overview.md#activities)
-    
-- [App permissions](office-365-cas-overview.md#appperms)
-    
-- [Cloud Discovery Dashboard](office-365-cas-overview.md#dashboard)
-    
-- [Next steps](office-365-cas-overview.md#nextsteps)
     
 ## How to find the Office 365 Cloud App Security portal
-<a name="findit"> </a>
 
 > [!NOTE]
 > To access the Office 365 Cloud App Security portal, you must be a global administrator, security administrator, or security reader. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
@@ -64,7 +48,6 @@ You can get to the Office 365 Cloud App Security portal through the Office 365 S
 3. Choose **Go to Office 365 Cloud App Security**. 
     
 ## Policies
-<a name="policies"> </a>
 
 Office 365 Cloud App Security works with the policies that are defined for your organization. With Office 365 Cloud App Security, your organization gets 10 predefined anomaly detection policies and several templates for activity policies. These policies are designed to detect general anomalies, identify users logging in from a risky IP address, detect ransomware activities, detect administrator activities from non-corporate IP addresses, and more.
   
@@ -81,7 +64,6 @@ To learn more about policies, see the following resources:
 - [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
 ## Alerts
-<a name="alerts"> </a>
 
 When policies are defined, alerts notify you about suspicious or atypical activities that were detected. To view alerts for your organization, choose **Alerts** in the navigation bar across the top of the screen. 
   
@@ -98,7 +80,6 @@ To learn more about alerts, see the following resources:
 - [Review and take action on Office 365 Cloud App Security alerts](review-office-365-cas-alerts.md)
     
 ## Activity logs
-<a name="activities"> </a>
 
 View information about user activities on your Activity log page in Office 365 Cloud App Security.
   
@@ -113,7 +94,6 @@ You can use your web traffic logs with Office 365 Cloud App Security, too. The m
 [Learn about web traffic logs and data sources for Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
   
 ## App permissions
-<a name="appperms"> </a>
 
 With Office 365 Cloud App Security, you can allow or prevent people in your organization to use third-party apps that access data in Office 365.
   
@@ -126,7 +106,6 @@ To get to this page, go to **Investigate** \> **App permissions**.
 [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## Cloud Discovery Dashboard
-<a name="dashboard"> </a>
 
 The **Cloud Discovery Dashboard**, also referred to as **Productivity App Discovery**, shows information about cloud app usage within your organization. You can view information about apps, users, traffic, transactions, and more using this dashboard. The Cloud Discovery Dashboard resembles the following image: 
   
@@ -139,7 +118,6 @@ To get to this dashboard, in the Office 365 Cloud App Security portal, go to **D
 [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - Get the [Office 365 Cloud App Security Use Cases and Usage Guide](https://aka.ms/O365CASGuide)
     

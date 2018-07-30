@@ -27,37 +27,20 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
 > Office 365 Cloud App Security is available in Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Office 365 Cloud App Security can be purchased as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 As you prepare to turn on and implement Office 365 Cloud App Security for your organization, there are a few things to take into account. Use this article as a guide to plan for Office 365 Cloud App Security.
-  
-1. [Identify and protect your global and security administrator accounts](get-ready-for-office-365-cas.md#whostheboss)
     
-2. [Turn on audit logging for your organization](get-ready-for-office-365-cas.md#auditlog)
-    
-3. [Go to the Office 365 Cloud App Security portal](get-ready-for-office-365-cas.md#gettoasm)
-    
-4. [Define policies and set up alerts &amp; actions](get-ready-for-office-365-cas.md#definepolicicesalerts)
-    
-5. [Learn about your organization's cloud usage](get-ready-for-office-365-cas.md#usereports)
-    
-6. [Manage apps that your organization is using to access Office 365](get-ready-for-office-365-cas.md#manageapps)
-    
-7. [Use your SIEM server with Office 365 Cloud App Security](get-ready-for-office-365-cas.md#useSIEM)
-    
-## Identify and protect your global and security administrator accounts
-<a name="whostheboss"> </a>
+## Step 1: Identify and protect your global and security administrator accounts
 
 Global administrators, security administrators, and security readers can access the Office 365 Cloud App Security portal to view policies, review alerts, and use reports. Global administrators and security administrators can define policies and take other actions to protect your organization. (For more information, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).) Review your organization's user accounts that have elevated permissions as a precaution. 
   
  **[Protect your Office 365 global administrator accounts](https://support.office.com/article/6b4ded77-ac8d-42ed-8606-c014fd947560)**. 
   
-## Turn on audit logging for your organization
-<a name="auditlog"> </a>
+## Step 2: Turn on audit logging for your organization
 
 In order for Office 365 Cloud App Security to work correct, audit logging must be turned on. This is typically done by an Exchange Online administrator or a global administrator.
   
  **[Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md)**. 
   
-## Go to the Office 365 Cloud App Security portal
-<a name="gettoasm"> </a>
+## Step 3: Go to the Office 365 Cloud App Security portal
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.) 
     
@@ -71,8 +54,7 @@ In order for Office 365 Cloud App Security to work correct, audit logging must b
     
     ![When you go to the Office 365 Cloud App Security portal, you start with the Policies page](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-## Define policies and set up alerts &amp; actions
-<a name="definepolicicesalerts"> </a>
+## Step 4: Define policies and set up alerts &amp; actions
 
 Global administrators and security administrators define policies in Office 365 Cloud App Security. During the process of defining policies, alerts and actions are also set. An alert is a criteria-based notification that appears in a view or is sent via email. 
   
@@ -86,8 +68,7 @@ See the following resources to learn more:
     
 - [Review and take action on Office 365 Cloud App Security alerts](review-office-365-cas-alerts.md)
     
-## Learn about your organization's cloud usage
-<a name="usereports"> </a>
+## Step 5: Learn about your organization's cloud usage
 
 As a global administrator, security administrator, or security reader, you can learn about your organization's cloud usage through reports and a Cloud Discovery dashboard (also called Productivity App Discovery). This dashboard shows information about users, apps, web traffic, and risk levels.
   
@@ -103,18 +84,15 @@ To populate reports with the information you need, upload your log files from yo
     
 - [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
-## Manage apps that your organization is using to access Office 365
-<a name="manageapps"> </a>
+## Step 6: Manage apps that your organization is using to access Office 365
 
 As a global administrator or security administrator, you can manage apps, such as custom apps or third-party apps, that people in your organization are using on their devices with Office 365. For example, suppose that someone has downloaded a custom app they want to use with Office 365. You can review the apps people are using, ban untrusted apps, or mark apps as approved for your tracking purposes. [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md).
   
-## Use your SIEM server with Office 365 Cloud App Security
-<a name="useSIEM"> </a>
+## Step 7: Use your SIEM server with Office 365 Cloud App Security
 
 Is your organization using a security information and event management (SIEM) server? Office 365 Cloud App Security can now integrate with your SIEM server to enable centralized monitoring of alerts. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The SIEM agent runs on your server, pulls alerts from Office 365 Cloud App Security, and streams those alerts into your SIEM server. See [SIEM integration with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md).
   
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
     

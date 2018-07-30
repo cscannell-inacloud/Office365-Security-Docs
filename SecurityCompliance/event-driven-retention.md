@@ -1,7 +1,7 @@
 ---
 title: "Overview of event-driven retention"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 5/22/2018
 ms.audience: Admin
@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: "With labels in Office 365, you can base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. Event-driven retention is typically used as part of a records-management process."
 ---

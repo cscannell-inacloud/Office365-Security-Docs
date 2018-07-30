@@ -25,9 +25,6 @@ The blocked URLs list is defined by your organization's Office 365 security team
   
 Read this article to learn how to set up your organization's custom blocked URLs list for [ATP Safe Links in Office 365](atp-safe-links.md).
   
-> [!NOTE]
-> The ATP Safe Links features are only available in Office 365 ATP, which is included in subscriptions, such as Office 365 Enterprise E5 and Office 365 Education A5, and, as of April 30, 2018, also [Microsoft 365 Business security features](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc). If your organization has an Office 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see [Office 365 Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx). > Make sure your organization is using the latest version of Office 365 ProPlus on Windows to take advantage of extended ATP Safe Links features. 
-  
 ## View or edit a custom list of blocked URLs
 
 [ATP Safe Links in Office 365](atp-safe-links.md) uses several lists, including your organization's custom blocked URLs list. If you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up your organization's custom list. You do this by editing your organization's default Safe Links policy.
@@ -46,17 +43,17 @@ Read this article to learn how to set up your organization's custom blocked URLs
   
 4. Select the **Enter a valid URL** box, and then type a URL, and then choose the plus sign (+). Here are a few things to keep in mind: 
     
-  - You can specify a domain-only URL (like contoso.com or tailspintoys.com). This will block clicks on any URL that contains the domain.
+  - You can specify a domain-only URL (like `contoso.com` or `tailspintoys.com`). This will block clicks on any URL that contains the domain.
     
-  - Do not include a forward slash ( **/**) at the end of the URL. For example, instead of entering http://www.contoso.com/, enter http://www.contoso.com.
+  - Do not include a forward slash ( **/**) at the end of the URL. For example, instead of entering `http://www.contoso.com/`, enter `http://www.contoso.com`.
     
   - You can include up to three wildcard asterisks (\*) per URL. The following table lists some examples of what you can enter and what effect those entries have.
     
 |**Example Entry**|**What It Does**|
 |:-----|:-----|
-|contoso.com or \*contoso.com\*  <br/> |Blocks the domain, subdomains, and paths, such as https://www.contoso.com, http://sub.contoso.com, and http://contoso.com/abc  <br/> |
-|http://contoso.com/a  <br/> |Blocks a site http://contoso.com/a but not additional subpaths like http://contoso.com/a/b  <br/> |
-|http://contoso.com/a\*  <br/> |Blocks a site http://contoso.com/a and additional subpaths like http://contoso.com/a/b  <br/> |
+|`contoso.com` or `\*contoso.com\*`  <br/> |Blocks the domain, subdomains, and paths, such as `https://www.contoso.com`, `http://sub.contoso.com`, and `http://contoso.com/abc`  <br/> |
+|`http://contoso.com/a`  <br/> |Blocks a site `http://contoso.com/a` but not additional subpaths like `http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a\*`  <br/> |Blocks a site `http://contoso.com/a` and additional subpaths like `http://contoso.com/a/b`  <br/> |
    
 5. When you are finished adding URLs, in the lower right corner of the screen, choose **Save**.
     

@@ -14,6 +14,7 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 
 description: "Learn about unindexed items in Exchange and SharePoint that you can include in a Content Search run via the Office 365 Security &amp; Compliance Center.
@@ -43,37 +44,21 @@ A Content Search that you run from the Office 365 Security &amp; Compliance Cent
   
 For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with Office 365 Advanced eDiscovery. For more information, see [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
- **Contents**
-  
-[File types not indexed for search](partially-indexed-items-in-content-search.md#filetypes)
-  
-[Messages and documents with partially indexed file types can be returned in search results](partially-indexed-items-in-content-search.md#returningunindexeditems)
-  
-[Partially indexed items included in the search results](partially-indexed-items-in-content-search.md#unindexeditemsresults)
-  
-[Partially indexed items excluded from the search results](partially-indexed-items-in-content-search.md#excludedunindexeditems)
-  
-[Indexing limits for messages in Content Search](partially-indexed-items-in-content-search.md#limits)
-  
-[More information about partially indexed items](partially-indexed-items-in-content-search.md#moreinfo)
-  
 ## File types not indexed for search
-<a name="filetypes"> </a>
 
 Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, the search indexing servers in Exchange and SharePoint don't perform full-text indexing on these types of files. These types of files are considered to be unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are labeled as unindexed items in Content Searches. As previously stated, partially indexed items can be included in the set of search results when you run a search, export the search results to a local computer, or prepare search results for Advanced eDiscovery. 
   
 For a list of supported and disabled file formats, see the following topics:
   
-- **Exchange**[File formats indexed by Exchange Search](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - [File formats indexed by Exchange Search](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange**[Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint**[Default crawled file name extensions and parsed file types in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
-[Return to top](partially-indexed-items-in-content-search.md#top)
+
   
 ## Messages and documents with partially indexed file types can be returned in search results
-<a name="returningunindexeditems"> </a>
 
 Not every email message with an partially indexed file attachment or every partially indexed SharePoint document is automatically returned as an partially indexed item. That's because other message or document properties, such as the **Subject** property in email messages and the **Title** or **Author** properties for documents are indexed and available to be searched. For example, a keyword search for "financial" will return items with an partially indexed file attachment if that keyword appears in the subject of an email message or in the file name or title of a document. However, if the keyword appears only in the body of the file, the message or document would be returned as a partially indexed item. 
   
@@ -81,7 +66,7 @@ Similarly, messages with partially indexed file attachments and documents of an 
   
 For a list of email and document properties that you can search for by using the Search feature in the Security &amp; Compliance Center, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-[Return to top](partially-indexed-items-in-content-search.md#top)
+
   
 ## Partially indexed items included in the search results
 <a name="unindexeditemsresults"> </a>
@@ -101,20 +86,16 @@ Keep the following in mind about partially indexed items:
 - If you choose to include all mailbox items in the search results, or if a search query doesn't specify any keywords or only specifies a date range, partially indexed items might not be copied to the PST file that contains the partially indexed items. This is because all items, including any partially indexed items, will be automatically included in the regular search results.
     
 - Partially indexed items aren't available to be previewed. You have to export the search results to view partially indexed items returned by the search.
-    
-[Return to top](partially-indexed-items-in-content-search.md#top)
-  
+
 ## Partially indexed items excluded from the search results
-<a name="excludedunindexeditems"> </a>
 
 If an item is partially indexed but it doesn't meet the search query criteria, it won't be included as a partially indexed item in the search results. In other words, the item is excluded from the search results. For example, let's say you run a search and don't include any keywords or properties because you want to include all content. But you include a date range condition for the query. If a partially indexed item falls outside of that date range, it won't be included as a partially indexed item. Date ranges are an effective way to exclude partially indexed items from your search results.
   
 Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
   
-One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based holds, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#step3).
+One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based holds, see Step 4 in  [eDiscovery cases in the Office 365 Security & Compliance Center](ediscovery-cases.md#step-4-place-content-locations-on-hold).
   
 ## Indexing limits for messages in Content Search
-<a name="limits"> </a>
 
 The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in a Content Search in Office 365.
   
@@ -122,7 +103,7 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
   
 |**Indexing limit**|**Maximum value**|**Description**|
 |:-----|:-----|:-----|
-|Maximum attachment size (excluding Excel files)  <br/> |150 MB  <br/> |The maximum size of an email attachment that will parse for indexing. Any attachment that's larger than this limit won't be parsed for indexing, and the message with the attachment will be marked as unindexed.  <br/> > [!NOTE]> Parsing is the process where the indexing service extracts text from the attachment, removes unnecessary characters like punctuation and spaces, and then divides the text into words (in a process called tokenization), that are then stored in the index.           |
+|Maximum attachment size (excluding Excel files)  <br/> |150 MB  <br/> |The maximum size of an email attachment that will parse for indexing. Any attachment that's larger than this limit won't be parsed for indexing, and the message with the attachment will be marked as unindexed.  <br/><br/> **Note:** Parsing is the process where the indexing service extracts text from the attachment, removes unnecessary characters like punctuation and spaces, and then divides the text into words (in a process called tokenization), that are then stored in the index.           |
 |Maximum size of Excel files  <br/> |4 MB  <br/> |The maximum size of an Excel file located on a site or attached to an email message that will be parsed for indexing. Any Excel file that's larger than this limit won't be parsed, and the file or the email the message with the file attachment will be marked as unindexed.  <br/> |
 |Maximum number of attachments  <br/> |250  <br/> |The maximum number of files attached to an email message that will be parsed for indexing. If a message has more than 250 attachments, the first 250 attachments are parsed and indexed, and the message is marked as partially indexed because it had additional attachments that weren't parsed.  <br/> |
 |Maximum attachment depth  <br/> |30  <br/> |The maximum number of nested attachments that are parsed. For example, if an email message has another message attached to it and the attached message has an attached Word document, the Word document and the attached message will be indexed. This behavior will continue for up to 30 nested attachments.  <br/> |
@@ -133,7 +114,7 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 |Maximum body size in index  <br/> |67 million characters  <br/> |The total number of characters in the body of an email message and all its attachments. When an email message is indexed, all text in the body of the message and in all attachments is concatenated into a single string. The maximum size of this string that is indexed is 67 million characters.  <br/> |
 |Maximum unique tokens in body  <br/> |1 million  <br/> |As previously explained, tokens are the result of extracting text from content, removing punctuation and spaces, and then dividing it into words (called tokens) that are stored in the index. For example, the phrase  `"cat, mouse, bird, dog, dog"` contains 5 tokens. But only 4 of these are unique tokens. There is a limit of 1 million unique tokens per email message, which helps prevent the index from getting too large with random tokens.  <br/> |
    
-[Return to top](partially-indexed-items-in-content-search.md#top)
+
   
 ## More information about partially indexed items
 <a name="moreinfo"> </a>
@@ -149,11 +130,8 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
     
 - Messages protected using Information Rights Management (IRM) are indexed and will be included in the search results if they match the search query.
-    
-[Return to top](partially-indexed-items-in-content-search.md#top)
-  
+
 ## See also
-<a name="moreinfo"> </a>
 
 [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

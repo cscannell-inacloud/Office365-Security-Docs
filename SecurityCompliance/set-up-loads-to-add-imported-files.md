@@ -8,7 +8,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Office 365 Advanced eDiscovery. 
 "

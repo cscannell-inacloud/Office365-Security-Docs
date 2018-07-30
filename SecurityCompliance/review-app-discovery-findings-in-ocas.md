@@ -28,21 +28,8 @@ The Cloud Discovery dashboard works with your organization's web traffic logs to
  **As of March 2018, the Cloud Discovery dashboard has new features** that make it easier to view detailed information about how people in your organization are using Office 365 and other apps. 
   
 ![The Cloud Discovery dashboard has been updated](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
-  
- **In this article**: 
-  
-- [Go to the Cloud Discovery dashboard](review-app-discovery-findings-in-ocas.md#gotodash)
-    
-- [See your top users, IP addresses, apps, and risk levels](review-app-discovery-findings-in-ocas.md#reviewdash)
-    
-- [Dive deeper into the information](review-app-discovery-findings-in-ocas.md#divedeeper)
-    
-- [Exclude entities](review-app-discovery-findings-in-ocas.md#excludeentities)
-    
-- [Next steps](review-app-discovery-findings-in-ocas.md#nextsteps)
-    
+     
 ## Go to the Cloud Discovery dashboard
-<a name="gotodash"> </a>
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.) 
     
@@ -55,7 +42,6 @@ The Cloud Discovery dashboard works with your organization's web traffic logs to
 4. Go to **Discover** \> **Cloud Discovery dashboard**.
     
 ## See your top users, IP addresses, apps, and risk levels
-<a name="reviewdash"> </a>
 
 The Cloud Discovery dashboard gives you an at-a-glance overview of apps that are used with Office 365 in your organization, any open alerts, top users, and risk levels.
   
@@ -74,7 +60,6 @@ The Cloud Discovery dashboard gives you an at-a-glance overview of apps that are
 6. Above the maps area, take a look at the risk score of the discovered apps in the **Risk levels** overview. You can look at risks by the same groups and categories that you used in the **Discovered apps** area. For example, you can see how much traffic in each grouping is from high, medium, or low risk apps. 
     
 ## Dive deeper into the information
-<a name="divedeeper"> </a>
 
 You can use Cloud Discovery to take a deeper look at apps, subdomains, IP addresses, and users.
   
@@ -99,7 +84,6 @@ You can use Cloud Discovery to take a deeper look at apps, subdomains, IP addres
     ![Cloud Discovery - users info](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## Exclude entities
-<a name="excludeentities"> </a>
 
 You can exclude certain system users or IP addresses in order to focus on more specific information.
   
@@ -114,7 +98,6 @@ You can exclude certain system users or IP addresses in order to focus on more s
 5. Choose **Add**.
     
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Review and take action on alerts](review-office-365-cas-alerts.md)
     

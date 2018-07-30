@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: "Summary: Information about Office 365's monitoring and self-healing capabilities."
 ---
