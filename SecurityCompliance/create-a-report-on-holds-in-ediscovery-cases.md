@@ -16,11 +16,8 @@ description: "Use the script in this article to generate a report that contains 
 ---
 
 # Create a report on holds in eDiscovery cases in Office 365
-
-> [!NOTE]
-> The script in this article has been updated to fix an issue where content locations placed on hold weren't being included in the report. Thanks to the customer who brought this to our attention! 
   
-The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the Office 365 Security &amp; Compliance Center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. See the [More information](create-a-report-on-holds-in-ediscovery-cases.md#moreinfo) section for a detailed description of the information included in the report. 
+The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the Office 365 Security &amp; Compliance Center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. See the [More information](#more-information) section for a detailed description of the information included in the report. 
   
 ## Before you begin
 
@@ -31,40 +28,30 @@ The script in this article lets eDiscovery administrators and eDiscovery manager
 - The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## Step 1: Connect to the Security &amp; Compliance Center using Remote PowerShell
-<a name="step1"> </a>
 
 The first step is to connect Windows PowerShell to the Security &amp; Compliance Center for your organization.
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, ConnectSCC.ps1. 
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`. 
     
-  ```
-  # Get login credentials 
-  $UserCredential = Get-Credential 
-  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-  Import-PSSession $Session -AllowClobber -DisableNameChecking 
-  $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
-  
-  ```
+      ```
+      # Get login credentials 
+      $UserCredential = Get-Credential 
+      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
+      Import-PSSession $Session -AllowClobber -DisableNameChecking 
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    ```
 
 2. On your local computer, open Windows PowerShell and go to the folder where you saved the script. 
     
 3. Run the script; for example:
-    
-||
-|:-----|
-|
-```
-  .\ConnectSCC.ps1
-```
 
-|
+    ```
+    .\ConnectSCC.ps1
+    ```
    
 4. When prompted for your credentials, enter your email address and password, and then click **OK**. 
-    
-[Return to top](create-a-report-on-holds-in-ediscovery-cases.md#top)
   
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
-<a name="step2"> </a>
 
 After you've connected to the Security &amp; Compliance Center with remote PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization. 
   
@@ -151,16 +138,11 @@ After you've connected to the Security &amp; Compliance Center with remote Power
 2. In the Windows PowerShell session that opened in Step 1, go to the folder where you saved the script. 
     
 3. Run the script; for example:
-    
-||
-|:-----|
-|
-```
-  .\CaseHoldsReport.ps1
-```
 
-|
-   
+    ```
+    .\CaseHoldsReport.ps1
+    ```
+
     The script will prompt for a target folder to save the report to. 
     
 4. Type the full path name of the folder to save the report to, and then press **Enter**.
@@ -168,18 +150,15 @@ After you've connected to the Security &amp; Compliance Center with remote Power
     > [!TIP]
     > To save the report in the same folder that the script is located in, type a period (".") when prompted for a target folder. To save the report in a subfolder in the folder where the script is located, just type the name of the subfolder. 
   
-    The script starts to collect information about all the eDiscovery cases in your organization. Don't access the report file while the script is running. After the script is complete, a confirmation message is displayed in the Windows PowerShell session. After this message is displayed, you can access the report in the folder that you specified in Step 4. The file name for the report is CaseHoldsReport\<DateTimeStamp\>.csv.
+    The script starts to collect information about all the eDiscovery cases in your organization. Don't access the report file while the script is running. After the script is complete, a confirmation message is displayed in the Windows PowerShell session. After this message is displayed, you can access the report in the folder that you specified in Step 4. The file name for the report is `CaseHoldsReport\<DateTimeStamp\>.csv`.
     
     Here's an example of running the CaseHoldsReport.ps1 script. 
     
     ![The output after running the CaseHoldsReport.ps1 script](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-[Return to top](create-a-report-on-holds-in-ediscovery-cases.md#top)
-  
 ## More information
-<a name="moreinfo"> </a>
 
-The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da).
+The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md).
   
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
     
@@ -200,7 +179,3 @@ The case holds report that's created when you run the script in this article con
 - The time and date the hold was created and the person who created it.
     
 - The time and date the hold was last changed and the person who changed it.
-    
-[Return to top](create-a-report-on-holds-in-ediscovery-cases.md#top)
-  
-
