@@ -28,7 +28,7 @@ If your organization needs to protect your data or comply with legal or regulato
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get Started - First 30 days</h3>
+                        <h3>Get started - first 30 days</h3>
                 <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Check Secure Score</a> <br> - <a href="https://securescore.office.com">Turn on audit logging</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Configure tenant security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Connect Cloud App Security</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Enable Azure AD Identity Protection</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Secure SharePoint sites and files</a> </p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ If your organization needs to protect your data or comply with legal or regulato
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Next Steps - 60-day enhanced protection</h3>
+                        <h3>Next steps within 90 days</h3>
                         <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Conduct attack simulations</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Compliance Manager</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Protect admin accounts</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Enable multi-factor authentication</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review & update protection policies</a> </p>
                     </div>
                 </div>
@@ -62,9 +62,9 @@ If your organization needs to protect your data or comply with legal or regulato
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Maintain - 90 days and beyond<</h3>
+                        <h3>Beyond 90 days</h3>
                         <p>These are important security measures that build on previous work:<br>
-                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Your Secure Score</a><br>
+                        - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review your Secure Score</a><br>
                         - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Implement Secure Privileged Access</a><br>
                         - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Cloud App Security</a><br>
                         - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Refine protection policies</a><br></p>
@@ -90,8 +90,9 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Stay secure</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Security Best Practices for Office 365</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">O365 Security & Compliance Center</a></p>
+                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Office 365 Security Roadmap</a></p>
+                        <p><a href="https://securescore.microsoft.com">Microsoft Secure Score</a></p>
+                        <p><a href="https://protection.office.com">Office 365 Security & Compliance Center</a></p>
                     </div>
                 </div>
             </div>
@@ -108,8 +109,8 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Stay compliant</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Microsoft Trust Center</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Microsoft Service Trust Portal</a></p>
+                        <p><a href="https://www.microsoft.com/trustcenter">Microsoft Trust Center</a></p>
+                        <p><a href="https://servicetrust.microsoft.com">Microsoft Service Trust Portal</a></p>
                     </div>
                 </div>
             </div>
@@ -126,8 +127,8 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Stay up-to-date</h3>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Office 365 Security Team blog</a></p>
-                        <p><a href="https://wondersinthedark.files.wordpress.com/2012/10/bluto.jpg">Microsoft Security Response Center</a></p>
+                        <p><a href="https://blogs.technet.microsoft.com/office365security">Office 365 Security Team blog</a></p>
+                        <p><a href="https://www.microsoft.com/msrc">Microsoft Security Response Center</a></p>
                     </div>
                 </div>
             </div>
