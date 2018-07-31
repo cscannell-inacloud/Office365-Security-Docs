@@ -84,7 +84,7 @@
 ## More information about data governance
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 
-# Protect against threats
+# [Protect against threats](protect-against-threats.md)
 ## [Threat management in the Office 365 Security & Compliance Center](threat-management.md)
 ## [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md)
 ### [Anti-phishing protection in Office 365](anti-phishing-protection.md)
@@ -119,7 +119,6 @@
 ### [Set up Azure Rights Management for Office 365 Message Encryption](set-up-azure-rm-for-message-encryption.md)
 
 ## [Office 365 Advanced Threat Protection](office-365-atp.md)	
-### [Protect against threats in Office 365](protect-against-threats.md)
 ### [Office 365 ATP Safe Links](atp-safe-links.md)
 #### [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)
 #### [Office 365 ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
@@ -131,6 +130,8 @@
 ### [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)
 #### [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
 #### [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+### [ATP anti-phishing capabilities in Office 365](atp-anti-phishing.md)
+#### [Set up Office 365 ATP anti-phishing policies](set-up-atp-anti-phishing-policies.md)
 ### [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
 ## [Office 365 Threat Intelligence](office-365-ti.md)
@@ -142,22 +143,30 @@
 ### [Threat Trackers - New and Noteworthy](threat-trackers.md)
 
 ## [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
-### [Office 365 Cloud App Security help and how-to](office-365-cas-help.md)	
-### [What's new in Office 365 Cloud App Security](new-in-office-365-cas.md)
 ### [Get ready for Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
-### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
-### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
-### [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
-### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
-### [Group your IP addresses to simplify management in Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
-### [Utilization activities after rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md)
-### [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
-### [Investigate an activity in Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md)
-### [Suspend or restore a user account in Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md)
-### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
-### [Web traffic logs and data sources for Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
-### [Create app discovery reports using Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
-### [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+### [Office 365 Cloud App Security Use Cases and Usage Guide](https://aka.ms/O365CASGuide)
+### [See what's new](new-in-office-365-cas.md)
+### Enable Office 365 Cloud App Security
+#### [Turn Office 365 audit log search on](turn-audit-log-search-on-or-off.md)
+#### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
+### Set up policies and alerts
+#### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+#### [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
+#### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
+### Fine-tune settings
+#### [Group your IP addresses to simplify management in Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
+#### [Utilization activities after rolling out Office 365 Cloud App Security](utilization-activities-for-ocas.md)
+### Investigate activities and take action
+#### [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
+#### [Investigate an activity in Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md)
+#### [Suspend or restore a user account in Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md)
+### Manage third-party apps
+#### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+### Create and view app discovery reports
+#### [Create app discovery reports using Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
+#### [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+#### [Web traffic logs and data sources for Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
+
 
 ## [Quarantine email messages in Office 365](quarantine-email-messages.md)	
 ### [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md)
