@@ -168,51 +168,48 @@
 ### [Use user spam notifications to release and report quarantined messages in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
 # Search for content
-## [Use Content Search in Office 365](content-search.md)
-## [Limits for Content Search in the Office 365 Security & Compliance Center](limits-for-content-search.md)
-## [Run a Content Search in the Office 365 Security & Compliance Center](content-search.md#create-a-new-search)
-## [Export Content Search results from the Office 365 Security and Compliance Center](content-search.md#export-search-results)
-## [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
-## [Check your Content Search query for errors](check-your-content-search-query-for-errors.md)
-## [Export a Content Search report](export-a-content-search-report.md)
-## [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
-## [Use Content Search in Office 365 for targeted collections](use-content-search-for-targeted-collections.md)
-## [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md)
-## [Prepare a CSV file for an ID list Content Search in Office 365](csv-file-for-an-id-list-content-search.md)
-## [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md)
-## [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
-## [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
-## [Create, report on, and delete multiple Content Searches](create-report-on-and-delete-multiple-content-searches.md)
-## [Bulk edit Content Searches in the Office 365 Security & Compliance Center](bulk-edit-content-searches.md)
-## [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
-## [Clone a Content Search in the Office 365 Security & Compliance Center](clone-a-content-search.md)
-## [Disable reports when you export Content Search results in the Office 365 Security & Compliance Center](disable-reports-when-you-export-content-search-results.md)
-## [Tagging and Search](search-and-tagging.md)
-
-# Manage legal investigations		
-## [eDiscovery in Office 365](ediscovery.md)	
-### [Manage eDiscovery cases in the Office 365 Security & Compliance Center](manage-ediscovery-cases.md)
-### [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md)
-### [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
-### [eDiscovery cases in the Office 365 Security & Compliance Center](ediscovery-cases.md)
-### [Assign eDiscovery permissions to OneDrive for Business sites](assign-permissions-to-onedrive-for-business-sites.md)
-### [Manage legal investigations in Office 365](manage-legal-investigations.md)
-### [Create a Litigation Hold in Office 365](create-a-litigation-hold.md)
-### [Search all mailboxes and sites using the eDiscovery Center](search-all-mailboxes-and-sites-with-ediscovery.md)
-### [Search for eDiscovery activities in the Office 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md)
-### [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
+## [Use Content Search](content-search.md)
+### [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+### [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md)
+### [Export Content Search results ](content-search.md#export-search-results)
+### [Export a Content Search report](export-a-content-search-report.md)
+### [Search for and delete email messages](search-for-and-delete-messagesadmin-help.md)
+### [Bulk edit multiple Content Searches](bulk-edit-content-searches.md)
+### [Prepare a CSV file for an ID list Content Search](csv-file-for-an-id-list-content-search.md)
+### [Use Content Search to search third-party data](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [Use Content Search in your eDiscovery workflow](use-content-search-in-ediscovery.md)
-### [Use a script to add users to a hold in an eDiscovery case in the Office 365 Security & Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
-### [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md)
+### [Check your Content Search query for errors](check-your-content-search-query-for-errors.md)
+## [Understand Content Search
+### [Limits for Content Search](limits-for-content-search.md)
+### [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md)
+### [Investigating partially indexed items](investigating-partially-indexed-items-in-ediscovery.md)
 ### [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md)
-### [Differences between estimated and actual eDiscovery search results in Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md)
-### [Create a report on holds in eDiscovery cases in Office 365](create-a-report-on-holds-in-ediscovery-cases.md)
-### [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
-
-## Office 365 Advanced eDiscovery	
+### [Differences between estimated and actual Content Search results](differences-between-estimated-and-actual-ediscovery-search-results.md)
+## [Configure Content Search
+### [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md)
+### [Increase the download speed when exporting Content Search results](increase-download-speeds-when-exporting-ediscovery-results.md)
+### [Change the size of PST files when exporting Content Search results](change-the-size-of-pst-files-when-exporting-results.md)
+### [Disable reports when you export Content Search results](disable-reports-when-you-export-content-search-results.md)
+## [Use Content Search PowerShell scripts
+### [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md)
+### [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [Create, report on, and delete multiple Content Searches](create-report-on-and-delete-multiple-content-searches.md)
+### [Clone a Content Search](clone-a-content-search.md)
+# [Manage legal investigations
+## [Create and manage eDiscovery cases](ediscovery-cases.md)
+## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
+## [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
+## [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
+## [Prepare search results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md)
+## [Assign eDiscovery permissions to OneDrive for Business sites](assign-permissions-to-onedrive-for-business-sites.md)
+## [Use a script to add users to a hold in an eDiscovery case](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+## [Create a report on holds in eDiscovery cases](create-a-report-on-holds-in-ediscovery-cases.md)
+## [Manage holds
+### [Create a Litigation Hold](create-a-litigation-hold.md)
+### [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 ### [Quick setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
-### [Prepare search results for Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md)
-### [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 ### [Import non-Office 365 content for Advanced eDiscovery analysis](import-non-office-365-data-into-advanced-ediscovery.md)
 ### [Set up users and cases in Office 365 Advanced eDiscovery](set-up-users-and-cases-in-advanced-ediscovery.md)
 ### [Export results in Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
@@ -245,72 +242,67 @@
 ### [Define issues and assign users in Office 365 Advanced eDiscovery](define-issues-and-assign-users.md)
 ### [Set Analyze advanced settings in Office 365 Advanced eDiscovery](set-analyze-options-in-advanced-ediscovery.md)
 ### [Understand Assessment in Relevance in Office 365 Advanced eDiscovery](assessment-in-relevance-in-advanced-ediscovery.md)
-
-# Search the audit log
-## [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)
-## [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md)
-## [Search the audit log for user and admin activity in Office 365](search-the-audit-log.md)
-## [Search the audit log in the Office 365 Security and Compliance Center](search-the-audit-log-in-security-and-compliance.md)
-## [Detailed properties in the Office 365 audit log](detailed-properties-in-the-office-365-audit-log.md)
-## [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md)
-
+### [Tagging and Search](search-and-tagging.md)
+# [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+## [Turn audit log search on or off](turn-audit-log-search-on-or-off.md)
+## [Enable mailbox auditing](enable-mailbox-auditing.md)
+## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
+## [Use sharing auditing in the audit log](use-sharing-auditing.md)
+## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 # Monitor security and compliance
-## [Monitor security and compliance in Office 365](monitor-security-and-compliance.md)
-## [Alert policies in the Office 365 Security & Compliance Center](alert-policies.md)
-## [Create activity alerts in the Office 365 Security and Compliance Center](create-activity-alerts.md)
-## [Smart reports and insights in the Office 365 Security and Compliance Center](reports-and-insights-in-security-and-compliance.md)
+## [Alerts in the Security & Compliance Center](alerts.md)
+### [Alert policies](alert-policies.md)
+### [Create activity alerts](create-activity-alerts.md)
+## [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+### [View email security reports](view-email-security-reports.md)
+### [Create a schedule for a report in the Security & Compliance Center](create-a-schedule-for-a-report.md)
+### [Manage schedules for multiple reports in the Security & Compliance Center](manage-schedules-for-multiple-reports.md)
+### [Set up and download a custom report in the Security & Compliance Center](set-up-and-download-a-custom-report.md)
+### [Download existing reports in the Security & Compliance Center](download-existing-reports.md)
 ### [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
 ### [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
 ### [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
-### [Create a schedule for a report in the Security and Compliance Center](create-a-schedule-for-a-report.md)
-### [Manage schedules for multiple reports in the Security and Compliance Center](manage-schedules-for-multiple-reports.md)
-### [Set up and download a custom report in the Security and Compliance Center](set-up-and-download-a-custom-report.md)
-### [Download existing reports in the Security and Compliance Center](download-existing-reports.md)
 ## [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
 ## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
-
-# Security solutions		
-## [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o?toc=/Office365/SecurityCompliance/toc.json)	
-### [Configure groups and users for a political campaign dev/test environment](/enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
-### [Create team sites in a political campaign dev/test environment](/enterprise/create-team-sites-in-a-political-campaign-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
-## [Secure SharePoint Online sites and files](/enterprise/secure-sharepoint-online-sites-and-files?toc=/Office365/SecurityCompliance/toc.json)	
-### [Deploy SharePoint Online sites for three tiers of protection](/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection?toc=/Office365/SecurityCompliance/toc.json)
-### [Protect SharePoint Online files with Office 365 labels and DLP](/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp?toc=/Office365/SecurityCompliance/toc.json)
-### [Protect SharePoint Online files with Azure Information Protection](/protect-sharepoint-online-files-with-azure-information-protection?toc=/Office365/SecurityCompliance/toc.json)
-### [Secure SharePoint Online sites in a dev/test environment](/enterprise/secure-sharepoint-online-sites-in-a-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
-## [Isolated SharePoint Online team sites](/enterprise/isolated-sharepoint-online-team-sites?toc=/Office365/SecurityCompliance/toc.json)	
-### [Design an isolated SharePoint Online team site](/enterprise/design-an-isolated-sharepoint-online-team-site?toc=/Office365/SecurityCompliance/toc.json)
-### [Deploy an isolated SharePoint Online team site](/enterprise/deploy-an-isolated-sharepoint-online-team-site?toc=/Office365/SecurityCompliance/toc.json)
-### [Manage an isolated SharePoint Online team site](/enterprise/manage-an-isolated-sharepoint-online-team-site?toc=/Office365/SecurityCompliance/toc.json)
-### [Isolated SharePoint Online team site dev/test environment](/enterprise/isolated-sharepoint-online-team-site-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
-
+# Security solutions
+## Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
+### Configure groups and users for a political campaign dev/test environment
+### Create team sites in a political campaign dev/test environment
+## Secure SharePoint Online sites and files
+### Deploy SharePoint Online sites for three tiers of protection
+### Protect SharePoint Online files with Office 365 labels and DLP
+### Protect SharePoint Online files with Azure Information Protection
+### Secure SharePoint Online sites in a dev/test environment
+## Isolated SharePoint Online team sites
+### Design an isolated SharePoint Online team site
+### Deploy an isolated SharePoint Online team site
+### Manage an isolated SharePoint Online team site
+### Isolated SharePoint Online team site dev/test environment
 # Compliance solutions
-## [Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Office 365 Information Protection for GDPR](/enterprise/office-365-information-protection-for-gdpr?toc=/Office365/SecurityCompliance/toc.json)	
-### [Overview: Office 365 Protection for GDPR](/enterprise/office-365-info-protection-for-gdpr-overview?toc=/Office365/SecurityCompliance/toc.json)
-### [Search for and find personal data](/enterprise/search-for-and-find-personal-data?toc=/Office365/SecurityCompliance/toc.json)
-### [Customize or create new sensitive information types for GDPR](/enterprise/customize-or-create-a-new-sensitive-information-type?toc=/Office365/SecurityCompliance/toc.json)
-### [Architect a classification schema for personal data](/enterprise/architect-a-classification-schema-for-personal-data?toc=/Office365/SecurityCompliance/toc.json)
-### [Apply labels to personal data in Office 365](/enterprise/apply-labels-to-personal-data-in-office-365?toc=/Office365/SecurityCompliance/toc.json)
-### [Apply protection to personal data in Office 365](/enterprise/apply-protection-to-personal-data-in-office-365?toc=/Office365/SecurityCompliance/toc.json)
-### [Monitor for leaks of personal data](/enterprise/monitor-for-leaks-of-personal-data?toc=/Office365/SecurityCompliance/toc.json)
-### [Office 365 GDPR dev/test environment](/enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment?toc=/Office365/SecurityCompliance/toc.json)
-## [GDPR for on-premises Office servers](/enterprise/gdpr-for-office-servers?toc=/Office365/SecurityCompliance/toc.json)	
-### [GDPR for SharePoint Server](/enterprise/gdpr-for-sharepoint-server?toc=/Office365/SecurityCompliance/toc.json)
-### [GDPR for Exchange Server](/enterprise/gdpr-for-exchange-server?toc=/Office365/SecurityCompliance/toc.json)
-### [GDPR for Skype for Business Server and Lync Server](/enterprise/gdpr-for-skype-for-business-server?toc=/Office365/SecurityCompliance/toc.json)
-### [GDPR for Project Server](/enterprise/gdpr-for-project-server?toc=/Office365/SecurityCompliance/toc.json)
-### [GDPR for Office Web Apps Server and Office Online Server](/enterprise/gdpr-for-office-online-server?toc=/Office365/SecurityCompliance/toc.json)
-### [GDPR for on-premises Windows Server file shares](/enterprise/gdpr-for-on-premises-file-shares?toc=/Office365/SecurityCompliance/toc.json)
-
+## [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## Manage GDPR data subject requests with the DSR case tool
+## Office 365 Information Protection for GDPR
+### Overview: Office 365 Protection for GDPR
+### Search for and find personal data
+### Customize or create new sensitive information types for GDPR
+### Architect a classification schema for personal plan
+### Apply labels to personal data in Office 365
+### Apply protection to personal data in Office 365
+### Monitor for leaks of personal data
+### Office 365 GDPR dev/test environment
+## GDPR for on-premises Office servers
+### GDPR for SharePoint Server
+### GDPR for Exchange Server
+### GDPR for Skype for Business Server and Lync Server
+### GDPR for Project Server
+### GDPR for Office Web Apps Server and Office Online Server
+### GDPR for on-premises Windows Server file shares
 # Security incident management
-## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)	
-## [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
-## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-## [Responding to a Compromised Email Account in Office 365](responding-to-a-compromised-email-account.md)
-
+## Office 365 Security Incident Response
+## Detect and Remediate Illicit Consent Grants in Office 365
+## Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
 # Service assurance
-## [Service assurance in the Office 365 Security & Compliance Center](service-assurance.md)
+## Service assurance in the Office 365 Security & Compliance Center
 ## [Tenant isolation in Office 365](office-365-tenant-isolation-overview.md)
 ### [Isolation and Access Control in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 ### [Monitoring and Testing Tenant Boundaries](office-365-monitoring-and-testing.md)
@@ -319,7 +311,7 @@
 ### [Tenant Isolation in Office 365 Search](office-365-isolation-in-office-365-search.md)
 ### [Tenant Isolation in Office 365 Video](office-365-isolation-in-office-365-video.md)
 ### [Tenant Isolation in the Office Graph and Delve](office-365-isolation-in-graph-and-delve.md)
-## [Encryption in Office 365](office-365-encryption-in-the-microsoft-cloud-overview.md)	
+## [Encryption in Office 365](office-365-encryption-in-the-microsoft-cloud-overview.md)
 ### [Office 365 Service Encryption](office-365-service-encryption.md)
 ### [Encryption for Data in Transit](office-365-encryption-for-data-in-transit.md)
 ### [Customer-Managed Encryption Features](office-365-customer-managed-encryption-features.md)
@@ -328,34 +320,33 @@
 ### [BitLocker and Distributed Key Manager (DKM) for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 ### [Encryption in Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 ### [Encryption in Azure](office-365-azure-encryption.md)
-## [Understanding Office 365 Data Resiliency](office-365-data-resiliency-overview.md)	
+## [Understanding Office 365 Data Resiliency](office-365-data-resiliency-overview.md)
 ### [Dealing with Data Corruption](office-365-dealing-with-data-corruption.md)
 ### [Exchange Online Data Resilience](office-365-exchange-data-resiliency.md)
 ### [Malware and Ransomware Protection](office-365-malware-and-ransomware-protection.md)
 ### [Monitoring and Self-Healing](office-365-monitoring-and-self-healing.md)
 ### [SharePoint Online Data Resilience](office-365-sharepoint-data-resiliency.md)
-## [Data Retention, Deletion, and Destruction in Office 365](office-365-data-retention-deletion-and-destruction-overview.md)	
+## [Data Retention, Deletion, and Destruction in Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [Data Destruction](office-365-data-destruction.md)
 ### [Immutability in Office 365](office-365-data-immutability.md)
 ### [Exchange Online Data Deletion](office-365-exchange-online-data-deletion.md)
 ### [SharePoint Online Data Deletion](office-365-sharepoint-online-data-deletion.md)
 ### [Skype for Business Data Deletion](office-365-skype-data-deletion.md)
-## [Office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md)	
+## [Office 365 Administrative Access Controls](office-365-administrative-access-controls-overview.md)
 ### [Monitoring and Auditing Access Controls](office-365-monitoring-and-auditing-access-controls.md)
 ### [Office 365 Isolation Controls](office-365-isolation-controls.md)
 ### [Office 365 Personnel Controls](office-365-personnel-controls.md)
 ### [Office 365 Technology Controls](office-365-technology-controls.md)
 ### [Yammer Enterprise Access Controls](office-365-yammer-enterprise-access-controls.md)
-## [Defending against denial-of-service attacks](office-365-defending-against-denial-of-service-attacks-overview.md)	
+## [Defending against denial-of-service attacks](office-365-defending-against-denial-of-service-attacks-overview.md)
 ### [Microsoft's Denial-of-Services Defense Strategy](office-365-microsoft-dos-defense-strategy.md)
 ### [Core Principles of Defense Against Denial-of-Service Attacks](office-365-core-principles-of-defense-against-dos-attacks.md)
-## [Office 365 Auditing and Reporting](office-365-auditing-and-reporting-overview.md)	
+## [Office 365 Auditing and Reporting](office-365-auditing-and-reporting-overview.md)
 ### [Office 365 Reporting Features](office-365-reporting-features.md)
 ### [eDiscovery and Search Features](office-365-ediscovery-and-search-features.md)
 ### [Internal Logging for Office 365 Engineering](office-365-internal-logging.md)
 ### [Office 365 Mailbox Migrations](office-365-mailbox-migrations.md)
 ### [Office 365 Management Activity API](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [EOP features](eop/eop-features.md)
 ## [Feature permissions in EOP](eop/feature-permissions-in-eop.md)
@@ -384,7 +375,7 @@
 ### [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 ### [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 ### [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
-## Cyberthreat protection
+## [Cyberthreat protection
 ### [How Office 365 uses SPF to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
 ### [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 ### [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md)
@@ -435,10 +426,5 @@
 ### [Sending mail to Office 365](sending-mail-to-office-365.md)
 ### [Services for non-customers](services-for-non-customers.md)
 
-
-
-
-
-
-
-
+# Office 365 for enterprises
+# Office 365 for small or mid-sized business
