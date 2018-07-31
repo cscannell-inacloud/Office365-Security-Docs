@@ -85,7 +85,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/success.svg" alt="Success" data-linktype="external">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/success-blue.svg" alt="Success" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
