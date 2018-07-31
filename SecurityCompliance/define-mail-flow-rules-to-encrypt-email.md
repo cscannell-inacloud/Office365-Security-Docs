@@ -146,7 +146,7 @@ When your email users send encrypted messages, recipients of those messages can 
 #### To create a rule for removing encryption from email replies encrypted without the new OME capabilities by using the EAC
 <a name="DecryptruleEACNoNewOME"> </a>
 
-1. In a web browser, using a work or school account that has been granted admin permissions, [sign in to Office 365](https://support.office.com/en-US/article/Sign-in-to-Office-or-Office-365-b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+1. In a web browser, using a work or school account that has been granted admin permissions, [sign in to Office 365](https://support.office.com/article/Sign-in-to-Office-or-Office-365-b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
     
 2. Choose the **Admin** tile. 
     

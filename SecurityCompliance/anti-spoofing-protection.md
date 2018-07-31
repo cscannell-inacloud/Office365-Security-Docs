@@ -263,7 +263,7 @@ If you've already created one, you can select it to modify it:
   
 ![Antiphishing - modify existing policy](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
   
-Select the policy you just created and proceed through the steps as described on [Learn More about Spoof Intelligence.](https://support.office.com/en-us/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
+Select the policy you just created and proceed through the steps as described on [Learn More about Spoof Intelligence.](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
   
 ![Enable or disable antispoofing](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
   
@@ -330,7 +330,7 @@ For more details, see [Customers of Office 365](#customers-of-office-365).
  
 **Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email**
   
-You can also use [Spoof Intelligence](https://support.office.com/en-us/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) to permit senders to transmit unauthenticated messages to your organization. 
+You can also use [Spoof Intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) to permit senders to transmit unauthenticated messages to your organization. 
   
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the sending IP address (divided up into /24 CIDR ranges), or the organizational domain of the PTR record (in the screenshot below, the sending IP might be 131.107.18.4 whose PTR record is outbound.mail.protection.outlook.com, and this would show up as outlook.com for the sending infrastructure).
   
@@ -383,7 +383,7 @@ Once your anti-spoofing policy is enabled, you can use Threat Intelligence to ge
   
 ![Viewing how many messages are marked as phish](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-You can interact with the various reports to see how many were marked as phishing, including messages marked as SPOOF. To learn more, see [Get started with Office 365 Threat Intelligence](https://support.office.com/en-us/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
+You can interact with the various reports to see how many were marked as phishing, including messages marked as SPOOF. To learn more, see [Get started with Office 365 Threat Intelligence](https://support.office.com/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
   
 You cannot yet split out which messages were marked due to spoofing vs. other types of phishing (general phishing, domain or user impersonation, and so on). However, later in 2018, you will be able to do this through the Security &amp; Compliance Center. Once you do, you can use this report as a starting place to identify sending domains that may be legitimate that are being marked as spoof due to failing authentication.
   
@@ -414,7 +414,7 @@ In general, the policy applied to a message is identified in the X-Forefront-Ant
 |1  <br/> |Malware  <br/> |MALW  <br/> |[Malware policy](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |All customers﻿  <br/> |
 |2  <br/> |Phishing  <br/> |PHSH  <br/> |[Hosted content filter policy](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |All customers  <br/> |
 |3  <br/> |High confidence spam  <br/> |HSPM  <br/> |[Hosted content filter policy](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |All customers  <br/> |
-|4  <br/> |Spoofing  <br/> |SPOOF  <br/> |[Anti-phishing policy](https://go.microsoft.com/fwlink/?linkid=864553),          [Spoof intelligence﻿](https://support.office.com/en-us/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |ATP only  <br/> |
+|4  <br/> |Spoofing  <br/> |SPOOF  <br/> |[Anti-phishing policy](https://go.microsoft.com/fwlink/?linkid=864553),          [Spoof intelligence﻿](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |ATP only  <br/> |
 |5  <br/> |Spam  <br/> |SPM  <br/> |[Hosted content filter policy](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |All customers  <br/> |
 |6  <br/> |Bulk  <br/> |BULK  <br/> |[Hosted content filter policy](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |All customers  <br/> |
 |7  <br/> |Domain Impersonation  <br/> |DIMP  <br/> |[Anti-phishing policy](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP only  <br/> |
@@ -684,7 +684,7 @@ Anti-spoofing protection will be initially rolled out to ATP/E5 customers, and m
   
 ### How can I report spam or non-spam messages back to Microsoft?
 
-You can either use the [Report Message Add-in for Outlook](https://support.office.com/en-us/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
+You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
 ### I'm a domain administrator who doesn't know who all my senders are!
 

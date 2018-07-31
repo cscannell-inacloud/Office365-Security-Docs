@@ -35,7 +35,7 @@ The Export process in Advanced eDiscovery enables the exporting of Advanced eDis
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[ Exporting results ](export-results-in-advanced-ediscovery.md)
+[Exporting results ](export-results-in-advanced-ediscovery.md)
   
 [Viewing Batch history and Export results](view-batch-history-and-export-past-results.md)
 

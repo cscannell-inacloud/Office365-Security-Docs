@@ -70,14 +70,14 @@ You can use either of these two methods to confirm the attack.
 
 ### Confirm the Rules Attack Using the Outlook client
 1. Open the users Outlook client as the user.  The user may need your help in examining the rules on their mailbox.
-2. Refer to [Manage email messages by using rules](https://support.office.com/en-us/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010) article for the procedures on how to open the rules interface in either the 2007, 2010 or 2013 versions of Outlook.
+2. Refer to [Manage email messages by using rules](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010) article for the procedures on how to open the rules interface in either the 2007, 2010 or 2013 versions of Outlook.
 3. Look for rules that the user did not create, or any unexpected rules or rules with suspicious names.
 4. Look in the rule description for rule actions that start and application or refer to an .EXE, .ZIP file or to launching a URL.
 5. Look for any new processes that start using the Outlook process ID.  Refer to [Find the Process ID](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/finding-the-process-id).
 
 ### Steps to confirm the Forms attack using the Outlook client
 1. Open the user Outlook client as the user.
-2. Follow the steps in, [Show the Developer tab](https://support.office.com/en-us/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45) for the users version of Outlook.
+2. Follow the steps in, [Show the Developer tab](https://support.office.com/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45) for the users version of Outlook.
 3. Open the now visible developer tab in Outlook and click **design a form**.
 4. Select the **Inbox** from the **Look In** list. Look for any custom forms.  Custom forms are rare enough that if you have any custom forms at all, it is worth a deeper look.
 5. Investigate any custom forms, especially those marked as hidden.
@@ -110,10 +110,10 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 ### Using Outlook
 1. Identify all the devices that the user has used with Outlook.  They will all need to be cleaned of potential malware.  Do not allow the user to sign on and use email until all the devices are cleaned.
-2. Follow the steps in [Delete a rule](https://support.office.com/en-us/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F) for each device.
+2. Follow the steps in [Delete a rule](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F) for each device.
 3. If you are unsure about the presence of other malware, you can format and re-install all the software on the device.  For mobile devices you can follow the manufacturers steps to reset the device to the factory image.
 4. Install the most up-to-date versions of Outlook.  Remember that the current version of Outlook blocks both types of this attack by default.
-5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high-quality one) and follow the steps in [Setup multi-factor authentication for Office 365 users](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
+5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high-quality one) and follow the steps in [Setup multi-factor authentication for Office 365 users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
 
 ### Using PowerShell
 There are two remote PowerShell cmdlets you can use to remove or disable dangerous rules. Just follow the steps.
@@ -137,9 +137,9 @@ The Rules and Forms exploits are only used by an attacker after they have stolen
 
 
 
-The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for Office 365 users](https://support.office.com/en-us/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  You should also:
+The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for Office 365 users](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  You should also:
 <ol>
-    <li>Monitor how your user accounts are <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-view-access-usage-reports">accessed and used</a>. You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these: <a href="https://support.office.com/en-us/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475"> Office 365 Cloud App Security policies</a> to monitor you accounts and alert on unusual activity. 
+    <li>Monitor how your user accounts are <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-view-access-usage-reports">accessed and used</a>. You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475"> Office 365 Cloud App Security policies</a> to monitor you accounts and alert on unusual activity. 
         <ol type="a">
             <li><b>Multiple failed login attempts</b> This policy profiles your environment and triggers alerts when users perform multiple failed login activities in a single session with respect to the learned baseline, which could indicate an attempted breach.</li>
             <li><b>Impossible travel</b> - This policy profiles your environment and triggers alerts when activities are detected from the same user in different locations within a time period that is shorter than the expected travel time between the two locations. This could indicate that a different user is using the same credentials. Detecting this anomalous behavior necessitates an initial learning period of seven days during which it learns a new user’s activity pattern.</li>
@@ -151,7 +151,7 @@ The best way to protect your user accounts, and especially your administrator ac
 </ol> 
 
 ### Second: Keep your Outlook clients current
-Fully-updated and patched versions of Outlook 2013, and 2016 disable the “Start Application” rule/form action by default.  This will ensure that, even if an attacker breaches the account, the rule and form actions will be blocked.  You can install the latest updates and security patches by following the steps in [Install Office updates](https://support.office.com/en-us/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
+Fully-updated and patched versions of Outlook 2013, and 2016 disable the “Start Application” rule/form action by default.  This will ensure that, even if an attacker breaches the account, the rule and form actions will be blocked.  You can install the latest updates and security patches by following the steps in [Install Office updates](https://support.office.com/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Here are the patch versions for your Outlook 2013 and 2016 clients:
 - Outlook 2013: 15.0.4937.1000 or greater
@@ -174,7 +174,7 @@ Look for the key EnableUnsafeClientMailRules. If it is there and is set to 1, th
 Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx).
 
 ## Secure Office 365 like a cybersecurity pro
-Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/en-us/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.
+Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.
 - Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
 - Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
 - Beyond 90 days. These enhancements build in your first 90 days work.

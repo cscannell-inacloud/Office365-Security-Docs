@@ -57,7 +57,7 @@ The Export history dialog provides detailed information of selected export batch
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[ Exporting results ](export-results-in-advanced-ediscovery.md)
+[Exporting results ](export-results-in-advanced-ediscovery.md)
 
 [Export report fields](export-report-fields-in-advanced-ediscovery.md)
 

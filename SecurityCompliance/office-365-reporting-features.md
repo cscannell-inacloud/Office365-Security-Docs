@@ -23,17 +23,17 @@ The Reports feature provides a variety of audit reports for Azure Active Directo
 The Reports dashboard in the Office 365 Admin center preview displays usage activity across Office 365. Office 365 global administrators, or an Exchange Online, SharePoint Online, or Skype for Business administrator, can get granular insight into the usage of that service. Reports can provide insights such as the number of users consuming a particular Office 365 service, the number of users that have activated Office Professional Plus, and how much mail is flowing through the organization. Reports are available for the last 7, 30, 90, and 180 days.
 
 The following reports are available:
-- [Email activity report](https://support.office.com/en-us/article/Office-365-Reports-in-the-admin-center-preview--Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)
-- [Microsoft Office activations report](https://support.office.com/en-us/article/Office-365-Reports-in-the-admin-center-preview--Microsoft-Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
-- [SharePoint Online Site usage report](https://support.office.com/en-us/article/Office-365-Reports-in-the-admin-center-preview--SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
-- [OneDrive for Business usage report](https://support.office.com/en-us/article/Office-365-Reports-in-the-Admin-Center-Preview--OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
-- [Yammer activity report](https://support.office.com/en-us/article/View-the-Yammer-Activity-report-in-the-Office-365-admin-center-preview-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)
-- [Skype for Business activity report](https://support.office.com/en-us/article/Skype-for-Business-Online-Activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)
-- [Skype for Business Peer-to-Peer activity report](https://support.office.com/en-us/article/Skype-for-Business-Online-PeertoPeer-Activity-d3b2d569-4ee9-44b8-92bf-d518142f0713)
-- [Skype for Business Conference Organizer report](https://support.office.com/en-us/article/Skype-for-Business-Online-Conference-Organized-Activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)
-- [Skype for Business Conference Participant activity report](https://support.office.com/en-us/article/Skype-for-Business-Online-Conference-Participant-Activity-c3c89995-65dd-4715-9e38-bb244c742c6b)
+- [Email activity report](https://support.office.com/article/Office-365-Reports-in-the-admin-center-preview--Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)
+- [Microsoft Office activations report](https://support.office.com/article/Office-365-Reports-in-the-admin-center-preview--Microsoft-Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+- [SharePoint Online Site usage report](https://support.office.com/article/Office-365-Reports-in-the-admin-center-preview--SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+- [OneDrive for Business usage report](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Preview--OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
+- [Yammer activity report](https://support.office.com/article/View-the-Yammer-Activity-report-in-the-Office-365-admin-center-preview-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)
+- [Skype for Business activity report](https://support.office.com/article/Skype-for-Business-Online-Activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)
+- [Skype for Business Peer-to-Peer activity report](https://support.office.com/article/Skype-for-Business-Online-PeertoPeer-Activity-d3b2d569-4ee9-44b8-92bf-d518142f0713)
+- [Skype for Business Conference Organizer report](https://support.office.com/article/Skype-for-Business-Online-Conference-Organized-Activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)
+- [Skype for Business Conference Participant activity report](https://support.office.com/article/Skype-for-Business-Online-Conference-Participant-Activity-c3c89995-65dd-4715-9e38-bb244c742c6b)
 
-For more information, see [Activity Reports in the Office 365 Admin Center](https://support.office.com/en-us/article/Skype-for-Business-Online-Conference-Participant-Activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
+For more information, see [Activity Reports in the Office 365 Admin Center](https://support.office.com/article/Skype-for-Business-Online-Conference-Participant-Activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
 
 
 ## Azure Active Directory Reports
@@ -62,7 +62,7 @@ Exchange Online audit reports include details on mailbox access and changes made
 ## Device Compliance Reports
 You can manage and secure mobile devices when they're connected to your Office 365 organization by using Office 365 Mobile Device Management (MDM). Mobile devices like smartphones and tablets that are used to access work email, calendar, contacts, and documents play a big part in making sure that employees are able to work anytime, and from anywhere. As a result, it's critical that you protect your organization's information. You can use Office 365 MDM to set device security policies and access rules, and to wipe mobile devices if they're lost or stolen.
 
-MDM compliance reports provide an overview of policies that have been set up by an organization to secure mobile devices that are accessing Office 365 data. The report allows filtering of devices by compliance status, reported violations, blocked devices, and how many devices were wiped as a result of security policies. For more information, see [Overview of Mobile Device Management for Office 365](https://support.office.com/en-us/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+MDM compliance reports provide an overview of policies that have been set up by an organization to secure mobile devices that are accessing Office 365 data. The report allows filtering of devices by compliance status, reported violations, blocked devices, and how many devices were wiped as a result of security policies. For more information, see [Overview of Mobile Device Management for Office 365](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## Data Loss Prevention
 DLP policies help manage the security and flow of information in an organization. You can set up policies to block access to content, encrypt data, or notify users of policy and policy violations using in-application DLP Policy Tips. DLP reports provide insight into the number of policy and rule matches, overrides, and false positives.
