@@ -179,23 +179,23 @@
 ### [Use Content Search to search third-party data](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [Use Content Search in your eDiscovery workflow](use-content-search-in-ediscovery.md)
 ### [Check your Content Search query for errors](check-your-content-search-query-for-errors.md)
-## [Understand Content Search
+## Understand Content Search
 ### [Limits for Content Search](limits-for-content-search.md)
 ### [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md)
 ### [Investigating partially indexed items](investigating-partially-indexed-items-in-ediscovery.md)
 ### [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md)
 ### [Differences between estimated and actual Content Search results](differences-between-estimated-and-actual-ediscovery-search-results.md)
-## [Configure Content Search
+## Configure Content Search
 ### [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md)
 ### [Increase the download speed when exporting Content Search results](increase-download-speeds-when-exporting-ediscovery-results.md)
 ### [Change the size of PST files when exporting Content Search results](change-the-size-of-pst-files-when-exporting-results.md)
 ### [Disable reports when you export Content Search results](disable-reports-when-you-export-content-search-results.md)
-## [Use Content Search PowerShell scripts
+## Use Content Search PowerShell scripts
 ### [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md)
 ### [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
 ### [Create, report on, and delete multiple Content Searches](create-report-on-and-delete-multiple-content-searches.md)
 ### [Clone a Content Search](clone-a-content-search.md)
-# [Manage legal investigations
+# Manage legal investigations
 ## [Create and manage eDiscovery cases](ediscovery-cases.md)
 ## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
 ## [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
@@ -204,7 +204,7 @@
 ## [Assign eDiscovery permissions to OneDrive for Business sites](assign-permissions-to-onedrive-for-business-sites.md)
 ## [Use a script to add users to a hold in an eDiscovery case](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Create a report on holds in eDiscovery cases](create-a-report-on-holds-in-ediscovery-cases.md)
-## [Manage holds
+## Manage holds
 ### [Create a Litigation Hold](create-a-litigation-hold.md)
 ### [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
@@ -375,7 +375,7 @@
 ### [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 ### [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 ### [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
-## [Cyberthreat protection
+## Cyberthreat protection
 ### [How Office 365 uses SPF to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
 ### [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 ### [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md)
