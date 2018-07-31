@@ -15,7 +15,7 @@ ms.author: robmazz
 ---
 # Office 365 Security and Compliance
 
-If your organization needs to protect your data or comply with legal or regulatory standards, you're in the right place. Here you can learn about security and compliance in Office 365. The areas below are your first stop for learning about security and compliance in Office 365.
+If your organization needs to protect your data or comply with legal or regulatory standards, you're in the right place. The areas below are your first stop for learning about security and compliance in Office 365.
 
 <ul class="cardsF panelContent">
     <li>
@@ -24,7 +24,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
                         </div>
                     </div>
                     <div class="cardText">
