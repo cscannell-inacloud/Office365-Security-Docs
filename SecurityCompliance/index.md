@@ -76,7 +76,7 @@ If your organization needs to protect your data or comply with legal or regulato
 </ul>
 
 <hr>
-<h2>Security & Compliance Resources</h2>
+<h2>Security and Compliance Resources</h2>
 
 <ul class="panelContent cardsF">
     <li>
