@@ -257,18 +257,18 @@
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 # Monitor security and compliance
-## [Alerts in the Security & Compliance Center](alerts.md)
-### [Alert policies](alert-policies.md)
+## [Alert policies](alert-policies.md)
 ### [Create activity alerts](create-activity-alerts.md)
 ## [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-### [View email security reports](view-email-security-reports.md)
-### [Create a schedule for a report in the Security & Compliance Center](create-a-schedule-for-a-report.md)
-### [Manage schedules for multiple reports in the Security & Compliance Center](manage-schedules-for-multiple-reports.md)
-### [Set up and download a custom report in the Security & Compliance Center](set-up-and-download-a-custom-report.md)
-### [Download existing reports in the Security & Compliance Center](download-existing-reports.md)
-### [Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-### [Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
-### [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+### Walkthroughs
+#### [From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
+#### [From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
+#### [From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
+### Creating, managing, and downloading reports
+#### [Create a schedule for a report](create-a-schedule-for-a-report.md)
+#### [Download existing reports](download-existing-reports.md)
+#### [Manage schedules for multiple reports](manage-schedules-for-multiple-reports.md)
+#### [Set up and download a custom report](set-up-and-download-a-custom-report.md)
 ## [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
 ## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
 # Security solutions
