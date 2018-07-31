@@ -1,16 +1,14 @@
 # Get started
 ## [Overview of security and compliance in Office 365](security-and-compliance.md)
+### [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
+### [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
+### [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
+### [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
 ## [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
-## [Configure your Office 365 tenant for increased security](tenant-wide-setup-for-increased-security.md)
-## [Go to the Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md)
-## [Introducing the Office 365 Secure Score](office-365-secure-score.md)
-## [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-## [Give users access to the Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
-## [Security Dashboard overview](security-dashboard.md)
-## [Install the Supervision add-in for Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
-## [Use your free Azure Active Directory subscription in Office 365](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
-## [Use Explorer in the Security and Compliance Center](use-explorer-in-security-and-compliance.md)
+## [Configure your Office 365 tenant for increased security](tenant-wide-setup-for-increased-security.md)
+## [Introducing the Office 365 Secure Score](office-365-secure-score.md)
+## [Use your free Azure Active Directory subscription in Office 365](use-your-free-azure-ad-subscription-in-office-365.md)
 
 # Protect access to data and services
 ## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
