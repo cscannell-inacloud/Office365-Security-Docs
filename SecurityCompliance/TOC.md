@@ -86,7 +86,6 @@
 ## More information about data governance
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 
-
 # Protect against threats
 ## [Threat management in the Office 365 Security & Compliance Center](threat-management.md)
 ## [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md)
@@ -100,7 +99,6 @@
 ### [Set up Office 365 ATP anti-phishing policies](set-up-atp-anti-phishing-policies.md)
 ### [How to prevent real email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md)
 ### [How to reduce spam email in Office 365](reduce-spam-email.md)
-### [Create a keyword dictionary](create-a-keyword-dictionary.md)
 ### [Office 365 email anti-spam protection](anti-spam-protection.md)
 ### [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md)
 
@@ -125,16 +123,16 @@
 ## [Office 365 Advanced Threat Protection](office-365-atp.md)	
 ### [Protect against threats in Office 365](protect-against-threats.md)
 ### [Office 365 ATP Safe Links](atp-safe-links.md)
-### [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)
-### [Office 365 ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
-### [Set up a custom "do not rewrite" URLs list (Office 365 ATP Safe Links)](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-### [Set up a custom blocked URLs list (Office 365 ATP Safe Links)](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+#### [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)
+#### [Office 365 ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
+#### [Set up a custom "do not rewrite" URLs list (Office 365 ATP Safe Links)](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+#### [Set up a custom blocked URLs list (Office 365 ATP Safe Links)](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### [Office 365 ATP Safe Attachments](atp-safe-attachments.md)
-### [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)
-### [Dynamic delivery and previewing (Office 365 ATP Safe Attachments)](dynamic-delivery-and-previewing.md)
+#### [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)
+#### [Dynamic delivery and previewing (Office 365 ATP Safe Attachments)](dynamic-delivery-and-previewing.md)
 ### [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)
-### [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
-### [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+#### [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+#### [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
 ## [Office 365 Threat Intelligence](office-365-ti.md)
@@ -146,8 +144,8 @@
 ### [Threat Trackers - New and Noteworthy](threat-trackers.md)
 
 ## [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
-### [What's new in Office 365 Cloud App Security](new-in-office-365-cas.md)
 ### [Office 365 Cloud App Security help and how-to](office-365-cas-help.md)	
+### [What's new in Office 365 Cloud App Security](new-in-office-365-cas.md)
 ### [Get ready for Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
 ### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
 ### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
@@ -170,7 +168,7 @@
 ### [Use user spam notifications to release and report quarantined messages in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
 # Search for content
-## [Content Search in Office 365](content-search.md)
+## [Use Content Search in Office 365](content-search.md)
 ## [Limits for Content Search in the Office 365 Security & Compliance Center](limits-for-content-search.md)
 ## [Run a Content Search in the Office 365 Security & Compliance Center](content-search.md#create-a-new-search)
 ## [Export Content Search results from the Office 365 Security and Compliance Center](content-search.md#export-search-results)
