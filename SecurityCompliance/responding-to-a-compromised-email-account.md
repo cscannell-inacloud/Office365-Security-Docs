@@ -52,7 +52,7 @@ If a user reports any of the above symptoms, you should perform further investig
 > [!WARNING]
 > Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
 
-1. Follow the Reset an Office 365 business password for someone else procedures in [Admins: Reset Office 365 business passwords](https://support.office.com/en-us/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
+1. Follow the Reset an Office 365 business password for someone else procedures in [Admins: Reset Office 365 business passwords](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
 
 ### Step 2 Remove suspicious email forwarding addresses
 1. Open the **Office 365 Admin Center > Active Users**.
@@ -101,11 +101,11 @@ If the suspected compromised mailbox was used illicitly to send spam email, it i
     b. Use the **members** section to remove the user from the role group.
 
 ## Secure Office 365 like a cybersecurity pro
-Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/en-us/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.
+Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.
 - Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
 - Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
 - Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## See also:
-- [Security best practices for Office 365](https://support.office.com/en-us/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+- [Security best practices for Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
