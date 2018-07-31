@@ -46,7 +46,7 @@ If your organization needs to protect your data or comply with legal or regulato
                     </div>
                     <div class="cardText">
                         <h3>Next steps within 90 days</h3>
-                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="attack-simulator.md">Conduct attack simulations</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Review Compliance Manager</a> <br> - <a href="https://cdn.quotesgram.com/img/94/90/1399576208-AnimalHouse_037Pyxurz.jpg">Protect admin accounts</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Enable multi-factor authentication</a> <br> - <a href="protect-against-threats.md">Review & update protection policies</a> </p>
+                        <p>These tasks take a bit more time to plan and implement but greatly increase your security posture: <br> - <a href="attack-simulator.md">Conduct attack simulations</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Review Compliance Manager</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configure Azure Privileged Identity Management</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Enable multi-factor authentication</a> <br> - <a href="protect-against-threats.md">Review & update protection policies</a> </p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ If your organization needs to protect your data or comply with legal or regulato
                         <p>These are important security measures that build on previous work:<br>
                         - <a href="https://securescore.office.com" target="_blank">Review your Secure Score</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Implement Secure Privileged Access</a><br>
-                        - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configure Azure AD Privileged Identity Management</a><br>
+                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Use Azure AD Identity Protection</a><br>
                         - <a href="protect-against-threats.md">Refine protection policies</a><br></p>
                     </div>
                 </div>
