@@ -1,9 +1,8 @@
 # Get started
 ## [Overview of security and compliance in Office 365](security-and-compliance.md)
 ### [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-### [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
 ### [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
-### [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+### [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
 ## [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 ## [Configure your Office 365 tenant for increased security](tenant-wide-setup-for-increased-security.md)
@@ -446,4 +445,4 @@
 ### [Services for non-customers](services-for-non-customers.md)
 
 # [Office 365 for enterprises](https://docs.microsoft.com/en-us/Office365/Enterprise)
-# [Office 365 for small and mid-sized business](https://support.office.com/office365admin)
+# [Office 365 for businesses](https://support.office.com/office365admin)
