@@ -117,7 +117,7 @@ Accepted month names:
 ## Func_eu_date1 (deprecated)
 
 > [!NOTE]
-> This function is deprecated because it supports Portuguese month names, which are now included in the  `Func_eu_date` function above. 
+> This function is deprecated because it supports only Portuguese month names, which are now included in the  `Func_eu_date` function above. 
   
 This function looks for a date in the format commonly used in Portuguese. The format for this function is the same as  `Func_eu_date`, differing only in the language used.
   
@@ -148,7 +148,7 @@ Accepted month names:
 ## Func_eu_date2 (deprecated)
 
 > [!NOTE]
-> This function is deprecated because it supports Dutch month names, which are now included in the  `Func_eu_date` function above. 
+> This function is deprecated because it supports only Dutch month names, which are now included in the  `Func_eu_date` function above. 
   
 This function looks for a date in the format commonly used in Dutch. The format for this function is the same as  `Func_eu_date`, differing only in the language used.
   
