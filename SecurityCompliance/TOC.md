@@ -297,8 +297,9 @@
 ### [Manage an isolated SharePoint Online team site](https://docs.microsoft.com/Office365/Enterprise/manage-an-isolated-sharepoint-online-team-site)
 ### [Isolated SharePoint Online team site dev/test environment](https://docs.microsoft.com/Office365/Enterprise/isolated-sharepoint-online-team-site-dev-test-environment)
 # Compliance solutions
+## [Get started with the Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## Manage GDPR data subject requests with the DSR case tool
+## [Manage GDPR data subject requests with the DSR case tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
 ### [Overview: Office 365 Protection for GDPR](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
 ### [Search for and find personal data](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
