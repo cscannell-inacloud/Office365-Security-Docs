@@ -51,38 +51,7 @@ You create and manage retention policies on the **Retention** page in the Office
 > [!NOTE]
 > To include an Exchange Online mailbox in a retention policy, the mailbox must be assigned an Exchange Online Plan 2 license. If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to include it in a retention policy. 
   
-## Contents
-
-- [How a retention policy works with content in place](retention-policies.md#how)
-    
-- [How a retention policy works with document versions in a site](retention-policies.md#versions)
-    
-- [Retaining content for a specific period of time](retention-policies.md#retaining)
-    
-- [Deleting content that's older than a specific age](retention-policies.md#deleting)
-    
-- [Advanced settings that apply a policy only to content that meets certain conditions](retention-policies.md#advanced)
-    
-- [Applying a retention policy to an entire organization or specific locations](retention-policies.md#applying)
-    
-- [Excluding specific types of Exchange items from a retention policy](retention-policies.md#excludeexchange)
-    
-- [Locking a retention policy](retention-policies.md#locking)
-    
-- [The principles of retention, or what takes precedence?](retention-policies.md#principles)
-    
-- [Use a retention policy instead of these features](retention-policies.md#instead)
-    
-- [What happened to preservation policies?](retention-policies.md#preservation)
-    
-- [Permissions](retention-policies.md#permissions)
-    
-- [Find the PowerShell cmdlets for retention policies](retention-policies.md#powershell)
-    
-- [More information](retention-policies.md#more)
-    
 ## How a retention policy works with content in place
-<a name="how"> </a>
 
 When you include a location such as a site or mailbox in a retention policy, the content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the policy, a copy of the content as it existed when you applied the policy is retained.
   
@@ -135,7 +104,6 @@ After a retention policy is assigned to a mailbox or public folder, content can 
 2. **If the item is not modified or deleted** during the retention period, the same process runs periodically on all folders in the mailbox and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting but it can be configured up to 30 days. 
     
 ## How a retention policy works with document versions in a site
-<a name="versions"> </a>
 
 Versioning is a feature of all document libraries in SharePoint Online and OneDrive for Business. By default, versioning retains a minimum of one hundred major versions, though you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
@@ -146,7 +114,6 @@ A retention policy retains all versions of a document in a SharePoint site or On
 - If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
     
 ## Retaining content for a specific period of time
-<a name="retaining"> </a>
 
 With a retention policy, you can retain content indefinitely or for a specific number of days, months, or years. Note that the duration for how long content is retained is calculated from the age of the content, not from when the retention policy is applied. You can choose whether the age is based on when the content was created or (for OneDrive and SharePoint) when it was last modified.
   
@@ -159,7 +126,6 @@ You can choose whether you want the content to be permanently deleted at the end
 ![Retention settings page](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## Deleting content that's older than a specific age
-<a name="deleting"> </a>
 
 A retention policy can both retain and then delete content, or simply delete old content without retaining it.
   
@@ -174,7 +140,6 @@ Therefore, before you assign a retention policy to a site for the first time, yo
 ![Warning about deleting content](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## Advanced settings that apply a policy only to content that meets certain conditions
-<a name="advanced"> </a>
 
 A retention policy can apply to all content in the locations that it includes, or you can choose to apply a retention policy only to content that contains specific keywords or [specific types of sensitive information](what-the-sensitive-information-types-look-for.md).
   
@@ -203,7 +168,6 @@ Notes:
 - You should understand that Exchange Online uses transport rules to identify sensitive information, so this works only on messages in transit — not on all items already stored in a mailbox. For Exchange Online, this means that a retention policy can identify sensitive information and take retention actions only on messages that are received **after** the policy is applied to the mailbox. (Note that query-based retention described in the previous section doesn't have this limitation because it uses the search index to identify content.) 
     
 ## Applying a retention policy to an entire organization or specific locations
-<a name="applying"> </a>
 
 You can easily apply a retention policy to an entire organization, entire locations, or only to specific locations or users.
   
@@ -283,30 +247,25 @@ We're still working on retention in Teams, and additional features are coming. I
     
 In a Team, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the Team. Therefore, to retain or delete files in a Team, you need to create a retention policy that applies to the SharePoint and OneDrive locations. If you want to apply a policy to the files of just a specific team, you can choose the SharePoint site for the Team and the OneDrive accounts of users in the Team.
   
-A retention policy that applies to Teams can use Preservation Lock, though a policy can be locked [Locking a retention policy](retention-policies.md#locking).
+A retention policy that applies to Teams can use [Preservation Lock](retention-policies.md#locking).
   
 ![Teams locations for chat and channel messages](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 ## Excluding specific types of Exchange items from a retention policy
-<a name="excludeexchange"> </a>
-
 By using PowerShell, you can exclude specific types of Exchange items from a retention policy. For example, you can exclude voicemail messages, IM conversations, and other Skype for Business Online content in mailboxes. You can also exclude calendar, note, and task items. This capability is available only by using PowerShell; it's not available in the UI when you create a retention policy.
   
 To do this, use the  `ExcludedItemClasses` parameter of the  `New-RetentionComplianceRule` and  `Set-RetentionComplianceRule` cmdlets. For more information about PowerShell, see the below section [Find the PowerShell cmdlets for retention policies](retention-policies.md#powershell).
   
 ## Locking a retention policy
-<a name="locking"> </a>
-
 Some organizations may need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. With Preservation Lock, you can lock the policy so that no one—including the administrator—can turn off the policy or make it less restrictive.
   
 After a policy's been locked, no one can turn it off or remove locations from the policy. And it's not possible to modify or delete content that's subject to the policy during the retention period. After the policy's been locked, the only ways you can modify the retention policy are by adding locations to it or extending its duration. A locked policy can be increased or extended, but it can't be reduced or turned off.
   
-Therefore, before you lock a retention policy, it's critical that you understand your organization's compliance requirements, and that you do not lock a policy until you're certain that it's what you need.
+Therefore, before you lock a retention policy, it's **critical** that you understand your organization's compliance requirements, and that **you do not lock a policy** until you're certain that it's what you need.
   
 You can lock a retention policy only by using PowerShell. Use the  `RestrictiveRetention` parameter of the  `New-RetentionCompliancePolicy` or  `Set-RetentionCompliancePolicy` cmdlet. For more information about PowerShell, see the below section [Find the PowerShell cmdlets for retention policies](retention-policies.md#powershell).
   
 ## The principles of retention, or what takes precedence?
-<a name="principles"> </a>
 
 It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
   
@@ -320,9 +279,9 @@ To understand how different retention policies are applied to content, keep thes
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-1. If a label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that label takes precedence over both a policy assigned at the site or mailbox level and a default label assigned by the document library. For example, if the explicit label says to retain for ten years, but the policy assigned to the site says to retain for only five years, the label takes precedence. Note that auto-apply labels are considered implicit, not explicit, because they're applied automatically by Office 365.
+    1. If a label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that label takes precedence over both a policy assigned at the site or mailbox level and a default label assigned by the document library. For example, if the explicit label says to retain for ten years, but the policy assigned to the site says to retain for only five years, the label takes precedence. Note that auto-apply labels are considered implicit, not explicit, because they're applied automatically by Office 365.
     
-2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
+    2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
     
 4. **The shortest deletion period wins.** Similarly, if content's subject to multiple policies that delete content (with no retention), it will be deleted at the end of the shortest retention period. 
     
@@ -331,7 +290,6 @@ Understand that the principles of retention work as a tie-breaking flow from top
 Finally, a retention policy or label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
   
 ## Use a retention policy instead of these features
-<a name="instead"> </a>
 
 A single retention policy can easily apply to an entire organization and locations across Office 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Office 365 groups. If you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy. (You can also use labels with retention settings - for more information, see [Overview of labels](labels.md).)
   
@@ -366,12 +324,10 @@ Note that if you've previously used any of the eDiscovery holds for the purpose 
 In SharePoint sites, you may be using [information management policies](intro-to-info-mgmt-policies.md) to retain content. If you apply a retention policy created in the Security and Compliance Center to a site that already uses content type policies or information management policies for a list or library, those policies are ignored while the retention policy is in effect. 
   
 ## What happened to preservation policies?
-<a name="preservation"> </a>
 
-If you were using [a preservation policy](preservation-policies.md), that policy has been automatically converted to a retention policy that uses only the retain action - the policy won't delete content. The preservation policy will continue to work and preserve your content without requiring any changes from you. You can find these policies on the **Retention** page in the Security &amp; Compliance Center. You can edit a preservation policy to change the retention period, but you can't make other changes, such as adding or removing locations. 
+If you were using a preservation policy, that policy has been automatically converted to a retention policy that uses only the retain action - the policy won't delete content. The preservation policy will continue to work and preserve your content without requiring any changes from you. You can find these policies on the **Retention** page in the Security &amp; Compliance Center. You can edit a preservation policy to change the retention period, but you can't make other changes, such as adding or removing locations. 
   
 ## Permissions
-<a name="permissions"> </a>
 
 Members of your compliance team who will create retention policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the Security &amp; Compliance Center, edit the **Compliance Administrator** role group, and add members to that role group. 
   
@@ -380,7 +336,6 @@ For more information, see [Give users access to the Office 365 Security &amp; Co
 These permissions are required only to create and apply a retention policy. Policy enforcement does not require access to the content.
   
 ## Find the PowerShell cmdlets for retention policies
-<a name="powershell"> </a>
 
 To use the retention policy cmdlets, you need to:
   
@@ -389,7 +344,6 @@ To use the retention policy cmdlets, you need to:
 2. Use these [Office 365 Security &amp; Compliance Center cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 ## More information
-<a name="more"> </a>
 
 - [Overview of labels](labels.md)
     
