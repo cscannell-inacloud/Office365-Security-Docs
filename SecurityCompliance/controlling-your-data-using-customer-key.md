@@ -480,7 +480,13 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 ```
 
 The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox is not encrypted. 
-  
+
+The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, as well as the size of the mailboxes. If the mailboxes have not been encrypted after a week from the time you assigned the DEP, initiate a mailbox move for the unencrypted mailboxes by using the New-MoveRequest cmdlet.
+
+```
+New-MoveRequest <mailbox alias>
+``` 
+
 ## Office 365: Setting up Customer Key for SharePoint Online and OneDrive for Business
 <a name="AzureSteps"> </a>
 
