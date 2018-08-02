@@ -3,7 +3,7 @@ title: "How Exchange Online uses TLS to secure email connections in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/30/2018
+ms.date: 8/2/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -48,9 +48,9 @@ For Exchange Online customers, in order for forced TLS to work to secure all of 
   
 ## TLS certificate information for Exchange Online
 
-The certificate information used by Exchange Online is described in the following table. If your business partner is setting up forced TLS on their email server, you will need to provide this information to them. Be aware that for security reasons, our certificates do change from time to time. We have rolled out an update to our certificate within our datacenters. The new certificate is valid from July 26, 2018.
+The certificate information used by Exchange Online is described in the following table. If your business partner is setting up forced TLS on their email server, you will need to provide this information to them. Be aware that for security reasons, our certificates do change from time to time. We have rolled out an update to our certificate within our datacenters. The new certificate is valid from September 3, 2018.
   
- **Current certificate information valid from July 26, 2018**
+ **Current certificate information valid from September 3, 2018**
   
 |**Attribute**|**Value**|
 |:-----|:-----|
@@ -60,7 +60,7 @@ The certificate information used by Exchange Online is described in the followin
 |Organization unit  <br/> |  <br/> |
 |Certificate key strength  <br/> |2048  <br/> |
    
- **Deprecated certificate information valid until July 26, 2018**
+ **Deprecated certificate information valid until September 3, 2018**
   
 To help ensure a smooth transition, we will continue to provide the old certificate information for your reference for some time, however, you should use the current certificate information from now on.
   
