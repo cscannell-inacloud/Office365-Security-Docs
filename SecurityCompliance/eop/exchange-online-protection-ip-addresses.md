@@ -3,7 +3,7 @@ title: "Exchange Online Protection IP addresses"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 7/31/2018
+ms.date: 8/2/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -30,7 +30,8 @@ The following is the complete list of EOP IP address ranges as of **7/2/2018**.
 |**IPv4 address ranges** <br/> |**IPv6 address ranges** <br/> |
 | 23.103.132.0/22 | 2a01:111:f400:7c00::/54 |
 | 23.103.136.0/21 | 2a01:111:f400:fc00::/54 |
-| 23.103.198.0/23 | 2a01:111:f403::/48 |
+| 23.103.144.0/20 | 2a01:111:f403::/48 |
+| 23.103.198.0/23 |  |
 | 23.103.200.0/22 |  |
 | 40.92.0.0/14 |  |
 | 40.107.0.0/17 |  |
