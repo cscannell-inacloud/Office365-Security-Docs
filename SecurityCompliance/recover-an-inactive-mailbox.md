@@ -96,7 +96,7 @@ Here's the high-level process:
     
 3. Assign a license to the new Office 365 user account that's created after you run the command in the previous step. See [Assign or unassign licenses for Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkId=276798).
     
-4. [Connect to Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell). 
+4. [Connect to Office 365 PowerShell](https://docs.microsoft.com/Office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell). 
     
 5. Run the following command to get the **ImmutableId** for the on-premises user account that's been synchronized to Azure Active Directory. 
 

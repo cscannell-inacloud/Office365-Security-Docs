@@ -56,7 +56,7 @@ You complete this task in the Exchange admin center (EAC). Check out [Exchange a
 
 |**List Name**|**Delisting Portal**|**For more information**|
 |:-----|:-----|:-----|
-|URIBL  <br/> |[https://admin.uribl.com/?section=lookup](https://admin.uribl.com/?section=lookup) <br/> |[ URIBL website ](https://uribl.com/) <br/> |
+|URIBL  <br/> |[https://admin.uribl.com/?section=lookup](https://admin.uribl.com/?section=lookup) <br/> |[URIBL website ](https://uribl.com/) <br/> |
 |SURBL  <br/> |[http://www.surbl.org/surbl-analysis](http://www.surbl.org/surbl-analysis) <br/> |[Introducing SURBL URI reputation data](http://www.surbl.org/) <br/> |
 |Spamhaus  <br/> |[https://www.spamhaus.org/lookup/](https://www.spamhaus.org/lookup/) <br/> |[Understanding DNSBL Filtering](https://www.spamhaus.org/whitepapers/dnsbl_function/) <br/> |
 |invaluement  <br/> |[http://dnsbl.invaluement.com/lookup/](http://dnsbl.invaluement.com/lookup/) <br/> |[invaluement anti-spam list](http://dnsbl.invaluement.com/) <br/> |

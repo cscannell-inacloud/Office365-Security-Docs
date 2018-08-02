@@ -81,7 +81,7 @@ Microsoft actively works with industry bodies and service providers in order to 
   
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
     
-- [ Online Trust Alliance ](https://www.otalliance.org/resources)
+- [Online Trust Alliance ](https://www.otalliance.org/resources)
     
 - [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
     

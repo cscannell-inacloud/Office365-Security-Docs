@@ -321,7 +321,7 @@ The Microsoft Azure Storage Explorer is in Preview.
   
 To install the Azure Storage Explorer and connect to your Azure storage area:
   
-1. Download and install the [ Microsoft Azure Storage Explorer tool ](https://go.microsoft.com/fwlink/p/?LinkId=544842).
+1. Download and install the [Microsoft Azure Storage Explorer tool ](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
 2. Start the Microsoft Azure Storage Explorer, right-click **Storage Accounts** in the left pane, and then click **Connect to Azure storage**. 
     

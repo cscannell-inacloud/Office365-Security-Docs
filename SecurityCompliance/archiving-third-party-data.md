@@ -286,7 +286,7 @@ The following sections list the Microsoft partners—and the third-party data so
   
 ### ArchiveSocial
 
-[ ArchiveSocial ](https://www.archivesocial.com) supports the following third-party data sources: 
+[ArchiveSocial ](https://www.archivesocial.com) supports the following third-party data sources: 
   
 - Facebook
     

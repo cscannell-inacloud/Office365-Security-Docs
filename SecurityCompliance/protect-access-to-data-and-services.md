@@ -35,9 +35,9 @@ Use these resources to orient yourself to MFA, decide which version is right for
     
 - [How to get Azure multi-factor authentication](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-versions-plans)
     
-- [Plan for multi-factor authentication for Office 365 deployments](https://support.office.com/en-us/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Plan for multi-factor authentication for Office 365 deployments](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [Set up multi-factor authentication for Office 365 users](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6?ui=en-US&amp;rs=en-US&amp;ad=US)
+- [Set up multi-factor authentication for Office 365 users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6?ui=en-US&amp;rs=en-US&amp;ad=US)
     
 - [Plan where to deploy MFA, Cloud or on-premises](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started)
     
@@ -53,7 +53,7 @@ If you are using Azure AD MFA, create a conditional access rule to require MFA f
 
 Device access policies for SharePoint Online and OneDrive for Business are recommended for protecting sensitive, classified, and regulated data. Coming soon is the ability to apply device access policies to individual team sites.
   
-- [Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
+- [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
 ## Step 5: Configure app and data protection for devices
 

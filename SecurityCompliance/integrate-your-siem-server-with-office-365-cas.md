@@ -105,7 +105,7 @@ Integrating with your SIEM server is accomplished in three steps:
     > [!NOTE]
     > The file name may differ depending on the version of the SIEM agent.
   
-Parameters in brackets [ ] are optional, and should be used only if relevant.
+Parameters in brackets [] are optional, and should be used only if relevant.
   
 Where the following variables are used:
   

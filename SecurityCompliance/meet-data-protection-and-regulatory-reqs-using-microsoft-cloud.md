@@ -311,21 +311,17 @@ Threat refers to anything that poses a risk to the fundamental, universally-acce
 - Availability means that information can be accessed readily with a high level of quality of service.
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
-  
-||**Internal**|**External**|
-|:-----|:-----|:-----|
-||
-|:-----|
-|**Confidentiality**|
-|:-----|
-|**Integrity**|
-|:-----|
-|**Availability**|
-|:-----|
+
+||**Internal**<br/>||**External**<br/>||||
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+||*Malicious*<br/>|*Accidental*<br/>|*Malicious*<br/>|*Accidental*<br/>|||
+|**Confidentiality**<br/>|(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)|
+|**Integrity**<br/>|(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)|
+|**Availability**<br/>|(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)|
    
  **External drivers**
   
-|**Contracts**|**Regulations**|**Public Commitments**|
+|**Contracts**|**Regulations**|**Public commitments**|
 |:-----|:-----|:-----|
 |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |
    
