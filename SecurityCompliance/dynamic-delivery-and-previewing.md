@@ -27,7 +27,7 @@ The dynamic delivery option eliminates email delays by sending the body of an em
   
 Most PDFs and Office documents can be previewed in safe mode while ATP scanning is underway. If an attachment is not compatible with the dynamic delivery previewer, email recipients see the attachment placeholder until ATP Safe Attachments scanning is complete.
   
-As each attachment is cleared, it is automatically reattached to the original email message. If an attachment is determined to be malicious, it is sent to quarantine, where an [Office 365 global administrator or security administrator](permissions-in-the-security-and-compliance-center.md) can [manage quarantined messages in Office 365](manage-quarantined-messages-and-files.md).
+As each attachment is cleared, it is automatically reattached to the original email message. If an attachment is determined to be malicious, it is sent to quarantine, where someone on your organization's security team (such as an Office 365 global administrator or security administrator) can [manage quarantined messages in Office 365](manage-quarantined-messages-and-files.md).
   
 ## What happens when someone forwards an email that contains an attachment?
 
@@ -70,5 +70,7 @@ There are certain scenarios in which dynamic delivery is not supported. These in
 [Set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md)
   
 [ATP Safe Links in Office 365](atp-safe-links.md)
+
+[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 

@@ -21,11 +21,8 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
-|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |[Start deploying](turn-on-office-365-cas.md) <br/> |You are here!  <br/> [Next steps](create-app-discovery-reports-in-ocas.md#nextsteps) <br/> |
+|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |[Start deploying](turn-on-office-365-cas.md) <br/> |You are here!  <br/> [Next steps](#next-steps) <br/> |
    
-> [!NOTE]
-> Office 365 Cloud App Security is available in Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Office 365 Cloud App Security can be purchased as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
-  
 Office 365 Cloud App Security helps global administrators, security administrators, and security readers gain insight into the cloud services people in an organization are using. For example, you can see where users are storing and collaborating on documents and how much data is being uploaded to apps or services that are outside of Office 365.
   
 To generate an app discovery report, you manually upload your web traffic log files from your firewalls and proxies, and then Office 365 Cloud App Security parses and analyzes those files for your report.
@@ -34,7 +31,6 @@ To generate an app discovery report, you manually upload your web traffic log fi
 > You must be a global administrator, security administrator, or security reader to perform the tasks described in this article. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## Create a report with app discovery
-<a name="BKMK_CreateReport"> </a>
 
 To create an app discovery report, you identify the vendor data source for the log files that you want to have analyzed, select the log files, and then request the report.
   
@@ -67,7 +63,6 @@ To create an app discovery report, you identify the vendor data source for the l
 9. To see the status of the report, click **Manage snapshot reports**. When a report is ready, you'll see the **View report** option. 
     
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Review and take action on alerts](review-office-365-cas-alerts.md)
     

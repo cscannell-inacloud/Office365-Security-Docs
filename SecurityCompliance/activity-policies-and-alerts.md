@@ -80,7 +80,6 @@ Make sure that:
 12. Choose **Create** to finish creating your policy. 
     
 ## Next steps
-<a name="nextsteps"> </a>
 
 - [Anomaly detection policies](anomaly-detection-policies-in-ocas.md)
     

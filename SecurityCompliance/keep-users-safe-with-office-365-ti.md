@@ -28,8 +28,8 @@ We've recently added new capabilities to help improve how you can detect and rec
 The **Office 365 Threat Explorer** helps security admins and analysts identify and understand threats that are active in your enterprise because even the most complex security settings can be circumvented by seemingly innocuous user configurations like safe sender whitelists. Threat Explorer helps Office 365 global or security admins quickly determine whether users have been compromised by threats such as malware or phish. This helps prioritize which users are most at risk for a threat and the requisite response. 
   
 Threat Explorer also helps admins navigate the relationships between users and mail. Know of a particular mail that was bad? Search for it to see what users received the mail, then follow the series of events and see what those users in turn have done.
-  
-[Try Office 365 Threat Intelligence now](https://aka.ms/tryo365threatintel3)! Or [learn more about Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
+
+If you don't already have Threat Intelligence, [try it now](https://aka.ms/tryo365threatintel3)! And [learn more about Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
   
 ![Screen shot of threat explorer in Office 365, colour-coded by malware family](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
   
@@ -39,7 +39,7 @@ Once security admins have identified something suspicious or malicious happening
   
  **UPDATE:** We've recently added the ability to delete (soft or hard delete) emails directly from the Incident Framework. Previously administrators could only move mails to a user's junk folder, where users could recover the item. With the newly released Delete capabilities, you can now be sure that a malicious or unwanted mail is removed permanently. 
   
-[Try Office 365 Threat Intelligence now](https://aka.ms/tryo365threatintel3)! Or [learn more about Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
+If you don't already have Threat Intelligence, [try it now](https://aka.ms/tryo365threatintel3)! And [learn more about Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
   
 ![Screen shot of email list of incident remediation](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   

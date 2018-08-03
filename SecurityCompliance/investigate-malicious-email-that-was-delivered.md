@@ -23,7 +23,7 @@ description: "Learn how to use Threat Intelligence to find and investigate malic
 
 Make sure that the following requirements are met:
   
-- Your organization has [Office 365 Threat Intelligence](office-365-ti.md) and [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Your organization has [Office 365 Threat Intelligence](office-365-ti.md) and [licenses are assigned to users](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
 - [Office 365 audit logging](turn-audit-log-search-on-or-off.md) is turned on for your organization. 
     
@@ -33,7 +33,9 @@ Make sure that the following requirements are met:
     
 ## Dealing with suspicious emails
 
-Malicious attackers may be sending mail to your users to try and phish their credentials and gain access to your corporate secrets! In order to prevent this, you should use the threat protection services offered by Office 365, including Exchange Online Protection and Advanced Threat Protection. However, there are times when an attacker could send mail to your users containing a URL and only later on make that URL point to malicious content (malware, etc.). Alternatively, you may realize too late that a user in your organization has been compromised, and while that user was compromised, an attacker used that account to send email to other users in your company. As part of cleaning up both of these scenarios, you may want to remove email messages from user inboxes. In situations like these, you can leverage Threat Explorer to find and remove those email messages!
+Malicious attackers may be sending mail to your users to try and phish their credentials and gain access to your corporate secrets! In order to prevent this, you should use the threat protection services offered by Office 365, including [Exchange Online Protection](eop/eop-features.md) and [Advanced Threat Protection](office-365-atp.md). However, there are times when an attacker could send mail to your users containing a URL and only later on make that URL point to malicious content (malware, etc.). 
+
+Alternatively, you may realize too late that a user in your organization has been compromised, and while that user was compromised, an attacker used that account to send email to other users in your company. As part of cleaning up both of these scenarios, you may want to remove email messages from user inboxes. In situations like these, you can leverage Threat Explorer to find and remove those email messages!
   
 ## Find and delete suspicious email that was delivered
 

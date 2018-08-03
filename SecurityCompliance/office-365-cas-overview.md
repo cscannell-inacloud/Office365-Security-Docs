@@ -17,8 +17,6 @@ description: "Office 365 Cloud App Security gives you insights into suspicious a
 ---
 
 # Overview of Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|

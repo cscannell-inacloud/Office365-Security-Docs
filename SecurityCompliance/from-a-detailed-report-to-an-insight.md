@@ -23,7 +23,7 @@ This is one of several walkthroughs for the Security &amp; Compliance Center. To
   
 ## Walkthrough: From a detailed report to an insight
 
-Let's walk through the flow from a detailed report to an insight and actions. This is an [anti-spam and anti-malware](anti-spam-and-anti-malware-protection.md) example. 
+Let's walk through the flow from a detailed report to an insight and actions. (This is a brief [anti-spam and anti-malware](anti-spam-and-anti-malware-protection.md) example.) 
   
 1. We begin with Security &amp; Compliance Center reports. (Go to **Reports** \> **Dashboard**.)
     

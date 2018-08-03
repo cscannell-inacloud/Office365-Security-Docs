@@ -16,8 +16,6 @@ description: "Get help with Office 365 activity policies and anomaly detection p
 ---
 
 # Security policy reference information for Office 365 Cloud App Security
-
- **Office 365 Advanced Security Management is now Office 365 Cloud App Security**. 
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|

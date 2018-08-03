@@ -16,8 +16,6 @@ description: "To easily identify sets of IP addresses that you'll use in Office 
 ---
 
 # Group your IP addresses to simplify management in Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
