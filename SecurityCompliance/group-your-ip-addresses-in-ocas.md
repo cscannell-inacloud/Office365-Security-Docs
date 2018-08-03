@@ -62,7 +62,7 @@ After you set up your IP address ranges, keep in mind that only future events ar
   
 ## Next steps
 
-- [Activity policies and alerts](activity-policies-and-alertsc.md)
+- [Activity policies and alerts](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies](anomaly-detection-policies-in-ocas.md)
     

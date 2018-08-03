@@ -62,7 +62,7 @@ There are two types of alerts in Office 365 Cloud App Security: anomaly detectio
   
 See the following resources to learn more:
   
-- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     

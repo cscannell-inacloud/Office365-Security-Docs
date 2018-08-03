@@ -148,7 +148,7 @@
 #### [Turn Office 365 audit log search on](turn-audit-log-search-on-or-off.md)
 #### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
 ### Set up policies and alerts
-#### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+#### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md)
 #### [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
 #### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
 ### Fine-tune settings

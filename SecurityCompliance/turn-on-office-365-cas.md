@@ -21,7 +21,7 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
-|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |You are here!  <br/> [Next step](activity-policies-and-alertsc.md) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
+|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |You are here!  <br/> [Next step](activity-policies-and-alerts.md) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
    
 > [!TIP]
 > Office 365 Cloud App Security is available in Office 365 Enterprise E5 or as an add-on for another Office 365 Enterprise subscription. To view or add to your subscription, as a global admin, sign in to Office 365, and then choose **Admin** \> **Billing**. For more information about plan options, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
@@ -48,7 +48,7 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 ## Next steps
 
-- [Activity policies](activity-policies-and-alertsc.md)
+- [Activity policies](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies](anomaly-detection-policies-in-ocas.md)
     

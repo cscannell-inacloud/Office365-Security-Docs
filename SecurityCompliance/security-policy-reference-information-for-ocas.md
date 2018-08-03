@@ -25,7 +25,7 @@ description: "Get help with Office 365 activity policies and anomaly detection p
    
 With Office 365 Cloud App Security, if you are a global administrator or security administrator, you can define or edit two kinds of policies for your organization:
   
-- **[Activity policies](activity-policies-and-alertsc.md)** that you define. These policies are based on activities that you define as suspicious, such as users attempting to sign in with admin credentials in other regions/countries outside what's normal for your organization, or an extreme number of sign-in attempts for a user within an hour. To learn more, see [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md).
+- **[Activity policies](activity-policies-and-alerts.md)** that you define. These policies are based on activities that you define as suspicious, such as users attempting to sign in with admin credentials in other regions/countries outside what's normal for your organization, or an extreme number of sign-in attempts for a user within an hour. To learn more, see [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md).
     
 - **[Anomaly detection policies](anomaly-detection-policies-in-ocas.md)** that are available "out of the box" with Office 365 Cloud App Security. These policies are based on automatic algorithms that detect suspicious activity. These default policies watch for anomalies and trigger alerts automatically. To learn more, see [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md).
     
