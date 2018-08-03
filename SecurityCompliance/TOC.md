@@ -11,21 +11,7 @@
 
 # Protect access to data and services
 ## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
-## [Mobile Device Management](overview-of-mdm.md)	
-### [Capabilities of built-in MDM](capabilities-of-mobile-device-management.md)
-#### [Privacy and security for built-in mobile device management for Office 365](privacy-and-security-for-mdm.md)
-#### [Frequently asked questions about MDM](frequently-asked-questions-about-mdm.md)
 ### [Choose between MDM and Intune](choose-between-mdm-and-intune.md)
-### [Set up MDM](set-up-mobile-device-management.md)
-#### [Create and deploy device security policies](create-device-security-policies.md)
-#### [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios.md)
-#### [Enroll your mobile device in Office 365](enroll-your-mobile-device.md)
-#### [Manage device access settings](manage-device-access-settings.md)
-#### [Troubleshoot device enrollment with MDM](troubleshoot-mdm.md)
-### [Manage devices enrolled in MDM](manage-devices-in-mdm.md)
-#### [Get details about devices managed by MDM](get-details-about-mdm-managed-devices.md)
-#### [Wipe a mobile device](wipe-a-mobile-device.md)
-### [How to turn off MDM](turn-off-mdm.md)
 
 # Prevent data loss
 ## Learn about DLP
