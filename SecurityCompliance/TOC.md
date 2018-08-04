@@ -123,9 +123,6 @@
 ### [Set up Azure Rights Management for Office 365 Message Encryption](set-up-azure-rm-for-message-encryption.md)
 
 ## Managing devices and apps
-### [Create and deploy device security policies](create-device-security-policies.md)
-### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
-
 ## [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
 ### [Get ready for Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
 #### [Office 365 Cloud App Security Use Cases and Usage Guide](https://aka.ms/O365CASGuide)
