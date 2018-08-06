@@ -49,8 +49,6 @@ You can also find out how Office 365 can help customers comply with standards, l
   
 Service assurance is accessible by using the Security &amp; Compliance Center. Here's how to get to there.
   
- **To go to the Security &amp; Compliance Center:**
-  
 1. Go to [https://protection.office.com](https://protection.office.com).
     
 2. Sign in to Office 365 using your work or school account. 
@@ -101,7 +99,7 @@ Select the report you want to download, and select **Save** to download it to yo
 |:-----|:-----|:-----|
 |Compliance reports  <br/> | FedRamp  <br/>  GRC Assessment  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use service compliance reports to review audit assessments performed by third-party independent auditors of Office 365 Service Delivery Operations.  <br/> |
 |Trust documents  <br/> | FAQ and White Papers  <br/>  Risk Management Reports  <br/> |Use white papers, FAQs, end-of-year reports and other Microsoft Confidential resources that are made available to you under non-disclosure agreement for your review / risk assessments.  <br/> |
-|Audited controls  <br/> |Global standards and regulations that Office 365 has implemented.  <br/> | Help with risk-assessment when you're evaluating, onboarding, or using Office 365 services. Find out:  <br/>  How Office 365 controls meet security, compliance, and privacy requirements.  <br/>  About tests that have been applied to controls in Office 365, results of these tests, and when they were completed.  <br/> |
+|Audited controls  <br/> |Global standards and regulations that Office 365 has implemented.  <br/> | Help with risk-assessment when you're evaluating, onboarding, or using Office 365 services. Find out:  <br/> <br/>- How Office 365 controls meet security, compliance, and privacy requirements.  <br/>-  About testing of controls in Office 365, results of these tests, and when they were completed.  <br/> |
    
 Depending on your specific set-up, options included in your view might have some differences.
   
@@ -137,13 +135,3 @@ Return to the **Permissions** page at any time to add more users, or remove exis
  **Why am I getting an error saying that documents from Service assurance are corrupted?**
   
 Most Service assurance documents are in PDF format. Choose **Save** to save these files to, and then open them up from, your local computer. 
-  
-## See also
-<a name="addother"> </a>
-
-[Go to the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
-
-[Search and investigation in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/c4915c5f-82a7-4871-ba20-ef47c7588043)
-  
-[Data governance in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/5fe09846-41b6-4168-9c48-2eb491b69dc2)
-
