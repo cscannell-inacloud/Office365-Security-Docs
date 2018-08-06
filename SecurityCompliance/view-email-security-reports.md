@@ -3,7 +3,7 @@ title: "View email security reports in the Security &amp; Compliance Center"
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 7/17/2018
+ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,30 +17,29 @@ description: "Learn how to find and use email security reports for your organiza
 
 # View email security reports in the Security &amp; Compliance Center
 
-A variety of email security reports are available in the Security &amp; Compliance Center to help you see how anti-spam and anti-malware features in Office 365 are protecting your organization. If you have the [What permissions are needed to view these reports?](view-email-security-reports.md#perms), you can view these reports in the Security &amp; Compliance Center by going to **Reports** \> **Dashboard**.
+A variety of email security reports are available in the Security &amp; Compliance Center to help you see how anti-spam and anti-malware features in Office 365 are protecting your organization. If you have the necessary permissions, you can view these reports in the Security &amp; Compliance Center by going to **Reports** \> **Dashboard**.
   
 ![The Security &amp; Compliance Center dashboard can help you see where Advanced Threat Protection is working](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Your email security reports include the following:
   
-- [Threat protection status report (new!)](view-email-security-reports.md#tps) (new!) 
+- [Threat protection status report](view-email-security-reports.md#tps) (new!) 
     
 - [Malware Detections report](view-email-security-reports.md#maldet)
     
-- [](view-reports-for-atp.md#topmalware)
+- [Top Malware report](#top-malware-report)
     
 - [Top Senders and Recipients report](view-email-security-reports.md#topsenders)
     
-- [](view-reports-for-atp.md#spoofmail)
+- [Spoof Mail report](#spoof-mail-report)
     
-- [](view-reports-for-atp.md#spamdetections)
+- [Spam Detections report](#spam-detections-report)
     
 - [Sent and received email report](view-email-security-reports.md#sentreceivedemail)
     
-- [User-reported messages report (new!)](view-email-security-reports.md#userreported) (new!) 
+- [User-reported messages report](view-email-security-reports.md#userreported) (new!) 
     
 ## Threat protection status report (new!)
-<a name="tps"> </a>
 
 The new **Threat protection status** report is a smart report that shows malicious email that was detected and blocked by Exchange Online Protection. This report shows information about email identified as malware or a phishing attempt. 
   
@@ -57,7 +56,6 @@ You can also choose whether to view data for email identified as malicious, emai
 ![Threat Protection Status report view options](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
   
 ## Malware Detections report
-<a name="maldet"> </a>
 
 The **Malware Detections** report shows how many incoming and outgoing messages were detected as containing malware for your organization. 
   
@@ -68,7 +66,6 @@ To view this report, in the Security &amp; Compliance Center, go to **Reports** 
 Similar to other reports, like the Threat protection status report, the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. 
   
 ## Top Malware report
-<a name="topmalware"> </a>
 
 The **Top Malware** report shows the various kinds of malware that was detected by Exchange Online. 
   
@@ -85,7 +82,6 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware.
   
 ## Top Senders and Recipients report
-<a name="topsenders"> </a>
 
 The **Top Senders and Recipients** report is a pie chart showing your top email senders. 
   
@@ -104,7 +100,6 @@ Use the **Show data for** list to choose whether to view data for top senders, r
 Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period.
   
 ## Spoof Mail report
-<a name="spoofmail"> </a>
 
 The **Spoof Mail** report shows how many spoof mail messages were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons). 
   
@@ -117,7 +112,6 @@ When you hover over a day in the chart, you can see how many spoof mail messages
 Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
   
 ## Spam Detections report
-<a name="spamdetections"> </a>
 
 The **Spam Detections** report shows all the spam content blocked by Exchange Online. 
   
@@ -134,7 +128,6 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient.
   
 ## Sent and received email report
-<a name="sentreceivedemail"> </a>
 
 The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." 
   
@@ -155,7 +148,6 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
 ![This report tells you about anti-malware, anti-spam, and other message detections](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
 ## User-reported messages report (new!)
-<a name="userreported"> </a>
 
 The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md).
   
@@ -175,7 +167,6 @@ To view this report, in the Security &amp; Compliance Center, do one of the foll
 > In order for the User-reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md). 
   
 ## What permissions are needed to view these reports?
-<a name="perms"> </a>
 
 In order to view and use the email security reports described in this article, you must have an appropriate role assigned in the Security &amp; Compliance Center and in the Exchange Admin Center.
   
@@ -185,12 +176,10 @@ In order to view and use the email security reports described in this article, y
 | One of the following:  <br/>  Organization Management  <br/>  View-only Organization Management  <br/>  View-Only Recipients role  <br/>  Compliance Management  <br/> |Exchange Admin Center  <br/> |[Feature permissions in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## What if the reports aren't showing data?
-<a name="whatifnodata"> </a>
 
 If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).
   
 ## Related topics
-<a name="whatifnodata"> </a>
 
 [Office 365 Email Anti-Spam Protection](anti-spam-protection.md)
   
