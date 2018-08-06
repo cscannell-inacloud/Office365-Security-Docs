@@ -427,5 +427,5 @@
 ### [Sending mail to Office 365](sending-mail-to-office-365.md)
 ### [Services for non-customers](services-for-non-customers.md)
 
-# [Office 365 for enterprises](https://docs.microsoft.com/en-us/Office365/Enterprise)
-# [Office 365 for businesses](https://support.office.com/office365admin)
+# [Office 365 Enterprise](https://docs.microsoft.com/en-us/Office365/Enterprise)
+# [Office 365 for business](https://support.office.com/office365admin)
