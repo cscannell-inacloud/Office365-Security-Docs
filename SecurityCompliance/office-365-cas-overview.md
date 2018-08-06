@@ -17,8 +17,6 @@ description: "Office 365 Cloud App Security gives you insights into suspicious a
 ---
 
 # Overview of Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
@@ -59,7 +57,7 @@ To view/use policy templates, in the Office 365 Cloud App Security portal, go to
   
 To learn more about policies, see the following resources:
   
-- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
@@ -73,7 +71,7 @@ As alerts are triggered you can review them to learn more about what is going on
   
 To learn more about alerts, see the following resources:
   
-- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     

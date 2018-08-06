@@ -11,21 +11,7 @@
 
 # Protect access to data and services
 ## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
-## [Mobile Device Management](overview-of-mdm.md)	
-### [Capabilities of built-in MDM](capabilities-of-mobile-device-management.md)
-#### [Privacy and security for built-in mobile device management for Office 365](privacy-and-security-for-mdm.md)
-#### [Frequently asked questions about MDM](frequently-asked-questions-about-mdm.md)
 ### [Choose between MDM and Intune](choose-between-mdm-and-intune.md)
-### [Set up MDM](set-up-mobile-device-management.md)
-#### [Create and deploy device security policies](create-device-security-policies.md)
-#### [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios.md)
-#### [Enroll your mobile device in Office 365](enroll-your-mobile-device.md)
-#### [Manage device access settings](manage-device-access-settings.md)
-#### [Troubleshoot device enrollment with MDM](troubleshoot-mdm.md)
-### [Manage devices enrolled in MDM](manage-devices-in-mdm.md)
-#### [Get details about devices managed by MDM](get-details-about-mdm-managed-devices.md)
-#### [Wipe a mobile device](wipe-a-mobile-device.md)
-### [How to turn off MDM](turn-off-mdm.md)
 
 # Prevent data loss
 ## Learn about DLP
@@ -137,9 +123,6 @@
 ### [Set up Azure Rights Management for Office 365 Message Encryption](set-up-azure-rm-for-message-encryption.md)
 
 ## Managing devices and apps
-### [Create and deploy device security policies](create-device-security-policies.md)
-### [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
-
 ## [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
 ### [Get ready for Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
 #### [Office 365 Cloud App Security Use Cases and Usage Guide](https://aka.ms/O365CASGuide)
@@ -148,7 +131,7 @@
 #### [Turn Office 365 audit log search on](turn-audit-log-search-on-or-off.md)
 #### [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
 ### Set up policies and alerts
-#### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+#### [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md)
 #### [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
 #### [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
 ### Fine-tune settings
@@ -444,5 +427,5 @@
 ### [Sending mail to Office 365](sending-mail-to-office-365.md)
 ### [Services for non-customers](services-for-non-customers.md)
 
-# [Office 365 for enterprises](https://docs.microsoft.com/en-us/Office365/Enterprise)
-# [Office 365 for businesses](https://support.office.com/office365admin)
+# [Office 365 Enterprise](https://docs.microsoft.com/en-us/Office365/Enterprise)
+# [Office 365 for business](https://support.office.com/office365admin)

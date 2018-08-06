@@ -137,5 +137,7 @@ As you set up or edit an ATP Safe Links policy, will see several options availab
 [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
   
 [View the reports for Advanced Threat Protection](view-reports-for-atp.md)
+
+[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 

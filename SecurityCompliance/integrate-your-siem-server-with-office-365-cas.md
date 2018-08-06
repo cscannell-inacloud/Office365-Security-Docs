@@ -16,8 +16,6 @@ description: "You can integrate your SIEM server with Office 365 Cloud App Secur
 ---
 
 # Integrate your SIEM server with Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
@@ -42,7 +40,7 @@ The logs provided to your SIEM from Microsoft Cloud App Security are CEF over Sy
   
 Sample alerts log:
   
-2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg= **Activity policy 'Mass Download by User'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination **ServiceName=Office 365** cn1Label=riskScore cn1= cs1Label=portal **URL cs1=https://contoso.cloudappsecurity.com** /#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_OFFICE365 cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j 
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg= **Activity policy 'Mass Download by User'** was triggered by 'admin@contoso.com' **`suser=admin@contoso.com`** destination **ServiceName=Office 365** cn1Label=riskScore cn1= cs1Label=portal **URL cs1=`https://contoso.cloudappsecurity.com`** /#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_OFFICE365 cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j 
   
 ## How to integrate
 
@@ -96,29 +94,21 @@ Integrating with your SIEM server is accomplished in three steps:
     
 2. Extract the .jar file from the zip file and run it on your server.
     
-3. After running the file, run the following: command:
-    
+3. After running the file, run the following: command:</br>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
+#### Keep these points in mind
 
-    > [!NOTE]
-    > The file name may differ depending on the version of the SIEM agent.
-  
-Parameters in brackets [] are optional, and should be used only if relevant.
-  
-Where the following variables are used:
-  
-DIRNAME is the path to the directory you want to use for local agent debug logs.
-  
-ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
-  
-TOKEN is the SIEM agent token you copied in the previous step.
-  
-You can type -h at any time to get help. 
+- The file name may differ depending on the version of the SIEM agent. 
+- Parameters in brackets [] are optional, and should be used only if relevant.
+- Use the following variables:
+    - DIRNAME is the path to the directory you want to use for local agent debug logs.
+    - ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
+    - TOKEN is the SIEM agent token you copied in the first procedure.
+- To get help, type `-h`. 
   
 ### Step 3: Validate that the SIEM agent is working
-<a name="step3"> </a>
 
 Make sure the status of the SIEM agent in the Office 365 Cloud App Security portal is not **Connection error** or **Disconnected** and there are no agent notifications. 
   

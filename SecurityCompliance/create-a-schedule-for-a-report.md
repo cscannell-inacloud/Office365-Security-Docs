@@ -43,7 +43,6 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 Once you have created a schedule for a report, that report will be delivered via email to recipients' emali addresses automatically. 
   
 ## Related topics
-<a name="schedulereport"> </a>
 
 [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   

@@ -12,7 +12,6 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
-
 description: "Get an overview of warning pages that you might see when Office 365 Advanced Threat Protection is at work."
 ---
 

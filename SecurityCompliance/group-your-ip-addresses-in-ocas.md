@@ -16,8 +16,6 @@ description: "To easily identify sets of IP addresses that you'll use in Office 
 ---
 
 # Group your IP addresses to simplify management in Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
@@ -62,7 +60,7 @@ After you set up your IP address ranges, keep in mind that only future events ar
   
 ## Next steps
 
-- [Activity policies and alerts](activity-policies-and-alertsc.md)
+- [Activity policies and alerts](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies](anomaly-detection-policies-in-ocas.md)
     
