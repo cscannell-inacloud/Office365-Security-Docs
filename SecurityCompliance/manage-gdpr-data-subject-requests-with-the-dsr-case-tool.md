@@ -388,7 +388,7 @@ For more information about partially indexed items, see:
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
 
-- [Exporting unindexed items](export-search-results.md#exporting-unindexed-items)
+- [Exporting partially indexed items](export-search-results.md#exporting-partially-indexed-items)
     
 ### Searching and exporting data from Microsoft Teams and Office 365 Groups
 
