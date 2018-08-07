@@ -3,7 +3,7 @@ title: "What is new in Office 365 Cloud App Security"
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/03/2018
+ms.date: 8/6/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
