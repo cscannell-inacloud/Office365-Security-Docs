@@ -3,7 +3,6 @@ title: "Use mail flow rules to see what your users are reporting to Microsoft"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/23/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,7 +17,6 @@ description: "You can create an Exchange Transport rule to prevent your users fr
 There are multiple ways you can send false positive and false negative messages to Microsoft for analysis. As an administrator, you can use mail flow rules to see what your users are reporting to Microsoft as spam, non-spam, and phishing scams. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Conversely, you can create an Exchange Transport rule to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes.
   
 ## What do you need to know before you begin?
-<a name="sectionSection0"> </a>
 
 Estimated time to complete: 5 minutes
   
@@ -27,7 +25,6 @@ You need to be assigned permissions before you can perform this procedure or pro
 For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
   
 ## Use the EAC to create a mail flow rule to view users' manual junk, phishing, and not junk reports
-<a name="sectionSection1"> </a>
 
 1. In the EAC, navigate to **Mail flow** \> **Rules**.
     
@@ -38,14 +35,14 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 4. Under **Apply this rule if**, select **The recipient** and then choose **address includes any of these words**.
     
 5. In the **specify words or phrases** box, do the following: 
-    - Type **abuse@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false negative messages to Microsoft.
-    - Type **phish@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). This email address is used to submit missed phishing messages to Microsoft.
-    - Type **false_positive@messaging.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type **not_junk@office365.microsoft.com** and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false positive messages to Microsoft.
+    - Type `abuse@messaging.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type `junk@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false negative messages to Microsoft.
+    - Type `phish@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). This email address is used to submit missed phishing messages to Microsoft.
+    - Type `false_positive@messaging.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type `not_junk@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false positive messages to Microsoft.
     - Click **ok**.
     
 6. Under **Do the following**, select **Bcc the message to...** and then and then select the mailboxes where you'd like to receive the messages. 
     
-7. If you'd like, you can make selections to audit the rule, test the rule, activate the rule during a specific time period, and other selections. We recommend testing the rule for a period before you enforce it. [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx) contains more information about these selections. 
+7. If you'd like, you can make selections to audit the rule, test the rule, activate the rule during a specific time period, and other selections. We recommend testing the rule for a period before you enforce it. See [Procedures for mail flow rules](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures). 
     
 8. Click the **save** button to save the rule. It appears in your list of rules. 
     
