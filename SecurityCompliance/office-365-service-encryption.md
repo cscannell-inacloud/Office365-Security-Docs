@@ -3,7 +3,7 @@ title: "Office 365 Service Encryption"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/31/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -21,10 +21,10 @@ In addition to using volume-level encryption, Exchange Online, Skype for Busines
 - The customer supplies root keys used with service encryption and the customer manages these keys using Azure Key Vault. Microsoft manages all other keys. This option is called Customer Key, and it is currently available for Exchange Online, SharePoint Online, and OneDrive for Business. (Previously referred to as Advanced Encryption with BYOK. See [Enhancing transparency and control for Office 365 customers](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the original announcement.)
 
 Service encryption provides multiple benefits. For example, it:
-- Provides rights protection and management features on top of strong encryption protection.
-- Includes a Customer Key option that enables multi-tenant services to provide per-tenant key management.
-- Provides separation of Windows operating system administrators from access to customer data stored or processed by the operating system.
-- Enhances the ability of Office 365 to meet the demands of customers that have compliance requirements regarding encryption.
+- provides rights protection and management features on top of strong encryption protection.
+- includes a Customer Key option that enables multi-tenant services to provide per-tenant key management.
+- provides separation of Windows operating system administrators from access to customer data stored or processed by the operating system.
+- enhances the ability of Office 365 to meet the demands of customers that have compliance requirements regarding encryption.
 
 ## Customer Key
 Using Customer Key, you can generate your own cryptographic keys using either an on-premises HSM or Azure Key Vault. Regardless of how the key is generated, customers use Azure Key Vault to control and manage the cryptographic keys used by Office 365. Once your keys are stored in Azure Key Vault, they can be assigned to workloads such as Exchange Online and SharePoint Online and used to as the root of the keychain used to encrypt your mailbox data and files.

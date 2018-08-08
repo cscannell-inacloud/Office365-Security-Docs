@@ -3,7 +3,7 @@ title: "Office 365 Encryption Risks and Protections"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/31/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -29,8 +29,6 @@ Microsoft follows a control and compliance framework that focuses on risks to th
 | S/MIME | Exchange Online | Customer | Email falls into the hands of a person who is not the intended recipient. | S/MIME provides value to customers by assuring that email encrypted with S/MIME can only be decrypted by the direct recipient of the email. |
 | Office 365 Message Encryption | Exchange Online, SharePoint Online | Customer | Email, including protected attachments, falls in hands of a person either within or outside Office 365 who is not the intended recipient of the email. | OME provides value to customers where all emails originating from Office 365 that match certain criteria (i.e., all emails to a certain address) are automatically encrypted before they get sent to another internal or an external recipient. |
 | SMTP TLS with partner organization | Exchange Online | Customer | Email is intercepted via a man-in-the-middle or other attack while in transit from an Office 365 tenant to another partner organization. | This scenario provides value to the customer such that they can send/receive all emails between their Office 365 tenant and their partner’s email organization inside an encrypted SMTP channel. |
-
-*Table 1 - Risk scenarios and encryption technology mitigation*
 
 The following tables summarize the encryption technologies available in Office 365 Multi-tenant and Government Cloud Community environments.
 
@@ -64,8 +62,6 @@ The following tables summarize the encryption technologies available in Office 3
 
 ***Most servers in the Exchange Online multi-tenant environment have been deployed with AES 256-bit encryption for BitLocker. Servers using AES 128-bit are being phased out.*
 
-*Table 2 - Encryption technologies used in Office 365 Multi-tenant*
-
 | Encryption Technology | Implemented by | Key Exchange Algorithm and Strength | Key Management* | FIPS 140-2 Validated |
 |---------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | BitLocker | Exchange Online | AES 256-bit | AES external key is stored in a Secret Safe and in the registry of the Exchange server. The Secret Safe is a secured repository that requires high-level elevation and approvals to access. Access can be requested and approved only by using an internal tool called Lockbox. The AES external key is also stored in the Trusted Platform Module in the server. A 48-digit numerical password is stored in Active Directory and protected by Lockbox. | Yes |
@@ -96,5 +92,3 @@ The following tables summarize the encryption technologies available in Office 3
 |  |  |  | *Be aware that for security reasons, our certificates do change from time to time.* |  |
 
 **TLS certificates referenced in this table are for US datacenters; non-US datacenters also use 2048-bit SHA256RSA certificates.*
-
-*Table 3 - Encryption technologies used in Office 365 Government Cloud Community*
