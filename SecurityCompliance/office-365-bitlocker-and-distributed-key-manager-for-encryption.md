@@ -3,7 +3,7 @@ title: "Office 365 BitLocker for Encryption"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/31/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -18,8 +18,6 @@ description: "Summary: Information about BitLocker for encryption in the cloud."
 Office 365 servers use BitLocker to encrypt the disk drives containing customer data at rest at the volume-level. BitLocker encryption is a data protection feature that is built into Windows. BitLocker is one of the technologies used to safeguard against threats in case there are lapses in other processes or controls (e.g., access control or recycling of hardware) that could lead to someone gaining physical access to disks containing customer data. In this case, BitLocker eliminates the potential for data theft or exposure because of lost, stolen, or inappropriately decommissioned computers and disks.
 
 BitLocker is deployed with Advanced Encryption Standard (AES) 256-bit encryption on disks containing customer data in Exchange Online, SharePoint Online, and Skype for Business. Disk sectors are encrypted with a Full Volume Encryption Key (FVEK), which is encrypted with the Volume Master Key (VMK), which in turn is bound to the Trusted Platform Module (TPM) in the server. The VMK directly protects the FVEK and therefore, protecting the VMK becomes critical. The following figure illustrates an example of the BitLocker key protection chain for a given server (in this case, using an Exchange Online server).
- 
-*Figure 1 - BitLocker Protection Chain for Exchange Online servers*
 
 The following table describes the BitLocker key protection chain for a given server (in this case, an Exchange Online server).
 
@@ -30,7 +28,6 @@ The following table describes the BitLocker key protection chain for a given ser
 | 48-digit Numerical Password | Per Disk | BitLocker APIs | Active Directory | Lockbox / Access Control |
 | X.509 Certificate as Data Recovery Agent (DRA) also called Public Key Protector | Environment (e.g., Exchange Online multitenant) | Microsoft CA | Build System | No one user has the full password to the private key. The password is under physical protection. |
 
-*Table 1 – BitLocker Protection Chain for Exchange Online Servers*
 
 BitLocker key management involves the management of recovery keys that are used to unlock/recover encrypted disks in an Office 365 datacenter. Office 365 stores the master keys in a secured share, only accessible by individuals who have been screened and approved. The credentials for the keys are stored in a secured repository for access control data (what we call a "secret store"), which requires a high level of elevation and management approvals to access using a just-in-time access elevation tool.
 
