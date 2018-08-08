@@ -3,7 +3,7 @@ title: "Office 365 Technology Controls"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -16,7 +16,7 @@ description: "Summary: An overview of Microsoft's technology control practices f
 
 # Office 365 Technology Controls 
 
-Microsoft uses several tools and technologies to control, manage, and audit access to Customer Data in Exchange Online and SharePoint Online, including Lockbox and Customer Lockbox, multi-factor authentication, and more. Yammer Enterprise uses similar controls, as described in [Yammer Enterprise Access Controls](/office365/enterprise/office-365-yammer-enterprise-access-controls).
+Microsoft uses several tools and technologies to control, manage, and audit access to Customer Data in Exchange Online and SharePoint Online, including Lockbox and Customer Lockbox, multi-factor authentication, and more. Yammer Enterprise uses similar controls, as described in [Yammer Enterprise Access Controls](office-365-yammer-enterprise-access-controls.md).
 
 Office 365 engineers have zero standing access to Office 365 Customer Data, and they must go through an approval process that includes both Microsoft and – if the customer licenses the Customer Lockbox feature for Exchange Online and SharePoint Online – customer approval, before access to Customer Data for service operations can occur. When approval is granted, service-specific administrative accounts are provisioned just-in-time with just enough access to perform the tasks required by the service request.
 
@@ -25,9 +25,9 @@ Although it is extremely rare, a customer could request assistance from Microsof
 
 Lockbox processes requests for permissions that grant engineers the ability to perform operational and administrative functions within the service. Engineers submit requests through Lockbox, which must be approved by a manager prior to the engineer gaining the ability to access Customer Data. Upon manager approval, the engineer has time-limited and scope-limited access to Customer Data to work on the customer's issue.
 
-Customer Lockbox for Office 365 can help you meet compliance obligations, such as those found in FedRAMP and HIPAA, if you need procedures in place for explicit data access authorization. In the rare instance when a Microsoft service engineer needs access to your data, you grant that access only to data required to resolve the issue and for a limited amount of time. Actions taken by the support engineer are logged for auditing purposes and are accessible via the [Office 365 Management Activity API](https://msdn.microsoft.com/en-us/library/office/dn707383.aspx) and the [Security and Compliance Center](http://protection.office.com/). Customer Lockbox inserts the customer into the Lockbox approval process and provides them with the ability to control authorization of Microsoft access to their Exchange Online or SharePoint Online content for service operations.
+Customer Lockbox for Office 365 can help you meet compliance obligations, such as those found in FedRAMP and HIPAA, if you need procedures in place for explicit data access authorization. In the rare instance when a Microsoft service engineer needs access to your data, you grant that access only to data required to resolve the issue and for a limited amount of time. Actions taken by the support engineer are logged for auditing purposes and are accessible via the [Office 365 Management Activity API](https://msdn.microsoft.com/library/office/dn707383.aspx) and the [Security and Compliance Center](http://protection.office.com/). Customer Lockbox inserts the customer into the Lockbox approval process and provides them with the ability to control authorization of Microsoft access to their Exchange Online or SharePoint Online content for service operations.
 
->**NOTE**: Customer Lockbox is available in [Office 365 Enterprise E5](https://products.office.com/en-us/business/office-365-enterprise-e5-business-software) and as an add-on purchase, but manual action must be taken in the Office 365 admin center (under Service Settings | Customer Lockbox) to enable it. For more information, see [Office 365 Customer Lockbox Requests](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+>**NOTE**: Customer Lockbox is available in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) and as an add-on purchase, but manual action must be taken in the Office 365 admin center (under Service Settings | Customer Lockbox) to enable it. For more information, see [Office 365 Customer Lockbox Requests](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
 
 All service requests for Exchange Online and SharePoint Online are handled by the Lockbox system. And with Customer Lockbox, any service operation necessitating access to these services with exposure to Customer Data goes through the Lockbox approval process, and then enables the customer to approve or reject the request thereafter.
  
