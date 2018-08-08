@@ -19,7 +19,7 @@ description: "Top recommendations from Microsoft's cybersecurity team for implem
 
 # Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond
 
-This article includes top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Office 365 environment. This article is adapted from a Microsoft Ignite session — [Secure Office 365 like a cybersecurity pro: Top priorities for the first 30 days, 90 days, and beyond](https://myignite.microsoft.com/sessions/53736). This session was developed and presented by Mark Simos and Matt Kemelhar, Enterprise Cybersecurity Architects.
+This article includes top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Office 365 environment. This article is adapted from a Microsoft Ignite session — [Secure Office 365 like a cybersecurity pro: Top priorities for the first 30 days, 90 days, and beyond](https://www.youtube.com/watch?v=luignzNyR-o). This session was developed and presented by Mark Simos and Matt Kemelhar, Enterprise Cybersecurity Architects.
   
 In this article:
   
@@ -35,11 +35,15 @@ In this article:
 <a name="Roadmap"> </a>
 
 These roadmap recommendations are staged across three phases in a logical order with the following goals.
+
+|||
+|:-----|:-----|
+| |Outcomes
+|30 days|Rapid configuration:  <br/>  - Basic admin protections  <br/>  - Logging and analytics  <br/>  - Basic identity protections  <br/>  Tenant configuration  <br/>  Prepare stakeholders  <br/> |
+|90 days|Advanced protections:  <br/>  - Admin accounts  <br/>  - Data &amp; user accounts  <br/>  Visibility into compliance, threat, and user needs  <br/>  Adapt and implement default policies and protections  <br/> |
+|Beyond|Adjust and refine key policies and controls  <br/> Extend protections to on-premises dependencies  <br/> Integrate with business and security processes (legal, insider threat, etc.)  <br/> |
   
-|||||
-|:-----|:-----|:-----|:-----|
-||30 days  <br/> |90 days  <br/> |Beyond  <br/> |
-|Outcomes  <br/> | Rapid configuration:  <br/>  Basic admin protections  <br/>  Logging and analytics  <br/>  Basic identity protections  <br/>  Tenant configuration  <br/>  Prepare stakeholders  <br/> | Advanced protections:  <br/>  Admin accounts  <br/>  Data &amp; user accounts  <br/>  Visibility into compliance, threat, and user needs  <br/>  Adapt and implement default policies and protections  <br/> |Adjust and refine key policies and controls  <br/> Extend protections to on-premises dependencies  <br/> Integrate with business and security processes (legal, insider threat, etc.)  <br/> |
+
    
 ## 30 days — powerful quick wins
 <a name="Thirdaydays"> </a>
