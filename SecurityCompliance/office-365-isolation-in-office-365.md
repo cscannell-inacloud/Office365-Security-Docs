@@ -3,7 +3,7 @@ title: "Office 365 Isolation and Access Control in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -18,7 +18,7 @@ description: "Summary: An explanation of isolation and access control within the
 
 Azure Active Directory and Office 365 use a highly complex data model that includes tens of services, hundreds of entities, thousands of relationships, and tens of thousands of attributes (entities, relationships and attributes are often application-specific). At a high level, Azure Active Directory and the service directories are the containers of tenants and recipients, and they are kept in sync using state-based replication protocols. In addition to the directory information held within Azure Active Directory, each of the services also have their own directory services infrastructure (e.g., Exchange Online Directory Services, SharePoint Online Directory Services, etc.). 
  
-*Figure 1 - Tenant data is synchronized from Azure Active Directory instance to separate Organizational Units within back-end service directories*
+![Office 365 tenant data sync](media/office-365-isolation-tenant-data-sync.png)
 
 Within this model, there is no single source of directory data. Every individual piece of data is owned by a specific system, but no single system holds all the data. Office 365 services cooperate with Azure Active Directory to realize the data model. Azure Active Directory is the "system of truth" for shared data, which is typically small and static data used often by every service. The federated model used within Office 365 and Azure Active Directory provides the shared view of the data.
 

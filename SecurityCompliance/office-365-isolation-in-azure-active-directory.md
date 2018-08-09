@@ -3,7 +3,7 @@ title: "Office 365 Isolation and Access Control in Azure Active Directory"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -17,21 +17,21 @@ description: "Summary: How Isolation and Access Control work within Azure Active
 # Isolation and Access Control in Azure Active Directory
 
 Azure Active Directory was designed to host multiple tenants in a highly secure way through logical data isolation. Access to Azure Active Directory is gated by an authorization layer. Azure Active Directory isolates customers using tenant containers as security boundaries to safeguard a customer's content so that the content cannot be accessed or compromised by co-tenants. Three checks are performed by Azure Active Directory's authorization layer:
-1.	Is the principal enabled for access to Azure Active Directory tenant?
-2.	Is the principal enabled for access to data in this tenant?
-3.	Is the principal's role in this tenant authorized for the type of data access requested?
+- Is the principal enabled for access to Azure Active Directory tenant?
+- Is the principal enabled for access to data in this tenant?
+- Is the principal's role in this tenant authorized for the type of data access requested?
 
 No application, user, server, or service can access Azure Active Directory without the proper authentication and token or certificate. Requests are rejected if they are not accompanied by proper credentials.
 
 Effectively, Azure Active Directory hosts each tenant in its own protected container, with policies and permissions to and within the container solely owned and managed by the tenant.
  
-*Figure 1 - Instance of Azure Active Directory for Contoso.com*
+![Azure container](media/office-365-isolation-azure-container.png)
 
 The concept of tenant containers is deeply ingrained in the directory service at all layers, from portals all the way to persistent storage. Even when multiple Azure Active Directory tenant metadata is stored on the same physical disk, there is no relationship between the containers other than what is defined by the directory service, which in turn is dictated by the tenant administrator. There can be no direct connections to Azure Active Directory storage from any requesting application or service without first going through the authorization layer.
 
 In the example below, Contoso and Fabrikam both have separate, dedicated containers, and even though those containers may share some of the same underlying infrastructure, such as servers and storage, they remain separate and isolated from each other, and gated by layers of authorization and access control.
  
-*Figure 2 – Separate isolated instances of Azure Active Directory for multiple tenants on shared storage*
+![Azure dedicated containers](media/office-365-isolation-azure-dedicated-containers.png)
 
 In addition, there are no application components that can execute from within Azure Active Directory, and it is not possible for one tenant to forcibly breach the integrity of another tenant, access encryption keys of another tenant, or read raw data from the server.
 
