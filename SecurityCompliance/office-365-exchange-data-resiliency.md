@@ -3,7 +3,7 @@ title: "Office 365 Exchange Data Resiliency"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/16/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,22 +11,21 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: An explanation of the various aspects of data resiliency within Exchange Online."
+description: "An explanation of the various aspects of data resiliency within Exchange Online and Office 365."
 ---
 
-# Exchange Online Data Resiliency 
+# Exchange Online Data Resiliency in Office 365
 
 ## Introduction
 There are two types of corruption that can affect an Exchange database: physical corruption, which is typically caused by hardware (in particular, storage hardware) problems, and logical corruption, which occurs due to other factors. Generally, there are two types of logical corruption that can occur within an Exchange database: 
 - **Database logical corruption** - The database page checksum matches, but the data on the page is wrong logically. This can occur when the database engine (the Extensible Storage Engine (ESE)) attempts to write a database page and even though the operating system returns a success message, the data is either never written to the disk or it's written to the wrong place. This is referred to as a *lost flush*. ESE includes numerous features and safeguards that are designed to prevent physical corruption of a database and other data loss scenarios. To prevent lost flushes from losing data, ESE includes a lost flush detection mechanism in the database along with a feature (single page restore) to correct it. 
-- **Store logical corruption** - Data is added, deleted, or manipulated in a way that the user doesn't expect. These cases are generally caused by third-party applications. It's generally only corruption in the sense that the user views it as corruption. The Exchange store considers the transaction that produced the logical corruption to be a series of valid MAPI operations. The [In-Place Hold](https://technet.microsoft.com/en-us/library/dd979797(v=exchg.150).aspx) features in Exchange Online provides protection from store logical corruption (because it prevents content from being permanently deleted by a user or an application). 
+- **Store logical corruption** - Data is added, deleted, or manipulated in a way that the user doesn't expect. These cases are generally caused by third-party applications. It's generally only corruption in the sense that the user views it as corruption. The Exchange store considers the transaction that produced the logical corruption to be a series of valid MAPI operations. The [In-Place Hold](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) features in Exchange Online provides protection from store logical corruption (because it prevents content from being permanently deleted by a user or an application). 
 
 Exchange Online performs several consistency checks on replicated log files during both log inspection and log replay. These consistency checks prevent physical corruption from being replicated by the system. For example, during log inspection, there is a physical integrity check which verifies the log file and validates that the checksum recorded in the log file matches the checksum generated in memory. In addition, the log file header is examined to make sure the log file signature recorded in the log header matches that of the log file. During log replay, the log file undergoes further scrutiny. For example, the database header also contains the log signature which is compared with the log file's signature to ensure they match. 
 
-Protection against corruption of mailbox data in Exchange Online is achieved by using Exchange Native Data Protection, a resiliency strategy that leverages application-level replication across multiple servers and multiple datacenters along with other features that help protect data from being lost due to corruption or other reasons. These features include native features that are managed by Microsoft or the Exchange Online application itself, such as: 
-- [Database availability groups](https://technet.microsoft.com/EN-US/library/dd979799(v=exchg.150).aspx) and [multiple database copies](https://technet.microsoft.com/EN-US/library/dd979802(v=exchg.150).aspx) 
-- [Lagged database copies](https://technet.microsoft.com/en-us/library/dd335158(v=exchg.150).aspx) 
-- Transport resiliency features, such as [Safety Net](https://technet.microsoft.com/en-us/library/jj657495(v=exchg.150).aspx) and [Shadow Redundancy](https://technet.microsoft.com/EN-US/library/dd351027(v=exchg.150).aspx) 
+Protection against corruption of mailbox data in Exchange Online is achieved by using Exchange Native Data Protection, a resiliency strategy that leverages application-level replication across multiple servers and multiple datacenters along with other features that help protect data from being lost due to corruption or other reasons. These features include native features that are managed by Microsoft or the Exchange Online application itself, such as:
+
+- [Data Availability Groups](https://docs.microsoft.com/exchange/back-up-email)
 - Single Bit Correction 
 - Online Database Scanning 
 - Lost Flush Detection 
@@ -36,14 +35,14 @@ Protection against corruption of mailbox data in Exchange Online is achieved by 
 - Deployment on Resilient File System 
 
 For more information on the native features listed above, click on the above hyperlinks, and see below for additional information and for details on items without hyperlinks. In addition to these native features, Exchange Online also includes data resiliency features that customers can manage, such as: 
-- [Single Item Recovery (enabled by default)](https://technet.microsoft.com/en-us/library/ff660637(v=exchg.150).aspx) 
-- [In-Place Hold and Litigation Hold](https://technet.microsoft.com/en-us/library/ff637980(v=exchg.150).aspx) 
-- [Deleted Item Retention and Soft-Deleted Mailboxes (both enabled by default)](https://technet.microsoft.com/en-us/library/dn186233(v=exchg.150).aspx) 
+- [Single Item Recovery (enabled by default)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) 
+- [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds) 
+- [Deleted Item Retention and Soft-Deleted Mailboxes (both enabled by default)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
 ## Database Availability Groups 
-Every mailbox database in Office 365 is hosted in a database availability group (DAG) and replicated to geographically-separate datacenters within the same region. The most common configuration is four database copies in four datacenters; however, some regions have fewer datacenters (databases are replicated to three datacenters in India, and two datacenters in Australia and Japan). But in all cases, every mailbox database has four copies that are distributed across multiple datacenters, thereby ensuring that mailbox data is protected from software, hardware, and even datacenter failures. 
+Every mailbox database in Office 365 is hosted in a [database availability group (DAG)](https://docs.microsoft.com/exchange/back-up-email) and replicated to geographically-separate datacenters within the same region. The most common configuration is four database copies in four datacenters; however, some regions have fewer datacenters (databases are replicated to three datacenters in India, and two datacenters in Australia and Japan). But in all cases, every mailbox database has four copies that are distributed across multiple datacenters, thereby ensuring that mailbox data is protected from software, hardware, and even datacenter failures. 
 
-Out of these four copies, three of them are configured as highly available. The fourth copy is configured as a [lagged database copy](https://technet.microsoft.com/en-us/library/dd335158(v=exchg.150).aspx). The lagged database copy is not intended for individual mailbox recovery or mailbox item recovery. Its purpose is to provide a recovery mechanism for the rare event of system-wide, catastrophic logical corruption. 
+Out of these four copies, three of them are configured as highly available. The fourth copy is configured as a [lagged database copy](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies). The lagged database copy is not intended for individual mailbox recovery or mailbox item recovery. Its purpose is to provide a recovery mechanism for the rare event of system-wide, catastrophic logical corruption. 
 
 Lagged database copies in Exchange Online are configured with a seven-day log file replay lag time. In addition, the Exchange Replay Lag Manager is enabled to provide dynamic log file play down for lagged copies to allow lagged database copies to self-repair and manage log file growth. Although lagged database copies are used in Exchange Online, it is important to understand that they are not a guaranteed point-in-time backup. Lagged database copies in Exchange Online have an availability threshold, typically around 90%, due to periods where the disk containing a lagged copy is lost due to disk failure, the lagged copy becoming a highly-available copy (due to automatic play down), as well as the periods where the lagged database copy is re-building the log replay queue. 
 
