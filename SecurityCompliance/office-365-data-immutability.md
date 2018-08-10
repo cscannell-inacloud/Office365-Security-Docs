@@ -3,7 +3,7 @@ title: "Office 365 Data Immutability"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,7 +11,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Defines and explains data immutability, or data that must be discoverable and cannot be destroyed or altered."
+description: "Defines and explains data immutability, or data that must be discoverable and cannot be destroyed or altered."
 ---
 
 # Immutability in Office 365
@@ -28,7 +28,7 @@ Through configuration of the in-place retention and preservation policy features
 - Documents shared during online meetings
 - Voicemails
 
-In addition, Microsoft has developed add-on features to allow [archiving of data](https://technet.microsoft.com/EN-US/library/mt621583.aspx) from other sources through integration with third-party data capturing and management solutions. After third-party data is imported, you can apply Office 365 compliance features to the data, including Litigation Hold, In-Place eDiscovery and Hold, Compliance Search, In-Place Archiving, Auditing, and Retention Policies. For example, when a mailbox is placed on Litigation Hold, third-party data will be preserved. You can search third-party data by using In-Place eDiscovery or Compliance Search. Or you can apply archiving and retention polices to third-party data just like you can for Microsoft data. In short, archiving third-party data in Office 365 can help your organization stay compliant with government and regulatory policies.
+In addition, Microsoft has developed add-on features to allow [archiving of data](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) from other sources through integration with third-party data capturing and management solutions. After third-party data is imported, you can apply Office 365 compliance features to the data, including Litigation Hold, In-Place eDiscovery and Hold, Compliance Search, In-Place Archiving, Auditing, and Retention Policies. For example, when a mailbox is placed on Litigation Hold, third-party data will be preserved. You can search third-party data by using In-Place eDiscovery or Compliance Search. Or you can apply archiving and retention polices to third-party data just like you can for Microsoft data. In short, archiving third-party data in Office 365 can help your organization stay compliant with government and regulatory policies.
 
 Archiving in Office 365 provides Securities and Exchange Commission (SEC) Rule 17a-4-compliant storage, and preserves permanent files of all data collected in a non-rewriteable, non-erasable format using in-place retention policies and preservation policies, including preservation lock. Specifically:
 - All records that are stored using the retention policies noted above are retained in a dedicated storage area out of the purview of the ordinary user. Furthermore, only authorized users can access and search these records, but cannot alter or erase them.

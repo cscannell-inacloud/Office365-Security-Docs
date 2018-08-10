@@ -3,7 +3,7 @@ title: "Office 365 Exchange Online Data Deletion"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,10 +11,10 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: How soft and hard data deletions are handled within Exchange Online."
+description: "How soft and hard data deletions are handled within Exchange Online."
 ---
 
-# Exchange Online Data Deletion
+# Exchange Online Data Deletion in Office 365
 Within Exchange Online, there are two kinds of deletions: soft deletions and hard deletions. This applies to both mailboxes and items within a mailbox.
 
 ## Soft-Deleted and Hard-Deleted Mailboxes
@@ -28,12 +28,12 @@ A hard-deleted user mailbox is a mailbox that has been deleted in one of the fol
 - The user account associated with the user mailbox has been hard-deleted from the Azure Active Directory. The user mailbox is now soft-deleted in Exchange Online and stays in a soft-deleted state for 30 days. If in the 30-day period a new Azure Active Directory user is synchronized from the original recipient account with the same **ExchangeGuid** or **ArchiveGuid**, and that new account is licensed for Exchange Online, this will result in a hard deletion of the original user mailbox. All mailbox content such as emails, contacts and files are permanently deleted.
 - A soft-deleted mailbox is deleted using **Remove-Mailbox -PermanentlyDelete**.
 
-The above deletion scenarios assume that the user mailbox isn't in any of the hold states, like Litigation hold or eDiscovery hold. If there is any type of hold on the mailbox, then the mailbox can't be deleted. For all mail-user recipient types, any [Hold](https://technet.microsoft.com/en-us/library/dn790612.aspx) settings are ignored and have no effect on hard-deletions or soft-deletions.
+The above deletion scenarios assume that the user mailbox isn't in any of the hold states, like Litigation hold or eDiscovery hold. If there is any type of hold on the mailbox, then the mailbox can't be deleted. For all mail-user recipient types, any [Hold](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) settings are ignored and have no effect on hard-deletions or soft-deletions.
 
 ## Soft-Deleted and Hard-Deleted Items
-When a user deletes a mailbox item (such as an email message, a contact, a calendar appointment, or a task), the item is moved to the Recoverable Items folder, and into a subfolder named Deletions. This is referred to as a soft deletion. How long deleted items are kept in the Deletions folder depends on the deleted item retention period that is set for the mailbox. An Exchange Online mailbox keeps deleted items for 14 days by default, but Exchange Online administrators can change this setting to increase the period up to a maximum of 30 days. (For detailed steps to increase the deleted item retention period for an Exchange Online mailbox, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](https://technet.microsoft.com/en-us/library/dn163584(v=exchg.150).aspx).) Users can recover, or purge, deleted items before the retention time for a deleted item expires. To do so, they use the Recover Deleted Items feature in Microsoft Outlook or Outlook on the web.
+When a user deletes a mailbox item (such as an email message, a contact, a calendar appointment, or a task), the item is moved to the Recoverable Items folder, and into a subfolder named Deletions. This is referred to as a soft deletion. How long deleted items are kept in the Deletions folder depends on the deleted item retention period that is set for the mailbox. An Exchange Online mailbox keeps deleted items for 14 days by default, but Exchange Online administrators can change this setting to increase the period up to a maximum of 30 days. (For detailed steps to increase the deleted item retention period for an Exchange Online mailbox, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).) Users can recover, or purge, deleted items before the retention time for a deleted item expires. To do so, they use the Recover Deleted Items feature in Microsoft Outlook or Outlook on the web.
 
-If a user purges a deleted item by using the Recover Deleted Items feature in Outlook or Outlook on the web, this is known as a hard deletion. In Exchange Online, single item recovery is enabled by default when a new mailbox is created, so an administrator can still [recover](https://technet.microsoft.com/en-us/library/ff660637(v=exchg.160).aspx) hard-deleted items before the deleted item retention period expires. Also, if a message is changed by a user or a process, copies of the original item are also retained when single item recovery is enabled.
+If a user purges a deleted item by using the Recover Deleted Items feature in Outlook or Outlook on the web, this is known as a hard deletion. In Exchange Online, single item recovery is enabled by default when a new mailbox is created, so an administrator can still [recover](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/recover-deleted-messages) hard-deleted items before the deleted item retention period expires. Also, if a message is changed by a user or a process, copies of the original item are also retained when single item recovery is enabled.
 
 ## Page Zeroing
 *Zeroing* is a security mechanism that writes either zeros or a binary pattern over deleted data so that the deleted data is more difficult to recover. In Exchange Online, mailbox databases use *pages* as their unit of storage, and implement an overwriting process called *page zeroing*. Page zeroing is enabled by default, and it cannot be disabled by customers or by Microsoft. Page zeroing operations are recorded in the transaction log files so that all copies of a given database are page-zeroed in a similar manner. Zeroing a page on an active database copy causes the page to get zeroed on passive copies of the database.
@@ -48,7 +48,6 @@ The following table lists the fill patterns that correspond to specific run-time
 | Record/long value delete | D            |
 | Freed page space         | H            |
 
-*Table 1 - Fill pattern of page zeroing during ESE run-time*
 
 The following table lists the fill patterns that correspond to specific operations that occur during ESE background database maintenance.
 
@@ -59,7 +58,6 @@ The following table lists the fill patterns that correspond to specific operatio
 | Freed page space of partially used page       | Z            |
 | Freed page space of unused page               | U            |
 
-*Table 2 - Fill pattern of page zeroing during ESE background database maintenance*
 
 ### Page Zeroing Process
 The process for page zeroing depends on the deletion scenario. The following table discusses database delete scenarios, and when page zeroing functions occur.
@@ -69,8 +67,6 @@ The process for page zeroing depends on the deletion scenario. The following tab
 | Item expires based on the deleted item retention period. | An asynchronous thread writes a binary pattern over the deleted data. This action occurs within milliseconds of the record deletion. If the Store process crashes while the asynchronous zeroing work is still outstanding (or version store cleanup is cancelled due to version store growth), the zeroing is completed when background database maintenance processes that section of the database. |
 | View Scenario: Expiration of items from Outlook/Outlook on the web folder view (for example, Conversation view) | Data zeroing occurs when background database maintenance processes that section of the database. |
 | Move Mailbox/Delete Mailbox Scenario: Source mailbox deleted (expiry of deleted mailbox) | Data zeroing occurs when background database maintenance processes that section of the database. |
-
-*Table 3 - Mailbox database deletion scenarios and page zeroing*
 
 ### Mailbox Data Types without Page Zeroing
 The following mailbox data types have no provisions for page zeroing:

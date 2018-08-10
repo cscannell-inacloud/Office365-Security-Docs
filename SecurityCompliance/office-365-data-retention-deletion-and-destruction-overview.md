@@ -3,7 +3,7 @@ title: "Office 365 Data Retention, Deletion, and Destruction Overview"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,32 +11,45 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: An overview of Microsoft's policies for Office 365 regarding data retention, deletion, and destruction."
+description: "An overview of Microsoft's policies for Office 365 regarding data retention, deletion, and destruction."
 ---
 
-# Data Retention, Deletion, and Destruction Overview
+# Office 365 Data Retention, Deletion, and Destruction Overview
 
 ## Introduction
 Microsoft has a Data Handling Standard policy for Office 365 that specifies how long customer data will be retained after being deleted. Generally, within Office 365, there are two scenarios in which customer data is deleted:
-1.	**Active Deletion** - A user deletes data, or data private to a user is deleted after that user is deleted by the administrator of an active tenant.
-2.	**Passive Deletion** - The tenant subscription ends.
+- **Active Deletion** - A user deletes data, or data private to a user is deleted after that user is deleted by the administrator of an active tenant.
+- **Passive Deletion** - The tenant subscription ends.
 
-Microsoft's Data Handling Standard policy for Office 365 specifies how long data will be retained in each of these scenarios. The following table describes the categories of data (based on Microsoft's Office 365 Asset Classification Standard) and the retention periods for active and passive deletion scenarios.
+Microsoft's Data Handling Standard policy for Office 365 specifies how long data will be retained in each of these scenarios. The following sections describe the categories of data (based on Microsoft's Office 365 Asset Classification Standard) and the retention periods for active and passive deletion scenarios.
 
-| Data Category | Retention |  |  |  |
+## Active Deletion Retention
+
+| Data Category | Retain at Least | Retain at Most |
 |---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-|  | Active Deletion |  | Passive Deletion |  |
-|  | Retain at Least | Retain at Most | Retain at Least | Retain at Most |
-| Access Control Data | N/A | N/A | 90 days (for content recovery) | 180 days (for content recovery) |
-| Customer Content | 7 days | 30 days | 90 days (limited-function account) | 180 days |
-| End User Identifiable Information | 90 days | 180 days | 90 days | 180 days |
-| Account Data | 1 year | 3 years | 1 year | 3 years |
-| Organization Identifiable Information | 90 days | 180 days | 90 days | 180 days |
-| System Metadata | See Security Logs | See Security Logs | See Security Logs | See Security Logs |
-| Security Logs | Min 1 year | Max 1 year | Min 1 year | Max 1 year |
-| Exchange Online Archiving Logs | Min 3 years | Max 3 years | Min 3 years | Max 3 years |
+| Access Control Data | N/A | N/A |
+| Customer Content | 7 days | 30 days |
+| End User Identifiable Information | 90 days | 180 days |
+| Account Data | 1 year | 3 years |
+| Organization Identifiable Information | 90 days | 180 days |
+| System Metadata | See Security Logs | See Security Logs |
+| Security Logs | Min 1 year | Max 1 year |
+| Exchange Online Archiving Logs | Min 3 years | Max 3 years |
 
-*Table 1 – Office 365 data retention for active and passive deletions*
+## Passive Deletion Retention
+
+| Data Category | Retain at Least | Retain at Most |
+|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
+| Access Control Data | 90 days (for content recovery) | 180 days (for content recovery) |
+| Customer Content | 90 days (limited-function account) | 180 days |
+| End User Identifiable Information | 90 days | 180 days |
+| Account Data | 1 year | 3 years |
+| Organization Identifiable Information | 90 days | 180 days |
+| System Metadata | See Security Logs | See Security Logs |
+| Security Logs | Min 1 year | Max 1 year |
+| Exchange Online Archiving Logs | Min 3 years | Max 3 years |
+
+## Subscription Rentention
 
 Customer content is defined as Exchange Online mailbox content (email body, calendar entries, and the content of email attachments, and if applicable, Skype for Business content), SharePoint Online site content and the files stored within sites, and files uploaded to OneDrive for Business or Skype for Business.
 
