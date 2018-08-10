@@ -3,7 +3,7 @@ title: "Office 365 Defending Cloud Services Against Denial-of-Service Attacks"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,10 +11,11 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: How Microsoft defends its cloud services against denial-of-service (DoS) attacks."
+description: "How Microsoft defends its cloud services against denial-of-service (DoS) attacks."
 ---
 
 # Defending Microsoft Cloud Services Against Denial-of-Service Attacks
+
 ## Introduction
 Microsoft datacenters are protected by defense-in-depth security that includes perimeter fencing, video cameras, security personnel, and secure entrances that use biometrics, smartcard, and multi-factor authentication. The defense-in-depth security continues through every area of the facility and to each physical server unit. The [Microsoft Cloud Infrastructure and Operations Group](https://www.microsoft.com/en-us/cloud-platform/global-datacenters) delivers the core infrastructure and foundational technologies for our cloud services. Our datacenters comply with industry standards for physical security and reliability and are managed, monitored, and administered by Microsoft operations personnel.
 
@@ -22,7 +23,7 @@ To further protect our cloud services, Microsoft provides a DDoS defense system 
 
 Microsoft's cloud services are subject to the threat of attack from multiple sources. To mitigate and protect against the various DoS threats, a highly-scalable and dynamic Azure-based threat detection and mitigation system has been developed and implemented with the primary objective of protecting the underlying infrastructure from DoS attacks and helping to prevent service interruptions for cloud services customers. The Azure DoS mitigation system protects inbound, outbound, and region-to-region traffic.
 
-Most DoS attacks launched against targets at the Network (L3) and Transport (L4) layers of the [Open Systems Interconnection](https://support.microsoft.com/en-us/help/103884/the-osi-model-s-seven-layers-defined-and-functions-explained) (OSI) model. Attacks directed at the L3 and L4 layers are designed to flood a network interface or service with attack traffic to overwhelm resources and deny the ability to respond to legitimate traffic. Specifically, L3 and L4 attacks attempt to either saturate the capacity of network links, devices, or services or overwhelm the CPUs of servers or virtual machines supporting an application.
+Most DoS attacks launched against targets at the Network (L3) and Transport (L4) layers of the [Open Systems Interconnection](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) (OSI) model. Attacks directed at the L3 and L4 layers are designed to flood a network interface or service with attack traffic to overwhelm resources and deny the ability to respond to legitimate traffic. Specifically, L3 and L4 attacks attempt to either saturate the capacity of network links, devices, or services or overwhelm the CPUs of servers or virtual machines supporting an application.
 
 To guard against L3 and L4 attacks Microsoft has designed, developed, and deployed a solution aimed specifically at safeguarding the infrastructure and customer targets that come under attack by protecting these layers. Protecting the infrastructure ensures that attack traffic intended for one customer does not result in collateral damage or diminished network quality of service for other customers. The solution uses traffic sampling data from datacenter routers. This data is analyzed by a network monitoring service to detect attacks. When an attack is detected, automated defense mechanisms kick in.
 
@@ -44,4 +45,4 @@ If the offending process continues to exceed usage limits, SharePoint Online may
 ## Vulnerability and Penetration Testing
 Microsoft uses many [security technologies and practices](https://www.microsoft.com/en-us/trustcenter/security/threatmanagement) to [protect its cloud infrastructure](https://blogs.technet.microsoft.com/hybridcloud/2015/05/05/protecting-your-datacenter-and-cloud-from-emerging-threats/) and on-premises networks against modern, sophisticated threats, including using antimalware components and services for cloud services, virtual machines (VMs), and other systems; Advanced Threat Analytics, which monitors normal usage patterns for networks, systems, and users, and employs machine learning to flag any behavior that is out of the ordinary, and regular penetration testing.
 
-In addition to performing our own penetration tests and offering to our customers a [Microsoft Cloud Unified Penetration Testing program](https://technet.microsoft.com/en-us/mt784683), we also engage with third-party security professionals who perform regular vulnerability assessments of and penetration testing against our cloud services. We make the reports from these third-party vulnerability assessments available for download from the [Service Trust Preview](https://aka.ms/STP) and the [Service Assurance](https://aka.ms/ServiceAssurance) portals.
+In addition to performing our own penetration tests and offering to our customers a [Microsoft Cloud Unified Penetration Testing program](https://technet.microsoft.com/en-us/mt784683), we also engage with third-party security professionals who perform regular vulnerability assessments of and penetration testing against our cloud services. We make the reports from these third-party vulnerability assessments available for download from the [Service Trust](https://aka.ms/STP) and the [Service Assurance](https://aka.ms/ServiceAssurance) portals.

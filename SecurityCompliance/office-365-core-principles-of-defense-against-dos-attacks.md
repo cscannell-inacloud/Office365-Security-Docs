@@ -3,7 +3,7 @@ title: "Office 365 Core Principles of Defense Against Denial-of-Service Attacks"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,7 +11,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: How Microsoft utilizes the core principles of absorption, detection, and mitigation in its defense against denial-of-service (DoS) attacks."
+description: "How Microsoft utilizes the core principles of absorption, detection, and mitigation in its defense against denial-of-service (DoS) attacks."
 ---
 
 # Core Principles of Defense Against Denial-of-Service Attacks
@@ -30,7 +30,7 @@ The following formula will help approximate the time to impact of a DoS attack:
    **Maximum Capacity / (Maximum Capacity X Growth Rate) = Time to Impact**
 
 If the time-to-detection occurs after time-to-impact, then it is likely the DoS attack will be successful. If the time-to-detection occurs before time-to-impact, then the services being attacked should remain online and accessible, if mitigation strategies are used. Thus, there are only two things that can be done to defend against DoS attacks:
-1.	Increase capacity to raise the ceiling of maximum capacity (which in turn provides more time to detect an attack); or
-2.	Decrease the time to detect.
+- Increase capacity to raise the ceiling of maximum capacity (which in turn provides more time to detect an attack); or
+- Decrease the time to detect.
 
 Increasing capacity has a direct fiscal impact. Microsoft recommends that customers develop at least basic absorption capacity, to ensure that they can survive some level of DoS attack. The actual absorption capacity will vary from customer to customer, as each customer has their own thresholds for exposure, risk, and financial outlay. Ultimately, for economic reasons, investments of research and time in ways to decrease time-to-detection are usually the most cost-effective defense.
