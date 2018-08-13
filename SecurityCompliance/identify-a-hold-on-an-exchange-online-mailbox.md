@@ -151,10 +151,12 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 After you identify the holds that are applied to a mailbox, you can perform tasks such as changing the duration of the hold, temporarily or permanently removing the hold, or in the case of Office 365 retention policies, excluding an inactive mailbox from the policy. For more information about performing tasks related to holds, see the one of the following topics:
 
+- Run the [Set-RetentionCompliancePolicy -AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps) command in Security & Compliance Center PowerShell to exclude a mailbox from an Office 365 retention policy. 
+
+- Run the [Set-Mailbox -ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) command in Exchange Online PowerShell to exclude an inactive mailbox from an organization-wide Office 365 retention policy.
+
 - [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
 
 - [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md)
 
 - [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
-
-- Run the [Set-Mailbox -ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) command to exclude an inactive mailbox from organization-wide Office 365 retention policies
