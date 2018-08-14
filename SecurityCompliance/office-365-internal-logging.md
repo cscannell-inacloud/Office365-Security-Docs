@@ -3,7 +3,7 @@ title: "Office 365 Internal Logging for Office 365 Engineering"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,7 +11,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: An explanation of how internal logging for Office 365 Engineering teams works."
+description: "An explanation of how internal logging for Office 365 Engineering teams works."
 ---
 
 # Internal Logging for Office 365 Engineering
