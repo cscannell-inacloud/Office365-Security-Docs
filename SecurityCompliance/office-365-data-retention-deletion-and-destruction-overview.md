@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Data Retention, Deletion, and Destruction Overview"
+title: "Data Retention, Deletion, and Destruction in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection: Strat_O365_Enterprise
 description: "An overview of Microsoft's policies for Office 365 regarding data retention, deletion, and destruction."
 ---
 
-# Office 365 Data Retention, Deletion, and Destruction Overview
+# Data Retention, Deletion, and Destruction in Office 365
 
 ## Introduction
 Microsoft has a Data Handling Standard policy for Office 365 that specifies how long customer data will be retained after being deleted. Generally, within Office 365, there are two scenarios in which customer data is deleted:

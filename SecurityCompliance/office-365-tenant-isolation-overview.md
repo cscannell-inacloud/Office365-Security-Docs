@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Tenant Isolation in Microsoft Office 365"
+title: "Tenant Isolation in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -11,10 +11,10 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: A summary of how Microsoft enforces tenant isolation for Office 365."
+description: "A summary of how Microsoft enforces tenant isolation for Office 365."
 ---
 
-# Tenant Isolation in Microsoft Office 365
+# Tenant Isolation in Office 365
 
 One of the primary benefits of cloud computing is concept of a shared, common infrastructure across numerous customers simultaneously, leading to economies of scale. This concept is called *multi-tenancy*. Microsoft works continuously to ensure that the multi-tenant architectures of our cloud services support enterprise-level security, confidentiality, privacy, integrity, and availability standards.
 
