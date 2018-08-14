@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Administrative Access Controls Overview"
+title: "Administrative Access Controls in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection: Strat_O365_Enterprise
 description: "Summary: An overview of Office 365's Administrative Access Controls and data categorization."
 ---
 
-# Office 365 Administrative Access Controls Overview 
+# Administrative Access Controls in Office 365 
 
 ## Introduction
 Microsoft has invested heavily and accordingly in systems and controls that automate most Office 365 operations while intentionally limiting Microsoft's access to customer content. Humans govern the service, and software operates the service. This enables Microsoft to manage Office 365 at scale, as well as manage the risks of internal threats to customer content such as malicious actors, the spear-phishing of a Microsoft engineer, and so forth.

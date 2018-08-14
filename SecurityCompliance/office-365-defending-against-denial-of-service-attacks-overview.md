@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Defending Against Denial-of-Service Attacks Overview"
+title: "Defending Against Denial-of-Service Attacks in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection: Strat_O365_Enterprise
 description: "An overview of Denial-of-Service (DoS) attacks."
 ---
 
-# Defending Against Denial-of-Service Attacks Overview
+# Defending Against Denial-of-Service Attacks in Office 365
 
 ## Introduction
 Microsoft delivers a trustworthy infrastructure for more than 200 cloud services, including Microsoft Azure, Microsoft Bing, Microsoft Office 365, Microsoft Dynamics 365, Microsoft OneDrive, Skype, and Xbox Live that are hosted in our global cloud infrastructure of more than 100 datacenters.

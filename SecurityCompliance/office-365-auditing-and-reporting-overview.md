@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Auditing and Reporting Overview"
+title: "Auditing and Reporting in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection: Strat_O365_Enterprise
 description: "An overview of auditing and reporting features within Office 365, as well as Service Assurance."
 ---
 
-# Office 365 Auditing and Reporting Overview 
+# Auditing and Reporting in Office 365
 
 ## Introduction
 Microsoft cloud services includes several auditing and reporting features that customers can use to track user and administrative activity within their tenant, such as changes made to their Exchange Online and SharePoint Online tenant configuration settings, and changes made by users to documents and other items. Customers can use the audit information and reports available in our cloud services to more effectively manage the user experience, mitigate risk, and fulfill compliance obligations.
