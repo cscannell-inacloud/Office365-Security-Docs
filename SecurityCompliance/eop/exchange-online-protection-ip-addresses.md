@@ -23,8 +23,6 @@ The following Microsoft data center IP addresses are used by Microsoft Exchange 
  
 ## EOP IP address ranges
 
-The following is the complete list of EOP IP address ranges as of **7/2/2018**. 
-
 ||||
 |:-----|:-----|:-----|
 |**IPv4 address ranges** <br/> |**IPv6 address ranges** <br/> |
