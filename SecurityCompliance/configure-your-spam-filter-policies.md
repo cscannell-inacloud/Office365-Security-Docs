@@ -41,7 +41,7 @@ For information about keyboard shortcuts that may apply to the procedures in thi
     
   - Double-click the default policy in order to edit this company-wide policy.
     
-  - Click the ![Add Icon](media/ITPro-EAC-AddIcon.png) **New** icon in order to create a new custom spam-filter policy that can be applied to users, groups, and domains in your organization. You can also edit existing custom policies by double-clicking them. 
+  - Click the ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New** icon in order to create a new custom spam-filter policy that can be applied to users, groups, and domains in your organization. You can also edit existing custom policies by double-clicking them. 
     
 3. For custom policies only, specify a name for this policy. Optionally, you can also specify a more detailed description. You cannot rename the default policy.
     
@@ -83,27 +83,27 @@ For information about keyboard shortcuts that may apply to the procedures in thi
     
 6. On the **Block Lists** page, you can specify entries, such as senders or domains, that will always be marked as spam. The service will apply the configured high confidence spam action on email that matches these entries. 
     
-  - Add unwanted senders to the Sender block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png), and then in the selection dialog box, add the sender addresses you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
+  - Add unwanted senders to the Sender block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
     
-  - Add unwanted domains to the Domain block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
+  - Add unwanted domains to the Domain block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
     
     > [!CAUTION]
     > If you block top-level domains, it's likely that email you want will be marked as spam. 
   
 7. On the **Allow Lists** page, you can specify entries, such as senders or domains, that will always be delivered to the inbox. Email from these entries is not processed by the spam filter. 
     
-  - Add trusted senders to the Sender allow list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png), and then in the selection dialog box, add the sender addresses you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click ok to return to the **Allow Lists** page. 
+  - Add trusted senders to the Sender allow list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click ok to return to the **Allow Lists** page. 
     
-  - Add trusted domains to the Domain allow list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png), and then in the selection dialog box, add the domains you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click ok to return to the **Allow Lists** page. 
+  - Add trusted domains to the Domain allow list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click ok to return to the **Allow Lists** page. 
     
     > [!CAUTION]
     > If you allow top-level domains, it's likely that email you don't want will be delivered to an inbox. 
   
 8. On the **International Spam** page you can filter email messages that are written in specific languages or sent from specific countries or regions. You can configure up to 86 different languages and 250 different regions. The service will apply the configured action for high-confidence spam. 
     
-1. Select the **Filter email messages written in the following languages** check box to enable this functionality. Click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then, in the selection dialog box, make your choices (multi-selection is supported). For example, if you select to filter messages written in Arabic (AR), and **Quarantine message** is your configured action for high confidence spam messages, any messages written in Arabic will be quarantined. Click **ok** to return to the **International Spam** pane. 
+1. Select the **Filter email messages written in the following languages** check box to enable this functionality. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then, in the selection dialog box, make your choices (multi-selection is supported). For example, if you select to filter messages written in Arabic (AR), and **Quarantine message** is your configured action for high confidence spam messages, any messages written in Arabic will be quarantined. Click **ok** to return to the **International Spam** pane. 
     
-2. Select the **Filter email messages sent from the following countries or regions** check box to enable this functionality. Click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then, in the selection dialog box, make your choices (multi-selection is supported). For example, if you select to filter all messages that are sent from Australia (AU), and **Quarantine message** is your configured action for high-confidence spam messages, then any messages that is sent from Australia will be quarantined. Click **ok** to return to the **International Spam** pane. 
+2. Select the **Filter email messages sent from the following countries or regions** check box to enable this functionality. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then, in the selection dialog box, make your choices (multi-selection is supported). For example, if you select to filter all messages that are sent from Australia (AU), and **Quarantine message** is your configured action for high-confidence spam messages, then any messages that is sent from Australia will be quarantined. Click **ok** to return to the **International Spam** pane. 
     
     > [!NOTE]
     > By default, if no international spam options are selected, the service performs normal spam filtering on messages sent in all languages and from all regions. Messages are analyzed and the configured actions are applied if the message is determined to be spam or high confidence spam. 

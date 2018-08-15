@@ -36,7 +36,7 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**, click the role group that you want to add the user or users to, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png).
     
-2. Under Members, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.png). The Select Members window will appear.
+2. Under Members, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.gif). The Select Members window will appear.
     
 3. Search for the user or users that you wish to add, or select them from the list.
     

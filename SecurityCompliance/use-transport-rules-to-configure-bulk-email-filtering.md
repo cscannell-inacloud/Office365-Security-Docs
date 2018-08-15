@@ -31,7 +31,7 @@ If you want to more options to filter bulk messages, you can create Exchange Tra
 
 1. In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.
     
-2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     
@@ -86,7 +86,7 @@ If you want to more options to filter bulk messages, you can create Exchange Tra
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
     
-2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     

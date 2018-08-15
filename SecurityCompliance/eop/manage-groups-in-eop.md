@@ -47,7 +47,7 @@ You can create two types of groups for your Exchange organization:
 
 1. In the Exchange admin center (EAC), go to **Recipients** \> **Groups**.
     
-2. Click **New**![Add Icon](../media/ITPro-EAC-AddIcon.png), and then click **Distribution group** or **Security group**, depending on your needs. See [Types of mail-enabled groups](manage-groups-in-eop.md) for the distinction. 
+2. Click **New**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs. See [Types of mail-enabled groups](manage-groups-in-eop.md) for the distinction. 
     
 3. On the **New distribution group** or **New security group** page, complete the following fields: 
     
@@ -57,12 +57,12 @@ You can create two types of groups for your Exchange organization:
     
   - **Description** Type a description of the group so that people will know the purpose of the group. 
     
-  - **Owners** By default, the person who creates the group is the owner. You can add an owner by choosing **Add**![Add Icon](../media/ITPro-EAC-AddIcon.png). All groups must have at least one owner.
+  - **Owners** By default, the person who creates the group is the owner. You can add an owner by choosing **Add**![Add Icon](../media/ITPro-EAC-AddIcon.gif). All groups must have at least one owner.
     
     > [!NOTE]
     > Owners don't have to be members of the group. 
   
-  - **Members** Use this section to add group members and to specify whether approval is required for people to join or leave the group. To add members to the group, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.png).
+  - **Members** Use this section to add group members and to specify whether approval is required for people to join or leave the group. To add members to the group, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.gif).
     
 4. Click **OK** to return to the original page. 
     

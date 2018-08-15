@@ -61,7 +61,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
   
 |**Icon**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Add Icon](media/ITPro-EAC-AddIcon.png)           <br/> |Add, New  <br/> |Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> |
+|![Add Icon](media/ITPro-EAC-AddIcon.gif)           <br/> |Add, New  <br/> |Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> |
 |![Edit icon](media/ITPro-EAC-EditIcon.png)           <br/> |Edit  <br/> |Use this icon to edit an object.  <br/> |
 |![Delete icon](media/ITPro-EAC-DeleteIcon.png)           <br/> |Delete  <br/> |Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.  <br/> |
 |![Search icon](media/ITPro-EAC-.png)           <br/> |Search  <br/> |Use this icon to open a search box in which you can type the search phrase for an object you want to find.  <br/> |
