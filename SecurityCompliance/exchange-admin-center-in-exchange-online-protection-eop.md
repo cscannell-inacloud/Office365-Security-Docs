@@ -67,7 +67,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Search icon](media/ITPro-EAC-.png)           <br/> |Search  <br/> |Use this icon to open a search box in which you can type the search phrase for an object you want to find.  <br/> |
 |![Refresh Icon](media/ITPro-EAC-RefreshIcon.png)           <br/> |Refresh  <br/> |Use this icon to refresh the list view.  <br/> |
 |![More Options Icon](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |More options  <br/> |Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.  <br/> |
-|![Up Arrow Icon](media/ITPro-EAC-UpArrowIcon.png)![Down Arrow Icon](media/ITPro-EAC-DownArrowIcon.png)           <br/> |Up arrow and down arrow  <br/> |Use these icons to move an object's priority up or down.  <br/> |
+|![Up Arrow Icon](media/ITPro-EAC-UpArrowIcon.png)![Down Arrow Icon](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Up arrow and down arrow  <br/> |Use these icons to move an object's priority up or down.  <br/> |
 |![Remove icon](media/ITPro-EAC-RemoveIcon.png)           <br/> |Remove  <br/> |Use this icon to remove objects from a list.  <br/> |
    
 ### List View

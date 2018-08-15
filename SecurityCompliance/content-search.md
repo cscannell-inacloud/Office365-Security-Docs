@@ -94,7 +94,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**. 
   
-To clear the results or create a new search, click ![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif) **New search**. 
+To clear the results or create a new search, click ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
 
   
 ## Preview search results
