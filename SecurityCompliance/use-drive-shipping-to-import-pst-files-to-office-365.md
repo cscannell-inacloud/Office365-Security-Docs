@@ -114,7 +114,7 @@ The first step is to download the secure storage key and the tool and that you w
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Security &amp; Compliance Center. 
   
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
 4. In the import job wizard, type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
     
@@ -241,7 +241,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
 2. In the left pane of the Security &amp; Compliance Center, click **Data governance** and then click **Import**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Security &amp; Compliance Center. 
@@ -276,7 +276,7 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 10. After adding and validating a journal file for each hard drive that you'll ship to Microsoft, click **Next**.
     
-11. Click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Select mapping file** to submit the PST Import mapping file that you created in Step 3. 
+11. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Select mapping file** to submit the PST Import mapping file that you created in Step 3. 
     
     ![Click Select mapping file to submit the CSV file you created for the import job](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
@@ -395,7 +395,7 @@ To install the Azure Storage Explorer and connect to your Azure storage area:
     
 2. In the left pane of the Security &amp; Compliance Center, click **Data governance** \> **Import**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
 4. In the import job wizard, type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
     

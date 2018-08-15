@@ -78,11 +78,11 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     
 3. In the Security &amp; Compliance Center, click **Permissions**, and then do one of the following based on the eDiscovery permissions that you want to assign.
     
-    - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members**, click **Edit**. Click **Choose members**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**, select the user that you want to add to the Reviewer role group, and then click **Add**.
+    - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members**, click **Edit**. Click **Choose members**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add to the Reviewer role group, and then click **Add**.
     
-    - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
+    - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
     
-    - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
+    - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
 4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
 
@@ -94,7 +94,7 @@ The next step is to create a new eDiscovery case. You must be a member of the eD
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery**, and then click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Create a case**.
+3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create a case**.
     
 4. On the **New Case** page, give the case a name, type an optional description, and then click **Save**. Note that the case name must be unique in your organization.
     
@@ -117,9 +117,9 @@ After you create a new case, the next step is to add members to the case. As pre
     
     ![Manage a case flyout page](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. Under **Manage members**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add** to add members to the case. 
+3. Under **Manage members**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
     
-    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**.
+    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**.
     
 4. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people or role groups that you want to add.
     
@@ -155,7 +155,7 @@ To create a hold for an eDiscovery case:
     
     ![Click the Hold tab](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. On the **Hold** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Create**.
+4. On the **Hold** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create**.
     
 5. On the **Name your hold** page, give the hold a name. The name of the hold must be unique in your organization. 
     
@@ -192,7 +192,7 @@ To create a hold for an eDiscovery case:
     
        a. In the box under **Keywords**, type a search query in the box so that only the content that meets the search criteria is placed on hold. You can specify keywords, message properties, or document properties, such as file names. You can also use more complex queries that use a Boolean operator, such as **AND**, **OR**, or **NOT**. If you leave the keyword box empty, then all content located in the specified content locations will be placed on hold.
     
-    b. Click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
+    b. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
 
     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -231,7 +231,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     ![Search tab](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. On the **Search** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New search**. 
+4. On the **Search** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New search**. 
     
 5. On the **New search** page, you can add keywords and conditions to create the search query. 
     

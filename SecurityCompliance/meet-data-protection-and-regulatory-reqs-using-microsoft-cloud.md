@@ -522,7 +522,7 @@ To view your action items:
 
 To add an Assessment to Compliance Manager:
   
-1. In the Compliance Manager dashboard, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add Assessment**. 
+1. In the Compliance Manager dashboard, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add Assessment**. 
     
 2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
     

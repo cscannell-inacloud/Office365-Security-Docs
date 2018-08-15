@@ -80,11 +80,11 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     
 3. In the Security &amp; Compliance Center, click **Permissions**, and then do one of the following based on the eDiscovery permissions that you want to assign.
     
-  - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members** click **Edit**. Click **Choose members**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add** select the user that you want to add to the Reviewer role group, and then click **Add**.
+  - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members** click **Edit**. Click **Choose members**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add** select the user that you want to add to the Reviewer role group, and then click **Add**.
     
-  - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
+  - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
     
-  - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
+  - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
 4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
     
@@ -99,7 +99,7 @@ The next step is to create a new eDiscovery case. You must be a member of the eD
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery**, and then click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Create a case**.
+3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create a case**.
     
 4. On the **New Case** page, give the case a name, type an optional description, and then click **Save**. Note that the case name must be unique in your organization.
     
@@ -125,7 +125,7 @@ After you create a new case, the next step is to add members to the case. As pre
     
     ![Click the case name to display the Manage this case page](media/2364dc08-a3dc-4724-acf4-7a68c8588e6f.png)
   
-3. Under **Manage members**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add** to add members to the case. 
+3. Under **Manage members**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
     
 4. In the list of people who can be added as a member of the case, click the checkbox next to the name of the people you want to add to the case.
     
@@ -164,7 +164,7 @@ To create a hold for an eDiscovery case:
     
     ![Click Hold to display the case holds page.](media/25c0300a-bd33-4443-a121-d595b1a3e00f.png)
   
-4. On the **Hold** page, click **New**![Add Icon](media/ITPro_EAC_AddIcon.gif).
+4. On the **Hold** page, click **New**![Add Icon](media/ITPro-EAC-AddIcon.gif).
     
 5. On the **Create a new hold** page, give the hold a name. The name of the hold must be unique in your organization. 
     
@@ -172,12 +172,12 @@ To create a hold for an eDiscovery case:
     
     ![Choose the content locations to place on hold](media/a00c952c-f91f-4708-b5a4-6213e4c413c7.png)
   
-1. **Mailboxes** Click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for an Office 365 Group or a Microsoft Team. 
+1. **Mailboxes** Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for an Office 365 Group or a Microsoft Team. 
     
     > [!NOTE]
-    > When you click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif). 
+    > When you click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif). 
   
-2. **Sites** Click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for an Office 365 Group or a Microsoft Team. 
+2. **Sites** Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for an Office 365 Group or a Microsoft Team. 
     
 <<<<<<< HEAD
     See the [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1) section for tips on putting Office 365 Groups and Microsoft Teams on hold. 
@@ -237,7 +237,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     ![On the Home page of the case, click Search](media/bd358eb3-12d4-4f0c-8317-d192286813d0.png)
   
-4. On the **Search** page, click **New**![Add Icon](media/ITPro_EAC_AddIcon.gif).
+4. On the **Search** page, click **New**![Add Icon](media/ITPro-EAC-AddIcon.gif).
     
 5. On the **New search** page, type a name for the search. Content Searches associated with a case must have names that are unique within your Office 365 organization. 
     
@@ -259,13 +259,13 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     Keep these things in mind when adding content locations to search:
     
-  - When you click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
+  - When you click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
     
   - You can add inactive mailboxes, Office 365 Groups, Microsoft Teams, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Office 365 Groups or Microsoft Teams, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
     
   - If you don't want to include any mailboxes or sites in a search, select **Choose specific mailboxes to search** or **Choose specific sites to search**, but don't add mailboxes or sites to the list.
     
-  - To add sites click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for Office 365 Groups and Microsoft Teams. 
+  - To add sites click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for Office 365 Groups and Microsoft Teams. 
     
 7. After you selected the content locations to search, click **Next**.
     

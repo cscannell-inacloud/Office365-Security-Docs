@@ -97,7 +97,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
     **Mailboxes**
     
-  - When you click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
+  - When you click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
     
   - You can add inactive mailboxes and distribution groups to the list of mailboxes to search. For distribution groups, the mailboxes of group members are searched. Note that dynamic distribution groups aren't supported.
     
@@ -109,7 +109,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
     **Sites**
     
-  - Click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to add sites to the search. Type the URL for each site that you want to search. The Content Search tool will validate the URL, and then add it to the list of sites to search. 
+  - Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to add sites to the search. Type the URL for each site that you want to search. The Content Search tool will validate the URL, and then add it to the list of sites to search. 
     
   - You can add the SharePoint that's associated with an Office 365 Group or a Microsoft Team. See the  section for guidance about how to find the URL for group or team. 
     

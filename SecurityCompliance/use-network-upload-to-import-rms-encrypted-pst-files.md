@@ -224,7 +224,7 @@ Now that you've configured Azure RMS and obtained the IDs necessary to encrypt P
     
 4. On the **Import** page, click **Go to the Import service**.
     
-5. On the **Import data to Office 365** page, click **New job** ![Add Icon](media/ITPro_EAC_AddIcon.gif), and then click **Upload email messages (PST files)**.
+5. On the **Import data to Office 365** page, click **New job** ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then click **Upload email messages (PST files)**.
     
 6. On the **Upload files over the network** page, in step 2, click **Show network upload SAS URL**.
     
@@ -380,13 +380,13 @@ The last step is to create the PST Import job in the Import service in Office 36
     
 4. On the **Import** page, click **Go to the Import service**.
     
-5. On the **Import data to Office 365** page, click **New job**![Add Icon](media/ITPro_EAC_AddIcon.gif), and then click **Upload email messages (PST files)**.
+5. On the **Import data to Office 365** page, click **New job**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then click **Upload email messages (PST files)**.
     
 6. On the **Upload files over the network** page, click the **I'm done uploading my files** and **I have access to the mapping file** check boxes, and then click **Next**. 
     
 7. Type a name for the PST Import job, and then click **Next**.
     
-8. Click **Add** ![Add Icon](media/ITPro_EAC_AddIcon.gif) to select the PST Mapping file that you created in Step 7. 
+8. Click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif) to select the PST Mapping file that you created in Step 7. 
     
 9. After the name of the CSV file appears in the list, select it and then click **Validate** to check your CSV file for errors. 
     

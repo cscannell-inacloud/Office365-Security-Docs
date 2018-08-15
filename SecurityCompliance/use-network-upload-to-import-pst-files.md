@@ -88,7 +88,7 @@ The first step is to download and install the Azure AzCopy tool, which is the to
     
     **Note:** You have to be assigned the appropriate permissions to access the **Import** page in the Security &amp; Compliance Center. See the **Before you begin** section for more information. 
     
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     The import job wizard is displayed.
     
@@ -228,7 +228,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
 2. In the left pane of the Security &amp; Compliance Center, click **Data governance** and then click **Import**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     **Note:** You have to be assigned the appropriate permissions to access the **Import** page in the Security &amp; Compliance Center to create a new import job. See the **Before you begin** section for more information. 
     
