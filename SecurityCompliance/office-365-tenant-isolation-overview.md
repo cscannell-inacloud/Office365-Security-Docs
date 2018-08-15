@@ -39,4 +39,4 @@ Together, the above-listed protections provide robust logical isolation controls
 - [Tenant Isolation in Office 365 Video](office-365-isolation-in-office-365-video.md)
 - [Resource Limits](office-365-resource-limits.md)
 - [Monitoring and Testing Tenant Boundaries](office-365-monitoring-and-testing.md)
-- [Isolation and Access Control in Office 365](ffice-365-isolation-in-office-365.md)
+- [Isolation and Access Control in Office 365](office-365-isolation-in-office-365.md)
