@@ -19,11 +19,18 @@ description: "The Office 365 audit log is a unified audit log. Why a unified aud
 
 The Office 365 audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services: 
   
-|||
-|:-----|:-----|
-| SharePoint  <br/>  Exchange  <br/>  Sway  <br/>  Microsoft Teams  <br/>  eDiscovery  <br/> | OneDrive  <br/>  Azure Active Directory  <br/>  Power BI  <br/>  Yammer  <br/>  Microsoft Stream  <br/> |
+- SharePoint
+- OneDrive
+- Exchange
+- Azure Active Directory
+- Microsoft Teams
+- eDiscovery
+- Power BI
+- Yammer
+- Sway
+- Microsoft Stream
    
- **Set up auditing**
+ ## Set up auditing
   
 There's few things you have to do before you can search the Office 365 audit log.
   
@@ -31,7 +38,7 @@ There's few things you have to do before you can search the Office 365 audit log
     
 - [Enable mailbox auditing](enable-mailbox-auditing.md) so you can search for mailbox-related events; such as when a user signs in to their mailbox or purges items from their Recoverable Items folder 
     
- **Search the audit log**
+ ## Search the audit log
   
 After you turn on auditing, you search for hundreds of individual types of events from multiple Office 365 services.
   
@@ -40,5 +47,3 @@ After you turn on auditing, you search for hundreds of individual types of event
 - [Understand the detailed properties](detailed-properties-in-the-office-365-audit-log.md) in each auditing record included in the search results 
     
 - [Search for eDiscovery-related activities](search-for-ediscovery-activities-in-the-audit-log.md) performed by admins and compliance managers 
-    
-

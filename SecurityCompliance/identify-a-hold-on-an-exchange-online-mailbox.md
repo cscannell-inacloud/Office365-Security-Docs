@@ -65,8 +65,8 @@ The following table describes how to identify different types of holds based on 
 |---------|---------|---------|
 |Litigation Hold     |    `True`     |     Litigation Hold is enabled for a mailbox if the *LitigationHoldEnabled* property is set to `True`.    |
 |eDiscovery hold     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   The *InPlaceHolds property* contains the GUID of any hold associated with an eDiscovery case in the Security & Compliance Center. You can tell this is an eDiscovery hold because the GUID starts with the `UniH` prefix (which denotes a Unified Hold).      |
-|In-Place Hold     |     `c0ba3ce811b6432a8751430937152491`    |     The *InPlaceHolds* property contains the GUID of the In-Place Hold that's placed on the mailbox. You can tell this is an In-Place Hold because the GUID doesn't start with a prefix.    |
-|Office 365 retention policy specifically applied to the mailbox     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> or <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     The InPlaceHolds property contains GUIDs of any specific location retention policy that's applied to the mailbox. You can identify retention policies because the GUID starts with the `mbx` or the `skp` prefix. The `skp` prefix indicates that the retention policy is applied to Skype for Business conversations in the user's mailbox    |
+|In-Place Hold     |     `c0ba3ce811b6432a8751430937152491` <br/> or <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     The *InPlaceHolds* property contains the GUID of the In-Place Hold that's placed on the mailbox. You can tell this is an In-Place Hold because the GUID either doesn't start with a prefix or it starts with the `cld` prefix.     |
+|Office 365 retention policy specifically applied to the mailbox     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> or <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     The InPlaceHolds property contains GUIDs of any specific location retention policy that's applied to the mailbox. You can identify retention policies because the GUID starts with the `mbx` or the `skp` prefix. The `skp` prefix indicates that the retention policy is applied to Skype for Business conversations in the user's mailbox.    |
 |Excluded from an organization-wide Office 365 retention policy     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     If a mailbox is excluded from an organization-wide Office 365 retention policy, the GUID for the retention policy the mailbox is excluded from is displayed in the InPlaceHolds property and is identified by the `-mbx` prefix.    |
 
 ### Get-OrganizationConfig
@@ -138,6 +138,7 @@ Run the following command in Exchange Online PowerShell to identify the In-Place
 ```
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
+Note that if the GUID for the In-Place Hold starts with the `cld` prefix, be sure to include the prefix when running the previous command.
 
 ### Office 365 retention policies
 
@@ -151,9 +152,9 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 After you identify the holds that are applied to a mailbox, you can perform tasks such as changing the duration of the hold, temporarily or permanently removing the hold, or in the case of Office 365 retention policies, excluding an inactive mailbox from the policy. For more information about performing tasks related to holds, see the one of the following topics:
 
-- Run the [Set-RetentionCompliancePolicy -AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps) command in Security & Compliance Center PowerShell to exclude a mailbox from an Office 365 retention policy. 
+- Run the [Set-RetentionCompliancePolicy -AddExchangeLocationException \<user mailbox>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps) command in Security & Compliance Center PowerShell to exclude a mailbox from an organization-wide Office 365 retention policy. Note that this command can only be used for retention policies where the value for the *ExchangeLocation* property equals `All`.
 
-- Run the [Set-Mailbox -ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) command in Exchange Online PowerShell to exclude an inactive mailbox from an organization-wide Office 365 retention policy.
+- Run the [Set-Mailbox -ExcludeFromOrgHolds \<hold GUID without prefix or suffix>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) command in Exchange Online PowerShell to exclude an inactive mailbox from an organization-wide Office 365 retention policy.
 
 - [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
 
