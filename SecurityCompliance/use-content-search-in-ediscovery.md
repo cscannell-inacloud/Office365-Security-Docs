@@ -50,7 +50,7 @@ The first step is to use the Security &amp; Compliance Center (or Security & Com
     
 6. Click **Search** to save the search settings and start the search. 
     
-    After a while, an estimate of the search results displayed in the details pane. The estimate includes the total size and number of items for the search results. After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information in the details pane. 
+    After a while, an estimate of the search results displayed in the details pane. The estimate includes the total size and number of items for the search results. After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
     
 7.  If necessary, refine the search query to narrow the scope of search results and then restart the search. 
     
@@ -252,7 +252,7 @@ The script that you run in Step 3 creates a new In-Place eDiscovery search, but 
     
 3. Click **Search** ![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif) \> **Estimate search results** to start the search and return an estimate of the total size and number of items returned by the search. 
     
-    The estimates are displayed in the details pane. Click **Refresh** ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information displayed in the details pane. 
+    The estimates are displayed in the details pane. Click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information displayed in the details pane. 
     
 4. To preview the results after the search is completed, click **Preview search results** in the details pane.
   
@@ -298,7 +298,7 @@ After you create and start the In-Place eDiscovery search that was created by th
     
 5. Click **Copy** to start the process to copy the search results to the specified discovery mailbox. 
     
-6. Click **Refresh** ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information about the copying status that is displayed in the details pane. 
+6. Click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information about the copying status that is displayed in the details pane. 
     
 7. When copying is complete, click **Open** to open the discovery mailbox to view the search results. 
   

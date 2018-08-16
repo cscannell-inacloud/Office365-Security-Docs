@@ -218,7 +218,7 @@ Keep the following things in mind about hold statistics:
     
 - The number of items on hold also includes unindexed items found in the content locations. Note that if you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Unindexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
     
-- You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
+- You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
     
 - It's normal for the number of items on hold to increase over time because users whose mailbox or site is on hold are typically sending or receiving new email message and creating new SharePoint and OneDrive for Business documents.
     
@@ -293,7 +293,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     The search is started. After a while, an estimate of the search results is displayed in the details pane. The estimate includes the total size and number of items that matched the search criteria. The search estimate also includes the number of the unindexed items in the content locations that were searched. The number of unindexed items that don't meet the search criteria will be included in the search statistics displayed in the details pane. If an unindexed item matches the search query (because other message or document properties meet the search criteria), it won't be included in the estimated number of unindexed items. If an unindexed item is excluded by the search criteria, it also won't be included in the estimate of unindexed items.
     
-    After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information in the details pane. 
+    After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
     
 [Return to top](manage-ediscovery-cases.md#top)
   
@@ -324,7 +324,7 @@ You can export the results of a [Export the results of a single search associate
     
     ![Click Export to display a list of export jobs](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
   
-    You might have to click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list of export jobs to display the export job that you just created. Note that export jobs have the same name as the corresponding Content Search with **_Export** appended to the end of search name. 
+    You might have to click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs to display the export job that you just created. Note that export jobs have the same name as the corresponding Content Search with **_Export** appended to the end of search name. 
     
 6. Click the export job that you just created to display status information in the details pane. This information includes the percentage of items that have been transferred to an Azure storage area in the Microsoft cloud.
     
@@ -362,7 +362,7 @@ As an alternative to exporting the results of a single Content Search associated
     
     ![Click Export to display a list of export jobs](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
   
-    You might have to click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list of export jobs to display the export job that you just created. Note that the searches that were included in the export job are listed in the **Searches** column. 
+    You might have to click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs to display the export job that you just created. Note that the searches that were included in the export job are listed in the **Searches** column. 
     
 8. Click the export job that you just created to display status information in the details pane. This information includes the percentage of items that have been transferred to an Azure storage area in the Microsoft cloud.
     
@@ -485,7 +485,7 @@ To close a case:
     
 6. Close **Manage this case**.
     
-7. On the **eDiscovery** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete. 
+7. On the **eDiscovery** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete. 
     
     When the process is complete, the status of the case is changed to **Close** on the **eDiscovery** page. Click the name of the case again to display the **Manage this case** flyout page, which contains information about when the case was closed and who closed it. 
     
@@ -512,7 +512,7 @@ When you re-open a case, any holds that were in place when the case was closed w
     
 5. Close **Manage this case**.
     
-6. On the **eDiscovery** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status of the re-opened case. It might take up to 60 minutes for the re-opening process to complete. 
+6. On the **eDiscovery** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the re-opened case. It might take up to 60 minutes for the re-opening process to complete. 
     
     When the process is complete, the status of the case is changed to **Active** on the **eDiscovery** page. 
     

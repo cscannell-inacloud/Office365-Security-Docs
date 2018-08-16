@@ -159,7 +159,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
 5. Links to preview the search results or run the search again to update the search statistics.
     
-    If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information in the details pane for the selected search. 
+    If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane for the selected search. 
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -219,7 +219,7 @@ When you update the results of an existing Content Search, the search query is r
     
 2. In the details pane, under **Results**, click **Update search results**.
     
-    A status messages is displayed saying that the results are being retrieved. When the search is finished, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of Content Searches, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif).
+    A status messages is displayed saying that the results are being retrieved. When the search is finished, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of Content Searches, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif).
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -249,7 +249,7 @@ If a search returns any errors, you don't have to re-search all of the content l
     
 2. In the details pane, under **Error**, click **Retry search**.
     
-    A status messages is displayed saying that the results are being retrieved. When the search is complete, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of searches, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif).
+    A status messages is displayed saying that the results are being retrieved. When the search is complete, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of searches, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif).
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   

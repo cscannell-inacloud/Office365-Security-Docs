@@ -258,7 +258,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
     A status flyout page is displayed, with a status of **Analysis in progress** and the new import job is displayed in the list on the **Import** page. 
     
-11. Click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the status information that's displayed in the **Status** column. When the analysis is complete and the data is ready to be imported, the status is changed to **Analysis completed**.
+11. Click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the status information that's displayed in the **Status** column. When the analysis is complete and the data is ready to be imported, the status is changed to **Analysis completed**.
     
     You can click the import job to display the status flyout page, which contains more detailed information about the import job such as the status of each PST file listed in the mapping file.
  
@@ -290,7 +290,7 @@ After you create the import job in Step 5, Office 365 analyzes the data in the P
     
 4. If you chose to import all the data, click **Import data** to start the import job. 
     
-    The status of the import job is display on the **Import** page. Click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. 
+    The status of the import job is display on the **Import** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. 
 
 ## How the import process works
   

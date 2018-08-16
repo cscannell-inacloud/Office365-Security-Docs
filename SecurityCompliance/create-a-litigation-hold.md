@@ -43,7 +43,7 @@ Here are the steps to place a maibox on Litigation Hold using the Office 365 adm
 4. On the fly-out page, click **Mail settings**, and then click **Edit** next to **Litigation hold**.
 5. On the **Litigation hold** page, click the toggle to turn on Litigation Hold and complete the following optional settings that are displayed:
  
-    ![O365_LitigationHold1.png](media/O365_LitigationHold1.png)
+    ![O365_LitigationHold1.png](media/O365-LitigationHold1.png)
 
     a. **Hold duration (days)** - Use this box to create a time-based hold and specify how long mailbox items are held when the mailbox is placed on Litigation Hold. The duration is calculated from the date a mailbox item is received or created. If you leave this box blank, items are held indefinitely or until the hold is removed. Use days to specify the duration.
     
@@ -55,6 +55,6 @@ Here are the steps to place a maibox on Litigation Hold using the Office 365 adm
 
 After you create the hold, the mail settings on the fly-out page shows that Litigation Hold is turned on for the selected user.
 
-![O365_LitigationHold2.png](media/O365_LitigationHold2.png)
+![O365_LitigationHold2.png](media/O365-LitigationHold2.png)
 
 For more information about creating and managing Litigation Holds and using Exchange Online PowerShell to bulk-create Litigation Holds, see [Place a mailbox on Litigation Hold](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold).

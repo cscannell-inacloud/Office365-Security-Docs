@@ -296,7 +296,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
     When the import job is successfully created, a status page is displayed that explains the next steps of the drive shipping process.
     
-16. On the **Import** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to displayed the new drive shipping import job in the list of import jobs. Note that the status is set to **Waiting for tracking number**. You can also click the import job to display the status flyout page, which contains more detailed information about the import job.
+16. On the **Import** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to displayed the new drive shipping import job in the list of import jobs. Note that the status is set to **Waiting for tracking number**. You can also click the import job to display the status flyout page, which contains more detailed information about the import job.
  
 ## Step 5: Ship the hard drive to Microsoft
 
@@ -341,7 +341,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
     
 6. Click **Save** to save this information for the import job. 
     
-    On the **Import** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the information for your drive shipping import job. Notice that status is now set to **Drives in transit**.
+    On the **Import** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the information for your drive shipping import job. Notice that status is now set to **Drives in transit**.
 
 ## Step 6: Filter data and start the PST Import job
 
@@ -377,7 +377,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
     
 7. If you chose to import all the data, click **Import data** to start the import job. 
     
-    The status of the import job is displayed on the **Import** page. Click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
+    The status of the import job is displayed on the **Import** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
 
 ## View a list of the PST files uploaded to Office 365
 

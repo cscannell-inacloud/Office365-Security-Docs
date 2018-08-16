@@ -401,7 +401,7 @@ The last step is to create the PST Import job in the Import service in Office 36
     
     The job is displayed in the list of PST Import jobs on the **Import data to Office 365** page. 
     
-12. Select the job and click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the status information that's displayed in the details pane. 
+12. Select the job and click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the status information that's displayed in the details pane. 
     
 13. In the details pane, click **View details** to get the latest status for the selected job. 
  
