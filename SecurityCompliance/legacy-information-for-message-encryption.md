@@ -44,12 +44,11 @@ When someone sends an email message in Exchange Online that matches an encryptio
   
 The following diagram summarizes the passage of an email message through the encryption and decryption process.
   
-![Diagram showing the path of an encrypted email](media/O365_Office365MessageEncryption_Concept.png)
+![Diagram showing the path of an encrypted email](media/O365-Office365MessageEncryption-Concept.png)
   
 For more information, see [Service information for legacy Office 365 Message Encryption prior to the release of the new OME capabilities](legacy-information-for-message-encryption.md#LegacyServiceInfo).
   
 ## Defining mail flow rules for Office 365 Message Encryption that don't use the new OME capabilities
-<a name="Rules"> </a>
 
 To enable Office 365 Message Encryption without the new capabilities, Exchange Online and Exchange Online Protection administrators define Exchange mail flow rules. These rules determine under what conditions email messages should be encrypted, as well as conditions for removing message encryption. When an encryption action is set for a rule, any messages that match the rule conditions are encrypted before they're sent.
   
@@ -58,14 +57,12 @@ Mail flow rules are flexible, letting you combine conditions so you can meet spe
 For more information about how to create Exchange mail flow rules, see [Define Rules for Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md).
   
 ## Sending, viewing, and replying to encrypted email messages
-<a name="SendRecip"> </a>
 
 With Office 365 Message Encryption, email messages are encrypted automatically, based on administrator-defined rules. An email that bears an encrypted message arrives in the recipient's Inbox with an attached HTML file.
   
 Recipients follow instructions in the message to open the attachment and authenticate by using a Microsoft account or a work or school associated with Office 365. If recipients don't have either account, they're directed to create a Microsoft account that will let them sign in to view the encrypted message. Alternatively, recipients can choose to get a one-time pass code to view the message. After signing in or using a one-time pass code, recipients can view the decrypted message and send an encrypted reply.
   
 ## Customize encrypted messages with Office 365 Message Encryption
-<a name="Branding"> </a>
 
 As an Exchange Online and Exchange Online Protection administrator, you can customize your encrypted messages. For example, you can add your company's brand and logo, specify an introduction, and add disclaimer text in encrypted messages and in the portal where recipients view your encrypted messages. Using Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
   
@@ -81,11 +78,11 @@ You can also revert back to the default look and feel at any time.
   
 The following example shows a custom logo for ContosoPharma in the email attachment:
   
-![Sample of the view encrypted message page](media/TA_OME_3attachment2.jpg)
+![Sample of the view encrypted message page](media/TA-OME-3attachment2.jpg)
   
  **To customize encryption email messages and the encryption portal with your organization's brand**
   
-1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
+1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
     
 2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance. 
     
