@@ -294,7 +294,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
   
   - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`. 
 
-    ![Use the Message kind condition with the value microsoftteams.](media/O365_ContentSearch-Teams-MessageKindCondition.png)
+    ![Use the Message kind condition with the value microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Note that conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
 

@@ -36,7 +36,7 @@ You can create two types of groups for your Exchange organization:
     
 - This cmdlet uses a batch processing method that results in a propagation delay of a few minutes before the results of the cmdlet are visible.
     
-- To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection Using Remote PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+- To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
     
@@ -74,9 +74,9 @@ You can create two types of groups for your Exchange organization:
     
 2. Do one of the following:
     
-  - To edit a group: In the list of groups, click the distribution or security group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png). You can update general settings, add or remove group owners, and add or remove group members, as needed.
+  - To edit a group: In the list of groups, click the distribution or security group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif). You can update general settings, add or remove group owners, and add or remove group members, as needed.
     
-  - To remove a group: Select the group and click **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.png).
+  - To remove a group: Select the group and click **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. When you're finished making your changes, click **Save**.
     
