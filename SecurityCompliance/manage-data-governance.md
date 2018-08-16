@@ -39,13 +39,13 @@ Some of your data might be stored in places outside the cloud, like on-premises 
 
 After you import data, you might need to increase your storage. The unlimited archiving feature in Office 365 (called auto-expanding archiving) provides an unlimited amount of storage in archive mailboxes.
   
+- [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md)
+
 - [Overview of unlimited archiving in Office 365](unlimited-archiving.md)
     
 - [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md)
     
-- [Enable archive mailboxes in the Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md)
-    
-- [Enable archive mailboxes for all your users](https://support.office.com/article/23e062e9-c6b2-474f-bc26-4436cc544976)
+
     
 ## Govern II: Create policies and labels to retain content
 
@@ -67,8 +67,16 @@ When a person leaves your organization, you can retain their email by creating a
   
 - [Overview of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md)
     
-- [Manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md)
-    
+- [Create and manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md)
+
+- [Change the hold duration for an inactive mailbox in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md)
+  
+- [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md)
+ 
+- [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)
+
+- [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md)
+
 ## Monitor
 
 Supervision lets you define policies that capture email and 3rd-party communications in your organization so they can be examined by internal or external reviewers. Reviewers can then classify these communications, make sure they're compliant with your organization's policies, and escalate questionable material if necessary.
