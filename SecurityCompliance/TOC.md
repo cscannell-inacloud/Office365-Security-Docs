@@ -150,6 +150,7 @@
 ### [Export Content Search results ](content-search.md#export-search-results)
 ### [Export a Content Search report](export-a-content-search-report.md)
 ### [Search for and delete email messages](search-for-and-delete-messagesadmin-help.md)
+### [Search the cloud-based mailboxes of on-premises users in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [Bulk edit multiple Content Searches](bulk-edit-content-searches.md)
 ### [Prepare a CSV file for an ID list Content Search](csv-file-for-an-id-list-content-search.md)
 ### [Use Content Search to search third-party data](use-content-search-to-search-third-party-data-that-was-imported.md)
