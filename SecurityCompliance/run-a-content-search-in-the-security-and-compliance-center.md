@@ -79,7 +79,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
 3. In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** \> **Content search**.
     
-4. Click **New**![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif).
+4. Click **New**![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
 5. On the **New search** page, type a name for the Content Search. This name has to be unique in your organization. 
     

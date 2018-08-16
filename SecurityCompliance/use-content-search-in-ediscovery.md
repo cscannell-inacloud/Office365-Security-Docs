@@ -40,7 +40,7 @@ The first step is to use the Security &amp; Compliance Center (or Security & Com
 
 1. [Go to the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md). 
     
-2. Click **Search &amp; investigation**, click **Content search**, and then click **New** ![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif).
+2. Click **Search &amp; investigation**, click **Content search**, and then click **New** ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
 3. On the **New search** page, type a name for the Content Search. 
     

@@ -209,7 +209,7 @@ After you've run the script to collect a list of folder IDs or paths for a speci
     
 2. Sign in to Office 365 using the account and credentials that you used to run the script in Step 1.
     
-3. In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** \> **Content search**, and then click **New** ![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif).
+3. In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** \> **Content search**, and then click **New** ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
 4. On the **New search** page, type a name for the Content Search. This name has to be unique in your organization. 
     
