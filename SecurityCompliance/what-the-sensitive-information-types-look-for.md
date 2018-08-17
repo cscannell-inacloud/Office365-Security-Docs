@@ -2929,11 +2929,42 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Combination of 8-9 letters and numbers plus optional parentheses around the final character
+
 ### Pattern
+
+Combination of 8-9 letters:
+- 1-2 letters (not case sensitive) 
+- Six digits 
+- The final character (any digit or the letter A), which is the check digit and is optionally enclosed in parentheses.
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_hong_kong_id_card finds content that matches the pattern.
+- A keyword from Keyword_hong_kong_id_card is found.
+- The checksum passes.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_hong_kong_id_card finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Hong Kong Identity Card (HKID) number -->
+<Entity id="e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_hong_kong_id_card"/>
+     <Match idRef="Keyword_hong_kong_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Func_hong_kong_id_card"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
