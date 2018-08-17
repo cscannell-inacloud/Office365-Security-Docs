@@ -23,39 +23,135 @@ Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center in
 
 ### Format
 
+9 digits which may be in a formatted or unformatted pattern
 
 ### Pattern
 
+Formatted:
+- Four digits beginning with 0, 1, 2, 3, 6, 7, or 8
+- A hyphen
+- Four digits
+- A hyphen
+- A digit
+
+Unformatted:
+9 consecutive digits beginning with 0, 1, 2, 3, 6, 7, or 8 
 
 ### Checksum
 
+No
 
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_aba_routing finds content that matches the pattern.
+- A keyword from Keyword_ABA_Routing is found.
+
+```
+<!-- ABA Routing Number -->
+<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_aba_routing" />
+        <Match idRef="Keyword_ABA_Routing" />
+      </Pattern>
+ </Entity>
+```
+
+
 ### Keywords
+
+
+|Keyword_ABA_Routing  |
+|---------|
+|aba</br>aba #</br>aba routing #</br>aba routing number</br>aba#</br>abarouting#</br>aba number</br>abaroutingnumber</br>american bank association routing #</br>american bank association routing number</br>americanbankassociationrouting#</br>americanbankassociationroutingnumber</br>bank routing number</br>bankrouting#</br>bankroutingnumber</br>routing transit number</br>RTN  |
 
    
 ## Argentina National Identity (DNI) Number
 
 ### Format
 
+Eight digits separated by periods
+
 ### Pattern
+
+Eight digits:
+- Two digits
+- A period
+- Three digits
+- A period
+- Three digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_argentina_national_id finds content that matches the pattern.
+- A keyword from Keyword_argentina_national_id is found.
+
+```
+<!-- Argentina National Identity (DNI) Number -->
+<Entity id="eefbb00e-8282-433c-8620-8f1da3bffdb2" recommendedConfidence="75" patternsProximity="300">
+   <Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_argentina_national_id"/>
+      <Match idRef="Keyword_argentina_national_id"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+
+|Keyword_argentina_national_id  |
+|---------|
+|Argentina National Identity number</br>Identity</br>Identification National Identity Card</br>DNI</br>NIC National Registry of Persons</br>Documento Nacional de Identidad</br>Registro Nacional de las Personas</br>Identidad</br>Identificación      |
+
    
 ## Australia Bank Account Number
 
 ### Format
 
+6-10 digits with or without a bank state branch number
+
 ### Pattern
+
+Account number is 6-10 digits.
+Australia bank state branch number:
+- Three digits 
+- A hyphen 
+- Three digits
 
 ### Checksum
 
+No
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_australia_bank_account_number finds content that matches the pattern..
+- A keyword from Keyword_australia_bank_account_number is found.
+- The regular expression Regex_australia_bank_account_number_bsb finds content that matches the pattern.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_australia_bank_account_number finds content that matches the pattern..
+- A keyword from Keyword_australia_bank_account_number is found.
+
+```
+<!-- Australia Bank Account Number -->
+<Entity id="74a54de9-2a30-4aa0-a8aa-3d9327fc07c7" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_australia_bank_account_number" />
+        <Match idRef="Keyword_australia_bank_account_number" />
+        <Match idRef="Regex_australia_bank_account_number_bsb" />
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_australia_bank_account_number" />
+        <Match idRef="Keyword_australia_bank_account_number" />
+  </Pattern>
+ </Entity>
+```
 
 ### Keywords
    
