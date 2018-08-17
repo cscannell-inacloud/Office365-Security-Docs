@@ -3290,13 +3290,71 @@ Any term from the Dictionary_icd_9_cm keyword dictionary, which is based on the 
 
 ### Format
 
+Old format (until 31 Dec 2012):
+- Seven digits followed by 1-2 letters 
+
+New format (1 Jan 2013 and after):
+- Seven digits followed by two letters
+
 ### Pattern
+
+Old format (until 31 Dec 2012):
+- Seven digits 
+- 1-2 letters (not case sensitive) 
+
+New format (1 Jan 2013 and after):
+- Seven digits 
+- A letter (not case sensitive) which is an alphabetic check digit 
+- The letter "A" or "H" (not case sensitive)
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_ireland_pps finds content that matches the pattern.
+- One of the following is true:
+    - A keyword from Keyword_ireland_pps is found.
+    - The function Func_eu_date finds a date in the right date format.
+- The checksum passes.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_ireland_pps finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Ireland Personal Public Service (PPS) Number -->
+<Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_ireland_pps"/>
+     <Any minMatches="1">
+  <Match idRef="Keyword_ireland_pps"/>
+  <Match idRef="Func_eu_date"/>
+     </Any>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Func_ireland_pps"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_ireland_pps
+
+- Personal Public Service Number 
+- PPS Number 
+- PPS Num 
+- PPS No. 
+- PPS # 
+- PPS# 
+- PPSN 
+- Public Services Card 
+- Uimhir Phearsanta Seirbhíse Poiblí 
+- Uimh. PSP 
+- PSP 
    
 ## Israel Bank Account Number
 
