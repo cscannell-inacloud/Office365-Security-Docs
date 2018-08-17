@@ -675,42 +675,227 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ```
 
 ### Keywords
+
+#### Keyword_brazil_cpf
+
+- CPF
+- Identification
+- Registration
+- Revenue
+- Cadastro de Pessoas Físicas 
+- Imposto 
+- Identificação 
+- Inscrição 
+- Receita 
    
 ## Brazil Legal Entity Number (CNPJ)
 
 ### Format
 
+14 digits that include a registration number, branch number, and check digits, plus delimiters
+
 ### Pattern
+14 digits, plus delimiters:
+- Two digits 
+- A period 
+- Three digits 
+- A period 
+- Three digits (these first eight digits are the registration number) 
+- A forward slash 
+- Four-digit branch number 
+- A hyphen 
+- Two digits which are check digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_brazil_cnpj finds content that matches the pattern.
+- A keyword from Keyword_brazil_cnpj is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_brazil_cnpj finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Brazil Legal Entity Number (CNPJ) -->
+<Entity id="9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4" recommendedConfidence="85" patternsProximity="300">
+   <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_brazil_cnpj"/>
+     <Match idRef="Keyword_brazil_cnpj"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_brazil_cnpj"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_brazil_cnpj
+
+- CNPJ 
+- CNPJ/MF 
+- CNPJ-MF 
+- National Registry of Legal Entities 
+- Taxpayers Registry 
+- Legal entity 
+- Legal entities 
+- Registration Status 
+- Business 
+- Company
+- CNPJ 
+- Cadastro Nacional da Pessoa Jurídica 
+- Cadastro Geral de Contribuintes 
+- CGC 
+- Pessoa jurídica 
+- Pessoas jurídicas 
+- Situação cadastral 
+- Inscrição 
+- Empresa 
    
 ## Brazil National ID Card (RG)
 
 ### Format
 
+Registro Geral (old format): Nine digits
+
+Registro de Identidade (RIC) (new format): 11 digits
+
 ### Pattern
+
+Registro Geral (old format):
+- Two digits 
+- A period 
+- Three digits 
+- A period 
+- Three digits 
+- A hyphen 
+- One digit which is a check digit
+
+Registro de Identidade (RIC) (new format):
+- 10 digits 
+- A hyphen 
+- One digit which is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_brazil_rg finds content that matches the pattern.
+- A keyword from Keyword_brazil_rg is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_brazil_rg finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Brazil National ID Card (RG) -->
+<Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_brazil_rg"/>
+     <Match idRef="Keyword_brazil_rg"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_brazil_rg"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_brazil_rg
+
+Cédula de identidade
+identity card
+national id 
+número de rregistro
+registro de Iidentidade 
+registro geral
+RG (this keyword is case sensitive) 
+RIC (this keyword is case sensitive) 
    
 ## Canada Bank Account Number
 
 ### Format
 
+Seven or twelve digits
+
 ### Pattern
+
+A Canada Bank Account Number is seven or twelve digits.
+
+A Canada bank account transit number is:
+- Five digits 
+- A hyphen 
+- Three digits
+OR
+- A zero "0" 
+- Eight digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_canada_bank_account_number finds content that matches the pattern.
+- A keyword from Keyword_canada_bank_account_number is found.
+- The regular expression Regex_canada_bank_account_transit_number finds content that matches the pattern.
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_canada_bank_account_number finds content that matches the pattern.
+- A keyword from Keyword_canada_bank_account_number is found.
+
+```
+<!-- Canada Bank Account Number -->
+<Entity id="552e814c-cb50-4d94-bbaa-bb1d1ffb34de" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_canada_bank_account_number" />
+        <Match idRef="Keyword_canada_bank_account_number" />
+        <Match idRef="Regex_canada_bank_account_transit_number" />
+   </Pattern>
+   <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_bank_account_number" />
+        <Match idRef="Keyword_canada_bank_account_number" />
+   </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_canada_bank_account_number
+
+- canada savings bonds
+- canada revenue agency
+- canadian financial institution
+- direct deposit form
+- canadian citizen
+- legal representative
+- notary public
+- commissioner for oaths
+- child care benefit
+- universal child care
+- canada child tax benefit
+- income tax benefit
+- harmonized sales tax
+- social insurance number
+- income tax refund
+- child tax benefit
+- territorial payments
+- institution number
+- deposit request
+- banking information
+- direct deposit
    
 ## Canada Driver's License Number
 
