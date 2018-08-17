@@ -1,7 +1,7 @@
 ---
 title: "What the sensitive information types look for"
 ms.author: stephow
-author: stephow-MSFT
+author: stephow
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -10,8 +10,6 @@ f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: "Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
@@ -413,23 +411,23 @@ Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center in
    
 ## EU Driver's License Number
 
-To learn more, see [EU Driver's License Number sensitive information type](https://support.office.com/article/c3923cd3-ec84-435f-bf41-cadc37996a4b.aspx).
+To learn more, see [EU Driver's License Number sensitive information type](eu-driver-s-license-number.md).
   
 ## EU National Identification Number
 
-To learn more, see [EU National Identification Number sensitive information type](https://support.office.com/article/2ea971bf-9434-4b61-b825-2bbd28ae6064.aspx).
+To learn more, see [EU National Identification Number sensitive information type](eu-national-identification-number.md).
   
 ## EU Passport Number
 
-To learn more, see [EU Passport Number sensitive information type](https://support.office.com/article/8c00df57-9fb3-459c-ba87-40480c87bd55.aspx).
+To learn more, see [EU Passport Number sensitive information type](eu-passport-number.md).
   
 ## EU Social Security Number or Equivalent ID
 
-To learn more, see [EU Social Security Number or Equivalent ID sensitive information type](https://support.office.com/article/1fabd341-e594-4bfe-961c-62aa82893f60.aspx).
+To learn more, see [EU Social Security Number or Equivalent ID sensitive information type](eu-social-security-number-or-equivalent-id.md).
   
 ## EU Tax Identification Number
 
-To learn more, see [EU Tax Identification Number sensitive information type](https://support.office.com/article/f04919c8-2356-4de2-bb2a-b9f67f339726.aspx).
+To learn more, see [EU Tax Identification Number sensitive information type](eu-tax-identification-number.md).
   
 ## Finland National ID
 
