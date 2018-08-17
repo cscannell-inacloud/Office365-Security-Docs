@@ -1326,7 +1326,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
     - A keyword from Keyword_sin is found.
     - A keyword from Keyword_sin_collaborative is found.
     - The function Func_eu_date finds a date in the right date format.
-    - The checksum passes.
+- The checksum passes.
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_unformatted_canadian_sin finds content that matches the pattern.
@@ -1503,13 +1503,245 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+16 digits which can be formatted or unformatted (dddddddddddddddd) and must pass the Luhn test.
+
 ### Pattern
+
+Very complex and robust pattern that detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, and diner cards.
 
 ### Checksum
 
+Yes, the Luhn checksum
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_credit_card finds content that matches the pattern.
+- One of the following is true:
+    - A keyword from Keyword_cc_verification is found.
+    - A keyword from Keyword_cc_name is found.
+    - The function Func_expiration_date finds a date in the right date format.
+- The checksum passes.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_credit_card finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Credit Card Number -->
+<Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_credit_card" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_cc_verification" />
+          <Match idRef="Keyword_cc_name" />
+          <Match idRef="Func_expiration_date" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_credit_card" />
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_cc_verification
+
+- card verification
+- card identification number
+- cvn
+- cid
+- cvc2
+- cvv2
+- pin block
+- security code
+- security number
+- security no
+- issue number
+- issue no
+- cryptogramme
+- numéro de sécurité
+- numero de securite
+- kreditkartenprüfnummer
+- kreditkartenprufnummer
+- prüfziffer
+- prufziffer
+- sicherheits Kode
+- sicherheitscode
+- sicherheitsnummer
+- verfalldatum
+- codice di verifica
+- cod. sicurezza
+- cod sicurezza
+- n autorizzazione
+- código
+- codigo
+- cod. seg
+- cod seg
+- código de segurança
+- codigo de seguranca
+- codigo de segurança
+- código de seguranca
+- cód. segurança
+- cod. seguranca cod. segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca cod segurança
+- cód seguranca
+- número de verificação
+- numero de verificacao
+- ablauf
+- gültig bis
+- gültigkeitsdatum
+- gultig bis
+- gultigkeitsdatum
+- scadenza
+- data scad
+- fecha de expiracion
+- fecha de venc
+- vencimiento
+- válido hasta
+- valido hasta
+- vto
+- data de expiração
+- data de expiracao
+- data em que expira
+- validade
+- valor
+- vencimento
+- Venc 
+
+#### Keyword_cc_name
+
+- amex
+- american express
+- americanexpress
+- Visa
+- mastercard
+- master card
+- mc 
+- mastercards
+- master cards
+- diner's Club
+- diners club
+- dinersclub
+- discover card
+- discovercard
+- discover cards
+- JCB
+- japanese card bureau
+- carte blanche
+- carteblanche
+- credit card
+- cc#
+- cc#:
+- expiration date
+- exp date
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
+- bank card
+- bankcard
+- card number
+- card num
+- cardnumber
+- cardnumbers
+- card numbers
+- creditcard
+- credit cards
+- creditcards
+- ccn
+- card holder
+- cardholder
+- card holders
+- cardholders
+- check card
+- checkcard
+- check cards
+- checkcards
+- debit card
+- debitcard
+- debit cards
+- debitcards
+- atm card
+- atmcard
+- atm cards
+- atmcards
+- enroute
+- en route
+- card type
+- carte bancaire
+- carte de crédit
+- carte de credit
+- numéro de carte
+- numero de carte
+- nº de la carte
+- nº de carte
+- kreditkarte
+- karte
+- karteninhaber
+- karteninhabers
+- kreditkarteninhaber
+- kreditkarteninstitut
+- kreditkartentyp
+- eigentümername
+- kartennr 
+- kartennummer
+- kreditkartennummer
+- kreditkarten-nummer
+- carta di credito
+- carta credito
+- carta
+- n carta
+- nr. carta
+- nr carta
+- numero carta
+- numero della carta
+- numero di carta
+- tarjeta credito
+- tarjeta de credito
+- tarjeta crédito
+- tarjeta de crédito
+- tarjeta de atm
+- tarjeta atm
+- tarjeta debito
+- tarjeta de debito
+- tarjeta débito
+- tarjeta de débito
+- nº de tarjeta
+- no. de tarjeta
+- no de tarjeta
+- numero de tarjeta
+- número de tarjeta
+- tarjeta no
+- tarjetahabiente
+- cartão de crédito
+- cartão de credito
+- cartao de crédito
+- cartao de credito
+- cartão de débito
+- cartao de débito
+- cartão de debito
+- cartao de debito
+- débito automático
+- debito automatico
+- número do cartão
+- numero do cartão 
+- número do cartao
+- numero do cartao
+- número de cartão
+- numero de cartão
+- número de cartao
+- numero de cartao
+- nº do cartão
+- nº do cartao
+- nº. do cartão
+- no do cartão
+- no do cartao
+- no. do cartão
+- no. do cartao 
    
 ## Croatia Identity Card Number
 
