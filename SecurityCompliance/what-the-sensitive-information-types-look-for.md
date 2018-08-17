@@ -1231,49 +1231,273 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Nine digits
+
 ### Pattern
+
+Nine digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The regular expression Regex_canada_phin finds content that matches the pattern.
+At least two keywords from Keyword_canada_phin or Keyword_canada_provinces are found..
+
+```
+<!-- Canada PHIN -->
+<Entity id="722e12ac-c89a-4ec8-a1b7-fea3469f89db" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_phin" />
+        <Any minMatches="2">
+          <Match idRef="Keyword_canada_phin" />
+          <Match idRef="Keyword_canada_provinces" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_canada_phin
+
+- social insurance number
+- health information act
+- income tax information
+- manitoba health
+- health registration
+- prescription purchases
+- benefit eligibility
+- personal health
+- power of attorney
+- registration number
+- personal health number
+- practitioner referral
+- wellness professional
+- patient referral
+- health and wellness
+
+#### Keyword_canada_provinces
+
+- Nunavut
+- Quebec
+- Northwest Territories
+- Ontario
+- British Columbia
+- Alberta
+- Saskatchewan
+- Manitoba
+- Yukon
+- Newfoundland and Labrador
+- New Brunswick
+- Nova Scotia
+- Prince Edward Island
+- Canada
    
 ## Canada Social Insurance Number
 
 ### Format
 
+Nine digits with optional hyphens or spaces
+
 ### Pattern
+
+Formatted:
+- Three digits 
+- A hyphen or space 
+- Three digits 
+- A hyphen or space 
+- Three digits
+
+Unformatted: Nine digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_canadian_sin finds content that matches the pattern.
+- At least two of any combination of the following:
+    - A keyword from Keyword_sin is found.
+    - A keyword from Keyword_sin_collaborative is found.
+    - The function Func_eu_date finds a date in the right date format.
+    - The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_unformatted_canadian_sin finds content that matches the pattern.
+- A keyword from Keyword_sin is found.
+- The checksum passes.
+
+```
+<!-- Canada Social Insurance Number -->
+<Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_canadian_sin" />
+        <Any minMatches="2">
+          <Match idRef="Keyword_sin" />
+          <Match idRef="Keyword_sin_collaborative" />
+          <Match idRef="Func_eu_date" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_unformatted_canadian_sin" />
+        <Match idRef="Keyword_sin" />
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_sin
+
+- sin 
+- social insurance 
+- numero d'assurance sociale 
+- sins 
+- ssn 
+- ssns 
+- social security 
+- numero d'assurance social 
+- national identification number 
+- national id 
+- sin# 
+- soc ins 
+- social ins 
+
+#### Keyword_sin_collaborative
+
+- driver's license 
+- drivers license 
+- driver's licence 
+- drivers licence 
+- DOB 
+- Birthdate 
+- Birthday 
+- Date of Birth 
    
 ## Chile Identity Card Number
 
 ### Format
 
+7-8 digits plus delimiters a check digit or letter
+
 ### Pattern
+
+7-8 digits plus delimiters:
+- 1-2 digits 
+- A period 
+- Three digits 
+- A period 
+- Three digits 
+- A dash 
+- One digit or letter (not case sensitive) which is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_chile_id_card finds content that matches the pattern.
+- A keyword from Keyword_chile_id_card is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_chile_id_card finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Chile Identity Card Number -->
+<Entity id="4e979794-49a0-407e-a0b9-2c536937b925" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_chile_id_card"/>
+     <Match idRef="Keyword_chile_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_chile_id_card"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_chile_id_card
+
+- National Identification Number 
+- Identity card 
+- ID 
+- Identification 
+- Rol Único Nacional 
+- RUN 
+- Rol Único Tributario 
+- RUT 
+- Cédula de Identidad 
+- Número De Identificación Nacional 
+- Tarjeta de identificación 
+- Identificación 
    
 ## China Resident Identity Card (PRC) Number
 
 ### Format
 
+18 digits
+
 ### Pattern
+
+18 digits:
+- Six digits which are an address code 
+- Eight digits in the form YYYYMMDD which are the date of birth 
+- Three digits which are an order code 
+- One digit which is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_china_resident_id finds content that matches the pattern.
+- A keyword from Keyword_china_resident_id is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_china_resident_id finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- China Resident Identity Card (PRC) Number -->
+<Entity id="c92daa86-2d16-4871-901f-816b3f554fc1" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_china_resident_id"/>
+     <Match idRef="Keyword_china_resident_id"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_china_resident_id"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+### Keyword_china_resident_id
+
+- Resident Identity Card 
+- PRC 
+- National Identification Card 
+- 身份证 
+- 居民 身份证 
+- 居民身份证 
+- 鉴定 
+- 身分證 
+- 居民 身份證
+- 鑑定 
    
 ## Credit Card Number
 
