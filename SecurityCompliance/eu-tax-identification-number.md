@@ -1,7 +1,7 @@
 ---
 title: "EU Tax Identification Number"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin

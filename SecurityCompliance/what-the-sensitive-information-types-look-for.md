@@ -1,7 +1,7 @@
 ---
 title: "What the sensitive information types look for"
 ms.author: stephow
-author: stephow
+author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -154,7 +154,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ```
 
 ### Keywords
-   
+
+
+|Column1  |
+|---------|
+|Row1     |
+
    
 ## Australia Driver's License Number
 
