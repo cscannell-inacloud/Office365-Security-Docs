@@ -210,18 +210,122 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
+#### Keyword_australia_drivers_license_number
 
-|Keyword_australia_drivers_license_number  |Keyword_australia_drivers_license_number_exclusions  |
-|---------|---------|
-|international driving permits</br>australian automobile association</br>sydney nsw</br>international driving permit</br>DriverLicence</br>DriverLicences</br>Driver Lic</br>Driver Licence</br>Driver Licences</br>DriversLic</br>DriversLicence</br>DriversLicences</br>Drivers Lic</br>Drivers Lics</br>Drivers Licence</br>DriversLicences</br>Driver'Lic</br>Driver'Lics</br>Driver'Licence</br>Driver'Licences</br>Driver' Lic</br>Driver'Lics</br>Driver'Licence</br>Driver'Licences</br>Driver'sLic</br>Driver'sLics</br>Driver'sLicence</br>Driver'sLicences</br>Driver's Lic</br>Driver's Lics</br>Driver's Licence</br>Driver'sLicences</br>DriverLic#</br>DriverLics#</br>DriverLicence#</br>DriverLicences#</br>Driver Lic#</br>Driver Lics#</br>Driver Licence#</br>Driver Licences#</br>DriversLic#</br>DriversLics#</br>DriversLicence#</br>DriversLicences#</br>Drivers Lic#</br>Drivers Lics#</br>Drivers Licence#</br>Drivers Licences#</br>Driver'Lic#</br>Driver'Lics#</br>Driver'Licence#</br>Driver'Licences#</br>Driver' Lic#</br>Driver' Lics#</br>Driver' Licence#</br>Driver' Licences#</br>Driver'sLic#</br>Driver'sLics#</br>Driver'sLicence#</br>Driver'sLicences#</br>Driver's Lic#</br>
-Driver's Lics#</br>Driver's Licence#</br>Driver's Licences# | aaa</br>DriverLicense</br>DriverLicenses</br>Driver License</br>Driver Licenses</br>DriversLicense</br>DriversLicenses</br>Drivers License</br>Drivers Licenses</br>Driver'License</br>Driver'Licenses</br>Driver' License</br>Driver' Licenses</br>Driver'sLicense</br>Driver'sLicenses</br>Driver's License</br>Driver's Licenses</br>DriverLicense#</br>DriverLicenses#</br>Driver License#</br>Driver Licenses#</br>DriversLicense#</br>DriversLicenses#</br>Drivers License#</br>Drivers Licenses#</br>Driver'License#</br>Driver'Licenses#</br>Driver' License#</br>Driver' Licenses#</br>Driver'sLicense#</br>Driver'sLicenses#</br>Driver's License#</br>Driver's Licenses# |
+- international driving permits
+- australian automobile association
+- sydney nsw
+- international driving permit
+- DriverLicence
+- DriverLicences
+- Driver Lic
+- Driver Licence
+- Driver Licences
+- DriversLic
+- DriversLicence
+- DriversLicences
+- Drivers Lic
+- Drivers Lics
+- Drivers Licence
+- Drivers Licences
+- Driver'Lic
+- Driver'Lics
+- Driver'Licence
+- Driver'Licences
+- Driver' Lic
+- Driver' Lics
+- Driver' Licence
+- Driver' Licences
+- Driver'sLic
+- Driver'sLics
+- Driver'sLicence
+- Driver'sLicences
+- Driver's Lic
+- Driver's Lics
+- Driver's Licence
+- Driver's Licences
+- DriverLic#
+- DriverLics#
+- DriverLicence#
+- DriverLicences#
+- Driver Lic#
+- Driver Lics#
+- Driver Licence#
+- Driver Licences#
+- DriversLic#
+- DriversLics#
+- DriversLicence#
+- DriversLicences#
+- Drivers Lic#
+- Drivers Lics#
+- Drivers Licence#
+- Drivers Licences#
+- Driver'Lic#
+- Driver'Lics#
+- Driver'Licence#
+- Driver'Licences#
+- Driver' Lic#
+- Driver' Lics#
+- Driver' Licence#
+- Driver' Licences#
+- Driver'sLic#
+- Driver'sLics#
+- Driver'sLicence#
+- Driver'sLicences#
+- Driver's Lic#
+- Driver's Lics#
+- Driver's Licence#
+- Driver's Licences# 
 
+#### Keyword_australia_drivers_license_number_exclusions
+
+- aaa
+- DriverLicense
+- DriverLicenses
+- Driver License
+- Driver Licenses
+- DriversLicense
+- DriversLicenses
+- Drivers License
+- Drivers Licenses
+- Driver'License
+- Driver'Licenses
+- Driver' License
+- Driver' Licenses
+- Driver'sLicense
+- Driver'sLicenses
+- Driver's License
+- Driver's Licenses
+- DriverLicense#
+- DriverLicenses#
+- Driver License#
+- Driver Licenses#
+- DriversLicense#
+- DriversLicenses#
+- Drivers License#
+- Drivers Licenses#
+- Driver'License#
+- Driver'Licenses#
+- Driver' License#
+- Driver' Licenses#
+- Driver'sLicense#
+- Driver'sLicenses#
+- Driver's License#
+- Driver's Licenses#
    
 ## Australia Medical Account Number
 
 ### Format
 
+10-11 digits
+
 ### Pattern
+
+10-11 digits:
+- First digit is in the range 2-6
+- Ninth digit is a check digit
+- Tenth digit is the issue digit
+- Eleventh digit (optional) is the individual number
 
 ### Checksum
 
