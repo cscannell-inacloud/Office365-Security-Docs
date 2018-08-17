@@ -2967,44 +2967,154 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 ```
 
 ### Keywords
+
+#### Keyword_hong_kong_id_card
+
+- Hong Kong Identity Card
+- HKID
+- ID card
+- 香港身份證 
+- 香港永久性居民身份證 
    
 ## India Permanent Account Number (PAN)
 
 ### Format
 
+10 letters or digits
+
 ### Pattern
+
+10 letters or digits:
+- Five letters (not case sensitive) 
+- Four digits 
+- A letter which is an alphabetic check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
+- A keyword from Keyword_india_permanent_account_number is found.
+- The checksum passes.
+
+```
+<!-- India Permanent Account Number -->
+<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_india_permanent_account_number"/>
+     <Match idRef="Keyword_india_permanent_account_number"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_india_permanent_account_number
+
+- Permanent Account Number 
+- PAN 
    
 ## India Unique Identification (Aadhaar) Number
 
 ### Format
 
+12 digits containing optional spaces or dashes
+
 ### Pattern
+
+12 digits:
+- Four digits 
+- An optional space or dash 
+- Four digits 
+- An optional space or dash 
+- The final digit which is the check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The function Func_india_aadhaar finds content that matches the pattern.
+A keyword from Keyword_india_aadhar is found.
+The checksum passes.
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The function Func_india_aadhaar finds content that matches the pattern.
+The checksum passes.
+<!-- India Unique Identification (Aadhaar) number -->
+<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_india_aadhaar"/>
+     <Match idRef="Keyword_india_aadhar"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_india_aadhaar"/>
+  </Pattern>
+</Entity>
 
 ### Keywords
    
+#### Keyword_india_aadhar
+- Aadhar
+- Aadhaar
+- UID
+- आधार
    
 ## Indonesia Identity Card (KTP) Number
 
 ### Format
 
+16 digits containing optional periods
+
 ### Pattern
+
+16 digits:
+- Two-digit province code 
+- A period (optional) 
+- Two-digit regency or city code 
+- Two-digit subdistrict code 
+- A period (optional) 
+- Six digits in the format DDMMYY which are the date of birth 
+- A period (optional) 
+- Four digits
 
 ### Checksum
 
+No
+
 ### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
+- A keyword from Keyword_indonesia_id_card is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
+
+```
+<!-- Indonesia Identity Card (KTP) Number -->
+<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_indonesia_id_card"/>
+     <Match idRef="Keyword_indonesia_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_indonesia_id_card"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_indonesia_id_card
+
+- KTP
+- Kartu Tanda Penduduk 
+- Nomor Induk Kependudukan 
    
 ## International Banking Account Number (IBAN)
 
