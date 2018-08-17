@@ -901,37 +901,331 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Varies by province
+
 ### Pattern
+
+Various patterns covering Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland/Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_[province_name]_drivers_license_number finds content that matches the pattern.
+- A keyword from Keyword_[province_name]_drivers_license_name is found.
+- A keyword from Keyword_canada_drivers_license is found.
+
+```
+<!-- Canada Driver's License Number -->
+    <Entity id="37186abb-8e48-4800-ad3c-e3d1610b3db0" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_alberta_drivers_license_number" />
+        <Match idRef="Keyword_alberta_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_british_columbia_drivers_license_number" />
+        <Match idRef="Keyword_british_columbia_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_manitoba_drivers_license_number" />
+        <Match idRef="Keyword_manitoba_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_new_brunswick_drivers_license_number" />
+        <Match idRef="Keyword_new_brunswick_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_newfoundland_labrador_drivers_license_number" />
+        <Match idRef="Keyword_newfoundland_labrador_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_nova_scotia_drivers_license_number" />
+        <Match idRef="Keyword_nova_scotia_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_ontario_drivers_license_number" />
+        <Match idRef="Keyword_ontario_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_prince_edward_island_drivers_license_number" />
+        <Match idRef="Keyword_prince_edward_island_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_quebec_drivers_license_number" />
+        <Match idRef="Keyword_quebec_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_saskatchewan_drivers_license_number" />
+        <Match idRef="Keyword_saskatchewan_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+    </Entity>
+```
+
 ### Keywords
+
+#### Keyword_[province_name]_drivers_license_name
+
+- The province abbreviation, for example AB
+- The province name, for example Alberta
+
+#### Keyword_canada_drivers_license
+
+- DL
+- DLS
+- CDL
+- CDLS
+- DriverLic
+- DriverLics
+- DriverLicense
+- DriverLicenses
+- DriverLicence
+- DriverLicences
+- Driver Lic
+- Driver Lics
+- Driver License
+- Driver Licenses
+- Driver Licence
+- Driver Licences
+- DriversLic
+- DriversLics
+- DriversLicence
+- DriversLicences
+- DriversLicense
+- DriversLicenses
+- Drivers Lic
+- Drivers Lics
+- Drivers License
+- Drivers Licenses
+- Drivers Licence
+- Drivers Licences
+- Driver'Lic
+- Driver'Lics
+- Driver'License
+- Driver'Licenses
+- Driver'Licence
+- Driver'Licences
+- Driver' Lic
+- Driver' Lics
+- Driver' License
+- Driver' Licenses
+- Driver' Licence
+- Driver' Licences
+- Driver'sLic
+- Driver'sLics
+- Driver'sLicense
+- Driver'sLicenses
+- Driver'sLicence
+- Driver'sLicences
+- Driver's Lic
+- Driver's Lics
+- Driver's License
+- Driver's Licenses
+- Driver's Licence
+- Driver's Licences
+- Permis de Conduire
+- id
+- ids
+- idcard number
+- idcard numbers
+- idcard #
+- idcard #s
+- idcard card
+- idcard cards
+- idcard
+- identification number
+- identification numbers
+- identification #
+- identification #s
+- identification card
+- identification cards
+- identification 
+- DL#
+- DLS# 
+- CDL# 
+- CDLS# 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- DriverLicence# 
+- DriverLicences# 
+- Driver Lic#
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
+- Driver License# 
+- Driver Licences# 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- DriversLicence# 
+- DriversLicences# 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- Drivers Licence# 
+- Drivers Licences# 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
+- Driver'Licence# 
+- Driver'Licences# 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
+- Driver' Licence# 
+- Driver' Licences# 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
+- Driver'sLicence# 
+- Driver'sLicences# 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- Driver's Licence# 
+- Driver's Licences# 
+- Permis de Conduire# 
+- id# 
+- ids# 
+- idcard card# 
+- idcard cards# 
+- idcard# 
+- identification card# 
+- identification cards# 
+- identification# 
    
 ## Canada Health Service Number
 
 ### Format
 
+10 digits
+
 ### Pattern
+
+10 digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_canada_health_service_number finds content that matches the pattern.
+- A keyword from Keyword_canada_health_service_number is found.
+
+```
+<!-- Canada Health Service Number -->
+<Entity id="59c0bf39-7fab-482c-af25-00faa4384c94" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_health_service_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_canada_health_service_number" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_canada_health_service_number
+
+- personal health number
+- patient information
+- health services
+- speciality services
+- automobile accident
+- patient hospital
+- psychiatrist
+- workers compensation
+- disability
       
 ## Canada Passport Number
 
 ### Format
 
+Two uppercase letters followed by six digits
+
 ### Pattern
+
+Two uppercase letters followed by six digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_canada_passport_number finds content that matches the pattern.
+- A keyword from Keyword_canada_passport_number or Keyword_passport is found.
+
+``` 
+<!-- Canada Passport Number -->
+<Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_passport_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_canada_passport_number" />
+          <Match idRef="Keyword_passport" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_canada_passport_number
+
+- canadian citizenship
+- canadian passport
+- passport application
+- passport photos
+- certified translator
+- canadian citizens
+- processing times
+- renewal application
+
+#### Keyword_passport
+
+- Passport Number
+- Passport No
+- Passport #
+- Passport#
+- PassportID
+- Passportno
+- passportnumber
+- パスポート
+- パスポート番号
+- パスポートのNum
+- パスポート＃
+- Numéro de passeport
+- Passeport n °
+- Passeport Non
+- Passeport #
+- Passeport#
+- PasseportNon
+- Passeportn °
    
 ## Canada Personal Health Identification Number (PHIN)
 
