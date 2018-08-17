@@ -1747,74 +1747,558 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Nine digits
+
 ### Pattern
+
+Nine consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_croatia_id_card finds content that matches the pattern.
+- A keyword from Keyword_croatia_id_card is found.
+
+```
+<!--Croatia Identity Card Number-->
+<Entity id="ff12f884-c20a-4189-b185-34c8e7258d47" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_croatia_id_card"/>
+     <Match idRef="Keyword_croatia_id_card"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_croatia_id_card
+
+- Croatian identity card
+- Osobna iskaznica
+
    
 ## Croatia Personal Identification (OIB) Number
 
 ### Format
 
+10 digits
+
 ### Pattern
+
+10 digits:
+- Six digits in the form DDMMYY which are the date of birth 
+- Four digits where the final digit is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_croatia_oib_number finds content that matches the pattern.
+- A keyword from Keyword_croatia_oib_number is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_croatia_oib_number finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Croatia Personal Identification (OIB) Number -->
+<Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_croatia_oib_number"/>
+     <Match idRef="Keyword_croatia_oib_number"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_croatia_oib_number"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_croatia_oib_number
+
+- Personal Identification Number
+- Osobni identifikacijski broj 
+- OIB 
+
    
 ## Czech National Identity Card Number
 
 ### Format
 
+10 digits containing a forward slash
+
 ### Pattern
+
+10 digits:
+- Six digits which are the date of birth 
+- A forward slash 
+- Four digits where the final digit is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The function Func_czech_id_card finds content that matches the pattern.
+A keyword from Keyword_czech_id_card is found.
+The checksum passes.
+
+```
+<!-- Czech National Identity Card Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_czech_id_card"/>
+     <Match idRef="Keyword_czech_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+
 ### Keywords
+
+- Keyword_czech_id_card
+- Czech national identity card
+- Občanský průka
    
 ## Denmark Personal Identification Number
 
 ### Format
 
+10 digits containing a hyphen
+
 ### Pattern
+
+10 digits:
+- Six digits in the format DDMMYY which are the date of birth 
+- A hyphen 
+- Four digits where the final digit is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The regular expression Regex_denmark_id finds content that matches the pattern.
+A keyword from Keyword_denmark_id is found.
+The checksum passes.
+
+```
+<!-- Denmark Personal Identification Number -->
+<Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_denmark_id"/>
+     <Match idRef="Keyword_denmark_id"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_denmark_id
+
+- Personal Identification Number
+- CPR
+- Det Centrale Personregister
+- Personnummer
    
 ## Drug Enforcement Agency (DEA) Number
 
 ### Format
 
+Two letters followed by seven digits
+
 ### Pattern
+
+Pattern must include all of the following:
+- One letter (not case sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code 
+- One letter (not case sensitive), which is the first letter of the registrant's last name 
+- Seven digits, the last of which is the check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_dea_number finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- DEA Number -->
+<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_dea_number"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+None
+
    
 ## EU Debit Card Number
 
 ### Format
 
+16 digits
+
 ### Pattern
+
+Very complex and robust pattern
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_eu_debit_card finds content that matches the pattern.
+- At least one of the following is true:
+    - A keyword from Keyword_eu_debit_card is found.
+    - A keyword from Keyword_card_terms_dict is found.
+    - A keyword from Keyword_card_security_terms_dict is found.
+    - A keyword from Keyword_card_expiration_terms_dict is found.
+    - The function Func_expiration_date finds a date in the right date format.
+- The checksum passes.
+
+```
+    <!-- EU Debit Card Number -->
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_eu_debit_card" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_eu_debit_card" />
+          <Match idRef="Keyword_card_terms_dict" />
+          <Match idRef="Keyword_card_security_terms_dict" />
+          <Match idRef="Keyword_card_expiration_terms_dict" />
+          <Match idRef="Func_expiration_date" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+
 ### Keywords
+
+#### Keyword_eu_debit_card
+
+- account number 
+- card number 
+- card no. 
+- security number 
+- cc# 
+
+#### Keyword_card_terms_dict
+
+- acct nbr 
+- acct num 
+- acct no 
+- american express 
+- americanexpress 
+- americano espresso 
+- amex 
+- atm card 
+- atm cards 
+- atm kaart 
+- atmcard 
+- atmcards 
+- atmkaart 
+- atmkaarten 
+- bancontact 
+- bank card 
+- bankkaart 
+- card holder 
+- card holders 
+- card num 
+- card number 
+- card numbers 
+- card type 
+- cardano numerico 
+- cardholder 
+- cardholders 
+- cardnumber 
+- cardnumbers 
+- carta bianca 
+- carta credito 
+- carta di credito 
+- cartao de credito 
+- cartao de crédito 
+- cartao de debito 
+- cartao de débito 
+- carte bancaire 
+- carte blanche 
+- carte bleue 
+- carte de credit 
+- carte de crédit 
+- carte di credito 
+- carteblanche 
+- cartão de credito 
+- cartão de crédito 
+- cartão de debito 
+- cartão de débito 
+- cb 
+- ccn 
+- check card 
+- check cards 
+- checkcard
+- checkcards 
+- chequekaart 
+- cirrus 
+- cirrus-edc-maestro 
+- controlekaart 
+- controlekaarten 
+- credit card 
+- credit cards 
+- creditcard 
+- creditcards 
+- debetkaart 
+- debetkaarten 
+- debit card 
+- debit cards 
+- debitcard 
+- debitcards 
+- debito automatico 
+- diners club 
+- dinersclub 
+- discover 
+- discover card 
+- discover cards 
+- discovercard 
+- discovercards 
+- débito automático
+- edc 
+- eigentümername 
+- european debit card 
+- hoofdkaart 
+- hoofdkaarten 
+- in viaggio 
+- japanese card bureau 
+- japanse kaartdienst 
+- jcb 
+- kaart 
+- kaart num 
+- kaartaantal 
+- kaartaantallen 
+- kaarthouder 
+- kaarthouders 
+- karte  
+- karteninhaber 
+- karteninhabers
+- kartennr 
+- kartennummer 
+- kreditkarte 
+- kreditkarten-nummer 
+- kreditkarteninhaber 
+- kreditkarteninstitut 
+- kreditkartennummer 
+- kreditkartentyp 
+- maestro 
+- master card 
+- master cards 
+- mastercard 
+- mastercards 
+- mc 
+- mister cash 
+- n carta 
+- carta 
+- no de tarjeta 
+- no do cartao 
+- no do cartão 
+- no. de tarjeta 
+- no. do cartao 
+- no. do cartão 
+- nr carta 
+- nr. carta 
+- numeri di scheda 
+- numero carta 
+- numero de cartao 
+- numero de carte 
+- numero de cartão 
+- numero de tarjeta
+- numero della carta 
+- numero di carta 
+- numero di scheda 
+- numero do cartao 
+- numero do cartão 
+- numéro de carte 
+- nº carta 
+- nº de carte 
+- nº de la carte 
+- nº de tarjeta 
+- nº do cartao 
+- nº do cartão 
+- nº. do cartão 
+- número de cartao 
+- número de cartão 
+- número de tarjeta 
+- número do cartao 
+- scheda dell'assegno 
+- scheda dell'atmosfera 
+- scheda dell'atmosfera 
+- scheda della banca 
+- scheda di controllo 
+- scheda di debito 
+- scheda matrice 
+- schede dell'atmosfera 
+- schede di controllo 
+- schede di debito 
+- schede matrici 
+- scoprono la scheda 
+- scoprono le schede 
+- solo 
+- supporti di scheda 
+- supporto di scheda 
+- switch 
+- tarjeta atm 
+- tarjeta credito 
+- tarjeta de atm 
+- tarjeta de credito 
+- tarjeta de debito 
+- tarjeta debito 
+- tarjeta no
+- tarjetahabiente 
+- tipo della scheda 
+- ufficio giapponese della 
+- scheda 
+- v pay 
+- v-pay 
+- visa 
+- visa plus 
+- visa electron 
+- visto 
+- visum 
+- vpay   
+
+#### Keyword_card_security_terms_dict
+
+- card identification number
+- card verification 
+- cardi la verifica 
+- cid 
+- cod seg 
+- cod seguranca 
+- cod segurança 
+- cod sicurezza 
+- cod. seg 
+- cod. seguranca 
+- cod. segurança 
+- cod. sicurezza 
+- codice di sicurezza 
+- codice di verifica 
+- codigo 
+- codigo de seguranca 
+- codigo de segurança 
+- crittogramma 
+- cryptogram 
+- cryptogramme 
+- cv2 
+- cvc 
+- cvc2 
+- cvn 
+- cvv 
+- cvv2 
+- cód seguranca 
+- cód segurança 
+- cód. seguranca 
+- cód. segurança 
+- código 
+- código de seguranca 
+- código de segurança 
+- de kaart controle 
+- geeft nr uit 
+- issue no 
+- issue number 
+- kaartidentificatienummer 
+- kreditkartenprufnummer 
+- kreditkartenprüfnummer 
+- kwestieaantal 
+- no. dell'edizione 
+- no. di sicurezza 
+- numero de securite 
+- numero de verificacao 
+- numero dell'edizione 
+- numero di identificazione della 
+- scheda 
+- numero di sicurezza 
+- numero van veiligheid 
+- numéro de sécurité 
+- nº autorizzazione 
+- número de verificação 
+- perno il blocco 
+- pin block 
+- prufziffer 
+- prüfziffer 
+- security code 
+- security no 
+- security number 
+- sicherheits kode 
+- sicherheitscode 
+- sicherheitsnummer 
+- speldblok 
+- veiligheid nr 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
+- verfalldatum 
+
+#### Keyword_card_expiration_terms_dict
+
+- ablauf 
+- data de expiracao 
+- data de expiração 
+- data del exp 
+- data di exp 
+- data di scadenza 
+- data em que expira 
+- data scad 
+- data scadenza 
+- date de validité 
+- datum afloop 
+- datum van exp 
+- de afloop 
+- espira 
+- espira 
+- exp date 
+- exp datum 
+- expiration 
+- expire 
+- expires 
+- expiry 
+- fecha de expiracion 
+- fecha de venc 
+- gultig bis 
+- gultigkeitsdatum 
+- gültig bis 
+- gültigkeitsdatum 
+- la scadenza 
+- scadenza 
+- valable 
+- validade 
+- valido hasta 
+- valor 
+- venc 
+- vencimento 
+- vencimiento 
+- verloopt 
+- vervaldag 
+- vervaldatum 
+- vto 
+- válido hasta 
    
 ## EU Driver's License Number
 
@@ -1840,49 +2324,151 @@ To learn more, see [EU Tax Identification Number sensitive information type](eu-
 
 ### Format
 
+Six digits plus a character indicating a century plus three digits plus a check digit
+
 ### Pattern
+
+Pattern must include all of the following:
+- Six digits in the format format DDMMYY which are a date of birth 
+- Century marker (either '-', '+' or 'a') 
+- Three-digit personal identification number 
+- A digit or letter (case insensitive) which is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_finnish_national_id finds content that matches the pattern.
+- A keyword from Keyword_finnish_national_id is found.
+- The checksum passes.
+
+```
+<!-- Finnish National ID-->
+<Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_finnish_national_id" />
+          <Match idRef="Keyword_finnish_national_id" />
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+- Keyword_finnish_national_id
+- Sosiaaliturvatunnus
+- SOTU Henkilötunnus HETU
+- Personbeteckning
+- Personnummer
    
 ## Finland Passport Number
 
-### Format
-
-### Pattern
-
-### Checksum
-
-### Definition
-
-### Keywords
+Format
+Combination of nine letters and digits
+Pattern
+Combination of nine letters and digits:
+Two letters (not case sensitive) 
+Seven digits
+Checksum
+No
+Definition
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The regular expression Regex_finland_passport_number finds content that matches the pattern.
+A keyword from Keyword_finland_passport_number is found.
+<!-- Finland Passport Number -->
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
+</Entity>
+Keywords
+Keyword_finland_passport_number
+Passport
+Passi
    
 ## France Driver's License Number
 
 ### Format
 
+12 digits
+
 ### Pattern
+
+12 digits with validation to discount similar patterns such as French telephone numbers
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_french_drivers_license finds content that matches the pattern.
+- At least one of the following is true:
+- A keyword from Keyword_french_drivers_license is found.
+- The function Func_eu_date finds a date in the right date format.
+
+```
+<!-- France Driver's License Number -->
+<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_french_drivers_license" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_french_drivers_license" />
+          <Match idRef="Func_eu_date" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_french_drivers_license
+
+- drivers licence
+- drivers license
+- driving licence
+- driving license
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
+
 ## France National ID Card (CNI)
 
 ### Format
 
+12 digits
+
 ### Pattern
+
+12 digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_france_cni finds content that matches the pattern.
+
+```
+<!-- France CNI -->
+<Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
+  <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_france_cni" />
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+None
    
 ## France Passport Number
 
