@@ -2474,59 +2474,397 @@ None
 
 ### Format
 
+Nine digits and letters
+
 ### Pattern
+
+Nine digits and letters:
+- Two digits 
+- Two letters (not case sensitive) 
+- Five digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_fr_passport finds content that matches the pattern.
+- A keyword from Keyword_passport is found.
+
+```
+<!-- France Passport Number -->
+<Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_fr_passport" />
+        <Match idRef="Keyword_passport" />
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_passport
+
+- Passport Number
+- Passport No
+- Passport #
+- Passport#
+- PassportID
+- Passportno
+- passportnumber
+- パスポート
+- パスポート番号
+- パスポートのNum
+- パスポート ＃ 
+- Numéro de passeport
+- Passeport n °
+- Passeport Non
+- Passeport #
+- Passeport#
+- PasseportNon
+- Passeportn °
+
       
 ## France Social Security Number (INSEE)
 
 ### Format
 
+15 digits
+
 ### Pattern
+
+Must match one of two patterns:
+- 13 digits followed by a space followed by two digits</br>
+or
+- 15 consecutive digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_french_insee or Func_fr_insee finds content that matches the pattern.
+- A keyword from Keyword_fr_insee is found.
+- The checksum passes.
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_french_insee or Func_fr_insee finds content that matches the pattern.
+- No keyword from Keyword_fr_insee is found.
+- The checksum passes.
+
+```
+<!-- France INSEE -->
+<Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="95">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Func_fr_insee" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_fr_insee" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Func_fr_insee" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_fr_insee" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_fr_insee
+
+- insee
+- securité sociale
+- securite sociale
+- national id
+- national identification
+- numéro d'identité
+- no d'identité
+- no. d'identité
+- numero d'identite
+- no d'identite
+- no. d'identite
+- social security number
+- social security code
+- social insurance number
+- le numéro d'identification nationale
+- d'identité nationale
+- numéro de sécurité sociale
+- le code de la sécurité sociale
+- numéro d'assurance sociale
+- numéro de sécu
+- code sécu 
    
 ## German Driver's License Number
 
 ### Format
 
+Combination of 11 digits and letters
+
 ### Pattern
+
+11 digits and letters (not case sensitive):
+- A digit or letter 
+- Two digits 
+- Six digits or letters 
+- A digit 
+- A digit or letter
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_german_drivers_license finds content that matches the pattern.
+- At least one of the following is true:
+    - A keyword from Keyword_german_drivers_license_number is found.
+    - A keyword from Keyword_german_drivers_license_collaborative is found.
+    - A keyword from Keyword_german_drivers_license is found.
+- The checksum passes.
+
+```
+<!-- German Driver's License Number -->
+<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_german_drivers_license" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_drivers_license_number" />
+          <Match idRef="Keyword_german_drivers_license_collaborative" />
+          <Match idRef="Keyword_german_drivers_license" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_german_drivers_license_number
+
+- Führerschein
+- Fuhrerschein
+- Fuehrerschein
+- Führerscheinnummer
+- Fuhrerscheinnummer
+- Fuehrerscheinnummer
+- Führerschein- 
+- Fuhrerschein- 
+- Fuehrerschein- 
+- FührerscheinnummerNr
+- FuhrerscheinnummerNr
+- FuehrerscheinnummerNr
+- FührerscheinnummerKlasse
+- FuhrerscheinnummerKlasse
+- FuehrerscheinnummerKlasse
+- Führerschein- Nr
+- Fuhrerschein- Nr
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
+- Fuehrerschein- Klasse
+- FührerscheinnummerNr 
+- FuhrerscheinnummerNr 
+- FuehrerscheinnummerNr 
+- FührerscheinnummerKlasse 
+- FuhrerscheinnummerKlasse 
+- FuehrerscheinnummerKlasse 
+- Führerschein- Nr 
+- Fuhrerschein- Nr 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
+- Fuehrerschein- Klasse 
+- DL 
+- DLS
+- Driv Lic 
+- Driv Licen 
+- Driv License
+- Driv Licenses 
+- Driv Licence 
+- Driv Licences 
+- Driv Lic 
+- Driver Licen 
+- Driver License 
+- Driver Licenses 
+- Driver Licence 
+- Driver Licences 
+- Drivers Lic 
+- Drivers Licen 
+- Drivers License 
+- Drivers Licenses 
+- Drivers Licence 
+- Drivers Licences 
+- Driver's Lic 
+- Driver's Licen 
+- Driver's License 
+- Driver's Licenses 
+- Driver's Licence 
+- Driver's Licences 
+- Driving Lic 
+- Driving Licen 
+- Driving License 
+- Driving Licenses 
+- Driving Licence 
+- Driving Licences
+
+#### Keyword_german_drivers_license_collaborative
+
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
+- N-Führerschein 
+- N-Fuhrerschein 
+- N-Fuehrerschein
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
+- N-Führerschein 
+- N-Fuhrerschein 
+- N-Fuehrerschein 
+
+#### Keyword_german_drivers_license
+
+- ausstellungsdatum
+- ausstellungsort
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
    
 ## German Passport Number
 
 ### Format
 
+10 digits or letters
+
 ### Pattern
+
+Pattern must include all of the following:
+- First character is a digit or a letter from this set (C, F, G, H, J, K) 
+- Three digits 
+- Five digits or letters from this set (C, -H, J-N, P, R, T, V-Z) 
+- A digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_german_passport finds content that matches the pattern.
+- A keyword from any of the five keyword lists is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_german_passport_data finds content that matches the pattern.
+- A keyword from any of the five keyword lists is found.
+- The checksum passes.
+
+```
+<!-- German Passport Number -->
+<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keyword_german_passport_collaborative" />
+          <Match idRef="Keyword_german_passport_number" />
+          <Match idRef="Keyword_german_passport1" />
+          <Match idRef="Keyword_german_passport2" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_german_passport_data" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keyword_german_passport_collaborative" />
+          <Match idRef="Keyword_german_passport_number" />
+          <Match idRef="Keyword_german_passport1" />
+          <Match idRef="Keyword_german_passport2" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_german_passport
+
+- reisepass
+- reisepasse
+- reisepassnummer
+- passport
+- passports
+
+#### Keyword_german_passport_collaborative
+
+- geburtsdatum
+- ausstellungsdatum
+- ausstellungsort
+
+#### Keyword_german_passport_number
+
+No-Reisepass 
+Nr-Reisepass
+
+#### Keyword_german_passport1
+
+Reisepass-Nr
+
+#### Keyword_german_passport2
+
+bnationalit.t
    
 ## Germany Identity Card Number
 
 ### Format
 
+Since 1 November 2010: Nine letters and digits
+
+From 1 April 1987 until 31 October 2010: 10 digits
+
 ### Pattern
+
+Since 1 November 2010:
+- One letter (not case sensitive) 
+- Eight digits
+
+From 1 April 1987 until 31 October 2010:
+- 10 digits
 
 ### Checksum
 
+No
+
 ### Definition
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_germany_id_card finds content that matches the pattern.
+- A keyword from Keyword_germany_id_card is found.
+
+```
+<!-- Germany Identity Card Number -->
+<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Regex_germany_id_card"/>
+     <Match idRef="Keyword_germany_id_card"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
