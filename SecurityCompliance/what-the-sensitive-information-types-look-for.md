@@ -156,23 +156,66 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Keywords
 
 
-|Column1  |
+|Keyword_australia_bank_account_number  |
 |---------|
-|Row1     |
+|swift bank code</br>correspondent bank</br>base currency</br>usa account</br>holder address</br>bank address</br>information account</br>fund transfers</br>bank charges</br>bank details</br>banking information</br>full names</br>iaea     |
 
    
 ## Australia Driver's License Number
 
 ### Format
 
+Nine letters and digits
+
 ### Pattern
+
+Nine letters and digits: 
+
+- Two digits or letters (not case sensitive) 
+- Two digits 
+- Five digits or letters (not case sensitive)
+
+OR
+
+- 1-2 optional letters (not case sensitive) 
+- 4-9 digits
+
+OR
+
+- Nine digits or letters (not case sensitive)
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_australia_drivers_license_number finds content that matches the pattern.
+- A keyword from Keyword_australia_drivers_license_number is found.
+- No keyword from Keyword_australia_drivers_license_number_exclusions is found.
+
+```
+<!-- Australia Drivers License Number -->
+<Entity id="1cbbc8f5-9216-4392-9eb5-5ac2298d1356" patternsProximity="300" recommendedConfidence="75">
+   <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_australia_drivers_license_number" />
+        <Match idRef="Keyword_australia_drivers_license_number" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_australia_drivers_license_number_exclusions" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+
+|Keyword_australia_drivers_license_number  |Keyword_australia_drivers_license_number_exclusions  |
+|---------|---------|
+|international driving permits</br>australian automobile association</br>sydney nsw</br>international driving permit</br>DriverLicence</br>DriverLicences</br>Driver Lic</br>Driver Licence</br>Driver Licences</br>DriversLic</br>DriversLicence</br>DriversLicences</br>Drivers Lic</br>Drivers Lics</br>Drivers Licence</br>DriversLicences</br>Driver'Lic</br>Driver'Lics</br>Driver'Licence</br>Driver'Licences</br>Driver' Lic</br>Driver'Lics</br>Driver'Licence</br>Driver'Licences</br>Driver'sLic</br>Driver'sLics</br>Driver'sLicence</br>Driver'sLicences</br>Driver's Lic</br>Driver's Lics</br>Driver's Licence</br>Driver'sLicences</br>DriverLic#</br>DriverLics#</br>DriverLicence#</br>DriverLicences#</br>Driver Lic#</br>Driver Lics#</br>Driver Licence#</br>Driver Licences#</br>DriversLic#</br>DriversLics#</br>DriversLicence#</br>DriversLicences#</br>Drivers Lic#</br>Drivers Lics#</br>Drivers Licence#</br>Drivers Licences#</br>Driver'Lic#</br>Driver'Lics#</br>Driver'Licence#</br>Driver'Licences#</br>Driver' Lic#</br>Driver' Lics#</br>Driver' Licence#</br>Driver' Licences#</br>Driver'sLic#</br>Driver'sLics#</br>Driver'sLicence#</br>Driver'sLicences#</br>Driver's Lic#</br>
+Driver's Lics#</br>Driver's Licence#</br>Driver's Licences# | aaa</br>DriverLicense</br>DriverLicenses</br>Driver License</br>Driver Licenses</br>DriversLicense</br>DriversLicenses</br>Drivers License</br>Drivers Licenses</br>Driver'License</br>Driver'Licenses</br>Driver' License</br>Driver' Licenses</br>Driver'sLicense</br>Driver'sLicenses</br>Driver's License</br>Driver's Licenses</br>DriverLicense#</br>DriverLicenses#</br>Driver License#</br>Driver Licenses#</br>DriversLicense#</br>DriversLicenses#</br>Drivers License#</br>Drivers Licenses#</br>Driver'License#</br>Driver'Licenses#</br>Driver' License#</br>Driver' Licenses#</br>Driver'sLicense#</br>Driver'sLicenses#</br>Driver's License#</br>Driver's Licenses# |
+
    
 ## Australia Medical Account Number
 
