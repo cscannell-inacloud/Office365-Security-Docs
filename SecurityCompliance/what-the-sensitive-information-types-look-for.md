@@ -60,11 +60,25 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
+#### Keyword_ABA_Routing
 
-|Keyword_ABA_Routing  |
-|---------|
-|aba</br>aba #</br>aba routing #</br>aba routing number</br>aba#</br>abarouting#</br>aba number</br>abaroutingnumber</br>american bank association routing #</br>american bank association routing number</br>americanbankassociationrouting#</br>americanbankassociationroutingnumber</br>bank routing number</br>bankrouting#</br>bankroutingnumber</br>routing transit number</br>RTN  |
-
+- aba
+- aba #
+- aba routing #
+- aba routing number
+- aba#
+- abarouting#
+- aba number
+- abaroutingnumber
+- american bank association routing #
+- american bank association routing number
+- americanbankassociationrouting#
+- americanbankassociationroutingnumber
+- bank routing number
+- bankrouting#
+- bankroutingnumber
+- routing transit number
+- RTN 
    
 ## Argentina National Identity (DNI) Number
 
@@ -103,11 +117,17 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
+#### Keyword_argentina_national_id
 
-|Keyword_argentina_national_id  |
-|---------|
-|Argentina National Identity number</br>Identity</br>Identification National Identity Card</br>DNI</br>NIC National Registry of Persons</br>Documento Nacional de Identidad</br>Registro Nacional de las Personas</br>Identidad</br>Identificación      |
-
+- Argentina National Identity number 
+- Identity 
+- Identification National Identity Card 
+- DNI 
+- NIC National Registry of Persons 
+- Documento Nacional de Identidad 
+- Registro Nacional de las Personas 
+- Identidad 
+- Identificación 
    
 ## Australia Bank Account Number
 
@@ -155,10 +175,21 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
+#### Keyword_australia_bank_account_number
 
-|Keyword_australia_bank_account_number  |
-|---------|
-|swift bank code</br>correspondent bank</br>base currency</br>usa account</br>holder address</br>bank address</br>information account</br>fund transfers</br>bank charges</br>bank details</br>banking information</br>full names</br>iaea     |
+- swift bank code
+- correspondent bank
+- base currency
+- usa account
+- holder address
+- bank address
+- information account
+- fund transfers
+- bank charges
+- bank details
+- banking information
+- full names
+- iaea
 
    
 ## Australia Driver's License Number
@@ -337,7 +368,8 @@ A DLP policy is 95% confident that it's detected this type of sensitive informat
 - The function Func_australian_medical_account_number finds content that matches the pattern.
 - A keyword from Keyword_Australia_Medical_Account_Number is found.
 - The checksum passes.
-- A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_australian_medical_account_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -361,10 +393,17 @@ A DLP policy is 95% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
+#### Keyword_Australia_Medical_Account_Number
 
-|Keyword_Australia_Medical_Account_Number  |
-|---------|
-|bank account details</br>medicare payments</br>mortgage account</br>bank payments</br>information branch</br>credit card loan</br>department of human services</br>local service</br>medicare     |
+- bank account details
+- medicare payments
+- mortgage account
+- bank payments
+- information branch
+- credit card loan
+- department of human services
+- local service
+- medicare
 
    
 ## Australia Passport Number
@@ -528,23 +567,112 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Format
 
+11 digits plus delimiters
+
 ### Pattern
+
+11 digits plus delimiters:
+- Six digits and two periods in the format YY.MM.DD for date of birth 
+- A hyphen 
+- Three sequential digits (odd for males, even for females) 
+- A period 
+- Two digits that are a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_belgium_national_number finds content that matches the pattern.
+- A keyword from Keyword_belgium_national_number is found.
+- The checksum passes.
+
+```
+<!-- Belgium National Number -->
+  <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
+   <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_belgium_national_number"/>
+     <Match idRef="Keyword_belgium_national_number"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_belgium_national_number
+
+- Identity
+- Registration
+- Identification 
+- ID 
+- Identiteitskaart
+- Registratie nummer 
+- Identificatie nummer 
+- Identiteit
+- Registratie
+- Identificatie 
+- Carte d’identité 
+- numéro d'immatriculation
+- numéro d'identification
+- identité 
+- inscription 
+- Identifikation
+- Identifizierung
+- Identifikationsnummer
+- Personalausweis
+- Registrierung
+- Registrationsnummer
+
    
 ## Brazil CPF Number
 
 ### Format
 
+11 digits that include a check digit and can be formatted or unformatted
+
 ### Pattern
+
+Formatted:
+- Three digits 
+- A period 
+- Three digits 
+- A period 
+- Three digits 
+- A hyphen 
+- Two digits which are check digits
+
+Unformatted:
+- 11 digits where the last two digits are check digits
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_brazil_cpf finds content that matches the pattern.
+- A keyword from Keyword_brazil_cpf is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_brazil_cpf finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Brazil CPF Number -->
+<Entity id="78e09124-f2c3-4656-b32a-c1a132cd2711" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_brazil_cpf"/>
+     <Match idRef="Keyword_brazil_cpf"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_brazil_cpf"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
