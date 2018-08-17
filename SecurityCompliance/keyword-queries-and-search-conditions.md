@@ -62,7 +62,7 @@ The following table lists email message properties that can be searched by using
 |To  <br/> |The To field of an email message.<sup>1</sup> <br/> |`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`  <br/> |All examples return messages where Ann Beebe is specified in the To: line.  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> For the value of a recipient property, you can use the SMTP address, display name, or alias to specify a user. For example, you can use annb@contoso.com, annb, or "Ann Beebe" to specify the user Ann Beebe. 
+> <sup>1</sup> For the value of a recipient property, you can use email address (also called *user principal name* or UPN), display name, or alias to specify a user. For example, you can use annb@contoso.com, annb, or "Ann Beebe" to specify the user Ann Beebe.<br/><br/>When searching any of the recipient properties (From, To, Cc, Bcc, Participants, and Recipients), Office 365 attempts to expand the identity of each user by looking them up in Azure Active Directory.  If the user is found in Azure Active Directory, the query is expanded to include the user's email address (or UPN), alias, display name, and LegacyExchangeDN.<br/><br/>For example, a query such as `participants:ronnie@contoso.com` expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.
 
 ## Searchable site properties
 
