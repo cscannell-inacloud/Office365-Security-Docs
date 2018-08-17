@@ -2867,18 +2867,63 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 ```
 
 ### Keywords
+
+#### Keyword_germany_id_card
+
+- Identity Card
+- ID
+- Identification
+- Personalausweis
+- Identifizierungsnummer
+- Ausweis
+- Identifikation
    
 ## Greece National ID Card
 
 ### Format
 
+Combination of 7-8 letters and numbers plus a dash
+
 ### Pattern
+
+Seven letters and numbers (old format):
+- One letter (any letter of the Greek alphabet) 
+- A dash 
+- Six digits
+
+Eight letters and numbers (new format):
+- Two letters whose uppercase character occurs in both the Greek and Latin alphabets (ABEZHIKMNOPTYX) 
+- A dash 
+- Six digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_greece_id_card finds content that matches the pattern.
+- A keyword from Keyword_greece_id_card is found.
+
+```
+<!-- Greece National ID Card -->
+<Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_greece_id_card"/>
+     <Match idRef="Keyword_greece_id_card"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_greece_id_card
+
+- Greek identity Card
+- Tautotita
+- Δελτίο αστυνομικής ταυτότητας
+- Ταυτότητα
    
 ## Hong Kong Identity Card (HKID) Number
 
