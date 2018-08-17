@@ -329,9 +329,43 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_australian_medical_account_number finds content that matches the pattern.
+- A keyword from Keyword_Australia_Medical_Account_Number is found.
+- The checksum passes.
+- A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_australian_medical_account_number finds content that matches the pattern.
+- The checksum passes.
+
+```
+  <!-- Australia Medical Account Number -->
+<Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
+    <Pattern confidenceLevel="95">
+     <IdMatch idRef="Func_australian_medical_account_number"/>
+     <Any minMatches="1">
+     <Match idRef="Keyword_Australia_Medical_Account_Number"/>
+     </Any>
+  </Pattern>
+<Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_australian_medical_account_number"/>
+     <Any minMatches="0" maxMatches="0">
+  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
+     </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+
+|Keyword_Australia_Medical_Account_Number  |
+|---------|
+|bank account details</br>medicare payments</br>mortgage account</br>bank payments</br>information branch</br>credit card loan</br>department of human services</br>local service</br>medicare     |
+
    
 ## Australia Passport Number
 
