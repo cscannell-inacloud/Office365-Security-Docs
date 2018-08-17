@@ -3120,49 +3120,171 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Country code (two letters) plus check digits (two digits) plus bban number (up to 30 characters)
+
 ### Pattern
+
+Pattern must include all of the following:
+
+- Two-letter country code
+- Two check digits (followed by an optional space) 
+- 1-7 groups of four letters or digits (can be separated by spaces)
+- 1-3 letters or digits
+
+The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
+
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_iban finds content that matches the pattern.
+- The checksum passes.
+
+```
+<Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_iban" />
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+None
+
    
 ## IP Address
 
 ### Format
 
+#### IPv4:
+Complex pattern which accounts for formatted (periods) and unformatted (no periods) versions of the IPv4 addresses
+
+#### IPv6:
+Complex pattern which accounts for formatted IPv6 numbers (which include colons)
+
 ### Pattern
 
 ### Checksum
 
+No
+
 ### Definition
 
+For IPv6, a DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_ipv6_address finds content that matches the pattern.
+- No keyword from Keyword_ipaddress is found.
+
+For IPv4, a DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_ipv4_address finds content that matches the pattern.
+- A keyword from Keyword_ipaddress is found.
+
+For IPv6, a DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_ipv6_address finds content that matches the pattern.
+- No keyword from Keyword_ipaddress is found.
+
+```
+    <!-- IP Address -->
+    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_ipv6_address" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="95">
+        <IdMatch idRef="Regex_ipv4_address" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="95">
+        <IdMatch idRef="Regex_ipv6_address" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+
 ### Keywords
+
+#### Keyword_ipaddress
+
+- IP (this keyword is case sensitive)
+- ip address 
+- ip addresses
+- internet protocol
+- IP-כתובת ה 
    
 ## International Classification of Diseases (ICD-10-CM)
 
 ### Format
 
+Dictionary
+
 ### Pattern
+
+Keyword
 
 ### Checksum
 
+No
+
 ### Definition
 
-### Keywords
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- A keyword from Dictionary_icd_10_cm is found.
+
+```
+      <!-- ICD-10 CM -->
+      <Entity id="3356946c-6bb7-449b-b253-6ffa419c0ce7" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Dictionary_icd_10_cm" />
+        </Pattern>
+      </Entity>
+```
+
+Keywords
+
+Any term from the Dictionary_icd_10_cm keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for the term, not the insurance codes.
+
    
 ## International Classification of Diseases (ICD-9-CM)
 
 ### Format
 
+Dictionary
+
 ### Pattern
+
+Keyword
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- A keyword from Dictionary_icd_9_cm is found.
+
+```
+      <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Dictionary_icd_9_cm" />
+        </Pattern>
+      </Entity>
+```
+
 ### Keywords
+
+Any term from the Dictionary_icd_9_cm keyword dictionary, which is based on the [International Classification of Diseases,Ninth Revision, Clinical Modification (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). This type looks only for the term, not the insurance codes.
    
 ## Ireland Personal Public Service (PPS) Number
 
