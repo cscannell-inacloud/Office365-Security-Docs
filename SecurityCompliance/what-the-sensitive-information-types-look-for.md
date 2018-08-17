@@ -371,26 +371,158 @@ A DLP policy is 95% confident that it's detected this type of sensitive informat
 
 ### Format
 
+A letter followed by seven digits
+
 ### Pattern
+
+A letter (not case sensitive) followed by seven digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_australia_passport_number finds content that matches the pattern.
+- A keyword from Keyword_passport or Keyword_australia_passport_number is found.
+
+```
+<!-- Australia Passport Number -->
+<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_australia_passport_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_passport" />
+          <Match idRef="Keyword_australia_passport_number" />
+        </Any>
+   </Pattern>
+</Entity>   
+```
+
 ### Keywords
-   
+
+#### Keyword_passport
+
+- Passport Number
+- Passport No
+- Passport #
+- Passport#
+- PassportID
+- Passportno
+- passportnumber
+- パスポート
+- パスポート番号
+- パスポートのNum
+- パスポート ＃ 
+- Numéro de passeport
+- Passeport n °
+- Passeport Non
+- Passeport #
+- Passeport#
+- PasseportNon
+- Passeportn °
+
+#### Keyword_australia_passport_number
+
+- passport
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- residential address
+- department of immigration and citizenship
+- visa
+- national identity card
+- passport number
+- travel document
+- issuing authority
    
 ## Australia Tax File Number
 
 ### Format
 
+8-9 digits
+
 ### Pattern
+
+8-9 digits typically presented with spaces as follows:
+- Three digits 
+- An optional space 
+- Three digits 
+- An optional space 
+- 2-3 digits where the last digit is a check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_australian_tax_file_number finds content that matches the pattern.
+- No keyword from Keyword_Australia_Tax_File_Number or Keyword_number_exclusions is found.
+- The checksum passes.
+
+```
+    <!-- Australia Tax File Number -->
+<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+    
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_australian_tax_file_number" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_Australia_Tax_File_Number" />
+          <Match idRef="Keyword_number_exclusions" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_Australia_Tax_File_Number
+
+- australian business number
+- marginal tax rate
+- medicare levy
+- portfolio number
+- service veterans
+- withholding tax
+- individual tax return
+- tax file number
+
+#### Keyword_number_exclusions
+
+- 00000000
+- 11111111
+- 22222222
+- 33333333
+- 44444444
+- 55555555
+- 66666666
+- 77777777
+- 88888888
+- 99999999
+- 000000000
+- 111111111
+- 222222222
+- 333333333
+- 444444444
+- 555555555
+- 666666666
+- 777777777
+- 888888888
+- 999999999
+- 0000000000
+- 1111111111
+- 2222222222
+- 3333333333
+- 4444444444
+- 5555555555
+- 6666666666
+- 7777777777
+- 8888888888
+- 9999999999
    
 ## Belgium National Number
 
