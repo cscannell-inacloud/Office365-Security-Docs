@@ -3449,25 +3449,160 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+A combination of 10 letters and digits
+
 ### Pattern
+
+- A combination of 10 letters and digits:
+- One letter (not case sensitive) 
+- The letter "A" or "V" (not case sensitive) 
+- Seven letters (not case sensitive), digits, or the underscore character 
+- One letter (not case sensitive)
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_italy_drivers_license_number finds content that matches the pattern.
+- A keyword from Keyword_italy_drivers_license_number is found.
+
+```
+<!-- Italy Driver's license Number -->
+<Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_italy_drivers_license_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_italy_drivers_license_number" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_italy_drivers_license_number
+
+- numero di patente di guida 
+- patente di guida 
    
 ## Japan Bank Account Number
 
 ### Format
 
+Seven or eight digits
+
 ### Pattern
 
-### Checksum
+Bank account number:
+- Seven or eight digits
+- Bank account branch code:
+- Four digits 
+- A space or dash (optional) 
+- Three digits
+
+Checksum
+
+No
 
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_bank_account finds content that matches the pattern.
+- A keyword from Keyword_jp_bank_account is found.
+- One of the following is true:
+- The function Func_jp_bank_account_branch_code finds content that matches the pattern.
+- A keyword from Keyword_jp_bank_branch_code is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_bank_account finds content that matches the pattern.
+- A keyword from Keyword_jp_bank_account is found.
+
+```
+<!-- Japan Bank Account Number -->
+<Entity id="d354f95b-96ee-4b80-80bc-4377312b55bc" patternsProximity="300" recommendedConfidence="75">
+  <Version minEngineVersion="15.01.0131.000">
+    <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_jp_bank_account" />
+          <Match idRef="Keyword_jp_bank_account" />
+          <Any minMatches="1">
+            <Match idRef="Func_jp_bank_account_branch_code" />
+            <Match idRef="Keyword_jp_bank_branch_code" />
+          </Any>
+      </Pattern>
+  </Version>    
+     <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_bank_account" />
+        <Match idRef="Keyword_jp_bank_account" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_jp_bank_account
+
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
+- 口座番号を当座預金口座の確認 
+- ＃アカウントの確認、勘定番号の確認 
+- ＃勘定の確認 
+- 勘定番号の確認 
+- 口座番号の確認 
+- 銀行口座番号 
+- 銀行口座 
+- 銀行口座＃ 
+- 銀行の勘定番号 
+- 銀行のacct＃ 
+- 銀行の勘定いいえ 
+- 銀行口座番号
+- 普通預金口座番号 
+- 預金口座 
+- 貯蓄口座＃ 
+- 貯蓄勘定の数 
+- 貯蓄勘定＃ 
+- 貯蓄勘定番号 
+- 普通預金口座番号 
+- 引き落とし口座番号 
+- 口座番号 
+- 口座番号＃ 
+- デビットのacct番号 
+- デビット勘定＃ 
+- デビットACCTの番号 
+- デビット口座番号 
+
+#### Keyword_jp_bank_branch_code
+
+Otemachi
+
    
 ## Japan Driver's License Number
 
