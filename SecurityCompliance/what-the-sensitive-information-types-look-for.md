@@ -3603,31 +3603,104 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 Otemachi
 
-   
 ## Japan Driver's License Number
 
 ### Format
 
+12 digits
+
 ### Pattern
+
+12 consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_drivers_license_number finds content that matches the pattern.
+- A keyword from Keyword_jp_drivers_license_number is found.
+
+```
+<!-- Japan Driver's License Number -->
+<Entity id="c6011143-d087-451c-8313-7f6d4aed2270" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_drivers_license_number" />
+        <Match idRef ="Keyword_jp_drivers_license_number" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_jp_drivers_license_number
+
+- dl# 
+- DL＃ 
+- dls# 
+- DLS＃ 
+- driver license 
+- driver licenses 
+- drivers license 
+- driver's license 
+- drivers licenses 
+- driver's licenses 
+- driving licence 
+- lic# 
+- LIC＃ 
+- lics# 
+- state id 
+- state identification 
+- state identification number 
+- 低所得国＃ 
+- 免許証 
+- 状態ID
+- 状態の識別 
+- 状態の識別番号 
+- 運転免許 
+- 運転免許証 
+- 運転免許証番号 
    
 ## Japan Passport Number
 
 ### Format
 
+Two letters followed by seven digits
+
 ### Pattern
+
+Two letters (not case sensitive) followed by seven digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_passport finds content that matches the pattern.
+- A keyword from Keyword_jp_passport is found.
+
+```
+<!-- Japan Passport Number -->
+<Entity id="75177310-1a09-4613-bf6d-833aae3743f8" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_passport" />
+        <Match idRef="Keyword_jp_passport" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_jp_passport
+
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート＃ 
    
 ## Japan Resident Registration Number
 
