@@ -3706,13 +3706,48 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+11 digits
+
 ### Pattern
+
+11 consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_resident_registration_number finds content that matches the pattern.
+- A keyword from Keyword_jp_resident_registration_number is found.
+
+```
+<!-- Japan Resident Registration Number -->
+<Entity id="01c1209b-6389-4faf-a5f8-3f7e13899652" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_resident_registration_number" />
+        <Match idRef ="Keyword_jp_resident_registration_number" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_jp_resident_registration_number
+
+- Resident Registration Number
+- Resident Register Number 
+- Residents Basic Registry Number 
+- Resident Registration No. 
+- Resident Register No. 
+- Residents Basic Registry No. 
+- Basic Resident Register No. 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
+- 住民基本レジストリ番号を常駐 
+- 登録番号を常駐住民基本台帳登録番号 
+
    
 ## Japan Social Insurance Number (SIN)
 
