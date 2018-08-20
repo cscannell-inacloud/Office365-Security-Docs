@@ -4794,31 +4794,133 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ```
 
 ### Keywords
+
+#### Keyword_uk_drivers_license
+
+- DVLA 
+- light vans 
+- quadbikes 
+- motor cars 
+- 125cc 
+- sidecar 
+- tricycles 
+- motorcycles 
+- photocard licence 
+- learner drivers 
+- licence holder 
+- licence holders 
+- driving licences 
+- driving licence 
+- dual control car 
    
 ## U.K. Electoral Roll Number
 
 ### Format
 
+Two letters followed by 1-4 digits
+
 ### Pattern
+
+Two letters (not case sensitive) followed by 1-4 numbers
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_uk_electoral finds content that matches the pattern.
+- A keyword from Keyword_uk_electoral is found.
+
+```
+<!-- U.K. Electoral Number -->
+<Entity id="a3eea206-dc0c-4f06-9e22-aa1be3059963" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_uk_electoral" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_uk_electoral" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_uk_electoral
+
+- council nomination 
+- nomination form 
+- electoral register 
+- electoral roll
+
    
 ## U.K. National Health Service Number
 
 ### Format
 
+10-17 digits separated by spaces
+
 ### Pattern
+
+10-17 digits:
+- Either 3 or 10 digits 
+- A space 
+- Three digits 
+- A space 
+- Four digits
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_uk_nhs_number finds content that matches the pattern.
+- One of the following is true:
+    - A keyword from Keyword_uk_nhs_number is found.
+    - A keyword from Keyword_uk_nhs_number1 is found.
+    - A keyword from Keyword_uk_nhs_number_dob is found.
+- The checksum passes.
+
+```
+<!-- U.K. NHS Number -->
+<Entity id="3192014e-2a16-44e9-aa69-4b20375c9a78" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_uk_nhs_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_uk_nhs_number" />
+          <Match idRef="Keyword_uk_nhs_number1" />
+          <Match idRef="Keyword_uk_nhs_number_dob" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_uk_nhs_number
+
+- national health service 
+- nhs 
+- health services authority 
+- health authority
+
+#### Keyword_uk_nhs_number1
+
+- patient id 
+- patient identification 
+- patient no 
+- patient number
+
+#### Keyword_uk_nhs_number_dob
+
+- GP 
+- DOB 
+- D.O.B 
+- Date of Birth 
+- Birth Date 
    
 ## U.K. National Insurance Number (NINO)
 
