@@ -3753,23 +3753,91 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+7-12 digits
+
 ### Pattern
+
+7-12 digits:
+- Four digits 
+- A hyphen (optional) 
+- Six digits
+OR
+- 7-12 consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_sin finds content that matches the pattern.
+- A keyword from Keyword_jp_sin is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_jp_sin_pre_1997 finds content that matches the pattern.
+- A keyword from Keyword_jp_sin is found.
+
+```
+<!-- Japan Social Insurance Number -->
+<Entity id="c840e719-0896-45bb-84fd-1ed5c95e45ff" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_jp_sin" />
+        <Match idRef="Keyword_jp_sin" />
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_sin_pre_1997" />
+        <Match idRef="Keyword_jp_sin" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_jp_sin
+
+- Social Insurance No. 
+- Social Insurance Num 
+- Social Insurance Number 
+- 社会保険のテンキー 
+- 社会保険番号 
    
 ## Malaysia ID Card Number
 
 ### Format
 
+12 digits containing optional hyphens
+
 ### Pattern
+
+12 digits:
+- Six digits in the format YYMMDD which are the date of birth 
+- A dash (optional) 
+- Two-letter place-of-birth code 
+- A dash (optional) 
+- Three random digits 
+- One-digit gender code
 
 ### Checksum
 
+No
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_malaysia_id_card_number finds content that matches the pattern.
+- A keyword from Keyword_malaysia_id_card_number is found.
+
+```
+<!-- Malaysia ID Card Number -->
+</Entity>
+      <Entity id="7f0e921c-9677-435b-aba2-bb8f1013c749" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+            <IdMatch idRef="Regex_malaysia_id_card_number" />
+            <Match idRef="Keyword_malaysia_id_card_number" />
+        </Pattern>
+</Entity>
+```
 
 ### Keywords
    
