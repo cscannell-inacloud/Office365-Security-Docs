@@ -9,6 +9,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 description: "To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users."
 ---

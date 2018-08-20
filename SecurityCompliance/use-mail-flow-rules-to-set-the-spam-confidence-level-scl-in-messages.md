@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: "You can create a transport rule that sets the spam confidence level (SCL) of an email message. The SCL is a measure of how likely a message is to be spam. Spam is unsolicited (and typically unwanted) email messages. The service takes different action on a message depending on its SCL rating. For example, you might want to bypass spam content filtering for messages that are sent from people inside your organization because you trust that a message sent internally from a colleague isn't spam. Using transport rules to set the SCL value of a message gives you increased control in handling spam."
 ---
@@ -29,7 +31,7 @@ You can create a transport rule that sets the spam confidence level (SCL) of an 
 
 1. In the Exchange admin center (EAC), choose **Mail flow** \> **Rules**.
     
-2. Choose **New**![Add Icon](media/ITPro-EAC-AddIcon.png), and then select **Create a new rule**.
+2. Choose **New**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     

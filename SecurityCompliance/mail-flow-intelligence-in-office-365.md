@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: "Typically, you use a connector to route messages from your Office 365 organization to your on-premises messaging environment. You might also use a connector to route messages from Office 365 to a partner organization. When Office 365 can't deliver these messages via the connector, they're queued in Office 365. "
 ---
@@ -34,7 +36,6 @@ Office 365 generates an error when a message can't be delivered by using a conne
 - [Error code: 450 4.7.320 Certificate validation failed](mail-flow-intelligence-in-office-365.md#ErrorCode47320)
     
 ## Error code: 450 4.4.312 DNS query failed
-<a name="ErrorCode44312"> </a>
 
 Typically, this error means Office 365 tried to connect to the smart host that's specified in the connector, but the DNS query to find the smart host IP addresses failed. The possible causes for this error are:
   
@@ -49,7 +50,6 @@ You need to fix the DNS issue by working with your DNS hosting service.
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
   
 ## Error code: 450 4.4.315 Connection timed out
-<a name="ErrorCode44315"> </a>
 
 Typically, this means Office 365 can't connect to the destination messaging server. The error details will explain the problem. For example:
   
@@ -62,7 +62,6 @@ Find out which scenario applies to you, and make the necessary corrections. For 
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
   
 ## Error code: 450 4.4.316 Connection refused
-<a name="ErrorCode44316"> </a>
 
 Typically, this error means Office 365 encountered a connection error when it tried to connect to the destination messaging server. A likely cause for this error is your firewall is blocking connections from Office 365 IP addresses. Or, this error might be by design if you've completely migrated your on-premises messaging system to Office 365 and shut down your on-premises messaging environment..
   
@@ -70,7 +69,7 @@ Typically, this error means Office 365 encountered a connection error when it tr
     
 - If no more messages should be delivered to your on-premises environment, click **Fix now** in the alert so Office 365 can immediately reject the messages with invalid recipients. This will reduce the risk of exceeding your organization's quota for invalid recipients, which could impact normal message delivery. Or, you can use the following instructions to manually fix the issue: 
     
-  - Disable or delete the connector from Office 365 to your on-premises environment: Office 365 admin center \> **Admin centers** \> **Exchange** \> **Mail flow** \> **Connectors** \> select the connector with the **From** value **Office 365** and the **To** value **Your organization's email server**. Delete the connector by clicking **Delete**![Delete icon](media/ITPro-EAC-DeleteIcon.png), or disable the connector by clicking **Edit**![Edit icon](media/ITPro-EAC-EditIcon.png) and unchecking **Turn it on**.
+  - Disable or delete the connector from Office 365 to your on-premises environment: Office 365 admin center \> **Admin centers** \> **Exchange** \> **Mail flow** \> **Connectors** \> select the connector with the **From** value **Office 365** and the **To** value **Your organization's email server**. Delete the connector by clicking **Delete**![Delete icon](media/ITPro-EAC-DeleteIcon.gif), or disable the connector by clicking **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.gif) and unchecking **Turn it on**.
     
   - Change the accepted domain in Office 365 that's associated with your on-premises messaging environment from **Internal Relay** to **Authoritative**. For instructions, see [Manage Accepted Domains in Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx).
     
@@ -79,7 +78,6 @@ Typically, this error means Office 365 encountered a connection error when it tr
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
   
 ## Error code: 450 4.4.317 Cannot connect to remote server
-<a name="ErrorCode44317"> </a>
 
 Typically, this error means Office 365 connected to the destination messaging server, but the server responded with an immediate error, or doesn't meet the connection requirements. The error details will explain the problem. For example:
   
@@ -92,7 +90,6 @@ Verify the TLS settings and certificates on your on-premises messaging servers, 
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
   
 ## Error code: 450 4.4.318 Connection was closed abruptly
-<a name="ErrorCode44318"> </a>
 
 Typically, this error means Office 365 is having difficulty communicating with your on-premises messaging environment, so the connection was dropped. The possible causes for this error are:
   
@@ -107,7 +104,6 @@ Find out which scenario applies to you, and make the necessary corrections.
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
   
 ## Error code: 450 4.7.320 Certificate validation failed
-<a name="ErrorCode47320"> </a>
 
 Typically, this error means Office 365 encountered an error while trying to validate the certificate of the destination messaging server. The error details will explain the error. For example:
   
@@ -122,7 +118,6 @@ Please fix the certificate or the connector so that queued messages in Office 36
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
   
 ## Other error codes
-<a name="sectionSection6"> </a>
 
 Office 365 is having difficulty delivering messages to your on-premises or partner messaging server. Use the **Destination server** information in the error to examine the issue in your environment, or modify the connector if there's a configuration error. 
   

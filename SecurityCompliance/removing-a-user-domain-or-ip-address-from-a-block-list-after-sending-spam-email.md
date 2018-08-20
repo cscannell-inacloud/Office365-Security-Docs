@@ -11,6 +11,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 
 description: "If a user continuously sends email messages from Office 365 that is classified as spam, they will be blocked from sending any more messages."
@@ -54,7 +56,7 @@ You complete this task in the Exchange admin center (EAC). Check out [Exchange a
 
 |**List Name**|**Delisting Portal**|**For more information**|
 |:-----|:-----|:-----|
-|URIBL  <br/> |[https://admin.uribl.com/?section=lookup](https://admin.uribl.com/?section=lookup) <br/> |[ URIBL website ](https://uribl.com/) <br/> |
+|URIBL  <br/> |[https://admin.uribl.com/?section=lookup](https://admin.uribl.com/?section=lookup) <br/> |[URIBL website ](https://uribl.com/) <br/> |
 |SURBL  <br/> |[http://www.surbl.org/surbl-analysis](http://www.surbl.org/surbl-analysis) <br/> |[Introducing SURBL URI reputation data](http://www.surbl.org/) <br/> |
 |Spamhaus  <br/> |[https://www.spamhaus.org/lookup/](https://www.spamhaus.org/lookup/) <br/> |[Understanding DNSBL Filtering](https://www.spamhaus.org/whitepapers/dnsbl_function/) <br/> |
 |invaluement  <br/> |[http://dnsbl.invaluement.com/lookup/](http://dnsbl.invaluement.com/lookup/) <br/> |[invaluement anti-spam list](http://dnsbl.invaluement.com/) <br/> |

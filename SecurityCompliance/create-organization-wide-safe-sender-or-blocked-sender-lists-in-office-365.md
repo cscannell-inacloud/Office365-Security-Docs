@@ -1,7 +1,7 @@
 ---
 title: "Create organization-wide safe sender or blocked sender lists in Office 365"
 ms.author: stephow
-author: stephow-msft
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/8/2015
 ms.audience: ITPro
@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: "If you want to be sure that you receive mail from a particular sender, because you trust them and their messages, you can adjust your allow list in a spam filter policy in the Exchange admin center."
 ---
@@ -25,7 +27,6 @@ A transport rule would be useful in this situation if you need to filter for com
 For additional management tasks related to transport rules, see [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
 ## Use the EAC to customize a block or allow list to prevent or receive email from a domain or user
-<a name="sectionSection0"> </a>
 
 1. In the EAC, go to **Protection** \> **Spam filter**. 
     
@@ -46,17 +47,14 @@ For additional management tasks related to transport rules, see [Transport Rules
   
 4. On the **Block Lists** page, you can specify entries, such as senders or domains, that will always be marked as spam. The service will apply the configured high confidence spam action on email that matches these entries. 
     
-  - Add unwanted senders to the Sender block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png), and then in the selection dialog box, add the sender addresses you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
+  - Add unwanted senders to the Sender block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
     
-  - Add unwanted domains to the Domain block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
+  - Add unwanted domains to the Domain block list. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Ok** to return to the **Block Lists** page. 
     
     > [!CAUTION]
     > If you block top-level domains, it's likely that email you want will be marked as spam. 
   
 ## What do you need to know before you begin creating a transport rule?
-<a name="sectionSection1"> </a>
-
-- Estimated time to complete: 15 minutes
     
 - You don't need to create a transport rule to bypass spam filtering or mark email as spam for a sender or domain. Use the Exchange Online Protection block and allow lists in a spam policy instead of this transport rule if you simply want to block or allow a specific sender or domain and not attach any extra conditions. Learn more about this at [Configure your spam filter policies](configure-your-spam-filter-policies.md).
     
@@ -65,16 +63,15 @@ For additional management tasks related to transport rules, see [Transport Rules
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## Use the EAC to create a transport rule to bypass spam filtering for a domain or user
-<a name="sectionSection2"> </a>
 
-1. In the EAC, navigate to **Mail flow** \> **Rules**. Choose **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) and then choose **Bypass spam filtering**.
+1. In the EAC, navigate to **Mail flow** \> **Rules**. Choose **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif) and then choose **Bypass spam filtering**.
     
 2. Give the rule a name. Under **Apply this rule if**, choose **The sender** and then select one of the following conditions: 
     
-  - If you want to specify a domain, choose **domain is**. In the **Specify domain** dialog box, enter the domain of the sender you want to designate as safe, such as contoso.com. **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) to move it to the list of phrases. Repeat this step if you want to add additional domains, and click **OK** when you are finished. 
+  - If you want to specify a domain, choose **domain is**. In the **Specify domain** dialog box, enter the domain of the sender you want to designate as safe, such as contoso.com. **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif) to move it to the list of phrases. Repeat this step if you want to add additional domains, and click **OK** when you are finished. 
     
   - If you want to specify a user, choose **is this person**. In the **Select members** dialog box, add the user from the list or type the user and click **Check names**. Repeat this step if you want to add additional users, and click **OK** when you are finished. 
     
@@ -89,15 +86,14 @@ For additional management tasks related to transport rules, see [Transport Rules
 After you create and enforce the rule, spam filtering is bypassed for the domain or user you specified.
   
 ## Use the EAC to create a transport rule that blocks messages sent from a domain or user
-<a name="sectionSection3"> </a>
 
-1. In the EAC, navigate to **Mail flow** \> **Rules**. Choose **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) and then choose **Create a new rule**.
+1. In the EAC, navigate to **Mail flow** \> **Rules**. Choose **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif) and then choose **Create a new rule**.
     
 2. Give the rule a name and then click **More options**. 
     
 3. Under **Apply this rule if**, choose **The sender** and then select one of the following conditions: 
     
-  - If you want to specify a domain, choose **domain is**. In the Specify domain dialog box, enter the sender domain from which you want to block messages, such as contoso.com. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) to move it to the list of phrases. Repeat this step if you want to add additional domains, and click **OK** when you are finished. 
+  - If you want to specify a domain, choose **domain is**. In the Specify domain dialog box, enter the sender domain from which you want to block messages, such as contoso.com. Click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif) to move it to the list of phrases. Repeat this step if you want to add additional domains, and click **OK** when you are finished. 
     
   - If you want to specify a user, choose **is this person**. In the **Select members** dialog box, add the user from the list or type the user and click **Check names**. Repeat this step if you want to add additional users, and click **OK** when you are finished. 
     
@@ -112,7 +108,6 @@ After you create and enforce the rule, spam filtering is bypassed for the domain
 After you create and enforce the rule, any messages sent from the domain or user you specify will be blocked.
   
 ## See also
-<a name="sectionSection3"> </a>
 
 [Configure your spam filter policies](configure-your-spam-filter-policies.md)
   

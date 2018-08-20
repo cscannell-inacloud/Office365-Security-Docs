@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: "This topic describes how Exchange Online and Exchange Online Protection (EOP) admins can find, release, and report on quarantined messages in the Exchange admin center (EAC)."
 ---
@@ -17,7 +19,7 @@ description: "This topic describes how Exchange Online and Exchange Online Prote
 
 This topic describes how Exchange Online and Exchange Online Protection (EOP) admins can find, release, and report on quarantined messages in the Exchange admin center (EAC). Office 365 directs messages to quarantine either because they were identified as spam or they matched a transport rule. 
   
-Use the Security &amp; Compliance Center instead of the EAC to complete any of these tasks as well as view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Use the Security &amp; Compliance Center instead of the EAC to complete any of these tasks as well as view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 Quarantined messages are listed on the **quarantine** page in EAC. By default, messages are sorted from newest to oldest on the **RECEIVED** field. **SENDER**, **SUBJECT**, and **EXPIRES** values are also listed for each message. You can sort on any of these fields by clicking their headers. If you click a column header a second time, the sort order reverses. The **quarantine** page displays a maximum of 500 messages. 
   
@@ -153,7 +155,7 @@ Click **Release selected message and allow sender** from the drop-down list.
     
 4. Click **release**. 
     
-If you click the **Refresh**![Refresh Icon](media/ITPro-EAC-RefreshIcon.png) icon to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients. 
+If you click the **Refresh**![Refresh Icon](media/ITPro-EAC-RefreshIcon.gif) icon to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients. 
   
 ### Release one or more quarantined messages to all recipients
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -182,7 +184,7 @@ If you click the **Refresh**![Refresh Icon](media/ITPro-EAC-RefreshIcon.png) ico
 > [!TIP]
 > Help ensure that a message isn't marked as spam by following the steps in [How to help ensure that a message isn't marked as spam](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md). 
   
-If you click the **Refresh**![Refresh Icon](media/ITPro-EAC-RefreshIcon.png) icon to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients. 
+If you click the **Refresh**![Refresh Icon](media/ITPro-EAC-RefreshIcon.gif) icon to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients. 
   
 ## For more information
 <a name="sectionSection4"> </a>

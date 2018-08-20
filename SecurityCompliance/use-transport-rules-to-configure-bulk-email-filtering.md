@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: "You can set company-wide content filters for spam and bulk email using the default spam content-filter policies. Check out Configure your spam filter policies and Set-HostedContentFilterPolicy on how to set the content filter policies."
 ---
@@ -29,7 +31,7 @@ If you want to more options to filter bulk messages, you can create Exchange Tra
 
 1. In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.
     
-2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     
@@ -84,7 +86,7 @@ If you want to more options to filter bulk messages, you can create Exchange Tra
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
     
-2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     
