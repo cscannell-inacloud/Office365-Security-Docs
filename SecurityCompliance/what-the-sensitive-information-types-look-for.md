@@ -4199,77 +4199,237 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Cartão de Cidadão
 - Bilhete de Identidade
    
-
-   
 ## Saudi Arabia National ID
 
 ### Format
 
+10 digits
+
 ### Pattern
+
+10 consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_saudi_arabia_national_id finds content that matches the pattern.
+- A keyword from Keyword_saudi_arabia_national_id is found.
+
+```
+<!-- Saudi Arabia National ID -->
+<Entity id="8c5a0ba8-404a-41a3-8871-746aa21ee6c0" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_saudi_arabia_national_id" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_saudi_arabia_national_id" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_saudi_arabia_national_id
+
+- Identification Card 
+- I card number 
+- ID number 
+- الوطنية الهوية بطاقة رقم 
 
    
 ## Singapore National Registration Identity Card (NRIC) Number
 
 ### Format
 
+Nine letters and digits
+
 ### Pattern
+
+- Nine letters and digits:
+- The letter "F", "G", "S", or "T" (not case sensitive) 
+- Seven digits 
+- An alphabetic check digit
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_singapore_nric finds content that matches the pattern.
+- A keyword from Keyword_singapore_nric is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_singapore_nric finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- Singapore National Registration Identity Card (NRIC) Number -->
+<Entity id="cead390a-dd83-4856-9751-fb6dc98c34da" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_singapore_nric"/>
+     <Match idRef="Keyword_singapore_nric"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_singapore_nric"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_singapore_nric
 
+- National Registration Identity Card 
+- Identity Card Number 
+- NRIC 
+- IC 
+- Foreign Identification Number 
+- FIN 
+- 身份证 
+- 身份證 
    
 ## South Africa Identification Number
 
 ### Format
 
+13 digits that may contain spaces
+
 ### Pattern
+
+13 digits:
+- Six digits in the format YYMMDD which are the date of birth 
+- Four digits 
+- A single-digit citizenship indicator 
+- The digit "8" or "9" 
+- One digit which is a checksum digit
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_south_africa_identification_number finds content that matches the pattern.
+- A keyword from Keyword_south_africa_identification_number is found.
+- The checksum passes.
+
+```
+<!-- South Africa Identification Number -->
+<Entity id="e2adf7cb-8ea6-4048-a2ed-d89eb65f2780" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_south_africa_identification_number"/>
+     <Match idRef="Keyword_south_africa_identification_number"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_south_africa_identification_number
 
+- Identity card
+- ID
+- Identification 
    
 ## South Korea Resident Registration Number
 
 ### Format
 
+13 digits containing a hyphen
+
 ### Pattern
+
+13 digits:
+- Six digits in the format YYMMDD which are the date of birth 
+- A hyphen 
+- One digit determined by the century and gender 
+- Four-digit region-of-birth code 
+- One digit used to differentiate people for whom the preceding numbers are identical 
+- A check digit.
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_south_korea_resident_number finds content that matches the pattern.
+- A keyword from Keyword_south_korea_resident_number is found.
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_south_korea_resident_number finds content that matches the pattern.
+- The checksum passes.
+
+```
+<!-- South Korea Resident Registration Number -->
+<Entity id="5b802e18-ba80-44c4-bc83-bf2ad36ae36a" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_south_korea_resident_number"/>
+     <Match idRef="Keyword_south_korea_resident_number"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_south_korea_resident_number"/>
+  </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_south_korea_resident_number
 
+- National ID card 
+- Citizen's Registration Number 
+- Jumin deungnok beonho 
+- RRN 
+- 주민등록번호
    
 ## Spain Social Security Number (SSN)
 
 ### Format
 
+11-12 digits
+
 ### Pattern
+
+11-12 digits:
+- Two digits 
+- A forward slash (optional) 
+- 7-8 digits 
+- A forward slash (optional) 
+- Two digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
-### Keywords
-   
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_spanish_social_security_number finds content that matches the pattern.
+- The checksum passes.
 
+```
+<!-- Spain SSN -->
+<Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_spanish_social_security_number" />
+    </Pattern>
+</Entity>
+```
+
+### Keywords
+
+None
    
 ## Sweden National ID
 
