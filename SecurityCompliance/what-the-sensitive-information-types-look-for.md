@@ -4926,14 +4926,76 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Format
 
+7 characters or 9 characters separated by spaces or dashes
+
 ### Pattern
+
+Two possible patterns:
+
+- Two letters (valid NINOs use only certain characters in this prefix, which this pattern validates; not case sensitive)
+- Six digits
+- Either 'A', 'B', 'C', or 'D' (like the prefix, only certain characters are allowed in the suffix; not case sensitive)
+
+OR
+
+- Two letters
+- A space or dash
+- Two digits
+- A space or dash
+- Two digits
+- A space or dash
+- Two digits
+- A space or dash
+- Either 'A', 'B', 'C', or 'D'
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_uk_nino finds content that matches the pattern.
+- A keyword from Keyword_uk_nino is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_uk_nino finds content that matches the pattern.
+- No keyword from Keyword_uk_nino is found.
+
+```
+<!-- U.K. NINO -->
+<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_uk_nino" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_uk_nino" />
+        </Any>
+    </Pattern>    
+     <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_uk_nino" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_uk_nino" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_uk_nino
+
+- national insurance number 
+- national insurance contributions 
+- protection act 
+- insurance 
+- social security number 
+- insurance application 
+- medical application 
+- social insurance 
+- medical attention 
+- social security 
+- great britain 
+- insurance    
    
 ## U.S. / U.K. Passport Number
 
