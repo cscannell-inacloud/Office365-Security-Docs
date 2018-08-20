@@ -3905,15 +3905,43 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Three letters, a space (optional), and four digits
+
 ### Pattern
+
+Three letters (not case sensitive) a space (optional) four digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
-### Keywords
-   
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
+- A keyword from Keyword_nz_terms is found.
+- The checksum passes.
 
+```
+<!-- New Zealand Health Number -->
+<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_nz_terms" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+Keywords
+
+Keyword_nz_terms
+
+- NHI 
+- New Zealand 
+- Health 
+- treatment 
    
 ## Norway Identification Number
 
