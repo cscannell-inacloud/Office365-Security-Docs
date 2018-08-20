@@ -4435,29 +4435,108 @@ None
 
 ### Format
 
+10 or 12 digits and an optional delimiter
+
 ### Pattern
+
+10 or 12 digits and an optional delimiter:
+- 2-4 digits (optional) 
+- Six digits in date format YYMMDD 
+- Delimiter of "-" or "+" (optional), plus
+- Four digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
-### Keywords
-   
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_swedish_national_identifier finds content that matches the pattern.
+- The checksum passes.
 
+```
+<!-- Sweden National ID -->
+<Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_swedish_national_identifier" />
+    </Pattern>
+</Entity>
+```
+
+### Keywords
+
+No
    
 ## Sweden Passport Number
 
 ### Format
 
+Eight digits
+
 ### Pattern
+
+Eight consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_sweden_passport_number finds content that matches the pattern.
+- One of the following is true:
+    - A keyword from Keyword_passport is found.
+    - A keyword from Keyword_sweden_passport is found.
+
+```
+<!-- Sweden Passport Number -->
+<Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_sweden_passport_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_passport" />
+          <Match idRef="Keyword_sweden_passport" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_sweden_passport
 
+- visa requirements 
+- Alien Registration Card 
+- Schengen visas 
+- Schengen visa 
+- Visa Processing 
+- Visa Type 
+- Single Entry 
+- Multiple Entry 
+- G3 Processing Fees 
+
+#### Keyword_passport
+
+- Passport Number 
+- Passport No 
+- Passport # 
+- Passport# 
+- PassportID 
+- Passportno 
+- passportnumber 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート＃ 
+- Numéro de passeport 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport# 
+- PasseportNon 
+- Passeportn ° 
    
 ## SWIFT Code
 
