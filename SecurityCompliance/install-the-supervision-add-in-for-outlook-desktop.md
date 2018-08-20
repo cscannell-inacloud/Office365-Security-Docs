@@ -46,7 +46,7 @@ To install the add-in for Outlook desktop, you'll need the address for the super
 
 Next, reviewers will need to run a couple Exchange Online PowerShell commands so they can connect Outlook to the supervision mailbox.
   
-1. Connect to Exchange Online PowerShell. [How do I do this?](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx)
+1. Connect to Exchange Online PowerShell. [How do I do this?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
     
 2. Run the following commands.
     

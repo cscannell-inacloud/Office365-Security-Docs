@@ -36,7 +36,7 @@ For more information about the different permissions you can give to users in th
 
 1. [Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-2. In the UNRESOLVED_TOKEN_VAL(Office 365 admin center), open **Admin centers** and then click **Security &amp; Compliance**. 
+2. In the Office 365 admin center, open **Admin centers** and then click **Security &amp; Compliance**. 
     
 3. In the Security &amp; Compliance Center, go to **Permissions**.
     
