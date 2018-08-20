@@ -5265,24 +5265,176 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Nine digits that start with a "9" and contain a "7" or "8" as the fourth digit, optionally formatted with spaces or dashes
+
 ### Pattern
+
+Formatted:
+- The digit "9" 
+- Two digits 
+- A space or dash 
+- A "7" or "8" 
+- A digit 
+- A space, or dash 
+- Four digits
+
+Unformatted:
+- The digit "9" 
+- Two digits 
+- A "7" or "8" 
+- Five digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_formatted_itin finds content that matches the pattern.
+- At least one of the following is true:
+    - A keyword from Keyword_itin is found.
+    - The function Func_us_address finds an address in the right date format.
+    - The function Func_us_date finds a date in the right date format.
+    - A keyword from Keyword_itin_collaborative is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_unformatted_itin finds content that matches the pattern.
+- At least one of the following is true:
+    - A keyword from Keyword_itin_collaborative is found.
+    - The function Func_us_address finds an address in the right date format.
+    - The function Func_us_date finds a date in the right date format.
+
+```
+<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_formatted_itin" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_itin" />
+          <Match idRef="Func_us_address" />
+          <Match idRef="Func_us_date" />
+          <Match idRef="Keyword_itin_collaborative" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_unformatted_itin" />
+        <Match idRef="Keyword_itin" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_itin_collaborative" />
+          <Match idRef="Func_us_address" />
+          <Match idRef="Func_us_date" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_itin
+
+- taxpayer 
+- tax id 
+- tax identification 
+- itin 
+- ssn 
+- tin 
+- social security 
+- tax payer 
+- itins 
+- taxid 
+- individual taxpayer 
+
+#### Keyword_itin_collaborative
+
+- License 
+- DL 
+- DOB 
+- Birthdate 
+- Birthday 
+- Date of Birth 
    
 ## U.S. Social Security Number (SSN)
 
 ### Format
 
+9 digits, which may be in a formatted or unformatted pattern
+
+> [!NOTE]
+> If issued before mid-2011, an SSN has strong formatting where certain parts of the number must fall within certain ranges to be valid (but there's no checksum).
+
 ### Pattern
+
+Four functions look for SSNs in four different patterns:
+- Func_ssn finds SSNs with pre-2011 strong formatting that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
+- Func_unformatted_ssn finds SSNs with pre-2011 strong formatting that are unformatted as nine consecutive digits (ddddddddd)
+- Func_randomized_formatted_ssn finds post-2011 SSNs that are formatted with dashes or spaces (ddd-dd-dddd OR ddd dd dddd)
+- Func_randomized_unformatted_ssn finds post-2011 SSNs that are unformatted as nine consecutive digits (ddddddddd)
 
 ### Checksum
 
+No
+
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_ssn finds content that matches the pattern.
+- A keyword from Keyword_ssn is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_unformatted_ssn finds content that matches the pattern.
+- A keyword from Keyword_ssn is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_randomized_formatted_ssn finds content that matches the pattern.
+- A keyword from Keyword_ssn is found.
+- The function Func_ssn does not find content that matches the pattern.
+
+A DLP policy is 55% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_randomized_unformatted_ssn finds content that matches the pattern.
+- A keyword from Keyword_ssn is found.
+- The function Func_unformatted_ssn does not find content that matches the pattern.
+
+```
+<!-- U.S. Social Security Number (SSN) -->
+    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_ssn" />
+        <Match idRef="Keyword_ssn" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_unformatted_ssn" />
+        <Match idRef="Keyword_ssn" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_randomized_formatted_ssn" />
+        <Match idRef="Keyword_ssn" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Func_ssn" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="55">
+        <IdMatch idRef="Func_randomized_unformatted_ssn" />
+        <Match idRef="Keyword_ssn" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Func_unformatted_ssn" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+
 ### Keywords
+
+#### Keyword_ssn
+
+- Social Security 
+- Social Security# 
+- Soc Sec 
+- SSN 
+- SSNS 
+- SSN# 
+- SS# 
+- SSID 
    
 
