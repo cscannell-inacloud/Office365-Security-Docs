@@ -4542,15 +4542,71 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Four letters followed by 5-31 letters or digits
+
 ### Pattern
+
+Four letters followed by 5-31 letters or digits:
+- Four-letter bank code (not case sensitive) 
+- An optional space 
+- 4-28 letters or digits (the Basic Bank Account Number (BBAN)) 
+- An optional space 
+- 1-3 letters or digits (remainder of the BBAN)
 
 ### Checksum
 
+No
+
 ### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_swift finds content that matches the pattern.
+- A keyword from Keyword_swift is found.
+
+```
+<Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">
+<Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_swift" />
+        <Match idRef="Keyword_swift" />
+    </Pattern>
+</Entity>
+```
 
 ### Keywords
    
+#### Keyword_swift
 
+- international organization for standardization 9362 
+- iso 9362 
+- iso9362 
+- swift\# 
+- swiftcode 
+- swiftnumber 
+- swiftroutingnumber 
+- swift code 
+- swift number # 
+- swift routing number 
+- bic number 
+- bic code 
+- bic \# 
+- bic\# 
+- bank identifier code 
+- 標準化9362 
+- 迅速＃ 
+- SWIFTコード 
+- SWIFT番号 
+- 迅速なルーティング番号 
+- BIC番号 
+- BICコード 
+- 銀行識別コードのための国際組織 
+- Organisation internationale de normalisation 9362 
+- rapide \# 
+- code SWIFT 
+- le numéro de swift 
+- swift numéro d'acheminement 
+- le numéro BIC 
+- \# BIC 
+- code identificateur de banque 
    
 ## Taiwan National ID
 
