@@ -4761,11 +4761,37 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Combination of 18 letters and digits in the specified format
+
 ### Pattern
+
+18 letters and digits:
+- Five letters (not case sensitive) or the digit "9" in place of a letter 
+- One digit 
+- Five digits in the date format DDMMY for date of birth 
+- Two letters (not case sensitive) or the digit "9" in place of a letter 
+- Five digits
 
 ### Checksum
 
+Yes
+
 ### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_uk_drivers_license finds content that matches the pattern.
+- A keyword from Keyword_uk_drivers_license is found.
+- The checksum passes.
+
+```
+<!-- U.K. Driver's License Number -->
+<Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_uk_drivers_license" />
+        <Match idRef="Keyword_uk_drivers_license" />
+    </Pattern>
+</Entity>
+```
 
 ### Keywords
    
