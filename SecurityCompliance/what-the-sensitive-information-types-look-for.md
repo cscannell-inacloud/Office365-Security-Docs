@@ -4163,13 +4163,41 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Eight digits
+
 ### Pattern
+
+Eight digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_portugal_citizen_card finds content that matches the pattern.
+- A keyword from Keyword_portugal_citizen_card is found.
+
+```
+<!-- Portugal Citizen Card Number -->
+<Entity id="91a7ece2-add4-4986-9a15-c84544d81ecd" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_portugal_citizen_card"/>
+     <Match idRef="Keyword_portugal_citizen_card"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_portugal_citizen_card
+
+- Citizen Card
+- National ID Card
+- CC
+- Cartão de Cidadão
+- Bilhete de Identidade
    
 
    
