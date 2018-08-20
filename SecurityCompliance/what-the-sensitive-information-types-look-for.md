@@ -3841,20 +3841,64 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Keywords
    
+#### Keyword_malaysia_id_card_number
 
+- MyKad 
+- Identity Card 
+- ID Card 
+- Identification Card 
+- Digital Application Card 
+- Kad Akuan Diri 
+- Kad Aplikasi Digital 
    
 ## Netherlands Citizen's Service (BSN) Number
 
 ### Format
 
+8-9 digits containing optional spaces
+
 ### Pattern
+
+8-9 digits:
+- Three digits 
+- A space (optional) 
+- Three digits 
+- A space (optional) 
+- 2-3 digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_netherlands_bsn finds content that matches the pattern.
+- A keyword from Keyword_netherlands_bsn is found.
+- The function Func_eu_date2 finds a date in the right date format.
+- The checksum passes.
+
+```
+<!-- Netherlands Citizen's Service (BSN) Number -->
+<Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="Func_netherlands_bsn" /> 
+       <Match idRef="Keyword_netherlands_bsn" /> 
+       <Match idRef="Func_eu_date2" /> 
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_netherlands_bsn
+
+- Citizen service number 
+- BSN 
+- Burgerservicenummer 
+- Sofinummer 
+- Persoonsgebonden nummer 
+- Persoonsnummer    
 
    
 ## New Zealand Ministry of Health Number
