@@ -4083,28 +4083,80 @@ The checksum passes.
 
 ### Format
 
+11 digits
+
 ### Pattern
+
+11 consecutive digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_pesel_identification_number finds content that matches the pattern.
+- A keyword from Keyword_pesel_identification_number is found.
+- The checksum passes.
+
+```
+<!-- Poland National ID (PESEL) -->      
+<Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_pesel_identification_number" />
+          <Match idRef="Keyword_pesel_identification_number" />
+      </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_pesel_identification_number
+
+- Nr PESEL
+- PESEL   
 
    
 ## Poland Passport
 
 ### Format
 
+Two letters and seven digits
+
 ### Pattern
+
+Two letters (not case sensitive) followed by seven digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_polish_passport_number finds content that matches the pattern.
+- A keyword from Keyword_polish_national_id_passport_number is found.
+- The checksum passes.
+
+```
+<!-- Poland Passport Number -->
+<Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_passport_number" />
+          <Match idRef="Keyword_polish_national_id_passport_number" />
+      </Pattern>
+</Entity>
+</Version>
+```
+
 ### Keywords
-   
+
+#### Keyword_polish_national_id_passport_number
+
+- Nazwa i nr dowodu tożsamości 
+- Dowód Tożsamości 
+- dow. os. 
 
    
 ## Portugal Citizen Card Number
