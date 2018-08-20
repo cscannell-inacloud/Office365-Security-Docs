@@ -4043,14 +4043,40 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Three letters and six digits
+
 ### Pattern
+
+Three letters (not case sensitive) followed by six digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+The function Func_polish_national_id finds content that matches the pattern.
+A keyword from Keyword_polish_national_id_passport_number is found.
+The checksum passes.
+
+```
+<!-- Poland Identity Card-->
+<Entity id="25E64989-ED5D-40CA-A939-6C14183BB7BF" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_national_id" />
+          <Match idRef="Keyword_polish_national_id_passport_number" />
+      </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_polish_national_id_passport_number
+
+- Nazwa i nr dowodu tożsamości 
+- Dowód Tożsamości 
+- dow. os. 
 
    
 ## Poland National ID (PESEL)
