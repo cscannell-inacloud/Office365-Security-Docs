@@ -4612,38 +4612,150 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+One letter (in English) followed by nine digits
+
 ### Pattern
+
+One letter (in English) followed by nine digits:
+- One letter (in English, not case sensitive) 
+- The digit "1" or "2" 
+- Eight digits
 
 ### Checksum
 
+Yes
+
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_taiwanese_national_id finds content that matches the pattern.
+- A keyword from Keyword_taiwanese_national_id is found.
+- The checksum passes.
+
+```
+<!-- Taiwanese National ID -->
+<Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_taiwanese_national_id" />
+          <Match idRef="Keyword_taiwanese_national_id" />
+      </Pattern>
+</Entity>
+```
+
 ### Keywords
-   
+
+#### Keyword_taiwanese_national_id
+
+- 身份證字號 
+- 身份證 
+- 身份證號碼 
+- 身份證號 
+- 身分證字號 
+- 身分證 
+- 身分證號碼 
+- 身份證號 
+- 身分證統一編號 
+- 國民身分證統一編號 
+- 簽名 
+- 蓋章 
+- 簽名或蓋章 
+- 簽章   
    
 ## Taiwan Passport Number
 
 ### Format
 
+- Biometric passport number: Nine digits
+- Non-biometric passport number: Nine digits
+
 ### Pattern
+Biometric passport number:
+- The digit "3" 
+- Eight digits
+
+Non-biometric passport number:
+- Nine digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_taiwan_passport finds content that matches the pattern.
+- A keyword from Keyword_taiwan_passport is found.
+
+```
+<!-- Taiwan Passport Number -->
+<Entity id="e7251cb4-4c2c-41df-963e-924eb3dae04a" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_taiwan_passport"/>
+     <Match idRef="Keyword_taiwan_passport"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_taiwan_passport
+
+- ROC passport number 
+- Passport number 
+- Passport no 
+- Passport Num 
+- Passport # 
+- 护照 
+- 中華民國護照 
+- Zhōnghuá Mínguó hùzhào
    
 ## Taiwan Resident Certificate (ARC/TARC) Number
 
 ### Format
 
+10 letters and digits
+
 ### Pattern
+
+10 letters and digits:
+- Two letters (not case sensitive) 
+- Eight digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_taiwan_resident_certificate finds content that matches the pattern.
+- A keyword from Keyword_taiwan_resident_certificate is found.
+
+```
+<!-- Taiwan Resident Certificate (ARC/TARC) -->
+<Entity id="48269fec-05ea-46ea-b326-f5623a58c6e9" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_taiwan_resident_certificate"/>
+     <Match idRef="Keyword_taiwan_resident_certificate"/>
+  </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_taiwan_resident_certificate
+
+- Resident Certificate 
+- Resident Cert 
+- Resident Cert. 
+- Identification card 
+- Alien Resident Certificate 
+- ARC 
+- Taiwan Area Resident Certificate 
+- TARC 
+- 居留證 
+- 外僑居留證 
+- 台灣地區居留證 
    
 ## U.K. Driver's License Number
 
