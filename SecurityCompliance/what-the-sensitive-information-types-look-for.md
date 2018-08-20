@@ -5001,38 +5001,265 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+Nine digits
+
 ### Pattern
+
+Nine consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_usa_uk_passport finds content that matches the pattern.
+- A keyword from Keyword_passport is found.
+
+```
+<Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_usa_uk_passport" />
+        <Match idRef="Keyword_passport" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_passport
+
+- Passport Number 
+- Passport No 
+- Passport # 
+- Passport# 
+- PassportID 
+- Passportno 
+- passportnumber 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート＃ 
+- Numéro de passeport 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport# 
+- PasseportNon 
+- Passeportn ° 
    
 ## U.S. Bank Account Number
 
 ### Format
 
+8-17 digits
+
 ### Pattern
+
+8-17 consecutive digits
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_usa_bank_account_number finds content that matches the pattern.
+- A keyword from Keyword_usa_Bank_Account is found.
+
+```
+<!-- U.S. Bank Account Number -->
+<Entity id="a2ce32a8-f935-4bb6-8e96-2a5157672e2c" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_usa_bank_account_number" />
+        <Match idRef="Keyword_usa_Bank_Account" />
+    </Pattern>
+</Entity>
+```
+
 ### Keywords
+
+#### Keyword_usa_Bank_Account
+
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account. 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
    
 ## U.S. Driver's License Number
 
 ### Format
 
+Depends on the state
+
 ### Pattern
+
+Depends on the state -- for example, New York:
+- Nine digits formatted like ddd ddd ddd will match.
+- Nine digits like ddddddddd will not match.
 
 ### Checksum
 
+No
+
 ### Definition
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_york_drivers_license_number finds content that matches the pattern.
+- A keyword from Keyword_[state_name]_drivers_license_name is found.
+- A keyword from Keyword_us_drivers_license is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_york_drivers_license_number finds content that matches the pattern.
+- A keyword from Keyword_[state_name]_drivers_license_name is found.
+- A keyword from Keyword_us_drivers_license_abbreviations is found.
+- No keyword from Keyword_us_drivers_license is found.
+
+```
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_new_york_drivers_license_number" />
+        <Match idRef="Keyword_new_york_drivers_license_name" />
+        <Match idRef="Keyword_us_drivers_license" />
+    </Pattern>
+    <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_new_york_drivers_license_number" />
+        <Match idRef="Keyword_new_york_drivers_license_name" />
+        <Match idRef="Keyword_us_drivers_license_abbreviations" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_us_drivers_license" />
+        </Any>
+    </Pattern>
+```
+
 ### Keywords
-   
+
+#### Keyword_us_drivers_license_abbreviations
+
+- DL 
+- DLS 
+- CDL 
+- CDLS 
+- ID 
+- IDs 
+- DL# 
+- DLS# 
+- CDL# 
+- CDLS# 
+- ID#
+- IDs# 
+- ID number 
+- ID numbers 
+- LIC 
+- LIC# 
+
+#### Keyword_us_drivers_license
+
+- DriverLic 
+- DriverLics 
+- DriverLicense 
+- DriverLicenses 
+- Driver Lic 
+- Driver Lics 
+- Driver License 
+- Driver Licenses 
+- DriversLic 
+- DriversLics 
+- DriversLicense 
+- DriversLicenses 
+- Drivers Lic 
+- Drivers Lics 
+- Drivers License 
+- Drivers Licenses 
+- Driver'Lic 
+- Driver'Lics 
+- Driver'License 
+- Driver'Licenses 
+- Driver' Lic 
+- Driver' Lics 
+- Driver' License 
+- Driver' Licenses
+- Driver'sLic 
+- Driver'sLics 
+- Driver'sLicense 
+- Driver'sLicenses 
+- Driver's Lic 
+- Driver's Lics 
+- Driver's License 
+- Driver's Licenses 
+- identification number 
+- identification numbers 
+- identification # 
+- id card 
+- id cards 
+- identification card 
+- identification cards 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- Driver Lic# 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- id card# 
+- id cards# 
+- identification card# 
+- identification cards# 
+
+
+#### Keyword_[state_name]_drivers_license_name
+
+- State abbreviation (for example, "NY") 
+- State name (for example, "New York")    
    
 ## U.S. Individual Taxpayer Identification Number (ITIN)
 
