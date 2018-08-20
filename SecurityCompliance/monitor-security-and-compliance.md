@@ -44,7 +44,7 @@ Head over to the **Reports** dashboard in the Security &amp; Compliance Center f
   
 - [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
     
-- [View your access and usage reports](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-view-access-usage-reports)
+- [View your access and usage reports](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)
     
 ## Research and respond to threats
 

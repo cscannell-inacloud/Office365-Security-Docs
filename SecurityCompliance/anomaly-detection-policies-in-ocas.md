@@ -23,7 +23,7 @@ Office 365 Advanced Security Management is now Office 365 Cloud App Security.
 |:-----|:-----|:-----|:-----|
 |[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |You are here!  <br/> [Next step](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
    
-Beginning with [Microsoft Cloud App Security release 116](https://docs.microsoft.com/en-us/cloud-app-security/release-notes), Office 365 Cloud App Security includes several predefined anomaly detection policies ("out of the box") that include user and entity behavioral analytics (UEBA) and machine learning (ML).
+Beginning with [Microsoft Cloud App Security release 116](https://docs.microsoft.com/cloud-app-security/release-notes), Office 365 Cloud App Security includes several predefined anomaly detection policies ("out of the box") that include user and entity behavioral analytics (UEBA) and machine learning (ML).
   
 ![To view your anomaly detection policies, choose Control \> Policies.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   

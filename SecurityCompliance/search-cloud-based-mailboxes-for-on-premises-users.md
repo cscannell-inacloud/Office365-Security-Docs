@@ -100,7 +100,7 @@ After the feature has been enabled, you can use Content Search in the Security &
 
 You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in the Office 365 Security &amp; Compliance Center PowerShell to search the cloud-based mailbox for on-premises users. As previously explained, you don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users. 
   
-1. [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
 2. Run the following PowerShell command to create a new content searches the cloud-based mailboxes of on-premises users.
     
@@ -120,11 +120,11 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
   
 For more information using these cmdlets, see:
   
-- [New-ComplianceSearch](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
     
-- [Set-ComplianceSearch](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
+- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
     
 
 ## Known issues

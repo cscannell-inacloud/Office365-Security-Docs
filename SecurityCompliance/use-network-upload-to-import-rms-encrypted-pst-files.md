@@ -95,7 +95,7 @@ Configuring Azure RMS for PST Import consists of three steps:
     
 ### Activating Azure RMS
 
-Azure RMS is disabled by default, but you or another administrator in your organization might have activated it. Follow instructions on [Activating Azure Rights Management](https://docs.microsoft.com/en-us/azure/information-protection/deploy-use/activate-service) to install and activate Azure DRM.
+Azure RMS is disabled by default, but you or another administrator in your organization might have activated it. Follow instructions on [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service) to install and activate Azure DRM.
   
 ### Configuring RMS in Exchange Online
 

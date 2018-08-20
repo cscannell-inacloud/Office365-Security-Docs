@@ -24,7 +24,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -41,7 +41,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -58,7 +58,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/renew.svg" alt="Renew" />
+                            <img src="https://docs.microsoft.com/office/media/icons/renew.svg" alt="Renew" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -85,7 +85,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/success-blue.svg" alt="Success" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/success-blue.svg" alt="Success" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,7 +104,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Security" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="Security" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
@@ -122,7 +122,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-blue.svg" alt="What's New" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's New" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">

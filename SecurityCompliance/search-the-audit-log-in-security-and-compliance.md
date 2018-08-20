@@ -101,7 +101,7 @@ Be sure to read the following items before you start searching the Office 365 au
     
 - Exchange Online audit logs consist of two types of events: Exchange admin events (actions taken by administrators) and mailbox events (actions taken by users on mailboxes). Note that mailbox auditing isn't enabled by default. It must be enable for each user mailbox before mailbox events can be searched for in the Office 365 audit log. For more information about mailbox auditing and the mailbox auditing actions that are logged, see [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md).
     
-- Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the Office 365 audit log, you have to enable auditing in the Power BI admin portal. For instructions, see [Auditing Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+- Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the Office 365 audit log, you have to enable auditing in the Power BI admin portal. For instructions, see [Auditing Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
     
     
 ## Search the audit log
@@ -544,7 +544,7 @@ For a list and detailed description of the eDiscovery activities that are logged
   
 The following table lists user and admin activities in Power BI that are logged in the Office 365 audit log.
   
- **Important:** Audit logging for Power BI isn't enabled by default. To search for Power BI activities in theOffice 365 audit log, you have to enable auditing in the Power BI admin portal. For instructions, see [Auditing Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+ **Important:** Audit logging for Power BI isn't enabled by default. To search for Power BI activities in theOffice 365 audit log, you have to enable auditing in the Power BI admin portal. For instructions, see [Auditing Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
   
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|

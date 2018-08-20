@@ -37,7 +37,7 @@ Protecting access to your Office 365 data and services is crucial to defending a
   
 - [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
     
-- [Secure email policies and configurations](https://docs.microsoft.com/en-us/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -61,7 +61,7 @@ The Security &amp; Compliance Center gives you a single view into the controls y
 
 Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.
   
-- [Secure email policies and configurations](https://docs.microsoft.com/en-us/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
 - [Contoso in the Microsoft Cloud](http://aka.ms/cloudarchcontoso)
     
