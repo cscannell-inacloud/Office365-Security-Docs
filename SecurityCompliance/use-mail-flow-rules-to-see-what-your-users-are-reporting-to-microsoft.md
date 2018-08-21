@@ -8,6 +8,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: "You can create an Exchange Transport rule to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes"
 ---
@@ -28,16 +30,16 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 
 1. In the EAC, navigate to **Mail flow** \> **Rules**.
     
-2. Click ![Add Icon](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
     
 3. Give the rule a name and then click **More options**.
     
 4. Under **Apply this rule if**, select **The recipient** and then choose **address includes any of these words**.
     
 5. In the **specify words or phrases** box, do the following: 
-    - Type `abuse@messaging.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type `junk@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false negative messages to Microsoft.
-    - Type `phish@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). This email address is used to submit missed phishing messages to Microsoft.
-    - Type `false_positive@messaging.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png), and then type `not_junk@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.png). These email addresses are used to submit false positive messages to Microsoft.
+    - Type `abuse@messaging.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then type `junk@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif). These email addresses are used to submit false negative messages to Microsoft.
+    - Type `phish@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif). This email address is used to submit missed phishing messages to Microsoft.
+    - Type `false_positive@messaging.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then type `not_junk@office365.microsoft.com` and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif). These email addresses are used to submit false positive messages to Microsoft.
     - Click **ok**.
     
 6. Under **Do the following**, select **Bcc the message to...** and then and then select the mailboxes where you'd like to receive the messages. 

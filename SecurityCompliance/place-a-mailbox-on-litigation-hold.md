@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: "Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. "
 ---
@@ -46,7 +48,7 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 
 1. Go to **Recipients** \> **Mailboxes**.
     
-2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit**![Edit icon](media/ITPro-EAC-EditIcon.png).
+2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.gif).
     
 3. On the mailbox properties page, click **Mailbox features.**
     
@@ -119,7 +121,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
     
 1. Go to **Recipients** \> **Mailboxes**.
     
-2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit**![Edit icon](media/ITPro-EAC-EditIcon.png).
+2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon](media/ITPro-EAC-EditIcon.gif).
     
 3. On the mailbox properties page, click **Mailbox features.**
     

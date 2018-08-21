@@ -9,6 +9,8 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 description: "Are you getting an error message when you try to send an email to a recipient whose email address is in Office 365? If you think you should not be receiving the error message, you can use the delist portal to remove yourself from the Office 365 blocked senders list."
 ---
@@ -23,7 +25,7 @@ Microsoft uses the blocked senders list to protect its customers from spam, spoo
   
 You will know you have been added to the list when you receive a response to a mail message that includes an error that looks something like this:
   
-550 5.7.606-649 Access denied, banned sending IP [ _IP address_]; To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please see [Email non-delivery reports in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 Access denied, banned sending IP [_IP address_]; To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please see [Email non-delivery reports in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 where  _IP address_ is the IP address of the computer on which the mail server runs. 
   

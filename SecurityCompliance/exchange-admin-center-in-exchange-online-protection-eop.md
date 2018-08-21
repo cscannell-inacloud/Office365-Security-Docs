@@ -9,6 +9,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 
 description: "The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP)."
@@ -20,7 +22,7 @@ The Exchange admin center (EAC) is the web-based management console for Microsof
   
 Looking for the Exchange 2013 version of this topic? See [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
-Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
   
 ## Accessing the EAC
 
@@ -29,7 +31,6 @@ In most cases, EOP customers will access the EAC through the Office 365 admin ce
 You can also access the EAC sign in page directly via the following URL: https://admin.protection.outlook.com/ecp/\<companydomain\>. For example, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. After specifying your user credentials you will be taken directly into the EAC.
   
 ## Common user interface elements in the EAC
-<a name="BKMK_CommonUserInterfaceElements"> </a>
 
 This section describes the user interface elements that are found in the EAC.
   
@@ -59,14 +60,14 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
   
 |**Icon**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Add Icon](media/ITPro-EAC-AddIcon.png)           <br/> |Add, New  <br/> |Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> |
-|![Edit icon](media/ITPro-EAC-EditIcon.png)           <br/> |Edit  <br/> |Use this icon to edit an object.  <br/> |
-|![Delete icon](media/ITPro-EAC-DeleteIcon.png)           <br/> |Delete  <br/> |Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.  <br/> |
-|![Search icon](media/ITPro-EAC-.png)           <br/> |Search  <br/> |Use this icon to open a search box in which you can type the search phrase for an object you want to find.  <br/> |
-|![Refresh Icon](media/ITPro-EAC-RefreshIcon.png)           <br/> |Refresh  <br/> |Use this icon to refresh the list view.  <br/> |
-|![More Options Icon](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |More options  <br/> |Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.  <br/> |
-|![Up Arrow Icon](media/ITPro-EAC-UpArrowIcon.png)![Down Arrow Icon](media/ITPro-EAC-DownArrowIcon.png)           <br/> |Up arrow and down arrow  <br/> |Use these icons to move an object's priority up or down.  <br/> |
-|![Remove icon](media/ITPro-EAC-RemoveIcon.png)           <br/> |Remove  <br/> |Use this icon to remove objects from a list.  <br/> |
+|![Add Icon](media/ITPro-EAC-AddIcon.gif)           <br/> |Add, New  <br/> |Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> |
+|![Edit icon](media/ITPro-EAC-EditIcon.gif)           <br/> |Edit  <br/> |Use this icon to edit an object.  <br/> |
+|![Delete icon](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Delete  <br/> |Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.  <br/> |
+|![Search icon](media/ITPro-EAC-.gif)           <br/> |Search  <br/> |Use this icon to open a search box in which you can type the search phrase for an object you want to find.  <br/> |
+|![Refresh Icon](media/ITPro-EAC-RefreshIcon.gif)           <br/> |Refresh  <br/> |Use this icon to refresh the list view.  <br/> |
+|![More Options Icon](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |More options  <br/> |Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.  <br/> |
+|![Up Arrow Icon](media/ITPro-EAC-UpArrowIcon.gif)![Down Arrow Icon](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Up arrow and down arrow  <br/> |Use these icons to move an object's priority up or down.  <br/> |
+|![Remove icon](media/ITPro-EAC-RemoveIcon.gif)           <br/> |Remove  <br/> |Use this icon to remove objects from a list.  <br/> |
    
 ### List View
 
@@ -78,9 +79,9 @@ When you select an object from the list view, information about that object is d
   
 ### Me tile and Help
 
-The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](media/ITPro-EAC-HelpIcon.png) drop-down menu, you can perform the following actions: 
+The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions: 
   
-1. **Help** Click ![Help Icon](media/ITPro-EAC-HelpIcon.png) to view the online help content. 
+1. **Help** Click ![Help Icon](media/ITPro-EAC-HelpIcon.gif) to view the online help content. 
     
 2. **Disable Help bubble** The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled. 
     
@@ -89,12 +90,10 @@ The **Me** tile allows you to sign out the EAC and sign in as a different user. 
 4. **Privacy** Click to read the privacy policy for Exchange Online Protection. 
     
 ## Supported Browsers
-<a name="BKMK_SupportedBrowsers"> </a>
 
 For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps. We also recommend that you install software updates when they become available. For more information about the supported browsers and system requirements for the service, see [Office 365 System Requirements](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
   
 ## Supported languages in EOP
-<a name="BKMK_SupportedLanguages"> </a>
 
 The following languages are supported and available for Exchange Online Protection.
   
