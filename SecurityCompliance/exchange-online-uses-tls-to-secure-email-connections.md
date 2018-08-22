@@ -78,14 +78,16 @@ To help ensure a smooth transition, we will continue to provide the old certific
 
 The new certificate is issued by a different certificate authority (CA) from the previous certificate used by Exchange Online. As a result, you may need to perform some actions in order to use the new certificate.
 
-The new certificate requires connecting to the endpoints of the new CA as part of validating the certificate. Failure to do so can result in mail flow being negatively affected. If you protect your mail servers with firewalls that only let the mail servers connect with certain destinations you need to check if your server is able to validate the new certificate. To confirm that your server can use the new certificate, perform the following actions:
+The new certificate requires connecting to the endpoints of the new CA as part of validating the certificate. Failure to do so can result in mail flow being negatively affected. If you protect your mail servers with firewalls that only let the mail servers connect with certain destinations you need to check if your server is able to validate the new certificate. To confirm that your server can use the new certificate, complete these steps:
 
-- ***Connect to EXO pshell*** run certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl
-- On the window that appears, choose **Retrieve**.
-- When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. ***Otherwise? what should they do? Confirm the ports and connections are available? Where do we send them?
+1. Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
+  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+2. On the window that appears, choose **Retrieve**.
+3. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. ***Otherwise? what should they do? Confirm the ports and connections are available? Where do we send them?
 
 Normally, you receive updates to your root certificates automatically through Windows Update. However, some deployments have additional security in place that prevents these updates from occurring automatically. In these locked-down deployments where Windows Update can't automatically update root certificates, you need to ensure that the correct root CA certificate is installed by completing these steps:
-1.  ***Connect to EXO pshell*** run certmgr.msc.
+1.  Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
+  `certmgr.msc`
 2. Under **Trusted Root Certification Authority/Certificates**, confirm that the new certificate is listed.
 
 ## Get more information about TLS and Office 365
