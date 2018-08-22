@@ -79,7 +79,7 @@ The next step is to create a DSR case. When you create a case, you can choose to
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in to Office 365 using your work or school account. 
     
-2. In the Security &amp; Compliance Center, click **Data privacy** \> **Data subject requests**, and then click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New DSR case**.
+2. In the Security &amp; Compliance Center, click **Data privacy** \> **Data subject requests**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New DSR case**.
     
 3. On the **New DSR case** flyout page, give the case a name, type an optional description, and then click **Next**. Note that the name of the case must be unique in your organization.
     
@@ -299,7 +299,7 @@ When you export data from MyAnalytics and the Office Roaming Service, the data i
   
 1. In the Security &amp; Compliance Center, click **Data privacy** \> **Data subject requests**, and then click **Open** next to the DSR case for the data subject that you want to export usage data for. 
     
-2. Click the **Search** tab at the top of the page, and then click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Guided search**.
+2. Click the **Search** tab at the top of the page, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Guided search**.
     
 3. Click **Cancel** on the **Name your search** page. 
     
@@ -388,7 +388,7 @@ For more information about partially indexed items, see:
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
 
-- [Exporting unindexed items](export-search-results.md#exporting-unindexed-items)
+- [Exporting partially indexed items](export-search-results.md#exporting-partially-indexed-items)
     
 ### Searching and exporting data from Microsoft Teams and Office 365 Groups
 

@@ -40,16 +40,15 @@ To access Attack Simulator, in the Security &amp; Compliance Center, choose **Th
 
 Make sure that you and your organization meet the following requirements for Attack Simulator:
   
-- Your organization has [Office 365 Threat Intelligence](office-365-ti.md), with Attack Simulator visible in the Security &amp; Compliance Center (go to **Threat management** \> **Attack simulator**).
+- Your organization has [Office 365 Threat Intelligence](office-365-ti.md), with Attack Simulator visible in the Security &amp; Compliance Center (go to **Threat management** \> **Attack simulator**)
     
 - Your organization's email is hosted in Exchange Online. (Attack Simulator is not available for on-premises email servers.)
     
-- You are an Office 365 global administrator, or have appropriate permissions assigned in the Security &amp; Compliance Center. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You are an Office 365 global administrator
     
-- Your organization is using [Set up multi-factor authentication for Office 365 users](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- Your organization is using [Multi-factor authentication for Office 365 users](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
 ## Display name spear-phishing attack
-<a name="spearphish"> </a>
 
 Phishing is a generic term for a broad suite of attacks classed as a social engineering style attack. This attack is focused on spear phishing, a more targeted attack that is aimed at a specific group of individuals or an organization. Typically, a customized attack with some reconnaissance performed and using a display name that will generate trust in the recipient, such as an email message that looks like it came from an executive within your organization.
   
@@ -96,10 +95,9 @@ You can craft the rich HTML editor directly in the **Email body** field itself o
   
  **${loginserverurl}** inserts the URL we want target users to click 
     
-6. Choose **Next,** then ** Finish ** to launch the attack. The spear phishing email message is delivered to your target recipients' mailboxes. 
+6. Choose **Next,** then **Finish** to launch the attack. The spear phishing email message is delivered to your target recipients' mailboxes. 
     
 ## Password-spray attack
-<a name="passwordspray"> </a>
 
 A password spray attack against an organization is typically used after a bad actor has successfully enumerated a list of valid users from the tenant, utilizing their knowledge of common passwords used. It is utilized widely as it is a cheap attack to run, and harder to detect than brute force approaches.
   
@@ -113,12 +111,11 @@ This attack focuses on letting you specify a common password against a large tar
     
 3. Specify the target recipients. This can be individuals or groups in your organization. A targeted recipient must have an Exchange Online Mailbox in order for the attack to be successful.
     
-4. Specify a password to use for the attack. For example, one common, relevant password you could try is Fall2017. Another might be Spring2018, or Password1.
+4. Specify a password to use for the attack. For example, one common, relevant password you could try is `Fall2017`. Another might be `Spring2018`, or `Password1`.
     
 5. Choose **Finish** to launch the attack. 
     
 ## Brute-force password attack
-<a name="bruteforce"> </a>
 
 A brute-force password attack against an organization is typically used after a bad actor has successfully enumerated a list of key users from the tenant. This attack focuses on letting you specify a set of passwords against a single user.
   
@@ -130,12 +127,11 @@ A brute-force password attack against an organization is typically used after a 
     
 3. Specify the target recipient. A targeted recipient must have an Exchange Online Mailbox in order for the attack to be successful.
     
-4. Specify a set of passwords to use for the attack. For example, one common, relevant password you could try is Fall2017. Another might be Spring2018, or Password1.
+4. Specify a set of passwords to use for the attack. For example, one common, relevant password you could try is `Fall2017`. Another might be `Spring2018`, or `Password1`.
     
 5. Choose **Finish** to launch the attack. 
     
 ## Related topics
-<a name="bruteforce"> </a>
 
 [Office 365 Threat Intelligence](office-365-ti.md)
   

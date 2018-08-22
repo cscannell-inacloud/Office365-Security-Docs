@@ -72,7 +72,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run  [Get-Azur
 1. Sign in to the computer that you will run the script from with local administrator rights.
 2. Download or copy the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the scruipt.  This will be the same folder to which the output “permissions.csv” file will be written.
 3. Open a PowerShell instance as an administrator and open to the folder you saved the script to.
-4. Connect to your directory using the [Connect-AzureAD](https://docs.microsoft.com/en-us/powershell/module/azuread/connect-azuread?view=azureadps-2.0) cmdlet.
+4. Connect to your directory using the [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) cmdlet.
 5. Run this PowerShell command line as follows: `.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 The script produces one file named Permissions.csv. Follow these steps to look for illicit application permission grants: 
@@ -94,8 +94,8 @@ After you have identified an application with illicit permissions, you have seve
     - Select **Applications**.
     - Select the illicit application.
     - Click **Remove** in the drill down.
-- You can revoke the OAuth consent grant with PowerShell by following the steps in [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/en-us/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant?view=azureadps-2.0).
-- You can revoke the Service App Role Assignment with PowerShell by following the steps in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/en-us/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment?view=azureadps-2.0).
+- You can revoke the OAuth consent grant with PowerShell by following the steps in [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant?view=azureadps-2.0).
+- You can revoke the Service App Role Assignment with PowerShell by following the steps in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment?view=azureadps-2.0).
 - You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account. This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.
 - You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications.  You can do this by following the steps in  [Turning Integrated Apps on or off](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34).
 
@@ -106,8 +106,8 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 - Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## See also:
-- [Unexpected application in my applications list](https://docs.microsoft.com/en-us/azure/active-directory/application-access-unexpected-application)  walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
-- [Integrating applications with Azure Active Directory]  (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-apps-permissions-consent)  is a high-level overview of consent and permissions.  Pay particular attention to the [Overview of the consent framework](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework) section.
-- [Problems developing my application](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.
-- [Application and service principal objects in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
-- [Manage access to apps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.
+- [Unexpected application in my applications list](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)  walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
+- [Integrating applications with Azure Active Directory]  (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)  is a high-level overview of consent and permissions.  Pay particular attention to the [Overview of the consent framework](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework) section.
+- [Problems developing my application](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.
+- [Application and service principal objects in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
+- [Manage access to apps](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.

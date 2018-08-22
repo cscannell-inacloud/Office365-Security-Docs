@@ -78,11 +78,11 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     
 3. In the Security &amp; Compliance Center, click **Permissions**, and then do one of the following based on the eDiscovery permissions that you want to assign.
     
-    - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members**, click **Edit**. Click **Choose members**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**, select the user that you want to add to the Reviewer role group, and then click **Add**.
+    - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members**, click **Edit**. Click **Choose members**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add to the Reviewer role group, and then click **Add**.
     
-    - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
+    - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
     
-    - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
+    - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
 4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
 
@@ -94,7 +94,7 @@ The next step is to create a new eDiscovery case. You must be a member of the eD
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery**, and then click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Create a case**.
+3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create a case**.
     
 4. On the **New Case** page, give the case a name, type an optional description, and then click **Save**. Note that the case name must be unique in your organization.
     
@@ -117,9 +117,9 @@ After you create a new case, the next step is to add members to the case. As pre
     
     ![Manage a case flyout page](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. Under **Manage members**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add** to add members to the case. 
+3. Under **Manage members**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
     
-    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add**.
+    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**.
     
 4. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people or role groups that you want to add.
     
@@ -155,7 +155,7 @@ To create a hold for an eDiscovery case:
     
     ![Click the Hold tab](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. On the **Hold** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Create**.
+4. On the **Hold** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create**.
     
 5. On the **Name your hold** page, give the hold a name. The name of the hold must be unique in your organization. 
     
@@ -192,7 +192,7 @@ To create a hold for an eDiscovery case:
     
        a. In the box under **Keywords**, type a search query in the box so that only the content that meets the search criteria is placed on hold. You can specify keywords, message properties, or document properties, such as file names. You can also use more complex queries that use a Boolean operator, such as **AND**, **OR**, or **NOT**. If you leave the keyword box empty, then all content located in the specified content locations will be placed on hold.
     
-    b. Click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
+    b. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
 
     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -212,7 +212,7 @@ Keep the following things in mind about hold statistics:
     
 - The number of items on hold also includes unindexed items found in the content locations. Note that if you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
     
-- You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
+- You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
     
 - It's normal for the number of items on hold to increase over time because users whose mailbox or site is on hold are typically sending or receiving new email message and creating new SharePoint and OneDrive for Business documents.
     
@@ -231,7 +231,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     ![Search tab](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. On the **Search** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New search**. 
+4. On the **Search** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New search**. 
     
 5. On the **New search** page, you can add keywords and conditions to create the search query. 
     
@@ -285,7 +285,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     The search begins. After a while, an estimate of the search results is displayed in the details pane. The estimate includes the total size and number of items that matched the search criteria. The search estimate also includes the number of unindexed items in the content locations that were searched. The number of unindexed items that don't meet the search criteria will be included in the search statistics displayed in the details pane. If an unindexed item matches the search query (because other message or document properties meet the search criteria), it won't be included in the estimated number of unindexed items. If an unindexed item is excluded by the search criteria, it also won't be included in the estimate of unindexed items.
     
-    After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information in the details pane. 
+    After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
     
 ## Step 6: Export the results of a Content Search associated with a case
 
@@ -316,7 +316,7 @@ You can export the results of a [Export the results of a single search associate
     
     ![Export tab](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    You might have to click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list of export jobs so that it shows the export job that you just created. Note that export jobs have the same name as the corresponding Content Search with **_Export** appended to the end of search name. 
+    You might have to click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs so that it shows the export job that you just created. Note that export jobs have the same name as the corresponding Content Search with **_Export** appended to the end of search name. 
     
 6. Click the export job that you just created to display status information in the details pane. This information includes the percentage of items that have been transferred to an Azure storage area in the Microsoft cloud.
     
@@ -358,7 +358,7 @@ As an alternative to exporting the results of a single Content Search associated
     
     ![Export tab, multiple searches](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    You might have to click **Refresh** ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list of export jobs to display the export job that you just created. Note that the searches that were included in the export job are listed in the **Searches** column. 
+    You might have to click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs to display the export job that you just created. Note that the searches that were included in the export job are listed in the **Searches** column. 
     
 8. Click the export job that you just created to display status information in the details pane. This information includes the percentage of items that have been transferred to an Azure storage area in the Microsoft cloud.
     
@@ -474,7 +474,7 @@ To close a case:
     
 5. Close the **Manage this case** page. 
     
-6. On the **eDiscovery** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete. 
+6. On the **eDiscovery** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete. 
     
     When the process is complete, the status of the case is changed to **Closed** on the **eDiscovery** page. Click the name of the case again to display the **Manage this case** flyout page, which contains information about when the case was closed and who closed it. 
      
@@ -498,7 +498,7 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
 5. Close the **Manage this case** page. 
     
-6. On the **eDiscovery** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status of the reopened case. It might take up to 60 minutes for the reopening process to complete. 
+6. On the **eDiscovery** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the reopened case. It might take up to 60 minutes for the reopening process to complete. 
     
     When the process is complete, the status of the case is changed to **Active** on the **eDiscovery** page. 
   

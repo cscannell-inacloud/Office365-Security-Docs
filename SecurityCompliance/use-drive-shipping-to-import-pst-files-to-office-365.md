@@ -114,7 +114,7 @@ The first step is to download the secure storage key and the tool and that you w
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Security &amp; Compliance Center. 
   
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
 4. In the import job wizard, type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
     
@@ -241,7 +241,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
 2. In the left pane of the Security &amp; Compliance Center, click **Data governance** and then click **Import**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Security &amp; Compliance Center. 
@@ -276,7 +276,7 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 10. After adding and validating a journal file for each hard drive that you'll ship to Microsoft, click **Next**.
     
-11. Click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Select mapping file** to submit the PST Import mapping file that you created in Step 3. 
+11. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Select mapping file** to submit the PST Import mapping file that you created in Step 3. 
     
     ![Click Select mapping file to submit the CSV file you created for the import job](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
@@ -296,7 +296,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
     When the import job is successfully created, a status page is displayed that explains the next steps of the drive shipping process.
     
-16. On the **Import** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to displayed the new drive shipping import job in the list of import jobs. Note that the status is set to **Waiting for tracking number**. You can also click the import job to display the status flyout page, which contains more detailed information about the import job.
+16. On the **Import** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to displayed the new drive shipping import job in the list of import jobs. Note that the status is set to **Waiting for tracking number**. You can also click the import job to display the status flyout page, which contains more detailed information about the import job.
  
 ## Step 5: Ship the hard drive to Microsoft
 
@@ -341,7 +341,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
     
 6. Click **Save** to save this information for the import job. 
     
-    On the **Import** page, click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the information for your drive shipping import job. Notice that status is now set to **Drives in transit**.
+    On the **Import** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the information for your drive shipping import job. Notice that status is now set to **Drives in transit**.
 
 ## Step 6: Filter data and start the PST Import job
 
@@ -377,7 +377,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
     
 7. If you chose to import all the data, click **Import data** to start the import job. 
     
-    The status of the import job is displayed on the **Import** page. Click ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
+    The status of the import job is displayed on the **Import** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
 
 ## View a list of the PST files uploaded to Office 365
 
@@ -395,7 +395,7 @@ To install the Azure Storage Explorer and connect to your Azure storage area:
     
 2. In the left pane of the Security &amp; Compliance Center, click **Data governance** \> **Import**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **New import job**.
+3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
 4. In the import job wizard, type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
     

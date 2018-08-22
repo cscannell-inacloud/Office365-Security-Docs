@@ -69,7 +69,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     
      `AzCopy /Source:"C:\CollectedData" /Dest:"https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17" /DestSAS:"?sv=2015-04-05&amp;sr=c&amp;si=NonOfficeData15%7C0&amp;sig=Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA%3D" /S`
     
-    For more information on Azcopy syntax see, [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy) . 
+    For more information on Azcopy syntax see, [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
     > [!IMPORTANT]
     > There must be one root folder per user and the folder name must be in the  *alias@domainname*  format. 

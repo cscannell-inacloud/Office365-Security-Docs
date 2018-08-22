@@ -23,7 +23,7 @@ This is one of several walkthroughs for the Security &amp; Compliance Center. To
   
 ## From an insight to a detailed report
 
-Let's walk through the flow from the dashboard to an insight to a detailed report for data exploration. This is a [data loss prevention](data-loss-prevention-policies.md) example. 
+Let's walk through the flow from the dashboard to an insight to a detailed report for data exploration. (This is a brief [data loss prevention](data-loss-prevention-policies.md) example.) 
   
 1. We begin with a dashboard in the Security &amp; Compliance Center. (Go to **Reports** \> **Dashboard**.)
     

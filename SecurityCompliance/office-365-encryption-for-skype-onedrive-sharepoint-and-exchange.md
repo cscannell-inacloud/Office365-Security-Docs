@@ -3,7 +3,7 @@ title: "Office 365 Encryption for Skype, OneDrive, SharePoint, and Exchange"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/31/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -14,7 +14,7 @@ ms.collection: Strat_O365_Enterprise
 description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
 ---
 
-# Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
+# Office 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
 
 Office 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security.
 
@@ -24,13 +24,13 @@ Skype for Business customer data may be stored at rest in the form of files or p
 ## SharePoint Online and OneDrive for Business
 All customer files in SharePoint Online are protected by unique, per-file keys that are always exclusive to a single tenant. The keys are either created and managed by the SharePoint Online service, or when Customer Key is used, created and managed by customers. When a file is uploaded, encryption is performed by SharePoint Online within the context of the upload request, before being sent to Azure storage. When a file is downloaded, SharePoint Online retrieves the encrypted customer data from Azure storage based on the unique document identifier and decrypts the customer data before sending it to the user. Azure storage has no ability to decrypt, or even identify or understand the customer data. All encryption and decryption happen in the same systems that enforce tenant isolation, which are Azure Active Directory and SharePoint Online.
 
-Several workloads in Office 365 store data in SharePoint Online, including Microsoft Teams, which stores all files in SharePoint Online, and OneDrive for Business, which uses SharePoint Online for its storage. All customer data stored in SharePoint Online is encrypted (with one or more AES 256-bit keys) and distributed across the datacenter as follows. (Every step of this encryption process is FIPS 140-2 Level 2 validated. For additional information about FIPS 140-2 compliance, see [FIPS 140-2 Compliance](https://go.microsoft.com/fwlink/?LinkId=517625).)
+Several workloads in Office 365 store data in SharePoint Online, including Microsoft Teams, which stores all files in SharePoint Online, and OneDrive for Business, which uses SharePoint Online for its storage. All customer data stored in SharePoint Online is encrypted (with one or more AES 256-bit keys) and distributed across the datacenter as follows. (Every step of this encryption process is FIPS 140-2 Level 2 validated. For additional information about FIPS 140-2 compliance, see [FIPS 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
 - Each file is split into one or more chunks, depending on file size. Each chunk is encrypted using its own unique AES 256-bit key.
 - When a file is updated, the update is handled in the same way: the change is split into one or more chunks, and each chunk is encrypted with a separate unique key.
 - These chunks – files, pieces of files, and update deltas – are stored as blobs in Azure storage that are randomly distributed across multiple Azure storage accounts. 
 - The set of encryption keys for these chunks of customer data is itself encrypted.
    - The keys used to encrypt the blobs are stored in the SharePoint Online Content Database.
-   - The Content Database is protected by database access controls and encryption at rest. Encryption is performed using [Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde) (TDE) in [Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-technical-overview). (Azure SQL Database is a general-purpose relational database service in Microsoft Azure that supports structures such as relational data, JSON, spatial, and XML.) These secrets are at the service level for SharePoint Online, not at the tenant level. These secrets (sometimes referred to as the master keys) are stored in a separate secure repository called the Key Store. TDE provides security at rest for both the active database and the database backups and transaction logs. 
+   - The Content Database is protected by database access controls and encryption at rest. Encryption is performed using [Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde) (TDE) in [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview). (Azure SQL Database is a general-purpose relational database service in Microsoft Azure that supports structures such as relational data, JSON, spatial, and XML.) These secrets are at the service level for SharePoint Online, not at the tenant level. These secrets (sometimes referred to as the master keys) are stored in a separate secure repository called the Key Store. TDE provides security at rest for both the active database and the database backups and transaction logs. 
    - When customers provide the optional key, the customer key is stored in Azure Key Vault, and the service uses the key to encrypt a tenant key, which is used to encrypt a site key, which is then used to encrypt the file level keys. Essentially, a new key hierarchy is introduced when the customer provides a key.
 - The map used to re-assemble the file is stored in the Content Database along with the encrypted keys, separately from the master key needed to decrypt them.
 - Each Azure storage account has its own unique credentials per access type (read, write, enumerate, and delete). Each set of credentials is held in the secure Key Store and is regularly refreshed.
@@ -49,7 +49,8 @@ The TDE keys that protect the per-blob keys are stored in two locations:
 
 The credentials used to access the Azure storage containers are also held in the SharePoint Online secret store and delegated to each SharePoint Online farm as needed. These credentials are Azure storage SAS signatures, with separate credentials used to read or write data, and with policy applied so that they auto-expire every 60 days. Different credentials are used to read or write data (not both) and SharePoint Online farms are not given permissions to enumerate.
 
->**NOTE** For Office 365 U.S. Government customers, data blobs are stored in Azure U.S. Government Storage. In addition, access to SharePoint Online keys in Office 365 U.S. Government is limited to Office 365 staff that have been specifically screened. Azure U.S. Government operations staff do not have access to the SharePoint Online key store that is used for encrypting data blobs.
+> NOTE 
+> For Office 365 U.S. Government customers, data blobs are stored in Azure U.S. Government Storage. In addition, access to SharePoint Online keys in Office 365 U.S. Government is limited to Office 365 staff that have been specifically screened. Azure U.S. Government operations staff do not have access to the SharePoint Online key store that is used for encrypting data blobs.
 
 For more information about data encryption in SharePoint Online and OneDrive for Business, see [Data Encryption in OneDrive for Business and SharePoint Online](https://technet.microsoft.com/en-us/library/dn905447.aspx).
 
@@ -63,7 +64,7 @@ In OneDrive for Business and SharePoint Online, there are two scenarios in which
 
 
 ## Exchange Online
-Exchange Online uses BitLocker for all mailbox data, and the BitLocker configuration is described in [BitLocker for Encryption](/office365/securitycompliance/bitlocker-for-encryption). Service-level encryption encrypts all mailbox data at the mailbox level. 
+Exchange Online uses BitLocker for all mailbox data, and the BitLocker configuration is described in [BitLocker for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). Service-level encryption encrypts all mailbox data at the mailbox level. 
 
 In addition to service-encryption, Office 365 supports Customer Key, which is built on top of service-encryption. Customer Key is a Microsoft-managed key option for Exchange Online service encryption that is also on Microsoft's roadmap. This method of encryption provides increased protection not afforded by BitLocker because it provides separation of server administrators and the cryptographic keys necessary for decryption of data, and because the encryption is applied directly to the data (in contrast with BitLocker, which applies encryption at the logical disk volume) any customer data copied from an Exchange server remains encrypted.
 

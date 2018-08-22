@@ -27,7 +27,7 @@ Read this article to learn how to set up your organization's custom blocked URLs
   
 ## View or edit a custom list of blocked URLs
 
-[ATP Safe Links in Office 365](atp-safe-links.md) uses several lists, including your organization's custom blocked URLs list. If you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up your organization's custom list. You do this by editing your organization's default Safe Links policy.
+[ATP Safe Links in Office 365](atp-safe-links.md) uses several lists, including your organization's custom blocked URLs list. If you have the necessary permissions, you can set up your organization's custom list. You do this by editing your organization's default Safe Links policy.
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account. 
     
@@ -70,5 +70,7 @@ If you want certain groups to be able to view URLs that might be blocked for oth
 [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md)
   
 [ATP Safe Attachments in Office 365](atp-safe-attachments.md)
+
+[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 

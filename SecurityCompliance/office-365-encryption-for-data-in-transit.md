@@ -3,7 +3,7 @@ title: "Office 365 Encryption for Data in Transit"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/31/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -14,16 +14,18 @@ ms.collection: Strat_O365_Enterprise
 description: "Summary: A brief explanation of how Microsoft encrypts data in transit."
 ---
 
-# Encryption for data in transit
+# Office 365 encryption for data in transit
 
-In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect Office 365 customer data in transit. Data is in transit:
-- When a client machine communicates with an Office 365 server;
-- When an Office 365 server communicates with another Office 365 server; and
-- When an Office 365 server communicates with a non-Office 365 server (e.g., Exchange Online delivering email to a foreign email server).
+In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect Office 365 customer data in transit. 
+
+Data is in transit:
+- when a client machine communicates with an Office 365 server;
+- when an Office 365 server communicates with another Office 365 server; and
+- when an Office 365 server communicates with a non-Office 365 server (e.g., Exchange Online delivering email to a foreign email server).
 
 Inter-datacenter communications between Office 365 servers takes place over TLS or IPsec, and all customer-facing servers negotiate a secure session using TLS with client machines (e.g., Exchange Online uses TLS 1.2 with 256-bit cipher strength is used (FIPS 140-2 Level 2-validated). (See [Technical reference details about encryption in Office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) for a list of TLS cipher suites supported by Office 365.) This applies to the protocols that are used by clients such as Outlook, Skype for Business, and Outlook on the web (e.g., HTTP, POP3, etc.).
 
-The public certificates are issued by Microsoft IT SSL using SSLAdmin, an internal Microsoft tool to protect confidentiality of transmitted information. (For information about Microsoft IT certificate authority chaining and operations details, see https://www.microsoft.com/pki/mscorp/cps.) All certificates issued by Microsoft IT have a minimum of 2048 bits in length, and [Webtrust](http://www.webtrust.org/homepage-documents/item70372.pdf) compliance requires SSLAdmin to make sure that certificates are issued only to public IP addresses owned by Microsoft. Any IP addresses that fail to meet this criterion are routed through an exception process.
+The public certificates are issued by Microsoft IT SSL using SSLAdmin, an internal Microsoft tool to protect confidentiality of transmitted information. All certificates issued by Microsoft IT have a minimum of 2048 bits in length, and [Webtrust](http://www.webtrust.org/homepage-documents/item70372.pdf) compliance requires SSLAdmin to make sure that certificates are issued only to public IP addresses owned by Microsoft. Any IP addresses that fail to meet this criterion are routed through an exception process.
 
 All implementation details such as the version of TLS being used, whether Forward Secrecy (FS) is enabled, the order of cipher suites, etc., are available publicly. One way to see these details is to use a third-party website, such as Qualys SSL Labs (www.ssllabs.com). Below are the links to automated test pages from Qualys that display information for the following services:
 - [Office 365 Portal](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)

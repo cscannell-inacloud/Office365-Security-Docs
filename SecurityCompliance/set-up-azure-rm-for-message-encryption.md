@@ -106,7 +106,7 @@ A TPD is an XML file that contains information about your organization's rights 
 ## I have OME set up with Active Directory Rights Management not Azure Information Protection, what do I do?
 <a name="importTPDs"> </a>
 
-You can continue to use your existing Office 365 Message Encryption mail flow rules with Active Directory Rights Management, but you can't configure or use the new OME capabilities. Instead, you need to migrate to Azure Information Protection. For information about migration and what this means for your organization, see [Migrating from AD RMS to Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/deploy-use/prepare-environment-adrms).
+You can continue to use your existing Office 365 Message Encryption mail flow rules with Active Directory Rights Management, but you can't configure or use the new OME capabilities. Instead, you need to migrate to Azure Information Protection. For information about migration and what this means for your organization, see [Migrating from AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms).
   
 ## Next steps
 <a name="importTPDs"> </a>
@@ -122,6 +122,6 @@ After you've set up your organization to use the new OME capabilities, you're re
   
 [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md)
   
-[What is Azure Rights Management?](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+[What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
   
 

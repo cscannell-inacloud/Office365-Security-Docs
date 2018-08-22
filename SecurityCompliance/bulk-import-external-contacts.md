@@ -81,7 +81,7 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
     > [!TIP]
     > For instructions for connecting to the EAC, see [Exchange admin center in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=328197). 
   
-5. If necessary, click **Refresh** ![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the list and see the external contacts that were imported. 
+5. If necessary, click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list and see the external contacts that were imported. 
     
     The imported contacts will appear in the shared address book in Outlook and Outlook on the web.
     

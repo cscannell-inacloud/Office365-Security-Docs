@@ -31,6 +31,8 @@ The first step is to starting using the Content Search tool to choose content lo
     
 - [Run an ID list search](csv-file-for-an-id-list-content-search.md) to search for specific email messages 
     
+- [Search cloud-based mailboxes ](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Office 365
+
 - [View keyword statistics](view-keyword-statistics-for-content-search.md) for the results of a search and then refine the query if necessary 
     
 - [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Office 365 

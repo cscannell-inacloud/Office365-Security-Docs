@@ -3,7 +3,7 @@ title: "Office 365 Dealing with Data Corruption"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/16/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,10 +11,11 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: An explanation of data corruption, and Microsoft's efforts of prevention and recovery."
+description: "An explanation of data corruption in Office 365, and Microsoft's efforts of prevention and recovery."
 ---
 
-# Dealing with Data Corruption
+# Dealing with Data Corruption in Office 365
+
 One of the challenging aspects of running a large-scale cloud service is how to handle data corruption, given the large volume of data and independent systems. Data corruption can be caused by:
 - Application or infrastructure bugs, corrupting some or all of the application state 
 - Hardware issues that result in lost data or an inability to read data 

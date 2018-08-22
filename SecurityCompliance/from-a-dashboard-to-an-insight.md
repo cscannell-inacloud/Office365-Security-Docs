@@ -23,7 +23,7 @@ This is one of several walkthroughs for the Security &amp; Compliance Center. To
   
 ## Walkthrough: From a dashboard to an insight
 
-Let's walk through the flow from a dashboard to a report to an insight and action. This is a [spoof intelligence](learn-about-spoof-intelligence.md) example. 
+Let's walk through the flow from a dashboard to a report to an insight and action. (This is a brief [spoof intelligence](learn-about-spoof-intelligence.md) example.) 
   
 1. We begin with the Security dashboard in the Security &amp; Compliance Center. (Go to **Threat management** \> **Dashboard**.)
     

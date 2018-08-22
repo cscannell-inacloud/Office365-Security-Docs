@@ -1,9 +1,9 @@
 ---
-title: "Office 365 Defending Against Denial-of-Service Attacks Overview"
+title: "Defending Against Denial-of-Service Attacks in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,10 +11,10 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: An overview of Denial-of-Service (DoS) attacks."
+description: "An overview of Denial-of-Service (DoS) attacks."
 ---
 
-# Defending Against Denial-of-Service Attacks Overview
+# Defending Against Denial-of-Service Attacks in Office 365
 
 ## Introduction
 Microsoft delivers a trustworthy infrastructure for more than 200 cloud services, including Microsoft Azure, Microsoft Bing, Microsoft Office 365, Microsoft Dynamics 365, Microsoft OneDrive, Skype, and Xbox Live that are hosted in our global cloud infrastructure of more than 100 datacenters.
@@ -35,6 +35,6 @@ The [United States Computer Emergency Readiness Team](https://www.us-cert.gov/) 
 - Long-term loss of access to the Web or any Internet services
 
 ## Related Topics
-- [Core Principles of Defense Against Denial-of-Service Attacks](/office365/enterprise/office-365-core-principles-of-defense-against-dos-attacks)
-- [Microsoft's Denial-of-Service Defense Strategy](/office365/enterprise/office-365-microsoft-dos-defense-strategy)
-- [Defending Microsoft Cloud Services Against Denial-of-Service Attacks](/office365/enterprise/office-365-defending-cloud-services-against-dos-attacks)
+- [Core Principles of Defense Against Denial-of-Service Attacks](office-365-core-principles-of-defense-against-dos-attacks.md)
+- [Microsoft's Denial-of-Service Defense Strategy](office-365-microsoft-dos-defense-strategy.md)
+- [Defending Microsoft Cloud Services Against Denial-of-Service Attacks](office-365-defending-cloud-services-against-dos-attacks.md)

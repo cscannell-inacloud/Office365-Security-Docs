@@ -3,7 +3,7 @@ title: "Office 365 Microsoft's DoS Defense Strategy"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/17/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,7 +11,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: An overview of Microsoft's defense strategy for dealing with denial-of-service (DoS) attacks."
+description: "An overview of Microsoft's defense strategy for dealing with denial-of-service (DoS) attacks."
 ---
 
 # Microsoft's Denial-of-Service Defense Strategy

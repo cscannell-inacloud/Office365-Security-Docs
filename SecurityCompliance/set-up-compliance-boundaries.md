@@ -189,21 +189,22 @@ Use the **Region** parameter for **New-ComplianceSecurityFilter** or **Set-Compl
 |NAM  <br/> |North American (actual data centers are in the US)  <br/> |
 |EUR  <br/> |Europe  <br/> |
 |APC  <br/> |Asia Pacific  <br/> |
+|CAN <br/> |Canada
    
 Similarly, you can use the following values for the **Region** parameter values to control which data center that Content Searches will run in when searching SharePoint and OneDrive locations. Note that the following table also shows which data center exports will be routed through. 
   
 |**Parameter value**|**Data center routing locations for export﻿**|
 |:-----|:-----|
-|NAM﻿  <br/> |US  <br/> |
-|EUR﻿  <br/> |Europe  <br/> |
-|APC﻿  <br/> |Asia Pacific﻿  <br/> |
-|CAN﻿  <br/> |US  <br/> |
-|AUS﻿  <br/> |Asia Pacific﻿  <br/> |
+|NAM  <br/> |US  <br/> |
+|EUR  <br/> |Europe  <br/> |
+|APC  <br/> |Asia Pacific  <br/> |
+|CAN  <br/> |US  <br/> |
+|AUS  <br/> |Asia Pacific  <br/> |
 |KOR  <br/> |The organization's default data center  <br/> |
-|GBR﻿  <br/> |Europe  <br/> |
-|JPN﻿  <br/> |Asia Pacific﻿  <br/> |
-|IND﻿  <br/> |Asia Pacific﻿  <br/> |
-|LAM﻿  <br/> |US  <br/> |
+|GBR  <br/> |Europe  <br/> |
+|JPN  <br/> |Asia Pacific  <br/> |
+|IND  <br/> |Asia Pacific  <br/> |
+|LAM  <br/> |US  <br/> |
    
  **Note:** If you don't specify the Region parameter for a search permissions filter, then search results are exported from the closest data center. 
   

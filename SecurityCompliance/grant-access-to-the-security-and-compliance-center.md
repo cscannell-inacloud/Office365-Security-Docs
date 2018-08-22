@@ -36,13 +36,17 @@ For more information about the different permissions you can give to users in th
 
 1. [Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
+<<<<<<< HEAD
 2. In the Office 365 Admin Center, open **Admin centers** and then click **Security &amp; Compliance**. 
+=======
+2. In the Office 365 admin center, open **Admin centers** and then click **Security &amp; Compliance**. 
+>>>>>>> master
     
 3. In the Security &amp; Compliance Center, go to **Permissions**.
     
 4. From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).
     
-5. In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) and select the name of the user (or users) you want to add. 
+5. In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add. 
     
 6. When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.
     

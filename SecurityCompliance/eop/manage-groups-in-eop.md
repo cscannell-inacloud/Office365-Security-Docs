@@ -36,7 +36,7 @@ You can create two types of groups for your Exchange organization:
     
 - This cmdlet uses a batch processing method that results in a propagation delay of a few minutes before the results of the cmdlet are visible.
     
-- To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection Using Remote PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+- To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
     
@@ -47,7 +47,7 @@ You can create two types of groups for your Exchange organization:
 
 1. In the Exchange admin center (EAC), go to **Recipients** \> **Groups**.
     
-2. Click **New**![Add Icon](../media/ITPro-EAC-AddIcon.png), and then click **Distribution group** or **Security group**, depending on your needs. See [Types of mail-enabled groups](manage-groups-in-eop.md) for the distinction. 
+2. Click **New**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs. See [Types of mail-enabled groups](manage-groups-in-eop.md) for the distinction. 
     
 3. On the **New distribution group** or **New security group** page, complete the following fields: 
     
@@ -57,12 +57,12 @@ You can create two types of groups for your Exchange organization:
     
   - **Description** Type a description of the group so that people will know the purpose of the group. 
     
-  - **Owners** By default, the person who creates the group is the owner. You can add an owner by choosing **Add**![Add Icon](../media/ITPro-EAC-AddIcon.png). All groups must have at least one owner.
+  - **Owners** By default, the person who creates the group is the owner. You can add an owner by choosing **Add**![Add Icon](../media/ITPro-EAC-AddIcon.gif). All groups must have at least one owner.
     
     > [!NOTE]
     > Owners don't have to be members of the group. 
   
-  - **Members** Use this section to add group members and to specify whether approval is required for people to join or leave the group. To add members to the group, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.png).
+  - **Members** Use this section to add group members and to specify whether approval is required for people to join or leave the group. To add members to the group, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.gif).
     
 4. Click **OK** to return to the original page. 
     
@@ -74,9 +74,9 @@ You can create two types of groups for your Exchange organization:
     
 2. Do one of the following:
     
-  - To edit a group: In the list of groups, click the distribution or security group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.png). You can update general settings, add or remove group owners, and add or remove group members, as needed.
+  - To edit a group: In the list of groups, click the distribution or security group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif). You can update general settings, add or remove group owners, and add or remove group members, as needed.
     
-  - To remove a group: Select the group and click **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.png).
+  - To remove a group: Select the group and click **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. When you're finished making your changes, click **Save**.
     

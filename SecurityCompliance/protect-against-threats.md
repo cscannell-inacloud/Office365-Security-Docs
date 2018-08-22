@@ -65,7 +65,7 @@ Get a primer on encryption, set up rights management policies and email encrypti
     
 - [Office 365 Message Encryption (OME)](ome.md)
     
-- [Implement bring your own key (BYOK)](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
+- [Implement bring your own key (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
 ## Managing devices &amp; apps
 
@@ -87,9 +87,9 @@ Identify, monitor, and understand attacks, and quickly address threats by using 
 
 Get more information about related Microsoft technologies and processes that help secure Office 365 against threats.
   
-- [Learn about Azure Rights Management](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+- [Learn about Azure Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
     
-- [Learn about Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
+- [Learn about Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
     
 - [Learn about tenant isolation](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
     

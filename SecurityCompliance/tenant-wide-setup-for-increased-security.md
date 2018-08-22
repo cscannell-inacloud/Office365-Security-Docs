@@ -57,7 +57,7 @@ Many of the controls for security and protection in the Exchange admin center ar
    
 ## Configure tenant-wide sharing policies in SharePoint admin center
 
-Microsoft recommendations for configuring SharePoint team sites at increasing levels of protection, starting with baseline protection. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/en-us/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)
+Microsoft recommendations for configuring SharePoint team sites at increasing levels of protection, starting with baseline protection. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)
   
 SharePoint team sites configured at the baseline level allow sharing files with external users by using anonymous access links. This approach is recommended instead of sending files in email. 
   
@@ -77,7 +77,7 @@ Be sure to visit these two areas in Azure Active Directory to complete tenant-wi
 
 If your organization includes offices with secure network access, add the trusted IP address ranges to Azure Active Directory as named locations. This feature helps reduce the number of reported false positives for sign-in risk events. 
   
-See: [Named locations in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-named-locations)
+See: [Named locations in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)
   
 ### Block apps that don't support modern authentication
 
@@ -87,7 +87,7 @@ For secure environments, be sure to disable authentication for apps that do not 
   
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
   
-- Use PowerShell, see [Block apps that do not use modern authentication](https://docs.microsoft.com/en-us/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Use PowerShell, see [Block apps that do not use modern authentication](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
     
 - Configure this in the SharePoint admin center on the "device access' page — "Control access from apps that don't use modern authentication." Choose Block. 
     
@@ -101,7 +101,7 @@ Because this solution recommends the EMS E5 plan, we recommend you start with Cl
   
 More information:
   
-- [Deploy Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security)
+- [Deploy Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
     
 - [More information about Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
     
@@ -113,8 +113,8 @@ More information:
 
 These articles and guides provide additional prescriptive information for securing your Office 365 environment:
   
-- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/en-us/microsoft-365-enterprise/microsoft-security-guidance) (you can use these recommendation in any environment, especially cloud-only environments) 
+- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance) (you can use these recommendation in any environment, especially cloud-only environments) 
     
-- [Recommended security policies and configurations for identities and devices](https://docs.microsoft.com/en-us/microsoft-365-enterprise/microsoft-365-policies-configurations) (these recommendations include help for AD FS environments) 
+- [Recommended security policies and configurations for identities and devices](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (these recommendations include help for AD FS environments) 
     
 

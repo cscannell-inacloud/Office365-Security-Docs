@@ -95,11 +95,11 @@ The first step is to prepare the search results for exporting. When you prepare 
     
     - Export only indexed items
     
-    - Export indexed and unindexed items
+    - Export indexed and partially indexed items
     
-    - Export only unindexed items
+    - Export only partially indexed items
     
-    See the [More information](#more-information) section for a description about how unindexed items are exported. For more information about unindexed items, see [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
+    See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
     
 7. Under **Export Exchange content as**, choose one of the following options:
     
@@ -237,7 +237,7 @@ Here's more information about exporting search results.
         
       - The name of the document (which is located in the Subject column in the result log).
     
-  - **Unindexed Items** An Excel document that contains information about any unindexed items that would be included in the search results. If you don't include unindexed items when you generate the search results report, this report will still be downloaded, but will be empty. 
+  - **Unindexed Items** An Excel document that contains information about any partially indexed items that would be included in the search results. If you don't include partially indexed items when you generate the search results report, this report will still be downloaded, but will be empty. 
     
   - **Errors and Warnings** Contains errors and warnings for files encountered during export. See the Error Details column for information specific to each individual error or warning. 
     
@@ -248,17 +248,17 @@ Here's more information about exporting search results.
     > [!NOTE]
     > You can just export these documents without having to export the actual search results. See [Export a Content Search report](export-a-content-search-report.md). 
   
- ### Exporting unindexed items
+ ### Exporting partially indexed items
   
-- If you're exporting mailbox items from a content search that returns all mailbox items in the search results (because no keywords where included in the search query), unindexed items won't be copied to the PST file that contains the unindexed items. This is because all items, including any unindexed items, are automatically included in the regular search results. This means that unindexed items will be included in a PST file (or as individual messages) that contains the other, indexed items.
+- If you're exporting mailbox items from a content search that returns all mailbox items in the search results (because no keywords where included in the search query), partially indexed items won't be copied to the PST file that contains the unindexed items. This is because all items, including any partially indexed items, are automatically included in the regular search results. This means that partially indexed items will be included in a PST file (or as individual messages) that contains the other, indexed items.
     
-    Additionally, if you export both the indexed and unindexed items or if you export only the indexed items from a content search that returns all items, the same number of items will be downloaded. This happens even though the estimated search results for the content search (displayed in the search statistics in the Security &amp; Compliance Center) will still include a separate estimate for the number of unindexed items. For example, let's say that the estimate for a search that includes all items (no keywords in the search query) shows that 1,000 items were found and that 200 unindexed items were also found. In this case, the 1,000 items include the unindexed items because the search returns all items. In other words, there are 1,000 total items returned by the search, and not 1,200 items (as you might expect). If you export the results of this search and choose to export indexed and unindexed items (or just indexed items), then 1,000 items will be downloaded. Again, that's because unindexed items are included with the regular (indexed) results when you use a blank search query to return all items. In this same example, if you choose to export only unindexed items, then only the 200 unindexed items would be downloaded.
+    Additionally, if you export both the indexed and partially indexed items or if you export only the indexed items from a content search that returns all items, the same number of items will be downloaded. This happens even though the estimated search results for the content search (displayed in the search statistics in the Security &amp; Compliance Center) will still include a separate estimate for the number of partially indexed items. For example, let's say that the estimate for a search that includes all items (no keywords in the search query) shows that 1,000 items were found and that 200 partially indexed items were also found. In this case, the 1,000 items include the partially indexed items because the search returns all items. In other words, there are 1,000 total items returned by the search, and not 1,200 items (as you might expect). If you export the results of this search and choose to export indexed and partially indexed items (or just indexed items), then 1,000 items will be downloaded. Again, that's because partially indexed items are included with the regular (indexed) results when you use a blank search query to return all items. In this same example, if you choose to export only partially indexed items, then only the 200 unindexed items would be downloaded.
     
-    Also note that in the previous example (when you export indexed and unindexed items or you export only indexed items) , the **Export Summary** report included with the exported search results would list 1,000 items estimated items and 1,000 downloaded items for the same reasons as previously described. 
+    Also note that in the previous example (when you export indexed and partially indexed items or you export only indexed items) , the **Export Summary** report included with the exported search results would list 1,000 items estimated items and 1,000 downloaded items for the same reasons as previously described. 
     
-- If the search that you're exporting results from was a search of specific content locations or all content locations in your organization, only the unindexed items from content locations that contain items that match the search criteria will be exported. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. The reason for this is that exporting unindexed items from lots of locations in the organization might increase the likelihood of export errors and increase the time it takes to export and download the search results.
+- If the search that you're exporting results from was a search of specific content locations or all content locations in your organization, only the partially items from content locations that contain items that match the search criteria will be exported. In other words, if no search results are found in a mailbox or site, then any partially indexed items in that mailbox or site won't be exported. The reason for this is that exporting partially indexed items from lots of locations in the organization might increase the likelihood of export errors and increase the time it takes to export and download the search results.
     
-    To export unindexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only unindexed items when you export the search results.
+    To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results.
     
     ![Use the thrid export option to export only unindexed items](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
@@ -267,13 +267,13 @@ Here's more information about exporting search results.
     ![Choose the export option based on whether or not a site contains an indexed item that matches the search criteria](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    A - Only indexed items that matches the search criteria are exported. No unindexed items are exported.
+    A - Only indexed items that matches the search criteria are exported. No partially indexed items are exported.
     
-    B - If no indexed items from a site match the search criteria, then unindexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the unindexed items from that site are exported. In other words, only the unindexed items from sites that contain items that match the search criteria are exported.
+    B - If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
     
-    C - All unindexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
+    C - All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
     
-    If you choose to export unindexed items, unindexed mailbox items are exported in a separate PST file regardless of the option that you choose under **Export Exchange content as**.
+    If you choose to export partially indexed items, partially indexed mailbox items are exported in a separate PST file regardless of the option that you choose under **Export Exchange content as**.
     
  ### Exporting individual messages or PST files
   

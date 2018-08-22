@@ -26,7 +26,7 @@ An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserv
 See the [More information](recover-an-inactive-mailbox.md#moreinfo) section for more details about the differences between recovering and restoring an inactive mailbox, and for a description of what happens when an inactive mailbox is recovered.
   
 > [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place Holds to make a mailbox inactive. But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. At that time, only Litigation Holds and Office 365 retention policies can be used to create an inactive mailbox. However, existing inactive mailboxes that are on In-Place Hold will still be supported, and you can continue to manage the In-Place Holds on inactive mailboxes. This includes changing the duration of an In-Place Hold and permanently deleting an inactive mailbox by removing the In-Place Hold. 
+> We've postponed the deadline for creating new In-Place Holds to make a mailbox inactive. But at some point in the future, you won't be able to create new In-Place Holds in Exchange Online. At that time, only Litigation Holds and Office 365 retention policies can be used to create an inactive mailbox. However, existing inactive mailboxes that are on In-Place Hold will still be supported, and you can continue to manage the In-Place Holds on inactive mailboxes. This includes changing the duration of an In-Place Hold and permanently deleting an inactive mailbox by removing the In-Place Hold. 
   
 ## Before you begin
 
@@ -42,8 +42,6 @@ See the [More information](recover-an-inactive-mailbox.md#moreinfo) section for 
     
 - For more information about inactive mailboxes, see [Inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
     
-
-  
 ## Recover an inactive mailbox
 
 Use the **New-Mailbox** cmdlet with the  *InactiveMailbox*  parameter to recover an inactive mailbox. 
@@ -66,81 +64,6 @@ Use the **New-Mailbox** cmdlet with the  *InactiveMailbox*  parameter to recover
     The primary SMTP address for the recovered inactive mailbox will have the same value as the one specified by the  *MicrosoftOnlineServicesID*  parameter. 
     
 After you recover an inactive mailbox, a new Office 365 user account is also created. You have to activate this user account by assigning a license. To assign a license in the Office 365 admin center, see [Assign or unassign licenses for Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkId=276798).
-  
-
-  
-## Recover an inactive mailbox for a federated user in an Exchange hybrid deployment
-<a name="recoverhybrid"> </a>
-
-You can also recover in inactive cloud-based mailbox of an on-premises user (called a federated user) in an Exchange hybrid deployment. First, you have to use the **New-Mailbox -InactiveMailbox** command in Exchange Online PowerShell to recover the inactive mailbox and create a cloud-based active mailbox in a non-federated domain. Then you have to associate (or  *hard match*  ) the on-premises user account with the recovered cloud-based mailbox. This is accomplished by using the getting the value of the **ImmutableId** property of the on-premises user account that's been synchronized to Azure Active Directory, and setting it as the value o f the **ImmutableId** for the cloud-based user account that is created when you recover the inactive mailbox. The final step is to enable the cloud-based mailbox (called a  *remote mailbox*  ) in the on-premises Exchange organization. 
-  
-This procedure assumes that the user whose inactive mailbox you want to recover is an on-premises user whose account is created and managed in Active Directory in the on-premises organization, and that has been synchronized to Azure Active Directory in Office 365. After completing the following procedure, the inactive mailbox will become an active cloud-based mailbox for the on-premises user. 
-  
-Here's the high-level process:
-  
-1. In Exchange Online PowerShell, run the following command to create a variable that contains the properties of the inactive mailbox that you want to recover. Use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox because these properties are unique for each mailbox in your organization. 
-    
-    ```
-    $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
-    ```
-
-2. In Exchange Online PowerShell, run the following command to recover the inactive mailbox and make it an active cloud-based mailbox. The values for the  *Name*  and  *MicrosoftOnlineServicesID*  parameters refer to the on-premises user whose inactive mailbox you are recovering. 
-    
-    ```
-    New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name <name> -FirstName <first name> -LastName <last name> -DisplayName <display name> -MicrosoftOnlineServicesID <SMTP address for cloud organization> -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
-    ```
-   
-    For the value of the  *Name*  parameter, use the **SamAccountName** or **Alias** of the on-premises user. 
-    
-    For the value of the  *MicrosoftOnlineServicesID*  parameter in the previous command, be sure to use an email address that uses the domain name for your cloud organization (which is a non-federated domain), such as `contoso.onmicrosoft.com`. Don't use a the domain name of your on-premises organization, which is a federated domain. 
-    
-3. Assign a license to the new Office 365 user account that's created after you run the command in the previous step. See [Assign or unassign licenses for Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkId=276798).
-    
-4. [Connect to Office 365 PowerShell](https://docs.microsoft.com/Office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell). 
-    
-5. Run the following command to get the **ImmutableId** for the on-premises user account that's been synchronized to Azure Active Directory. 
-
-    ```
-    Get-MsolUser -UserPrincipalName <UPN for the on-premises user account> | FL  ImmutableId 
-    ```
-
-    Write down the **ImmutableId** or copy it to a text file. 
-    
-6. Run the following commands to permanently delete the on-premises user from Azure Active Directory. This step is required so that you can use the ImmutableId from the on-premises user account to set on the cloud-base account (that you created in step 2). Otherwise, you'll received an error when you try to set the ImmutableId on the cloud-based account. 
-
-    ```
-    Remove-MsolUser -UserPrincipalName <UPN for the on-premises user account>
-    ```
-
-    ```
-    Get-MsolUser -UserPrincipalName <UPN for the on-premises user account> -RemoveFromRecyleBin
-    ```
-   
-7. Run the following command to set the **ImmutableId** (from the on-premises user account) on the cloud-based user account that was created for the on-premises user in step 2. This will create a match between the on-premises user account and the cloud-based mailbox. 
-    
-    ```
-    Set-MsolUser -UserPrincipalName <email address for cloud-based account for on-premises user> -ImmutableId <immutableid>  
-    ```
-
-    For the  *UserPrincipalName*  parameter, use the same value as the one you used for the  *MicrosoftOnlineServicesID*  parameter in step 2. For the  *ImmutableId*  parameter, use the value that you obtained in step 5. 
-
-    Note that the next time the on-premises Active Directory is synchronized with Azure Active Directory, the on-premises user account will be hard-matched with the cloud-based mailbox, and there will be a single user account in Azure Active Directory for the on-premises user.
-    
-8. In the Exchange Management Shell in the on-premises Exchange organization, run the following command to enable the remote mailbox in your on-premises organization. A remote mailbox is a cloud-based mailbox for an on-premises user. 
-
-    ```
-    Enable-RemoteMailbox  <identity of on-premises user> -RemoteRoutingAddress <SMTP address for cloud-based mailbox> 
-    ```
-
-     For the value of the  *RemoteRoutingAddress*  parameter, use one of the values that is return when you run the following command in Office 365 PowerShell: 
-    
-    ```
-    Get-MsolUser -UserPrincipalName <UPN for the on-premises user account> | FL proxy*
-    ```
-   
-    For example, you could use the proxy address for the `contoso.mail.onmicrosoft.com` domain. 
-    
-After you complete this procedure, the on-premises user can use Outlook (or sign in to Office 365 and use Outlook on the Web) to access the contents of the previous inactive mailbox.
   
 ## More information
 

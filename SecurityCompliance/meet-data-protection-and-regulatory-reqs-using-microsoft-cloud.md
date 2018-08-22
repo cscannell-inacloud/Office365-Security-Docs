@@ -33,57 +33,7 @@ Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Get 
 - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
     
 > [!IMPORTANT]
-> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance. 
-  
-## Contents
-  
-### Conceptual topics
-  
-> [Using Search](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#onesearch)
-    
-> [Localization Support](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#_bkmk_LocalizationSupport)
-    
-> [Assessments in Compliance Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#frameworks_1)
-    
-> [Permissions and Role-based Access Control](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions_1)
-    
-> [Understanding the Compliance Score](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore)
-    
-> [Compliance Scoring Methodology](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#ComplianceScoringMethodology)
-    
-> [Grouping Assessments](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping)
-    
-### Administrative functions
-  
-> [Assigning Compliance Manager Roles to Users](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#__bkmk_Settings)
-    
-> [User Privacy Settings](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#__bkmk_UserPrivacySettings)
-    
-### Using Compliance Manager
-  
-> [Accessing Compliance Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#opencompliancemgr_1)
-    
-> [Using the Compliance Manager Dashboard](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#__bkmk_UsingComplianceMgrDashboard)
-    
-> [Viewing Action Items](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#__bkmk_CM_ViewingActionItems)
-    
-> [Adding an Assessment](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#addframework_1)
-    
-> [Copying information from existing Assessments](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying)
-    
-> [Viewing Assessments](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#__bkmk_CM_ViewingAssessments)
-    
-> [Managing the assessment process](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1)
-    
-> [Managing Action Items](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managetasks_1)
-    
-> [Exporting information from an Assessment](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#exportcontrols_1)
-    
-> [Archiving an Assessment](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#archiveframeworks_1)
-    
- Change logs
-  
-> [Change Log](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#__bkmk_CMC_changelog)
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
     
 ## What is Compliance Manager?
 
@@ -442,7 +392,7 @@ To add or remove users from Compliance Manager roles.
     
     ![Compliance Manager - Provision Roles - remove user](media/17004def-604f-471d-a54d-f678fcc01c1e.png)
  
-## User Privacy Settings
+## User Privacy settings
 
 Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
@@ -534,7 +484,7 @@ Compliance Manager provides you with tools to assign, track, and record complian
   
 ![Compliance Manager Dashboard - top menu - updated Admin menu](media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
 
-### Accessing Compliance Manager
+## Accessing Compliance Manager
 
 You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
@@ -554,7 +504,7 @@ You access Compliance Manager from the Service Trust Portal. Anyone with a Micro
     
 5. Click ![Help icon in Compliance Manager](media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Help** to take a short tour of Compliance Manager. 
   
-### Viewing action items
+## Viewing action items
 
 Compliance Manager provides a convenient view of all your assigned control assessment action items, enabling you to quickly and easily take action on them. You can view all action items or select the action items that correspond with a specific certification by clicking on the tab associated with that assessment. For instance, in the image below, the GDPR tab has been selected, showing controls that related to the GDPR assessment.
   
@@ -568,11 +518,11 @@ To view your action items:
     
     By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
-### Adding an Assessment
+## Adding an Assessment
 
 To add an Assessment to Compliance Manager:
   
-1. In the Compliance Manager dashboard, click ![Add Icon](media/ITPro_EAC_AddIcon.gif) **Add Assessment**. 
+1. In the Compliance Manager dashboard, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add Assessment**. 
     
 2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
     
@@ -594,7 +544,7 @@ To add an Assessment to Compliance Manager:
     
     ![Compliance Manager - Assessment Tile](media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
 
-### Copying information from existing Assessments
+## Copying information from existing Assessments
 
 As previously explained, when you create a new assessment group, you have the option to copy information from Assessments in an existing group to the new Assessment in the new group. This allows you to apply the assessment and testing work that's been completed to the same customer managed controls in the new Assessment. For example, if you have a group for all GDPR-related Assessments in your organization, you can copy common information from existing assessment work when add a new Assessment to the group.
   
@@ -608,7 +558,7 @@ You can copy the following information from customer to a new Assessment:
     
 Similarly, information from shared customer managed controls within the same Assessment group is synchronized. And information in related customer managed controls within the same Assessment is also synchronized.
 
-### Viewing Assessments
+## Viewing Assessments
 
 1. Locate the Assessment Tile corresponding to the assessment you wish to view, then click the assessment name to open it and view the Microsoft and customer managed controls associated with the Assessment, along with a list of the cloud services that are in-scope for the Assessment. Here's an example of the Assessment for Office 365 and GDPR.
     
@@ -626,7 +576,7 @@ Similarly, information from shared customer managed controls within the same Ass
     
 6. Displays the total number of controls in the control family, and how many of those controls have been assessed. A key capability of Compliance Manager is tracking your organization's progress on assessing the customer managed controls. For more information, see the [Understanding the Compliance Score](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore) section. 
 
-### Managing the assessment process
+## Managing the assessment process
 
 The creator of an Assessment is initially the only Assessment User. For each customer managed control, you can assign an Action Item to a person in your organization so that person becomes an Assessment User who can perform the recommended Customer Actions, and gather and upload evidence. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. The email notification includes a link to the **Action Items** dashboard, which lists all Action Items assigned to that person. 
   
@@ -668,7 +618,7 @@ Here's a list of tasks that you can perform using the workflow features of Compl
     
 7. **Enter test date and test result** - The person with the Compliance Manager Assessor role can verify that proper testing performed, review the implementation details, test plan, test results, and any uploaded evidence, and then set the Test Date and Test Result. Available test result values are **Passed**, **Failed-Low Risk**, **Failed-Medium Ris** **k**, and **Failed-High Risk**. 
 
-### Managing action items
+## Managing action items
 
 The people involved in the assessment process in your organization can use Compliance Manager to review the customer managed controls from all Assessments for which they are users. When a user signs in to Compliance Manager and opens the **Action Items** dashboard, a list of Action Items assigned to them is displayed. Depending on the Compliance Manager role assigned to the user, they can provide implementation or test details, update the Status, or assign Action Items. 
   
@@ -696,7 +646,7 @@ To assign an action item:
     
 The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
-### Exporting information from an Assessment
+## Exporting information from an Assessment
 
 You can export an Assessment to an Excel file, which can be reviewed by compliance stakeholders in your organization, and provided to auditors and regulators. This assessment report is a snapshot of the assessment as of the date and time that the report is created, and it contains the details of both the Microsoft-managed controls and the customer managed controls for that assessment, including control implementation status, control test date and test results, and provides links to the uploaded evidence documents. It is recommended that you export the assessment report prior to archiving an assessment, as archived assessments do not retain their links to uploaded documents.
   
@@ -710,7 +660,7 @@ To export an Assessment report:
     
 The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
-### Archiving an Assessment
+## Archiving an Assessment
 
 When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   

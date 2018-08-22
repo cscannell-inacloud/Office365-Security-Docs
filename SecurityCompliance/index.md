@@ -24,12 +24,12 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Get started - first 30 days</h3>
-                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com" target="_blank">Check Secure Score</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Turn on audit logging</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configure tenant security</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connect Cloud App Security</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Enable Azure AD Identity Protection</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Secure SharePoint sites and files</a> </p>
+                <p>These basic security and compliance tasks can be accomplished quickly and have a low impact to users: <br> - <a href="https://securescore.office.com" target="_blank">Check Secure Score</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Turn on audit logging</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configure tenant security</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connect Cloud App Security</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Enable Azure AD Identity Protection</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Secure SharePoint sites and files</a> <br> - <a href="configure-supervision-policies.md">Enable a data governance policy</a> </p>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -58,7 +58,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/renew.svg" alt="Renew" />
+                            <img src="https://docs.microsoft.com/office/media/icons/renew.svg" alt="Renew" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -85,7 +85,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/success-blue.svg" alt="Success" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/success-blue.svg" alt="Success" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,7 +104,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Security" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="Security" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
@@ -122,7 +122,7 @@ If your organization needs to protect your data or comply with legal or regulato
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-blue.svg" alt="What's New" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's New" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">

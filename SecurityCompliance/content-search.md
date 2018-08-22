@@ -94,7 +94,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**. 
   
-To clear the results or create a new search, click ![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif) **New search**. 
+To clear the results or create a new search, click ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
 
   
 ## Preview search results
@@ -285,16 +285,16 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   In the search results, meeting summaries are identified as **Meeting** in the **Type field**; call summaries are identified as **Call**. Additionally, conversations that are part of a Teams channel and 1xN chats are identified as **IM** in the **Type** field.
   
-  ![Teams meetings, calls, and 1xN chats are identified in the Type field](media/O365_ContentSearch_Teams_MessageKind.png)
+  ![Teams meetings, calls, and 1xN chats are identified in the Type field](media/O365-ContentSearch-Teams-MessageKind.png)
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Microsoft Teams. 
   - To use the **Kind** property as part of the keyword search query, in the **Keywords** box of a search query, type `kind:microsoftteams`.
 
-    ![Use the kind:microsoftteams in the Keywords box](media/O365_ContentSearch_Teams_Keywords.png)
+    ![Use the kind:microsoftteams in the Keywords box](media/O365-ContentSearch-Teams-Keywords.png)
   
   - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`. 
 
-    ![Use the Message kind condition with the value microsoftteams.](media/O365_ContentSearch_Teams_MessageKindCondition.png)
+    ![Use the Message kind condition with the value microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Note that conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
 

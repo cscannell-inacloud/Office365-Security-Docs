@@ -30,7 +30,7 @@ This document provides a list of instructions on how to permanently remove a mes
 
 Here's a how to manage a data spillage incident:
 
-![The 8-step workflow for managing data spillage incidents](media/O365_eDiscoverySolutions_DataSpillage_workflow.png)
+![The 8-step workflow for managing data spillage incidents](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [(Optional) Step 1: Manage who can access the case and set compliance boundaries](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Step 2: Create an eDiscovery case](#step-2-create-an-ediscovery-case)<br/>
@@ -49,7 +49,7 @@ Here's a how to manage a data spillage incident:
     
 - To create a case, you must be a member of the eDiscovery Manager role group or be a member of a custom role group that's assigned the Case Management role. If you're not a member, ask an Office 365 administrator to [add you to the eDiscovery manager role group](assign-ediscovery-permissions.md).
     
-- To delete data that's spilled into your organization, you need to use the [Search-Mailbox -DeleteContent](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) command in Exchange Online PowerShell. Additionally, to use the  *DeleteContent* parameter, you also have to be a member of a role group in Exchange Online that's assigned the Mailbox Import Export role. See the "Add a role to a role group" section in [Manage role groups](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
+- To delete data that's spilled into your organization, you need to use the [Search-Mailbox -DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) command in Exchange Online PowerShell. Additionally, to use the  *DeleteContent* parameter, you also have to be a member of a role group in Exchange Online that's assigned the Mailbox Import Export role. See the "Add a role to a role group" section in [Manage role groups](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
     
 - To search the Office 365 audit log eDiscovery activities in Step 8, auditing must be turned on for your organization. You can search for activities that were performed within the last 90 days. To learn more about how to enable and use auditing, see the [Auditing the data spillage investigation process](#auditing-the-data-spillage-investigation-process) section in Step 8. 
     
@@ -93,7 +93,7 @@ Afer you verified the search results, you may want to share your findings with o
  
       The Export report page is displayed.
 
-    ![Select the search and then click More > Export report on the flyout page](media/O365_eDiscoverySolutions_DataSpillage_ExportReport1.png)
+    ![Select the search and then click More > Export report on the flyout page](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Select **All items, including ones that have unrecognized format, are encrypted, or weren’t indexed for other reasons** and then click **Generate report**.
 
@@ -101,7 +101,7 @@ Afer you verified the search results, you may want to share your findings with o
 
 5. Click the export job, and then click **Download** report on the flyout page.
  
-    ![On the Export page, click the export and then click "Download report"](media/O365_eDiscoverySolutions_DataSpillage_ExportReport2.png)
+    ![On the Export page, click the export and then click "Download report"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 The **Export Summary** report contains the number of locations found with results and the size of the search results. You can use this to compare with the report generated after deletion and provide as a proof of deletion. The **Results** report contains a more detailed summary of the search results, including the subject, sender, recipients, if the email was read, dates, and size of each message. If any of the details in this report contains that actual spilled data, be sure to permanently delete the Results.csv file when the investigation is complete.
 
@@ -135,7 +135,7 @@ There are two ways to collect a list of email addresses of mailboxes with spille
     
 4. In the **Type** drop down list, click **Top locations**.
     
-    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics](media/O365_eDiscoverySolutions_DataSpillage_TopLocations.png)
+    ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     A list of mailboxes that contain search results is displayed. The number of items in each mailbox that match the search query is also displayed.
     
@@ -185,7 +185,7 @@ Using the mailbox locations that you collected and prepared in Step 6 and the se
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
   
-As previously stated, you can also create a [powershell script](https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6) and run it against a list of mailboxes so that the script deletes the spilled data in each mailbox.
+As previously stated, you can also create a [powershell script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and run it against a list of mailboxes so that the script deletes the spilled data in each mailbox.
   
 ## Step 8: Verify, provide a proof of deletion, and audit
 
@@ -203,7 +203,7 @@ If the keywords in the search query that you created and used in Step 3 contains
     
 2. On the flyout page, click **Delete**.
 
-    ![Select the search and then click Delete on the flyout page](media/O365_eDiscoverySolutions_DataSpillage_DeleteSearch.png)
+    ![Select the search and then click Delete on the flyout page](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### Auditing the data spillage investigation process
 

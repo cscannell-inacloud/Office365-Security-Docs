@@ -1,9 +1,9 @@
 ---
-title: "Office 365 Data Resiliency Overview"
+title: "Data Resiliency in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/16/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,10 +11,10 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Understand data resiliency in Microsoft Office 365."
+description: "Understand data resiliency in Microsoft Office 365."
 ---
 
-# Understanding Office 365 Data Resiliency
+# Data Resiliency in Office 365
 
 ## Introduction
 Given the complex nature of cloud computing, Microsoft is mindful that it's not a case of if things will go wrong, but rather when. We design our cloud services to maximize reliability and minimize the negative effects on customers when things do go wrong. We have moved beyond the traditional strategy of relying on complex physical infrastructure, and we have built redundancy directly into our cloud services. We use a combination of less complex physical infrastructure and more intelligent software that builds data resiliency into our services and delivers high availability to our customers. 
@@ -40,8 +40,8 @@ Through the building of our cloud services to these principles, coupled with rob
 
 ## Related Links
 
-- [Dealing with Data Corruption](/office365/enterprise/office-365-dealing-with-data-corruption)
-- [Malware and Ransomware Protection](/office365/enterprise/office-365-malware-and-ransomware-protection)
-- [Monitoring and Self-Healing](/office365/enterprise/office-365-monitoring-and-self-healing)
-- [Exchange Data Resiliency](/office365/enterprise/office-365-exchange-data-resiliency)
-- [SharePoint Data Resiliency](/office365/enterprise/office-365-sharepoint-data-resiliency)
+- [Dealing with Data Corruption](office-365-dealing-with-data-corruption.md)
+- [Malware and Ransomware Protection](office-365-malware-and-ransomware-protection.md)
+- [Monitoring and Self-Healing](office-365-monitoring-and-self-healing.md)
+- [Exchange Data Resiliency](office-365-exchange-data-resiliency.md)
+- [SharePoint Data Resiliency](office-365-sharepoint-data-resiliency.md)

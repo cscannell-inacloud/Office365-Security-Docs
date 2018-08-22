@@ -88,11 +88,11 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
   
 ### Use the EAC to create a retention policy
   
-1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif).
     
 2. On the **New retention policy** page, under **Name**, type a name that describes the purpose of the retention policy; for example, **MRM Policy for Mailboxes on Hold**. 
     
-3. Under **Retention tags**, click **Add** ![Add Icon](media/ITPro_EAC_AddIcon.gif).
+3. Under **Retention tags**, click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif).
     
 4. In the list of retention tags, select the Recoverable Items RPT that you created in Step 1, and then click **Add**.
     

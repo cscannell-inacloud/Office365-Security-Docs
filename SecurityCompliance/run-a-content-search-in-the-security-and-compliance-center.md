@@ -79,7 +79,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
 3. In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** \> **Content search**.
     
-4. Click **New**![Add icon](media/O365_MDM_CreatePolicy_AddIcon.gif).
+4. Click **New**![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
 5. On the **New search** page, type a name for the Content Search. This name has to be unique in your organization. 
     
@@ -97,7 +97,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
     **Mailboxes**
     
-  - When you click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
+  - When you click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, type a name (a minimum of 3 characters) in the search box and click **Search**![Search icon](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
     
   - You can add inactive mailboxes and distribution groups to the list of mailboxes to search. For distribution groups, the mailboxes of group members are searched. Note that dynamic distribution groups aren't supported.
     
@@ -109,7 +109,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
     **Sites**
     
-  - Click **Add**![Add Icon](media/ITPro_EAC_AddIcon.gif) to add sites to the search. Type the URL for each site that you want to search. The Content Search tool will validate the URL, and then add it to the list of sites to search. 
+  - Click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) to add sites to the search. Type the URL for each site that you want to search. The Content Search tool will validate the URL, and then add it to the list of sites to search. 
     
   - You can add the SharePoint that's associated with an Office 365 Group or a Microsoft Team. See the  section for guidance about how to find the URL for group or team. 
     
@@ -159,7 +159,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
 5. Links to preview the search results or run the search again to update the search statistics.
     
-    If necessary, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif) to update the information in the details pane for the selected search. 
+    If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane for the selected search. 
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -219,7 +219,7 @@ When you update the results of an existing Content Search, the search query is r
     
 2. In the details pane, under **Results**, click **Update search results**.
     
-    A status messages is displayed saying that the results are being retrieved. When the search is finished, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of Content Searches, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif).
+    A status messages is displayed saying that the results are being retrieved. When the search is finished, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of Content Searches, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif).
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -249,7 +249,7 @@ If a search returns any errors, you don't have to re-search all of the content l
     
 2. In the details pane, under **Error**, click **Retry search**.
     
-    A status messages is displayed saying that the results are being retrieved. When the search is complete, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of searches, click **Refresh**![Refresh icon](media/O365_MDM_Policy_RefreshIcon.gif).
+    A status messages is displayed saying that the results are being retrieved. When the search is complete, updated information is displayed under **Results** in the details pane. Note that the date in the **Searched on** field in the details pane is updated to the current date and time. To refresh the information in the list of searches, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif).
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   

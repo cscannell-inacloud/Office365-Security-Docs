@@ -16,17 +16,12 @@ description: "Get started using Office 365 Cloud App Security"
 ---
 
 # Get ready for Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
 |[Start evaluating](office-365-cas-overview.md) <br/> |You are here!  <br/> [Next step](turn-on-office-365-cas.md) <br/> |[Start deploying](turn-on-office-365-cas.md) <br/> |[Start utilizing](utilization-activities-for-ocas.md) <br/> |
    
-> [!NOTE]
-> Office 365 Cloud App Security is available in Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Office 365 Cloud App Security can be purchased as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
-  
-As you prepare to turn on and implement Office 365 Cloud App Security for your organization, there are a few things to take into account. Use this article as a guide to plan for Office 365 Cloud App Security.
+As you prepare to turn on and implement Office 365 Cloud App Security (formerly known as Advanced Security Management) for your organization, there are a few things to take into account. Use this article as a guide to plan for Office 365 Cloud App Security.
     
 ## Step 1: Identify and protect your global and security administrator accounts
 
@@ -62,7 +57,7 @@ There are two types of alerts in Office 365 Cloud App Security: anomaly detectio
   
 See the following resources to learn more:
   
-- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alertsc.md)
+- [Activity policies and alerts in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
@@ -96,6 +91,6 @@ Is your organization using a security information and event management (SIEM) se
 
 - [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
     
-- Try our [Test Lab Guide](https://technet.microsoft.com/en-us/library/mt757250.aspx) for a hands-on experience where you can demonstrate the powerful features of Office 365 Cloud App Security and create a proof of concept. 
+- Try our [Test Lab Guide](/enterprise/cloud-app-security-for-your-office-365-dev-test-environment.md) for a hands-on experience where you can demonstrate the powerful features of Office 365 Cloud App Security and create a proof of concept. 
     
 

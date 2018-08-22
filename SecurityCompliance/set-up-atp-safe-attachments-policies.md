@@ -22,11 +22,11 @@ People regularly send, receive, and share attachments, such as documents, presen
   
 ## What to do 
   
-1. [[Review the prerequisites](set-up-atp-safe-attachments-policies.md#prereqs)](#review-the-prerequisites)
+1. [Review the prerequisites](#review-the-prerequisites)
     
-2. [[Set up an ATP Safe Attachments policy](set-up-atp-safe-attachments-policies.md#setpolicy)](#set-up-an-atp-safe-attachments-policy)
+2. [Set up an ATP Safe Attachments policy](#set-up-an-atp-safe-attachments-policy)
     
-3. [[Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions)](#learn-about-atp-safe-attachments-policy-options)
+3. [Learn about ATP Safe Attachments policy options](#learn-about-atp-safe-attachments-policy-options)
     
 ## Review the prerequisites
 
@@ -34,7 +34,7 @@ People regularly send, receive, and share attachments, such as documents, presen
     
 - Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
-- [Learn about ATP Safe Attachments policy options](set-up-atp-safe-attachments-policies.md#policyoptions) (in this article). Some options, such as the Monitor or Replace options, can result in a minor delay of email while attachments are scanned. To avoid message delays, consider using [dynamic delivery and previewing](dynamic-delivery-and-previewing.md).
+- [Learn about ATP Safe Attachments policy options](#learn-about-atp-safe-attachments-policy-options) (in this article). Some options, such as the Monitor or Replace options, can result in a minor delay of email while attachments are scanned. To avoid message delays, consider using [dynamic delivery and previewing](dynamic-delivery-and-previewing.md).
     
 - Allow up to 30 minutes for your new or updated policy to spread to all Office 365 datacenters.
     
@@ -58,7 +58,7 @@ You can set up an ATP Safe Attachments policy using either the Office 365 Securi
     
   - In the **Description** box, type a description like, Delivers messages immediately and reattaches attachments after scanning.
     
-  - In the response section, choose the **Dynamic Delivery** option. ( [Learn more about dynamic delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md))
+  - In the response section, choose the **Dynamic Delivery** option. ([Learn more about dynamic delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).)
     
   - In the **Redirect attachment** section, select the option to enable redirect and type the email address of your Office 365 global administrator, security administrator, or security analyst who will investigate malicious attachments. 
     
@@ -92,5 +92,7 @@ As you set up your ATP Safe Attachments policies, you choose from among many opt
 [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md)
   
 [View the reports for Advanced Threat Protection](view-reports-for-atp.md)
+
+[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 

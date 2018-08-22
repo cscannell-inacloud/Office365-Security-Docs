@@ -16,12 +16,10 @@ description: "Use the Alerts page in Office 365 Cloud App Security to view poten
 ---
 
 # Review and take action on alerts in Office 365 Cloud App Security
-
-Office 365 Advanced Security Management is now Office 365 Cloud App Security.
   
 |****Evaluation** \>**|****Planning** \>**|****Deployment** \>**|****Utilization****|
 |:-----|:-----|:-----|:-----|
-|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |[Start deploying](turn-on-office-365-cas.md) <br/> |You are here!  <br/> [Next steps](review-office-365-cas-alerts.md#nextsteps) <br/> |
+|[Start evaluating](office-365-cas-overview.md) <br/> |[Start planning](get-ready-for-office-365-cas.md) <br/> |[Start deploying](turn-on-office-365-cas.md) <br/> |You are here!  <br/> [Next steps](#next-steps) <br/> |
    
 You can use the Alerts page in Office 365 Cloud App Security to view potential issues and, if needed, take action.
   

@@ -3,7 +3,7 @@ title: "Office 365 Monitoring and Self-Healing"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 5/16/2018
+ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,7 +11,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Information about Office 365's monitoring and self-healing capabilities."
+description: "Information about Office 365's monitoring and self-healing capabilities."
 ---
 
 # Office 365 Monitoring and Self-Healing

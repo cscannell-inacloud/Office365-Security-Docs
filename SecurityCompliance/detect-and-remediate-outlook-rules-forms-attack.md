@@ -73,7 +73,7 @@ You can use either of these two methods to confirm the attack.
 2. Refer to [Manage email messages by using rules](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010) article for the procedures on how to open the rules interface in either the 2007, 2010 or 2013 versions of Outlook.
 3. Look for rules that the user did not create, or any unexpected rules or rules with suspicious names.
 4. Look in the rule description for rule actions that start and application or refer to an .EXE, .ZIP file or to launching a URL.
-5. Look for any new processes that start using the Outlook process ID.  Refer to [Find the Process ID](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/finding-the-process-id).
+5. Look for any new processes that start using the Outlook process ID.  Refer to [Find the Process ID](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id).
 
 ### Steps to confirm the Forms attack using the Outlook client
 1. Open the user Outlook client as the user.
@@ -120,13 +120,13 @@ There are two remote PowerShell cmdlets you can use to remove or disable dangero
  
 Steps for mailboxes that are on an Exchange server
 
-1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
-2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet ](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)- use this to completely remove one, multiple, or all rules from the mailbox.
+1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
+2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)- use this to completely remove one, multiple, or all rules from the mailbox.
 3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 Steps for mailboxes in Exchange Online
-1. Follow the steps in [Connect to Exchange Online using PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-2.	If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps).
+1. Follow the steps in [Connect to Exchange Online using PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+2.	If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps).
 3.	If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 ## How to minimize future attacks
@@ -139,7 +139,7 @@ The Rules and Forms exploits are only used by an attacker after they have stolen
 
 The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for Office 365 users](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  You should also:
 <ol>
-    <li>Monitor how your user accounts are <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-view-access-usage-reports">accessed and used</a>. You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475"> Office 365 Cloud App Security policies</a> to monitor you accounts and alert on unusual activity. 
+    <li>Monitor how your user accounts are <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">accessed and used</a>. You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475"> Office 365 Cloud App Security policies</a> to monitor you accounts and alert on unusual activity. 
         <ol type="a">
             <li><b>Multiple failed login attempts</b> This policy profiles your environment and triggers alerts when users perform multiple failed login activities in a single session with respect to the learned baseline, which could indicate an attempted breach.</li>
             <li><b>Impossible travel</b> - This policy profiles your environment and triggers alerts when activities are detected from the same user in different locations within a time period that is shorter than the expected travel time between the two locations. This could indicate that a different user is using the same credentials. Detecting this anomalous behavior necessitates an initial learning period of seven days during which it learns a new user’s activity pattern.</li>
@@ -163,7 +163,7 @@ For more information on the individual security patches, see:
 - [Outlook 2016 Security Patch](https://support.microsoft.com/en-us/help/3191883)
 
 ### Third: Monitor your Outlook clients
-Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the “Start Application” behavior. You can use [Advanced Group Policy Management](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.  
+Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the “Start Application” behavior. You can use [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.  
 You can to see if “Start Application” has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/en-us/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows).  Check these subkeys: 
 
 - Outlook 2016: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\
