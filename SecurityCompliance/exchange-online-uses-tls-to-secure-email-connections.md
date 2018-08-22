@@ -26,7 +26,7 @@ Transport Layer Security (TLS), and SSL that came before TLS, are cryptographic 
   
 If you want to encrypt the message you need to use an encryption technology that encrypts the message contents, for example, something like Office Message Encryption. See [Email encryption in Office 365](email-encryption.md) and [Office 365 Message Encryption (OME)](ome.md) for information on message encryption options in Office 365. 
   
-We recommend using TLS in situations where you want to set up a secure channel of correspondence between Office 365 and your on-premises organization or another organization, such as a partner. Exchange Online always attempts to use TLS first to secure your email but cannot always do this if the other party does not offer TLS security. Keep reading to find out how you can secure all mail to your on-premises servers or important partners by using  *connectors*  . 
+We recommend using TLS in situations where you want to set up a secure channel of correspondence between Office 365 and your on-premises organization or another organization, such as a partner. Exchange Online always attempts to use TLS first to secure your email but cannot always do this if the other party does not offer TLS security. Keep reading to find out how you can secure all mail to your on-premises servers or important partners by using  *connectors*. 
   
 ## How Exchange Online uses TLS between Exchange Online customers
 
@@ -74,6 +74,20 @@ To help ensure a smooth transition, we will continue to provide the old certific
 |Organization unit  <br/> |Microsoft Corporation  <br/> |
 |Certificate key strength  <br/> |2048  <br/> |
    
+## Prepare for the new Exchange Online certificate
+
+The new certificate is issued by a different certificate authority (CA) from the previous certificate used by Exchange Online. As a result, you may need to perform some actions in order to use the new certificate.
+
+The new certificate requires connecting to the endpoints of the new CA as part of validating the certificate. Failure to do so can result in mail flow being negatively affected. If you protect your mail servers with firewalls that only let the mail servers connect with certain destinations you need to check if your server is able to validate the new certificate. To confirm that your server can use the new certificate, perform the following actions:
+
+- ***Connect to EXO pshell*** run certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl
+- On the window that appears, choose **Retrieve**.
+- When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. ***Otherwise? what should they do? Confirm the ports and connections are available? Where do we send them?
+
+Normally, you receive updates to your root certificates automatically through Windows Update. However, some deployments have additional security in place that prevents these updates from occurring automatically. In these locked-down deployments where Windows Update can't automatically update root certificates, you need to ensure that the correct root CA certificate is installed by completing these steps:
+1.  ***Connect to EXO pshell*** run certmgr.msc.
+2. Under **Trusted Root Certification Authority/Certificates**, confirm that the new certificate is listed.
+
 ## Get more information about TLS and Office 365
 
 For a list of supported cipher suites, see [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md).
