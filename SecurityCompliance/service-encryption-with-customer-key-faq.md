@@ -3,7 +3,7 @@ title: "Service encryption with Customer Key for Office 365 FAQ"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/25/2018
+ms.date: 7/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -74,7 +74,7 @@ The availability key is a root key that is provisioned when you create a data en
 
  **Exchange Online and Skype for Business:** You can create up to 50 DEPs. 
   
- **SharePoint Online and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365 (currently in Preview), you can create one DEP per geo. If you are not using multi-geo, you can create one DEP.
+ **SharePoint Online and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP.
   
 ## Can I assign a data encryption policy before migrating a mailbox to the cloud?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -188,7 +188,7 @@ In case the customer loses access to their customer keys, Office 365 also encryp
   
 For availability and scale reasons, decrypted TIKs are cached in a time-limited memory cache. Two hours before a TIK cache is set to expire, Office 365 attempts to decrypt each TIK. Decrypting the TIKs extends the lifetime of the cache. If TIK decryption fails for a significant amount of time, Office 365 generates an alert to notify engineering prior to the cache expiration. Only if the customer calls Microsoft will Office 365 initiate the recovery operation, which involves decrypting the TIK with the availability key stored in Microsoft's secret store and onboarding the tenant again using the decrypted TIK and a new set of customer-supplied Azure Key Vault keys.
   
-As of today, Customer Key is involved in the encryption and decryption chain of SharePoint Online file data stored in the Azure blob store, but not SharePoint Online list items or metadata stored in the SQL database. Office 365 does not use the availability key for SharePoint Online or OneDrive for Business other than the case described above, which is customer initiated. As described above, human access to customer data is protected by Customer Lockbox.
+As of today, Customer Key is involved in the encryption and decryption chain of SharePoint Online file data stored in the Azure blob store, but not SharePoint Online list items or metadata stored in the SQL database. Office 365 does not use the availability key for SharePoint Online or OneDrive for Business other than the case described above, which is customer initiated. Human access to customer data is protected by Customer Lockbox.
   
 ## How is Customer Key licensed?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
