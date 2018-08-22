@@ -111,9 +111,9 @@ You can also use the following tokens to help customize the email notification. 
 
 |**Token**|**Description**|
 |:-----|:-----|
-|%%AppliedActions%%  <br/> |The actions applied to the content.  <br/> |
-|%%ContentURL%%  <br/> |The URL of the document on the SharePoint Online site or OneDrive for Business site.  <br/> |
-|%%MatchedConditions%%  <br/> |The conditions that were matched by the content. Use this token to inform people of possible issues with the content.  <br/> |
+|`%%AppliedActions%%`  <br/> |The actions applied to the content.  <br/> |
+|`%%ContentURL%%`  <br/> |The URL of the document on the SharePoint Online site or OneDrive for Business site.  <br/> |
+|`%%MatchedConditions%%`  <br/> |The conditions that were matched by the content. Use this token to inform people of possible issues with the content.  <br/> |
    
 ![Notification message showing where tokens appear](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
