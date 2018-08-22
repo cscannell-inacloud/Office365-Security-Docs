@@ -327,7 +327,7 @@ By using labels as a condition in your DLP rules, can you selectively enforce pr
 
 Several features can be applied to content containing sensitive information:
   
-- An [Applying a label automatically based on conditions](labels.md#applyingauto) and a [retention policy](retention-policies.md) can both enforce **retention** actions on this content. 
+- An [Applying a label automatically based on conditions](labels.md#applying-a-label-automatically-based-on-conditions) and a [retention policy](retention-policies.md) can both enforce **retention** actions on this content. 
     
 - A DLP policy can enforce **protection** actions on this content. And before enforcing these actions, a DLP policy can require other conditions to be met in addition to the content containing a label. 
     
