@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
-description: "A policy tip is a notification or warning that appears when someone is working with content that conflicts with a DLP policy. You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
-"
+description: "A policy tip is a notification or warning that appears when someone is working with content that conflicts with a DLP policy. You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive."
 ---
 
 # Send email notifications and show policy tips for DLP policies
@@ -37,9 +36,9 @@ In the Office 365 Security &amp; Compliance Center, when you create a DLP policy
     
   - For email in Outlook on the web and Outlook 2013 and later, the policy tip appears at the top of a message above the recipients while the message is being composed.
     
-  - For documents in a OneDrive for Business account or SharePoint Online site, the policy tip is indicated by a warning icon that appears on the item. To view more information, you can select an item and then choose **Information**![Information pane icon](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane. 
+  - For documents in a OneDrive for Business account or SharePoint Online site, the policy tip is indicated by a warning icon that appears on the item. To view more information, you can select an item and then choose **Information** ![Information pane icon](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane. 
     
-  - For Excel 2016, PowerPoint 2016, and Word 2016 documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view ( **File** menu \> **Info**).
+  - For Excel 2016, PowerPoint 2016, and Word 2016 documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view (**File** menu \> **Info**).
     
 ## Add user notifications to a DLP policy
 
@@ -85,7 +84,7 @@ For each rule in a DLP policy, you can:
     
 - Customize the text that's included in the notification by using HTML or tokens. See the section below for more information.
     
-> [!NOTE] Email notifications can be sent only to individual recipients—not groups or distribution lists. >  Only new content will trigger an email notification. Editing existing content will trigger policy tips but not an email notification. 
+> [!NOTE] Email notifications can be sent only to individual recipients—not groups or distribution lists. Only new content will trigger an email notification. Editing existing content will trigger policy tips but not an email notification. 
   
 ![Email notification options](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
