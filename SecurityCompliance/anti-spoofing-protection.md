@@ -170,7 +170,6 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-
 After anti-spoofing, if you are an Advanced Threat Protection or E5 customer, the compauth value is stamped (non-ATP and non-E5 customers are not affected):
   
 ```
