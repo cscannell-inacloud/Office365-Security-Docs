@@ -344,19 +344,19 @@ You can apply a label to a folder in Exchange, SharePoint, or OneDrive. If a fol
   
 ### Records can't be deleted
 
-If you attempt to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](retention-policies.md#how).
+If you attempt to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
 If you attempt to delete a record in a SharePoint, you see an error that the item wasn't deleted, and the item remains in the library.
   
 ![Message that item wasn't deleted from SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
   
-If you attempt to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with content in place](retention-policies.md#how).
+If you attempt to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
 ## Using a label as a condition in a DLP policy
 
 A label can enforce **retention** actions on content. In addition, you can use a label as a condition in a data loss prevention (DLP) policy. This means that a DLP policy can enforce **protection** actions, such as restricting access, on content that contains a specific label. 
   
-For more information, see [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#label).
+For more information, see [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
   
 ## Using the Label Activity Explorer and the data governance reports
 
