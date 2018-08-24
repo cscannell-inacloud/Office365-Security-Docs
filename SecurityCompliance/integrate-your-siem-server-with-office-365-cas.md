@@ -23,9 +23,6 @@ description: "You can integrate your SIEM server with Office 365 Cloud App Secur
 You can integrate [Office 365 Cloud App Security](get-ready-for-office-365-cas.md) with your security information and event management (SIEM) server to enable centralized monitoring of alerts. This is especially beneficial for organizations who are using cloud services and on-premises server applications. Integrating with a SIEM server allows your security team to better protect your Office 365 applications while maintaining your usual security workflow, by automating certain security procedures and correlating between cloud-based and on-premises events.  
   
 When you first integrate your SIEM server with Office 365 Cloud App Security, alerts from the last two days are forwarded to the SIEM server, as well as all alerts from then on (based on any filters you select). Additionally, if you disable this feature for an extended period, when you enable it again, it will forward the past two days of alerts and then all alerts from then on.
-  
-> [!IMPORTANT]
-> .
  
 ## SIEM integration architecture
 
@@ -120,9 +117,9 @@ After you click Close and leave the wizard, on the Security extensions screen, y
     ```
 
 - Parameters in brackets [] are optional, and should be used only if relevant. Use the following variables:
-    - DIRNAME is the path to the directory you want to use for local agent debug logs.
-    - ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
-    - TOKEN is the SIEM agent token you copied in the first procedure.
+    - **DIRNAME** is the path to the directory you want to use for local agent debug logs.
+    - **ADDRESS[:PORT]** is the proxy server address and port that the server uses to connect to the Internet.
+    - **TOKEN** is the SIEM agent token you copied in the first procedure.
     - To get help, type `-h`. 
   
 ### Step 3: Validate that the SIEM agent is working
@@ -134,16 +131,19 @@ After you click Close and leave the wizard, on the Security extensions screen, y
 ## Regenerating your token
 
 If you lose your token, you can always regenerate it. In the table, locate the row for the SIEM agent. Click the ellipses, and then choose **Regenerate token**.
+
 ![Regenerate a token by clicking the ellipsis for your SIEM agent](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
   
 ## Editing your SIEM agent
 
 To edit your SIEM agent, in the table, locate the row for the SIEM agent. Click the ellipses, and then choose **Edit**. If you edit the SIEM agent, you do not need to re-run the .jar file; it updates automatically.
+
 ![To edit your SIEM agent, choose the ellipses, and then choose Edit.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ## Deleting your SIEM agent
 
 To delete your SIEM agent, in the table, locate the row for the SIEM agent. Click the ellipses, and then choose **Delete**.
+
 ![To delete a SIEM agent, choose the ellipses, and then choose Delete.](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
 
 ## Sample logfiles
