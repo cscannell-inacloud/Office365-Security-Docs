@@ -57,49 +57,8 @@ With labels, you can:
 You create and manage labels on the **Labels** page in the Office 365 Security &amp; Compliance Center. 
   
 ![Labels page](media/42d1865d-f0f5-436d-8e09-0e547302c816.png)
-  
-## Contents
-
-- [How labels work with label policies](labels.md#howlabels)
-    
-- [Only one label at a time](labels.md#onlyone)
-    
-- [How long it takes for labels to take effect](labels.md#howlong)
-    
-- [Label policies and locations](labels.md#locations)
-    
-- [How labels enforce retention](labels.md#howlabelsenforce)
-    
-- [Where published labels can appear to end users](labels.md#wherepublished)
-    
-- [Applying a label automatically based on conditions](labels.md#applyingauto)
-    
-- [Applying a default label to all content in a SharePoint library, folder, or document set](labels.md#applyingdefault)
-    
-- [Applying a label to email by using rules](labels.md#applyrules)
-    
-- [Classifying content without applying any actions](labels.md#noactions)
-    
-- [Using labels for records management](labels.md#records)
-    
-- [Using a label as a condition in a DLP policy](labels.md#label)
-    
-- [Using the Label Activity Explorer and the data governance reports](labels.md#reports)
-    
-- [Using Content Search to find all content with a specific label applied to it](labels.md#contentsearch)
-    
-- [The principles of retention, or what takes precedence?](labels.md#principles)
-    
-- [Use labels instead of these features](labels.md#features)
-    
-- [Permissions](labels.md#permissions)
-    
-- [Find the PowerShell cmdlets for labels](labels.md#powershell)
-    
-- [More information](labels.md#moreinfo)
-    
+ 
 ## How labels work with label policies
-<a name="howlabels"> </a>
 
 Making labels available to people in your organization so that they can classify content is a two-step process: first you create the labels, and then you publish them to the locations you choose. When you publish labels, a label policy gets created.
   
@@ -114,7 +73,6 @@ Labels are independent, reusable building blocks that are included in a label po
 2. Label policies specify the locations to publish the labels.
     
 ## Only one label at a time
-<a name="onlyone"> </a>
 
 It's important to know that content like an email or document can have only a single label assigned to it at a time:
   
@@ -129,7 +87,6 @@ It's important to know that content like an email or document can have only a si
 Manually assigned labels are explicitly assigned; auto-apply labels are implicitly assigned; an explicit label takes precedence over an implicit label. For more information, see the below section on [The principles of retention, or what takes precedence?](labels.md#principles).
   
 ## How long it takes for labels to take effect
-<a name="howlong"> </a>
 
 When you publish or auto-apply labels, they don't take effect immediately:
   
@@ -174,7 +131,6 @@ In Exchange Online, labels are made available to end users by a process that run
     If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
     
 ## Label policies and locations
-<a name="locations"> </a>
 
 Different types of labels can be published to different locations, depending on what the label does.
   
@@ -189,7 +145,6 @@ Note that in Exchange, auto-apply labels (for both queries and sensitive informa
 Note that Exchange public folders and Skype do not support labels.
   
 ## How labels enforce retention
-<a name="howlabelsenforce"> </a>
 
 Labels can enforce exactly the same retention actions that a retention policy can. You can use labels to implement a sophisticated content plan (or file plan). For more information on how retention works, see [Overview of retention policies](retention-policies.md).
   
@@ -202,7 +157,6 @@ In addition, a label has two retention options that are available only in a labe
 ![Retention settings with options specific to labels](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
 ## Where published labels can appear to end users
-<a name="wherepublished"> </a>
 
 If your label will be assigned to content by end users, you can publish it to:
   
@@ -269,7 +223,6 @@ You can also create a view of the library that contains the **Labels** column or
 When you publish labels to an Office 365 group, the labels appear in both the group site and group mailbox in Outlook on the web. The experience of applying a label to content is identical to that shown above for email and documents.
   
 ## Applying a label automatically based on conditions
-<a name="applyingauto"> </a>
 
 One of the most powerful features of labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the labels - Office 365 does the work for them.
   
@@ -320,7 +273,6 @@ Note that query-based labels use the search index to identify content.
 ![Query editor](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
 ## Applying a default label to all content in a SharePoint library, folder, or document set
-<a name="applyingdefault"> </a>
 
 In addition to enabling people to apply a label to individual documents, you can also apply a default label to a SharePoint library, folder, or document set, so that all documents in that location get the default label.
   
@@ -339,7 +291,6 @@ If you apply a default label to existing items in the library, folder, or docume
 - If you move an item with a default label from one library, folder, or document set to another library, folder, or document set, the item keeps its existing default label, even if the new location has a different default label.
     
 ## Applying a label to email by using rules
-<a name="applyrules"> </a>
 
 In Outlook 2010 or later, you can create rules to apply a label or retention policy.
   
@@ -350,7 +301,6 @@ To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advan
 ![Rules wizard with option to apply retention policies](media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
 ## Classifying content without applying any actions
-<a name="noactions"> </a>
 
 When you create a label, you can do so without turning on any retention or other actions, as shown below. In this case, you can use a label simply as a text label, without enforcing any actions.
   
@@ -359,7 +309,6 @@ For example, you can create a label named "Review later" with no actions, and th
 ![Label settings page with retention turned off](media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## Using labels for records management
-<a name="records"> </a>
 
 At a high level, records management means that:
   
@@ -395,23 +344,21 @@ You can apply a label to a folder in Exchange, SharePoint, or OneDrive. If a fol
   
 ### Records can't be deleted
 
-If you attempt to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](retention-policies.md#how).
+If you attempt to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
 If you attempt to delete a record in a SharePoint, you see an error that the item wasn't deleted, and the item remains in the library.
   
 ![Message that item wasn't deleted from SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
   
-If you attempt to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with content in place](retention-policies.md#how).
+If you attempt to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
 ## Using a label as a condition in a DLP policy
-<a name="label"> </a>
 
 A label can enforce **retention** actions on content. In addition, you can use a label as a condition in a data loss prevention (DLP) policy. This means that a DLP policy can enforce **protection** actions, such as restricting access, on content that contains a specific label. 
   
-For more information, see [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#label).
+For more information, see [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
   
 ## Using the Label Activity Explorer and the data governance reports
-<a name="reports"> </a>
 
 After you publish or auto-apply your labels, you'll want to verify that they're being applied to content as you intended. To monitor your labels, you can use the:
   
@@ -422,7 +369,6 @@ After you publish or auto-apply your labels, you'll want to verify that they're 
 ![Label Activity Explorer](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## Using Content Search to find all content with a specific label applied to it
-<a name="contentsearch"> </a>
 
 After labels are assigned to content, either by users or auto-applied, you can use content search in the Security &amp; Compliance Center to find all content that's classified with a specific label.
   
@@ -433,7 +379,6 @@ When you create a content search, choose the **Compliance Tag** condition, and t
 ![Compliance Tag condition](media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
 ## The principles of retention, or what takes precedence?
-<a name="principles"> </a>
 
 It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
   
@@ -447,9 +392,9 @@ To understand how different labels with retention actions are applied to content
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-1. If a label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that label takes precedence over both a policy assigned at the site or mailbox level and a default label assigned by the document library. For example, if the explicit label says to retain for ten years, but the policy assigned to the site says to retain for only five years, the label takes precedence. Note that auto-apply labels are considered implicit, not explicit, because they're applied automatically by Office 365.
+    1. If a label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that label takes precedence over both a policy assigned at the site or mailbox level and a default label assigned by the document library. For example, if the explicit label says to retain for ten years, but the policy assigned to the site says to retain for only five years, the label takes precedence. Note that auto-apply labels are considered implicit, not explicit, because they're applied automatically by Office 365.
     
-2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
+    2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
     
 4. **The shortest deletion period wins.** Similarly, if content's subject to multiple policies that delete content (with no retention), it will be deleted at the end of the shortest retention period. 
     
@@ -458,7 +403,6 @@ Understand that the principles of retention work as a tie-breaking flow from top
 Finally, a retention policy or label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
   
 ## Use labels instead of these features
-<a name="features"> </a>
 
 Labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 groups. If you need to classify content or manage records anywhere in Office 365, we recommend that you use labels.
   
@@ -477,7 +421,6 @@ There are several other features that have previously been used to classify cont
 - [Information management policies](intro-to-info-mgmt-policies.md) (Deletion only) 
     
 ## Permissions
-<a name="permissions"> </a>
 
 Members of your compliance team who will create labels need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the Security &amp; Compliance Center, edit the **Compliance Administrator** role group, and add members to that role group. 
   
@@ -486,7 +429,6 @@ For more information, see [Give users access to the Office 365 Security &amp; Co
 These permissions are required only to create and apply labels and a label policy. Policy enforcement does not require access to the content.
   
 ## Find the PowerShell cmdlets for labels
-<a name="powershell"> </a>
 
 To use the label cmdlets, you need to:
   
@@ -495,7 +437,6 @@ To use the label cmdlets, you need to:
 2. Use these [Office 365 Security &amp; Compliance Center cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 ## More information
-<a name="moreinfo"> </a>
 
 - [Overview of retention policies](retention-policies.md)
     
