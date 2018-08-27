@@ -147,7 +147,7 @@
 ## [Use Content Search](content-search.md)
 ### [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
 ### [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md)
-### [Export Content Search results ](content-search.md#export-search-results)
+### [Export Content Search results ](export-search-results.md)
 ### [Export a Content Search report](export-a-content-search-report.md)
 ### [Search for and delete email messages](search-for-and-delete-messagesadmin-help.md)
 ### [Search the cloud-based mailboxes of on-premises users in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +169,11 @@
 ### [Disable reports when you export Content Search results](disable-reports-when-you-export-content-search-results.md)
 ## Use Content Search PowerShell scripts
 ### [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md)
-### [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [Create, report on, and delete multiple Content Searches](create-report-on-and-delete-multiple-content-searches.md)
 ### [Clone a Content Search](clone-a-content-search.md)
 
-# Manage legal investigations
+# [Manage legal investigations](manage-legal-investigations.md)
 ## [Create and manage eDiscovery cases](ediscovery-cases.md)
 ## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
 ## [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
@@ -183,6 +183,7 @@
 ## [Use a script to add users to a hold in an eDiscovery case](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Create a report on holds in eDiscovery cases](create-a-report-on-holds-in-ediscovery-cases.md)
 ## Manage holds
+### [Create an eDiscovery hold](ediscovery-cases.md#step-4-place-content-locations-on-hold)
 ### [Create a Litigation Hold](create-a-litigation-hold.md)
 ### [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
