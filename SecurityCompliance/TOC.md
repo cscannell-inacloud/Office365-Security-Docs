@@ -143,7 +143,7 @@
 ### [Quarantine FAQ for Office 365](quarantine-faq.md)
 ### [Use user spam notifications to release and report quarantined messages in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
-# Search for content
+# [Search for content](search-for-content.md)
 ## [Use Content Search](content-search.md)
 ### [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
 ### [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md)
