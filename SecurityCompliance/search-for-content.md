@@ -11,6 +11,7 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: "Use the Content Search eDiscovery tool in the Office 365 Security &amp; Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 ---
@@ -59,7 +60,7 @@ Content Search is easy to use, but it's also a powerful tool. Behind-the-scenes,
     
 - [Investigate partially indexed items](investigating-partially-indexed-items-in-ediscovery.md) and determine your organization's exposure to them 
     
-- [Limits of the Content Search tool](limits-for-content-search.md) , such as the maximum number of searches that you can run at one time and the maximum number of content locations you can include in a single search 
+- [Limits of the Content Search tool](limits-for-content-search.md), such as the maximum number of searches that you can run at one time and the maximum number of content locations you can include in a single search 
     
 - [Estimated and actual search results](differences-between-estimated-and-actual-ediscovery-search-results.md) and the reasons why there might be differences between them when you export and download search results 
     
