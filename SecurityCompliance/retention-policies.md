@@ -135,7 +135,7 @@ If your retention policy deletes content, it's important to understand that the 
   
 For example, suppose that you create a retention policy that deletes content after three years, and then assign that policy to all OneDrive accounts, which contain a lot of content that was created four or five years ago. In this case, a lot of content will be deleted soon after assigning the retention policy for the first time. For this reason, **a retention policy that deletes content can have a considerable impact on your content**. 
   
-Therefore, before you assign a retention policy to a site for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to yours users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
+Therefore, before you assign a retention policy to a site for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
 ![Warning about deleting content](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
