@@ -1,0 +1,17 @@
+{
+
+  "redirections": [
+
+      {
+
+        "source_path": "securitycompliance/office-365-certificate-chains.md",
+
+        "redirect_url": "https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb",
+
+        "redirect_document_id": false
+
+      }
+
+  ]
+
+}
