@@ -134,7 +134,7 @@ add-tocasereport -casename $cc.name -casemembers $cmembers -casestatus $cc.Statu
 }
 }
 else{
-write-host "No hold policies found in case :" $cc.name -foregroundColor 'Yellow'
+write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
 " "
 [string]$cc.name | out-file -filepath $noholdsfilepath -append 
 }
