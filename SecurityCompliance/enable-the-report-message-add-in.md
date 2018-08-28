@@ -33,10 +33,13 @@ If you're an Exchange Online administrator, you can enable the Report Message ad
     
 4. Sign in to your Office 365 email using your work or school account (for business use) or your Microsoft account (for personal use).
     
-> [!TIP]
-> After the add-in is installed and enabled, you'll see the following icons: 
+After the add-in is installed and enabled, you'll see the following icons: 
+
+- In Outlook the icon looks like this: </br> ![Report Message Add-in icon for Outlook](media/OutlookReportMessageIcon.png)</br>
+- In Outlook Web App the icon looks like this:</br>![Outlook on the Web Report Message Add-in icon](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+
   
-Next, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
 ## Get and enable the Report Message add-in for your organization
 
