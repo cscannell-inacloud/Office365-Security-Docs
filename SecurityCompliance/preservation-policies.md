@@ -1,7 +1,7 @@
 ---
 title: "Overview of preservation policies"
 ms.author: stephow
-author: stephow
+author: stephow-msft
 manager: laurawi
 ms.date: 4/3/2017
 ms.audience: Admin
@@ -16,7 +16,7 @@ description: "To comply with industry regulations or internal policies, organiza
 # Overview of preservation policies
 
 > [!IMPORTANT]
-> If you were using a preservation policy, that policy has been automatically converted to a retention policy, which is a new feature that does everything a preservation policy does and more. The preservation policy will continue to work and preserve your content without requiring any changes from you. You can find these policies on the **Retention** page in the Security &amp; Compliance Center. For more information, see [What happened to preservation policies?](retention-policies.md#preservation)
+> If you were using a preservation policy, that policy has been automatically converted to a retention policy, which is a new feature that does everything a preservation policy does and more. The preservation policy will continue to work and preserve your content without requiring any changes from you. You can find these policies on the **Retention** page in the Security &amp; Compliance Center. For more information, see [What happened to preservation policies?](retention-policies.md#what-happened-to-preservation-policies)
   
 To comply with industry regulations or internal policies, organizations want to preserve content for a certain period of time. With a preservation policy in Office 365, you can preserve content in sites, mailboxes, and public folders indefinitely or for a specific duration. You can also filter the content that will be preserved by supplying keywords or a date range to narrow the results.
   
