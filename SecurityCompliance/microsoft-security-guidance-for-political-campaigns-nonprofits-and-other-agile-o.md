@@ -38,11 +38,11 @@ This guidance describes how to implement a secure cloud environment. The solutio
 
 To create a dev/test environment for this solution, use the following test lab guides: 
   
-- [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
+- [Configure groups and users for a political campaign dev/test environment](https://docs.microsoft.com/office365/enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
     
      Create trial subscriptions for Office 365 and EMS and then create groups and users for a representative political campaign.
     
-- [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md)
+- [Create team sites in a political campaign dev/test environment](https://docs.microsoft.com/office365/enterprise/create-team-sites-in-a-political-campaign-dev-test-environment)
     
     Create four SharePoint Online team sites with Internal, Private, Sensitive, and Highly Confidential levels of security.
     
@@ -50,11 +50,9 @@ For additional security features for demonstration or proof of concept, see [Off
   
 ## See Also
 
-[Security solutions](security-solutions.md)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
-[Cloud adoption Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md)
+[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
 
 
 
