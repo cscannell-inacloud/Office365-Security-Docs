@@ -32,8 +32,6 @@ Search permissions filtering is supported by the Content Search feature in the O
 [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
-  
-
 
 ## Before you begin
 
