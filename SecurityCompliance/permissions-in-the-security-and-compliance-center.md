@@ -33,7 +33,7 @@ A **role** grants permissions to do a set of tasks; for example, the Case Manage
   
 A **role group** is a set of roles that lets people perform their job across the Security &amp; Compliance Center; for example, the Compliance Administrator role group includes the roles for Case Management, Content Search, and Organization Configuration (plus others) because someone who's a compliance admin will need the permissions for those tasks to do their job. 
   
-The Security &amp; Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding people (individual users or groups) as **members** to the default role groups. 
+The Security &amp; Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups. 
   
 ![Diagram showing relationship of role groups to roles and members](media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
   

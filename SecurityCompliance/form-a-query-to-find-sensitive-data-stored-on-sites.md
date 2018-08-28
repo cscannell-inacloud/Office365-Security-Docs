@@ -52,7 +52,6 @@ DLP in SharePoint also introduces the LastSensitiveContentScan property, which c
 You can use not only DLP-specific properties to create a query, but also standard SharePoint eDiscovery search properties such as  `Author` or  `FileExtension`. You can use operators to build complex queries. For the list of available properties and operators, see the [Using Search Properties and Operators with eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093) blog post. 
   
 ## Examples of complex queries
-<a name="BKMK_ExamplesOfComplexQueries"> </a>
 
 The following examples use different sensitive types, properties, and operators to illustrate how you can refine your queries to find exactly what you're looking for.
   
@@ -65,7 +64,6 @@ The following examples use different sensitive types, properties, and operators 
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |This returns documents that contain either a credit card number or a social security number.  <br/> |
    
 ## Examples of queries to avoid
-<a name="BKMK_ExamplesOfComplexQueries"> </a>
 
 Not all queries are created equal. The following table gives examples of queries that don't work with DLP in SharePoint and describes why.
   
@@ -80,7 +78,6 @@ Not all queries are created equal. The following table gives examples of queries
 | `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Because confidence values represent a percentage, they can't exceed 100. Choose a number from 1 through 100 instead.  <br/> |
    
 ## For more information
-<a name="BKMK_ExamplesOfComplexQueries"> </a>
 
 [Find sensitive data stored in SharePoint Online sites](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
   

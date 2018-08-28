@@ -21,7 +21,7 @@ Along with your users, data is the lifeblood of your organization. As a result, 
   
 - [Lock down access to it](protect-access-to-data-and-services.md)
     
-- [Prevent it from getting into the wrong hands](prevent-data-loss.md)
+- [Prevent data from getting into the wrong hands](data-loss-prevention-policies.md)
     
 - [Manage its lifecycle](manage-data-governance.md)
     

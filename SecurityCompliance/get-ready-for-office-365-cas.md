@@ -3,7 +3,6 @@ title: "Get ready for Office 365 Cloud App Security"
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -27,7 +26,7 @@ As you prepare to turn on and implement Office 365 Cloud App Security (formerly 
 
 Global administrators, security administrators, and security readers can access the Office 365 Cloud App Security portal to view policies, review alerts, and use reports. Global administrators and security administrators can define policies and take other actions to protect your organization. (For more information, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).) Review your organization's user accounts that have elevated permissions as a precaution. 
   
- **[Protect your Office 365 global administrator accounts](https://support.office.com/article/6b4ded77-ac8d-42ed-8606-c014fd947560)**. 
+ **[Protect your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)**. 
   
 ## Step 2: Turn on audit logging for your organization
 
@@ -91,6 +90,6 @@ Is your organization using a security information and event management (SIEM) se
 
 - [Turn on Office 365 Cloud App Security](turn-on-office-365-cas.md)
     
-- Try our [Test Lab Guide](/enterprise/cloud-app-security-for-your-office-365-dev-test-environment.md) for a hands-on experience where you can demonstrate the powerful features of Office 365 Cloud App Security and create a proof of concept. 
+- Try our [Test Lab Guide](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) for a hands-on experience where you can demonstrate the powerful features of Office 365 Cloud App Security and create a proof of concept. 
     
 
