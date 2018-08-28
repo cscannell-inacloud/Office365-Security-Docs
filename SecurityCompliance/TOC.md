@@ -10,11 +10,9 @@
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 ## [Use Explorer in the Security & Compliance Center](use-explorer-in-security-and-compliance.md)
-
 # Protect access to data and services
 ## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
 ## [Choose between MDM and Intune](choose-between-mdm-and-intune.md)
-
 # [Prevent data loss (DLP)](data-loss-prevention-policies.md)
 ## [Watch an extended overview of DLP](https://go.microsoft.com/fwlink/?linkid=852300)
 ## Set up DLP
@@ -34,7 +32,6 @@
 ### [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)
 ### [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 ### [Create a keyword dictionary](create-a-keyword-dictionary.md)
-
 # Manage data governance		
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
@@ -68,7 +65,6 @@
 ### [Supervision reports](supervision-reports.md)
 ## More information about data governance
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Protect against threats](protect-against-threats.md)
 ## [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md)
 ### [Anti-phishing protection in Office 365](anti-phishing-protection.md)
@@ -142,7 +138,6 @@
 ### [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md)
 ### [Quarantine FAQ for Office 365](quarantine-faq.md)
 ### [Use user spam notifications to release and report quarantined messages in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-
 # [Search for content](search-for-content.md)
 ## [Use Content Search](content-search.md)
 ### [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
@@ -172,7 +167,6 @@
 ### [Use Content Search to search the mailbox and OneDrive for Business site for a list of users](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [Create, report on, and delete multiple Content Searches](create-report-on-and-delete-multiple-content-searches.md)
 ### [Clone a Content Search](clone-a-content-search.md)
-
 # [Manage legal investigations](manage-legal-investigations.md)
 ## [Create and manage eDiscovery cases](ediscovery-cases.md)
 ## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
@@ -223,14 +217,12 @@
 ### [Set Analyze advanced settings in Office 365 Advanced eDiscovery](set-analyze-options-in-advanced-ediscovery.md)
 ### [Understand Assessment in Relevance in Office 365 Advanced eDiscovery](assessment-in-relevance-in-advanced-ediscovery.md)
 ### [Tagging and Search](search-and-tagging.md)
-
 # [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
 ## [Turn audit log search on or off](turn-audit-log-search-on-or-off.md)
 ## [Enable mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
-
 # Monitor security and compliance
 ## [Alert policies](alert-policies.md)
 ### [Create activity alerts](create-activity-alerts.md)
@@ -245,11 +237,10 @@
 #### [Download existing reports](download-existing-reports.md)
 ## [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
 ## [Enable the Report Message add-in](enable-the-report-message-add-in.md)
-
 # Security solutions
 ## [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](https://docs.microsoft.com/Office365/Enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
 ### [Configure groups and users for a political campaign dev/test environment](https://docs.microsoft.com/Office365/Enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
-### [Create team sites in a political campaign dev/test environment](https://docs.microsoft.com/Office365/Enterprise/create-team-sites-in-a-political-campaign-dev-test-environment)
+### [Create team sites in a political campaign dev/test environment](https://docs.microsoft.com/office365/enterprise/create-team-sites-in-a-political-campaign-dev-test-environment)
 ## [Secure SharePoint Online sites and files](https://docs.microsoft.com/Office365/Enterprise/secure-sharepoint-online-sites-and-files)
 ### [Deploy SharePoint Online sites for three tiers of protection](https://docs.microsoft.com/Office365/Enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
 ### [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/Office365/Enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)
@@ -264,27 +255,26 @@
 # Compliance solutions
 ## [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Manage GDPR data subject requests with the DSR case tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Office 365 Information Protection for GDPR](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
-### [Overview: Office 365 Protection for GDPR](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
-### [Search for and find personal data](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
-### [Customize or create new sensitive information types for GDPR](https://docs.microsoft.com/Office365/Enterprise/customize-or-create-a-new-sensitive-information-type)
-### [Architect a classification schema for personal plan](https://docs.microsoft.com/Office365/Enterprise/architect-a-classification-schema-for-personal-data)
-### [Apply labels to personal data in Office 365](https://docs.microsoft.com/Office365/Enterprise/apply-labels-to-personal-data-in-office-365)
-### [Apply protection to personal data in Office 365](https://docs.microsoft.com/Office365/Enterprise/apply-protection-to-personal-data-in-office-365)
-### [Monitor for leaks of personal data](https://docs.microsoft.com/Office365/Enterprise/monitor-for-leaks-of-personal-data)
+## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
+### [Overview: Office 365 Protection for GDPR](office-365-info-protection-for-gdpr-overview.md)
+### [Search for and find personal data](search-for-and-find-personal-data.md)
+### [Customize or create new sensitive information types for GDPR](customize-or-create-a-new-sensitive-information-type.md)
+### [Architect a classification schema for personal plan](architect-a-classification-schema-for-personal-data.md)
+### [Apply labels to personal data in Office 365](apply-labels-to-personal-data-in-office-365.md)
+### [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md)
+### [Monitor for leaks of personal data](monitor-for-leaks-of-personal-data.md)
 ### [Office 365 GDPR dev/test environment](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
 ## GDPR for on-premises Office servers
-### [GDPR for SharePoint Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-sharepoint-server)
-### [GDPR for Exchange Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-exchange-server)
-### [GDPR for Skype for Business Server and Lync Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-skype-for-business-server)
-### [GDPR for Project Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-project-server)
-### [GDPR for Office Web Apps Server and Office Online Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
-### [GDPR for on-premises Windows Server file shares](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
+### [GDPR for SharePoint Server](gdpr-for-sharepoint-server.md)
+### [GDPR for Exchange Server](gdpr-for-exchange-server.md)
+### [GDPR for Skype for Business Server and Lync Server](gdpr-for-skype-for-business-server.md)
+### [GDPR for Project Server](gdpr-for-project-server.md)
+### [GDPR for Office Web Apps Server and Office Online Server](gdpr-for-office-online-server.md)
+### [GDPR for on-premises Windows Server file shares](gdpr-for-on-premises-file-shares.md)
 # Security incident management
 ## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)
 ## [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
 ## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-
 # Service assurance
 ## [Service assurance in the Office 365 Security & Compliance Center](service-assurance.md)
 ## [Tenant isolation in Office 365](office-365-tenant-isolation-overview.md)
@@ -331,7 +321,6 @@
 ### [Internal Logging for Office 365 Engineering](office-365-internal-logging.md)
 ### [Office 365 Mailbox Migrations](office-365-mailbox-migrations.md)
 ### [Office 365 Management Activity API](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [EOP features](eop/eop-features.md)
 ## [Feature permissions in EOP](eop/feature-permissions-in-eop.md)
@@ -410,6 +399,5 @@
 ### [Accessibility for people with disabilities](eop/accessibility-for-people-with-disabilities.md)
 ### [Sending mail to Office 365](sending-mail-to-office-365.md)
 ### [Services for non-customers](services-for-non-customers.md)
-
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 for Business](https://support.office.com/office365admin)
