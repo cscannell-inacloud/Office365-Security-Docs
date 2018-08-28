@@ -327,12 +327,18 @@ The following sections list the Microsoft partners—and the third-party data so
 - CipherCloud for Salesforce Chatter
     
 - Cisco IM &amp; Presence Server (v10, v10.5.1 SU1, v11.0, v11.5 SU2)
-    
+
+- Cisco Webex Teams
+
+- Citrix Workspace &amp; ShareFile
+
+- CrowdCompass
+
 - Custom delimited text files
     
 - Custom XML files
     
-- Facebook (corporate fan pages)
+- Facebook (Pages)
     
 - Factset
     
@@ -343,11 +349,13 @@ The following sections list the Microsoft partners—and the third-party data so
 - Jive
     
 - Macgregor XIP
+
+- Microsoft Exchange Server
     
 - Microsoft OneDrive for Business
-    
-- Microsoft UC (Unified Communications)
-    
+
+- Microsoft Teams
+       
 - Microsoft Yammer
     
 - Mobile Guard
@@ -355,6 +363,8 @@ The following sections list the Microsoft partners—and the third-party data so
 - Pivot
     
 - Salesforce Chatter
+
+- Skype for Business Online
     
 - Skype for Business, versions 2007 R2 - 2016 (on-premises)
     
