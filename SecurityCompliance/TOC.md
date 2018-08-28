@@ -281,9 +281,9 @@
 ### [GDPR for Office Web Apps Server and Office Online Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
 ### [GDPR for on-premises Windows Server file shares](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
 # Security incident management
-## [Office 365 Security Incident Response](https://docs.microsoft.com/Office365/Enterprise/office365-security-incident-response-overview)
-## [Detect and Remediate Illicit Consent Grants in Office 365](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-illicit-consent-grants)
-## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-outlook-rules-forms-attack)
+## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)
+## [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 # Service assurance
 ## [Service assurance in the Office 365 Security & Compliance Center](service-assurance.md)
