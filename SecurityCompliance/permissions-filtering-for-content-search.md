@@ -20,6 +20,8 @@ description: "Use Content Search permissions filtering to let an eDiscovery mana
 # Configure permissions filtering for Content Search
 
 You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your Office 365 organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. For example, you might let an eDiscovery manager search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes can be searched. You can also create a filter that specifies what mailbox content can be searched. This is done by creating a filter that uses a searchable message property. Similarly, you might let an eDiscovery manager only search specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
+
+You can also use search permissions filtering to create logical boundaries (called *compliance boundaries*) within an Office 365 organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that specific eDiscovery managers can search. For more information, see [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md).
   
 Search permissions filtering is supported by the Content Search feature in the Office 365 Security &amp; Compliance Center. These four cmdlets let you configure and manage search permisisons filters:
   
@@ -30,7 +32,7 @@ Search permissions filtering is supported by the Content Search feature in the O
 [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
-  
+
 ## Before you begin
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security &amp; Compliance Center. For more information, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -43,7 +45,7 @@ Search permissions filtering is supported by the Content Search feature in the O
     
 -  Search permissions filtering can't be used to limit who can search public folders in Exchange. 
     
-- There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
+- There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive in a single filter whenever possible.
     
 ## Connect to the Security &amp; Compliance Center and Exchange Online in a single remote PowerShell session
 
