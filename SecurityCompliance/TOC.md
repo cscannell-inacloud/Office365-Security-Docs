@@ -263,7 +263,7 @@
 ### [Apply labels to personal data in Office 365](apply-labels-to-personal-data-in-office-365.md)
 ### [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md)
 ### [Monitor for leaks of personal data](monitor-for-leaks-of-personal-data.md)
-### [Office 365 GDPR dev/test environment](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
+### [Office 365 GDPR dev/test environment](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
 ## GDPR for on-premises Office servers
 ### [GDPR for SharePoint Server](gdpr-for-sharepoint-server.md)
 ### [GDPR for Exchange Server](gdpr-for-exchange-server.md)
