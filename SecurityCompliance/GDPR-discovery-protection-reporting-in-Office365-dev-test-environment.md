@@ -3,7 +3,6 @@ title: "GDPR discovery, protection, and reporting in the Office 365 dev/test env
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.collection: 
@@ -26,7 +25,7 @@ This article describes how you configure and demonstrate personally identifiable
   
 ## Phase 1: Create and configure your trial Office 365 subscription
 
-First, follow the steps in [Phase 2 of the Office 365 dev/test environment](office-365-dev-test-environment.md#phase-2-create-an-office-365-trial-subscription) article.
+First, follow the steps in [Phase 2 of the Office 365 dev/test environment](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) article.
 
 Next, use these steps to configure the eDiscovery manager:
 
@@ -202,7 +201,7 @@ In this phase, you create a new DLP policy and demonstrate how it gets applied t
 18. In the address bar, type **https://**\<YourTenantName\>**.sharepoint.com** and sign in using your global administrator account.
 19. Click **Documents**.
 20. Click the file named ‘IBANs.docx’. You should see ‘Policy tip for IBANs.docx’.  The IBANs.docx file was shared with external recipients, which violates the DLP policy. 
-21. In the address bar, type: **https://outlook.office365.com**
+21. In the address bar, type: `https://outlook.office365.com`
 22. Click **New** - **Email message** and provide the following:  
     - **To:** \<a personal email address\>  
     - **Subject:** GDPR Test  
