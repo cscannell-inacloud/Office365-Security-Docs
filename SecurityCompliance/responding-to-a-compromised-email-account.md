@@ -33,6 +33,11 @@ Users may notice and report unusual activity in their Office 365 mailboxes. Here
 - The presence of inbox rules that weren't created by the intended user or the administrator. These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.
 - The users display name may be changed in the Global Address List.
 - The user's mailbox is blocked from sending email.
+- The Sent or Deleted Items folders in Microsoft Outlook or in Microsoft Outlook Web App contain common hacked-- account messages, such as "I'm stuck in London, send money."
+- Unusual profile changes, such as the name, the telephone number, or the postal code were updated.
+- Unusual credential changes, such as multiple password changes are required.
+- Mail forwarding was recently added.
+- An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.
 
 If a user reports any of the above symptoms, you should perform further investigation. The Office 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 - Office 365 Unified Audit Logs in the Security & Compliance Center - Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
@@ -48,11 +53,20 @@ If a user reports any of the above symptoms, you should perform further investig
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
+Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
+
+You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
+
 ### Step 1 Reset the user's password
 > [!WARNING]
 > Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
 
 1. Follow the Reset an Office 365 business password for someone else procedures in [Admins: Reset Office 365 business passwords](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
+
+**Notes:**
+- Make sure that the password is strong and that it contains upper and lowercase letters, at least one number, and at least one special character. 
+- Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
+- If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 ### Step 2 Remove suspicious email forwarding addresses
 1. Open the **Office 365 Admin Center > Active Users**.
@@ -89,7 +103,7 @@ If the suspected compromised mailbox was used illicitly to send spam email, it i
 
 1. Sign in to the Office 365 Admin Center with a global administrator account and open **Active Users**.
 2. Find the suspected compromised account and manually check to see if there are any administrative roles assigned to the account.
-3. Open the **Security & Compliace Center**.
+3. Open the **Security & Compliance Center**.
 4. Click **Permissions**.
 5. Manually review the role groups to see if the suspected compromised account is a member of any of them.  If it is:
     a. Click the role group and click **Edit Role Group**.
@@ -100,6 +114,11 @@ If the suspected compromised mailbox was used illicitly to send spam email, it i
     a. Click the role group and click **Edit**.
     b. Use the **members** section to remove the user from the role group.
 
+### Step 7 Optional: Additional precautionary steps
+1. Make sure that you verify your sent items. You may have to inform people on your contacts list that your account was compromised. The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.
+2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Office 365 subscription, and then perform these steps for your other accounts.
+3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
+
 ## Secure Office 365 like a cybersecurity pro
 Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.
 - Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
@@ -109,3 +128,5 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 ## See also:
 - [Security best practices for Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Internet Crime Complaint Center](http://www.ic3.gov/preventiontips.aspx)
+- [Securities and Exchange Commission - "Phishing" Fraud](http://www.sec.gov/investor/pubs/phishing.htm)
