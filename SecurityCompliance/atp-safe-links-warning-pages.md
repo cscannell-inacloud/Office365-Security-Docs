@@ -24,41 +24,40 @@ Read this article to see [Examples of warning pages](atp-safe-links-warning-page
 
 ### ATP is scanning the link
 
-![ATP is scanning the link](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
-
 A URL is being scanned by ATP Safe Links. You might have to wait a few moments to try the link again.
+
+![ATP is scanning the link](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### A URL is in a suspicious email message
 
-![This URL is in a suspicious email message](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
-
 The URL is in an email message that seems similar to other email messages that are considered suspicious. We recommend that you double-check the email message before proceeding to the site.
+
+![This URL is in a suspicious email message](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### A URL is in a message identified as a phishing attempt
 
-![This URL is in a message identified as a phishing attempt](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
-
 The URL is in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you do not proceed to the site.
+
+![This URL is in a message identified as a phishing attempt](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
 ### A site has been identified as malicious
 
-![This site has been identified as malicious](media/058883c8-23f0-4672-9c1c-66b084796177.png)
-
 The URL points to a site that has been identified as malicious.  <br/> We recommend that you do not proceed to the site.
+
+![This site has been identified as malicious](media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
 ### A site is blocked
 
-![This site is blocked](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
-
 The URL is blocked for your organization. There are several reasons why a URL might be blocked. We recommend that you contact your organization's Office 365 administrator.
+
+![This site is blocked](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### An error has occurred
 
-![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-
 Some kind of error has occurred, and the URL cannot be opened.
 
-   
+![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+
 ## Recent updates to warning pages
 
 Several warning pages were recently updated for Office 365 ATP. If you're not already seeing the updated pages, you will soon. The updates include a new color scheme, more details, and the ability to proceed to a site despite the given warning and recommendations.
@@ -102,7 +101,6 @@ Original warning page:
 Updated warning page:
 
 ![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-  
    
 ## Related topics
 
