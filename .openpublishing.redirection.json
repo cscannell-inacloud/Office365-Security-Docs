@@ -10,6 +10,15 @@
 
         "redirect_document_id": false
 
+      },
+      {
+
+        "source_path": "securitycompliance/siem-integration-with-office-365-atp.md",
+
+        "redirect_url": "securitycompliance/siem-integration-with-office-365-ti.md",
+
+        "redirect_document_id": true
+
       }
 
   ]
