@@ -28,8 +28,10 @@ The SIEM server or other similar system should poll the **audit.general** worklo
 ## Related topics
 
 [Office 365 Threat Intelligence](office-365-ti.md)
-  
-[Protect against threats in Office 365](protect-against-threats.md)
+
+[Office 365 Advanced Threat Protection](office-365-atp.md)
+
+[Smart reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
