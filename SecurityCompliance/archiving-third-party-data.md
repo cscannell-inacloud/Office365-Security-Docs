@@ -532,8 +532,22 @@ The final step is to provide your partner with the following information so they
     ```
 
 - The sign in credentials (Office 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
-    
+ 
+## New authentication method for third-party data connectors
 
+Starting in November 2018, the Azure service in Office 365 will begin using modern authentication in Exchange Online to authenticate third-party data connectors that attempt to connect to your Office 365 organization to import data. The reason for this change is that modern authentication provides more security than the current method, which was based on whitelisting third-party connectors that use the previously described endpoint to connect to the Azure service.
+
+To enable an existing third-party data connector to connect to Office 365 using the new modern authentication method, an administrator in your Office 365 organization must opt-in by accepting a request to allow the connector to connect to your organization and access data in Azure Active Directory. After you accept this request, the third-party data connector is added as an enterprise application to Azure Active Directory. 
+
+Here are the steps to access and accept this request:
+
+1. Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&nonce=1234&prompt=admin_consent) and sign in using the credentials of an Office 365 global administrator.<br/><br/>The following dialog box is displayed. You can expand the carets to review the permissions that will be assiged to the connector.<br/><br/>![The permissions request dialog is displayed](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. Click **Accept**.
+
+After you accept the request, the **Apps** page ([https://myapps.microsoft.com](https://myapps.microsoft.com)) for your organization is displayed and the Office 365 third-party data connector is listed.
+
+> [!IMPORTANT]
+> If you don't accept the permissions request for the third-party data connector, then third-party data will no longer be imported into mailboxes in your organization after November 1, 2018. Note that after you accept the permissions request, you can delete the third-party data connector app in Azure Active Directory.
   
 ## More information
 
