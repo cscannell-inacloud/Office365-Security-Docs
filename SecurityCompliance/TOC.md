@@ -264,7 +264,7 @@
 ### [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md)
 ### [Monitor for leaks of personal data](monitor-for-leaks-of-personal-data.md)
 ### [Office 365 GDPR dev/test environment](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
-## GDPR for on-premises Office servers
+## [GDPR for on-premises Office servers](gdpr-for-office-servers.md)
 ### [GDPR for SharePoint Server](gdpr-for-sharepoint-server.md)
 ### [GDPR for Exchange Server](gdpr-for-exchange-server.md)
 ### [GDPR for Skype for Business Server and Lync Server](gdpr-for-skype-for-business-server.md)
