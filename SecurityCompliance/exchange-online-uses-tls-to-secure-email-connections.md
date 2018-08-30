@@ -83,9 +83,12 @@ The new certificate requires connecting to the endpoints of the new CA as part o
 1. Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
   `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. On the window that appears, choose **Retrieve**.
-3. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. ***Otherwise? what should they do? Confirm the ports and connections are available? Where do we send them?
+3. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. If not, you need to determine what is causing the connections to fail. Most likely, you need to update the settings of a firewall. The full list of endpoints that need to be accessed include:
+    - ocsp.globalsign.com
+     - crl.globalsign.com
+     - secure.globalsign.com   
 
-Normally, you receive updates to your root certificates automatically through Windows Update. However, some deployments have additional security in place that prevents these updates from occurring automatically. In these locked-down deployments where Windows Update can't automatically update root certificates, you need to ensure that the correct root CA certificate is installed by completing these steps:
+Normally, you receive updates to your root certificates automatically through Windows Update. However some deployments have additional security in place that prevents these updates from occurring automatically. In these locked-down deployments where Windows Update can't automatically update root certificates, you need to ensure that the correct root CA certificate is installed by completing these steps:
 1.  Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
   `certmgr.msc`
 2. Under **Trusted Root Certification Authority/Certificates**, confirm that the new certificate is listed.
