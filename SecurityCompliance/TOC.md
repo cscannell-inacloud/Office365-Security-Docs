@@ -223,7 +223,7 @@
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
-# Monitor security and compliance
+# [Monitor security and compliance](monitor-security-and-compliance.md)
 ## [Alert policies](alert-policies.md)
 ### [Create activity alerts](create-activity-alerts.md)
 ## [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
