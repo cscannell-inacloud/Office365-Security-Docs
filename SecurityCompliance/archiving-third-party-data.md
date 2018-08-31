@@ -43,6 +43,8 @@ Here's an overview of the process and the steps necessary to import third-party 
 
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
+[Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
 ## How the third-party data import process works>
 
 The following illustration and description explain how the third-party data import process works.
