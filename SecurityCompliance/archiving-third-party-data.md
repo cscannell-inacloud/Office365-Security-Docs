@@ -551,7 +551,7 @@ After you accept the request, the **Apps** page ([https://myapps.microsoft.com](
 
 ### Revoking consent for a third-party data connector
 
-After your organzation consents to the permissons request to register a third-party data connector in Azure Active Directory, your organization can revoke that consent at any time. However, revoking consent for a connector will mean that data from the third-party data source will no longer be imported into Office 365.
+After your organzation consents to the permissions request to register a third-party data connector in Azure Active Directory, your organization can revoke that consent at any time. However, revoking the consent for a connector will mean that data from the third-party data source will no longer be imported into Office 365.
 
 To revoke consent for a third-party data connector, you can delete the application (by deleting the corresponding service principal) from Azure Active Directory using the **Enterprise applications** blade in the Azure portal, or by using the [Remove-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) in Office 365 PowerShell. You can also use the the [Remove-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet in Azure Active Directory PowerShell.
   
