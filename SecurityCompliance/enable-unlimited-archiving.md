@@ -49,7 +49,7 @@ You can enable auto-expanding archiving for your entire organization. After you 
 
 Instead of enabling auto-expanding archiving for every user in your organization, you can just enable it for specific users. You might do this because only some users might have a need for a very large archive storage.
   
-When you enable auto-expanding archiving for a specific user, the following two configurations changes are also made:
+When you enable auto-expanding archiving for a specific user and the user's mailbox in on hold or assigned to an Office 365 retention policy, the following two configurations changes are made:
   
 - The storage quota for the user's primary archive mailbox is increased by 10 GB (from 100 GB to 110 GB). The archive warning quota is also increased by 10 GB (from 90 GB to 100 GB).
     
