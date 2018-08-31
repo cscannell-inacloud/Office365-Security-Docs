@@ -3,7 +3,6 @@ title: "Responding to a Compromised Email Account in Office 365"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection: 
@@ -27,13 +26,13 @@ Access to Office 365 mailboxes, data and other services, is controlled through t
 Using the stolen credentials, the attacker can access the user’s Office 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
 
 ## Symptoms of a Compromised Office 365 Email Account
-Users may notice and report unusual activity in their Office 365 mailboxes. Here are some common symptoms:
+Users might notice and report unusual activity in their Office 365 mailboxes. Here are some common symptoms:
 - Suspicious activity, such as missing or deleted emails.
-- Other users may receive emails from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.
+- Other users might receive emails from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.
 - The presence of inbox rules that weren't created by the intended user or the administrator. These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.
-- The users display name may be changed in the Global Address List.
+- The user's display name might be changed in the Global Address List.
 - The user's mailbox is blocked from sending email.
-- The Sent or Deleted Items folders in Microsoft Outlook or in Microsoft Outlook Web App contain common hacked-- account messages, such as "I'm stuck in London, send money."
+- The Sent or Deleted Items folders in Microsoft Outlook or in Microsoft Outlook Web App contain common hacked-account messages, such as "I'm stuck in London, send money."
 - Unusual profile changes, such as the name, the telephone number, or the postal code were updated.
 - Unusual credential changes, such as multiple password changes are required.
 - Mail forwarding was recently added.

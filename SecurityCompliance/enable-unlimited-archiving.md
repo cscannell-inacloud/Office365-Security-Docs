@@ -51,9 +51,9 @@ Instead of enabling auto-expanding archiving for every user in your organization
   
 When you enable auto-expanding archiving for a specific user, the following two configurations changes are also made:
   
-- The storage quota for the user's primary archive mailbox is increased by 10 GB (from 100 GB to 110 GB).
+- The storage quota for the user's primary archive mailbox is increased by 10 GB (from 100 GB to 110 GB). The archive warning quota is also increased by 10 GB (from 90 GB to 100 GB).
     
-- The storage quota for the Recoverable Items folder in the user's primary mailbox is increased by 10 GB (also from 100 GB to 110 GB). This change is applicable only if the mailbox in on hold.
+- The storage quota for the Recoverable Items folder in the user's primary mailbox is increased by 10 GB (also from 100 GB to 110 GB). The Recoverable Items warning quota is also increased by 10 GB (from 90 GB to 100 GB). These changes are applicable only if the mailbox in on hold or assigned to an Office 365 retention policy.
     
 This additional space is added to prevent any storage issues that may occur before the auto-expanding archive is provisioned. Note that additional storage space  *is not*  added when you enable auto-expanding archiving for your entire organization, as described in the previous section. 
   
