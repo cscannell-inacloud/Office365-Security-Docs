@@ -3,7 +3,6 @@ title: "View reports for Office 365 Advanced Threat Protection"
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -21,7 +20,7 @@ If your organization has [Office 365 Advanced Threat Protection](office-365-atp.
   
 ![The Security &amp; Compliance Center dashboard can help you see where Advanced Threat Protection is working](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP reports include the [Threat protection status report](view-reports-for-atp.md#advancedthreats), the [ATP File Types report](view-reports-for-atp.md#atpfiletypes), and the [ATP Message Disposition report](view-reports-for-atp.md#atpmessagedisp). This article describes the ATP reports and includes links to [Additional reports to view](view-reports-for-atp.md#addl).
+ATP reports include the Threat protection status report, the ATP File Types report, and the ATP Message Disposition report. This article describes the ATP reports and includes links to additional reports to view.
   
 ## Threat protection status report
 
