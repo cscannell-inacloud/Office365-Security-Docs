@@ -43,6 +43,8 @@ Here's an overview of the process and the steps necessary to import third-party 
 
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
+[Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
 ## How the third-party data import process works>
 
 The following illustration and description explain how the third-party data import process works.
@@ -532,8 +534,28 @@ The final step is to provide your partner with the following information so they
     ```
 
 - The sign in credentials (Office 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
-    
+ 
+## Step 5: Register the third-party data connector in Azure Active Directory
 
+Starting September 30, 2018, the Azure service in Office 365 will begin using modern authentication in Exchange Online to authenticate third-party data connectors that attempt to connect to your Office 365 organization to import data. The reason for this change is that modern authentication provides more security than the current method, which was based on whitelisting third-party connectors that use the previously described endpoint to connect to the Azure service.
+
+To enable a third-party data connector to connect to Office 365 using the new modern authentication method, an administrator in your Office 365 organization must consent to register the connector as a trusted service application in Azure Active Directory. This is done by accepting a permissions request to allow the connector to access your organization's data in Azure Active Directory. After you accept this request, the third-party data connector is added as an enterprise application to Azure Active Directory and represented as a service principal. For more information the consent process, see  [Tenant Admin Consent](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent).
+
+Here are the steps to access and accept the request to register the connector:
+
+1. Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using the credentials of an Office 365 global administrator.<br/><br/>The following dialog box is displayed. You can expand the carets to review the permissions that will be assigned to the connector.<br/><br/>![The permissions request dialog is displayed](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. Click **Accept**.
+
+After you accept the request, the [Azure portal dashboard](https://portal.azure.com) is displayed. To view the list of applications for your organization, click **Azure Active Directory** > **Enterprise applications**. The Office 365 third-party data connector is listed on the **Enterprise applications** blade.
+
+> [!IMPORTANT]
+> After September 30, 2018, third-party data will no longer be imported into mailboxes in your organization if you don't register a third-party data connector in Azure Active Directory. Note existing third-party data connectors (those created before September 30, 2018) must also be registered in Azure Active Directory by following the procedure in Step 5.
+
+### Revoking consent for a third-party data connector
+
+After your organization consents to the permissions request to register a third-party data connector in Azure Active Directory, your organization can revoke that consent at any time. However, revoking the consent for a connector will mean that data from the third-party data source will no longer be imported into Office 365.
+
+To revoke consent for a third-party data connector, you can delete the application (by deleting the corresponding service principal) from Azure Active Directory using the **Enterprise applications** blade in the Azure portal, or by using the [Remove-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) in Office 365 PowerShell. You can also use the [Remove-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet in Azure Active Directory PowerShell.
   
 ## More information
 
