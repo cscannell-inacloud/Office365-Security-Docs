@@ -543,7 +543,7 @@ To enable a third-party data connector to connect to Office 365 using the new mo
 
 Here are the steps to access and accept the request to register the connector:
 
-1. Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&nonce=1234&prompt=admin_consent) and sign in using the credentials of an Office 365 global administrator.<br/><br/>The following dialog box is displayed. You can expand the carets to review the permissions that will be assigned to the connector.<br/><br/>![The permissions request dialog is displayed](media/O365_ThirdPartyDataConnector_OptIn1.png)
+1. Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using the credentials of an Office 365 global administrator.<br/><br/>The following dialog box is displayed. You can expand the carets to review the permissions that will be assigned to the connector.<br/><br/>![The permissions request dialog is displayed](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. Click **Accept**.
 
 After you accept the request, the [Enterprise applications](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/) blade in the Azure portal is displayed and the Office 365 third-party data connector is listed.
