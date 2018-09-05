@@ -3,7 +3,7 @@ title: "Manage quarantined messages and files as an administrator in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
