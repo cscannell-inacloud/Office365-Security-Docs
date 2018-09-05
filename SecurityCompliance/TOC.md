@@ -5,7 +5,7 @@
 ## [Introducing the Office 365 Secure Score](office-365-secure-score.md)
 ## [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ## [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
-## [Security Dashbord overview](security-dashboard.md)
+## [Security Dashboard overview](security-dashboard.md)
 ## [Install the Supervision add-in for Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)

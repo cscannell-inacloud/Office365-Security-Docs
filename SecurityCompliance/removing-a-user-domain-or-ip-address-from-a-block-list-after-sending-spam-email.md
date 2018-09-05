@@ -3,7 +3,7 @@ title: "Removing a user, domain, or IP address from a block list after sending s
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
