@@ -3,7 +3,7 @@ title: "Office 365 Message Encryption FAQ"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/23/2018
+ms.date: 8/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
