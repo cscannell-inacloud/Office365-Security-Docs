@@ -3,7 +3,7 @@ title: "Removing a user, domain, or IP address from a block list after sending s
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -30,27 +30,19 @@ You can configure outbound spam settings so that you get anotification when an O
   
 ## Unblock a blocked Office 365 email account
 
-You complete this task in the Exchange admin center (EAC). Check out [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md) for details about the EAC. 
-  
-> [!NOTE]
-> You won't see the action center unless you're in the EAC for Exchange Online. 
-  
-1. In the EAC, navigate to **protection** \> **action center**.
+You complete this task in the Office 365 Security & Compliance Center (SCC). [Go to the Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md) for more details about SCC.
+
+1. Using a work or school account that has Office 365 global administrator privileges, sign into the Office 365 Security and Compliance Center and in the list on the left, expand **Threat Management**, choose **Review**, and then choose **Restricted Users**.
     
-    ![Navigate to the action center in the Exchange admin center](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. Select the **Search** icon, and then enter the SMTP address of the blocked user. 
-    
-    ![Search for a blocked user in the action center](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. Click **Unblock Account** in the description pane. 
-    
-    ![Unblock a user in the action center](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. Click **Yes** to confirm the change. 
+    > [!TIP]
+    > To go directly to the **Restricted Users** page in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. This page will contain the list of users that have been blocked from sending mail to outside of your organization.  Find the user(s) you wish to remove restrictions and then click on **Unblock**.
+
+3. Click **Yes** to confirm the change. 
     
 > [!NOTE]
-> There's a limit to the number of times that an account can be unblocked by the tenant admin. If the limit for a user has been exceeded, an error message appears. Contact Support to unblock the user. 
+> There's a limit to the number of times that an account can be unblocked by the tenant admin. If the limit for a user has been exceeded, an error message appears. You will then need to contact Support to unblock the user. 
   
 ## Third-party block lists
 
