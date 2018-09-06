@@ -24,7 +24,7 @@ Data loss prevention (DLP) in Office 365 can identify, monitor, and protect your
 
 The keywords for your dictionary could come from a variety of sources, most commonly from a file (such as a .csv or .txt list), from a list you enter directly in the cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
   
-1. **Connect to Security &amp; Compliance Center PowerShell** - see [this topic](https://go.microsoft.com/fwlink/p/?linkid=799771).
+1. **Connect to Security &amp; Compliance Center PowerShell** - see [this topic](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
 2. **Define or load your keywords from your intended source** - the cmdlet to create a keyword dictionary accepts a comma-separated list of keywords, so this step will vary slightly depending on where your keywords come from. 
     
@@ -34,7 +34,7 @@ The keywords for your dictionary could come from a variety of sources, most comm
     
 ## Create a keyword dictionary from a file
 
-Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You need to first [connect to the Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?linkid=799771).
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You need to first [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Copy the keywords into a text file and make sure that each keyword is on a separate line.
     
