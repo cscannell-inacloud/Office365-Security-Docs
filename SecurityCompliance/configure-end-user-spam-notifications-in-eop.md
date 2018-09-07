@@ -24,7 +24,19 @@ You can configure end-user spam notifications for the default company-wide conte
   
 End-user spam notifications contain a list of all spam-quarantined messages that the end user has received during a time period that you configure (you can specify a value between 1 and 15 days). You can also configure the language in which the notification message is written.
   
-After receiving a notification message, end users can click to move the spam email to their inbox, or report the spam email as Not Junk, in which case it will be sent to the Microsoft Spam Analysis Team.
+After receiving a notification message, end users can choose from the following options:
+
+**Preview** the message if you would like to preview the content or header prior to taking action.
+
+**Download** the message if you would like to review the message and attachments (if any) on your device prior to taking action.
+
+**Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
+
+**Release & Allow Sender** if the message isn’t spam and you want Office 365 to add the sender to your safe senders and recipients list for future emails. Keep in mind that your admin may have other organization wide allow/block configurations that override your safe sender list.
+
+**Release & Report**, if the message isn’t spam and you want to send the message to your mailbox and report it to Microsoft for analysis.
+
+**Block** if you want Office 365 to add the sender to your blocked senders list.
   
 ## What do you need to know before you begin?
 <a name="sectionSection0"> </a>
