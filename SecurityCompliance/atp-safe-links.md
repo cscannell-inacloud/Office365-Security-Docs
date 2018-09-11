@@ -80,6 +80,8 @@ We are continuing to add new features to ATP Safe Links. Here are several exampl
 - Beginning in late October 2017, ATP Safe Links protection is extended to apply to URLs in email as well as URLs in Office 365 ProPlus documents, such as Word, Excel, PowerPoint, and Visio on Windows, as well as Office apps on iOS and Android devices. (Make sure you're using [Modern Authentication for Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
     
 - Beginning in March 2018, ATP Safe Links protection is extended to apply to email sent between people within an organization.
+
+- Beginning in June 2018, when people are using Outlook Web Application (OWA), ATP Safe Links renders original URLs, and not show rewritten URLs. This enables users to view original links in email. (This feature is not yet available for Outlook client apps.)
     
 - Beginning in the second half of 2018, ATP Safe Links protection is extended to apply to URLs in Office Online (Word Online, Excel Online, PowerPoint Online, and OneNote Online) and Office 365 ProPlus on Mac.
     
