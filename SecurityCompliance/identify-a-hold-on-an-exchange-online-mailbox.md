@@ -148,6 +148,38 @@ Run the following command in Security & Compliance Center PowerShell to identity
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
+## Manaing the DelayHoldApplied property
+
+After any type of hold is removed from a mailbox, the value of the *DelayHoldApplied* mailbox property is set to **True**. This means that the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted (purged) from the mailbox. This gives administrators an opportunity to search for or recover mailbox items that would be purged after the hold is actually removed. When the *DelayHoldApplied* property is set to **True**, the mailbox is still considered to be on hold for an unlimited duration, as if the mailbox was on Litigation Hold. After 30 days, Office 365 will automatically attempt to remove the delay hold (by setting the *DelayHoldApplied* propety to **False**) so that the hold can be removed. 
+
+To view the Delay Hold setting for a mailbox, run the following command in Exchange Online PowerShell.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+To remove the delay hold, run the following command in Exchange Online PowerShell:
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+
+Note that you must be assigned the Legal Hold role to use the *RemoveDelayHoldApplied* parameter 
+
+Removing the delay hold may result in the permanent deletion of the data protected by the delayed hold. 
+Availability: The parameter requires Legal Hold role. 
+To remove the Delay Hold setting: 
+
+Set-Mailbox <mailbox Guid> -RemoveDelayHoldApplied
+
+To remove the Delay Hold setting on an Inactive Mailbox: 
+
+Set-Mailbox <mailbox Guid> -RemoveDelayHoldApplied -InactiveMailbox
+
+
+## Managing the ComplianceTagHold property
+
+
 ## Next steps
 
 After you identify the holds that are applied to a mailbox, you can perform tasks such as changing the duration of the hold, temporarily or permanently removing the hold, or in the case of Office 365 retention policies, excluding an inactive mailbox from the policy. For more information about performing tasks related to holds, see the one of the following topics:
