@@ -121,6 +121,9 @@ After you create a new case, the next step is to add members to the case. As pre
     
     You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**.
     
+    > [!TIP]
+    > Role groups control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
+    
 4. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people or role groups that you want to add.
     
     > [!TIP]
