@@ -5,7 +5,7 @@
 ## [Introducing the Office 365 Secure Score](office-365-secure-score.md)
 ## [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ## [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
-## [Security Dashbord overview](security-dashboard.md)
+## [Security Dashboard overview](security-dashboard.md)
 ## [Install the Supervision add-in for Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
@@ -14,7 +14,7 @@
 ## [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
 ## [Choose between MDM and Intune](choose-between-mdm-and-intune.md)
 # [Prevent data loss (DLP)](data-loss-prevention-policies.md)
-## [Watch an extended overview of DLP](https://go.microsoft.com/fwlink/?linkid=852300)
+## [Watch an extended overview of DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Set up DLP
 ### [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md)
 ### [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
@@ -32,6 +32,7 @@
 ### [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)
 ### [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 ### [Create a keyword dictionary](create-a-keyword-dictionary.md)
+### [Document Fingerprinting](document-fingerprinting.md) 
 # Manage data governance		
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
