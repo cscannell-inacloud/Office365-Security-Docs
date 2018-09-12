@@ -32,8 +32,6 @@ Office 365 is making changes to the way it enforces the use of the From: address
   
 - [All messages must include a valid From: address](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
-- [All messages must include a valid From: address](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [Format of the From: address if you don't include a display name](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
     
 - [Format of the From: address if you include a display name](how-office-365-validates-the-from-address.md#FormatDisplayName)
