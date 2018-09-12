@@ -33,7 +33,7 @@ What to do:
 
 - Make sure that you are a member of the **Company administrators** or **Security admins** role group. 
     
-- [Learn about ATP anti-phishing policy options](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) (in this article). 
+- [Learn about ATP anti-phishing policy options](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (in this article). 
     
 - You will probably set up multiple ATP anti-phishing policies for your organization. Office 365 enforces these policies in the order they're listed on the **ATP anti-phishing** page in the Security &amp; Compliance Center. Once you've reviewed the policy options, take some time to determine how many policies you'll need and the priority for each. 
     
