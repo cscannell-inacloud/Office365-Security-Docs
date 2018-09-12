@@ -35,7 +35,7 @@ Office 365 offers a number of ways that your organization can prevent mailbox co
     - **Organization-wide retention policies** - These are policies that are assigned to all content locations in your organization. You use the **Get-OrganizationConfig** cmdlet in Exchange Online PowerShell to get information about organization-wide retention policies.
   For more information, see the "Applying a retention policy to an entire organization or specific locations" section in [Overview of Office 365 retention policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Office 365 labels** - If a user applies an Office 365 label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox just as if the mailbox was placed on Litigation Hold or assigned an Office 365 retention policy. For more information, see the [Identifying mailboxes on hold because a label has been applied to an item](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-an-item) section in this article.
+- **Office 365 labels** - If a user applies an Office 365 label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox just as if the mailbox was placed on Litigation Hold or assigned to an Office 365 retention policy. For more information, see the [Identifying mailboxes on hold because a label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) section in this article.
 
 To manage mailboxes on hold, you may have to identify the type of hold that's placed on a mailbox so that you can perform tasks such as changing the hold duration, temporarily or permanently removing the hold, or excluding a mailbox from a Office 365 retention policy. In these cases, the first step is to identify the type of hold placed on the mailbox. And because multiple holds (and different types of holds) can be placed on a single mailbox, you'll have to identify all holds placed on a mailbox if you want to remove or change those holds.
 
@@ -152,7 +152,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 ## Identifying mailboxes on hold because a label has been applied to a folder or item
 
-Whenever a user applies a label that's configured to retain content or retain and then delete content to any folder or item in their mailbox, the *ComplianceTagHoldApplied* mailbox property is set to **True**. When this happens, the mailbox is considered to be on hold, just as if it was placed on Litigation Hold or assigned an Office 365 retention policy. When the *ComplianceTagHoldApplied* property is set to **True**, the following things may occur:
+Whenever a user applies a label that's configured to retain content or retain and then delete content to any folder or item in their mailbox, the *ComplianceTagHoldApplied* mailbox property is set to **True**. When this happens, the mailbox is considered to be on hold, just as if it was placed on Litigation Hold or assigned to an Office 365 retention policy. When the *ComplianceTagHoldApplied* property is set to **True**, the following things may occur:
 
 - If the mailbox or the user's Office 365 user account is deleted, the mailbox becomes an [inactive mailbox](inactive-mailboxes-in-office-365.md).
 - You won't be able to disable the mailbox (either the primary mailbox or the archive mailbox, if it's enabled).
@@ -176,11 +176,12 @@ To view the value for the *DelayHoldApplied* property for a mailbox, run the fol
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-To remove the delay hold before it expires, you can run the following command in Exchange Online PowerShell. Note that you must be assigned the Legal Hold role to use the *RemoveDelayHoldApplied* parameter 
+To remove the delay hold before it expires, you can run the following command in Exchange Online PowerShell: 
  
 ```
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+Note that you must be assigned the Legal Hold role in Exchange Online to use the *RemoveDelayHoldApplied* parameter 
 
 To remove the delay hold on an inactive mailbox, run the following command in Exchange Online PowerShell:
 
