@@ -1,7 +1,7 @@
 ---
 title: "Outbound spam controls in Office 365"
 ms.author: deniseb
-author: deniseb-msft
+author: denisebmsft
 manager: laurawi
 ms.date: 09/12/2018
 ms.audience: Admin
