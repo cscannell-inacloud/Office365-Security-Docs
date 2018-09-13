@@ -17,7 +17,7 @@ description: "If your organization sends a lot of bulk mail that's marked as spa
 
 # Outbound spam controls in Office 365
 
-This article is based on the work of Terry Zink, a program manager for Microsoft.
+*This article is based on a blog authored by Terry Zink, a program manager for Microsoft.*
 
 As a Program Manager of Antispam in Office 365, one of the questions I am frequently asked is “How many messages outbound are we permitted to send per minute? Per hour? Per day?”
 
