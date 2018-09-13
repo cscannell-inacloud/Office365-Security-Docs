@@ -67,6 +67,9 @@ You must perform all the following steps to regain access to your account the so
 - Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
 - If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
+> [!TIP]
+> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative priviledges.  You can learn more [here](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+
 ### Step 2 Remove suspicious email forwarding addresses
 1. Open the **Office 365 Admin Center > Active Users**.
 2. Find the user account in question and expand **Mail Settings**.
