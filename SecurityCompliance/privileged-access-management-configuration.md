@@ -20,7 +20,7 @@ description: "Use this topic to learn more about configuring privileged access m
 > [!IMPORTANT]
 > This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
 
-This topic will guide you through enabling and configuring privileged access management in your Office 365 organization and serve as a reference guide for requesting, approving, and managing access request submissions. 
+This topic will guide you through enabling and configuring privileged access management in your Office 365 organization. You can use either the 
 
 ## Before you begin
 
