@@ -244,7 +244,7 @@ If needed, you can disable privileged access management for your organization. D
 
 3. Enable the **Require approvals for privileged access** control
 
-#### Using Exchange Management PowerShell
+### Using Exchange Management PowerShell
 
 Run the following command in Exchange Online Powershell to disable privileged access:
 
