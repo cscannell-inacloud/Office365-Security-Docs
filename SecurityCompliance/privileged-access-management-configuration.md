@@ -52,7 +52,7 @@ After approval is granted, the requesting user can execute the intended task and
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Groups > Add a group**.
+2. In the Admin Center, go to **Groups** > **Add a group**.
 
 3. Select the **mail-enabled security group** group type and then complete the **Name**, **Group email address**, and **Description** fields for the new group.
 
@@ -69,7 +69,7 @@ After approval is granted, the requesting user can execute the intended task and
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings > Security & Privacy > Privileged access**.
+2. In the Admin Center, go to **Settings > Security & Privacy** > **Privileged access**.
 
 3. Enable the **Require approvals for privileged access** control
 
@@ -98,7 +98,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings > Security & Privacy > Privileged access**.
+2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -139,7 +139,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using your credentials.
 
-2. In the Admin Center, go to **Settings > Security & Privacy > Privileged access**.
+2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -174,7 +174,7 @@ After an approval request is created, elevation request status can be reviewed i
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using your credentials.
 
-2. In the Admin Center, go to **Settings > Security & Privacy > Privileged access**.
+2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -198,7 +198,7 @@ When an approval request is created, members of the relevant approver group will
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using your credentials.
 
-2. In the Admin Center, go to **Settings > Security & Privacy > Privileged access**.
+2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -236,7 +236,7 @@ If needed, you can disable privileged access management for your organization. D
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings > Security & Privacy > Privileged access**.
+2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Enable the **Require approvals for privileged access** control
 
