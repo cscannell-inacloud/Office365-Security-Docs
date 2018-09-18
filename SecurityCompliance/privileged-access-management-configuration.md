@@ -48,6 +48,7 @@ After approval is granted, the requesting user can execute the intended task and
 > If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.
 
 <a name="step1"> </a>
+
 ## Step 1 - Create an approver's group
 
 1. Sign into the Microsoft 365 Admin Center [https://portal.office.com](https://portal.office.com) using credentials for an admin account in your organization.
@@ -63,6 +64,7 @@ After approval is granted, the requesting user can execute the intended task and
 6. Save the group.
 
 <a name="step2"> </a>
+
 ## Step 2 - Enable privileged access
 
 ### Using the Microsoft 365 Admin Center
@@ -92,7 +94,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 > System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.
 
 <a name="step3"> </a>
-### Step 3 - Create an approval policy
+
+## Step 3 - Create an approval policy
 
 ### Using the Microsoft 365 Admin Center
 
@@ -131,6 +134,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 ```
 
 <a name="step4"> </a>
+
 ## Step 4: Using privileged access
 
 ### Requesting elevation authorization to execute privileged tasks
