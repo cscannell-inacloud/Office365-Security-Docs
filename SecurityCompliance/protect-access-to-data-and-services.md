@@ -49,7 +49,7 @@ If you are using Azure AD MFA, create a conditional access rule to require MFA f
   
 - [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## Step 4: Configure privileged access maangement
+## Step 4: Configure privileged access management
 
 Privileged access management allows granular access control over privileged admin tasks in Office 365.  It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
