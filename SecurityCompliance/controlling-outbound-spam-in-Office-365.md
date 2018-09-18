@@ -3,7 +3,7 @@ title: "Controlling outbound spam in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 09/18/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -40,7 +40,7 @@ We take managing outbound spam seriously because ours is a shared service.  Ther
 
 ## Recommended workarounds for customers who want to send outbound a lot of email through EOP
 
-It is difficult to strike a balance between customers who want to send a large volume of email vs. protecting the service from compromised accounts and bulk emailers with poor list acquisition practices. Again, the cost of an outbound IP landing on a 3rd party blocklist is higher than blocking a customer from sending outbound email. As described in the [Exchange Online Service Description](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits), using EOP to send bulk email is not a supported use of the service and is only permitted on a “best-effort” basis. For customers who do want to send bulk email, we recommend the following:
+It is difficult to strike a balance between customers who want to send a large volume of email vs. protecting the service from compromised accounts and bulk emailers with poor list acquisition practices. Again, the cost of an outbound IP landing on a 3rd party blocklist is higher than blocking a customer from sending outbound email. As described in the [Exchange Online Service Description](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits), using EOP to send bulk email is not a supported use of the service and is only permitted on a “best-effort” basis. For customers who do want to send bulk email, we recommend the following:
 
 1. **Send the bulk email through its own on-premise mail servers**. This means that the customer will have to maintain its own email infrastructure for this type of email.
 
