@@ -26,19 +26,19 @@ This topic will guide you through enabling and configuring privileged access man
 
 Follow these steps to set up and use privileged access in your Office 365 organization:
 
-- [Create an approver's group](privileged-access-management-configuration.md#step1)
+- [Step 1: Create an approver's group](privileged-access-management-configuration.md#step1)
 
     Before you start using privilege access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group will be able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365.
 
-- [Enable privileged access](privileged-access-management-configuration.md#step2)
+- [Step 2: Enable privileged access](privileged-access-management-configuration.md#step2)
 
     Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control.
 
-- [Create an approval policy](privileged-access-management-configuration.md#step3)
+- [Step 3: Create an access policy](privileged-access-management-configuration.md#step3)
 
     Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks. The approval type options are **Auto** or **Manual**.
 
-- [Submit/approve privilged access requests](privileged-access-management-configuration.md#step4)
+- [Step 4: Submit/approve privileged access requests](privileged-access-management-configuration.md#step4)
 
     Once enabled, privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute the task.
 
@@ -95,7 +95,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 <a name="step3"> </a>
 
-## Step 3 - Create an approval policy
+## Step 3 - Create an access policy
 
 ### Using the Microsoft 365 Admin Center
 
@@ -113,7 +113,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
     **Policy scope**: Exchange or Office 365
 
-    **Policy name**: Friendly name for your policy
+    **Policy name**: Select from the available policies
 
     **Approval type**: Manual or Auto
 
@@ -135,7 +135,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 <a name="step4"> </a>
 
-## Step 4: Using privileged access
+## Step 4: Submit/approve privileged access requests
 
 ### Requesting elevation authorization to execute privileged tasks
 
@@ -153,7 +153,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **Request scope**: Exchange
 
-    **Request for**: Friendly name for your request
+    **Request for**: Select from the available policies
 
     **Duration (hours)**: Number of hours of requested access
 
