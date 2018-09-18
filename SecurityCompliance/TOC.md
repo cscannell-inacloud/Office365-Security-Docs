@@ -138,7 +138,7 @@
 ### [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md)
 ### [Quarantine FAQ for Office 365](quarantine-faq.md)
 ### [Use user spam notifications to release and report quarantined messages in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-## [Privileged access management](privileded-access-management-overview.md)
+## [Privileged access management](privileged-access-management-overview.md)
 ### [Configure privileged access management](privileged-access-management-configuration.md)
 # [Search for content](search-for-content.md)
 ## [Use Content Search](content-search.md)
