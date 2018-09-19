@@ -53,7 +53,7 @@ If you are using Azure AD MFA, create a conditional access rule to require MFA f
 
 Privileged access management allows granular access control over privileged admin tasks in Office 365.  It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
-- [Overview of privileged access management](privileged-access-managment-overview.md)
+- [Overview of privileged access management](privileged-access-management-overview.md)
 - [Configure privileged access management](privileged-access-management-configuration.md)
 
 ## Step 5: Configure SharePoint device access policies
