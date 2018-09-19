@@ -22,7 +22,7 @@ description: "Learn about email and file properties that you can search in Excha
 
 # Keyword queries and search conditions for Content Search
 
-This topic describes the email and document properties that you can search for in email items in Exchange Online and documents stored on SharePoint and OneDrive for Business sites by using the Content Search feature in the Office 365 Security &amp; Compliance Center. You can also use the **\*-ComplianceSearch** cmdlets in Security &amp; Compliance Center PowerShell to search for these properties. The topic also describes: 
+This topic describes the email and document properties that you can search for in email items in Exchange Online and documents stored on SharePoint and OneDrive for Business sites by using the Content Search feature in the Office 365 Security &amp; Compliance Center. You can also use the **\*-ComplianceSearch** cmdlets in Security &amp; Compliance Center PowerShell to search for these properties. The topic also describes:   
   
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.
     
