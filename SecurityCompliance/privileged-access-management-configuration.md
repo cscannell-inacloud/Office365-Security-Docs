@@ -73,7 +73,7 @@ After approval is granted, the requesting user can execute the intended task and
 
 2. In the Admin Center, go to **Settings > Security & Privacy** > **Privileged access**.
 
-3. Enable the **Require approvals for privileged access** control
+3. Enable the **Require approvals for privileged access** control.
 
 4. Assign the approver's group you created in Step 1 as the **Default approvers group**.
 
@@ -182,7 +182,7 @@ After an approval request is created, elevation request status can be reviewed i
 
 3. Select **Manage access policies and requests**.
 
-4. Select **View** to filter submitted requests by **Pending**, **Approved**, **Denied**, or **Customer Lockbox** status
+4. Select **View** to filter submitted requests by **Pending**, **Approved**, **Denied**, or **Customer Lockbox** status.
 
 #### Using Exchange Management PowerShell
 
@@ -242,7 +242,7 @@ If needed, you can disable privileged access management for your organization. D
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
-3. Enable the **Require approvals for privileged access** control
+3. Enable the **Require approvals for privileged access** control.
 
 ### Using Exchange Management PowerShell
 
