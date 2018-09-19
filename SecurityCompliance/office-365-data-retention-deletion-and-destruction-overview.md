@@ -3,7 +3,6 @@ title: "Data Retention, Deletion, and Destruction in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -63,8 +62,8 @@ Microsoft also has a Data Handling Standard policy that addresses the recycling 
 At all times during the term of a subscription, a subscriber can contact Microsoft Support and request expedited subscription deprovisioning. In this process, all user data, including data in SharePoint Online, Exchange Online that may be under hold or stored in inactive mailboxes, is deleted three days after the administrator enters the lockout code provided by Microsoft. For more information on expedited deprovisioning, see [Cancel Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## Related Links
-- [Exchange Online Data Deletion](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [SharePoint Online Data Deletion](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Skype for Business Data Deletion](/office365/enterprise/office-365-skype-data-deletion)
-- [Immutability in Office 365](/office365/enterprise/office-365-data-immutability)
-- [Data Destruction](/office365/enterprise/office-365-data-destruction)
+- [Exchange Online Data Deletion](office-365-exchange-online-data-deletion.md)
+- [SharePoint Online Data Deletion](office-365-sharepoint-online-data-deletion.md)
+- [Skype for Business Data Deletion](office-365-skype-data-deletion.md)
+- [Immutability in Office 365](office-365-data-immutability.md)
+- [Data Destruction](office-365-data-destruction.md)
