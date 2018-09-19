@@ -84,7 +84,6 @@
 ### [Email encryption in Office 365](email-encryption.md)
 ### [Manage Office 365 Message Encryption](manage-office-365-message-encryption.md)
 ### [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)
-
 ### [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md)
 ### [Office 365 Message Encryption (OME)](ome.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
@@ -99,7 +98,6 @@
 ### [Create conditions for a supervisory review policy](create-conditions-for-a-supervisory-review-policy.md)
 ### [Set up Azure Rights Management for Office 365 Message Encryption](set-up-azure-rm-for-message-encryption.md)
 ## [Office 365 Advanced Threat Protection](office-365-atp.md)
-### [Protect against threats in Office 365](protect-against-threats.md)	
 ### [Office 365 ATP Safe Links](atp-safe-links.md)
 #### [Set up ATP Safe Links policies](set-up-atp-safe-links-policies.md)
 #### [ATP Safe Links warning pages](atp-safe-links-warning-pages.md)
