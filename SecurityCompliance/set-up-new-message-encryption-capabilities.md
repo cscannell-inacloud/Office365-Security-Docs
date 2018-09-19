@@ -20,7 +20,7 @@ With the new Office 365 Message Encryption (OME) capabilities, which leverage th
   
 ## Get started with OME by activating Azure Rights Management, part of Azure Information Protection
 
-It's now easy to get started with the new OME capabilities. As of February 2018, Office 365 automatically enables the new OME capabilities for eligible organizations within our datacenters. Your organization is eligible if it is a new Office 365 tenant and your organization has the appropriate subscriptions. ** If ** ** you have enabled Azure Rights Management (Azure RMS), part of Azure Information Protection, then we automatically enable Office 365 Message Encryption for you. ** You don't have to do anything else to enable OME. To activate Azure Rights Management, see [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service).﻿ For information on subscriptions, see "What subscriptions do I need to use the new OME capabilities?" in the [Office 365 Message Encryption FAQ](ome-faq.md).﻿ For information about purchasing a subscription to Azure Information Protection, see [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
+It's now easy to get started with the new OME capabilities. As of February 2018, Office 365 automatically enables the new OME capabilities for eligible organizations within our datacenters. Your organization is eligible if it is a new Office 365 tenant and your organization has the appropriate subscriptions. **If you have enabled Azure Rights Management (Azure RMS), part of Azure Information Protection, then we automatically enable Office 365 Message Encryption for you.** You don't have to do anything else to enable OME. To activate Azure Rights Management, see [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service).﻿ For information on subscriptions, see "What subscriptions do I need to use the new OME capabilities?" in the [Office 365 Message Encryption FAQ](ome-faq.md).﻿ For information about purchasing a subscription to Azure Information Protection, see [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
   
 If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to migrate from AD RMS to Azure Information Protection first. When you've finished the migration, you can successfully complete these steps.
   
@@ -57,22 +57,18 @@ Follow these steps to verify that your tenant is properly configured to use the 
     
 2. Run the Test-IRMConfiguration cmdlet using the following syntax:
     
-  ```
-  Test-IRMConfiguration [-Sender <email address >]
-  ```
+    ```Test-IRMConfiguration [-Sender <email address >]```  
 
-    For example:
+   For example:
     
-  ```
-  Test-IRMConfiguration -Sender securityadmin@contoso.com
-  ```
+    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
     Where email address is the email address of a user in your Office 365 organization. While optional, providing a sender email address forces the system to perform additional checks.
     
     Your results should look like these:
     
-  ```
-  Results : Acquiring RMS Templates ...
+    ```
+    Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
             Verifying encryption ...
@@ -83,7 +79,7 @@ Follow these steps to verify that your tenant is properly configured to use the 
                 - PASS: IRM verified successfully.
             
             OVERALL RESULT: PASS
-  ```
+    ```
 
     Where  *Contoso*  is replaced with the name of your Office 365 organization. 
     
@@ -93,9 +89,7 @@ Follow these steps to verify that your tenant is properly configured to use the 
     
 3. Run the Remove-PSSession cmdlet to disconnect from the Rights Management service.
     
-  ```
-  Remove-PSSession $session
-  ```
+    ```Remove-PSSession $session```
 
 ## Next steps: Define new mail flow rules that use the new OME capabilities
 <a name="Rules_1"> </a>

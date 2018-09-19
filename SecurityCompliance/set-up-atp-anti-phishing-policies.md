@@ -5,7 +5,8 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.date: 9/5/2018
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: "ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you're an Office 365 Enterprise global or security administrator, you can set up ATP anti-phishing policies. Phishing attacks come in a variety of forms from commodity-based attacks to targeted spear phishing or whaling. With the growing complexity, it's difficult for even a trained eye to identify some of these sophisticated attacks. Fortunately, Office 365 Advanced Threat Protection can help. You can set up an ATP anti-phishing policy to help ensure that your organization is protected against such attacks."
@@ -13,24 +14,26 @@ description: "ATP anti-phishing protection, part of Office 365 Advanced Threat P
 
 # Set up Office 365 ATP anti-phishing policies
 
-[ATP anti-phishing protection](atp-anti-phishing.md) , part of [Office 365 Advanced Threat Protection](office-365-atp.md), can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you're an Office 365 Enterprise global or security administrator, you can set up ATP anti-phishing policies. Phishing attacks come in a variety of forms from commodity-based attacks to targeted spear phishing or whaling. With the growing complexity, it's difficult for even a trained eye to identify some of these sophisticated attacks. Fortunately, Office 365 Advanced Threat Protection can help. You can set up an ATP anti-phishing policy to help ensure that your organization is protected against such attacks.
+[ATP anti-phishing protection](atp-anti-phishing.md), part of [Office 365 Advanced Threat Protection](office-365-atp.md), can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you're an Office 365 Enterprise global or security administrator, you can set up ATP anti-phishing policies. 
+
+Phishing attacks come in a variety of forms from commodity-based attacks to targeted spear phishing or whaling. With the growing complexity, it's difficult for even a trained eye to identify some of these sophisticated attacks. Fortunately, Office 365 Advanced Threat Protection can help. You can set up an ATP anti-phishing policy to help ensure that your organization is protected against such attacks.
   
 > [!NOTE]
 > ATP anti-phishing is only available in Advanced Threat Protection, available with Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Advanced Threat Protection can be purchased as an add-on. (As a global admin, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information about plan options, see [Compare All Office 365 for Business Plans](https://go.microsoft.com/fwlink/?linkid=844053). Make sure your organization is using the latest version of Office 365 ProPlus on Windows to take full advantage of ATP anti-phishing protection. 
   
 What to do:
   
-1. [Review the prerequisites](#review-the-prerequisites)
+1. Review the prerequisites.
     
-2. [Learn about ATP anti-phishing policy options](#learn-about-atp-anti-phishing-policy-options)
+2. Learn about ATP anti-phishing policy options.
     
-3. [Set up an ATP anti-phishing policy](#set-up-an-atp-anti-phishing-policy)
+3. Set up an ATP anti-phishing policy.
     
 ## Review the prerequisites
 
 - Make sure that you are a member of the **Company administrators** or **Security admins** role group. 
     
-- [Learn about ATP anti-phishing policy options](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) (in this article). 
+- [Learn about ATP anti-phishing policy options](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (in this article). 
     
 - You will probably set up multiple ATP anti-phishing policies for your organization. Office 365 enforces these policies in the order they're listed on the **ATP anti-phishing** page in the Security &amp; Compliance Center. Once you've reviewed the policy options, take some time to determine how many policies you'll need and the priority for each. 
     
@@ -40,6 +43,7 @@ What to do:
     
 ## Set up an ATP anti-phishing policy
 
+Each organization in Office 365 has a default anti-phishing policy that applies to all users. You can also create multiple custom anti-phishing policies that you can scope to specific users, groups, or domains within your organization. The custom policies you create take precedence over the default policy.
 You add, edit, and delete ATP anti-phishing policies in the Office 365 Security &amp; Compliance Center.
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account. 
@@ -52,7 +56,7 @@ You add, edit, and delete ATP anti-phishing policies in the Office 365 Security 
     
   - To add a new policy select **+ Create**.
     
-  - To edit an existing policy, select the policy name from the list displayed on the **Anti-phishing** page. On the page that appears, choose **Edit policy**.
+  - To edit an existing policy, select the policy name from the list displayed on the **Anti-phishing** page or choose **Default Policy** above the list to edit the default poicy for your organization. On the page that appears, choose **Edit policy**.  
     
     A wizard launches that steps you through defining your anti-phishing policy.
     
@@ -102,7 +106,7 @@ The security administrator at Contoso might use values like the following in ord
    
 ## Delete an ATP anti-phishing policy
 
-You can add and edit policies in the Security &amp; Compliance Center. We recommend using the Security &amp; Compliance Center to review or edit any of your ATP policies.
+You can delete custom policies that you created by using the Security &amp; Compliance Center. You can't delete the default policy for your organization. We recommend using the Security &amp; Compliance Center to review or edit any of your ATP policies.
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account. 
     

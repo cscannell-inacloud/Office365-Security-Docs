@@ -99,11 +99,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-<<<<<<< HEAD
 3. Select the In-Place Hold you want to delete, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
-=======
-3. Select the In-Place Hold you want to delete, and then click **Edit**! [Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
->>>>>>> markjjo-conversion
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     

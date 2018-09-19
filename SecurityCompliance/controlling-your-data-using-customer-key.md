@@ -3,7 +3,7 @@ title: "Controlling your data in Office 365 using Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 8/1/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
