@@ -83,6 +83,14 @@ Identify, monitor, and understand attacks, and quickly address threats by using 
     
 - [Get started with Office 365 Threat Intelligence](get-started-with-ti.md)
     
+## Privileged access management
+
+Help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. After enabling privileged access management, users will need to request just-in-time access to complete elevated and privileged tasks through an approval workflow that is highly scoped and time-bound.
+  
+- [Get an overview of privileged access management](privileged-access-management-overview.md)
+    
+- [Get started with privileged access management](privileged-access-management-configuration.md)
+
 ## Additional options
 
 Get more information about related Microsoft technologies and processes that help secure Office 365 against threats.
