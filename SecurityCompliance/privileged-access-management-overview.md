@@ -52,7 +52,7 @@ Using the Office 365 Admin Center or Exchange Management PowerShell, users can r
 
 ### Step 3: Access approval
 
-An approval request is generated and the approval group is notified by email of the pending request. If approval is granted, the privileged access request is processed as an approval and the task is ready to be completed. If the request is denied, task is block and no access is granted to the reqeustor.
+An approval request is generated and the approval group is notified by email of the pending request. If approval is granted, the privileged access request is processed as an approval and the task is ready to be completed. If the request is denied, task is block and no access is granted to the reqeustor. The requestor will be notified of the request approval or denial via email message.
 
 ![Step 3 - Access approval](media/pam-step3-access-approval.jpg)
 

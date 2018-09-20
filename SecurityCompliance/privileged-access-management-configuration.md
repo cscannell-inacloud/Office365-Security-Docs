@@ -196,7 +196,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### Approving an elevation authorization request
-When an approval request is created, members of the relevant approver group will receive an email notification and can approve the request associated with the request ID.
+When an approval request is created, members of the relevant approver group will receive an email notification and can approve the request associated with the request ID. The requestor will be notified of the request approval or denial via email message.
 
 #### Using the Microsoft 365 Admin Center
 
